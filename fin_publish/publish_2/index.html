@@ -107,19 +107,127 @@
     </section>
     <!-- * slider Fin -->
 
-    <div>
+    <div class="contentArea mont">
         <form>
             <fieldset class="mont">
                 <label for="sb_Select">SORT BY : </label>
-                <span>
+
+                <span class="selectBox sbSelect">
                     <select id="sb_Select">
-                        <option value="">BEST MATCH</option>
+                        <option value="BESTMATCH">BEST MATCH</option>
                     </select>
                 </span>
+
                 <label for="sb_keywords">KEYWORDS</label>
                 <input type="search" id="sb_keywords">
+
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
+                <span>-</span>
+                <input type="text" id="range_maxprice">
+
+                <input type="checkbox" id="freeShipCheck">
+                <label for="freeShipCheck">Free Shipping</label>
+
+                <label for="ship_Select">SHIP TO :</label>
+                <span class="selectBox shipSelect">
+                    <select id="ship_Select">
+                        <option value="USA">USA</option>
+                    </select>
+                </span>
             </fieldset>
         </form>
+        <!-- *sortBy Fin -->
+
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Top Sales</a>
+                        <ol>
+                            <li><a href="">Cell Phones</a></li>
+                            <li><a href="">Cameras</a></li>
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">Tv, Audio</a></li>
+                            <li><a href="">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="">Brand Focus</a>
+                        <ol>
+                            <li><a href="">Cell Phones</a></li>
+                            <li><a href="">Cameras</a></li>
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">Tv, Audio</a></li>
+                            <li><a href="">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="">Hi-Tech</a>
+                        <ol>
+                            <li><a href="">Cell Phones</a></li>
+                            <li><a href="">Cameras</a></li>
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">Tv, Audio</a></li>
+                            <li><a href="">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                        <ol>
+                            <li><a href="">Cell Phones</a></li>
+                            <li><a href="">Cameras</a></li>
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">Tv, Audio</a></li>
+                            <li><a href="">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="">sale</a>
+                        <ol>
+                            <li><a href="">Cell Phones</a></li>
+                            <li><a href="">Cameras</a></li>
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">Tv, Audio</a></li>
+                            <li><a href="">Video Games</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+
+            <form>
+                <fieldset>
+                    <legend>Available</legend>
+                    <input type="radio" name="ava_select" id="ava_str">
+                    <label for="ava_str">In Storage</label>
+                    <span>45</span>
+                    <input type="radio" name="ava_select" id="ava_net">
+                    <label for="ava_net">In Online-Shop</label>
+                    <span>12</span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Brands
+                        <a href="">ALL</a>
+                    </legend>
+                    <input type="checkbox" id="brand_op1">
+                    <label for="brand_op1">Apple</label>
+                    <span>32</span>
+                    <input type="checkbox" id="brand_op2">
+                    <label for="brand_op2">JBL</label>
+                    <span>14</span>
+                    <input type="checkbox" id="brand_op3">
+                    <label for="brand_op3">Bose</label>
+                    <span>3</span>
+                    <input type="checkbox" id="brand_op4">
+                    <label for="brand_op4">Nest</label>
+                    <span>3</span>
+                </fieldset>
+                <fieldset></fieldset>
+                <fieldset></fieldset>
+            </form>
+        </aside>
     </div>
 </body>
 </html>

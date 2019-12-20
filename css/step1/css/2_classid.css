@@ -12,7 +12,7 @@ body{
     font-size:15px;
 }
 
-.btn .create{
+.btn.create{
     background-color: white; color:black; border-style:solid;
     border-color: black;
 }
@@ -29,5 +29,10 @@ body{
     border-color: red;
 }
 .btn.cancel{
-    color: gray; border-style: solid; border-color:
+    color: gray; border-style: solid; border-color: gray;
+}
+
+#userName{
+    border: 1px solid #eaeaea; line-height: 21px; font-size: 12px;
+    padding: 5px 15px; color:green;
 }

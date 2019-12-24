@@ -26,11 +26,22 @@ body{
 	*/
 
 
-    background-position: right bottom;
+    background-position: center;
 	/*
 		* background-position은 x축, y축 으로 구분하는데 하나만 적을경우 x축, y축 동일적용
 		* left, center, right - xAxis
 		* top, center, bottom - yAxis
 		* %,px 등의 단위도 사용가능
 	*/
+
+	background-attachment: fixed;
+
+	/* 
+		* background-attachment는 기본옵션은 scroll이고, fixed로 고정 시킬 수 있다.
+	*/
+
+}
+
+p{
+	height: 2000px;
 }

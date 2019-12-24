@@ -1,0 +1,35 @@
+*{
+    margin:0; padding:0;
+}
+h1{
+    text-align: center; margin-bottom: 20px;
+}
+ul{
+    width: 640px; margin:0 auto;
+}
+ul:after{
+    content:''; display:block; visibility: hidden; clear: both;
+}
+ul li{
+    float:left; display:block; width:160px; height:140px;
+    background-image:url("../images/sprite.png");
+    background-repeat: no-repeat;
+}
+ul li strong{
+    background-color: rgba(0,0,0,0.5); color: white;
+}
+
+ul li.captain{background-position:0px 0px; }
+ul li.wolverine{background-position:-160px 0px; }
+ul li.thor{background-position:-320px 0px; }
+ul li.ironman{background-position:-480px 0px; }
+ul li.spiderman{background-position:0px -140px; }
+ul li.superman{background-position:-160px -140px; }
+ul li.rangerRed{background-position:-320px -140px; }
+ul li.rangerBlue{background-position:-480px -140px; }
+
+/* 
+   ?  1. 이미지의 불필요한 여백 최소화 (상,하,좌,우)
+   ?  2. 컨텐츠들의 균등한 크기, 간격 배분.
+   ?  3. psd 상태에서 좌측 상단 부터 좌표를 추적하면 된다.( - 배수로 )
+*/

@@ -1,6 +1,6 @@
 #wrap{
     width: 300px; height: 200px; margin: 0 auto; position: relative;
-    background-color: #666; overflow: scroll;
+    background-color: #666; overflow-y: scroll;
 }
 
 #wrap div{width: 150px; height: 150px; position: absolute;}

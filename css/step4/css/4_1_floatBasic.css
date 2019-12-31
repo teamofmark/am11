@@ -1,0 +1,19 @@
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1 img{
+    float: left; margin:0 25px 5px 0;
+}
+.wrap .exam_1 p{
+    font-size: 19px; line-height: 25px; margin:0;
+}
+.wrap .exam_2 div{
+    width:100px; height: 100px; background-color: #09f;
+    float: right; margin:10px; padding:10px;
+}
+/*
+    float옵션중 left와 right의 활용도가 제일 높다.
+    단, right를 사용할 땐 정렬 역시 우측을 기준으로 정렬 하기 때문에,
+    컨텐츠 배열에 신경써야 한다.
+    -p.s- float가 적용되게되면 적용된 대상의 부모 객체의 높이값상실주의
+*/

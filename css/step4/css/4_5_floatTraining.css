@@ -14,10 +14,16 @@ ul li figure{
 ul li figure > *{
     float: left;  width: 49%; margin-bottom: 10px; 
 }
-ul li figure img{margin-right: 2%;}
+ul li figure img{
+    margin-right: 2%;
+}
 ul li figure figcaption{
     border-bottom: 1px solid black;
 }
 
-ul li figure figcaption dl dt{font-size:24px; margin-bottom: 35px;}
-ul li figure figcaption dl dd{font-size:14px; line-height: 24px;}
+ul li figure figcaption dl dt{
+    font-size:24px; margin-bottom: 35px;
+}
+ul li figure figcaption dl dd{
+    font-size:14px; line-height: 24px;
+}

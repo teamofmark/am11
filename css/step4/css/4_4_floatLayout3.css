@@ -2,7 +2,7 @@
     margin:0; padding:0;
 }
 body{
-    width: 960px; margin: 0 auto;
+    min-width: 960px; margin: 0 auto;
 }
 
 header{
@@ -55,3 +55,8 @@ header nav ul li a:hover{
 }
 .wrap ul.latestList1{margin:0 20px 0 0;}
 .wrap ul.latestList3{margin:0 0 0 21px;}
+
+footer{
+    background-color: #069; color: white; padding:10px 0;
+    text-align: center;
+}

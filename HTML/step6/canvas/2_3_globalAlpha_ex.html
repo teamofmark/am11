@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CANVAS</title>
+    <style>
+        canvas{border:1px solid #999;}
+    </style>
+    <script type="text/javascript">
+        function draw_paper() {
+            var paper_canvas = document.getElementById("paper");
+            if (paper_canvas.getContext) {
+                var paper_ctx = paper_canvas.getContext("2d");
+                
+                paper_ctx.fillRect(0, 0, 250, 250);
+                paper_ctx.fillStyle = "rgb(255, 0, 0)";
+               
+                paper_ctx.fillRect(250, 0, 250, 250);
+                paper_ctx.fillStyle = "rgb(255, 255, 0)";
+                
+                paper_ctx.fillRect(0, 250, 250, 250);
+                paper_ctx.fillStyle = "rgb(0, 255, 255)";
+                
+                paper_ctx.fillRect(250, 250, 250, 250);
+                paper_ctx.fillStyle = "rgb(0, 0, 255)";
+
+                paper_ctx.globalAlpha = 0.7;
+                paper_ctx.beginPath();
+                paper_ctx.arc(250, 250, 50, 0, Math.PI * 2, true);
+                paper_ctx.fillStyle = "white";
+                paper_ctx.fill();
+
+                paper_ctx.beginPath();
+                paper_ctx.arc(250, 250, 25, 0, Math.PI * 2, true);
+                paper_ctx.fillStyle = "blue";
+                paper_ctx.fill();
+
+            }
+            else {
+                alert("해당 canvas는 최신 브라우저에서만 보입니다. ie,chrome,safari,opera 등을 최신버전으로 업데이트 해주세요");
+            }
+        }
+        /*
+            function draw_paper() : 함수 선언 
+            
+            var paper_canvas = document.getElementById("paper");
+            paper_canvas라는 변수를 선언하고, 그 변수의 값은 문서안의 id를 검색하여 찾고 그 값은 paper 이다.
+
+            var paper_ctx = paper_canvas.getContext("2d");
+            paper_ctx 라는 변수를 선언하고 그 변수의 값은 paper_canvas 변수값에 드로잉컨텍스트(getContext("2d");) 를 생성한것.
+
+            paper_ctx.beginPath();
+            경로시작을 선언
+
+           1. 250x250 사각형을 4곳으로 분할하여 배치.
+
+           2. 큰원 하나 그려서 중앙 배치 및 배경은 white. globalAlpha의 영향으로 아래 작은 원까지 투명도 처리.
+
+           3. 작은원 하나 그려서 중앙 배치 배경은 blue
+
+
+            if else : paper_canvas 변수의 드로잉객체 가 처리가 안될경우 alert을 띄워라.
+        */
+    </script>
+
+</head>
+<body onload="draw_paper()">
+    <canvas id="paper" width="500" height="500">
+
+    </canvas>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CANVAS</title>
+    <style>
+        canvas{border:1px solid #999;}
+    </style>
+    <script type="text/javascript">
+        function draw_paper() {
+            var paper_canvas = document.getElementById("paper");
+            if (paper_canvas.getContext) {                
+                var paper_ctx = paper_canvas.getContext("2d");
+                var img = new Image();
+                img.onload = function () {
+                    paper_ctx.drawImage(img,20,0,330,400,10,10,330,400)
+                }
+                img.src = 'images/sample_op.jpg';	
+				
+				var img2 = new Image();
+				img2.onload = function(){
+					paper_ctx.drawImage(img2,0,0)
+				}
+				img2.src = 'images/photo_frame.png';
+				
+			
+               
+            }
+            else {
+                alert("해당 canvas는 최신 브라우저에서만 보입니다. ie,chrome,safari,opera 등을 최신버전으로 업데이트 해주세요");
+            }
+        }
+        /*
+            function draw_paper() : 함수 선언 
+            
+            var paper_canvas = document.getElementById("paper");
+            paper_canvas라는 변수를 선언하고, 그 변수의 값은 문서안의 id를 검색하여 찾고 그 값은 paper 이다.
+
+            var paper_ctx = paper_canvas.getContext("2d");
+            paper_ctx 라는 변수를 선언하고 그 변수의 값은 paper_canvas 변수값에 드로잉컨텍스트(getContext("2d");) 를 생성한것.
+
+            var img = new Image(); ------------------ 이미지가 들어갈 새 Image객체를 만든다.
+                img.onload = function () { 
+                    paper_ctx.drawImage(img,10,10)
+                } ----------------- 이미지 로딩과 상관없이 이미지를 그릴 수 있게, onload 이벤트와 함께 drawImage(img변수명, x축위치, y축위치, w, h) 를 설정하여 함수로 묶어 실행한다. 
+                
+                img.src = 'images/sample_op.jpg';---- 이미지의 경로를 알려주어 이미지를 로드하게끔 도와준다.
+
+            var img3 = new Image();
+            img3.onload = function () {
+                paper_ctx.drawImage(img3, 0, 0, 150, 150, 10, 816, 150, 150)
+            }
+
+            img3변수에 img3(images/sample_op.jpg) 파일을 x축0, y축0 에서부터 w150 만큼 h150만큼 잘라내고, x축10, y축 816만큼 떨어진 곳에서 w150, h150 크기로 그려내라.
+                
+            
+
+            if else : paper_canvas 변수의 드로잉객체 가 처리가 안될경우 alert을 띄워라.
+        */
+    </script>
+
+</head>
+<body onload="draw_paper()">
+    <canvas id="paper" width="500" height="1000">
+
+    </canvas>
+
+</body>
+</html>

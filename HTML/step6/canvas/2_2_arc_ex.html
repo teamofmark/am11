@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CANVAS</title>
+    <style>
+        canvas{border:1px solid #999;}
+    </style>
+    <script type="text/javascript">
+        function draw_paper() {
+            var paper_canvas = document.getElementById("paper");
+            if (paper_canvas.getContext) {
+                var paper_ctx = paper_canvas.getContext("2d");
+                //왼쪽귀
+                paper_ctx.beginPath();
+                paper_ctx.arc(70, 70, 20, 0, (Math.PI / 180) * 60, true);
+                paper_ctx.stroke();
+                
+                //오른쪽귀
+                paper_ctx.beginPath();
+                paper_ctx.arc(140, 70, 20, (Math.PI / 180) * 110, (Math.PI / 180) * 170, true);
+                paper_ctx.stroke();
+
+                //얼굴
+                paper_ctx.beginPath();
+                paper_ctx.arc(105, 110, 40, 0, Math.PI * 2, true);
+                paper_ctx.fill();
+            }
+            else {
+                alert("해당 canvas는 최신 브라우저에서만 보입니다. ie,chrome,safari,opera 등을 최신버전으로 업데이트 해주세요");
+            }
+        }
+        /*
+            function draw_paper() : 함수 선언 
+            
+            var paper_canvas = document.getElementById("paper");
+            paper_canvas라는 변수를 선언하고, 그 변수의 값은 문서안의 id를 검색하여 찾고 그 값은 paper 이다.
+
+            var paper_ctx = paper_canvas.getContext("2d");
+            paper_ctx 라는 변수를 선언하고 그 변수의 값은 paper_canvas 변수값에 드로잉컨텍스트(getContext("2d");) 를 생성한것.
+
+            paper_ctx.beginPate();
+            경로시작을 선언
+
+            paper_ctx.arc(x , y,  r,  startDeg, endDeg, anticlockwise); 
+            paper_ctx.arc(70, 70, 20, 0, (Math.PI / 180) * 60, true);
+            x로 70, y로70 의 좌표점에서 시작하여 anticlockwise:true에 의해 반시계 방향으로 반지름 20(r)의 원을 그린다.
+            그 원의 시작 각도는 0도, 끝나는 각도는 60도
+
+            why? (Math.PI / 180) * 60 = 60?
+
+            1radian 은 180 / Math.PI  = 57.29deg 이다.
+
+            그렇기 때문에 60deg은 (Math.PI / 180) * 60 = 1.04radien 이 된다.
+
+            deg(각도)로 적을수 없고, 라디언으로 표현해야 하기 때문에, 저렇게 수식으로 표현한다.            
+            
+
+            //오른쪽귀
+                paper_ctx.beginPath();
+                paper_ctx.arc(140, 70, 20, (Math.PI / 180) * 110, (Math.PI / 180) * 170, true);
+                paper_ctx.stroke();
+
+                : x로140, y로 70의 좌표점에서 시작하여, 110도 지점에서 시작하여, 170도에 끝나는 점까지 반 시계 방향으로 원을 그린다.
+
+            //얼굴
+                paper_ctx.beginPath();
+                paper_ctx.arc(105, 110, 40, 0, Math.PI*2, true);
+                paper_ctx.fill();
+
+                :x로105, y로110, 반지름40의 원을 0도에서 360도(2Math.PI)로 원을 반시계방향으로 그린다.
+
+
+            if else : paper_canvas 변수의 드로잉객체 가 처리가 안될경우 alert을 띄워라.
+        */
+    </script>
+
+</head>
+<body onload="draw_paper()">
+    <canvas id="paper" width="500" height="300">
+
+    </canvas>
+
+</body>
+</html>

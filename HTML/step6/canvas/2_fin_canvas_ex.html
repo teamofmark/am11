@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CANVAS</title>
+    <style>
+        canvas{border:1px solid #999;}
+    </style>
+    <script type="text/javascript">
+        function draw_paper() {
+            var paper_canvas = document.getElementById("paper");
+            if (paper_canvas.getContext) {
+                var paper_ctx = paper_canvas.getContext("2d");
+                
+                //배경원판
+                paper_ctx.beginPath();
+                paper_ctx.arc(100, 100, 100, 0, 2 * Math.PI, true);
+                paper_ctx.fill();
+
+                //위삼각형
+                paper_ctx.beginPath();
+                paper_ctx.moveTo(100, 25);
+                paper_ctx.lineTo(155, 150);
+                paper_ctx.lineTo(55, 150);
+                paper_ctx.closePath();
+                paper_ctx.strokeStyle = "rgb(255,255,0)";
+                paper_ctx.stroke();
+
+                //그위 사각형
+                paper_ctx.moveTo(100, 100);
+                paper_ctx.fillRect(90, 90, 25, 25);
+                paper_ctx.fillStyle = "rgb(255,255,255)";
+            }
+            else {
+                alert("해당 canvas는 최신 브라우저에서만 보입니다. ie,chrome,safari,opera 등을 최신버전으로 업데이트 해주세요");
+            }
+        }
+        
+    </script>
+
+</head>
+<body onload="draw_paper()">
+    <canvas id="paper" width="500" height="300">
+
+    </canvas>
+
+</body>
+</html>

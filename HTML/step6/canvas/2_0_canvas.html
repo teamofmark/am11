@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CANVAS</title>
+    <style>
+        canvas{border:1px solid #999;}
+    </style>
+    <script type="text/javascript">
+        function draw_paper() {
+            var paper_canvas = document.getElementById("paper");
+            if (paper_canvas.getContext) {
+                var paper_ctx = paper_canvas.getContext("2d");
+                paper_ctx.fillStyle = "rgba(200,0,0,0.5)";
+                paper_ctx.fillRect(10, 10, 100, 100);
+            }
+            else {
+                alert("해당 canvas는 최신 브라우저에서만 보입니다. ie,chrome,safari,opera 등을 최신버전으로 업데이트 해주세요");
+            }
+        }
+        /*
+            function draw_paper() : 함수 선언 
+            
+            var paper_canvas = document.getElementById("paper");
+            paper_canvas라는 변수를 선언하고, 그 변수의 값은 문서안의 id를 검색하여 찾고 그 값은 paper 이다.
+
+            var paper_ctx = paper_canvas.getContext("2d");
+            paper_ctx 라는 변수를 선언하고 그 변수의 값은 paper_canvas 변수값에 드로잉컨텍스트(getContext("2d");) 를 생성한것.
+
+            paper_ctx.fillStyle = "rgba(200,0,0,0.5)";
+            paper_ctx 에서 발생되는 드로잉컨텐츠의 색상은 RED:200의 값을 갖고 불투명도 50%를 갖는다.
+
+            paper_ctx.fillRect(10,10,100,100);
+            paper_ctx에서 사각형을 그리는데, 그값은 x좌표에서 10, y좌표에서 10만큼 이동한 곳에서 그려지는 width:100에 height:100의 정사각형 이다.
+
+            if else : paper_canvas 변수의 드로잉객체 가 처리가 안될경우 alert을 띄워라.
+        */
+    </script>
+
+</head>
+<body onload="draw_paper()">
+    <canvas id="paper" width="500" height="300">
+
+    </canvas>
+
+</body>
+</html>

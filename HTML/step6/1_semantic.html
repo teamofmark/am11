@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<title>semantic Web Tag</title>
+</head>
+
+<body>
+    <header>
+	    페이지 상단 로고, 네비게이션 등이 들어가는 header.
+        혹은 header의 상단부분 (제목, 설명) 역시 들어 갈 수 있다.
+        텍스트로 제목을 넣을 때에는 h태그를 활용하도록 한다.
+        사이트의 로고 등이 이곳에 적합하다. (global요소)
+    </header>
+    <!--hgroup은 html5에서 제거 되었지만, 아직 많은 브라우저에서 사용이 된다. 조건은 두개이상의 h태그를 넣는것이 조건이다. 참고-->
+    <nav>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+        네비게이션이 들어가는 nav.
+        독립적으로 사용하거나 각 시멘틱 안 (header, section, footer, aside)에 넣어 사용도 가능하다.
+    </nav>
+    <section>
+        <h2>section에는 머릿글을 넣어줘야 한다.</h2>
+	    일반적인 컨텐츠 그룹(명확히 내용이 구분되는 그룹) 이 들어가는 section.
+        <article>
+            <h3>
+                그 자체로 이해 될수있고, 독립적으로 취급되는 문서만 들어 갈 수 있는 article. 머릿글을 넣어줘야 한다.
+            </h3>
+            (신문기사, 블로그게시물, 포럼게시물 등)
+            <time datetime="2017-05-19T10:08:05+09:00">2016년 8월 8일</time>
+            <!--time안에 기입하는 날짜와 시간은 사람에게 전달하는 목적을 띄고, datetime이라는 속성은 각 디바이스들이 받아들이는 값이다.
+            T를 기준으로 날짜와 시간을 구분하여 입력한다. 끝에 +로 타임존정보(협정세계시) 를 표기한다. -->
+        </article>
+    </section>
+
+    <aside>
+	    전체적으로 사용하는 글로벌 요소중 우측 이나 좌측에 있는
+        메뉴, 배너 등의 전반적인 컨텐츠가 들어가는 aside (선택적 global요소)
+    </aside>
+
+    <footer>
+	    저작권정보, 회사주소, 개인정보 취급방침 등의 하단 글로벌 요소
+        가 들어가는 footer (global요소)
+    </footer>
+    <!--버릴 태그 dialog(브라우저특성많이탐), -->
+</body>
+</html>

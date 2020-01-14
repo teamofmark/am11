@@ -1,0 +1,43 @@
+body{
+    width: 70%; margin:0 auto;
+}
+ul{
+    padding:0; display: block; list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    cursor: pointer;
+}
+ul li:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+
+ul li:first-child{
+    border-bottom: 5px solid violet;
+    background-color: #505050;
+}
+ul li:last-child{
+    border-bottom: 5px solid violet;
+}
+
+
+
+
+ul li span{
+    display: block; float:left; font-size: 14px;
+    text-transform: capitalize; color: #999; padding:15px 2%;
+    box-sizing: border-box;
+}
+ul li span:nth-child(odd){
+    width: 15%;
+}
+/*15+5+15+5 = 40*/
+
+ul li span:nth-child(2){
+    width: 50%;
+}
+/*40 + 5 = 45*/
+
+ul li span:last-child{
+    width: 20%;
+}

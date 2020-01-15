@@ -11,31 +11,40 @@ body,h1,h2,p{
 }
 
 .remLayout header{
-    padding: 2rem; background-color: #ff6767; margin-bottom: 0.625rem;
+    background-color: #ff6767;
 }
 
-.remLayout header h1{
-    font-size:2rem;
+.remLayout > *{
+    padding: 2rem;
 }
-.remLayout header p{
-    font-size: 0.75rem;;
+.remLayout > :not(footer),
+.remLayout > *:not(footer) > :not(p){
+    margin-bottom: 0.625rem;
 }
-
-.remLayout article{
-    padding: 2rem; margin-bottom: 0.625rem; background-color:#5ab8ff;
+.remLayout > *:not(footer) > :last-child{
+    line-height: 1rem;
 }
-.remLayout article h2{
-    font-size: 1.5rem; margin-bottom: 0.625rem;
-}
-.remLayout article p{
+.remLayout > * > *:not(h1),
+.remLayout > * > *:not(h2){
     font-size: 0.75rem;
 }
 
+.remLayout header h1{
+    font-size: 2rem;
+}
+
+.remLayout article{
+    background-color:#5ab8ff;
+}
+.remLayout article h2{
+    font-size: 1.5rem;
+}
+
 .remLayout footer{
-    padding: 2rem; background-color: #7eff81; text-align: center;
+    background-color: #7eff81; text-align: center;
 }
 .remLayout footer a{
-    font-size: 0.75rem; text-decoration: none; color: #000;
+    text-decoration: none; color: #000;
 }
 
 

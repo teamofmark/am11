@@ -92,3 +92,31 @@ div{
     /*
         ! opacity의 값은 객체의 투명도를 설정 하며 0 ~ 1 로 규정 할 수 있고 1/100 % 로 표현된다.
     */
+
+.widthProperty{
+    width: 500px; margin:0 auto; background-color:#fc9393;
+    padding: 20px; border: 10px solid #93c5fc;
+}
+
+.boxsizingProperty div{
+    width: 500px; margin:0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty .content_Box{
+    box-sizing: content-box;
+}
+.boxsizingProperty .border_Box{
+    box-sizing: border-box;
+}
+/*
+    * content-box 속성은 기본적으로 적용되는(default)값, 안의 공간을 해당 width로 잡고 밖에 padding,border를 추가
+    * 계산 하여 총 width를 구하는 방식.
+    * border-box 속성은 전체 크기를 먼저 width로 잡고 안의 padding, border를 나중에 계산하는 방식
+
+    ? content-box : box in width + padding + border = width
+    ? border-box : width = box in width - (padding + border)
+*/
+
+.shadowProperty h1{
+    
+}

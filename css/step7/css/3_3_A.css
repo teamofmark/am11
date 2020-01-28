@@ -18,15 +18,19 @@ transform-style:preserve-3d;
 		}
 	}
 	
-	div span{width:200px; height:100px;
+	div span{
+		width:200px; height:100px;
 		position:absolute;
 		left:0; top:0;
 		opacity:0.5;
 	}
 	
-	div span:first-of-type{background-color:red; transform-origin:left top;}
-	div span:nth-of-type(2){background-color:green; transform-origin:left top;
-	transform:rotateY(60deg);
+	div span:first-of-type{
+		background-color:red; transform-origin:left top;
+	}
+	div span:nth-of-type(2){
+		background-color:green; transform-origin:left top;
+		transform:rotateY(60deg);
 	}
 	div span:last-of-type{background-color:blue; transform-origin:right top; 
 	width:100px; transform:rotateY(-60deg);

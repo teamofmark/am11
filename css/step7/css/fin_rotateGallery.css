@@ -42,7 +42,7 @@ section .moveMent{
 
 section .moveMent .pic{
     position: absolute; left:0; top:0; margin-left: -107px;
-
+    backface-visibility: hidden; transform-style: preserve-3d;
 }
 /*
 	backface-visibility로 뒷부분이 투영되는 효과를 막는다. (이면 가시성 - 이면을 보여주거나(visible) 숨김(hidden))
@@ -82,3 +82,21 @@ section .moveMent .pic:nth-child(9){
 section .moveMent .pic:nth-child(10){
     transform:rotateY(324deg) translateZ(-370px);
 }
+/*
+    총 10열이 움직여야 함으로 초기값을 0' 부터 36' 씩 증산하여 계산한다. translateZ로 깊이를 설정 하는데 perspective가 활성화 되어야 유관 식별이 가능하다.
+    (translateZ- 안으로 들어간 목마, translateZ+ 밖으로 나온 목마)
+*/
+section .moveMent .pic .cell{
+    width: 215px; height: 121px; margin-bottom: 20px;
+    transition: all 0.5s ease-in-out; 
+}
+section .moveMent .pic .cell:hover{
+    transform:scale(1.2) translateZ(50px);
+}
+section .moveMent .pic .cell img{
+    opacity: 0.5;
+}
+section .moveMent .pic .cell:hover img{
+    opacity: 1;
+}
+ /*cell에 오버가 되었을때, cell의 스케일을 1.2배 하고, 깊이는 50px로 하여 튀어나오게 만든다.*/

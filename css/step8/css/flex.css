@@ -130,6 +130,9 @@
     flex-shrink: 2;
     flex-basis: 150px;
 }
+
+
+
 .flexContainer.flexShortHand .flexItem:first-child~*{
     /* *ex. 1
     flex-grow: 1;

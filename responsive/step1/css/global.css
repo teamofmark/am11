@@ -1,14 +1,35 @@
-
 html{
-    background-color: orange; color: white; font-weight: bold;
+    font-weight:bold;
 }
 h1{
-    font-size: 1rem; text-align: center; line-height: 2rem;
+    line-height:2rem;
 }
 p{
-    font-size: 0.75rem; text-align: center; line-height: 1rem;
+    line-height:1rem;
 }
-
+/* All Device - All UsingCSS */
+@media screen and (max-width:767px){
+    html{
+        color:white; 
+    }
+    h1{
+        font-size:1rem; text-align:center; 
+    }
+    p{
+        font-size:0.75rem; text-align:center; 
+    }
+}
+@media screen and (max-width:767px) and (orientation:landscape){
+	html{
+        background-color:orange; 
+    }
+}
+	
+@media screen and (max-width:767px) and (orientation:portrait){
+	html{
+        background-color:red;
+    }
+}
 
 /* 
     todo mobileDevice - 사용자 해상도가 768px 이하일 때 이 코드가 실행 
@@ -20,35 +41,35 @@ p{
         background-color: greenyellow; color: white; font-weight: bold;
     }
     h1{
-        font-size: 2rem; text-align: right; line-height: 3rem;
+        font-size: 2rem; text-align: right;
     }
     p{
-        font-size: 1rem; line-height: 1.5rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait){
     html{
-        background-color: red; color: white; font-weight: bold;
+        background-color: red; color: white;
     }
     h1{
-        font-size: 1rem; text-align: center; line-height: 2rem;
+        font-size: 1rem; text-align: center;
     }
     p{
-        font-size: 0.75rem; text-align: center; line-height: 1rem;
+        font-size: 0.75rem; text-align: center; 
     }
 }
 /* *Tablet Device - 사용자 해상도가 768px 이상 1025px 이하 일 때 이 코드가 실행됨.  태블릿 코드를 작성한다.*/
 
 @media screen and (min-width:1025px){
     html{
-        background-color: blue; color: white; font-weight: bold;
+        background-color: blue; color: white;
     }
     h1{
-        font-size: 2rem; line-height: 3rem;
+        font-size: 2rem;
     }
     p{
-        font-size: 1rem; text-align: right; line-height: 1.5rem;
+        font-size: 1rem; text-align: right;
     }
 }
 /* *Desktop Device - 사용자 해상도가 1025 이상일 때 이 코드가 실행.*/

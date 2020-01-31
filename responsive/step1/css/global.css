@@ -1,17 +1,9 @@
 html{
-    font-weight:bold;
-}
-h1{
-    line-height:2rem;
-}
-p{
-    line-height:1rem;
+    color:white; 
 }
 /* All Device - All UsingCSS */
+
 @media screen and (max-width:767px){
-    html{
-        color:white; 
-    }
     h1{
         font-size:1rem; text-align:center; 
     }
@@ -38,7 +30,7 @@ p{
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
     html{
-        background-color: greenyellow; color: white; font-weight: bold;
+        background-color: greenyellow; font-weight: bold;
     }
     h1{
         font-size: 2rem; text-align: right;
@@ -50,7 +42,7 @@ p{
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait){
     html{
-        background-color: red; color: white;
+        background-color: red;
     }
     h1{
         font-size: 1rem; text-align: center;
@@ -63,7 +55,7 @@ p{
 
 @media screen and (min-width:1025px){
     html{
-        background-color: blue; color: white;
+        background-color: blue;
     }
     h1{
         font-size: 2rem;

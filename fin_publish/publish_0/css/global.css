@@ -1,0 +1,20 @@
+@media screen and (min-width: 1024px){
+    body{
+        max-width: 1900px; margin:0 auto;
+    }
+    header{
+        border-top:10px solid #2ecc71;
+        position: relative;
+    }
+    header > img{
+        width: 100%;
+    }
+    header div{
+        position: absolute; left: 20%; top: 21%;
+    }
+    header div p{
+        font-size: 24px; color: #fff; line-height: 36px;
+        margin-bottom: 15px;
+    }
+    /* header Fin */
+}

@@ -149,5 +149,33 @@ ul, ol{
         background:rgba(255,255,255,0.5) url("../images/btn_send.png") no-repeat center center;
         width: 72px; height: 47px; border: none; text-indent: -9999px;
     }
-
+    footer > div div ul{
+        padding-top: 25px;
+    }
+    footer > div div ul li{
+        display: inline-block;
+    }
+    footer > div div ul li a{
+        display: block; text-indent: -9999px;
+        width: 35px; height: 35px; background-repeat: no-repeat;
+        background-size: contain;
+    }
+    footer > div div ul li:nth-child(1){
+        background-image: url("../images/ico_sns01.png");
+    }
+    footer > div div ul li:nth-child(2){
+        background-image: url("../images/ico_sns02.png");
+    }
+    footer > div div ul li:nth-child(3){
+        background-image: url("../images/ico_sns03.png");
+    }
+    footer > div div ul li:nth-child(4){
+        background-image: url("../images/ico_sns04.png");
+    }
+    footer > div div ul li:nth-child(5){
+        background-image: url("../images/ico_sns05.png");
+    }
+    footer > div div ul li:nth-child(6){
+        background-image: url("../images/ico_sns06.png");
+    }
 }

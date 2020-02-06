@@ -1,11 +1,17 @@
 .btn_more,
 header div nav ul li a,
 header div ul li p,
+body > figure figcaption p,
+section.videoArea h2,
+section.expArea ul li > *,
 footer > div *:not(img){
     font-family: 'Roboto';
 }
 
-header div ul li h2{
+header div ul li h2,
+body > figure figcaption h2,
+section.expArea h2,
+section.expArea p{
     font-family: 'Playfair Display';
 }
 
@@ -18,7 +24,16 @@ ul, ol{
 /* All Using CSS */
 
 @media screen and (min-width: 1025px){
+    body > figure,
+    section.expArea,
+    footer > div{
+        width: 940px; margin:0 auto; padding: 70px 0;
+    }
     
+    section > hr{
+        width: 50px; border-top:2px solid #c6c4c9;
+        margin: 0 auto 50px auto;
+    }
 
     .btn_more{
         display: block; max-width: 120px; text-align: center;
@@ -177,5 +192,18 @@ ul, ol{
     }
     footer > div div ul li:nth-child(6){
         background-image: url("../images/ico_sns06.png");
+    }
+    footer > div div:last-child{
+        width: 100%; clear: left; position: relative;
+    }
+    footer > div div:last-child a{
+        font-size: 14px; margin-left: 30px; color: white;
+        display: inline-block;
+    }
+    footer > div div:last-child a:first-child{
+        margin-left: 0;
+    }
+    footer > div div:last-child p{
+        position: absolute; right:0; top:0; line-height: 14px;
     }
 }

@@ -1,0 +1,93 @@
+
+@media screen and (min-width:1025px){
+    body > figure:after{
+        content:''; display: block; visibility: hidden; clear: both;
+    }
+    body > figure img{
+        float: left;
+    }
+    body > figure figcaption{
+        margin-left: 330px; display: block; width: 540px;
+    }
+    body > figure figcaption > *:not(a){
+        margin-bottom: 30px;
+    }
+    body > figure figcaption h2{
+        font-size: 22px; font-weight: 900;
+    }
+    body > figure figcaption p{
+        font-size: 14px; line-height: 22px; font-weight: 300;
+    }
+    /* * CI Fin */
+
+    section.videoArea{
+        background: url("../images/bg_02.png") no-repeat left top;
+        background-size: cover; padding: 200px 0;
+    }
+    section.videoArea a{
+        width: 45px; display: block; border: 3px solid white;
+        color: white; font-size: 45px; text-align: center;
+        margin:0 auto 35px auto;
+        padding: 18px 18px 25px 25px; border-radius: 47px;
+    }
+    section.videoArea h2{
+        text-align: center; font-size: 16px; font-weight: 900;
+        color: white;
+    }
+    /* * videoArea Fin */
+
+    section.expArea > *{
+        text-align: center;
+    }
+    section.expArea h2{
+        font-size: 22px; font-weight: 900; color: #413d4b;
+        margin-bottom: 10px;
+    }
+    section.expArea p{
+        font-size: 14px; color: #2f2d35; font-weight: 400;
+        margin-bottom: 10px;
+    }
+    section.expArea ul:after{
+        content:''; display:block; visibility: hidden; clear: both;
+    }
+    section.expArea ul li{
+        float: left; width: 310px; box-sizing: border-box;
+        padding: 120px 30px 40px 30px;
+        background-repeat: no-repeat; background-position: center 30px;
+    }
+    section.expArea ul li > *{
+        font-size: 14px;
+    }
+    section.expArea ul li h3{
+        font-weight: 900; margin-bottom: 20px;
+    }
+    section.expArea ul li p{
+        font-weight: 300; line-height: 22px;
+    }
+    section.expArea ul li:nth-child(1n):nth-child(-n+3){
+        border-bottom: 1px solid #ebebeb;
+    }
+    section.expArea ul li:nth-child(3n+2){
+        border-left:1px solid #ebebeb;
+        border-right:1px solid #ebebeb;
+    }
+    section.expArea ul li:nth-child(1){
+        background-image: url("../images/ico_01.png");
+    }
+    section.expArea ul li:nth-child(2){
+        background-image: url("../images/ico_02.png");
+    }
+    section.expArea ul li:nth-child(3){
+        background-image: url("../images/ico_03.png");
+    }
+    section.expArea ul li:nth-child(4){
+        background-image: url("../images/ico_04.png");
+    }
+    section.expArea ul li:nth-child(5){
+        background-image: url("../images/ico_05.png");
+    }
+    section.expArea ul li:nth-child(6){
+        background-image: url("../images/ico_06.png");
+    }
+    /* expArea Fin */
+}

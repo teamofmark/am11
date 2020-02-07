@@ -90,4 +90,68 @@
         background-image: url("../images/ico_06.png");
     }
     /* expArea Fin */
+
+    section.teamArea{
+        background: url("../images/bg_03.png") no-repeat left top;
+        background-size: cover;
+    }
+    section.teamArea h2,
+    section.teamArea p{
+        text-align: center; color: white;
+    }
+    section.teamArea h2{
+        font-size: 22px; margin-bottom: 10px; font-weight: 900;
+        padding-top: 70px;
+    }
+    section.teamArea > p{
+        font-size: 14px; line-height: 21px; margin-bottom: 10px;
+    }
+    section.teamArea div ul{
+        margin-bottom: 70px;
+    }
+    section.teamArea div ul li{
+        display: inline-block; width: 220px; margin-left: 14px;
+    }
+    section.teamArea div ul li:first-child{
+        margin-left: 0;
+    }
+    section.teamArea div ul li figure{
+        background: url("https://via.placeholder.com/220x230") no-repeat left top;
+        background-size: contain;
+        padding-top: 230px;
+    }
+    section.teamArea div ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 20px 0;
+    }
+    section.teamArea div ul li figure figcaption dl > *{
+        color: white; text-align: center;
+    }
+    section.teamArea div ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px; 
+    }
+    section.teamArea div ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300;
+    }
+    section.teamArea div ul + p{
+        margin-bottom: 25px; text-align: center; color: white;
+    }
+    section.teamArea div a.btn_more{
+        margin: 0 auto;
+    }
+    /* teamArea Fin */
+
+    section.worksArea{
+        padding-bottom: 70px;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 900; position: relative;
+        color: #413d4b;
+    }
+    section.worksArea h2 a{
+        font-size: 14px; font-weight: 300; color: #413d4b;
+        position: absolute; right:0; top: 70px;
+    }
+    
+
 }

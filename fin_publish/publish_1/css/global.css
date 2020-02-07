@@ -4,6 +4,8 @@ header div ul li p,
 body > figure figcaption p,
 section.videoArea h2,
 section.expArea ul li > *,
+section.teamArea div ul li figure figcaption dl > *,
+section.teamArea div p,
 footer > div *:not(img){
     font-family: 'Roboto';
 }
@@ -11,7 +13,9 @@ footer > div *:not(img){
 header div ul li h2,
 body > figure figcaption h2,
 section.expArea h2,
-section.expArea p{
+section.expArea p,
+section.teamArea h2,
+section.teamArea > p{
     font-family: 'Playfair Display';
 }
 
@@ -26,6 +30,8 @@ ul, ol{
 @media screen and (min-width: 1025px){
     body > figure,
     section.expArea,
+    section.teamArea div,
+    section.worksArea h2,
     footer > div{
         width: 940px; margin:0 auto; padding: 70px 0;
     }

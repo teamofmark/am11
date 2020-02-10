@@ -31,7 +31,230 @@ a{
 ul, ol{
     list-style: none;
 }
+header div nav input[type='checkbox']{
+    display: none;
+}
 /* All Using CSS */
+
+@media screen and (max-width: 767px){
+    body > figure,
+    section.expArea,
+    section.teamArea div,
+    section.worksArea h2,
+    section.contactArea,
+    footer > div{
+        max-width: 500px; margin:0 auto; padding: 70px 0;
+    }
+    
+    section > hr{
+        width: 50px; border-top:2px solid #c6c4c9;
+        margin: 0 auto 50px auto;
+    }
+
+    .btn_more{
+        display: block; max-width: 120px; text-align: center;
+        padding: 15px; border:1px solid #00e0d0;
+        color: #00e0d0; font-weight: 900;
+    }
+
+    header{
+        padding: 15px 0 70px 0;
+        background: url("../images/bg_01.png") no-repeat left top;
+        background-size: cover;
+    }
+    header div{
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+    header div h1{
+        min-width: 130px;
+        width: 35%; float: left;
+    }
+    header div h1 a{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav{
+        float: left;
+        /* ! line-height: 50px; padding-left: 130px; */
+        margin: 3% 0 0 10%; width: 50%;
+    }
+    header div nav .mui{
+        display: block;
+        margin-left: auto;
+    }
+    header div nav label.mui{
+        padding: 3px 3px 0 3px;
+        bordeR: 1px solid white; width: 20px; cursor: pointer;
+    }
+    header div nav label.mui span{
+        border-top: 3px solid white; display: block;
+        margin-bottom: 3px;
+    }
+    header div nav label.mui + input[type='checkbox']#mnav{
+        display: none;
+    }
+    header div nav label.mui + input[type='checkbox']#mnav:checked + ul{
+        height: 300px; padding-top: 20px;
+    }
+    header div nav ul{
+        height: 0; overflow: hidden;
+        transition-duration: 2s;
+    }
+    header div nav ul li{
+        display: block; margin-bottom: 20px; text-align: right;
+    }
+    header div nav ul li a{
+        font-size: 13px; font-weight: 900; color: white;
+        display: block;
+    }
+    header div nav ul li a:hover,
+    header div nav ul li a.active{
+        color: #00e0d0;
+    }
+    /* * header nav fin */
+    header div > ul{
+        margin-bottom: 125px;
+    }
+    header div ul li h2{
+        text-align: center;
+        font-size: 32px;  color: white; font-weight: 900;
+        padding: 165px 0 20px 0; margin-bottom: 30px;
+        background: url("../images/bd_01.png") no-repeat center bottom;
+    }
+    header div ul li p{
+        font-size: 14px; line-height: 24px; color: white;
+        text-align: center; padding: 0 85px; margin-bottom: 55px;
+        font-weight: 300;
+    }
+    header div ul li a.btn_more{
+        margin:0 auto;
+    }
+
+    header div ol{
+        margin: 0 auto;
+        width: 60px;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px; width: 10px; height: 10px;
+        border-radius: 5px; border: 1px solid white;
+        box-sizing: border-box;
+    }
+    header div ol li a:hover,
+    header div ol li a.active{
+        background-color: #00e0d0;
+        border-color: #00e0d0;
+    }
+    /* header fin */
+
+    footer{
+        background: url("../images/bg_05.png") no-repeat left top;
+        background-size: cover;
+    }
+    footer > div:after{
+        content:''; display: block; visibility: hidden; clear: both;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        width: 45%; float: left; margin:0 0 70px 10%;
+    }
+    footer > div div:first-child{
+        margin-left: 0;
+    }
+    footer > div div:first-child h2{
+        margin-bottom: 30px; line-height: 0;
+    }
+    footer > div div:not(:first-child) h2{
+        font-size: 15px; color: white; font-weight: 900;
+        line-height: 55px; margin-bottom: 25px;
+    }
+    footer > div div p,
+    footer > div div address span{
+        font-size: 14px; line-height: 26px; color: white;
+        font-weight: 300; 
+    }
+    footer > div div address span{
+        display: block; padding-left: 30px;
+        font-style: normal;
+    }
+    footer > div div address span a{
+        color: white; display: block; line-height: 40px;
+    }
+    footer > div div address span:first-of-type{
+        background: url("../images/bul_map.png") no-repeat left 5px;
+    }
+    footer > div div address span:nth-of-type(2){
+        background: url("../images/bul_phone.png") no-repeat left 11px;
+    }
+    footer > div div:nth-of-type(3){
+        clear: both;
+        margin-bottom: 70px;
+    }
+    footer > div div:nth-of-type(3) > *{
+        display: inline-block; vertical-align: middle;
+    }
+    footer > div div:nth-of-type(3) h2{
+        margin:0 5% 0 0;
+    }
+    footer > div div input[type='email']{
+        background-color: transparent; padding: 15px;
+        border: 1px solid rgba(255,255,255,0.5);
+        margin-right: 5px; font-weight: 300;
+    }
+    footer > div div input[type='submit']{
+        background:rgba(255,255,255,0.5) url("../images/btn_send.png") no-repeat center center;
+        width: 72px; height: 47px; border: none; text-indent: -9999px;
+    }
+    footer > div div ul{
+        padding-top: 0;
+        margin-left: 5%;
+    }
+    footer > div div ul li{
+        display: inline-block;
+    }
+    footer > div div ul li a{
+        display: block; text-indent: -9999px;
+        width: 35px; height: 35px; background-repeat: no-repeat;
+        background-size: contain;
+    }
+    footer > div div ul li:nth-child(1){
+        background-image: url("../images/ico_sns01.png");
+    }
+    footer > div div ul li:nth-child(2){
+        background-image: url("../images/ico_sns02.png");
+    }
+    footer > div div ul li:nth-child(3){
+        background-image: url("../images/ico_sns03.png");
+    }
+    footer > div div ul li:nth-child(4){
+        background-image: url("../images/ico_sns04.png");
+    }
+    footer > div div ul li:nth-child(5){
+        background-image: url("../images/ico_sns05.png");
+    }
+    footer > div div ul li:nth-child(6){
+        background-image: url("../images/ico_sns06.png");
+    }
+    footer > div div:last-child{
+        width: 100%; clear: left; position: relative;
+        margin-left: 0; box-sizing: border-box;
+    }
+    footer > div div:last-child a{
+        font-size: 14px; margin-left: 30px; color: white;
+        display: inline-block;
+    }
+    footer > div div:last-child a:first-child{
+        margin-left: 0;
+    }
+    footer > div div:last-child p{
+        position: absolute; right:0; top:0; line-height: 14px;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     body > figure,

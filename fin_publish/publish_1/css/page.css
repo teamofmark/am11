@@ -244,4 +244,14 @@
     }
     /* contactArea Left Fin */
     
+    section.contactArea div ul li{
+        width: 50%; float: left; margin-bottom: 15px;
+    }
+    section.contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea div ul li a img{
+        width: 100%; max-width: 162px;
+    }
+    
 }

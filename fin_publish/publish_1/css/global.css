@@ -157,7 +157,7 @@ header div nav input[type='checkbox']{
         background: url("../images/bg_05.png") no-repeat left top;
         background-size: cover;
     }
-    footer > div:after{
+    /* footer > div:after{
         content:''; display: block; visibility: hidden; clear: both;
     }
     footer > div div:not(:nth-of-type(3)){
@@ -165,13 +165,13 @@ header div nav input[type='checkbox']{
     }
     footer > div div:first-child{
         margin-left: 0;
-    }
+    } */
     footer > div div:first-child h2{
-        margin-bottom: 30px; line-height: 0;
+        margin-bottom: 25px; line-height: 0;
     }
     footer > div div:not(:first-child) h2{
         font-size: 15px; color: white; font-weight: 900;
-        line-height: 55px; margin-bottom: 25px;
+        line-height: 55px; margin-bottom: 20px;
     }
     footer > div div p,
     footer > div div address span{
@@ -195,12 +195,13 @@ header div nav input[type='checkbox']{
         clear: both;
         margin-bottom: 70px;
     }
-    footer > div div:nth-of-type(3) > *{
+    footer > div div:nth-of-type(3) > *:not(h2){
         display: inline-block; vertical-align: middle;
+        margin-bottom: 25px;
     }
-    footer > div div:nth-of-type(3) h2{
+    /* footer > div div:nth-of-type(3) h2{
         margin:0 5% 0 0;
-    }
+    } */
     footer > div div input[type='email']{
         background-color: transparent; padding: 15px;
         border: 1px solid rgba(255,255,255,0.5);

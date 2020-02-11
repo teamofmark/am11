@@ -211,10 +211,10 @@ header div nav input[type='checkbox']{
         background:rgba(255,255,255,0.5) url("../images/btn_send.png") no-repeat center center;
         width: 72px; height: 47px; border: none; text-indent: -9999px;
     }
-    footer > div div ul{
+    /* footer > div div ul{
         padding-top: 0;
         margin-left: 5%;
-    }
+    } */
     footer > div div ul li{
         display: inline-block;
     }
@@ -242,18 +242,11 @@ header div nav input[type='checkbox']{
         background-image: url("../images/ico_sns06.png");
     }
     footer > div div:last-child{
-        width: 100%; clear: left; position: relative;
-        margin-left: 0; box-sizing: border-box;
+        text-align: center;
     }
     footer > div div:last-child a{
-        font-size: 14px; margin-left: 30px; color: white;
-        display: inline-block;
-    }
-    footer > div div:last-child a:first-child{
-        margin-left: 0;
-    }
-    footer > div div:last-child p{
-        position: absolute; right:0; top:0; line-height: 14px;
+        font-size: 14px; margin-bottom: 10px; color: white;
+        display: block;
     }
 }
 

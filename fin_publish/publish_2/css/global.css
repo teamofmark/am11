@@ -93,5 +93,46 @@ input[type='checkbox']{
     .paging > a:last-of-type{
         right: 0; top: 0; border-left: 1px solid #f0f2f7;
     }
+    .paging ol{
+        padding:20px 17%; box-sizing: border-box; text-align: center;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; font-size: 14px; color: #3a405b;
+        background-color: white; width: 50px; line-height: 50px;
+        border-radius: 25px; transition-duration: 0.5s;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    /* paging Fin */
+
+    footer{
+        background-color: #222328;
+    }
+    footer div{
+        position: relative; box-sizing: border-box;
+    }
+    footer div:first-child{
+        padding: 65px 15px;
+        border-bottom: 1px solid #2d2e33;
+    }
+    footer div:first-child h2,
+    footer div:first-child span{
+        position: absolute;
+    }
+    footer div:first-child h2{
+        left: 15px; top: 65px;
+    }
+    footer div:first-child ul{
+        text-align: center;  padding: 0 130px;
+        box-sizing: border-box;
+    }
+    footer div:first-child ul li{
+        display: inline-block; margin-left: 25px;
+    }
+
 }
 /* pc */

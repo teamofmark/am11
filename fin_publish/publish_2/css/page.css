@@ -33,4 +33,60 @@
         border-width:0 1px; border-style:solid; border-color: #f0f2f7;
         background: url("../images/bul_search.png") no-repeat 5% center;
     }
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+        line-height: 0;
+    }
+    section.slideArea > div{
+        position: relative;
+    }
+    section.slideArea > div > a{
+        display: block; position: absolute; width: 42px; line-height:42px;
+        border-radius: 21px; color: white; border: 1px solid #494b4f;
+        font-size: 18px; text-align: center; z-index: 10;
+    }
+    section.slideArea > div > a.btn_conL{top: 45%; left: 0;}
+    section.slideArea > div > a.btn_conR{top: 45%; right: 0;}
+    section.slideArea > div ol{
+        position: absolute; left: 50%; bottom: 10%; z-index: 1;
+    }
+    section.slideArea > div ol li{
+        display: inline-block;
+    }
+    section.slideArea > div ol li a{
+        display: block; width: 8px; height: 8px; border-radius: 4px;
+        border: 1px solid white; text-indent: -9999px;
+    }
+    section.slideArea > div ol li a:hover,
+    section.slideArea > div ol li a.active{
+        background-color: white;
+    }
+    section.slideArea > div ul{
+        z-index: 0;
+    }
+    section.slideArea > div ul li{
+        display: block;
+    }
+    section.slideArea > div ul li figure{
+        position: relative;
+    }
+    section.slideArea > div ul li figure img{
+        width: 100%; min-height: 500px;
+    }
+    section.slideArea > div ul li figure figcaption{
+        position: absolute; color: white; left: 100px;
+        top: 100px; width: 460px;
+    }
+    section.slideArea > div ul li figure figcaption dl dt{
+        font-size: 42px; line-height: 50px; font-weight: 900;
+        margin-bottom: 30px;
+    }
+    section.slideArea > div ul li figure figcaption dl dd{
+        font-size: 16px; line-height: 24px; margin-bottom: 60px;
+    }
+    section.slideArea > div ul li figure figcaption input[type='button']{
+        background-color: #2754eb; width: 165px; line-height: 42px;
+        font-size: 11px; border: none; color: white; border-radius: 21px;
+    }
+    /* slide Fin */
 }

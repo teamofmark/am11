@@ -1,0 +1,36 @@
+@media screen and (min-width: 1280px){
+    nav{
+        background-color: white;
+    }
+    nav .slideNav:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    nav .slideNav > *{
+        float: left;
+    }
+    nav .slideNav ul{
+        width: 83%; position: relative;
+    }
+    nav .slideNav ul li{
+        display: inline-block; margin-left: 2.5%;
+    }
+    nav .slideNav ul li:first-child{
+        margin-left: 0;
+    }
+    nav .slideNav ul li:last-child{
+        position: absolute; right: 30px;
+    }
+    nav .slideNav ul li a{
+        font-size: 11px; color: #b9bed1;
+        padding: 25px 0; display: block;
+    }
+    nav .slideNav ul li a:hover,
+    nav .slideNav ul li a.active{
+        color: #343e5c;
+    }
+    nav .slideNav input[type='search']{
+        width: 17%; padding: 22px 2.5% 22px 5%;
+        border-width:0 1px; border-style:solid; border-color: #f0f2f7;
+        background: url("../images/bul_search.png") no-repeat 5% center;
+    }
+}

@@ -18,7 +18,8 @@ input[type='checkbox']{
 /* All Using CSS */
 
 @media screen and (min-width: 1280px){
-    header > div{
+    header > div,
+    nav .slideNav{
         width: 1170px; margin:0 auto;
     }
 
@@ -133,6 +134,46 @@ input[type='checkbox']{
     footer div:first-child ul li{
         display: inline-block; margin-left: 25px;
     }
-
+    footer div:first-child ul li:first-child{
+        margin-left: 0;
+    }
+    footer div:first-child ul li a{
+        display: block; color: white; font-size: 12px;
+    }
+    footer div:first-child span{
+        right: 15px; top: 65px;
+    }
+    footer div:first-child span a{
+        text-indent: -9999px; display: inline-block; width: 24px;
+        height: 18px; margin-left: 10px;
+        background-position: center; background-repeat: no-repeat;
+    }
+    footer div:first-child span a:nth-child(1){
+        background-image: url("../images/sns_twitter.png");
+    }
+    footer div:first-child span a:nth-child(2){
+        background-image: url("../images/sns_book.png");
+    }
+    footer div:first-child span a:nth-child(3){
+        background-image: url("../images/sns_google.png");
+    }
+    footer div:last-child{
+        padding: 55px 15px;
+    }
+    footer div:last-child p{
+        width: 50%; font-size:14px; line-height: 22px;
+        color: rgba(255, 255, 255, 0.3); font-style: italic;
+    }
+    footer div:last-child span{
+        position: absolute; right: 15px; top: 55px;
+        width: 50%; text-align: right;
+    }
+    footer div:last-child span a{
+        font-size: 11px; color: rgba(255, 255, 255, 0.3);
+        display: inline-block;
+    }
+    footer div:last-child span a:first-child{
+        margin-right: 25px;
+    }
 }
 /* pc */

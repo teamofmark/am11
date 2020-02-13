@@ -173,7 +173,81 @@
         padding: 15px 20px; font-size: 13px; color: #343e5c;
         font-weight: 500;
     }
+    .contentArea aside nav ul > li > a:after{
+        content: url("../images/bg_arrow.png");
+        float: right; transform: rotate(-90deg);
+        transition-duration: 0.5s;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol li{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        padding:0 20px; height:0; opacity: 0;
+        border-bottom: 0; font-size: 0px; color: #a1a7bd;
+        transition-duration:0.3s;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        padding:15px 20px; height: 10px; opacity: 1;
+        font-size: 11px; border-bottom: 1px solid #dfe4ee;
+    }
+    .contentArea aside nav ul > li:hover ol li:last-child a{
+        border-bottom: none;
+    }
+    /*aside Nav Fin*/
 
+    .contentArea aside fieldset{
+        padding-top: 35px; background-color: white; border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .contentArea aside fieldset:last-of-type{
+        margin-bottom: 0;
+    }
+    .contentArea aside fieldset legend{
+        width: 100%; font-size: 11px; color: #343e5c;
+        padding: 0 20px 15px 20px; border-bottom: 1px solid #f0f2f7;
+        box-sizing: border-box; position: relative; top: 35px;
+    }
+    .contentArea aside fieldset legend a{
+        position: absolute; right: 20px; top:0; color: #2754eb;
+        border-bottom: 2px solid #c9d4fa;
+    }
+    .contentArea aside fieldset label{
+        display: inline-block; padding-left: 55px;
+        font-size: 13px; color: #343e5c; cursor: pointer;
+    }
+    .contentArea aside fieldset label,
+    .contentArea aside fieldset span{
+        line-height: 55px;
+    }
+    .contentArea aside fieldset span{
+        font-size: 11px; color: #bdbfd3;
+    }
+    .contentArea aside fieldset input[type='radio'] + label{
+        background: url("../images/off_radio.png") no-repeat 27px center;
+        width: 175px;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url("../images/on_radio.png");
+    }
+
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url("../images/off_check.png") no-repeat 27px center;
+        width: 175px;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url("../images/on_check.png");
+    }
+    .contentArea aside fieldset:last-child input[type='radio']+label{
+        width:76px;
+        border-right:2px solid #f0f2f7;
+    }
+    .contentArea aside fieldset:last-child input[type='radio'] + label:last-child{
+        border-right:none;
+    }
+    /*aside Fin*/
 
 
 }

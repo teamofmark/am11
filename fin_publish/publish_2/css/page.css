@@ -89,4 +89,91 @@
         font-size: 11px; border: none; color: white; border-radius: 21px;
     }
     /* slide Fin */
+
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 10px;
+        padding:0 20px;
+        margin-bottom: 30px;
+    }
+    .contentArea > form fieldset > *:not([type='checkbox']){
+        display: inline-block; vertical-align: middle;
+    }
+    .contentArea > form fieldset label,
+    .contentArea > form fieldset select{
+        font-size: 11px; padding: 23px 0;
+    }
+    .contentArea > form fieldset label{
+        color: #a1a7bd; margin-left: 25px;
+    }
+    .contentArea > form fieldset label:first-of-type,
+    .contentArea > form fieldset label:nth-of-type(2){
+        margin-left: 0;
+    }
+    .contentArea > form fieldset label:nth-of-type(2){
+        padding-left: 25px; border-left: 2px solid #f2f2f2;
+    }
+    .contentArea > form fieldset input{
+        padding: 10px 15px; border: 1px solid #e3e8f0;
+        background-color: #f0f2f7; border-radius: 20px;
+    }
+    .contentArea > form fieldset input[type='search']#sb_keywords{
+        width: 160px;
+    }
+    .contentArea > form fieldset input[id^='range']{
+        width: 60px; color: #343e5c;
+    }
+    .contentArea > form fieldset span.selectBox select{
+        display: block; color: #343e5c;
+        border: none; box-shadow: none; background-color: transparent;
+        background-image: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    .contentArea > form fieldset span.selectBox{
+        background: url("../images/bg_arrow.png") no-repeat right center;
+    }
+    .contentArea > form fieldset span.sbSelect{
+        width: 90px; margin: 0 20px 0 45px;
+    }
+    .contentArea > form fieldset span.shipSelect{
+        width: 45px; margin: 0 0 0 45px;
+    }
+    .contentArea > form fieldset input[type='checkbox'] + label{
+        color: #343e5c; font-size: 13px; border-right: 2px solid #f2f2f2;
+        background-color: transparent; padding: 21px 40px 21px 25px;
+        transition-duration: 0.5s;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label{
+        background: url("../images/bul_check.png") no-repeat left center;
+    }
+    /* sort By Fin */
+
+    .contentArea aside{
+        width: 23%; float: left; margin-right: 2%;
+        font-weight: 500;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .contentArea aside nav ul > li{
+        display: block;
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li:last-child{
+        border-bottom: none;
+    }
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li > a{
+        padding: 15px 20px; font-size: 13px; color: #343e5c;
+        font-weight: 500;
+    }
+
+
+
 }

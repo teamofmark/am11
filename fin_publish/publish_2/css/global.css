@@ -13,14 +13,15 @@ a{
 }
 input[type='radio'],
 input[type='checkbox']{
-    display: none;
+    display: none !important;
 }
 /* All Using CSS */
 
 @media screen and (min-width: 1280px){
     header > div,
     nav .slideNav,
-    section.slideArea > div{
+    section.slideArea > div,
+    .contentArea{
         width: 1170px; margin:0 auto;
     }
 

@@ -17,11 +17,431 @@ input[type='checkbox']{
 }
 /* All Using CSS */
 
+@media screen and (max-width:767px) {
+    header > div,
+     nav .slideNav,
+    section.slideArea > div,
+    .contentArea,
+    .bestArea,
+    section.tosayArea > div,
+    footer div {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    header {
+        border-bottom: 1px solid #f0f2f7;
+        background-color:white;
+    }
+
+    header > div:after{content:''; display:block; clear:both; visibility:hidden;}
+    header > div > *{
+        font-weight:500;
+        float:left;
+    }
+    header > div label{display:block; width:15%; padding:40px 0; text-align:center;}
+    
+    header > div input[type='checkbox']#mui+nav{
+        height:0;
+        overflow:hidden;
+        transition-duration:0.75s;
+    }
+    header > div input[type='checkbox']#mui:checked+nav{
+        height:180px;
+    }
+    /*burger Fin*/
+
+    header > div h1{ 
+        width:70%;
+        text-align:center;
+        box-sizing:border-box;
+    }
+    header > div h1 a{
+        display:block; 
+        padding:33px 0px;
+    }
+    header > div h1 a img{
+        max-width:130px;
+    }
+
+    header > div nav{
+        position:absolute;
+        top:94px;
+        padding-left:5%;
+        width:55%;
+        background-color:white;
+    }
+    header > div nav ul li{
+        margin-left:0;
+        display:block;
+    }
+    header > div nav ul li a{
+        display:block;
+        padding:10px 0;
+        font-size:14px;
+        color:#343e5c;
+    }
+
+    header > div div{
+        width:15%;
+        font-size:11px;
+        color:#343e5c;
+        padding:25px 0;
+    }
+    header > div div strong{
+        display:none;
+    }
+    header > div div span{
+        display:none;
+    }
+    header > div div input[type='button']{
+        width:100%;
+        padding:10px 0;
+        background-color:white;
+        border-radius:20px;
+        border:2px solid #e3e8f0;
+        font-size:11px;
+    }
+    /*header > div Fin*/
+
+    .paging{
+        position:relative;
+        background-color:white;
+        border-radius:5px;
+        clear:both;
+    }
+    .paging > a{
+        position:absolute;
+        width:16%;
+        line-height:90px;
+        text-align:center;
+        font-size:18px;
+        font-weight:500;
+    }
+    .paging > a:first-child{
+        left:0;
+        top:0;
+        border-right:1px solid #f0f2f7;
+    }
+    .paging > a:nth-child(2){
+        right:0;
+        top:0;
+        border-left:1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding:20px 17%;
+        box-sizing:border-box;
+        text-align:center;
+    }
+    .paging ol li{
+        display:inline-block;
+    }
+    .paging ol li a{
+        display:block;
+        font-size:14px;
+        color:#3a405b;
+        line-height:50px;
+        width:50px;
+        background-color:white;
+        border-radius:25px;
+        transition-duration:0.5s;
+    }
+    .paging ol li a:hover{
+        box-shadow:0 5px 20px #dfe0e5;
+    }
+    /*paging Fin*/
+
+    footer{background-color:#222328;}
+    footer div{position:relative; box-sizing:border-box;}
+    footer div:first-child{
+        padding:65px 15px;
+        border-bottom:1px solid #2d2e33;
+    }
+    footer div:last-child{
+        padding:55px 15px;
+    }
+    footer div:first-child h2, footer div:first-child span{
+        position:absolute;
+    }
+    footer div:first-child h2{
+        left:15px; top:65px;
+    }
+    footer div:first-child ul{
+        text-align:center;
+        padding:0 130px;
+        box-sizing:border-box;
+    }
+    footer div:first-child ul li{
+        display:block;
+        margin-bottom:15px;
+    }
+    footer div:first-child ul li a{
+        display:block; color:white; font-size:12px;
+    }
+    footer div:first-child span{
+        right:15px; top:65px;
+     }
+    footer div:first-child span a{
+        text-indent:-9999px;
+        display:inline-block;
+        width:24px; height:18px;
+        margin-left:10px;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    footer div:first-child span a:first-child{
+        background-image:url(../images/sns_tw.png);
+    }
+    footer div:first-child span a:nth-child(2){
+        background-image:url(../images/sns_book.png);
+    }
+    footer div:first-child span a:last-child{
+        background-image:url(../images/sns_gg.png);
+    }
+    footer div:last-child p{
+        width:50%;
+        font-size:14px;
+        line-height:22px;
+        color:rgba(255,255,255,0.3);
+        font-style:italic;
+    }
+    footer div:last-child span{
+        position:absolute;
+        right:15px;
+        top:55px;
+        width:40%;
+    }
+
+    footer div:last-child span a {
+        font-size: 11px;
+        color: rgba(255,255,255,0.3);
+        display: inline-block;
+    }
+
+        footer div:last-child span a{
+            margin-bottom: 15px;
+        }
+        footer div:last-child span a:last-child{
+            margin-bottom:0;
+        }
+}
+/*mobile*/
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    header > div,
+     nav .slideNav,
+    section.slideArea > div,
+    .contentArea,
+    .bestArea,
+    section.tosayArea > div,
+    footer div {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+    header {
+        border-bottom: 1px solid #f0f2f7;
+        background-color:white;
+    }
+
+    header > div:after{content:''; display:block; clear:both; visibility:hidden;}
+    header > div > *, header > div nav ul li{
+        font-weight:500;
+        float:left;
+    }
+    header > div label{display: none;}
+    header > div label:before{display: none;}
+    /*burger Fin*/
+
+    header > div h1{
+        max-width:130px; 
+        width:15%;
+        box-sizing:border-box;
+    }
+    header > div h1 a{
+        display:block; 
+        padding:33px 10px; 
+        box-sizing:border-box;
+        text-align:center;
+    }
+    header > div h1 a img{
+        width:100%;
+    }
+
+    header > div nav{margin-left:5%; width:55%;}
+    header > div nav ul li{
+        margin-left:2%;
+    }
+    header > div nav ul li:first-child{
+        margin-left:0;
+    }
+    header > div nav ul li a{
+        display:block;
+        padding:40px 0;
+        font-size:14px;
+        color:#343e5c;
+    }
+
+    header > div div{
+        width:25%;
+        font-size:11px;
+        color:#343e5c;
+        padding:29px 0;
+        text-align: right;
+    }
+    header > div div strong{
+        display:inline-block;
+        line-height:18px;
+    }
+    header > div div span{
+        width:24px;
+        line-height:24px;
+        text-align:center;
+        border-radius:12px;
+        margin-left:5px;
+        background-color:#e3e8f0;
+        display:inline-block;
+    }
+    header > div div input[type='button']{
+        padding:10px 15px;
+        background-color:white;
+        border-radius:20px;
+        border:2px solid #e3e8f0;
+        font-size:11px;
+    }
+    /*header > div Fin*/
+
+    .paging{
+        position:relative;
+        background-color:white;
+        border-radius:5px;
+        clear:both;
+    }
+    .paging > a{
+        position:absolute;
+        width:16%;
+        line-height:90px;
+        text-align:center;
+        font-size:18px;
+        font-weight:500;
+        color: #3a405b;
+    }
+    .paging > a:first-child{
+        left:0;
+        top:0;
+        border-right:1px solid #f0f2f7;
+    }
+    .paging > a:nth-child(2){
+        right:0;
+        top:0;
+        border-left:1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding:20px 17%;
+        box-sizing:border-box;
+        text-align:center;
+    }
+    .paging ol li{
+        display:inline-block;
+    }
+    .paging ol li a{
+        display:block;
+        font-size:14px;
+        color:#3a405b;
+        line-height:50px;
+        width:50px;
+        background-color:white;
+        border-radius:25px;
+        transition-duration:0.5s;
+    }
+    .paging ol li a:hover{
+        box-shadow:0 5px 20px #dfe0e5;
+    }
+    /*paging Fin*/
+
+    footer{background-color:#222328;}
+    footer div{position:relative; box-sizing:border-box;}
+    footer div:first-child{
+        padding:65px 15px;
+        border-bottom:1px solid #2d2e33;
+    }
+    footer div:last-child{
+        padding:55px 15px;
+    }
+    footer div:first-child h2, footer div:first-child span{
+        position:absolute;
+    }
+    footer div:first-child h2{
+        left:15px; top:65px;
+    }
+    footer div:first-child ul{
+        text-align:center;
+        padding:0 130px;
+        box-sizing:border-box;
+    }
+    footer div:first-child ul li{
+        display:inline-block;
+        margin-left:25px;
+    }
+    footer div:first-child ul li:first-child{
+        margin-left:0;
+    }
+    footer div:first-child ul li a{
+        display:block; color:white; font-size:12px;
+    }
+    footer div:first-child span{
+        right:15px; top:65px;
+     }
+    footer div:first-child span a{
+        text-indent:-9999px;
+        display:inline-block;
+        width:24px; height:18px;
+        margin-left:10px;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    footer div:first-child span a:first-child{
+        background-image:url(../images/sns_tw.png);
+    }
+    footer div:first-child span a:nth-child(2){
+        background-image:url(../images/sns_book.png);
+    }
+    footer div:first-child span a:last-child{
+        background-image:url(../images/sns_gg.png);
+    }
+    footer div:last-child p{
+        width:50%;
+        font-size:14px;
+        line-height:22px;
+        color:rgba(255,255,255,0.3);
+        font-style:italic;
+    }
+    footer div:last-child span{
+        position:absolute;
+        right:15px;
+        top:55px;
+    }
+
+    footer div:last-child span a {
+        font-size: 11px;
+        color: rgba(255,255,255,0.3);
+        display: inline-block;
+    }
+
+        footer div:last-child span a:first-child {
+            margin-right: 25px;
+        }
+}
+/*tablet*/
+
 @media screen and (min-width: 1280px){
     header > div,
     nav .slideNav,
     section.slideArea > div,
-    .contentArea{
+    .contentArea,
+    .bestArea,
+    section.tosayArea > div,
+    footer div{
         width: 1170px; margin:0 auto;
     }
 

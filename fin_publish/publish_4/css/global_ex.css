@@ -1,0 +1,115 @@
+﻿ul,ol{
+  list-style: none;
+}
+
+.thoughtfulArea span strong {
+  font-family: "Source Sans Pro";
+  font-weight: 200;
+}
+
+.heartArea div p:nth-child(2),
+.bunchArea h2,
+.bunchArea p,
+section.thinkArea h2,
+section.simplicArea h2,
+section.thinkArea p,
+section.simplicArea p,
+.thoughtfulArea h2,
+.thoughtfulArea p,
+.thoughtfulArea span,
+section.getArea h2,
+section.getArea p {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+}
+
+.heartArea div p:last-child,
+.heartArea footer span,
+section.thinkArea ul li,
+section.simplicArea ul li,
+section.getArea ul li dl dd {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+}
+
+.heartArea div p:last-child strong,
+.heartArea footer span strong,
+section.getArea p strong {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+}
+
+.heartArea header nav ul li a,
+.heartArea div form input[type="button"],
+section.getArea form input[type="button"],
+section.getArea ul li dl dt {
+  font-family: "Raleway";
+}
+
+.heart {
+  background-image: url(../images/bg_01.jpg);
+}
+.bunch {
+  background-image: url(../images/bg_02.jpg);
+}
+.thoughtful {
+  background-image: url(../images/bg_04.jpg);
+}
+
+@media screen and (max-width: 768px){
+  .bg {
+    background-size: cover;
+    background-position: center; /* todo */
+    background-repeat: no-repeat;
+    min-width: 370px; /* todo */
+  }
+  
+  .heartArea,
+  section.thinkArea,
+  .bunchArea,
+  section.simplicArea,
+  .thoughtfulArea,
+  section.getArea {
+    min-width: 370px; /* todo */
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+  } 
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bg {
+    background-size: cover;
+    background-position: center; /* todo */
+    background-repeat: no-repeat;
+    min-width: 768px; /* todo */
+  }
+  
+  .heartArea,
+  section.thinkArea,
+  .bunchArea,
+  section.simplicArea,
+  .thoughtfulArea,
+  section.getArea {
+    min-width: 768px; /* todo */
+    margin: 0 auto;
+    padding: 0 5%;/* todo */
+    box-sizing: border-box;/* todo */
+  } 
+}
+@media screen and (min-width: 1440px){
+  .bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1420px;
+  }
+  
+  .heartArea,
+  section.thinkArea,
+  .bunchArea,
+  section.simplicArea,
+  .thoughtfulArea,
+  section.getArea {
+    width: 1420px;
+    margin: 0 auto;
+  } 
+}

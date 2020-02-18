@@ -30,13 +30,20 @@
 */
 
 
-// todo.1 자신이 가장 좋아하는 숫자를 favorNumber 변수에 담아 출력하라.
+// todo.1 자신이 가장 좋아하는 숫자를 favorNumber 변수에 담아 출력 및 자료형판단.
 var favorNumber = 3;
 
 
-// todo.2 자신의 영어이름을 engName 변수에 담아 출력하라. 그리고 자료유형을 판별해보자.
+// todo.2 자신의 영어이름을 engName 변수에 담아 출력 및 자료형판단.
 var engName = "Mark";
 
-// todo.3 현재 자신이 춥다,아니다를 cold 변수에 담아 출력하라.
+// todo.3 현재 자신이 춥다,아니다를 cold 변수에 담아 출력 및 자료형판단.
 
 var cold = false;
+
+// todo.4 test 변수를 선언하고 초기화 하지 않은 상태에서 출력 및 자료형판단.
+
+var test;
+
+// todo.5 obj 변수에 객체를 담을 예정이니 null로 초기화해서 출력.
+var obj = null;

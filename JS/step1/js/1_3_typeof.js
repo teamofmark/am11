@@ -28,3 +28,15 @@
 
     ! 이외 함수(function), 객체(object) 등이 존재.
 */
+
+
+// todo.1 자신이 가장 좋아하는 숫자를 favorNumber 변수에 담아 출력하라.
+var favorNumber = 3;
+
+
+// todo.2 자신의 영어이름을 engName 변수에 담아 출력하라. 그리고 자료유형을 판별해보자.
+var engName = "Mark";
+
+// todo.3 현재 자신이 춥다,아니다를 cold 변수에 담아 출력하라.
+
+var cold = false;

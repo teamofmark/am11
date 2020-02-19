@@ -73,6 +73,10 @@ function stringtoNumb(){
 
 // *case.5-1 background-color red
 
+function bgColorRed(){
+    var bgColor = 0xf00;
+    $("body").css("background-color", "#"+bgColor.toString(16));
+}
 
 // *case.5-2 background-color random (1초마다)
 
@@ -85,3 +89,62 @@ function bgColorRandom(){
         $("body").css("background-color", "#" + bgColor);
     }, 1000);
 }
+
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? parse
+    * 1. parseInt(value); - 정수 형
+    * 2. parseFloat(value); - 실수 형
+    
+    ? Number
+    * Number(value); - 정수 형,실수 형
+
+    ? typeof
+    * typeof(value); 자료형 판별
+*/
+
+function numbString(){
+    var test = '300';
+    var result = parseInt(test) + 10;
+    console.log('result = ' + result);
+}
+// todo.1 변수 test 에 들어있는 숫자 100을 문자 형으로 변형. result에 대입하라.
+
+// todo. 1-1 암시적 형변환
+
+function todo1(){
+    var test = 100;
+    var result = ? ;
+    console.log(typeof(result) + " = " + result);
+} 
+
+// todo. 1-2 string 사용.
+
+function todo2(){
+    var test = 100;
+    var result = ? ;
+    console.log(typeof(result) + " = " + result);
+} 
+
+// todo. 1-3 toString 사용.
+
+function todo3(){
+    var test = 100;
+    var result = ? ;
+    console.log(typeof(result) + " = " + result);
+} 
+
+
+
+// todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들어라.
+
+function todo4(){
+    var test = "100.50";
+    var result = test + 150 + "20";
+    console.log("result = " + result);
+}
+
+// todo.2-1 parse 사용
+
+// todo. 2-2 Number 사용

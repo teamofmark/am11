@@ -39,3 +39,41 @@ function namePrint500(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+
+// todo.3 js 엔진처럼 생각해보자.
+
+function thinkJS(){
+    for (var i = 0; i < 10; i++){ //? 10보다 작을때 (0 ~ 9) 까지만 반복수행
+        document.write("i =" + i, "<br>"); //? 반복에 따라 0 ~ 9번까지 출력.
+    } //? i가 10이되는 순간 break.
+    document.write("종료 i = " + i); //? 이미 변경된 상태의 10이 출력.
+}
+
+// * exp.2 1 - 10 까지 출력되는 반복문을 직접 짜보자.
+
+function answer1(){
+    for (var i = 0; i < 10; i++){
+        document.write((i + 1) + "<br>");
+    }
+}
+function answer2(){
+    for (var i = 1; i <= 10; i++){
+        document.write(i + "<br>");
+    }
+}
+function answer3(){
+    for (var i = 100; i < 110; i++){//? 110보다 작거나 같을때 (100~109)까지만 반복 수행
+        document.write((i-99) + "<br>");//?1~10번 까지 출력
+    }
+}
+function answer4(){
+    for (var i = 1; i <= 10; i+=2){ //? 10보다 작거나 같을때 (1~10)까지 만 반복 수행, 단 루프가 끝난후 i에 2를 더함.(증감부)
+        document.write(i + "<br>");//? 1, 3, 5, 7, 9 (증감이 이루어 지지 않은 iteration)
+        document.write((i+1) + "<br>");//? 2, 4, 6, 8, 10 (증감이 이루어 진 이후 iteration)
+    }
+}
+function answer5(){
+    for (var i = 10; i>=1; i--){//? 1보다 크거나 같을때 (10~1)까지 만 반복 수행.
+        document.write((11-i) + "<br>");//? 1~10번 까지 출력
+    }
+}

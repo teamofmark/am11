@@ -24,6 +24,24 @@ function switchGrammar(){
 }
 
 // todo.1 lotto 과제를 switch로 변경
+function lotto(){
+    var numbValue = window.prompt("입력하실번호는?");
+
+    switch (numbValue){
+        case "1":
+            alert("1등 10억!");
+            break;
+        case "2":
+            alert("2등 5천만원!");
+            break;
+        case "3":
+            alert("3등 300만원!");
+            break;
+        default:
+            alert("낙첨되었습니다.");
+            break;
+    }
+}
 
 // todo.2 switch 문을 이용한 계산기
 

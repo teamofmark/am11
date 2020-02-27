@@ -140,3 +140,5 @@ function infiniteSum(){
     }
     document.write("총 " + count + "번 실행함.");
 }
+// todo.1 구구단 출력을 함수로 만들기. 
+// todo. (함수실행시 2단 ~ 9단까지 출력. 각 단 상단엔 "x단 출력.");

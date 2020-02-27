@@ -193,7 +193,6 @@ function halfPyramid(){
     }
     document.write(star);//? 반절 피라미드 출력.
 }
-
 // *todo.1 역반절 피라미드
 function reverseHalfPyramid(){ 
     var star = '';

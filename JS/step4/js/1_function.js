@@ -141,4 +141,137 @@ function infiniteSum(){
     document.write("총 " + count + "번 실행함.");
 }
 // todo.1 구구단 출력을 함수로 만들기. 
+function printGugudan(){
+    for (let i = 2; i <= 9; i++) {
+        document.write(i + "단 출력", "<br>");
+        for(var m = 1; m <= 9; m++){
+            document.write(i + "*" + m + "=" +(i*m), "<br>");
+        }
+        document.write("<br>");
+    }
+}
+
 // todo. (함수실행시 2단 ~ 9단까지 출력. 각 단 상단엔 "x단 출력.");
+
+// *exp. 7 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수.
+/*
+    ? 실행구문
+    ? document.write("1 결과 =" + calculator("+", 20, 10));
+    ? document.write("2 결과 =" + calculator("-", 20, 10));
+    ? document.write("3 결과 =" + calculator("*", 20, 10));
+    ? document.write("4 결과 =" + calculator("/", 20, 10));
+    ? document.write("5 결과 =" + calculator("%", 20, 10));
+
+    * 결과 
+    * 결과 = 30
+    * 결과 = 10
+    * 결과 = 200
+    * 결과 = 2
+    * 결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" :
+            result = numb1 + numb2;
+            break;
+        case "-" :
+            result = numb1 - numb2;
+            break;
+        case "*" :
+            result = numb1 * numb2;
+            break;
+        case "/" :
+            result = numb1 / numb2;
+            break;
+        default :
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function calculatorDiv(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" :
+            result = add(numb1, numb2);
+            break;
+        case "-" :
+            result = numb1 - numb2;
+            break;
+        case "*" :
+            result = numb1 * numb2;
+            break;
+        case "/" :
+            result = numb1 / numb2;
+            break;
+        default :
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1,numb2){
+    addResult = numb1 + numb2;
+    return addResult;
+    //! or only return numb1 + numb2;
+}
+//* document.write(add(20, 10) + "<br>");
+
+function sub(numb1,numb2){
+    subResult = numb1 - numb2;
+    return subResult;
+}
+//* document.write(sub(20, 10) + "<br>");
+
+function mul(numb1,numb2){
+    mulResult = numb1 * numb2;
+    return mulResult;
+}
+//* document.write(mul(20, 10) + "<br>");
+
+function div(numb1,numb2){
+    divResult = numb1 / numb2;
+    return divResult;
+}
+//* document.write(div(20, 10) + "<br>");
+
+//* document.write(calculator("+", 20, 10) + "<br>");
+
+// *ex.6 함수를 변수에 담기.
+
+function hello(name){
+    console.log(name + "welcome");
+}
+hello("Mark");
+var func = hello; //? func 라는 변수에 hello라는 함수를 담았다.
+func("Stark"); //? 변수를 호출해서 안에 매개변수를 넣으면 함수가 실행된다.
+
+// *ex.7 매개변수 값으로 함수를 사용하기.
+
+function hi1(){
+    console.log("Hi."); //* hi를 log로 출력
+}
+function hi2(){
+    console.log("안녕.");//* 안녕을 log로 출력
+}
+function execute(func){ //? 넘겨받을때는 그냥 변수.
+    func();//?넘겨받은 매개변수를 함수로 사용.
+}
+execute(hi2); //? func 라는 매개변수에 hi2 함수를 넣음.
+
+// *exp. 8 버튼 클릭 시 매개변수 값으로 넘긴 함수 호출.
+
+function welcome(){
+    alert("환영. 방가와");
+}
+$(document).ready(function(){
+    $("#runEx8").click(welcome);
+})
+
+// *exp. 9 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi. hello");
+    }, 1000);
+} 

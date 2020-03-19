@@ -189,3 +189,28 @@ function divPrint(value){
     document.write("두 수의 나누기는" + value);
 }
 // ! 여기가 로직 출력부.
+
+//! calculatorCallBack("op", numb1, numb2, addPrint); addPrint(처리함수)가 실행되면서 처리부분 실행.
+//? 결과적으로 로직을 구현하는 부분과 처리부분을 나누어 서로를 조립 및 연결 하여 사용할 수있다.
+
+// *ex.5 return 대신 callBack?
+// ? 그렇지 않다. 구현부 와 처리부가 나눠져 있지 않은 단순 값 리턴은 return이 더 효율적이다.
+/* 
+// 기존 단순 리턴.
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write("두 수 합" + result);
+*/
+/*
+// 콜백으로 변환.
+function sum(numb1, numb2, callBack){ 
+    var temp = numb1 + numb2;
+    callBack(temp);//? callBack으로 불려오는 처리부함수의 매개변수로 담김 (ex. result 함수의  value 매개변수에 담김)
+}
+function result(value){
+    document.write("두 수 합" + value);
+}
+sum(10,20,result);
+*/

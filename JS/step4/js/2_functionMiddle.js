@@ -214,3 +214,87 @@ function result(value){
 }
 sum(10,20,result);
 */
+
+// *ex.6 동기 와 비동기 처리
+
+// ?동기 - 함수 호출 이후 끝날 때 까지 다음 구문 수행 안함.
+function sync(){
+    alert('hi');
+    document.write('End Alert');
+}
+
+// ? 비동기 - 함수 호출 이후 끝나는 것과 상관없이 다음 구문 수행.
+function async(){
+    var count = 1;
+
+    setInterval(function(){
+        document.write("2. count = " + count + "<br>");
+    }, 3000);
+
+    document.write("1. 동작과 상관없이 바로 실행");
+}
+
+// *ex.7 클로저
+// ? 함수내부에 만든 지역변수가 사라지지 않고 계속해서 값을 유지하고 있는 상태.
+
+// *일반함수 - 함수내 지역변수가 함수 호출 이후 사라진다.
+
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+
+// *클로저 사용시 - 함수내 지역변수가 사라지지 않고 값을 유지한다.
+function createCount(){
+    var count = 0;
+    
+    function addCount(){
+        count ++;
+        return count;
+    }
+    return addCount;
+}
+
+var counter = createCount(); //? createCount 함수 호출과 동시 지역변수 count 0이 초기화 및 생성. 이후 내부 addCount함수도 생성, 이후 리턴한 후 함수종료
+
+/*
+    ? 왜 그런것인가.
+    createCount 함수가 종료 되더라도 addCount 함수내부에서 count 라는 변수를 사용중인 상태에서 외부로 리턴 되기 때문에 
+    삭제되지 않고 남아있기 때문이다. 이런 현상을 클로저 현상이라고 한다.
+    또한 이런 내부함수를 클로저 함수라고 말한다.
+*/
+
+// * ex. 7-1 사용중인 함수를 리턴해야만 클로저는 아니다.
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start(); //? 1. start 함수 실행. ? btn click.
+        document.write("count Start");
+    });
+});
+function start(){
+    var count = 0; //? 2. count 변수 초기화 및 생성.
+    setInterval(function(){
+        count ++; //? 3. start 함수 내부 setInterval 코어함수 사용중.
+        document.write(count); //? 4. 계속 증가된 count 가 1초 간격으로 출력.
+        //?start 함수가 종료되어도 count 변수가 삭제되지 못한다.
+    }, 1000);
+}
+
+// *ex.7-2 익명함수 클로저
+
+function outerFunction(name) {
+    var output = 'hello' + name + '..!';
+    return function () {
+        return output;
+    };
+}
+// outerFunction 함수 실행 시 output 변수 초기화 및 생성. 이후 익명함수로 지역변수 output을 리턴한다.(클로저)
+
+var first = outerFunction('JS');
+var second = outerFunction('jQ');
+//outerFunction 출력부를 두가지 종류의 전역 변수로 선언.
+ 
+// alert(first());
+// alert(second());
+//각각의 매개변수를 차례로 출력

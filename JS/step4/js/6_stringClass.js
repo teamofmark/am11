@@ -112,3 +112,38 @@ function substrAddText(){
     ! 매개변수 = searchvalue : 찾는 문자, newvalue : 교체문자.
     ! 리턴값 = 찾는 문자를 교체문자로 변경한 값.
 */
+
+// *ex.7 다음 문자열의 ?를 자신의 이름으로 변경.
+
+function changeName(){
+    var data = "hi, ?. welcome";
+    var result = data.replace("?", "Mark");
+    console.log(result);
+}
+
+// *ex.8 "-" 을 제거
+
+function deleteText(){
+    var data = "mark-II";
+    var result = data.slice(0,4)+data.slice(5,7);
+    console.log(result);
+}
+/*
+    ?특정 위치 문자 제거
+    ! 문자추가와 동일.
+*/
+
+$(document).ready(function(){
+    var $numbIn = $("#numbInput");
+    var $numbOut = $("#numbOutput");
+
+    $("#confirm").click(function(){
+        var numbVal = $numbIn.val();
+        var result = money(numbVal);
+        $numbOut.html(numbVal + "=>" + result); 
+    })
+});
+
+function money(metaName){
+
+}

@@ -3,7 +3,12 @@ $(document).ready(function(){
     moveCircle();
 
     // *exp.2 원 움직이기(디테일) detailMoveCircle();
-    
+
+    // *exp.2 ext 원 움직이기(함수그룹화)
+    detailMoveCircleExt();
+
+    // *exp.3 방향키 조작
+    keyControl();
 });
 
 // *exp.1
@@ -73,4 +78,46 @@ function circleMovCommand(xpos, ypos){
             "top" : ypos
         })
     }
+}
+
+function keyControl(){
+    var circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 키 코드" + e.keyCode);
+
+        switch(e.keyCode){
+            case 37 :
+                currentXpos -= range;
+            break;
+            case 38 :
+                currentYpos -= range;
+            break;
+            case 39 :
+                currentXpos += range;
+            break;
+            case 40 :
+                currentYpos += range;
+            break;
+        }
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+        
+        circle.css("left",currentXpos);
+        circle.css("top",currentYpos);
+    });
+
 }

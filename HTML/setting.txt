@@ -1,0 +1,7 @@
+program : visual studio code - google search
+
+extensions
+
+1. korean Language Pack
+2. live server
+3. Material Theme, vscode-icons

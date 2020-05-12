@@ -13,3 +13,7 @@ body{
     background-color: white; color: black; border-style: solid;
     border-color: black;
 }
+.btn.update{
+    background-color: transparent; border-style: dashed;
+    border-color: gray;
+}

@@ -4,7 +4,6 @@ body{
 .classEx1{
     color: red;
 }
-
 .btn{
     padding: 10px 30px;
     border-width: 1px;
@@ -28,4 +27,9 @@ body{
 }
 .btn.cancel{
     color: gray; border-color: gray; border-style: solid;
+}
+
+#userName{
+    background-color: red; border: 1px solid black;
+    font-size: 12px; line-height: 21px;
 }

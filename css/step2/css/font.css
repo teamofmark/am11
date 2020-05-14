@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Roboto:wght@100;300;400;700;900&display=swap');
 /* webfont Load */
+
 body{
     font-family: 'Roboto','Nanum Myeongjo';
+}
+h1{
+    font-size: 20px; line-height: 25px; color: #333;
+}
+/*font가 들어가는 부분은 무조건 line-height를 설정해야 하는데, 그 이유인 즉슨
+block 속성이 아닌 태그들에게 line-height를 지정하지 않게 되면 폰트의 영역이(컨텐츠의 영역이)
+무시되는 경우가 있으며, block 속성이라 하여도, text가 길 경우 줄바꿈이 이루어
+졌을때 윗줄과 아랫줄의 줄간이 없어 글자들이 붙거나 겹치는 현상이 있기때문이다.
+*/
+h2{
+    font-size:15px; line-height:21px; color:#966;
+}
+h3{
+    font-size:13px; line-height:19px; color:#F90;
+}
+
+p.letter{
+    letter-spacing: -1px; /* ?letter-spacing : 자간*/
+}
+p.word{
+    word-spacing: 10px; /* ?word-spacing : 단어간격(space bar 기준)*/
+}
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 21px;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis;
 }

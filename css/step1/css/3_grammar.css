@@ -1,0 +1,19 @@
+body{
+    margin:0; font-size: 12px; color: #60f;
+}
+h1{
+    font-size: 14px; color: #f03;
+}
+img{
+    width: 150px; height: 150px; border: 1px solid #3f3;
+}
+ul, ol, dl{
+    list-style: none;
+}
+/* dl dt{
+    font-size: 35px;
+} */
+dl{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}

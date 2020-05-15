@@ -1,0 +1,16 @@
+html,
+body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.wrap{
+    height: 100%; background-color: skyblue;
+}
+
+p{
+    background-color: #fff; padding: 15px; margin: 0;
+}

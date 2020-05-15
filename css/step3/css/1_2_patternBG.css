@@ -13,3 +13,9 @@ body{
 .wrap p{
     background-color: #0cf; padding: 20px; margin: 0 0 20px 0;
 }
+
+.wrap button{
+    line-height: 75px; color: white; border: none;
+    background: url('../images/pt_ex.png') repeat-x left center;
+    width: 100px;
+}

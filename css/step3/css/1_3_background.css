@@ -1,0 +1,17 @@
+html,
+body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+	/*
+		background-image는 대상의 배경 설정, css3부터는 , 로 구분하여 2개 이상 설정가능
+	*/
+    background-repeat: no-repeat;
+	/*
+		background-repeat는 기본옵션은 repeat, 수직 반복 repeat-y, 수평 반복 repeat-x
+		반복안함은 no-repeat
+    */
+    background-size: 100% 250px, 100% 50px;
+}

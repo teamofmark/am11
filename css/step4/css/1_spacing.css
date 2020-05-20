@@ -14,6 +14,29 @@ body{
 .secondDiv{
     background-color: #ddd; margin: 20px 15px;
 }
+/* 
+    !firstDiv의 margin-bottom: 10px 상쇄.
+    ? secondDiv의 margin-top이 더 크기 때문. (같아도상관없음. 가산이되지않기때문에)
+*/
 .secondDiv article{
     background-color: #930; margin: 10px;
+}
+
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 10px;
+    text-align: center; margin: 0 auto;
+}
+.centerDiv article{
+    margin: 0 10px;
+    background-color: #f33; color: white;
+}
+.paddingDiv{
+    padding: 10px 20px; border: 3px solid #333;
+    background-color: #ff3; width: 100px; box-sizing: border-box;
+}
+/* 
+    ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 width에 가산되지 않는다.  
+*/
+.paddingDiv article{
+    background-color: #039; color: white;
 }

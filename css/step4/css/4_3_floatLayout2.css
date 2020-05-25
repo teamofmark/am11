@@ -7,7 +7,9 @@
 .wrap header{
     background-color: #ff6a00;
 }
-
+.wrap header:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
 .wrap header h1{
     text-align: center; color: white; font-size: 20px;
     line-height: 55px; background-color: red;
@@ -25,4 +27,23 @@
 }
 .wrap header nav ul li a{
     color: white; line-height: 55px; display: block;
+}
+.wrap section:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap section h2{
+    background-color: #0cf;
+}
+.wrap section article{
+    float: left; width: 33.33%; height: 450px;
+}
+.wrap section article h3{
+    color: white; background-color: black;
+}
+.wrap section article ul li{
+    display: block; font-size: 16px; line-height: 35px;
+}
+footer{
+    background-color: #4800ff; color: white; line-height: 55px;
+    text-align: center;
 }

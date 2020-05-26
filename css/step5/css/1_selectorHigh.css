@@ -16,3 +16,17 @@
 .classSelector p.f_color{color:#9cf;}
 
 /*CLASS 선택자 사용법 + 다중 클래스 지정 */
+
+.attrSelector fieldset,
+.attrSelector fieldset legend{
+    border: 1px solid #555; background-color: #c9f;
+}
+.attrSelector ul{
+    margin:0; padding:0; 
+}
+.attrSelector ul li{
+    display: block;
+}
+.attrSelector ul li input[type='text']{
+    background-color: #669; border: 1px solid #00c; color: white;
+}

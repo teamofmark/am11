@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+ul{
+    margin:0; padding:0;
+}
+ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li{
+    display: block; width: 33.33%; float: left;
+    border: 1px solid #1f1f1f; box-sizing: border-box;
+}
+ul li figure{
+    margin: 0;
+}

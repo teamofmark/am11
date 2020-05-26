@@ -27,6 +27,6 @@
 .attrSelector ul li{
     display: block;
 }
-.attrSelector ul li input[type='text']{
+.attrSelector ul li label[for='nameField']{
     background-color: #669; border: 1px solid #00c; color: white;
 }

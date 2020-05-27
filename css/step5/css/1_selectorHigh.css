@@ -27,6 +27,12 @@
 .attrSelector ul li{
     display: block;
 }
-.attrSelector ul li label[for='nameField']{
+.attrSelector ul li input[type='text']{
     background-color: #669; border: 1px solid #00c; color: white;
+}
+.attrSelector ul li input[type='password']{
+    background-color: #fc0; border: 1px dotted #ff0; color: black;
+}
+.attrSelector ul li input[type='radio']{
+    width: 25px; height: 25px;
 }

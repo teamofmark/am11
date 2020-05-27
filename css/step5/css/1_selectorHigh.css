@@ -47,3 +47,53 @@
     구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을
     적용 할 수 있다.
 */
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/*
+    동위 선택자에서 A+B는 A 바로뒤에 위치하는 B를 지목하고,
+    A~B는 A뒤에있는 B모두를 선택한다.
+*/
+.activeSelector h1{
+    font-size: 24px; color: black; cursor: pointer;
+}
+.activeSelector h1:hover{
+    font-size: 35px; color: #336; text-decoration: underline;
+}
+
+.statusSelector input[type='checkbox'] + label{
+    overflow: hidden; display: inline-block; vertical-align: middle;
+    height: 25px; transition-duration: 0.75s;
+    -ms-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -moz-transition-duration:1s;
+    -o-transition-duration:1s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='text']:disabled{
+    background-color: deeppink; color: black;
+}
+/*
+input 상태에 따라 대상을 작동 시킬 수 있다.
+1. checkbox의 상태가 checked 일 경우 바로 뒤에 label을 height:0px로 만든다.
+(상태옵션은 :checked 체크된 input 상태 , :focus 초점이 맞춰진 input 상태 , 
+:enabled 사용가능한 input 상태, :disabled 사용 불가능한 input 상태)
+
+2. label의 기본설정을 잡는다. 이 부분에서 height의 값이 있어야만 에니메이션이
+일어난다.
+또한 display옵션을 block 계열로 잡아야하며, overflow의 값은 hidden으로 설정
+해둔다.(사라지는값)
+
+3.벤더프리픽스를 통해 각 브라우저별 애니메이션을 설정한다.
+
+-p.s- 크로스브라우징을 해야 할 때, 모든 브라우저를 테스트 하지말고,
+ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하게 적용 된다. 
+*/

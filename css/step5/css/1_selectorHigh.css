@@ -36,3 +36,14 @@
 .attrSelector ul li input[type='radio']{
     width: 25px; height: 25px;
 }
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; display: block;
+}
+/*
+    구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을
+    적용 할 수 있다.
+*/

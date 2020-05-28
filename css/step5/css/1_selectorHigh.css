@@ -116,3 +116,27 @@ ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하�
 .normalSelector ul li:nth-child(2n){
     background-color: #09f;
 }
+.shapeSelector h1:first-of-type{color: #30f;}
+.shapeSelector h2:nth-of-type(2){color: #0c6;}
+.shapeSelector h3:last-of-type{color: #f06;}
+
+/*
+    * first-of-type, last-of-type은 형제 관계중 첫 번째 혹은 마지막으로 
+    * 등장하는 지정된 태그를 선택마지막으로 등장하는 특정 태그를 선택한다.
+    * nth-child와 마찬가지로 수열을 사용 할 수 있다.
+    * 또한 전체선택자인 * 와 혼용하여 body > *:first-of-type{color:red} 이런식의 범위 지정도
+    * 가능하다.
+*/
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: #30f;
+}
+.textSelector p:first-line{
+    color: #0c6; line-height: 30px; font-size: 25px;
+    text-decoration: underline;
+}
+/*
+    문자 선택자
+    ::first-letter (:로도 작동 되지만, ::가 정석) 는 앞 글자만 선택 할 때 사용한다.
+    ::first-line 첫번째 줄만을 선택 한다.
+*/

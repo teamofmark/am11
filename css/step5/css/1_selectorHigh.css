@@ -97,3 +97,22 @@ input 상태에 따라 대상을 작동 시킬 수 있다.
 -p.s- 크로스브라우징을 해야 할 때, 모든 브라우저를 테스트 하지말고,
 ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하게 적용 된다. 
 */
+.normalSelector ul{
+    overflow: hidden; list-style: none;
+}
+
+.normalSelector ul li{
+    margin: 0; padding: 15px; float: left;
+}
+.normalSelector ul li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.normalSelector ul li:last-child{
+    border-radius: 0 10px 10px 0;
+}
+.normalSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.normalSelector ul li:nth-child(2n){
+    background-color: #09f;
+}

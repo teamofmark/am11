@@ -194,3 +194,10 @@ ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 �
     *  |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
     *  $= : 해당 단어로 끝나는 대상 선택.
 */
+
+.sameAttrSelector input[type ^= "sub"]{
+    background-color: red; color: white;
+}
+.sameAttrSelector h2[title ^= '남자']{
+    background-color: red; color: white;
+}

@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+article{
+    max-width: 1000px; /*? min-width*/
+    margin-bottom: 30px;
+}
+article:after{
+    content: ''; display: block; visibility: hidden;
+    clear: both;
+}
+article > :first-child{
+    float: left; width: 150px; font-size: 100px;
+    line-height: 110px; background-color: gray;
+    color: white; margin: 0 20px 10px 0;
+    text-align: right;
+}
+article p{
+    font-size: 14px;
+}
+article p > *{
+    color: #09f;
+}
+article p > mark{
+    background-color: transparent;
+}
+article p > *:not(mark){
+    text-decoration: underline;
+}

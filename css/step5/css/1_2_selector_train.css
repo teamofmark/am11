@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+article{
+    margin-bottom: 10px;
+}
+article:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+article > *:first-child{
+    font-size: 200px; width: 40%; line-height: 140px;
+    background-color: gray; color: white;
+}
+
+article:nth-child(odd) > *:first-child{
+    float: right; text-align: right; margin: 0 0 10px 20px;
+}
+article:nth-child(even) > *:first-child{
+    float: left; margin: 0 20px 10px 0;
+}
+
+article p > *{
+    color: #09f;
+}
+article p > mark{
+    background-color: transparent;
+}
+article p > *:not(mark){
+    text-decoration: underline;
+}

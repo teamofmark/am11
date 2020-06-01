@@ -6,7 +6,8 @@ body{
     background-color: black;
 }
 body > div:first-of-type{
-    width: 50%; height: 50%; position: fixed;
+    width: 50%; height: 50%; min-height: 280px; 
+    position: fixed;
     top: 25%; left: 25%; background-color: #262626;
 }
 body > div:first-of-type nav{

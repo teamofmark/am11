@@ -27,3 +27,34 @@ body > div:first-of-type nav ul li a{
     line-height: 21px; font-size: 12px; color: #ea0e52;
     text-transform: capitalize; padding: 5px 0;
 }
+body > div:first-of-type nav ul li a:hover,
+body > div:first-of-type nav ul li.currentStat a{
+    background-color: #ea0e52; color: white;
+}
+body > div:first-of-type h1{
+    font-size: 14px; color: white; text-transform: capitalize;
+    text-align: center; margin-bottom: 25px;
+}
+body > div:first-of-type fieldset{
+    border: none; padding: 0; width: 90%; margin: 0 auto;
+}
+body > div:first-of-type fieldset ul{
+    margin: 0; padding: 0;
+}
+body > div:first-of-type fieldset ul li{
+    display: block; margin-bottom: 25px;
+}
+body > div:first-of-type fieldset ul li label{
+    width: 15%; display: block; float: left; text-align: center;
+    background-color: #ea0e52; font-size: 12px; color: white;
+    text-transform: uppercase; font-weight: bold; padding: 12px 0;
+}
+body > div:first-of-type fieldset ul li input{
+    width: 80%; padding: 12px 2.5%; border: none; font-size: 12px;
+}
+body > div:first-of-type fieldset ul li input:focus{
+    background-color: #ea0e52;
+}
+body > div:first-of-type fieldset ul li input[type='password']:focus{
+    color: white;
+}

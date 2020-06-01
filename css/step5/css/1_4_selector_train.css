@@ -1,0 +1,33 @@
+body > div:first-of-type{
+    max-width: 960px; margin: 0 auto;
+}
+body > div:first-of-type fieldset{
+    border: 1px solid #05f; margin-bottom: 25px;
+    padding: 15px 20px 25px;
+}
+body > div:first-of-type fieldset input{
+    vertical-align: middle;
+}
+body > div:first-of-type fieldset label{
+    display: inline-block;
+}
+body > div:first-of-type fieldset input[type='checkbox'] + textarea{
+    resize: none; display: block; width: 97%; border:1px solid #50f;
+    padding: 10px 1%; margin: 25px auto 0; height: 150px;
+    transition-duration: 0.75s;
+}
+/* 
+    ? 부모 margin , padding 과 textarea width의 관계
+    * 1. 부모(fieldset)와 자식(textarea)의 기본 css 확인.
+    * 2. textarea의 스크롤바 및 width % 로 인한 간섭수정.
+    * 3. 이후 부모의 간섭요소 (margin, padding, border..)
+    *    등을 제거하여 부모 자식간 간섭을 없애준다.
+    ! resize : none; 임의로 textarea의 크기조절을 못하게
+*/
+body > div:first-of-type fieldset input[type='checkbox']:checked + textarea{
+    height: 0px; padding: 0 1%;
+}
+
+    /* 
+        ! 변형에 필요한 요소만 적을 것.
+    */

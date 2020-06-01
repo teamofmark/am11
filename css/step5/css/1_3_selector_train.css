@@ -58,3 +58,10 @@ body > div:first-of-type fieldset ul li input:focus{
 body > div:first-of-type fieldset ul li input[type='password']:focus{
     color: white;
 }
+body > div:first-of-type fieldset+input[type='submit']{
+    width: 90%; margin: 0 auto; border: none; display: block;
+    padding: 10px 0; background-color: #3e3e3e; color: #ea0e52;
+}
+body > div:first-of-type fieldset+input[type='submit']:hover{
+    background-color: #ea0e52; color: black; cursor: pointer;
+}

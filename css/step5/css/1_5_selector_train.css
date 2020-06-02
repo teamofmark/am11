@@ -1,0 +1,23 @@
+body fieldset{
+    max-width: 460px; margin: 0 auto;
+    border-color: darkblue; border-radius: 10px;
+}
+
+body fieldset legend{
+    border-radius: 5px; background-color: darkblue;
+    color: white; font-size: 14px; line-height: 34px;
+    padding: 0 10px;
+}
+body fieldset ul{
+    padding: 0; margin: 0;
+}
+body fieldset ul li{
+    display: block; margin-bottom: 15px; font-size: 14px;
+}
+body fieldset ul li:last-child{
+    text-align: right;
+}
+body fieldset ul li label:first-of-type{
+    min-width: 100px; display: inline-block;
+}
+body fieldset 

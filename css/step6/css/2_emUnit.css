@@ -33,3 +33,11 @@ body, h1, h2, p{
 .emLayout footer a{
     font-size: 0.75em; text-decoration: none; color: black;
 }
+/* 
+    ? em
+    * em은 단위가 입력된 요소에서 가장 가까운
+    !(동위선상제외, 자신포함, 기본 부모)
+    * font-size의 영향을 받는다.
+    * 연산방식은 rem과 동일하고 (px to em site참고)
+    ! font-size min : 6.6667px, etc px min : 1px
+*/

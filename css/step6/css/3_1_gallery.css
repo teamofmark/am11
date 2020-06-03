@@ -1,0 +1,60 @@
+body{
+    margin: 0; background-color: #333;
+}
+.wrap{
+    width: 70%; margin: 0 auto;
+}
+.wrap a{
+    text-decoration: none; display: block;
+}
+.wrap ul{
+    margin: 0; padding: 0;
+}
+.wrap ul li{
+    display: block;
+}
+
+.wrap header{
+    position: relative; padding: 20px 40% 0 0; margin-bottom: 90px;
+}
+.wrap header h1{
+    padding: 0; margin: 0; color: #fff;
+}
+.wrap header nav{
+    position: absolute; right: 0; top: 25px; width: 40%;
+}
+.wrap header nav ul{
+    border-width: 1px 0; border-style: solid; border-color: #555;
+}
+.wrap header nav ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap header nav ul li{
+    width: 20%; float: left; min-width: 50px; padding: 10px 0;
+}
+.wrap header nav ul li a{
+    color: #f0f0f0; font-size: 12px; text-align: center;
+}
+.wrap header nav ul li:not(:first-child) a{
+    border-left: 1px solid #e1e1e1;
+}
+
+.wrap ul.picList:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap ul.picList li{
+    width: 30%; margin: 0 5% 5% 0; float: left;
+}
+.wrap ul.picList li:nth-child(3n){
+    margin-right: 0;
+}
+.wrap ul.picList li a img{
+    width: 100%; border: none; opacity: 0.5;
+    transition-duration: 0.75s;
+}
+.wrap ul.picList li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
+}

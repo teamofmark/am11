@@ -1,0 +1,15 @@
+.redG{
+    background: #9b1f1f;
+    background: linear-gradient(45deg, #9b1f1f 0%, #38a2c2 25%, #20c928 75%, #ea7e7e 100%);
+    background: -moz-linear-gradient(45deg, #9b1f1f 0%, #38a2c2 25%, #20c928 75%, #ea7e7e 100%);
+    background: -webkit-linear-gradient(45deg, #9b1f1f 0%, #38a2c2 25%, #20c928 75%, #ea7e7e 100%);
+}
+.blueG{
+
+}
+.greenG{
+
+}
+.yellowG{
+    
+}

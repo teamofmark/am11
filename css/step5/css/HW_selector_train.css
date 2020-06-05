@@ -1,0 +1,99 @@
+body{
+    margin:0 auto; width: 70%;    
+}
+ul,
+body > div ol{
+    padding: 0; margin: 0; list-style: none;
+}
+ul{
+    margin-bottom: 15px;
+}
+ul li{
+    cursor: pointer;
+}
+ul li:first-child{
+    border-bottom: 1px solid black;
+    background-color: #505050;
+}
+ul li:last-child{
+    border-bottom: 1px solid #c4c4c4;
+}
+ul li:nth-child(odd):not(:first-child){
+    background-color: #c9c9c9;
+}
+ul li:nth-child(even):hover{
+    background-color: #b5b2ff;
+}
+ul li:nth-child(2n+3):hover{
+    background-color: #aee1ff;
+}
+ul li:not(:first-child):hover span{
+    color: red;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left; box-sizing: border-box;
+    padding: 15px 2%; text-transform: capitalize; font-size: 14px;
+}
+
+ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 55%; 
+}
+ul li:first-child span:nth-child(2){
+    color: rgb(166,140,255);
+}
+ul li:not(:first-child) span:nth-child(2){
+    color: #0cf;
+}
+
+
+body > div{
+    position: relative;
+    width: 50%; margin: 0 auto 15px; padding: 0 3%;
+}
+body > div a{
+    text-decoration: none; color: #555; display: block;
+    text-align: center; font-size: 13px;
+}
+body > div > a{
+    position: absolute; line-height: 23px;
+}
+body > div > a:first-of-type{
+    left: 0; top: 0;
+}
+body > div > a:last-of-type{
+    right: 0; top: 0;
+}
+body > div > ol:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+body > div > ol li:not(:first-child){
+    margin-left: 1%;
+}
+body > div > ol li{
+    display: block; float: left; width: 9%; 
+    line-height: 23px;
+}
+
+body>div ol li a:hover {
+    background-color: #0cf;
+    color: black;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+body > form fieldset{
+    border: none; padding: 0; margin: 0; text-align: center;    
+}
+body > form fieldset input[type='search']{
+    border: 1px solid #e1e1e1;
+}
+body > form fieldset input[type='search']:focus{
+    border: 1px dotted #f0c;
+}

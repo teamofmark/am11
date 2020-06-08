@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+.property{
+    width: 610px; margin: 0 auto; border: 3px solid steelblue;
+}
+.property span{
+    display: block; width: 10px; height: 50px;
+    background-color: slateblue; margin: 5px;
+    transition-property: background-color, width;
+    transition-duration: 1s, 5s;
+}
+/* ? background는 1초동안 변형시키고, width는 5초동안 변형 시켜라*/
+
+.property:hover span:nth-child(1){
+    background-color: slategray; width: 100px;
+}
+.property:hover span:nth-child(2){
+    background-color: springgreen; width: 200px;
+}
+.property:hover span:nth-child(3){
+    background-color: sandybrown; width: 300px;
+}
+.property:hover span:nth-child(4){
+    background-color: sienna; width: 400px;
+}
+.property:hover span:nth-child(5){
+    background-color: royalblue; width: 500px;
+}

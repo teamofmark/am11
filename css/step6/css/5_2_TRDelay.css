@@ -89,3 +89,13 @@ ul{
 .delay3 ul li:nth-child(5){
     transition-timing-function:cubic-bezier(0,.99,.99,.01) ;
 }
+/*
+    http://cubic-bezier.com
+    위 url에서 원하는 베지어곡선을 만들어 사용 할 수 있다.
+    ease : ease-in-out 보다 빠른속도로 시작하여, 지정된 시간에 도착 할 때 속도가 줄어 든다.
+    ease-in : 느린속도로 시작하여 지정된 시간에 도착 할 수록
+    속도가 빨라진다.
+    ease-out : 빠른속도로 시작하여 지정된 시간에 도착 할 수록
+    느려진다.
+    ease-in-out : 느린 속도로 시작하여 일정하게 속력이 증가 하다가 지정된 시간에 도착 할수록 속도가 느려진다.
+*/

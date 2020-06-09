@@ -1,0 +1,68 @@
+html,body{
+	height: 100%;
+}
+body{
+	width: 90%; margin: 0 auto;
+}
+aside{
+	width: 50%; float: left; height: 80%;
+	padding-top: 14%;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-size: 12px;
+}
+p strong{
+	display: block;
+}
+/* ? global CSS */
+
+/* ? left Aside */
+
+aside:first-of-type footer{
+	color: #6800ff;
+}
+
+/* ?right Aside */
+aside:last-of-type ul{
+	margin: 0; padding: 0;
+}
+aside:last-of-type ul li{
+	padding: 10px 5%; text-align: right;
+	font-size: 12px; display: block; overflow: hidden;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s; transition-property: padding;
+}
+aside:last-of-type ul li:nth-child(1){background-color: #ff5f5f;}
+aside:last-of-type ul li:nth-child(2){background-color: #ffaf6b;}
+aside:last-of-type ul li:nth-child(3){background-color: #e7ed66;}
+aside:last-of-type ul li:nth-child(4){background-color: #30b052;}
+aside:last-of-type ul li:nth-child(5){background-color: #7c8aff;}
+aside:last-of-type ul li:nth-child(6){background-color: #3a5fb7;}
+aside:last-of-type ul li:nth-child(7){background-color: #6800ff;}
+
+aside:last-of-type ul li:hover{
+	padding: 25px 5%; cursor: pointer; 
+}
+
+aside:last-of-type ul li p{
+	width: 80%; display: block; float: left; height: 0;
+	opacity: 0;
+	transition-timing-function: ease-in-out;
+	transition-property: height, opacity;
+	transition-duration: 1s, 2s;
+}
+aside:last-of-type ul li:hover p{
+	height: 220px; opacity: 1;
+}
+
+
+
+aside:last-of-type ul li a{
+	color: #fff;
+}
+aside:last-of-type ul li a:before{
+	content: '+';
+}

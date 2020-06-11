@@ -1,0 +1,21 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative;
+    animation-name: rotate3D;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+
+}
+@keyframes rotate3d{
+    from{
+
+    }to{
+
+    }
+}
+div span{
+    width: 200px; height: 100px; position: absolute;
+}

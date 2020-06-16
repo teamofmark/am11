@@ -1,0 +1,13 @@
+
+@media screen and (min-width: 1280px){
+    header{
+        background: url('../images/main_02.png') no-repeat center center;
+        background-size: cover;
+        border-top: 10px solid #2ecc71;
+        padding: 165px 0;
+    }
+    header div{
+        max-width: 1180px; margin: 0 auto;
+        padding-left: 9.3%;
+    }
+}

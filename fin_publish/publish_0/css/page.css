@@ -1,0 +1,85 @@
+section > h2{
+    display: none;
+}
+section:first-of-type > dl{
+    text-align: center; padding-top: 130px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/* all Using CSS */
+
+@media screen and (min-width: 1280px){
+    section:first-of-type:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section:first-of-type > dl{
+        width: 26%; float: left;
+    }
+    section:first-of-type > dl:not(:first-of-type){
+        margin-left: 11%;
+    }
+    section:first-of-type > dl:nth-of-type(1){
+        background-image: url('../images/main_17.png');
+    }
+    section:first-of-type > dl:nth-of-type(2){
+        background-image: url('../images/main_20.png');
+    }
+    section:first-of-type > dl:nth-of-type(3){
+        background-image: url('../images/main_22.png');
+    }
+    section:first-of-type > dl dt{
+        font-family: 'Raleway'; font-weight: 600;
+        font-size: 22px; line-height: 22px; color: #222;
+        margin-bottom: 25px;
+    }
+    section:first-of-type > dl dd{
+        font-family: 'Roboto'; font-weight: 400;
+        font-size: 16px; line-height: 22px;
+        color: #848484;
+    }
+    /* ? first-of-type Fin */
+    
+    section:nth-of-type(2){
+        background-color: #e3e3e3;
+    }
+    section:nth-of-type(2):after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section:nth-of-type(2) > div{
+        float: left;
+    }
+    section:nth-of-type(2) > div:first-of-type{
+        width: 46%;
+    }
+    section:nth-of-type(2) > div:first-of-type h2{
+        font-family: 'Raleway'; font-weight: 600;
+        font-size: 22px; line-height: 22px; color: #222;
+        margin-bottom: 25px;
+    }
+    section:nth-of-type(2) > div:first-of-type p{
+        font-family: 'Roboto'; font-weight: 400;
+        font-size: 16px; line-height: 22px; color: #848484;
+        margin-bottom: 30px;
+    }
+    section:nth-of-type(2) > div:first-of-type input{
+        float: left; box-sizing: border-box;
+    }
+    section:nth-of-type(2) > div:first-of-type input[type='email']{
+        width: 57%; font-family: 'Roboto'; font-size: 18px;
+        color: #848484; padding: 15px; border: 1px solid #c8c8c8;
+        border-radius: 10px 0 0 10px;
+    }
+    section:nth-of-type(2) > div:first-of-type input[type='submit']{
+        width: 26%; font-family: 'Raleway'; font-weight: 700;
+        font-size: 22px; color: #fff; padding: 14px 20px;
+        border: none; border-radius: 0 10px 10px 0;
+        background-color: #2ecc71;
+    }
+    section:nth-of-type(2) > div:nth-of-type(2){
+        width: 42%; margin-left: 12%;
+    }
+    section:nth-of-type(2) > div:nth-of-type(2) img{
+        width: 100%;
+    }
+    /* ? notified Section Fin */
+}

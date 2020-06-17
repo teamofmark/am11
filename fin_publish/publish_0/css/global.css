@@ -10,4 +10,28 @@
         max-width: 1180px; margin: 0 auto;
         padding-left: 9.3%;
     }
+    header div h1{
+        width: 11.5%; max-width: 183px; margin-bottom: 30px;
+    }
+    header div h1 img{
+        width: 100%;
+    }
+    header div p{
+        font-family: 'Roboto'; color: #fff;
+        font-weight: 500; line-height: 36px;
+        font-size: 24px; max-width: 455px;
+        letter-spacing: -1px; margin-bottom: 20px;
+    }
+    header div > a{
+        display: inline-block; text-decoration: none;
+    }
+    header div > a:not(:first-of-type){
+        margin-left: 10px;
+    }
+    /* ?header Fin */
+    
+    section{
+        padding: 60px 13.12%;
+    }
+    /* ?section Fin */
 }

@@ -88,5 +88,41 @@ section:first-of-type > dl{
     }
     section:nth-of-type(3) p{
         font-family: 'Roboto'; color: #848484;
+        margin-bottom: 25px; line-height: 25px;
+    }
+    section:nth-of-type(3) p strong{
+        display: block; font-family: 'Raleway';
+        font-weight: 700; color: #2e2e2e;
+    }
+    section:nth-of-type(3) p q{
+        font-style: italic; margin-bottom: 20px;
+        display: block;
+    }
+    section:nth-of-type(3) ul:nth-of-type(1){
+        margin-bottom: 60px;
+    }
+    section:nth-of-type(3) ul:nth-of-type(1):after{
+        content: ''; display: block; visibility: hidden;
+        clear: both;
+    }
+    section:nth-of-type(3) ul:nth-of-type(1) li{
+        float: left; display: block; width: 9.1%;
+    }
+    section:nth-of-type(3) ul:nth-of-type(1) li:not(:first-child){
+        margin-left: 1%;
+    }
+    section:nth-of-type(3) ul:nth-of-type(1) li img{
+        width: 100%;
+    }
+    section:nth-of-type(3) p:nth-of-type(2) strong{
+        font-size: 24px; font-weight: 600;
+        margin-bottom: 15px;
+    }
+    section:nth-of-type(3) ul:nth-of-type(2) li{
+        display: inline-block;
+    }
+    section:nth-of-type(3) ul:nth-of-type(2) li:not(:first-child){
+        margin-left: 1%;
     }
 }
+/* ? desktop */

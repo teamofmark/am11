@@ -1,0 +1,74 @@
+header > div nav ul li a{
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+}
+/* All Using */
+
+@media screen and (min-width: 1280px){
+    body > figure,
+    section.expArea,
+    section.teamArea div,
+    section.contactArea,
+    footer > div
+    {
+        max-width: 940px; margin: 0 auto;
+        padding: 70px 0;
+    }
+    .btn_more{
+        text-align: center; color: #00e0d0;
+        border: 1px solid #00e0d0;
+        font-weight: 400; font-family: 'Hammersmith One';
+        padding: 15px 0.93%; display: block;
+    }
+    header{
+        padding: 15px 0 70px;
+        background: url('../images/bg_01.png') no-repeat left top;
+        background-size: cover;
+    }
+    header > div{
+        max-width: 940px; margin: 0 auto;
+        position: relative;
+    }
+    header > div h1{
+        max-width: 128px;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div nav{
+        position: absolute; right: 0; top: 0;
+        text-align: right; width: 100%;
+        padding-left: 130px; box-sizing: border-box;
+        line-height: 50px;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 1.56%;
+    }
+    header > div nav ul li a{
+        font-size: 13px; font-weight: 900; color: white;
+        display: block; line-height: 50px;
+    }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* header Nav Fin */
+
+    header > div > ul{
+        margin-bottom: 125px;
+    }
+    header > div > ul li{
+        padding-top: 165px; display: block;
+    }
+
+}
+/* ? desktop */

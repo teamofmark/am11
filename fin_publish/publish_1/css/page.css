@@ -1,0 +1,44 @@
+
+@media screen and (min-width: 1280px){
+    body > figure:after{
+        content: ''; display: block; visibility: hidden;
+        clear: both;
+    }
+    body > figure img{
+        float: left; max-width: 235px; width: 25%;
+    }
+    body > figure figcaption{
+        width: 60%; float: left; margin-left: 15%;
+    }
+    body > figure figcaption > *:not(a){
+        margin-bottom: 30px;
+    }
+    body > figure figcaption h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b;
+    }
+    body > figure figcaption p{
+        font-size: 14px; color: rgba(65,61,75, 0.75);
+        font-weight: 300; line-height: 22px;
+    }
+    body > figure figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* CI figure Fin */
+    section.videoArea{
+        background: url('../images/bg_02.png') no-repeat left top;
+        background-size: cover;
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        font-size: 45px; border: 3px solid white;
+        margin: 0 auto 35px; display: block;
+        text-align: center; color: white;
+        border-radius: 60px;
+        width: 100px; padding: 24px 0px 31px 5px;
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white; text-align: center;
+        font-weight: 900;
+    }
+}

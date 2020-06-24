@@ -88,5 +88,94 @@
     section.expArea ul li p{
         font-weight: 300; line-height: 22px; color: rgba(51,51,51,0.75);
     }
-    
+    section.expArea ul li:nth-child(n):nth-child(-n+3){
+        border-bottom: 1px solid rgba(0,0,0,0.2); /* psd 상 값은 0.03 */
+    }
+    section.expArea ul li:nth-child(3n+2){
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: rgba(0,0,0,0.2); /* psd 상 값은 0.03 */
+    }
+    /* expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_03.png') no-repeat left top;
+        background-size: cover; text-align: center;
+        color: white; padding: 70px 0;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255,255,255, 0.5);
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    }
+    section.teamArea p{
+        font-size: 14px; line-height: 22px; font-weight: 400;
+        margin-bottom: 15px;
+    }
+    section.teamArea ul{
+        margin:0 auto 70px; max-width: 940px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.teamArea ul li{
+        width: 23.5%; float: left; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        background: url('https://via.placeholder.com/220x230') no-repeat center top;
+        background-size: contain; padding-top: 230px;
+    }
+    section.teamArea ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900;
+        margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300;
+        color: rgba(255,255,255,0.7);
+    }
+    section.teamArea > p:last-of-type{
+        margin-bottom: 25px; font-weight: 300;
+    }
+    section.teamArea a.btn_more{
+        margin: 0 auto; max-width: 140px;
+    }
+    /* teamArea Fin */
+
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b; position: relative;
+        max-width: 940px; margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    section.worksArea h2 a{
+        font-size: 14px; font-weight: 300; color: #413d4b;
+        position: absolute; right: 0; top: 5px;
+    }
+    section.worksArea ul{
+        margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.worksArea ul li{
+        float: left; display: block; width: 16.66%;
+        line-height: 0;
+    }
+    section.worksArea ul li img{
+        width: 100%;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* worksArea Fin */
 }

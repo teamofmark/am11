@@ -263,7 +263,7 @@
     section.contactArea form fieldset input:not([type='submit']),
     section.contactArea form fieldset textarea{
         border: 1px solid rgba(0,0,0,0.1); width: 100%;
-        padding: 0 20px; line-height: 45px; box-sizing: border-box;
+        padding: 0 20px; line-height: 45px;
         font-weight: 300; margin-bottom: 20px;
     }
     section.contactArea form fieldset textarea{

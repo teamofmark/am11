@@ -45,8 +45,8 @@ header > div nav input[type='checkbox']{
     section.contactArea,
     footer > div
     {
-        max-width: 728px; margin: 0 auto;
-        padding: 70px 0;
+        max-width: 600px; margin: 0 auto;
+        padding: 70px 3%;
     }
     .btn_more{
         text-align: center; color: #00e0d0;
@@ -59,7 +59,8 @@ header > div nav input[type='checkbox']{
         background-size: cover;
     }
     header > div{
-        max-width: 728px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
+        padding: 0 3%;
         position: relative;
     }
     header > div h1{
@@ -99,7 +100,7 @@ header > div nav input[type='checkbox']{
     } */
     header > div nav ul li a{
         font-size: 13px; font-weight: 900; color: white;
-        display: block; line-height: 50px;
+        display: block; line-height: 40px;
     }
     header > div nav ul li a.active,
     header > div nav ul li a:hover{
@@ -109,9 +110,10 @@ header > div nav input[type='checkbox']{
 
     header > div > ul{
         margin-bottom: 125px;
+        clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: 65px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900;

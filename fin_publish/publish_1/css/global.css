@@ -42,6 +42,7 @@ header > div nav input[type='checkbox']{
     body > figure,
     section.expArea,
     section.teamArea ul,
+    section.worksArea h2,
     section.contactArea,
     footer > div
     {

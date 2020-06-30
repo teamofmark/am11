@@ -1,0 +1,36 @@
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+.crim{
+    font-family: 'Crimson Text', serif;
+}
+a{
+    text-decoration: none;
+}
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+/* 
+    All Using CSS
+*/
+
+@media screen and (min-width: 1280px){
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+
+    header{
+        background-color: white;
+        border-bottom: 1px solid #f0f2f7;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+}

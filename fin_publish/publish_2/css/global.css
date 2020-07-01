@@ -33,4 +33,20 @@ input[type='checkbox']{
     header > div:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
+    header > div label.material-icons{
+        width: 5.3%; max-width: 60px;
+        border-right: 1px solid #f0f2f7;
+        display: block; font-size: 25px;
+        line-height: 90px;
+    }
+    header > div h1{
+        width: 10.7%; min-width: 125px;
+    }
+    header > div h1 a{
+        display: block; text-align: center;
+        padding: 31px 0;
+    }
+    header > div h1 a img{
+        max-width: 92px;
+    }
 }

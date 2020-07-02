@@ -110,5 +110,51 @@
     }
     /* * slide Fin */
 
-    
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > fieldset{
+        background-color: white; border-radius: 4px;
+        line-height: 56px; padding: 0 1.7%;
+        box-sizing: border-box; margin-bottom: 30px;
+    }
+    .contentArea > fieldset label{
+        font-size: 11px; color: #a1a7bd;
+        font-weight: 500; display: inline-block;
+        vertical-align: middle;
+    }
+    .contentArea > fieldset select{
+        border: none; box-shadow: none;
+        background-image: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 10px 0; font-size: 11px;
+        color: #343e5c; font-weight: 700;
+    }
+    .contentArea > fieldset span.selectBox{
+        display: inline-block; padding-right: 20px;
+        box-sizing: border-box;
+        background: url('../images/bg_arrow.png') no-repeat
+        right center;
+    }
+    .contentArea > fieldset input:not([type='checkbox']){
+        font-size: 13px; background-color: #f0f2f7;
+        border: 1px solid #e3e8f0; padding: 10px 0.94%;
+        border-radius: 20px; font-weight: 700;
+    }
+    .contentArea > fieldset input[type='search']{
+        width: 14%;
+    }
+    .contentArea > fieldset input[type='text']{
+        width: 5%;
+    }
+    .contentArea > fieldset span.sbSelect{
+        margin-left: 4.27%;
+    }
+    .contentArea > fieldset label[for='sb_keywords'],
+    .contentArea > fieldset label[for='ship_Select']{
+        padding-left: 2.56%; margin-left: 1.7%;
+        border-left: 1px solid rgba(0,0,0,0.05);
+    }
 }

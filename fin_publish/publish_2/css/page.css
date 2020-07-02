@@ -41,4 +41,22 @@
         margin-left: 2.56%; 
     }
     /* slideNav Fin */
+    section.slideArea{
+        background-color: #1c1e23;
+        margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px;
+        margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display:block; width: 42px; line-height: 42px;
+        color: white; border-radius: 21px;
+        border: 1px solid rgba(255,255,255,0.2);
+        font-size: 18px; font-weight: 700;
+        text-align: center; position: absolute;
+    }
 }

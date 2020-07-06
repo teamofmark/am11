@@ -328,6 +328,25 @@
     .contentArea section ul li:nth-child(5) figure figcaption dl{
         text-align: left; padding: 0 4.21% 10px; box-sizing: border-box;
     }
-    .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type
+    .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
+        position: absolute; background-color: black;
+        left: 4.21%; top: -295px; color: white; border-radius: 3px;
+        font-size: 12px; padding: 5px 10px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span{
+        position: absolute; top: 0; right: 4.21%;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a{
+        display: block; width: 110px; float: left;
+        text-align: center; line-height: 30px; font-size: 11px;
+        color: #3a405b; border: 2px solid #f0f2f7;
+        font-weight: 700;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:first-of-type{
+        border-radius: 15px 0 0 15px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
+        border-radius: 0 15px 15px 0;
+    }
 
 }

@@ -275,4 +275,19 @@
         background-image: url('../images/on_check.png');
     }
     /* aside Fin */
+
+    .contentArea section{
+        width: 74.44%; margin-left: 2.56%;
+        float: left;
+    }
+    .contentArea section h3{
+        display: none;
+    }
+    .contentArea section ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .contentArea section ul li{
+        float: left;
+    }
+
 }

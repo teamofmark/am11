@@ -386,6 +386,9 @@
         border-left: 1px solid #f0f2f7;
         box-sizing: border-box;
     }
+    section.bestArea ul li figure img{
+        width: 100%;
+    }
     section.bestArea ul li figure figcaption dl{
         text-align: center;
     }
@@ -404,4 +407,5 @@
         color: #a1a8bd; margin-right: 20px;
         font-weight: 500;
     }
+    /* *bestArea Fin */
 }

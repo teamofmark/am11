@@ -22,7 +22,9 @@ input[type='checkbox']{
     header > div,
     footer > div,
     header+nav .slideNav,
-    .contentArea{
+    .contentArea,
+    .contentArea+.paging,
+    section.bestArea{
         max-width: 1170px; margin: 0 auto;
     }
 

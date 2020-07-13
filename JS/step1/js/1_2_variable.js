@@ -73,5 +73,9 @@ radius = 10, pi = 3.14159265;
 
 // *case.4 변수의특성
 var cup = 'Coffee';
-//todo.1 cup = '';
-//todo.2 cup = '';
+cup = 'water';
+cup = 'Grean Tea';
+
+// *case.5 연산자 사용시.
+var value = 10;
+value += 20;

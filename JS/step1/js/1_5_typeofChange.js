@@ -84,4 +84,32 @@ function bgColorRed(){
 
 function numbString(){
     var test = '300';
+    var result = parseInt(test) + 10;
+    console.log('result =' + result);
+}
+/*
+todo.1 변수 test 에 들어있는 숫자 100을 문자 형으로 변형.
+todo.1 result에 대입하라.
+*/
+
+// todo. 1-1 암시적 형변환.
+
+function todo1(){
+    var test = 100;
+    var result = ?;
+    console.log(typeof(result) + ' = ' + result);
+}
+// todo. 1-2 string 사용.
+
+function todo2(){
+    var test = 100;
+    var result = ?;
+    console.log(typeof(result) + ' = ' + result);
+}
+// todo. 1-3 toString 사용.
+
+function todo3(){
+    var test = 100;
+    var result = ?;
+    console.log(typeof(result) + ' = ' + result);
 }

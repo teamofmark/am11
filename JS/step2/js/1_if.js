@@ -31,3 +31,73 @@
         alert('오후입니다.');
     }
 }
+// ?case.2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDay();
+    // ? 변수선언부
+
+    if(day < 30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+// todo.1 아침?점심?저녁?
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 8){
+        alert('아침먹어'); // ! 아침먹을시간 을 출력
+    }else if(hour < 15){
+        alert('점심먹어'); // ! 점심먹을시간 을 출력.
+    }else{
+        alert('저녁먹어'); // ! 그것도 아닐경우 저녁먹을시간을 출력
+    }
+}
+// *exp.1 숫자판별
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요.','양,음수 상관없음');
+    if(numb > 0){
+        alert('양수');
+    }else if(numb < 0){
+        alert('음수');
+    }else{
+        alert('0 혹은 다른 유형의 데이터');
+    }
+}
+// todo.2 홀수,짝수 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요', '홀,짝을구분');
+    if(numb%2 == 0){
+        alert('짝수');// !짝수
+    }else{
+        alert('홀수');// !홀수
+    }
+}
+
+// *exp.3 다음 세과목의 점수를 입력받고 평균을 구한 후,
+// * 수,우,미,양,가를 출력해라.
+
+function avgScore(){
+    var koreanScore =  prompt('국어점수를 입력하시오',''); 
+    var englishScore = prompt('영어점수를 입력하시오','');
+    var mathScore = prompt('수학점수를 입력하시오','');
+    
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+
+    if(avg > 100){
+        alert('100점이 넘는 과목은 없다. 사기꾼아.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다.');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다.');
+    }else{
+        alert('평균' + avg + '점 \n' + '가 입니다.');
+    }
+}

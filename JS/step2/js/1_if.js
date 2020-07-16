@@ -101,3 +101,18 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가 입니다.');
     }
 }
+// todo.4 사용자 id를 입력받아 맞다면 승인 메시지출력.
+function userIDCheck(){
+    var userID = window.prompt('사용자의 아이디');
+    if(userID == 'Mark'){
+        alert('접속을 승인!');
+    }else if(userID != 'Mark'){
+        alert('잘못된 ID. 접속불가!');
+    }
+}
+//todo.5 사용자 id "mark"와 password"1234"를 입력받고
+//todo.5 둘다 맞을 경우에만 승인 메시지 출력. 
+function userInfoCheck(){
+    var userID = ;
+    var userPW = ;
+}

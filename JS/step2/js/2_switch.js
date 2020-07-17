@@ -34,7 +34,19 @@ function calculator(){
 
     switch(operator){
         case '+':
-            alert(firstNumb+lastNumb);
+            alert(firstNumb + lastNumb);
+            break;
+        case '-':
+            alert(firstNumb - lastNumb);
+            break;
+        case '*':
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default:
+            alert('잘못된 값이 입력되었습니다.');
             break;
     }
 }

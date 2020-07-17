@@ -126,3 +126,16 @@ function userInfoCheck(){
 }
 //todo.6 사용자 id "mark"와 password"1234"의
 //todo.6 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+function userInfoCheck2(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID!="Mark"){
+        alert("ID가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        alert("password가 틀렸습니다.");
+    }else{
+        alert("비정상적 접근입니다.");
+    }
+}

@@ -50,3 +50,26 @@ function calculator(){
             break;
     }
 }
+/* 
+todo.1 1을 입력받았을때는 '1등 10억!'
+todo.1 2를 입력받았을때는 '2등 5천만원!'
+todo.1 3을 입력받았을때는 '3등 300만원!'
+todo.1 그외 나머지는 '낙첨되었습니다.'
+*/
+function lotto(){
+    var numbValue = window.prompt('입력하실번호는?');
+    switch (numbValue) {
+        case "1":
+            alert('1등 10억!');
+            break;
+        case "2":
+            alert('2등 5천!');
+            break;
+        case "3":
+            alert('3등 300!');
+            break;
+        default:
+            alert('낙첨...');
+            break;
+    }
+}

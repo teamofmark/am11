@@ -101,3 +101,51 @@ function reverseFavorFluit(){
         alert(array[i]);
     }
 }
+// *exp.7 continue문
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        
+        continue; //? 위 조건이 참일 지라도 continue가 존재 하면, continue 이하 구문은 실행 되지 않는다.
+        document.write(i + '<br>'); //?vscode 에서는 불투명하게 시각화 해서 보여준다.
+    }
+    document.write('최종 i =' + i + '<br>'); //? 최종 적으로 변경된 i 의 수치(11)만 출력된다.
+}
+// *exp.8 continue활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        // 조건문
+        if(i % 2 == 1){
+            /*
+                i가 홀수일 경우 반복 중지 다음반복수행, 현재 다음 반복은 없다.
+                (1 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (2 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                (3 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (4 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                ..
+                이조건으로 i값이 10보다 작거나 같을때까지 수행하여 출력하라.
+            */
+            continue;
+        }
+        output += i; //(2, 6, 12, 20, 30) - 짝수만 선별하여 10까지의 셈합.
+        alert(output); //출력
+    }
+}
+// *exp.9 break문
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i =' + i + '<br>');
+}
+
+//*exp.10 break문 활용
+function runBreak(){
+    for (var i = 0; true; i++) { //? 수행되는 조건 자체가 true 상태기 때문에 무한 루프.
+        alert(i + '번째 반복문'); //? 수행. 
+        if (!confirm('계속할래?')) {//? alert으로 반복문을 띄운 이후, confirm의 질문에 확인(true)을 누르면 앞의 논리부정연산자로인해 true가 false로 바뀌면서 break를 수행하지 않고 다시 재반복을 수행한다.
+            break;
+        }
+    }
+}

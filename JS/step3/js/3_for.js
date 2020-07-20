@@ -13,8 +13,24 @@
     * 3. 참일경우 문장 실행 > 4. 종결식 실행 > 5. 2단계
 
 */
-function test(){
-    for (let i = 0; i < 10; i++) {
-        alert(i + '번째 경고창');
+// ! 단일 for
+
+// *exp.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = 'Mark';
+    for(var i = 1; i <= 10; i++){
+        document.write(i+'.'+userName +'<br>');
     }
+}
+//*exp.2 이름을 1000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for (var i = 1; i <= 1000; i++) {
+        document.write(i+'.'+ userName +'<br>');
+    }
+}
+// todo.1 이름을 500번만 찍되 홀수만 나오게 해보자.
+function namePrint500(){
+    var userName = 'Mark';
+    
 }

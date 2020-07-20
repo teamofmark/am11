@@ -82,9 +82,22 @@ function favorFluit(){
 
 //*exp.5 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
 function arrayFor(){
-    var data = ['변수','연산자','형변환','조건문if',
-    '조건문 switch','반복문 for', '반복문 while'];
+    var data = ['변수','연산자','형변환','조건문if', '조건문 switch','반복문 for', '반복문 while'];
     for (var i = 0; i < data.length; i++){
         document.write(i +'번째 내용 ='+data[i]+'<br>');
+    }
+}
+// function arrayForES6(element){
+//     var data = ['변수','연산자','형변환','조건문if', '조건문 switch','반복문 for', '반복문 while'];
+//     for (let i = 0; i < data.length; i++) {
+//         document.write(i +'번째 내용 ='+element+'<br>');
+//     }
+// }
+
+// *exp.6 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도', '사과', '바나나', '망고'];
+    for (var i = array.length - 1; i >= 0; i--){
+        alert(array[i]);
     }
 }

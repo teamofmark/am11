@@ -71,3 +71,20 @@ function answer5(){
         document.write((11-i)+"<br>"); //? 1~10번 까지 출력
     }
 }
+// *exp.4 자신이 좋아하는 과일 4개를 배열로 배치.alert출력
+
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고'];
+    for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+
+//*exp.5 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+function arrayFor(){
+    var data = ['변수','연산자','형변환','조건문if',
+    '조건문 switch','반복문 for', '반복문 while'];
+    for (var i = 0; i < data.length; i++){
+        document.write(i +'번째 내용 ='+data[i]+'<br>');
+    }
+}

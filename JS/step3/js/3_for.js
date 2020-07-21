@@ -149,3 +149,31 @@ function runBreak(){
         }
     }
 }
+
+// ! 다중for
+
+//*exp.1 반절 피라미드
+
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //? 1. ifor = 1~10 까지 수행
+        for (var j = 0; j < i; j++){ //? 2. jfor = j가 i보다 작을때 까지 반복 수행 *,**,***,****,*****......
+            star += '*'; //? 변수 star에 생성된 *을 넣음.
+        }
+        star += '<br>'; //? ifor 만큼 <br>을 변수 star에 넣음
+    }
+    document.write(star); //? 반절 피라미드 출력.
+}
+
+// *exp.2 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){ //?
+        for (var j = 0; j < i; j++){ //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star);
+}
+//*todo.1 피라미드

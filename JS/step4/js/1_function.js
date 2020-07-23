@@ -251,3 +251,26 @@ function div(numb1, numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+// *ex.6 함수를 변수에 담기.
+function hello(name){
+    console.log(name + 'welcome');
+}
+// hello('Mark');
+
+var func = hello;
+
+// func('Mark');
+
+// *ex.7 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log('Hello');
+}
+function hi2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func();
+}
+execute(hi1);
+execute(hi2);
+// *ex.8 button click시 매개변수 값으로 넘긴 함수호출.

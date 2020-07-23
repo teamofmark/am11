@@ -273,4 +273,33 @@ function execute(func){
 }
 execute(hi1);
 execute(hi2);
+
 // *ex.8 button click시 매개변수 값으로 넘긴 함수호출.
+
+function welcome(){
+    alert('환영! 반갑!');
+} 
+$(document).ready(function(){
+    $('#runEx8').click(welcome);
+});
+
+// *ex.9 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        console.log('hi,hello Interval');
+    },1000);
+}
+// todo.4 함수를 매개변수로 전달받아 반복호출하기
+
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++) {
+        otherFunction
+    }
+    //? 매개변수로 otherFunction 전달.
+    //? 전달받은 otherFunction 함수를 10번 출력하라.
+}
+
+// ?otherFunction = 문서에 'hello.'를 출력.
+function writeHello(){
+    document.write('Hello');
+}

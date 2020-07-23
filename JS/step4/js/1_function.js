@@ -234,3 +234,20 @@ function calculator2(op, numb1, numb2){
     }
     return result;
 }
+function add(numb1, numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+    //! or only return numb1 + numb2;
+}
+function sub(numb1, numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1, numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1, numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
+}

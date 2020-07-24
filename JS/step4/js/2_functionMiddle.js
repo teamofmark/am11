@@ -92,7 +92,7 @@ function calculator(op, numb1, numb2){
             break;
     }
     return result;
-    
+
     function add(numb1, numb2){
         return numb1 + numb2;
     }
@@ -106,4 +106,126 @@ function calculator(op, numb1, numb2){
         return numb1 / numb2;
     }
 
+}
+/*
+    ? 이렇게 처리 할 경우 이전에 처리했던 (1_function.js todo.3)번과는 달리.
+    ? add~div 함수들을 calculator 외부에서 사용할 수 없게 되는 대신 좀더 구조적인 코드로 접근할 수 있게 되는 것이기 때문에,
+    ? 용도에 따라 맞게 사용해야 한다.
+*/
+// *ex.3 중첩 함수와 중첩함수를 포함한 함수의 관계
+
+function innerFunctionTest(){
+    var a = 10;
+    var b = 20;
+    var c = 30;
+
+    function outerFunc(){
+        var b = 200;
+        var c = 300;
+
+        function innerFunc(){
+            var c = 3000;
+
+            console.log("1. = " + a); //? 실행시 자신과 인접한 함수 내부부터 해당 변수를 찾는다. 전역 영역까지 존재 하지 않을 시 undefined.
+            console.log("2. = " + b);
+            console.log("3. = " + c);
+        }
+        innerFunc();
+    }
+    outerFunc();
+}
+
+// *ex.4 callBack 함수를 이용한 사칙연산 계산기 1
+// ? 함수 내부의 처리 결과값을 함수 외부로 내보낼 때 사용. (return 같은)
+
+function calculatorCallBack(op, numb1, numb2, callBack){
+    var result = "";
+    switch(op){
+        case '+' :
+            result = add(numb1, numb2);
+            break;
+        case '-' :
+            result = sub(numb1, numb2);
+            break;
+        case '*' :
+            result = mul(numb1, numb2);
+             break;
+        case '/' :
+            result = div(numb1, numb2);
+            break;
+        default :
+            result = '잘못된 입력값 입니다.';
+            break;
+    }
+
+    function add(numb1, numb2){
+        return numb1 + numb2;
+    }
+    function sub(numb1, numb2){
+        return numb1 - numb2;
+    }
+    function mul(numb1, numb2){
+        return numb1 * numb2;
+    }
+    function div(numb1, numb2){
+        return numb1 / numb2;
+    }
+    // ! 여기까지 처리부.
+
+    callBack(result);  //? 기존 계산결과로 리턴 되던 result를 callBack매개변수에 들어오는 처리함수를 호출하여 매개변수에 담음(ex. addPrint(value) = callBack(result)).
+}
+function addPrint(value){ //? 외부에 있는 add~divPrint 로직처리함수에서  value를 찾아 사용할 수 있음.
+    document.write('두 수의 합은' + value);
+}
+function subPrint(value){
+    document.write('두 수의 차는' + value);
+}
+function mulPrint(value){
+    document.write('두 수의 곱은' + value);
+}
+function divPrint(value){
+    document.write('두 수의 나누기는' + value);
+}
+
+//! calculatorCallBack("op", numb1, numb2, addPrint); addPrint(처리함수)가 실행되면서 처리부분 실행.
+//? 결과적으로 로직을 처리하는 부분과 출력부분을 나누어 서로를 조립 및 연결 하여 사용할 수있다.
+
+// *ex.5 return 대신 callBack?
+// ? 그렇지 않다. 처리부 와 출력부가 나눠져 있지 않은 단순 값 리턴은 return이 더 효율적이다.
+/* 
+// 기존 단순 리턴.
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write("두 수 합" + result);
+*/
+/*
+// 콜백으로 변환.
+function sum(numb1, numb2, callBack){ 
+    var temp = numb1 + numb2;
+    callBack(temp);//? callBack으로 불려오는 처리부함수의 매개변수로 담김 (ex. result 함수의  value 매개변수에 담김)
+}
+function result(value){
+    document.write("두 수 합" + value);
+}
+sum(10,20,result);
+*/
+// *ex.6 동기 와 비동기처리
+
+// *동기 - 함수 호출 이후 끝날 때 까지 다음 구문 수행 안함.
+function sync(){
+    alert("hi");
+    document.write("End Alert");
+}
+
+// *비동기 - 함수 호출 이후 끝나는 것과 상관 없이 다음 구문 수행. 그렇기 떄문에 callback함수를 이용하여 다 완료된 이후 실행 될 수 있도록 처리.
+function async(){
+    var count = 1;
+    
+    setInterval(function(){
+        document.write("2. count =" + count + "<br>");
+    },3000);
+    
+    document.write("1. 동작과 상관없이 바로 실행");
 }

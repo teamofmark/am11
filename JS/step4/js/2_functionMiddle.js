@@ -229,3 +229,69 @@ function async(){
     
     document.write("1. 동작과 상관없이 바로 실행");
 }
+
+// *ex.7 클로저
+//? 함수내부에 만든 지역변수가 사라지지 않고 계속해서 값을 유지하고 있는 상태.
+
+// *일반함수 - 함수내 지역변수가 함수 호출 이후 사라진다.
+
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// *클로저 사용시 - 함수내 지역변수가 사라지지 않고 값을 유지한다.
+
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count ++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
+/*
+    ? 왜 그런것인가.
+    ? createCount 함수가 종료 되더라도 addCount 함수내부에서 count 라는 변수를 사용중인 상태에서 외부로 리턴 되기 때문에 
+    ? 삭제되지 않고 남아있기 때문이다. 이런 현상을 클로저 현상이라고 한다.
+    ? 또한 이런 내부함수를 클로저 함수라고 말한다.
+*/
+
+
+// *ex.7-1 사용중인 함수를 리턴해야만 클로저는 아니다.
+$(document).ready(function(){
+    $('#btnStart').click(function(){
+        start();
+        document.write('count Start');
+    });
+});
+function start(){
+    var count = 0;
+    setInterval(function(){
+        count ++;
+        document.write(count);
+    }, 1000);
+}
+/*
+    ! 클로저를 사용하면 좋은것은? jquery etc.7번 참조.
+    *연관 있는 변수와 기능을 하나의 함수로 묶어 독립적으로(여러개) 실행 시킬수 있다.
+    *함수 내부에 데이터가 만들어지기 때문에 함수 외부에서 수정 할 수 없는 보호된 데이터를 만들 수 있다. (privateData)
+*/
+// *ex.7-2 익명함수 클로저
+
+function outerFunction(name) {
+    var output = 'hello' + name + '..!';
+    return function () {
+        return output;
+    };
+}
+// outerFunction 함수 실행 시 output 변수 초기화 및 생성. 이후 익명함수로 지역변수 output을 리턴한다.(클로저)
+
+var first = outerFunction('JS');
+var second = outerFunction('jQ');
+//outerFunction 출력부를 두가지 종류의 전역 변수로 선언.
+ 
+// alert(first());
+// alert(second());
+//각각의 매개변수를 차례로 출력

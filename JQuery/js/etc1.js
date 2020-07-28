@@ -28,3 +28,14 @@ function addBorder(){
         });
     });
 }
+// todo. 1
+function textChange(){
+    $("#btnTextChange").click(function(){
+        // $("#panel2").css("font-size","25px");
+        // $("#panel2").css("color","green");
+        $("#panel2").css({
+            "font-size" : 25, //! or fontSize
+            "color" : 'green'
+        });
+    });
+}

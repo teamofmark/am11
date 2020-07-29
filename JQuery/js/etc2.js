@@ -56,16 +56,16 @@ function keyControl(){
     $(document).keydown(function(e){
         console.log('입력한 키 코드' + e.keyCode);
         switch (e.keyCode) {
-            case 37:
+            case 65:
                 currentXpos -= range;
                 break;
-            case 38:
+            case 87:
                 currentYpos -= range;
                 break;
-            case 39:
+            case 68:
                 currentXpos += range;
                 break;
-            case 40:
+            case 83:
                 currentYpos += range;
                 break;
             default:
@@ -76,14 +76,17 @@ function keyControl(){
             currentXpos = 0;
         }
         if(currentXpos > 380){
-            currentpos = 380;
+            currentXpos = 380;
         }
         if(currentYpos < 0){
-            currentpos = 0;
+            currentYpos = 0;
         }
         if(currentYpos > 380){
-            currentpos = 380;
+            currentYpos = 380;
         }
+
+        circle.css("left", currentXpos);
+        circle.css("top", currentYpos);
     });
 
 

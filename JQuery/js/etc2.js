@@ -55,14 +55,35 @@ function keyControl(){
 
     $(document).keydown(function(e){
         console.log('입력한 키 코드' + e.keyCode);
-        // switch (e.keyCode) {
-        //     case value:
-                
-        //         break;
-        
-        //     default:
-        //         break;
-        // }
+        switch (e.keyCode) {
+            case 37:
+                currentXpos -= range;
+                break;
+            case 38:
+                currentYpos -= range;
+                break;
+            case 39:
+                currentXpos += range;
+                break;
+            case 40:
+                currentYpos += range;
+                break;
+            default:
+                alert('올바른 조작키가 아닙니다.');
+                break;
+        }
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentpos = 380;
+        }
+        if(currentYpos < 0){
+            currentpos = 0;
+        }
+        if(currentYpos > 380){
+            currentpos = 380;
+        }
     });
 
 

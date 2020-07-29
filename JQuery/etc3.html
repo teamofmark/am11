@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>etc3 - tab과 custom input</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/etc3.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+          .cp span{
+              display: inline-block; vertical-align: middle;
+              line-height: 15px;
+          }
+          .cp .checkSpan{
+              text-indent: -9999px;
+          }
+          .cp .checkSpan.material-icons{
+              text-indent: 0;
+          }
+          .cp .label{
+              cursor: pointer;
+          }
+      </style>
 </head>
 <body>
-    
+    <div class="cp checkBox">
+        <span class="checkSpan material-icons">
+            done
+        </span>
+        <span class="label">click!!!</span>
+    </div>
 </body>
 </html>

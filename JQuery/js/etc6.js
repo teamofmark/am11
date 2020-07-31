@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    gallery();
+    gallery(5,200,200);
 
     $(".start").click(function(){
-        gallery();
+        gallery(3,150,150);
     })
     $(".reset").click(function(){
-        gallery();
+        gallery(5,200,200);
     });
 });
 

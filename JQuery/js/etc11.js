@@ -12,15 +12,25 @@ var $banner = null;
 
 $(document).ready(function(){
     init(); //? 대상변수 선언부.
-
+    swap(); //? 배너전환 기능 로드
+    setInterval(swap, 1000);//?배너전환기능을 setInterval 함수로 수행.
 });
 
 function init(){
     $banner = $(".banner");
 }
 function swap(){
-    
+    var imgName = "images/" + logos[currentIndex];
+    //? 이미지 경로 및 파일명 로드.
+    $banner.attr("src",imgName);
+    //? src 속성값에 경로 및 파일명 삽입.
+    currentIndex++;
+    //? 다음 배열을 선택 변수. 증가.
+    reset();
+    console.log(logos[currentIndex]);
 }
 function reset(){
-
+    if(currentIndex == logos.length){
+        currentIndex = 0;
+    }
 }

@@ -55,7 +55,7 @@ function startGame(){
     if(timerID == -1){
         timerID = setInterval(function(){
             updateFishPosition();
-
+            displayFishPositionInfo();
 
         }, 200); //?0.2초마다 함수들 실행.
     }
@@ -71,3 +71,15 @@ function updateFishPosition(){
         $fish.css("left", newLeft);
     }
 }
+// ? 물고기 움직임 함수
+
+function displayFishPositionInfo(){
+    var info = "";
+    for (var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + '번 물고기' + $fish.position().left + "px <br>";
+    }
+    $info.html(info);
+}
+// ? 물고기 위치 출력 함수
+

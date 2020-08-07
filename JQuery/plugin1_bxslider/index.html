@@ -100,8 +100,50 @@
                 autoDelay: 0, // 자동 재생 전 대기 시간 설정
                 pause: 4000, // 자동 재생 시 각 슬라이드 별 노출 시간
                 keyboardEnabled : false, //키보드 조작 가능하게 할지 여부
-                stopAutoOnClick : true // control 부분 (이전,다음,자동재생 등)과 상호작용시 자동작동 중지.
+                stopAutoOnClick : true, // control 부분 (이전,다음,자동재생 등)과 상호작용시 자동작동 중지.
                 
+                //Carousel method
+                 minSlides: 2, //Carousel은 여러개의 객체를 보여주게 하는데, minSlides는 화면 크기가 줄어도 최저 몇개를 보여줄 것인가 의 값.  
+                 maxSlides: 3, //maxSlides는 최대 몇개의 객체를 보여줄 것인가 의 값
+                 slideMargin: 10, // img와 img 사이 간격
+                 moveSlides : 0, // 전환시 한번에 이동할 slide 수.
+                 slideWidth : 0, //각 슬라이드 별 width.
+                 shrinkItems : true, //carousel에 전체 이미지를 다 뿌리고, min, max 수치를 기반으로 뷰포트에 맞게 이미지를 축소.
+
+                // accessibility method
+                // ariaLive : true, //슬라이더에 Aria Live 속성을 추가.
+                // ariaHidden : true //보이지 않는 슬라이드에 Aria Hidden 속성을 추가
+
+                // callBack method는 https://bxslider.com/options/ 참고.
+
+                // public method
+                /*
+                goToSlide
+                제공된 슬라이드 인덱스 (0부터 시작)로 슬라이드 전환을 수행합니다.
+                goToNextSlide
+                "다음"슬라이드 전환을 수행합니다.
+                goToPrevSlide
+                "이전"슬라이드 전환을 수행합니다.
+                startAuto
+                자동 쇼를 시작합니다. auto 컨트롤이 업데이트되지 않도록 false를 제공하십시오.
+                stopAuto
+                자동 쇼를 중단합니다. auto 컨트롤이 업데이트되지 않도록 false를 제공하십시오.
+                getCurrentSlide
+                현재 활성 슬라이드를 반환합니다.
+                getSlideCount
+                슬라이더에있는 총 슬라이드 수를 반환합니다.
+                redrawSlider
+                슬라이더를 다시 그립니다. 숨겨진 슬라이더를 숨긴 후에 다시 그려야 할 때 유용합니다.
+                reloadSlider
+                슬라이더를 다시로드합니다. 슬라이드를 즉시 추가 할 때 유용합니다. 선택적 설정 개체를 수락합니다.
+                destroySlider
+                슬라이더를 파괴하십시오. 그러면 모든 슬라이더 요소가 원래 상태로 되돌려집니다 (슬라이더를 호출하기 전에).
+                */
+
+                //etc trash
+                //useCSS: true, slide animation에 jquery animate를 사용할 것이라면 false
+                //slideSelector : 기본 직계 자손을 슬라이드 하지만, 내부 특정 객체를 선택하고자 할때 사용.
+
             });
         });
     </script>

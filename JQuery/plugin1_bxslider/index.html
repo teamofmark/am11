@@ -25,7 +25,41 @@
                 infiniteLoop: false, //마지막에 도달 했을시, 첫슬라이드로 갈 것인가 멈출것인가
                 hideControlOnEnd: true, //첫번째 슬라이드 일경우 이전 버튼 삭제, 마지막 슬라이드 일 경우 다음 버튼 삭제 단, infiniteLoop: false 일 경우만 사용 가능.
                 
-                captions: true
+                captions: true, // img 태그에 title 속성값을 사용할시, 그부분의 출력여부 단, css .bx-wrapper .bx-caption 부분 조절 필요
+
+                ticker: false, //ticker 모드 사용 (speed 조절필요)
+                tickerHover: false, //ticker 모드 사용시 마우스 오버로 멈추기.
+                
+                video: true, //slide에 video 사용 및 활성화여부. 반응성 향상, 사용할 시에 plugins/jquery.fitvids.js include 필요
+            
+                preloadImages: 'visible', // "visible"은 현재 보여지는 슬라이드 이미지만 로드 이후 순차적 로드, "all"로 설정하면 이미지가 모두 로드되야 작동.
+            
+                // responsive method
+                responsive: true, //반응형 지원여부
+                /*
+                    responsive 가 false일 경우, slider에 고정폭과 고정높이가 필요하다.
+                    위치는 jquery.bxslider.css .bx-wrapper class에 width 고정, height는 이미지 높이에 따라 자동 조정.
+
+                    pc 만 지원하는 반응형일 경우
+                    같은 class인 .bx-wrapper 에게 min-width를 1000px을 지정 하면 된다.
+                */
+                touchEnabled: false, //터치스와이프 기능 사용여부 //chrome 터치불가현상.
+                swipeThreshold: 0, //터치하여 스와이프 할때 변환 효과에 소모되는 시간 설정
+                oneToOneTouch: false, // fade 효과가 아닌 슬라이드는 손가락의 접지상태에 따라 슬라이드를 움직일수있다.
+                preventDefaultSwipeX: false, // onoToOneTouch 에서 true일 경우, 손가락을따라 x축으로 움직일지에 대한 여부
+                preventDefaultSwipeY: false, // onoToOneTouch 에서 true일 경우, 손가락을따라 y축으로 움직일지에 대한 여부
+
+                // pager method
+                pager: true, //pager 인디케이터 출력여부
+                //pagerType: 'short',  pager 타입 설정. full은 default, short 은 1/4 이런 형식의  출력
+                //pagerShortSeparator: ' | ', short 타입 일 경우 카운트 사이 문자 설정 
+                // pagerSelector: '.newPager' 기본 pager 를 대체
+                pagerCustom: '.thumbPager', //pagerCustom
+
+                // control method
+                controls: true, // 좌,우 컨트롤 버튼 출력 여부
+                nextSelector: '.next',
+                prevSelector: '.prev'
             });
         });
     </script>
@@ -60,11 +94,12 @@
         }
         .newPager a{
             text-indent: -9999px; background-color: #808080;
-            width: 20px; height: 20px; border-radius: 10px;
+            width: 10px; height: 10px; border-radius: 5px;
             text-decoration: none; display: block;
+            transition: background 0.75s ease-in-out;
         }
         .newPager a:hover{
-            background-color:salmon;
+            background-color: #09f;
         }
 
         /* thumbPager */
@@ -86,6 +121,25 @@
         }
         .thumbPager li img{
             width: 100%;
+        }
+        .prev,.next{
+            text-decoration: none;
+            width: 50px; line-height: 50px;
+            border-radius: 25px;
+            background-color: salmon;
+            display: inline-block;
+            font-size: 14px; text-align: center;
+        }
+        .prev:hover,
+        .next:hover{
+            background-color: slateblue;
+            color: white;
+        }
+        .prev:before{
+            content:'<';
+        }
+        .next:after{
+            content:'>';
         }
     </style>
 </head>

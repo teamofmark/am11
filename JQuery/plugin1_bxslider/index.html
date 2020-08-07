@@ -22,8 +22,8 @@
                 startSlide: 0,  //시작시 사용할 slide indexNumb(0부터시작)
                 randomStart: false, //  시작시 random slide 여부
 
-                infiniteLoop: false, //마지막에 도달 했을시, 첫슬라이드로 갈 것인가 멈출것인가
-                hideControlOnEnd: true, //첫번째 슬라이드 일경우 이전 버튼 삭제, 마지막 슬라이드 일 경우 다음 버튼 삭제 단, infiniteLoop: false 일 경우만 사용 가능.
+                infiniteLoop: true, //마지막에 도달 했을시, 첫슬라이드로 갈 것인가 멈출것인가
+                hideControlOnEnd: false, //첫번째 슬라이드 일경우 이전 버튼 삭제, 마지막 슬라이드 일 경우 다음 버튼 삭제 단, infiniteLoop: false 일 경우만 사용 가능.
                 
                 captions: true, // img 태그에 title 속성값을 사용할시, 그부분의 출력여부 단, css .bx-wrapper .bx-caption 부분 조절 필요
 
@@ -59,7 +59,49 @@
                 // control method
                 controls: true, // 좌,우 컨트롤 버튼 출력 여부
                 nextSelector: '.next',
-                prevSelector: '.prev'
+                prevSelector: '.prev',
+                nextText: '다음',
+                prevText: '이전',
+                /*
+                    customize controler
+                    1. 이미지를 수정하는 방법
+                    images / controls.png 파일 자체를 수정 하여 디자인을 바꿀수있다.
+                    만약 크기가 커지거나 작아진다면, 그에 맞는 좌표값을 크롬 개발자
+                    도구에서 찾아내어 수정 해줘야 한다.
+                    (기존 객체 css 위치 jquery.bxslider.css 파일 내 125번 라인
+                    .bx-wrapper .bx-controls-direction a 부분을 수정 하면 됨)
+
+                    2. 객체삽입방법
+                    nextSelector와 prevSelector 함수를 삽입하고, 
+                    만들어 낼 객체의 클래스명을 지목한후, body 내에 해당 
+                    클래스이름을 가진 객체를 만들어준다. 
+                    단, 여기서 주의할 점은 객체를 만들고 스타일을 지정할 대상은
+                    객체 안의 a 태그를 지목해야 한다.
+                    a 태그가 객체 안에 자동으로 생성 되기 때문에..
+
+                */
+                auto: true,
+                autoControls: true,
+                autoControlsCombine: true,
+                // autoControlsSelector: '.newAutoControl',// 기본 autoControl을 대체
+                //startText: '시작', 재생 버튼에 text 삽입
+                //stopText: '중지', 중지 버튼에 text 삽입
+                // customizing 방법은 controler 와 동일
+
+                autoStart: true, 
+                /*
+                    페이지 로드가 되면, 슬라이드의 자동시작 여부
+                    -p.s video가 slide 목록중에 포함 되어있으면 역,정순 배열 재생시에
+                    infinite loop 자체와 hideControlOnEnd 기능의 영향을 받으니
+                    해당 옵션 조정후 사용 권장
+                */
+                autoDirection: 'next', // 자동 재생 시에 정순, 역순(prev) 방식 설정
+                autoHover: true, // 슬라이드 오버시 재생 중단 여부 (false: 오버무시) 
+                autoDelay: 0, // 자동 재생 전 대기 시간 설정
+                pause: 4000, // 자동 재생 시 각 슬라이드 별 노출 시간
+                keyboardEnabled : false, //키보드 조작 가능하게 할지 여부
+                stopAutoOnClick : true // control 부분 (이전,다음,자동재생 등)과 상호작용시 자동작동 중지.
+                
             });
         });
     </script>
@@ -123,17 +165,24 @@
             width: 100%;
         }
         .prev,.next{
-            text-decoration: none;
             width: 50px; line-height: 50px;
             border-radius: 25px;
             background-color: salmon;
             display: inline-block;
             font-size: 14px; text-align: center;
         }
+        .prev a,
+        .next a{
+            text-decoration: none;
+        }
         .prev:hover,
         .next:hover{
             background-color: slateblue;
             color: white;
+        }
+        .prev:hover a,
+        .next:hover a{
+            color: inherit;
         }
         .prev:before{
             content:'<';
@@ -150,7 +199,7 @@
         <li><img src="images/photo3.jpeg" title="ex3" alt="exImg"></li>
         <li><img src="images/photo4.jpeg" title="ex4" alt="exImg"></li>
         <li><img src="images/photo5.jpeg" title="ex5" alt="exImg"></li>
-        <li><iframe src="https://www.youtube.com/embed/10bKHJNtQvU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        <!-- <li><iframe src="https://www.youtube.com/embed/10bKHJNtQvU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li> -->
     </ul>
     <div class="newPager"></div>
     <ul class="thumbPager">
@@ -185,6 +234,9 @@
             </a>
         </li>
     </ul>
-    <a href="" class='prev'></a>
-    <a href="" class="next"></a>
+    <span class='prev'></span>
+    <span class="next"></span>
+    <div class="newAutoControl"> 
+
+    </div>
 </html>

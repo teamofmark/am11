@@ -1,0 +1,87 @@
+header{
+    background: url('../images/main_02.png') no-repeat center center;
+    background-size: cover;
+    border-top: 10px solid #2ecc71;
+
+}
+header div{
+    margin: 0 auto;
+}
+header div h1{
+    max-width: 183px; margin-bottom: 30px;
+}
+header div h1 img{
+    width: 100%;
+}
+header div p{
+    font-family: 'Roboto'; color: #fff;
+    font-weight: 500; line-height: 36px;
+    font-size: 24px; max-width: 455px;
+    letter-spacing: -1px; margin-bottom: 20px;
+}
+header div > a{
+    display: inline-block; text-decoration: none;
+}
+header div > a:not(:first-of-type){
+    margin-left: 10px;
+}
+/* ?header Fin */
+
+section{
+    padding: 60px 13.12%;
+}
+/* ?section Fin */
+
+footer{
+    padding: 60px 0; background-color: #e3e3e3;
+    text-align: center;
+}
+footer a{
+    text-decoration: none; font-size: 16px;
+    line-height: 26px; color: #848484;
+    display: inline-block;
+}
+footer a:not(:first-child){
+    margin-left: 2.18%;
+}
+/* ?footer Fin */
+
+/* *All Using */
+
+@media screen and (max-width: 767px){
+    header{
+        padding: 110px 0;
+    }
+    header div{
+        max-width: 767px; padding: 0 13.12%;
+    }
+    /* ?header Fin */
+}
+/* ?mobile */
+
+@media screen and (min-width:768px){
+    header{
+        padding: 165px 0;
+    }
+    header div{
+        max-width: 1180px; padding-left: 9.3%;
+    }
+    
+}
+/* ? tablet and desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header div h1{
+        width: 27%;
+    }
+    /* ?header Fin */
+}
+/* ?tablet */
+
+@media screen and (min-width: 1280px){
+    header div h1{
+        width: 11.5%; 
+    }
+    /* ?header Fin */
+}
+/* ?desktop */

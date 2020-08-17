@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Tag</title>
+</head>
+<body>
+    <form>
+        <!--
+            form 은 input 내 data를 담아 전송하는 역할을 해준다.
+            감싸는 위치는 input과 가장 가까운 공간태그여야 한다.
+            -->
+        <fieldset>
+            <!--form 태그에서 사용되는 입력태그들은 fieldset으로 그룹화 시킨다.-->
+            <legend>HTML4 Input</legend>
+            <!--fieldset으로 그룹화가 되었다면, 그 그룹 주제에 맞는 이름을 legend 태그 안에 삽입한다.(필수아님)-->
+            <ul>
+                <li>
+                    <input type="text" placeholder="text입력" title="text입력" maxlength="3" id="textEX">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

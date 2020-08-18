@@ -55,6 +55,40 @@
                     2. value 값은 기존 input 과 동일
                     3. checked 옵션 역시 radio input 과 동일
                 -->
+                <li>
+                    <textarea cols="30" rows="10">
+                        ASLDFGEWSALRGFJESARGEasrGESARGEWSRGERG
+                        EWRGH
+                    </textarea>
+                </li>
+                <!--
+                    여러줄을 입력 할 수 있는 텍스트 상자인 textarea 는 cols로 가로 입력 너비, rows로 세로입력너비
+                    의 초기값을 설정 할 수 있다.
+                    주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에, 초기 데이터 삽입시 공백부분에
+                    유의 해야 한다.
+                -->
+                <li>
+                    <select>
+                        <option value="null">직업선택</option>
+                        <optgroup label="실업자">
+                            <option value="1">무직</option>
+                            <option value="2">학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option value="3">전문직</option>
+                            <option value="4">공무원</option>
+                        </optgroup>
+                    </select>
+                    <!--
+                        select는 선택항목을 목록형의 단축메뉴 형식으로 만드는 입력 양식이다.
+                        항목 수만큼의 option 이 필요하고, 이안의 value로 값을 정해 전달한다.
+                        multiple 속성값을 이용해 다중 선택을 지원 할수 있고, size 속성값을 이용해 초기 노출 목록수를 제어할수 있다.
+                        optgroup으로 중간 그룹을 설정할 수 있다.
+                    -->
+                </li>
+                <li>
+                    
+                </li>
             </ul>
         </fieldset>
     </form>

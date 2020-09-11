@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h1{
+    font-size: 20px; line-height: 25px; color: #06f;
+}
+/*
+    font가 들어가는 부분은 무조건 line-height를 설정해야 하는데, 그 이유인 즉슨
+    block 속성이 아닌 태그들에게 line-height를 지정하지 않게 되면 폰트의 영역이(컨텐츠의 영역이)
+    무시되는 경우가 있으며, block 속성이라 하여도, text가 길 경우 줄바꿈이 이루어
+    졌을때 윗줄과 아랫줄의 줄간이 없어 글자들이 붙거나 겹치는 현상이 있기때문이다.
+*/
+h2{
+    font-size:15px; line-height:21px; color:#966;
+}
+h3{
+    font-size:13px; line-height:19px; color:#F90;
+}
+p{
+    font-size: 14px;
+}
+p.letter

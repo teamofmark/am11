@@ -51,5 +51,11 @@ p.w_nowrap{
 	bottom : 아래쪽 정렬
 	% : 퍼센트로 정렬 위치를 지정
 	*/	
-	
+}
+p.t_indent{
+    font-size: 40px; text-indent: 100px;
+}
+button.indentTest{
+    background: url('https://via.placeholder.com/150x50?text=blabla');
+    border: none; width: 150px; line-height: 50px; font-size:12px;
 }

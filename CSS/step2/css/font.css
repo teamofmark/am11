@@ -58,4 +58,21 @@ p.t_indent{
 button.indentTest{
     background: url('https://via.placeholder.com/150x50?text=blabla');
     border: none; width: 150px; line-height: 50px; font-size:12px;
+    text-indent: -9999px;
+}
+
+a{
+    display: block; line-height: 50px;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #0cf;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #96c;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: #f63;
 }

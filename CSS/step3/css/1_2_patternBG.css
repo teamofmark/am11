@@ -1,0 +1,16 @@
+html, body, .wrap{
+    height: 100%;
+}
+body{
+    margin: 0; padding: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+}
+.wrap p{
+    background-color:#0cf; padding: 20px; margin: 0 0 20px 0;
+}
+.wrap button{
+    line-height: 50px; padding: 0 40px; color: white; border: none;
+    background: url('../images/')
+}

@@ -1,0 +1,17 @@
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.singleBox{
+    border: 3px solid #60f;
+    /* border-top: 3px solid #60f;
+    border-right: 3px solid #60f;
+    border-bottom: 3px solid #60f;
+    border-left: 3px solid #60f; */
+}
+.multiBox{
+    border-top: 1px solid #1985b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #66f;
+    border-left: 25px double #fc6;
+}

@@ -31,6 +31,65 @@
         <p class="f_size f_weight f_color">f_size 클래스로 font size 변경, f_weight클래스로 굵기 변경, f_color로 색상 변경</p>
     </div>
     
-    div
+    <div class="attrSelector">
+        <form>
+            <fieldset>
+                <legend>attribute Selector</legend>
+                <ul>
+                    <li>
+                        <label for="nameField">이름 : </label>
+                        <input type="text" id="nameField">
+                        <input type="text" id="nameField">
+                        <input type="text" id="nameField">
+                        <input type="text" id="nameField">
+                        <input type="text" id="nameField">
+                        <input type="text" id="nameField">
+                    </li>
+                    <li>
+                        <label for="pwField">비밀번호 : </label>
+                        <input type="password" id="pwField">
+                        <input type="password" id="pwField">
+                        <input type="password" id="pwField">
+                        <input type="password" id="pwField">
+                        <input type="password" id="pwField">
+                        <input type="password" id="pwField">
+                        <input type="password" id="pwField">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+    <div class="stringAttrSelector">
+        <img src="https://via.placeholder.com/150.png" alt="undefined">
+        <img src="https://via.placeholder.com/150.jpg" alt="undefined">
+        <img src="https://via.placeholder.com/150.gif" alt="undefined">
+    </div>
+
+    <div class="directSelector">
+        <h1>이 부분은 directselect의 직계 h1</h1>
+        <div class="indirect">
+            <h1>
+                이 부분은 directSelector의 직계 indirect
+                안의 h1
+            </h1>
+        </div>
+        <span>
+            이 부분은 directSelector의 직계 span.
+            <span>
+                이 부분은 directSelector의 직계 span안의
+                span.
+            </span>
+        </span>
+    </div>
+    <div class="sameSelector">
+        <h1>header - 1</h1>
+        <h2 title="subtitle">header - 2</h2>
+        <h3>header - 3</h3>
+        <h2>header - 2</h2>
+        <h3>header - 3</h3>
+        <h2>header - 2</h2>
+        <h3>header - 3</h3>
+        <h2>header - 2</h2>
+    </div>
 </body>
 </html>

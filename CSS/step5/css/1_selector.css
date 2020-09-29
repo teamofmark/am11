@@ -65,3 +65,11 @@
 .sameSelector h1+h2{
     font-size: 40px; color: #fcf;
 }
+/*
+    동위 선택자에서 A+B는 A 바로뒤에 위치하는 B를 지목하고,
+    A~B는 A뒤에있는 B모두를 선택한다.
+*/
+.activeSelector h1:hover{
+    font-size: 35px; color: #0f0;
+    cursor: pointer;
+}

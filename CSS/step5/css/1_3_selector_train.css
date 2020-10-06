@@ -36,3 +36,26 @@ div h2{
     font-size: 14px; color: white; margin-bottom: 25px;
     text-transform: capitalize; text-align: center;
 }
+div form fieldset{
+    border: none; padding: 0; width: 90%;
+    margin: 0 auto;
+}
+div form fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+div form fieldset ul li{
+    margin-bottom: 25px;
+}
+div form fieldset ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+div form fieldset ul li label{
+    width: 15%; float: left; padding: 12px 0;
+    font-size: 12px; background-color: #ea0e52;
+    font-weight: bold; color: white; display: block;
+    text-align: center; text-transform: uppercase;
+}
+div form fieldset ul li input{
+    width: 80%; padding: 12px 2.5%; float: left; 
+    border: none; font-size: 12px;
+}

@@ -7,7 +7,8 @@ body{
 }
 div{
     width: 50%; height: 50%; background-color: #262626;
-    position: fixed; top: 25%; left: 25%;
+    position: absolute; top: 25%; left: 25%; min-height: 295px;
+
 }
 div nav{
     margin-bottom: 25px;
@@ -58,4 +59,19 @@ div form fieldset ul li label{
 div form fieldset ul li input{
     width: 80%; padding: 12px 2.5%; float: left; 
     border: none; font-size: 12px;
+}
+div form fieldset ul li input:focus{
+    background-color: #ea0e52;
+}
+div form fieldset ul li input[type='password']:focus{
+    color: white;
+}
+div form input[type='submit']{
+    width: 90%; margin: 0 auto; border: none;
+    display: block; padding: 10px 0;
+    background-color: #3e3e3e; color: #ea0e52;
+}
+div form input[type='submit']:hover{
+    background-color: #ea0e52; color: black;
+    cursor: pointer;
 }

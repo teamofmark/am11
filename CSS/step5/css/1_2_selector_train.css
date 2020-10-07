@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+article:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+article:not(:last-of-type){
+    margin-bottom: 10px;
+}
+
+article > *:first-child{
+    font-size: 200px; width: 40%; line-height: 140px;
+    background-color: gray; color: white;
+}
+
+article:nth-child(odd) > *:first-child{
+    float: right; margin: 0 0 10px 20px;
+    text-align: right;
+}
+article:nth-child(even) > *:first-child{
+    float: left; margin: 0 20px 10px 0;
+}

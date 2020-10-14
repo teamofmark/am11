@@ -46,3 +46,10 @@ body{
 .delay2 ul:hover li:nth-child(4){background-color: sandybrown;}
 .delay2 ul:hover li:nth-child(5){background-color: seagreen;}
 .delay2 ul:hover li:nth-child(6){background-color: springgreen;}
+
+
+.delay3 ul li:nth-child(1){transition-timing-function: ;}
+.delay3 ul li:nth-child(2){transition-timing-function: ;}
+.delay3 ul li:nth-child(3){transition-timing-function: ;}
+.delay3 ul li:nth-child(4){transition-timing-function: ;}
+.delay3 ul li:nth-child(5){transition-timing-function: ;}

@@ -1,0 +1,7 @@
+body{
+    width: 200px; margin: 200px auto;
+    /* ! 3D구현 면적 */
+}
+div{
+    width: 200px; height: 200px;
+}

@@ -28,6 +28,7 @@ section .moveMent{
 }
 section .moveMent .pic{
     position: absolute; left: 0; top: 0;
+    backface-visibility: hidden;
 }
 section .moveMent .pic:nth-child(1){
     transform: rotateY(0deg) translateZ(-370px);

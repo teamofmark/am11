@@ -10,14 +10,19 @@ img{
 /* *setting */
 section{
     position: relative; width: 100%; height: 100%;
-    perspective: 1000px;
+    perspective: 1500px;
 }
+/* 
+    ? section
+    ! perspective를 주고, .movement를 absolute로 띄우기 위함.
+*/
 section .moveMent{
     position: absolute; left: 50%; top: 20%;
     transform-style: preserve-3d;
     animation-name: rotater;
     animation-duration: 15s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes rotater{
     from{
@@ -28,7 +33,7 @@ section .moveMent{
 }
 section .moveMent .pic{
     position: absolute; left: 0; top: 0;
-    backface-visibility: hidden;
+    backface-visibility: hidden; margin-left: -107px;
 }
 section .moveMent .pic:nth-child(1){
     transform: rotateY(0deg) translateZ(-370px);
@@ -59,4 +64,18 @@ section .moveMent .pic:nth-child(9){
 }
 section .moveMent .pic:nth-child(10){
     transform: rotateY(324deg) translateZ(-370px);
+}
+
+section .moveMent .pic .cell{
+    width: 215px; height: 121px; margin-bottom: 20px;
+    transition-duration: 0.5s;
+}
+section .moveMent .pic .cell:hover{
+    transform: scale(1.2) translateZ(0px);
+}
+section .moveMent .pic .cell img{
+    opacity: 0.5;
+}
+section .moveMent .pic .cell:hover img{
+    opacity: 1;
 }

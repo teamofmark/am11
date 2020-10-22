@@ -89,5 +89,14 @@
 }
 
 .flexContainer.justItems{
-    justify-items: ;
+    justify-items: center;
 }
+.flexContainer.justItems .flexItem{
+    width: 150px;
+}
+.flexContainer.justItems .flexItem:first-of-type{
+    font-size: 30px; 
+}
+
+/* !이하 item */
+

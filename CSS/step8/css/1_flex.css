@@ -109,3 +109,40 @@
 .flexContainer.orderItem .flexItem.order3{
     order: 0;
 }
+
+.flexContainer.flexShortHand{
+    width: 50%; margin: 0; padding: 0;
+}
+.flexContainer.flexShortHand .flexItem{
+    word-break: break-all;
+    margin: 0; padding: 0;
+}
+.flexContainer.flexShortHand .flexItem:first-child{
+    /* *ex.1 grow. 변형확인위해 basis off 
+    flex-grow: 2;
+    flex-basis: 0;
+    */
+    /* *ex.2 shrink 
+    flex-shrink: 4;
+    flex-basis: 150px;
+    */
+}
+.flexContainer.flexShortHand .flexItem:first-child~*{
+    /* *ex.1 
+    flex-grow: 1;
+    flex-basis: 0;
+    */
+    /* *ex.2 
+    flex-shrink: 1;
+    flex-basis: 150px;
+    */
+}
+/* 
+    ? ex.1 > 만약 전체 너비 (300px)의 item 3개에 개별적 grow
+    ? .flexItem:first-child{flex-grow:2} (300/4)*2 = width: 150
+    ? .flexItem:first-child~*{flex-grow:1} (300/4)*1 = width: 75
+
+    ? ex.2 ? 만약 수축중인 전체 너비 (300px)의 item 3개에 개별적 shrink(각 width: 150px)
+    ? .flexItem:first-child{flex-shrink:4} 150+(-150/6)*4 = width: 50px; 
+    ? .flexItem:first-child~*{flex-shrink:1} 150+(-150/6)*1  = width: 125px; 
+    */

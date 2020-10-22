@@ -100,3 +100,12 @@
 
 /* !이하 item */
 
+.flexContainer.orderItem .flexItem.order1{
+    order: -1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 0;
+}

@@ -19,6 +19,14 @@ a{
 /* * All Using Part's */
 
 @media screen and (min-width: 1280px){
+    body > figure,
+    section.expArea,
+    section.contactArea,
+    footer > div{
+        max-width: 940px; margin: 0 auto;
+        padding: 70px 0;
+    }
+
     header{
         padding: 15px 0 70px;
         background: url('../images/bg_01.png') no-repeat left top;
@@ -98,4 +106,6 @@ a{
         border-color: #00e0d0;
     }
     /* header Fin */
+
+
 }

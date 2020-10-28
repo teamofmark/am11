@@ -1,0 +1,30 @@
+
+
+@media screen and (min-width: 1280px){
+    body > figure:after{
+        content: ''; display: block; visibility: hidden;
+        clear: both;
+    }
+    body > figure img{
+        float: left; width: 25%; max-width: 235px;
+    }
+    body > figure figcaption{
+        float: left; width: 57.5%; margin-left: 17.5%;
+    }
+    body > figure figcaption > *:not(a){
+        margin-bottom: 30px;   
+    }
+    body > figure figcaption h2{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b;
+    }
+    body > figure figcaption p{
+        font-size: 14px; font-weight: 300;
+        line-height: 22px;
+        color: rgba(65,61,75, 0.75);
+    }
+    body > figure figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* * CI figure Fin */
+}

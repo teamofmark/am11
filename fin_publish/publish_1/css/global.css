@@ -4,7 +4,8 @@ body > figure figcaption p,
 footer > div div *,
 section.videoArea h2,
 section.expArea ul li > *,
-section.teamArea ul li figure figcaption dl{
+section.teamArea ul li figure figcaption dl,
+section.expArea > p:last-of-type{
     font-family: 'Roboto';
 }
 header > div > ul li h2,

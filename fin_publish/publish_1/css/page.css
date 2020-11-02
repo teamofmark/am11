@@ -85,7 +85,7 @@
     section.expArea ul li:nth-child(6){
         background-image: url('../images/ico_06.png');
     }
-    
+
     section.expArea ul li h3{
         font-weight: 900; font-size: 14px;
         color: #413d4b; margin-bottom: 20px;
@@ -94,7 +94,14 @@
         font-weight: 300; line-height: 22px;
         font-size: 14px; color: rgba(51,51,51,0.75);
     }
-
+    section.expArea ul li:nth-child(n):nth-child(-n+6){
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    section.expArea ul li:nth-child(3n+2){
+        border-width: 0 1px; border-style: solid;
+        border-color: rgba(0,0,0,0.2); 
+    }
+    /* expArea 종료 */
     section.teamArea h2{
         color:white;
     }

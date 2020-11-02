@@ -94,7 +94,7 @@
         font-weight: 300; line-height: 22px;
         font-size: 14px; color: rgba(51,51,51,0.75);
     }
-    section.expArea ul li:nth-child(n):nth-child(-n+6){
+    section.expArea ul li:nth-child(n):nth-child(-n+3){
         border-bottom: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:nth-child(3n+2){
@@ -102,13 +102,26 @@
         border-color: rgba(0,0,0,0.2); 
     }
     /* expArea 종료 */
-    section.teamArea h2{
-        color:white;
-    }
-    section.teamArea p{
-        color: white;
+    
+    section.teamArea{
+        background: url('../images/bg_03.png') no-repeat left top;
+        background-size: cover; text-align: center;
+        color: white; padding: 70px 0;
     }
     section.teamArea hr{
         border-color: rgba(255,255,255, 0.3);
+    }
+    section.teamArea ul{
+        margin: 0 auto 70px; max-width: 940px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; visibility: hidden;
+        clear: both;
+    }
+    section.teamArea ul li{
+        width: 23.5%; float: left; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
     }
 }

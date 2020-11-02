@@ -3,7 +3,8 @@ header > div > ul li p,
 body > figure figcaption p,
 footer > div div *,
 section.videoArea h2,
-section.expArea ul li > *{
+section.expArea ul li > *,
+section.teamArea ul li figure figcaption dl{
     font-family: 'Roboto';
 }
 header > div > ul li h2,

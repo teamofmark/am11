@@ -237,4 +237,25 @@
     section.talkArea div ul li:not(.active):hover a img{
         width: 100%;
     }
+    /* *talkArea Fin */
+
+    section.contactArea:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset,
+    section.contactArea div{
+        float: left; display: block;
+    }
+    section.contactArea form fieldset{
+        width: 50%;
+    }
+
+    /* * contactArea Left */
+
+    section.contactArea div{
+        width: 40%; margin-left: 10%;
+    }
 }

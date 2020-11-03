@@ -5,13 +5,15 @@ footer > div div *,
 section.videoArea h2,
 section.expArea ul li > *,
 section.teamArea ul li figure figcaption dl,
-section.expArea > p:last-of-type{
+section.expArea > p:last-of-type,
+section.worksArea h2 a{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 body > figure figcaption h2,
 section.tphr h2,
-section.tphr > p{
+section.tphr > p,
+section.worksArea h2{
     font-family: 'Playfair Display';
 }
 

@@ -146,4 +146,31 @@
     section.teamArea a.btn_more{
         margin: 0 auto; max-width: 140px;
     }
+    /* *teamArea Fin */
+
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        max-width: 940px; margin: 0 auto 70px;
+        position: relative; color: #413d4b;
+        font-weight: 700; font-size: 22px;
+    }
+    section.worksArea h2 a{
+        position: absolute; right: 0; top: 5px;
+        font-size: 14px; font-weight: 300;
+        color: #413d4b;
+    }
+    section.worksArea ul{
+        margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; visibility: hidden;
+        clear: both;
+    }
+    section.worksArea ul li{
+        float: left; display: block; width: 16.66%;
+        
+    }
+
 }

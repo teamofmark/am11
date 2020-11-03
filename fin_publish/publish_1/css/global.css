@@ -6,14 +6,16 @@ section.videoArea h2,
 section.expArea ul li > *,
 section.teamArea ul li figure figcaption dl,
 section.expArea > p:last-of-type,
-section.worksArea h2 a{
+section.worksArea h2 a,
+section.talkArea p > *{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 body > figure figcaption h2,
 section.tphr h2,
 section.tphr > p,
-section.worksArea h2{
+section.worksArea h2,
+section.talkArea p{
     font-family: 'Playfair Display';
 }
 
@@ -27,6 +29,15 @@ a{
     font-size: 16px; padding: 15px; display: block;
     background-color: transparent; text-align: center;
 }
+/* .btn_more.alignLeft{
+    margin-right: auto;
+}
+.btn_more.alignRight{
+    margin-left: auto;
+}
+.btn_more.alignCenter{
+    margin: 0 auto;
+} */
 
 
 section.tphr{

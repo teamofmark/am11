@@ -60,12 +60,6 @@
         content: ''; display: block; visibility: hidden;
         clear: both;
     }
-    section.expArea ul li{
-        width: 50%; float: left; display: block;
-        padding: 120px 3.5% 40px; box-sizing: border-box;
-        background-repeat: no-repeat;
-        background-position: center 35px;
-    }
     section.expArea ul li:nth-child(1){
         background-image: url('../images/ico_01.png');
     }
@@ -85,6 +79,12 @@
         background-image: url('../images/ico_06.png');
     }
 
+    section.expArea ul li{
+        width: 50%; float: left; display: block;
+        padding: 120px 3.5% 40px; box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-position: center 35px;
+    }
     section.expArea ul li h3{
         font-weight: 900; font-size: 14px;
         color: #413d4b; margin-bottom: 20px;
@@ -112,7 +112,7 @@
         border-color: rgba(255,255,255, 0.3);
     }
     section.teamArea ul{
-        margin: 0 auto 70px; max-width: 940px;
+        margin: 0 auto 70px; max-width: 728px;
     }
     section.teamArea ul:after{
         content: ''; display: block; visibility: hidden;
@@ -126,7 +126,7 @@
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') no-repeat center top;
-        padding-top: 230px; background-size: contain;
+        padding-top: 180px; background-size: contain;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5);
@@ -152,7 +152,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        max-width: 940px; margin: 0 auto 70px;
+        max-width: 728px; margin: 0 auto 70px;
         position: relative; color: #413d4b;
         font-weight: 700; font-size: 22px;
     }
@@ -189,7 +189,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 940px; margin: 0 auto 50px;
+        max-width: 728px; margin: 0 auto 50px;
         background: url('../images/quote.png') no-repeat center top;
         padding-top: 70px; color: white; font-size: 16px;
         line-height: 26px; font-weight: 400;
@@ -205,7 +205,7 @@
         font-size: 13px; font-weight: 300;
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: 728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;

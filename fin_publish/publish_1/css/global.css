@@ -7,7 +7,9 @@ section.expArea ul li > *,
 section.teamArea ul li figure figcaption dl,
 section.expArea > p:last-of-type,
 section.worksArea h2 a,
-section.talkArea p > *{
+section.talkArea p > *,
+section.contactArea form fieldset input:not([type='submit']),
+section.contactArea form fieldset textarea{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
@@ -15,7 +17,9 @@ body > figure figcaption h2,
 section.tphr h2,
 section.tphr > p,
 section.worksArea h2,
-section.talkArea p{
+section.talkArea p,
+section.contactArea form fieldset legend,
+section.contactArea div h3{
     font-family: 'Playfair Display';
 }
 

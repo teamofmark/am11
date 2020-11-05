@@ -49,6 +49,9 @@
     }
     /* *videoArea Fin */
 
+    section.expArea{
+        text-align: center;
+    }
     section.expArea h2{
         color: #413d4b;
     }
@@ -59,10 +62,10 @@
         border-color: rgba(65,61,75, 0.3);
     }
 
-    section.expArea ul:after{
+    /* section.expArea ul:after{
         content: ''; display: block; visibility: hidden;
         clear: both;
-    }
+    } */
     section.expArea ul li:nth-child(1){
         background-image: url('../images/ico_01.png');
     }
@@ -83,10 +86,12 @@
     }
 
     section.expArea ul li{
-        width: 50%; float: left; display: block;
+        /* width: 50%; float: left; */
+        display: block;
         padding: 120px 3.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat;
         background-position: center 35px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li h3{
         font-weight: 900; font-size: 14px;
@@ -96,14 +101,14 @@
         font-weight: 300; line-height: 22px;
         font-size: 14px; color: rgba(51,51,51,0.75);
     }
-    section.expArea ul li:nth-child(n):nth-child(-n+4){
+    /* section.expArea ul li:nth-child(n):nth-child(-n+4){
         border-bottom: 1px solid rgba(0,0,0,0.2);
-    }
-    section.expArea ul li:nth-child(even){
-        /* border-width: 0 1px; border-style: solid;
-        border-color: rgba(0,0,0,0.2);  */
+    } */
+    /* section.expArea ul li:nth-child(even){
+        border-width: 0 1px; border-style: solid;
+        border-color: rgba(0,0,0,0.2); 
         border-left: 1px solid rgba(0,0,0,0.2);
-    }
+    } */
     /* expArea 종료 */
     
     section.teamArea{

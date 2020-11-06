@@ -119,26 +119,31 @@
     section.teamArea hr{
         border-color: rgba(255,255,255, 0.3);
     }
-    section.teamArea ul{
+    /* section.teamArea ul{
         margin: 0 auto 70px; max-width: 728px;
-    }
-    section.teamArea ul:after{
+    } */
+    /* section.teamArea ul:after{
         content: ''; display: block; visibility: hidden;
         clear: both;
+    } */
+    section.teamArea ul{
+        padding: 0 3%; margin-bottom: 70px;
     }
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        /* width: 23.5%; float: left; */
+        display: block;
     }
-    section.teamArea ul li:not(:first-child){
-        margin-left: 2%;
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') no-repeat center top;
-        padding-top: 180px; background-size: contain;
+        padding-top: 180px; background-size: cover;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5);
         padding: 20px 0 25px;
+        background-color: rgba(0,0,0,0.5);
     }
     section.teamArea ul li figure figcaption dl dt{
         font-size: 14px; font-weight: 900;
@@ -150,6 +155,7 @@
     }
     section.teamArea > p:last-of-type{
         margin-bottom: 25px; font-weight: 300;
+        font-family: 'Roboto';
     }
     section.teamArea a.btn_more{
         margin: 0 auto; max-width: 140px;
@@ -162,23 +168,28 @@
     section.worksArea h2{
         max-width: 728px; margin: 0 auto 70px;
         position: relative; color: #413d4b;
-        font-weight: 700; font-size: 22px;
+        font-weight: 700; font-size: 8vw;
     }
     section.worksArea h2 a{
-        position: absolute; right: 0; top: 5px;
-        font-size: 14px; font-weight: 300;
+        position: absolute; right: 0; top: 2.4vw;
+        font-size: 3vw; font-weight: 300;
         color: #413d4b;
     }
     section.worksArea ul{
         margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; visibility: hidden;
         clear: both;
-    }
+    } */
     section.worksArea ul li{
-        float: left; display: block; width: 16.66%;
+        /* float: left; */
+        display: block;
+        /* width: 16.66%; */
         line-height: 0;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 25px;
     }
     section.worksArea ul li img{
         width: 100%;

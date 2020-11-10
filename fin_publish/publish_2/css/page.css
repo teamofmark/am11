@@ -43,7 +43,7 @@
     section.slideArea{
         background-color: #1c1e23;
         margin-bottom: 50px;
-
+        line-height: 0;
     }
     section.slideArea h2{
         display: none;
@@ -111,4 +111,27 @@
         font-weight: 700;
     }
     /* * slide Fin */
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea section h2{
+        display: none;
+    }
+    .contentArea section > form fieldset{
+        background-color: white; border-radius: 8px;
+        line-height: 56px; padding: 0 1.7%;
+        box-sizing: border-box; margin-bottom: 30px;
+    }
+    .contentArea section > form fieldset label{
+        font-size: 11px; color: #a1a7bd;
+        font-weight: 700; display: inline-block;
+        vertical-align: middle;
+    }
+    .contentArea section > form fieldset select{
+        border: none; box-shadow: none;
+        background-image: none; background-color: transparent;
+        -moz-appearance: none; -webkit-appearance: none;
+        padding: 10px 0; font-size: 11px; color: #343e5c;
+        font-weight: 700;
+    }
 }

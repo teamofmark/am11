@@ -259,7 +259,7 @@
     .contentArea aside fieldset label[for*='brand']{
         width: 83%; max-width: 215px;
     }
-    .contentArea aside fieldset label[for*='Condition']{
+    .contentArea aside fieldset label[for*='condition']{
         width: 93%; max-width: 270px;
     }
     .contentArea aside fieldset label[for*='dlvr']{

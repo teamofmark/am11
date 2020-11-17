@@ -321,5 +321,19 @@
     .contentArea section > ul li figure figcaption dl dd:last-of-type{
         font-size: 14px; color: #343e5c;
     }
+    .contentArea section > ul li:nth-child(5) figure img{
+        margin-bottom: 10px;
+    }
+    .contentArea section > ul li:nth-child(5) figure figcaption{
+        position: relative;
+    }
+    .contentArea section > ul li:nth-child(5) figure figcaption dl{
+        text-align: left; padding: 0 4.21% 10px; box-sizing: border-box; 
+    }
+    .contentArea section > ul li:nth-child(5) figure figcaption dl dd:last-of-type{
+        position: absolute; left: 4.21%; top: -295px;
+        background-color: black; color: white; border-radius: 3px;
+        font-size: 12px; padding: 5px 10px;
+    }
     
 }

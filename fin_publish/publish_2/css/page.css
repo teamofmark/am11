@@ -290,7 +290,6 @@
     .contentArea aside fieldset input[type='checkbox']:checked + label{
         background-image: url('../images/on_check.png');
     }
-<<<<<<< HEAD
     /* aside Fin */
 
     .contentArea section > ul{
@@ -347,8 +346,6 @@
         font-size: 12px; padding: 5px 10px;
     }
     
-=======
 
     /* aside Fin */
->>>>>>> c551a5a97b5a882ded2828e82615f2f0b54b29a1
 }

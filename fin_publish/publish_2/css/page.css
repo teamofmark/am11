@@ -234,13 +234,8 @@
     .contentArea aside fieldset legend{
         width: 100%; font-size: 11px; color: #343e5c;
         box-sizing: border-box; padding: 0 7.4% 15px;
-<<<<<<< HEAD
         border-bottom: 1px solid #f0f2f7;  font-weight: 700; text-transform: uppercase;
         position: relative; top: 28px;
-=======
-        border-bottom: 1px solid #f0f2f7; position: relative;
-        top: 28px; font-weight: 700; text-transform: uppercase;
->>>>>>> c551a5a97b5a882ded2828e82615f2f0b54b29a1
     }
     .contentArea aside fieldset legend a{
         color: #2754eb; border-bottom: 2px solid #c9d4fa;
@@ -248,13 +243,8 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer;
-<<<<<<< HEAD
         display: inline-block;
         box-sizing: border-box; padding-left: 20.37%;
-=======
-        display: inline-block; box-sizing: border-box;
-        padding-left: 20.37%;
->>>>>>> c551a5a97b5a882ded2828e82615f2f0b54b29a1
     }
     .contentArea aside fieldset label,
     .contentArea aside fieldset span{

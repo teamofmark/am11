@@ -1,0 +1,12 @@
+.redG{
+    background: -moz-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
+    background: -webkit-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
+    background: linear-gradient(135deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b1f1f', endColorstr='#ea7e7e', GradientType=1);
+    /*
+        linear-gradient : 그라디언트의 형태 ex> radial-gradient 는 원형 그라디언트
+        deg : 그라디언트의 각도
+        #color ?% : 색상블록 으로 컬러와 위치
+    */
+}
+/* http://www.colorzilla.com/gradient-editor 에서 제작 가능*/

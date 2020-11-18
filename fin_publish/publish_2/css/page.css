@@ -117,7 +117,7 @@
         display: none;
     }
     .contentArea section > form fieldset{
-        background-color: white; border-radius: 8px;
+        background-color: white; border-radius: 10px;
         line-height: 56px; padding: 0 1.7%;
         box-sizing: border-box; margin-bottom: 30px;
     }
@@ -126,17 +126,18 @@
         font-weight: 700; display: inline-block;
         vertical-align: middle;
     }
-    .contentArea section > form fieldset select{
+    /* .contentArea section > form fieldset select{
         border: none; box-shadow: none;
         background-image: none; background-color: transparent;
         -moz-appearance: none; -webkit-appearance: none;
         padding: 10px 0; font-size: 11px; color: #343e5c;
         font-weight: 700;
-    }
+    } */
     .contentArea section > form fieldset span.selectBox{
-        display: inline-block; padding-right: 20px;
+        display: none;
+        /* display: inline-block; padding-right: 20px;
         box-sizing: border-box;
-        background: url('../images/bg_arrow.png') no-repeat right center;
+        background: url('../images/bg_arrow.png') no-repeat right center; */
     }
     .contentArea section > form fieldset input:not([type='checkbox']){
         font-size: 13px; background-color: #f0f2f7;
@@ -144,16 +145,17 @@
         border-radius: 20px; font-weight: 700;
     }
     .contentArea section > form fieldset input[type='search']{
-        width: 14%;
+        width: 15%;
     }
     .contentArea section > form fieldset input[type='text']{
         width: 5%;
     }
-    .contentArea section > form fieldset span.sbSelect{
+    /* .contentArea section > form fieldset span.sbSelect{
         margin-left: 4.27%;
-    }
-    .contentArea section > form fieldset label[for='sb_keywords'],
-    .contentArea section > form fieldset label[for='ship_Select']{
+    } */
+    .contentArea section > form fieldset label[for='sb_keywords']
+    /* ,.contentArea section > form fieldset label[for='ship_Select'] */
+    {
         margin-left: 1.7%; padding-left: 2.56%;
         border-left: 1px solid rgba(0,0,0,0.05);
     }
@@ -173,8 +175,11 @@
         background: url('../images/bul_check.png') 
         no-repeat left center;
     }
-    .contentArea section > form span.shipSelect{
+    /* .contentArea section > form span.shipSelect{
         padding-left: 6.83%;
+    } */
+    .contentArea section > form fieldset label:last-of-type{
+        display: none;
     }
     /* * sortBar Fin */
 
@@ -225,7 +230,7 @@
 
     .contentArea aside fieldset{
         background-color: white; border-radius: 5px;
-        padding-top: 27px;
+        padding-top: 40px;
     }
     .contentArea aside fieldset:not(:last-of-type){
         margin-bottom: 30px;
@@ -244,15 +249,17 @@
         font-size: 13px; color: #343e5c; cursor: pointer;
         display: inline-block;
         box-sizing: border-box; padding-left: 20.37%;
+        line-height: 21px; margin-bottom: 20px;
     }
-    .contentArea aside fieldset label,
+    /*.contentArea aside fieldset label
+     ,.contentArea aside fieldset span 
+    {
+    }*/
     .contentArea aside fieldset span{
-        line-height: 50px;
-    }
-    .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3;
-        display: inline-block; width: 15%; text-align: center;
-        max-width: 76px;
+        display: none;
+        /* font-size: 11px; color: #bdbfd3;
+         width: 15%; text-align: center;
+        max-width: 76px; */
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{

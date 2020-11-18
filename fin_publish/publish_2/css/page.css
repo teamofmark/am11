@@ -431,5 +431,15 @@
     section.tosayArea > div ul li figure img{
         float: left; margin-right: 20px;
     }
+    section.tosayArea > div ul li figure dl dt{
+        font-size: 14px; color: #3a405b; line-height: 20px;
+        margin-bottom: 5px; font-weight: 700;
+    }
+    section.tosayArea > div ul li figure dl dd{
+        font-style: italic; font-size: 14px; color: #b9bed1;
+    }
+    section.tosayArea > div ul li p{
+        font-size: 16px; color: #3a405b; line-height: 24px;
+    }
     /* *tosayArea Fin */
 }

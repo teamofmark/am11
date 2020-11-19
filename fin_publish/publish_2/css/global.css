@@ -59,7 +59,7 @@ input[type='checkbox']{
         height: 180px;
     }
     header > div h1{
-        width: 70%; text-align: center;
+        width: 60%; text-align: center;
         box-sizing: border-box;
     }
     header > div h1 a{
@@ -67,7 +67,7 @@ input[type='checkbox']{
         padding: 33px 0px;
     }
     header > div h1 a img{
-        width: 100%; max-width: 130px;
+        width: 100%; max-width: 92px;
     }
     header > div nav{
         width: 56%; position: absolute;
@@ -89,15 +89,16 @@ input[type='checkbox']{
         /* line-height: 90px; font-weight: 700;*/
     }
     header > div div{
-        width: 24%; font-size: 11px; color: #343e5c;
-        line-height: 90px; text-align: right;
+        width: 25%; font-size: 11px; color: #343e5c;
+        padding: 25px 0;
+        /* line-height: 90px; text-align: right; */
     }
     header > div div *:not(input){
-        display: inline-block;
+        display: none;
+        /* inline-block */
     }
-    header > div div strong{
+    /* header > div div strong{
         padding-left: 25px; line-height: 18px;
-        /* background: url('../images/bul_cart.png') no-repeat left top; */
     }
     header > div div span{
         width: 24px; line-height: 24px;
@@ -105,13 +106,11 @@ input[type='checkbox']{
         border-radius: 12px; text-align: center;
         font-weight: 700; margin-left: 2%;
         position: relative;
-    }
-    /* header > div div span::before{
-        content: '+'; position: absolute; left: 0; top: 0;
-        display: block; font-size: 11px; line-height: 11px;
     } */
     header > div div input[type='button']{
-        margin-left: 8%; padding: 10px 15px;
+        /* margin-left: 8%; */
+        width: 100%;
+        padding: 10px 15px;
         background-color: white; font-size: 11px;
         border: 2px solid #e3e8f0; border-radius: 18px;
     }

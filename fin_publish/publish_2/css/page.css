@@ -78,7 +78,9 @@
         border-radius: 20px; font-weight: 700;
     } */
     .contentArea section > form fieldset input[type='search']{
-        width: 15%;
+        width: 50%; margin-left: 1.02%; padding: 10px 15px;
+        border: 1px solid #e3e8f0; background-color: #f0f2f7;
+        border-radius: 20px;
     }
     /* .contentArea section > form fieldset input[type='text']{
         width: 5%;
@@ -89,9 +91,9 @@
         border-left: 1px solid rgba(0,0,0,0.05);
     }
     /* .contentArea section > form fieldset input[id='range_minprice'], */
-    .contentArea section > form fieldset input[type='search']{
-        margin-left: 1.02%;
-    }
+    /* .contentArea section > form fieldset input[type='search']{
+        
+    } */
     /* .contentArea section > form fieldset label[for='range_minprice'],
     .contentArea section > form fieldset label[for='freeShipCheck']{
         margin-left: 2.56%;

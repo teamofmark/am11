@@ -59,19 +59,34 @@
     objClass.showName();
 */
 
-// * case.1 , 로 구분
 
-var name, age;
+// * case.1 콤마로 구분
+var name = "mark", age = "99";
 
-var pi = 3.14159265;
+// *case.2 세미콜론으로 구분
+var name = "mark";
+var age = "99";
 
-// *case.2 변수의 특성.
+var pi=3.14159265; //? 변수 선언과 동시 초기화
+// alert(pi);
+
+// *case.3 동시선언, 동시초기화
+var radius, pi //? 변수 한번에 선언 (undefined)
+radius = 10, pi = 3.14159265; //? 한번에 초기화
+
+// *case.4 변수의특성
 var cup='Coffee'; //? 컵에 커피를 담았다.
 cup = 'Green Tea'; //? 컵에 커피를 버리고, 녹차를 담았다.
 cup = 'Water';//? 컵에 녹차를 버리고, 물을 담았다.
 
-// *case.3 연산자사용시
+// document.write('Drink'+cup+'..!'); //? Drink'마지막담은물'+..! 가 출력됨.
 
-var value = 10;
-value = 20;
-// * 동일이름으로 var 을 두번 선언하는것은 바람직 하지 못하다.
+// * case.5 연산자 사용시
+var value=10; //? value변수에 10을 담다.
+value+=20; //? 그 변수에 20을 더해서 다시 담아라. (30).
+
+// alert(value); // 결과 30
+
+// todo.1 자신의 나이를 변수에 담고 10년뒤에 몇살로 변할지 출력하라.
+var age = 99;
+// console.log("age = " + age);

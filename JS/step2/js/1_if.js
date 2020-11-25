@@ -29,3 +29,29 @@
             alert('오후입니다.');
         }
     }
+    //?case_2 말일인가 아닌가
+	function lastDay(){
+        var date=new Date();
+        var day=date.getDay();
+        //변수선언
+        
+        if(day<30){
+            alert('아직 말일이 아닙니다.');
+        }else{
+            alert('말일입니다.');
+        }
+    }
+
+	//?case_3 아침?점심?저녁?	
+	function mealTime(){
+        var date=new Date();
+        var hour=date.getHours();
+        
+        if(hour < 11){ //11시보다 현시각이 작으면 아침
+            alert('아침먹을시간');
+        }else if(hour < 15){ // 그것이 아니고15시보다 현시각이 작으면 점심
+            alert('점심먹을시간');
+        }else{
+            alert('저녁먹을시간'); // 그것도 아닐경우 저녁
+        }
+    }	

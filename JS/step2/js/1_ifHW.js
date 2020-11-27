@@ -29,7 +29,7 @@ function btnMouseEx(){
     //     document.write("올바른값을 입력하세요.");
     // }
     
-    if(clickBtn=="오른쪽" || clickBtn=="왼쪽" || clickBtn=="가운데"){
+    if(clickBtn=="오른쪽" || clickBtn=="왼쪽" || clickBtn=="가운데" ){
         document.write(clickBtn+"!");
     }else{
         document.write("올바른값을 입력하세요.");

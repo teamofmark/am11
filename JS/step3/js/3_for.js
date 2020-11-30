@@ -65,3 +65,57 @@ function answer5(){
         document.write((11-i)+"<br>"); //? 1~10번 까지 출력
     }
 }
+// *exp.4 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고','사과','바나나','망고','사과','바나나','망고'];
+    // alert(array.length);
+    for (var i = 0; i < array.length; i++){
+        document.write(array[i]);
+    }
+    
+}
+
+// *exp.5 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+function arrayFor(){
+    var data = ['변수','연산자','형변환','조건문 if','조건문switch','반복문 while','반복문 for'];
+    for (var i = 0; i < data.length; i++){
+        document.write((i+1) + '번째 내용 = ' + data[i] + '<br>');
+    }
+}
+function arrayForES6(){
+    var data = ['변수','연산자','형변환','조건문 if','조건문switch','반복문 while','반복문 for'];
+    for (let i = 0; i < data.length; i++) {
+        const element = data[i];
+        document.write(i + '번째 내용 = ' + element + '<br>');
+    }
+}
+
+// *exp.6 역반복 배열
+
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고'];
+
+    for (var i = array.length - 1; i>=0; i--){
+        document.write(array[i]);
+    }
+}
+// *exp.7 continue
+
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i<=10; i++){
+        if (i % 2 == 1){
+            continue;
+        }
+        output += i;
+        alert(output); 
+    }
+}

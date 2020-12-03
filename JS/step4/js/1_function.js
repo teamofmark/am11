@@ -237,10 +237,15 @@ function execute(func){
 }
 // *exp.8 button click 시 매개변수 값으로 넘긴 함수 호출하기.
 
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+
 function dialogControl(){
     $("div").toggleClass('activate');
 }
 $(document).ready(function(){
+    // $("#runEx8").click(welcome);
     $("#runDialog").click(dialogControl); 
     $("#stopDialog").click(dialogControl);
 });

@@ -175,3 +175,46 @@ function calculatorIF(op, numb1, numb2){
     }
     return result;
 }
+
+/*
+    //* 실행구문
+    * document.write("결과 =" + divCalculator("+", 20, 10));
+*/
+function divCalculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" :
+            result = add(numb1,numb2);
+            break;
+        case "-" :
+            result = sub(numb1,numb2);
+            break;
+        case "*" :
+            result = mul(numb1,numb2);
+            break;
+        case "/" :
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+
+function add(numb1,numb2){
+    var addResult = numb1 +numb2;
+    return addResult;
+}
+function sub(numb1,numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1,numb2){
+    mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1,numb2){
+    divResult = numb1 / numb2;
+    return divResult;
+}

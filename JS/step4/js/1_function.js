@@ -218,3 +218,29 @@ function div(numb1,numb2){
     divResult = numb1 / numb2;
     return divResult;
 }
+
+// *exp.6 함수를 변수에담기.
+
+function hello(name){
+    console.log(name + "welcome");
+}
+
+// *exp.7 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func(); //?넘겨받은 변수를 함수로 사용.
+}
+// *exp.8 button click 시 매개변수 값으로 넘긴 함수 호출하기.
+
+function dialogControl(){
+    $("div").toggleClass('activate');
+}
+$(document).ready(function(){
+    $("#runDialog").click(dialogControl); 
+    $("#stopDialog").click(dialogControl);
+});

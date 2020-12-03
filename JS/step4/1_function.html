@@ -6,7 +6,30 @@
     <title>function base</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/1_function.js"></script>
+    <style>
+        div{
+            position: fixed; width: 100%; height: 100%;
+            padding: 25% 0; text-align: center;
+            background-color: rgba(0,0,0,0.3);
+            display: none;
+        }
+        div.activate{
+            display: block;
+        }
+        div > *:not(button){
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <button id="runDialog">dialog실행</button>
+    <div id="dialog">
+        <h2>dialog Example</h2>
+        <p>
+            dialog paragraph
+        </p>
+        <button>확인</button>
+        <button id="stopDialog">닫기</button>
+    </div>
 </body>
 </html>

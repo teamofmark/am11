@@ -11,12 +11,12 @@
 // document.write("안녕. 방가와","<br>");
 // document.write("안녕. 방가와","<br>");
 
-function hello(){
-    var comment = '안녕, 방가와!';
-    for (var i = 0; i < 3; i++){
-        document.write(comment,'<br>');
-    }
-}
+// function hello(){
+//     var comment = '안녕, 방가와!';
+//     for (var i = 0; i < 3; i++){
+//         document.write(comment,'<br>');
+//     }
+// }
 
 // *exp.2 매개변수 (Parameter)가 있는 함수 만들기.
 // ? 함수내 정해진 변수의 value(값)를 변경하여, 기존의 함수가 실행된 이후 접근이 불가한 부분을 해결하기 위함.
@@ -221,9 +221,9 @@ function div(numb1,numb2){
 
 // *exp.6 함수를 변수에담기.
 
-function hello(name){
-    console.log(name + "welcome");
-}
+// function hello(name){
+//     console.log(name + "welcome");
+// }
 
 // *exp.7 매개변수 값으로 함수를 사용하기.
 function hi1(){
@@ -249,3 +249,75 @@ $(document).ready(function(){
     $("#runDialog").click(dialogControl); 
     $("#stopDialog").click(dialogControl);
 });
+
+// *exp.9 1초마다 매개변수 값으로 넘긴 익명함수 호출.
+
+function loopStart(){
+    setInterval(function(){
+        document.write('hi.Hello.안끝나꿈깨');
+    },5000);
+}
+
+// todo.4 함수를 매개변수로 전달받아 호출하기.
+
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+
+// callFunctionTenTimes(function(){
+//     document.write('hello..!');
+// });
+
+function justFunction(){
+    document.write('hello world');
+}
+// callFunctionTenTimes(justFunction);
+
+// *exp.10 return Value로 함수를 사용하기.
+
+function createHello(){
+    function hello(user){ //? user 매개변수생성
+        document.write(user + 'welcome..!');
+    }
+    return hello; //? hello함수 return (호출부)
+}
+var result = createHello(); //? result변수에 createHello 함수 담음.
+
+//* result('Mark'); result = createHello 기 때문에 mark는 hello의 user 매개변수로 전달.
+
+/*
+? 리터럴
+    * 현재까지 변수를 만들 때 사용하던 방식
+
+    *ex 리터럴방식
+    var age = 10, var name = "mark"
+    
+    *ex 객체방식
+    var age = new Number(10);
+    var name = new String("Mark");
+
+    * ex.1 함수만드는 방법의 4가지
+    var hello = function(name){ //? 리터럴방식
+        alert(name + "hello");
+    }
+    hello("mark");
+
+    function hello(name){ //? 일반함수방식
+        alert(name + "hello");
+    }
+    hello("mark");
+
+    var hello2 = new Function("name", "alert(name+'hello');"); //? 객체방식 (실용도없음)
+    hello2("mark");
+
+    (function(name){ //? 익명함수확장 (재사용이 목적이 아닌 다른 함수간의 충돌을 막기위함.)
+        document.write(name + "님 환영합니다.");
+    })("mark");
+
+    *익명함수 와 일반함수 사용법
+    ? 함수를 재사용 할 경우 일반함수, 아닐 경우 익명함수. (jquery etc8번참고)
+
+    
+*/

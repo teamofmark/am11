@@ -8,6 +8,9 @@ $(document).ready(function(){
     
     // *exp.3
     addBorder();
+    
+    // todo.1 버튼(#textChange)을 클릭하면 패널(#panel2)의 글자 크기와 색을 변경해보라.
+    textChange();
 });
  // *exp.2
 function sayHello(playFunc){
@@ -26,4 +29,14 @@ function runFunc(){
             "color" : 'blue'
         });
      });
+ }
+ function textChange(){
+    $("#btnTextChange").click(function(){
+        $("#panel2").css("font-size","25px");
+        $("#panel2").css("color","green");
+        // $("#panel2").css({
+        //     "font-size" : 25, //! or fontSize
+        //     "color" : 'green'
+        // });
+    });
  }

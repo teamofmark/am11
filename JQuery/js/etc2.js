@@ -4,6 +4,9 @@ $(document).ready(function(){
 
     // detailMoveCircle();
     detailMoveCircleExt();
+    
+    // *exp.3 
+    keyControl();
 });
 
 // *exp.1
@@ -74,4 +77,17 @@ function circleMovCommand(xpos, ypos){
             "top" : ypos
         });
     }
+}
+
+// *exp.3 
+function keyControl(){
+    var circle = $(".circleKey");
+    var range = 50;
+    var currentXPos = 0;
+    var currentYPos = 0;
+
+    $(document).keydown(function(e){
+        console.log('입력한 키 코드' + e.keyCode);
+    });
+
 }

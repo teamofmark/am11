@@ -88,6 +88,36 @@ function keyControl(){
 
     $(document).keydown(function(e){
         console.log('입력한 키 코드' + e.keyCode);
+
+        switch(e.keyCode){
+            case 87:
+                currentYPos -= range;
+                break;
+            case 65:
+                currentXPos -= range;
+                break;
+            case 83:
+                currentYPos += range;
+                break;
+            case 68:
+                currentXPos += range;
+                break;
+        }
+        if(currentXPos < 0){
+            currentXPos = 0;
+        }
+        if(currentXPos > 380){
+            currentXPos = 380;
+        }
+        if(currentYPos < 0){
+            currentYPos = 0;
+        }
+        if(currentYPos > 380){
+            currentYPos = 380;
+        }
+
+        circle.css("left", currentXPos);
+        circle.css("top", currentYPos);
     });
 
 }

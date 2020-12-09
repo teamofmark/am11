@@ -35,7 +35,7 @@ function imgAlignMix(){
             var image = img.eq(i);
             xpos = (i%3)*imgHeight;//? 0/3 = 나머지 0, 1/3 = 1, 2/3 = 2, 3/3 = 0 ....*imgHeight
             //! 나눗셈 나머지? = 몫은 정수상태여야 하고, 뺼수없는 소수가 되었을때 나오는 나머지.
-            ypos = parseInt(i/3) * imgHeight;//? 0/3 = 0 , 1/3 = 0, 2/3 = 0, 3/3 = 1, 3/4 = 0, 3/5 = 0... *imgHeight
+            ypos = parseInt(i/3) * imgHeight;//? 0/3 = 0 , 1/3 = 0, 2/3 = 0, 3/3 = 1, 3/4 = 1, 3/5 = 1... *imgHeight
 
             image.css({
                 "left" : xpos,

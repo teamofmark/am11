@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    imgAlignCustom(4,150,150);
+    imgAlignCustom(5,200,200);
 });
 
 function imgAlignCustom(count, imgWidth, imgHeight){

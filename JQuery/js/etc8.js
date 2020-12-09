@@ -10,4 +10,5 @@ $(document).ready(function(){
 function plusCount(){
     count ++;
     $ex2.append("<p>" + count + "hi, hello </p>");
+    // ? prepend
 }

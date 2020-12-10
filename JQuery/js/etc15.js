@@ -17,7 +17,7 @@ $(document).ready(function(){
     init();
     fishStartPosition();
 
-    
+
 });
 
 function init(){
@@ -36,3 +36,46 @@ function fishStartPosition(){
         })
     }
 }
+
+function initEvent(){
+    $("#start").click(function(){
+        startGame(); //? 게임시작함수
+    });
+}
+// ? click Event 처리함수
+
+function startGame(){
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition(); // ?물고기 움직임 함수.
+            displayFishPositionInfo();// ? 물고기 위치 출력 함수
+
+        }, 200); //? 0.2초마다
+    }
+}
+// ?게임시작함수
+
+function updateFishPosition(){
+    for (var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        var step = Math.ceil(Math.random()*30); //? 물고기 이동 범위(30중 random, 올림한 정수값)
+        var newLeft = $fish.position().left + step;
+        
+        $fish.css("left", newLeft);
+    }
+}
+// ?물고기 움직임 함수.
+
+function displayFishPositionInfo(){
+    console.log("2. 물고기 정보 출력하는중");
+    var info = '';
+
+    for (var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+
+        info += i + '번 물고기 : ' + $fish.position().left + "px 유영중<br>";
+    }
+
+    $info.html(info);
+}
+// ? 물고기 위치 출력 함수

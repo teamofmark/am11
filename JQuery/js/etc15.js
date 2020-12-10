@@ -17,7 +17,7 @@ $(document).ready(function(){
     init();
     fishStartPosition();
 
-
+    initEvent(); 
 });
 
 function init(){
@@ -49,7 +49,8 @@ function startGame(){
         timerID = setInterval(function(){
             updateFishPosition(); // ?물고기 움직임 함수.
             displayFishPositionInfo();// ? 물고기 위치 출력 함수
-
+            
+            checkGoalFish(); //?결승선 통과 물고기 검사 함수.
         }, 200); //? 0.2초마다
     }
 }
@@ -79,3 +80,31 @@ function displayFishPositionInfo(){
     $info.html(info);
 }
 // ? 물고기 위치 출력 함수
+
+function checkGoalFish(){
+    var winnerList = [];
+
+    for (var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({ //? goalLine을 넘은 물고기들을 winnerList 배열에 position 값저장.
+                index: (i), position:fishCurrentPosition
+            });
+        }
+    }
+
+    if(winnerList.length > 0){ //? 배열에 position값이 담기고 나면
+        winnerList.sort(function(a,b){
+            return b.position-a.position; //? position 값 기준 내림차순 정렬.
+        });
+
+        endGame();
+        alert('우승 !' + winnerList[0].index + '번 물고기!'); //? 결승선 기준 가장 멀리 이동된 물고기 우승 처리
+    }
+
+}
+
+function endGame(){
+    
+}

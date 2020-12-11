@@ -68,7 +68,7 @@ function updateFishPosition(){
 // ?물고기 움직임 함수.
 
 function displayFishPositionInfo(){
-    console.log("2. 물고기 정보 출력하는중");
+    // console.log("2. 물고기 정보 출력하는중");
     var info = '';
 
     for (var i = 0; i < $fishList.length; i++){
@@ -106,5 +106,7 @@ function checkGoalFish(){
 }
 
 function endGame(){
-    
+    // console.log("4. 게임 종료 처리");
+    clearInterval(timerID); //? interval 초기화
+    timerID = -1; //? timerID 초기화
 }

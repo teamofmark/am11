@@ -6,6 +6,12 @@ var timerID = 0;
 $(document).ready(function(){
     init(); //? 대상 및 변수 불러오기.
     initEvent(); //?event 처리함수 불러오기
+    
+//     var $circle = $("#circle");
+//     var runStep = 10;
+//     var xpos = $circle.position().left;
+//     var railWidth = $("#rail").width();
+//     var timerID = 0;
     // startMove($circle, runStep, xpos, railWidth, timerID);
 });
 // function startMove($circle, runStep, xpos, railWidth, timerID){

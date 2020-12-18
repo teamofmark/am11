@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyperlink</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        #targetAnchor{
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>포털사이트 목록</h1>
@@ -37,11 +45,15 @@
             *할 수 있다.
         -->
         <li>
-            <a href="">걸기</a>
+            <a href="tel:+821056658312">걸기</a>
+            <!-- *tel: 로 선언하면 전화걸기 기능이 가능하고 모바일에서는 다이얼패드가열린다. -->
         </li>
         <li>
-            <a href="">바로가기테스트</a>
+            <a href="#targetAnchor">바로가기테스트</a>
         </li>
     </ul>
+    <div id="targetAnchor">
+        목표지점
+    </div>
 </body>
 </html>

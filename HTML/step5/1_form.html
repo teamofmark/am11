@@ -76,13 +76,33 @@
                     optgroup으로 중간 그룹을 설정할 수 있다.
                 -->
                 <li>
-                    <input type="image" src="" alt="">
-                    <input type="button" value="">
-                    <input type="file" name="" id="">
-                    <input type="submit" value="">
-                    <input type="reset" value="">
+                    <input type="image" src="https://via.placeholder.com/100x50?text=button">
+                    <input type="button" value="비밀번호확인">
+                    <input type="file">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
                 </li>
+                <!--
+                    버튼으로 사용할수 있는 input에는 image, button, file, submit, reset 이 있는데 해당용도에 따라 적절하게 사용해야 한다.
+                    1. image 는 버튼을 웹사이트 디자인에 맞게 디자인된 버튼을 사용할 때 사용 한다.
+                    2. button 은 최종 확인 전송 및 페이지 양식 되돌리기, 파일 찾아보기 기능을 제외한 나머지 기능의 버튼 (우편번호, 검색, 추가, 삭제 등)에 사용한다.
+                    3. file은 파일 찾아보기 버튼에 사용한다.
+                    4. submit은 해당 폼 이 모두 완성 되었을때 완료 및 전송을 할때 사용한다.
+                    5. reset은 해당 폼의 모든 양식 내용을 초기화 시킬 때 사용한다.
+                -->
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" id="userName" placeholder="이름을 입력하세요(8자)" required autofocus readonly value="USERID">
+            <!--required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
+            <input type="email" placeholder="ex> teamofmark@gmail.com" >            
+            <!--type을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @ 버튼이 생긴다. placeholder(ie10이하지원불가)-->
+            <input type="url" placeholder="ex> https://example.com">
+            <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
+            <input type="number" min="10" max="100" step="5" value="10">
+            <!--상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
         </fieldset>
     </form>
 </body>

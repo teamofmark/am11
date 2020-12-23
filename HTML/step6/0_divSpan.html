@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div layout</title>
     <style>
-        .header{
+        header{
             background-color: red;
             margin-bottom: 20px; text-align: center;
         }
-        .header > span{
-            margin-bottom: 20px; display: block;
+        header h1{
+            margin-bottom: 20px; font-size: 16px;
         }
-        .header .nav span{
-            background-color: blue;
-            color: white; width: 19%; display: inline-block;
+        header nav ul li{
+            background-color: blue; width: 19%; display: inline-block;
         }
-        .section{
+        header nav ul li a{
+            color: white;
+        }
+        section{
             background-color: red; margin-bottom: 20px;
         }
-        .section .article,
-        .section .aside{
+        section article,
+        section aside{
             height: 500px; display: inline-block;
         }
-        .section .article{
+        section article{
             background-color: yellow; width: 80%;
         }
-        .section .aside{
+        section aside{
             background-color: green; width: 18%;
         }
-        .footer{
+        footer{
             text-align: center; background-color: orange;
         }
     </style>

@@ -30,5 +30,64 @@
         ? 진행중을 progress가 담당 한다면, meter는 현재 사용량이나 소모된량 등의 정지된 산출값에 적합하다.
         ? value는 현재값, min 은 최소값, max는 최대값, low는 낮다의 기준범위, high는 높다의 기준범위, optimum은 적당하다의 기준범위
     -->
+
+    <address>
+        mailto: <a href="mailto:teamofmark@gmail.com">address</a>
+        <!--
+            address tag 안에는 제작자 및 회사의 연락처 정보(메일,실제주소,전화번호)와 피드백을 보낼 수 있는 정보 등을 담아낼수 있다.
+            만일 우편번호등 만 기재해야 한다면, p를 사용하면 됨
+            -p.s- 마이크로포맷으로 작성되는 vcard 형식은 http://microformats.org/code/hcard/creator 에서 만들어서 사용하면 된다.
+            vcard란 전자명함을 뜻하며, 안드로이드 와 ios 에서 범용적으로 사용되는 연락처 방식이기도 하다.
+         -->
+    </address>
+
+    <ruby>
+        漢 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+
+    <!-- * IE 지원불가 -->
+    <details>
+        <summary>What is Lorem Ipsum?</summary>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </details>
+    <!--
+        어떠한 한 키워드(summary)의 요약 및 요소들을 넣어두고
+        event(클릭,오버)로  show / hide 기능이 작동되게 함.
+    -->
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <main>
+        <h1>Lorem Ipsum</h1>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <article>
+            <h2>What is Lorem Ipsum?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </article>
+    </main>
+    <!--
+        현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
+        문서내 mainpage에 해당하는 섹션부나 페이지를 감쌀때 사용 한다.
+        한개 문서에서 1번만 사용할 수 있다. 또한 구조상 최상위에 존재 해야 한다.
+    -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output id="x" name="x" for="a b"></output>
+    </form>
+    <!--form에 지정된 스크립트 연산을 지정 input(id)들로 수행하여, 
+        결과값을 산출해내는 식이다.
+        range는 값을 마우스를 이용해 입력할 수 있고, number는 직접입력 
+        및 up,down버튼을 이용해 입력할수있다.-->
+
+        <!--! 이하 IE7,8,9 safari 지원불가 -->
+        
 </body>
 </html>

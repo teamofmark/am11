@@ -6,10 +6,12 @@ body{
 }
 
 .btn{
-    padding: 10px 30px; border-width: 1px; font-size: 12px;
+    padding: 5px 30px; border-width: 3px; font-size: 12px;
+    display: inline-block; vertical-align: middle;
 }
 .btn.create{
-    background-color: white; color: black; border-style: solid; border-color: black;
+    background-color: white; color: black; border-style: solid;
+    border-color: black;
 }
 .btn.modify{
     background-color: transparent; border-style: dashed; border-color: gray;

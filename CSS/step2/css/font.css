@@ -28,3 +28,21 @@ p.w_normal{
 p.w_nowrap{
     white-space: nowrap; text-overflow: ellipsis; overflow-x: hidden;
 }
+
+.v_alignTest span{
+    vertical-align: 20%;   
+}
+.v_alignTest img{
+    vertical-align: middle;
+}
+
+/*
+    * baseline: 문자의 밑선에 맞추어 정렬
+    * middle: 문자의 중앙을 기준으로 해서 정렬
+    * sub : 아래첨자
+    * super : 위 첨자
+    * text-top:문자의 윗선을 밑선으로 해서 정렬
+    * top: 위쪽에 정렬
+    * bottom : 아래쪽 정렬
+    * % : 퍼센트로 정렬 위치를 지정
+*/	

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Hi+Melody&family=Nanum+Gothic:wght@400;800&display=swap');
+h1{
+    font-family: 'Dokdo'; font-size: 72px;
+}
+h2{
+    font-family: 'Hi Melody'; font-size: 56px;
+}
+h3{
+    font-family: 'Nanum Gothic'; font-size: 48px;
+}
+p{
+    font-family: 'Nanum Gothic'; font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+/*letter-spacing : 자간*/
+p.word{
+    word-spacing: 10px;
+}
+/*word-spacing : 단어간격(space bar 기준)*/
+p[class^='w_']{
+    border: 1px solid red; width: 150px;
+}
+p.w_normal{
+    white-space: normal; line-height: 21px;
+}
+p.w_nowrap{
+    white-space: nowrap; text-overflow: ellipsis; overflow-x: hidden;
+}

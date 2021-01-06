@@ -29,3 +29,6 @@ body{
     border-radius: 20px; color: seagreen; border-style:solid;
     border-color:springgreen; background-color: transparent;
 }
+#userName{
+    border: 1px solid salmon; line-height: 21px; font-size: 12px; color: darkred;
+}

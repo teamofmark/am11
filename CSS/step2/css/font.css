@@ -46,3 +46,37 @@ p.w_nowrap{
     * bottom : 아래쪽 정렬
     * % : 퍼센트로 정렬 위치를 지정
 */	
+
+p.t_indent{
+    text-indent: 100px; font-size: 40px;
+}
+
+.test{
+    background: url('https://via.placeholder.com/150x50?text=blablabutton') no-repeat left top;
+    width: 150px; line-height: 50px; border: none; font-size: 12px; text-indent: -9999px;
+}
+a{
+    display: block;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #0cf;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #96c;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: #f63;
+}
+
+p.DR_ltr{
+    direction: ltr;
+}
+ul.DR_rtl{
+    direction: rtl;
+}
+ul.DR_rtl li{
+    display: inline-block;
+}

@@ -6,8 +6,18 @@ div{
     border: 3px solid #60f;
 }
 .multiBox{
-    border-top : 1px solid slateblue;
+    /* border-top : 1px solid slateblue;
     border-right : 3px dotted salmon;
     border-bottom : 10px dashed darkgoldenrod;
-    border-left : 20px double chartreuse;
+    border-left : 20px double chartreuse; */
+
+    border-width: 1px 3px 10px 20px;
+    border-style: solid dotted dashed double;
+    border-color: slateblue salmon darkgoldenrod chartreuse;
 }
+/*solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/
+/*
+border 개별 설정
+border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
+또는 border: 5px 10px; 방식으로 상하, 좌우로 묶어 표현 할 수 있다.            
+*/

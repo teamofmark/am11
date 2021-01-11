@@ -21,3 +21,23 @@ border 개별 설정
 border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
 또는 border: 5px 10px; 방식으로 상하, 좌우로 묶어 표현 할 수 있다.            
 */
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #930;
+}
+.outsetBox{
+    border: 20px outset #930;
+}
+.radiusBox{
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.circleBox{
+    width: px; height: px; border-radius: ;
+    text-indent: ; border: ;
+}

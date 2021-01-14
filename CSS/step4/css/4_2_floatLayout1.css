@@ -1,0 +1,27 @@
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    width: 960px; margin: 0 auto; background-color: lemonchiffon;
+}
+header{
+    background-color:lightblue;
+}
+header nav{
+    background-color: mediumaquamarine;
+}
+
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap aside,
+.wrap section{
+    float: left;
+}
+.wrap aside{
+    width: 20%;
+}
+.wrap section{
+    width: 80%;
+}

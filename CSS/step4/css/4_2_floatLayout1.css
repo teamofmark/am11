@@ -17,11 +17,14 @@ header nav{
 }
 .wrap aside,
 .wrap section{
-    float: left;
+    float: left; height: 800px;
 }
 .wrap aside{
-    width: 20%;
+    width: 20%; background-color: #f96;
 }
 .wrap section{
-    width: 80%;
+    width: 80%; background-color: #66f;
+}
+footer{
+    background-color: #f9f;
 }

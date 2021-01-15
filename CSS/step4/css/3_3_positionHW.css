@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding-top: 200px;
+}
+header{
+    position: fixed; left: 0; top: 0; z-index: 1;
+    width: 100%; height: 200px;
+    background-color: red; color: white;
+}
+section{
+    position: relative; height: 1000px; background-color: black;
+}
+section aside,
+section article{
+    position: absolute; height: 100%;
+}
+section aside{
+    background-color: green; width: 20%;
+}
+section article{
+    background-color: blue; width: 70%; left: 30%;
+}
+footer{
+    text-align: center; background-color:orange;
+    font-size: 20px; padding: 20px 0;
+}

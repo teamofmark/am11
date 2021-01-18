@@ -37,3 +37,21 @@ header nav ul li a{
     text-decoration: none; color:magenta; display: block;
     line-height: 35px;
 }
+.sliderBox{
+    margin-bottom: 30px;
+}
+
+.articleWrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.articleWrap article{
+    width: 30%; float: left; border: 1px solid lightskyblue;
+    box-sizing: border-box;
+}
+.articleWrap article:not(:first-of-type){
+    margin-left: 5%;
+}
+footer{
+    background-color: darkblue; color: white; text-align: center;
+    line-height: 50px;
+}

@@ -73,3 +73,10 @@
 .sameSelector h1 + h2{
     font-size: 34px; color: pink;
 }
+
+.activeSelector h1{
+    font-size: 12px; color: black;
+}
+.activeSelector h1:hover{
+    font-size: 24px; color: darkgoldenrod; cursor: pointer;
+}

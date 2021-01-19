@@ -49,3 +49,27 @@
     width: 25px; height: 25px;
 }
 /* * checkbox, select */
+
+.directSelector > h1{
+    font-size: 28px; color: slateblue;
+}
+.directSelector > span{
+    font-size: 14px; color: saddlebrown; display: block;
+}
+
+.stringAttrSelector img[src$=png]{
+    width: 100px; height: 100px; border: 3px solid red;
+}
+.stringAttrSelector img[src$=gif]{
+    width: 200px; height: 200px; border: 3px solid green;
+}
+.stringAttrSelector img[src$=jpg]{
+    width: 300px; height: 300px; border: 3px solid blue;
+}
+
+.sameSelector h1 ~ h2{
+    background-color: gray;
+}
+.sameSelector h1 + h2{
+    font-size: 34px; color: pink;
+}

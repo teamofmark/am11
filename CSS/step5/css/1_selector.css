@@ -21,3 +21,31 @@
 }
 
 /* *class Selector */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: steelblue;
+}
+.attrSelector fieldset legend{
+    border: 1px solid #555; background-color: slateblue; color: mediumspringgreen;
+    padding: 10px; border-radius: 10px;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    font-size: 14px; line-height: 30px;
+}
+.attrSelector fieldset ul li label,
+.attrSelector fieldset ul li input{
+    vertical-align: middle; display: inline-block;
+}
+.attrSelector fieldset ul li input[type='text']{
+    background-color: burlywood; border: 1px solid sienna;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightseagreen; border: 1px solid greenyellow;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px;
+}
+/* * checkbox, select */

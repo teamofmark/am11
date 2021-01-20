@@ -122,3 +122,58 @@ body{
     background-color: #09f;
 }
 /*nth-child 에서 (odd) 값은 홀수를 , (even)은 짝수를 지정 할 수 있다. js는 반대 (0부터인식)*/
+
+.normalSelector table{
+	width:100%;
+	border-width:3px 1px 2px 1px;
+	border-style:solid;
+	border-color:#3CF;
+}
+.normalSelector table caption{color:#666; font-size:12px; line-height:40px;}
+.normalSelector table tr th,.normalSelector table tr td{
+	width:14.28%;
+	border-right:1px solid #3cf;
+	border-bottom:1px solid #3cf;
+	padding:10px 0;
+}
+.normalSelector table tr th{background-color:#6CF; }
+.normalSelector table tr td{text-align:center;}
+/*
+normal selector의 브라우저별 지원 현황
+IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
+
+    * http://nthmaster.com
+*/
+/* .shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+.shapeSelector h2:nth-of-type(1){
+    color: #f06;
+}
+.shapeSelector h3:nth-of-type(2){
+    color: #0f6;
+} */
+/* todo. second h1,h2,h3를 child로 선택해보기. */
+.shapeSelector :last-child{
+    color: #30f;
+}
+.shapeSelector :nth-child(5){
+    color: #f06;
+}
+.shapeSelector :nth-child(4){
+    color: #0f6;
+}
+
+/*
+    * first-of-type, last-of-type은 형제 관계중 첫 번째 혹은 마지막으로 
+    * 등장하는 지정된 태그를 선택마지막으로 등장하는 특정 태그를 선택한다.
+    * nth-child와 마찬가지로 수열을 사용 할 수 있다.
+    * 또한 전체선택자인 * 와 혼용하여 body > *:first-of-type{color:red} 이런식의 범위 지정도
+    * 가능하다.
+*/
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; text-decoration: underline;
+}

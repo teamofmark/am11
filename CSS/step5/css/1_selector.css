@@ -1,3 +1,6 @@
+body{
+    padding-bottom: 300px;
+}
 .tagSelector h1{color: #0c0; font-size: 20px;}
 .tagSelector p{color: #0cf; font-size: 15px;}
 .tagSelector span{color: #336; font-size: 12px;}
@@ -80,3 +83,42 @@
 .activeSelector h1:hover{
     font-size: 24px; color: darkgoldenrod; cursor: pointer;
 }
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; vertical-align: middle; height: 25px; overflow-y: hidden;
+    transition-duration: 0.75s;
+    /* -ms-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -moz-transition-duration:1s;
+    -o-transition-duration:1s; */
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='text']:disabled{
+    background-color: deeppink; color: white;
+}
+
+.normalSelector ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.normalSelector ul li{
+    float: left; margin: 0; padding: 15px; list-style: none;
+    border: 1px solid black;
+}
+.normalSelector ul li:first-child{
+    border-radius: 30px 0 0 30px;
+}
+.normalSelector ul li:last-child{
+    border-radius: 0 30px 30px 0;
+}
+.normalSelector ul li:nth-child(even){
+    background-color: #555; color: white;
+}
+.normalSelector ul li:nth-child(odd){
+    background-color: #09f;
+}
+/*nth-child 에서 (odd) 값은 홀수를 , (even)은 짝수를 지정 할 수 있다. js는 반대 (0부터인식)*/

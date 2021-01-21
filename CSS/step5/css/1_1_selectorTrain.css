@@ -19,3 +19,12 @@ article:nth-of-type(odd) > *:first-child{
 article:nth-of-type(even) > *:first-child{
     float: left; margin: 0 20px 10px 0;
 }
+article p > *:first-child{
+    color: #09f;
+}
+article p mark{
+    background-color: transparent;
+}
+article p > *:not(strong){
+    text-decoration: underline;
+}

@@ -11,20 +11,27 @@ body > div:first-of-type{
 body > div nav{
     margin-bottom: 25px;
 }
-body > div ul:after{
+body > div nav ul:after{
     content: ''; display: block; visibility: hidden; clear: both;
 }
 ul{
     margin: 0; padding: 0;
 }
-body > div ul li{
+body > div nav ul li{
     width: 25%; float: left; display: block;
     background-color: #3b3b3b;
 }
-body > div ul li.active{
-    background-color: #ea0552;
-}
-body > div ul li a{
+body > div nav ul li a{
     display: block; line-height: 30px; font-size: 12px;
     text-decoration: none; color: #ea0552; text-align: center;
+    text-transform: capitalize;
+}
+body > div nav ul li.active a,
+body > div nav ul li:hover a{
+    color: white; 
+    background-color: #ea0552;
+}
+body > div h1{
+    font-size: 14px; color: white; text-align: center;
+    text-transform: capitalize; margin-bottom: 25px;
 }

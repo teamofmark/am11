@@ -41,3 +41,14 @@ body fieldset{
         padding: 5px; background-color: #660099;
         color: #fff; font-size: 12px; border-radius: 5px;
     }
+
+    fieldset > input{
+        display: block; float: left; width: 45%;
+        line-height: 34px; border: none;
+    }
+    fieldset > input[type='submit']{
+        background-color: navy; color: white;
+    }
+    fieldset > input[type='reset']{
+        background-color:darkred; color: white; margin-left: 10%;
+    }

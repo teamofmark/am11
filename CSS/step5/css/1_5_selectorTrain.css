@@ -1,0 +1,43 @@
+body fieldset{
+    border-color: navy; max-width: 460px;
+    margin: 0 auto; border-radius: 10px;
+}
+    fieldset legend{
+        border-radius: 10px; background-color: navy;
+        color: white; line-height: 34px; font-size: 12px;
+        padding: 0 10px;
+    }
+    fieldset ul{
+        margin: 0 0 15px 0; padding: 0; list-style: none;
+    }
+    fieldset ul li{
+        font-size: 14px;
+    }
+    fieldset ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    fieldset ul li:last-child{
+        text-align: right;
+    }
+    fieldset ul li label{
+        display: inline-block; vertical-align: middle;
+    }
+    fieldset ul li:not(:last-child) label{
+        min-width: 100px;
+    }
+    fieldset ul li *:not(label){
+        vertical-align: middle; padding: 5px 10px;
+        background-color: #fff; transition-duration: 0.75s;
+    }
+    fieldset ul li *:not(label):hover,
+    fieldset ul li *:not(label):focus{
+        background-color: #949494;
+    }
+    fieldset ul li:last-child input[type='checkbox'] + label{
+        padding: 10px; background-color: #fff;
+        transition-duration: 0.5s;
+    }
+    fieldset ul li:last-child input[type='checkbox']:checked + label{
+        padding: 5px; background-color: #660099;
+        color: #fff; font-size: 12px; border-radius: 5px;
+    }

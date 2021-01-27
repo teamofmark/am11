@@ -16,8 +16,9 @@ fieldset{
     padding: 10px 25% 10px 0;
     border-width: 2px 0 1px;
     border-style: solid none;
-    border-color: #c4c4c4 none;
+    border-color: #c4c4c4 transparent;
     position: relative;
+    margin-bottom: 30px;
 }
 fieldset input[type='search']{
     width: 20%; min-width: 115px;
@@ -34,4 +35,83 @@ fieldset select{
     position: absolute; right: 0; width: 25%; min-width: 120px;
     background-color: #555; color: white;
     border: 1px solid midnightblue; padding: 4px;
+}
+
+h2{
+    text-transform: capitalize; color: #555;
+    margin:0 0 30px;
+}
+h2 strong{
+    color: #0091b5;
+}
+h2 strong:nth-of-type(2){
+    text-transform: uppercase;
+}
+
+ul{
+    margin: 0; padding: 0; list-style: none;
+}
+ul li{
+    position: relative; 
+}
+ul li:first-child{
+    border-width: 2px 0 1px;
+    border-style: solid none;
+    border-color: darkred transparent;
+}
+ul li:not(:first-child){
+    border-bottom: 1px solid black;
+}
+ul li:nth-child(even){
+    background-color: #9a9a9a;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li:first-child span{
+    padding: 20px 2.5%; font-size: 15px; font-weight: bold;
+}
+ul li:not(:first-child) span{
+    padding: 10px 2.5%;
+}
+ul li span{
+    display: block; float: left;
+}
+ul li span:not(:nth-child(2)) {
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 35%;
+}
+ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px;
+    font-size: 9px; background-color: darkred; color: white;
+}
+ul+div{
+    position: relative; width: 20%; min-width: 305px;
+    margin: 0 auto;
+}
+ul+div > a{
+    position: absolute; text-decoration: none;
+}
+ul+div > a:first-of-type{
+    left: 0; top: 3px;
+}
+ul+div > a:last-of-type{
+    right: 0; top: 3px;
+}
+
+ul+div ol{
+    display: block; padding: 0; list-style: none;
+    text-align: center;
+}
+ul+div ol li{
+    display: inline-block;
+}
+ul+div ol li a{
+    text-decoration: none; font-size: 14px; color: #00556b;
+    display: block; padding: 5px;
+}
+ul+div ol li a:hover{
+    color: red;
 }

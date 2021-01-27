@@ -1,0 +1,37 @@
+body{
+    width: 80%; margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    position: relative; margin: 0;
+    width: 50%; padding: 15px 50% 15px 0;
+    font-weight: normal; font-size: 32px; color: #a0a0a0;
+}
+h1 a{
+    position: absolute; right: 0; bottom: 0;
+    width: 50%; text-align: right; color: midnightblue;
+    font-size: 24px;
+}
+fieldset{
+    padding: 10px 25% 10px 0;
+    border-width: 2px 0 1px;
+    border-style: solid none;
+    border-color: #c4c4c4 none;
+    position: relative;
+}
+fieldset input[type='search']{
+    width: 20%; min-width: 115px;
+    border: 1px solid #c4c4c4;
+    background-color: #555; color: #fff;
+    padding: 5px;
+}
+fieldset input[type='button']{
+    width: 10%; min-width: 60px;
+    background-color: #dadada; color: midnightblue;
+    border: 2px solid midnightblue; padding: 4px;
+}
+fieldset select{
+    position: absolute; right: 0; width: 25%; min-width: 120px;
+    background-color: #555; color: white;
+    border: 1px solid midnightblue; padding: 4px;
+}

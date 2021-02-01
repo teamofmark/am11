@@ -7,3 +7,10 @@
 .blueG{
     background: linear-gradient(to right, #1e5799 0%, #2989d8 40%, #207cca 60%, #7db9e8 100%);
 }
+.yellowG{
+    width: 500px; line-height: 500px; border-radius: 250px; text-align: center;
+    background: radial-gradient(ellipse at center, #fefcea 0%, #f1da36 100%);
+}
+/* 
+    http://www.colorzilla.com/gradient-editor 에서 제작 가능
+*/

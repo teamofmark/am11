@@ -1,0 +1,28 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    position: relative;
+}
+.circle{
+    position: absolute; 
+    width: 200px; height: 200px; border-radius: 100px;
+    background: linear-gradient(135deg, #b360cb 0%, #a436db 100%); text-align: center;
+    animation-name: moveCircle;
+    animation-duration: 2s;
+}
+.circle h1{
+    line-height: 200px;
+}
+
+@keyframes moveCircle{
+    from{
+        left: 0; top: 0;
+        transform: rotate(0deg);
+    }
+
+    to{
+        left: 500px; top: 0;
+        transform: rotate(360deg);
+    }
+}

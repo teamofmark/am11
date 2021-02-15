@@ -1,7 +1,18 @@
-
+@media screen and (min-width:768px) and (max-width: 1024px){
+    html{
+        background-color: green;
+    }
+}
 
 @media screen and (min-width: 1025px){
     html{
-        background-color: blue;
+        background-color: blue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
     }
 }
+/* Desktop Device - user resolution 1025 higher */

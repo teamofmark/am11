@@ -1,3 +1,27 @@
+/* @media screen and (min-width:768px) and (max-width: 1024px){ */
+    /* html{ */
+        /* background-color: green; color: white; font-weight: bold; */
+    /* } */
+    /* h1{ */
+        /* font-size: 2rem; text-align: right; line-height: 3rem; */
+    /* } */
+    /* p{ */
+        /* font-size: 1rem; line-height: 1.5rem; */
+    /* } */
+/* } */
+
+@media screen and (min-width:768px) and (max-width: 1024px) and (orientation: landscape){
+    html{
+        background-color: greenyellow; color: black; font-weight: bold;
+    }
+    h1{
+        font-size: 3rem; text-align: right; line-height: 5rem;
+    }
+    p{
+        font-size: 2rem; line-height: 4em;
+    }
+}
+
 @media screen and (min-width:768px) and (max-width: 1024px) and (orientation: portrait){
     html{
         background-color: green; color: white; font-weight: bold;
@@ -9,6 +33,7 @@
         font-size: 1rem; line-height: 1.5rem;
     }
 }
+/* Tablet Device - user resolution 768px higher 1024px lower */
 
 @media screen and (min-width: 1025px){
     html{

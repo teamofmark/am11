@@ -12,13 +12,15 @@ a{
     font-family: "Hammersmith One"; font-weight: 400;
     font-size: 16px; border: 1px solid #00e0d0;
     color: #00e0d0; display: block; padding: 15px 1.48%;
-    background: transparent;
+    background: transparent; text-align: center;
 }
 /* All Using */
 
 @media screen and (min-width: 1280px){
 
-
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
 
     header{
         padding: 15px 0 70px;
@@ -75,4 +77,34 @@ a{
         line-height: 24px; text-align: center;
         max-width: 770px; margin: 0 auto; margin-bottom: 50px;
     }
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; width: 10px; height: 10px;
+        border-radius: 5px; border: 1px solid rgba(255,255,255,0.8);
+        text-indent: -9999px;
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* header Fin */
+    footer{
+        background: url('../images/bg_05.png') no-repeat left top;
+        background-size: cover;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 32%; margin: 0 0 70px 2%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    
 }

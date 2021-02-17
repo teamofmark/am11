@@ -12,6 +12,7 @@ a{
     font-family: "Hammersmith One"; font-weight: 400;
     font-size: 16px; border: 1px solid #00e0d0;
     color: #00e0d0; display: block; padding: 15px 1.48%;
+    background: transparent;
 }
 /* All Using */
 

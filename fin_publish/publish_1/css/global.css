@@ -123,12 +123,27 @@ a{
     }
     footer > div div:nth-of-type(2) address span{
         display: block; padding-left: 30px;
-        background-repeat: no-repeat; background-position: left top;
+        background-repeat: no-repeat; background-position: left 5px;
     }
     footer > div div:nth-of-type(2) address span:first-of-type{
         background-image: url('../images/bul_map.png');
     }
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
+    }
+    footer > div div:nth-of-type(2) address span a{
+        display: block; color: white;
+    }
+    footer > div div:nth-of-type(3) > input{
+        float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) > input[type='email']{
+        font-size: 14px; line-height: 43px; background-color: transparent;
+        border: 1px solid rgba(255,255,255,0.5); width: 70%;
+        display: block; padding: 0 15px; box-sizing: border-box;
+    }
+    footer > div div:nth-of-type(3) > input[type='submit']{
+        width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 43px;
+        background: url('../images/btn_send.png') no-repeat center rgba(255,255,255,0.5);
     }
 }

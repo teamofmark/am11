@@ -108,13 +108,43 @@
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
     }
-    section.teamArea > p:first-of-type{
-        font-size: 14px; font-weight: 400; margin-bottom: 15px;
+    section.teamArea > p{
+        font-size: 14px; margin-bottom: 15px;
     }
-
-
+    section.teamArea > p:first-of-type{
+         font-weight: 400; 
+    }
     section.teamArea > p:last-of-type{
-        font-size: 14px; font-weight: 300; margin-bottom: 15px;
+        font-weight: 300;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255,255,255,0.2);
+    }
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.teamArea ul li{
+        width: 23.5%; float: left; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        background: url('https://via.placeholder.com/220x230') no-repeat center top;
+        background-size: contain; padding-top: 230px;
+    }
+    section.teamArea ul li figure dl{
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 20px 0;
+    }
+    section.teamArea ul li figure dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure dl dd{
+        font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);   
     }
 }
 /* desktop */

@@ -34,10 +34,16 @@
     }
     section.videoArea a{
         display: block; margin: 0 auto 35px;
-        width: 100px; line-height: 100px; border: 3px solid white;
+        width: 100px; padding: 23px 0px 32px 2px; border: 3px solid white;
         border-radius: 50px; font-size: 45px; text-align: center;
         color: white;
     }
+    section.videoArea h2{
+        font-size: 16px; color: white; text-align: center;
+        font-weight: 900;
+    }
+    /* videoSection Fin */
 
+    
 }
 /* desktop */

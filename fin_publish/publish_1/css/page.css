@@ -62,6 +62,13 @@
         width: 33.33%; display: block; float: left;
         padding: 120px 2% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    section.expArea ul li:nth-child(n):nth-child(-n+3){
+        border-top: none;
+    }
+    section.expArea ul li:not(:nth-child(3n)){
+        border-right: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:nth-child(1){
         background-image: url('../images/ico_01.png');

@@ -146,5 +146,12 @@
     section.teamArea ul li figure dl dd{
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);   
     }
+    section.teamArea ul + p{
+        margin-bottom: 25px; font-weight: 300;
+    }
+    section.teamArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* teamArea Fin */
 }
 /* desktop */

@@ -265,9 +265,6 @@
         color: #413d4b; margin-bottom: 35px;
     }
     
-    section.contactArea div{
-        width: 40%; margin-left: 10%;
-    }
     section.contactArea form fieldset input:not([type='submit']),
     section.contactArea form fieldset textarea{
         border: 1px solid rgba(0,0,0,0.1); padding: 0 20px;
@@ -279,6 +276,22 @@
     }
     section.contactArea form fieldset .btn_more{
         cursor: pointer; min-width: 120px;
+    }
+
+    section.contactArea div{
+        width: 40%; margin-left: 10%;
+    }
+    section.contactArea div ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea div ul li a img{
+        width: 100%; max-width: 162px;
     }
 }
 /* desktop */

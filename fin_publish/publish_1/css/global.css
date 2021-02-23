@@ -159,6 +159,12 @@ section[class *= Area] > hr{
     footer > div div:nth-of-type(2) address span a{
         display: block; color: white;
     }
+    footer > div div:nth-of-type(3){
+        clear: left;
+    }
+    footer > div div:nth-of-type(3):after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
     footer > div div:nth-of-type(3) > input{
         float: left; margin-bottom: 25px;
     }
@@ -178,7 +184,7 @@ section[class *= Area] > hr{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: 5px;
+        margin-left: 5.8%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px;
@@ -202,6 +208,7 @@ section[class *= Area] > hr{
     footer > div div:nth-of-type(3) ul li:nth-child(6) a{
         background-image: url('../images/ico_sns_06.png');
     }
+    
     footer > div div:last-of-type{
         clear: left;
     }

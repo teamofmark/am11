@@ -107,13 +107,13 @@
     section.teamArea{
         background: url('../images/bg_03.png') no-repeat left top;
         background-size: cover; text-align: center; color: white;
-        padding: 70px 0;
+        padding: 70px 3%;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
     }
     section.teamArea > p{
-        font-size: 14px; margin-bottom: 15px;
+        font-size: 14px; margin-bottom: 15px; line-height: 21px;
     }
     section.teamArea > p:first-of-type{
          font-weight: 400; 
@@ -125,20 +125,21 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 728px; margin: 0 auto 70px;
+        max-width: 600px; margin: 0 auto 70px;
     }
-    section.teamArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
+    /* section.teamArea ul:after{ */
+        /* content: ''; display: block; visibility: hidden; clear: both; */
+    /* } */
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        /* width: 23.5%; float: left; */
+        display: block;
     }
-    section.teamArea ul li:not(:first-child){
-        margin-left: 2%;
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') no-repeat center top;
-        background-size: contain; padding-top: 179px;
+        background-size: cover; padding-top: 179px;
     }
     section.teamArea ul li figure dl{
         border: 1px solid rgba(255,255,255,0.5);

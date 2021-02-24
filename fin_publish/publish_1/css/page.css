@@ -1,16 +1,20 @@
 
 @media screen and (max-width: 767px){
-    #about:after{
-        content: ''; display: block; visibility: hidden; clear: both;
+    /* #about:after{ */
+        /* content: ''; display: block; visibility: hidden; clear: both; */
+    /* } */
+    #about{
+        text-align: center;
     }
     #about img{
-        float: left; width: 32%;
+        /* float: left; */
+        width: 50%;
         max-width: 235px;
     }
-    #about figcaption{
-        width: 60%; float: left;
-        margin-left: 8%;
-    }
+    /* #about figcaption{ */
+        /* width: 60%; float: left; */
+        /* margin-left: 8%; */
+    /* } */
     #about figcaption > *:not(a){
         margin-bottom: 30px;
     }
@@ -24,7 +28,7 @@
         line-height: 22px;
     }
     #about figcaption a.btn_more{
-        max-width: 120px;
+        max-width: 120px; margin: 0 auto;
     }
     /* CI figure Fin */
 
@@ -53,23 +57,23 @@
     }
     section.expArea p{
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75);
-        margin-bottom: 15px;
+        margin-bottom: 15px; line-height: 21px;
     }
-    section.expArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both; 
-    }
+    /* section.expArea ul:after{ */
+        /* content: ''; display: block; visibility: hidden; clear: both;  */
+    /* } */
     section.expArea ul li{
-        width: 33.33%; display: block; float: left;
+       /*  width: 33.33%; float: left; */
         padding: 120px 2% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
-        border-top: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(0,0,0,0.2); display: block;
     }
-    section.expArea ul li:nth-child(n):nth-child(-n+3){
-        border-top: none;
-    }
-    section.expArea ul li:not(:nth-child(3n)){
-        border-right: 1px solid rgba(0,0,0,0.2);
-    }
+    /* section.expArea ul li:nth-child(n):nth-child(-n+3){ */
+        /* border-top: none; */
+    /* } */
+    /* section.expArea ul li:not(:nth-child(3n)){ */
+        /* border-right: 1px solid rgba(0,0,0,0.2); */
+    /* } */
     section.expArea ul li:nth-child(1){
         background-image: url('../images/ico_01.png');
     }

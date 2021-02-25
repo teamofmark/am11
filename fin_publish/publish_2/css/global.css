@@ -7,3 +7,7 @@ body{
 .crim{
     font-family: 'Crimson Text', serif;
 }
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}

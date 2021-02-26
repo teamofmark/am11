@@ -11,3 +11,10 @@ input[type='radio'],
 input[type='checkbox']{
     display: none;
 }
+
+.selectBox select{
+    border: none; box-shadow: none; background-image: none;
+    background-color: transparent; 
+    -moz-appearance: none; -webkit-appearance: none;
+    
+}

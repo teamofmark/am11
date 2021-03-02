@@ -102,7 +102,9 @@
     }
     /* *slideArea Fin */
 
-
+    .contentArea{
+        margin-bottom: 50px;
+    }
 }
 
 /* desktop */

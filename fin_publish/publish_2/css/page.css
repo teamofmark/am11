@@ -206,6 +206,7 @@
         font-size: 13px; color: #343e5c; cursor: pointer;
         padding-left: 24.37%; box-sizing: border-box;
         line-height: 21px; display: block;
+        width: 93%; max-width: 270px;
     }
     .contentArea aside fieldset label:not(:last-of-type){
         margin-bottom: 20px;
@@ -215,6 +216,7 @@
         text-align: center; width: 15%; max-width: 55px; */
         display: none;
     }
+    /* 
     .contentArea aside fieldset label[for^='ava'],
     .contentArea aside fieldset label[for^='brand']{
         width: 83%; max-width: 215px;
@@ -224,10 +226,9 @@
     }
     .contentArea aside fieldset label[for^='dlvr']{
         width: 49%; max-width: 135px;
-    }
-    .contentArea aside fieldset label[for^='dlvr']:last-of-type{
+    }.contentArea aside fieldset label[for^='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
-    }
+    } */
 
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') no-repeat 10% center;
@@ -245,7 +246,7 @@
 
 
     .contentArea section{
-        width: 74.44%; margin-left: 2.56%; float: left;
+        width: 75%; margin-left: 2%; float: left;
     }
     .contentArea section h3{
         display: none;
@@ -253,18 +254,20 @@
     .contentArea section ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    .contentArea section ul li{
-        float: left; display: block; width: 31%; margin: 0 0 30px 3.5%;
+    .contentArea section ul li:not(:nth-child(5)){
+        float: left; display: block; width: 48%; margin: 0 0 30px 4%;
         background-color: white; height: 380px;
         border-radius: 4px;
     }
     .contentArea section ul li:nth-child(5){
-        width: 65.5%;
+        clear: both; display: block; margin-bottom: 30px;
+        background-color: white; border-radius: 4px;
     }
     .contentArea section ul li:nth-child(1),
-    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(6),
-    .contentArea section ul li:nth-child(9){
+    .contentArea section ul li:nth-child(8),
+    .contentArea section ul li:nth-child(10){
         margin-left: 0;
     }
     .contentArea section ul li figure img{
@@ -291,7 +294,7 @@
         box-sizing: border-box;
     } 
     .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
-        position: absolute; left: 2%; top: -290px;
+        position: absolute; left: 2%; top: -280px;
         background-color: black; color: white; border-radius: 3px;
         font-size: 12px; padding: 6px 12px;
     }

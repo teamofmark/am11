@@ -162,9 +162,10 @@
     /* ? sortBy Fin */
  
     .contentArea aside{
-        width: 23%; float: left;
+        /* width: 23%; float: left; */
+        display: none;
     }
-    .contentArea aside nav{
+    /* .contentArea aside nav{
         background-color: white; border-radius: 5px;
         margin-bottom: 30px;
     }
@@ -223,11 +224,10 @@
         margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        /* font-size: 11px; color: #bdbfd3;
-        text-align: center; width: 15%; max-width: 55px; */
+        font-size: 11px; color: #bdbfd3;
+        text-align: center; width: 15%; max-width: 55px;
         display: none;
-    }
-    /* 
+    } 
     .contentArea aside fieldset label[for^='ava'],
     .contentArea aside fieldset label[for^='brand']{
         width: 83%; max-width: 215px;
@@ -239,7 +239,7 @@
         width: 49%; max-width: 135px;
     }.contentArea aside fieldset label[for^='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
-    } */
+    } 
 
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') no-repeat 10% center;
@@ -253,34 +253,37 @@
     .contentArea aside fieldset input[type='checkbox']:checked + label{
         background-image: url('../images/on_check.png');
     }
+    */
     /* *aside Fin */
 
 
-    .contentArea section{
+    /* .contentArea section{
         width: 75%; margin-left: 2%; float: left;
-    }
+    } */
     .contentArea section h3{
         display: none;
     }
-    .contentArea section ul:after{
+    /* .contentArea section ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     .contentArea section ul li:not(:nth-child(5)){
-        float: left; display: block; width: 48%; margin: 0 0 30px 4%;
+        display: block; margin: 0 0 30px 0;
         background-color: white; min-height: 370px;
         border-radius: 4px;
+        /* float: left; width: 48%; */
     }
     .contentArea section ul li:nth-child(5){
-        clear: both; display: block; margin-bottom: 30px;
+        display: block; margin-bottom: 30px;
         background-color: white; border-radius: 4px;
+        /* clear: both;  */
     }
-    .contentArea section ul li:nth-child(1),
+    /* .contentArea section ul li:nth-child(1),
     .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(6),
     .contentArea section ul li:nth-child(8),
     .contentArea section ul li:nth-child(10){
         margin-left: 0;
-    }
+    } */
     .contentArea section ul li figure img{
         width: 100%; border-radius: 4px;
     }
@@ -301,16 +304,24 @@
         font-size: 14px; color: #343e5c; font-weight: 700;
     }
     .contentArea section ul li:nth-child(5) figure figcaption{
-        position: relative; padding: 15px 45% 15px 4%;
+        position: relative;
+        padding: 15px 4%;
         box-sizing: border-box;
     } 
+    .contentArea section ul li:nth-child(5) figure figcaption dl{
+        margin-bottom: 15px;
+    }
     .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
-        position: absolute; left: 2%; top: -280px;
+        position: absolute; left: 2%; top: -140px;
         background-color: black; color: white; border-radius: 3px;
-        font-size: 12px; padding: 6px 12px;
+        font-size: 11px; padding: 6px 6px;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span{
-        position: absolute; right: 4%; top: 15px; width: 40%;
+        /* position: absolute; right: 4%; top: 15px; width: 40%; */
+        display: block;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span:after{
+        content: ''; display: block; visibility: hidden; clear: both;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span a{
         display: block; width: 50%; float: left; text-align: center;
@@ -338,6 +349,9 @@
     .contentArea section ul li:last-child figure figcaption dl dd{
         color: rgba(28,23,35,0.5);
     }
+    .contentArea .paging{
+        display: none;
+    }
     /* * contentList Fin */
     section.bestArea{
         background-color: white; border-radius: 4px;
@@ -348,15 +362,15 @@
         text-align: center; font-weight: 700; text-transform: uppercase;
         border-bottom: 1px solid #f0f2f7;
     }
-    section.bestArea ul:after{
+    /* section.bestArea ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     section.bestArea ul li{
-        width: 25%; float: left; display: block;
-        padding-bottom: 35px;
+        display: block; padding-bottom: 35px;
+        /* width: 25%; float: left; */
     }
     section.bestArea ul li:not(:first-child){
-        border-left: 1px solid #f0f2f7; box-sizing: border-box;
+        border-top: 1px solid #f0f2f7; box-sizing: border-box;
     }
     section.bestArea ul li figure img{
         width: 100%;

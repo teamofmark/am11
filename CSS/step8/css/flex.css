@@ -46,3 +46,77 @@ row (ltr), row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
 .flexContainer.flow .flexItem{
     width: 500px;
 }
+
+.flexContainer.justify{
+    justify-content: space-evenly;
+    /* 
+        justify-content : 
+        flex container의 main axis를 기준으로 flexItem을 수평 정렬한다.
+        
+        flex-start (flexItem을 좌측 기준정렬)
+        flex-end (flexItem을 우측 기준정렬)
+        center (flexItem을 가운데 기준정렬)
+        space-between (flexItem 중 처음은 좌측기준, 마지막은 우측기준, 나머지는 동일간격으로 정렬)
+        space-around (모든 flexItem은 기준없이 동일간격으로 정렬)
+        space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.)
+    */
+}
+.flexContainer.alignItems{
+    height: 200px;
+    align-items: center;
+    /* 
+        ? align-items : 
+        * flexItem을 flexContainer의 수직 방향으로 정렬한다.
+        * align-items 속성은 모든 flexItem에 적용된다.
+
+        * stretch (cross Start 에서 End까지 꽉찬 높이)
+        * flex-start (cross Start 기준으로 정렬.)
+        * flex-end (cross End 기준으로 정렬.)
+        * center  (flexContainer의 주축 중앙에 정렬.)
+        * baseline (안의 컨텐츠 End 기준으로 정렬.)
+    */
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+
+.flexContainer.alignContent{
+    flex-wrap: wrap; height: 400px;
+    justify-content: flex-start;
+    align-content: space-between;
+    /* 
+        ! justify와 유사
+        align-content: (창조절필요)
+        flex container의 cross axis를 기준으로 flexItem을 수직 정렬한다.
+        
+        stretch (flexItem 행 간격을 균등하게. cross Start에서 End까지 꽉찬 높이.)
+        flex-start (flexItem 행 간격 없이 (stack))
+        flex-end (flexContainer의 cross end 기준으로 행 간격 없이)
+        center (flexContainer의 cross axis 중앙 기준으로 행 간격 없이)
+        space-between (첫 행은 flexContainer cross start 기준, 마지막 행은 flexContainer cross end 기준, 나머지 행 균등하게)
+        space-around (flexContainer 공간안에 모든 행 균등하게)
+        space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
+    */
+}
+.flexContainer.alignContent .flexItem{
+    margin: 0;
+}
+
+/* !이하 item */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 2;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: -1;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/

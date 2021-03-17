@@ -131,16 +131,18 @@ function todo4(){
     console.log(typeof(result) + '=' + result);
 }
 
+// todo. 2-1 parse
 function todo5(){
     var test = "100.50";
     var test1 = "20";
-    var result = test + 150 + test1; //todo
+    var result = parseFloat(test) + 150 + parseInt(test1); //todo
     console.log(typeof(result) + '=' + result);
 }
 
+// todo. 2-2 Number 사용
 function todo6(){
     var test = "100.50";
     var test1 = "20";
-    var result = test + 150 + test1; //todo
+    var result = Number(test) + 150 + Number(test1); //todo
     console.log(typeof(result) + '=' + result);
 }

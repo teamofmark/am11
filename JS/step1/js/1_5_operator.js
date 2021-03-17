@@ -44,3 +44,68 @@
     * .
 */
 // * case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장후 출력. 
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+// * case.2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장후 출력.
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    var result = a*b / 10;
+    console.log(result);
+}
+// *case.3 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
+
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+
+// *case.4 ul, li 구조의 tag를 html page에 삽입 후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>HTML</li>';
+    list += '   <li>CSS</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+} 
+function compareOperator(){
+    var a = 10;
+    a += 20;
+    console.log('a = ' + a);
+}
+
+// *case.5 JS처럼 생각해보기. (증가연산)
+
+function numberPlusAfter(){
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //? 10을 출력후 더해서 다시 number로
+    alert(number++); //? 11을 출력후 더해서 다시 number로
+    alert(number++); //? 12를 출력후 더해서 다시 number로 - 출력 12, 최종 13.
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //?출력 : 10 현재 : 11  10출력후 더하기(11). 다시 number로.
+    console.log(number); //? 확인
+    alert(--number); //?출력 : 10 현재 : 10  11에서 1빼고 10 출력후. 다시 number로
+    console.log(number); //? 확인
+    alert(++number); //?출력 : 11 현재 : 11  10에서 1더하고 11 출력후. 다시 number로
+    console.log(number); //? 확인
+    alert(number--); //?출력 : 11 현재 : 10  11출력후 1빼서 다시 number로. 출력: 11, 최종 10.
+    console.log(number); //? 최종확인
+}
+
+// *case.6 숫자 10이 담긴 변수 a 와 숫자 20이 담긴 변수b의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 20;
+    var b = 20;
+    var result = a != b;
+    console.log('a != b = ' + result);
+}
+//  *case.8 a변수에는 '여자', b변수에는 '웹디자이너' 라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장후 출력.
+
+// * case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.

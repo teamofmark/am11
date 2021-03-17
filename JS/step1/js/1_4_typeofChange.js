@@ -81,3 +81,66 @@ function bgColorRandom(){
         $('body').css('background-color', '#' + bgColor);
     },1000);
 }
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? parse
+    * 1. parseInt(value); - 정수 형
+    * 2. parseFloat(value); - 실수 형
+    
+    ? Number
+    * Number(value); - 정수 형,실수 형
+*/
+
+function numbString(){
+    var test = '300';
+    var result = parseInt(test) + 10;
+    console.log('result = ' + result);
+}
+
+// todo.1 변수 test에 들어있는 숫자 100을 문자 형으로 변형. result로 출력.
+/*
+* function todo1(){
+*     var test = 100;
+*     var result = ?;
+*     console.log(typeof(result) + '=' + result);
+* }
+*/
+function todo1(){
+    var test = 100;
+    var result = test + "";
+    console.log(typeof(result) + '=' + result);
+}
+function todo2(){
+    var test = 100;
+    var result = String(test);
+    console.log(typeof(result) + '=' + result);
+}
+function todo3(){
+    var test = 100;
+    var result = test.toString();
+    console.log(typeof(result) + '=' + result);
+}
+
+// todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기.
+
+function todo4(){
+    var test = "100.50";
+    var test1 = "20";
+    var result = test + 150 + test1;
+    console.log(typeof(result) + '=' + result);
+}
+
+function todo5(){
+    var test = "100.50";
+    var test1 = "20";
+    var result = test + 150 + test1; //todo
+    console.log(typeof(result) + '=' + result);
+}
+
+function todo6(){
+    var test = "100.50";
+    var test1 = "20";
+    var result = test + 150 + test1; //todo
+    console.log(typeof(result) + '=' + result);
+}

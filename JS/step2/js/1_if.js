@@ -32,9 +32,8 @@ function amORpm(){
 // todo. 말일인가? 아닌가? ( 30 보다 작으면 말일이 아님, 30보다 크거나 같으면 말일! 이라고 띄우기)
 function lastDay(){
     var date = new Date();
-    var day = date.getDay();
+    var day = date.getDate();
     // ? 변수선언부
-
     if(day < 30){
         alert('말일아님');
     }else{
@@ -66,5 +65,36 @@ function numbJudgment(){
         alert('음수!');
     }else{
         alert('0이거나 잘못된값을 입력하였습니다.');
+    }
+}
+
+// todo. 숫자를 입력받고 홀수인지 짝수인지 판별하는 조건문
+function oddOrEven(){
+    var numb = prompt('숫자입력','홀,수구분');
+    // ?선언 및 입력부
+    if(numb%2 == 0){
+        alert('짝수!');
+    }else{
+        alert('홀수!');
+    }
+    // ?조건처리 및 출력부
+}
+
+// todo. 국어, 영어, 수학 점수를 입력받고 평균을 구한 후 
+// todo. 수(100~90),우(90~80),미(80~70),양(70~60),가(59~)로 출력해라.
+function avgScore(){
+    
+    // ?선언 및 입력부
+
+    // ?조건처리 및 출력부
+}
+
+// *case.4 사용자 id(Mark)를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디를 입력하세요");
+    if(userID == "Mark"){
+        alert('접속을 승인합니다.');
+    }else{
+        alert('잘못된 ID입니다.');
     }
 }

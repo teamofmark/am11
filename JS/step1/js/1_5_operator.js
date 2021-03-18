@@ -107,5 +107,26 @@ function compareOperator1(){
     console.log('a != b = ' + result);
 }
 //  *case.8 a변수에는 '여자', b변수에는 '웹디자이너' 라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장후 출력.
-
+function logicalOperator1(){
+    var a = '여자';
+    var b = '웹디자이너';
+    var result = (a=='여자')&&(b=='웹디자이너');
+    console.log('result = ' + result);
+}
 // * case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.
+function logicalOperator2(){
+    var a = '남자';
+    var b = '웹퍼블리셔';
+    var result = (a=='여자')||(b=='웹퍼블리셔');
+    console.log('result = ' + result);
+}
+
+// todo. 다음 코드의 결과를 예상한 다음 출력. (JSthink)
+function compareOperator4(){
+    console.log(30 > 20 > 10); //? false
+}
+
+// todo. 해결해보자.
+function compareOperator4R(){
+    console.log(30 > 20 && 20 > 10); //? true
+}

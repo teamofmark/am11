@@ -86,3 +86,74 @@ function favorFluit(){
         alert(array[i]);
     }
 }
+// *case.3 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+function arrayFor(item, index){
+    var data = ['변수','연산자','형변환','조건문if','조건문switch','반복문for'];
+    for (var i = 0; i < data.length; i++){
+        document.write((i + 1) + '번째 내용 =' + data[i] + '<br>');
+    }
+}
+function arrayForES6(){
+    var data = ['변수','연산자','형변환','조건문if','조건문switch','반복문for'];
+    for (let i = 0; i < data.length; i++){
+        const element = data[i];
+        document.write((i + 1) + '번째 내용 =' + element + '<br>');
+    }
+}
+
+// *case.4 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고'];//?4개의 배열 선언후
+
+     for (var i = array.length - 1; i >= 0; i--){//?i 변수는 배열의 갯수 -1 (4-1 = 3) 로 선언, 그 변수가 0보다 크거나 같을때 까지 (3>=0 ----> 3,2,1,0) 실행 .
+         alert(array[i]);//?그래서 3,2,1,0 순으로 출력. 이것을 역반복
+     }
+}
+
+// *case.5 continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        alert(output);
+    }
+}
+// *case.6 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i+'<br>');
+    }
+    document.write('최종 i = ' + i + "<br>");
+}
+function runBreak(){
+    for (var i = 0; true; i++){
+        alert(i+'번째 반복수행');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+// !다중 for
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+//*todo.1 역반절 피라미드
+//*todo.2 피라미드

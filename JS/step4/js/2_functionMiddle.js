@@ -113,3 +113,80 @@ function innerFunctionTest(){
     }
     outerFunc();
 }
+
+// *ex.4 callBack 함수를 이용한 사칙연산 계산기 1
+// ? 함수 내부의 처리 결과값을 함수 외부로 내보낼 때 사용. (return 같은)
+function calculatorCallBack(op,numb1,numb2,callBack){//? callBack 이라는 매개변수 생성 = 선택한 로직처리함수
+    var result = "";
+
+    switch(op){
+        case "+":{
+            result = add(numb1, numb2);
+            break;
+        };
+        case "-":{
+            result = sub(numb1, numb2);
+            break;
+        };
+        case "*":{
+            result = mul(numb1, numb2);
+            break;
+        };
+        case "/":{
+            result = div(numb1, numb2);
+            break;
+        };
+        default:{
+            result = "잘못된 입력값입니다.";
+        }
+    }
+    function add(numb1,numb2){
+        return numb1 + numb2;
+    }
+    function sub(numb1, numb2){
+       return numb1 - numb2;
+    }
+    function mul(numb1, numb2){
+       return numb1 * numb2;
+    }
+    function div(numb1, numb2){
+       return numb1 / numb2;
+    }
+    //! 여기까지가 logic 구현부
+    
+    callBack(result); //? 기존 계산결과로 리턴 되던 result를 callBack매개변수에 들어오는 처리함수를 호출하여 매개변수에 담음(ex. addPrint(value) = callBack(result)).
+
+}
+function addPrint(value){ //? 외부에 있는 add~divPrint 로직처리함수에서  value를 찾아 사용할 수 있음.
+    document.write('두 수의 합은' + value);
+}
+function subPrint(value){
+    document.write('두 수의 차는' + value);
+}
+function mulPrint(value){
+    document.write('두 수의 곱은' + value);
+}
+function divPrint(value){
+    document.write('두 수의 나누기는' + value);
+}
+//! calculatorCallBack("op", numb1, numb2, addPrint); addPrint(처리함수)가 실행되면서 처리부분 실행.
+//? 결과적으로 로직을 구현하는 부분과 처리부분을 나누어 서로를 조립 및 연결 하여 사용할 수있다.
+
+// ? return 대신 callBack?
+// ! 그렇지않다. 구현부와 처리부가 나눠져 있지 않은 단순 값 return은 return이 더 효율적이다.
+/*
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write('두 수 합' + result);
+
+function sum1(numb1, numb2, callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function result(value){
+    document.write('두 수 합' + value);
+}
+sum(10, 20, result);
+*/

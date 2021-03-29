@@ -190,3 +190,68 @@ function result(value){
 }
 sum(10, 20, result);
 */
+
+// *case.3 동기와 비동기
+// * 동기 - 함수 호출이후 끝날 때 까지 다음 구문 수행 안함.
+function sync(){
+    alert('hi');
+    document.write('End Alert');
+}
+// *비동기 - 함수 호출 이후 끝나는 것과 상관없이 다음 구문 수행.
+//          *callBack함수를 이용하여 완료 이후 실행될 수 있도록 처리.
+
+function async(){
+    var count = 1;
+    setInterval(function(){
+        document.write('2. count = ' + count + '<br>');
+    },3000);
+
+    document.write('1. 동작과 상관없이 바로 실행');
+}
+
+// *case.4 클로저
+//? 함수내부에 만ㅇ든 지역변수가 사라지지 않고 계속해서 값을 유지하고 있는 상태.
+
+// *일반함수 - 함수내 지역변수가 함수 호출 이후 사라진다.
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// *클로저함수
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count ++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
+
+/*
+    ? 왜 그런것인가.
+    createCount 함수가 종료 되더라도 addCount 함수내부에서 count 라는 변수를 사용중인 상태에서 외부로 리턴 되기 때문에 
+    삭제되지 않고 남아있기 때문이다. 이런 현상을 클로저 현상이라고 한다.
+    또한 이런 내부함수를 클로저 함수라고 말한다.
+*/
+// *ex.4-1 사용중인 함수를 리턴해야만 클로저? 
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start();
+        document.write('countStart');
+    });
+});
+function start(){
+    var count = 0;
+    setInterval(function(){
+        count ++;
+        document.write(count);
+    },1000);
+}
+
+/*
+    ! 클로저 장점.
+    ? 1. 연관 있는 변수와 기능을 하나의 함수로 묶어 독립적으로(여러개) 실행 시킬 수 있다.
+    ? 2. 함수 내부에 data가 만들어지기 때문에 함수 외부에서 수정 할 수 없는 보호된 data(private)를 만들 수 있다.
+*/

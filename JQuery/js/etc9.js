@@ -45,5 +45,9 @@ function scoreCount(){
     }
 }
 function gameEnd(){
-
+    setTimeout(function(){
+        playState = false;
+        clearInterval(timerID);
+        alert('게임종료');
+    },10000);
 }

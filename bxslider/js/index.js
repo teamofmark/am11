@@ -11,6 +11,11 @@ $(document).ready(function(){
         ticker: false,
         tickerHover: false,
         adaptiveHeight: true,
-        video: true
+        video: true,
+        pager: true,
+        // pagerType: 'short',
+        // pagerShortSeparator : '번 이미지'
+        // pagerSelector: '.pagerCustom', 
+        pagerCustom : '.pagerCustom'
     });
 });

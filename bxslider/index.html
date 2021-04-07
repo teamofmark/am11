@@ -9,19 +9,33 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <style>
         img{
             width: 100%;
         }
+        .bx-wrapper{
+            max-width: 1280px !important; margin: 0 auto;
+        }
+        ul.slider{
+            margin: 0 auto; padding: 0;
+        }
+        ul.slider:after{
+            content: ''; display: block; visibility: hidden; clear: both;
+        }
+        /* ul.slider li .bx-caption{
+            bottom: 50%;
+        } */
     </style>
 </head>
 <body>
     <ul class="slider">
-        <li><img src="https://via.placeholder.com/1000?text='1'" alt="undefined"></li>
-        <li><img src="https://via.placeholder.com/1000?text='2'" alt="undefined"></li>
-        <li><img src="https://via.placeholder.com/1000?text='3'" alt="undefined"></li>
-        <li><img src="https://via.placeholder.com/1000?text='4'" alt="undefined"></li>
-        <li><img src="https://via.placeholder.com/1000?text='5'" alt="undefined"></li>
+        <li><img src="images/wallpaper_01.jpg" title="wallpaper_01" alt="undefined"></li>
+        <li><img src="images/wallpaper_02.jpg" title="wallpaper_02" alt="undefined"></li>
+        <li><img src="images/wallpaper_03.jpg" title="wallpaper_03" alt="undefined"></li>
+        <li><img src="images/wallpaper_04.jpg" title="wallpaper_04" alt="undefined"></li>
+        <li><img src="images/wallpaper_05.jpg" title="wallpaper_05" alt="undefined"></li>
+        <li><iframe src="https://www.youtube.com/embed/hFlK5QO2mp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
     </ul>
 </body>
 </html>

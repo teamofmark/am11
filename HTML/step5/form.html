@@ -103,6 +103,32 @@
                 -->
             </ul>
         </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" id="userName" placeholder="8자미만입력가능" required autofocus readonly>
+            <!--required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
+            <input type="email" placeholder="example@example.com">
+            <!--required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
+            <input type="url" placeholder="https://examples.com">
+            <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
+            <input type="number" min="1" max="10" step="1" value="0">
+            <!--상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
+            <input type="range" min="-5" max="5" step="1" value="0">
+            <!--슬라이드바로 숫자를 기입하는 막대를 생성한다. <input type="range" 최저값, 최대값, 상승값, 초기값 />-->
+            <input type="date">
+            <!--연도,월,날짜 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="month" name="typeMonth" />  
+            <!--연도,월 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="week" name="typeWeek" />
+            <!--연도,주 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="time" name="typeTime" />   
+            <!--시간 입력 ie10 이하 지원불가(수동입력)-->
+            <input type="datetime" name="typeDatetime" />
+            <!--대부분 브라우저 지원불가-->
+            <input type="datetime-local">
+            <!--연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
+        </fieldset>
     </form>
 </body>
 </html>

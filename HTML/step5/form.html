@@ -26,7 +26,7 @@
                     <!--입력 태그 타입 password는 비밀번호를 삽입할 때 사용되며, maxlength를 이용해 최대 글자를 제어할수있다.-->
                 </li>
                 <li>
-                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                    <input type="radio" name="radioGroup" id="btn_radio1">
                     <label for="btn_radio1">항목1</label>
                     <input type="radio" name="radioGroup" id="btn_radio2">
                     <label for="btn_radio2">항목2</label>
@@ -47,7 +47,7 @@
                     <label for="btn_check1">checkItem1</label>
                     <input type="checkbox" id="btn_check2">
                     <label for="btn_check2">checkItem2</label>
-                    <input type="checkbox" id="btn_check3" checked>
+                    <input type="checkbox" id="btn_check3">
                     <label for="btn_check3">checkItem3</label>
                     <input type="checkbox" id="btn_check4">
                     <label for="btn_check4">checkItem4</label>
@@ -71,7 +71,7 @@
                     <select>
                         <option>직업선택</option>
                         <optgroup label="구직자">
-                            <option selected>무직</option>
+                            <option>무직</option>
                             <option>학생</option>
                         </optgroup>
                         <optgroup label="근로자">
@@ -86,7 +86,21 @@
                         optgroup으로 중간 그룹을 설정할 수 있다.
                     -->
                 </li>
-                
+                <li>
+                    <input type="image" src="https://via.placeholder.com/100x50?text=imgBtn" alt="imageButton">
+                    <input type="button" value="비밀번호확인">
+                    <input type="file" value="찾아보기">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                </li>
+                <!--
+                    버튼으로 사용할수 있는 input에는 image, button, file, submit, reset 이 있는데 해당용도에 따라 적절하게 사용해야 한다.
+                    1. image 는 버튼을 웹사이트 디자인에 맞게 디자인된 버튼을 사용할 때 사용 한다.
+                    2. button 은 최종 확인 전송 및 페이지 양식 되돌리기, 파일 찾아보기 기능을 제외한 나머지 기능의 버튼 (우편번호, 검색, 추가, 삭제 등)에 사용한다.
+                    3. file은 파일 찾아보기 버튼에 사용한다.
+                    4. submit은 해당 폼 이 모두 완성 되었을때 완료 및 전송을 할때 사용한다.
+                    5. reset은 해당 폼의 모든 양식 내용을 초기화 시킬 때 사용한다.
+                -->
             </ul>
         </fieldset>
     </form>

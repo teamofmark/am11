@@ -26,7 +26,7 @@
                     <!--입력 태그 타입 password는 비밀번호를 삽입할 때 사용되며, maxlength를 이용해 최대 글자를 제어할수있다.-->
                 </li>
                 <li>
-                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
                     <label for="btn_radio1">항목1</label>
                     <input type="radio" name="radioGroup" id="btn_radio2">
                     <label for="btn_radio2">항목2</label>
@@ -47,7 +47,7 @@
                     <label for="btn_check1">checkItem1</label>
                     <input type="checkbox" id="btn_check2">
                     <label for="btn_check2">checkItem2</label>
-                    <input type="checkbox" id="btn_check3">
+                    <input type="checkbox" id="btn_check3" checked>
                     <label for="btn_check3">checkItem3</label>
                     <input type="checkbox" id="btn_check4">
                     <label for="btn_check4">checkItem4</label>
@@ -67,6 +67,26 @@
                     주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에, 초기 데이터 삽입시 공백부분에
                     유의 해야 한다.
                 -->
+                <li>
+                    <select>
+                        <option>직업선택</option>
+                        <optgroup label="구직자">
+                            <option selected>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                    <!--
+                        select는 선택항목을 목록형의 단축메뉴 형식으로 만드는 입력 양식이다.
+                        항목 수만큼의 option 이 필요하고, 이안의 value로 값을 정해 전달한다.
+                        multiple 속성값을 이용해 다중 선택을 지원 할수 있고, size 속성값을 이용해 초기 노출 목록수를 제어할수 있다.
+                        optgroup으로 중간 그룹을 설정할 수 있다.
+                    -->
+                </li>
+                
             </ul>
         </fieldset>
     </form>

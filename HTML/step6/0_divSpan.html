@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div Layout</title>
+    <style>
+        .header{
+            background-color: red;
+        }
+        .header ul.nav li{
+            background-color: blue; display: inline-block; width: 19%;
+            color: white;
+        }
+        .section{
+            background-color: red;
+        }
+        .section .article{
+            background-color: yellow; display: inline-block; width: 80%;
+            height: 500px; vertical-align: top;
+        }
+        .section .aside{
+            background-color: green; display: inline-block; width: 18%;
+            height: 500px;
+        }
+        .footer{
+            background-color: orange; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>global Header</span>
+        <ul class="nav">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="article">
+            <span>text</span>
+        </div>
+        <div class="aside">
+            <ul>
+                <li>quick1</li>
+                <li>quick2</li>
+                <li>quick3</li>
+                <li>quick4</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <span>global Footer</span>
+    </div>
+</body>
+</html>

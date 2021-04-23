@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form tag</title>
+    <style>
+        fieldset{
+            padding-bottom: 300px;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -128,6 +133,11 @@
             <!--대부분 브라우저 지원불가-->
             <input type="datetime-local">
             <!--연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="search" placeholder="검색어를 입력하세요." autocomplete="on">
+            <!--type을 search로 설정하면 x 버튼이 우측에 생기며 자동완성기능(autocomplete)은 기본값은 on, off로 끌수있다. style 이 safari에서 적용안됨.-->
+            <label for="typeColor">색상선택 : </label>
+            <input type="color" id="typeColor">
+            <!--컬러피커창 생성 ie10 이하 지원불가-->
         </fieldset>
     </form>
 </body>

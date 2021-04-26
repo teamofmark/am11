@@ -41,5 +41,61 @@
         ? 진행중을 progress가 담당 한다면, meter는 현재 사용량이나 소모된량 등의 정지된 산출값에 적합하다.
         ? value는 현재값, min 은 최소값, max는 최대값, low는 낮다의 기준범위, high는 높다의 기준범위, optimum은 적당하다의 기준범위
     -->
-</body>
+
+    <ruby>
+        漢 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+
+    <address>
+        address : 인천광역시 부평구 부평동...
+        <!-- <a href="mapAPI code"></a> -->
+        call : <a href="tel:+8200000000">전화걸기</a>
+        mail : <a href="mailto:teamofmark@gmail.com">메일보내기</a>
+        <!-- ?주소 : 실제주소, 가상주소(URL, mail, vcard, 전화번호...) -->
+    </address>
+
+    <!-- IE 지원불가 -->
+    <details>
+        <summary>Copyright 2021.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+    </details>
+
+    
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <main>
+        <h1>main page - Web Browsers</h1>
+        <p>
+            Google Chrome, FireFox, Internet Explorer...
+        </p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free. open-source webBrowser developed by Google.
+            </p>
+        </article>
+    </main>
+    <!--현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
+        문서내 mainpage에 해당하는 섹션부나 페이지를 감쌀때 사용 한다.
+        한개 문서에서 1번만 사용할 수 있다. 또한 구조상 최상위에 존재 해야 한다.-->
+    <form oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="100">100
+        +
+        <input type="number" id="b" value="1">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!--form에 지정된 스크립트 연산을 지정 input(id)들로 수행하여, 
+        결과값을 산출해내는 식이다.
+        range는 값을 마우스를 이용해 입력할 수 있고, number는 직접입력 
+        및 up,down버튼을 이용해 입력할수있다.-->
+        
+    </body>
 </html>

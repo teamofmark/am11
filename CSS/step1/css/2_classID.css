@@ -4,6 +4,7 @@ p.classEx1{
 .classEx1{
     color: red;
 }
+
 .btn{
     padding: 10px 30px; border-width: 1px; font-size: 12px;
 }
@@ -26,4 +27,9 @@ p.classEx1{
 .btn.cancel{
     background-color: darksalmon; color: darkred;
     border-style: dotted; border-color: darkred;
+}
+
+#userName{
+    border: 1px solid lightgreen; line-height: 21px;
+    font-size: 12px; padding: 5px 15px; color: forestgreen;
 }

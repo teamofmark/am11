@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+h1{
+    font-size: 14px; color: #f03;
+}
+/*각각의 대상을 지목하여 스타일을 설정 할 수 있다.*/
+
+ul,
+ol,
+dl{
+    list-style: none; color: #60f;
+}
+/*동일한 규칙의 스타일을 여러 대상에 동시 설정 할 수 있다.*/

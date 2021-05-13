@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/* 
+    ?body font를 Nanum Gothic을 사용 하겠다.
+*/
+h1{
+    font-size: 25px; line-height: 36px; color: #06f;
+}
+h2{
+    font-size: 15px; line-height: 21px; color: #966;
+}
+h3{
+    font-size: 13px; line-height: 19px; color: #f90;
+}
+
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+p.word{
+    word-spacing: 10px;
+}
+
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 21px;
+    border: 1px solid slateblue;
+}
+p.w_nowrap{
+    width: 150px; border: 1px solid salmon;
+    white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+
+.v_alignTest img{
+    width: 200px; height: 200px; vertical-align: middle;
+}
+.v_alignTest span{
+    /* vertical-align: 30%; */
+    vertical-align: middle;
+
+}
+p.t_indent{
+    text-indent: 200px; font-size: 40px; line-height: 52px;
+}
+button.testBtn{
+    background: url('https://via.placeholder.com/150x50?text=blabla');
+    border: none; width: 150px; line-height: 50px;
+    font-size: 12px; text-indent: -9999px;
+}

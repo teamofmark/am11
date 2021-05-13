@@ -12,3 +12,15 @@ dl{
     list-style: none; color: #60f;
 }
 /*동일한 규칙의 스타일을 여러 대상에 동시 설정 할 수 있다.*/
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
+/* 하위 대상을 지목하여 style을 설정. */
+dl dt,
+dl dd{
+    font-size: 35px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 하위 대상을 grouping 해서 동일한 style을 설정 */

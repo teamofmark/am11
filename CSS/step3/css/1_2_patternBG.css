@@ -1,0 +1,17 @@
+html, body, .wrap{
+    height: 100%;
+}
+body, .wrap p{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+    /* background-repeat: no-repeat; */
+}
+.wrap p{
+    background-color: rgba(0,0,0, 0.5); padding: 20px; margin-bottom: 20px;
+}
+.wrap button{
+    line-height: 50px; padding: 0px 40px; border: none; color: white;
+    background: url('../images/pt_ex.png') repeat-x;
+}

@@ -6,10 +6,11 @@ body{
     height: 100%;
 }
 body{
-    background-image: url('../images/example.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('../images/example.jpg') no-repeat center;
+    /* background-repeat: no-repeat;
+    background-position: center; */
     background-size: cover;
+    background-attachment: fixed;
 }
 body > div{
     background-color: white; padding: 5%; margin-bottom: 15%;

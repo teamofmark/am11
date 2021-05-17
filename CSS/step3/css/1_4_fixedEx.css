@@ -1,0 +1,19 @@
+*{
+    margin: 0; padding: 0;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    background-image: url('../images/example.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body > div{
+    background-color: white; padding: 5%; margin-bottom: 15%;
+}
+body > div h2{
+    font-size: 38px; margin-bottom: 20px;
+}

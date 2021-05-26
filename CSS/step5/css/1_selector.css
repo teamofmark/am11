@@ -1,0 +1,14 @@
+.tagSelector h1{color: #0c0; font-size: 20px;}
+.tagSelector p{color: #0cf; font-size: 12px;}
+.tagSelector span{color: #336; font-size: 25px;}
+/* *tag Selector */
+
+.idSelector p#paragraph1{color: slateblue; font-size: 30px; text-decoration: underline;}
+.idSelector p#paragraph2{color: slategray; font-size: 20px; text-decoration: line-through;}
+.idSelector p#paragraph3{color: salmon; font-size: 10px; text-decoration: overline;}
+/* *id Selector */
+
+.classSelector p.f_size{font-size: ?px;}
+.classSelector p.f_weight{font-weight: ?;}
+.classSelector p.f_color{color: ?;}
+/* todo. classSelector = 다중클래스(module)지정 */

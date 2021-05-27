@@ -32,6 +32,66 @@
 .attrSelector fieldset ul li > *{
     vertical-align: middle;
 }
+.attrSelector fieldset ul li input{
+    padding: 5px;
+}
 .attrSelector fieldset ul li input[type='text']{
-    background-color: salmon; border: lightyellow;
+    background-color: salmon; border:3px solid lightyellow; color:maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color:lightgreen; border: 3px solid lime; 
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px;
+    /* background-color: black; border: 5px solid yellow;  적용불가*/
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 25px; height: 25px;
+    /* background-color: black; border: 5px solid yellowgreen; 적용불가*/
+}
+/* 
+    ? 동작하는 input들은 기존 browser에서 설정된 style이 존재 하기 때문에 임의의 style 불가.
+    ! 바꾸고싶은데....? 나중에 배워요. 
+*/
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; display: block;
+}
+/*
+    구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을
+    적용 할 수 있다.
+*/
+.stringAttrSelector img[src$=png]{
+    width: 100px; height: 100px; border: 3px solid #906;
+}
+/* todo. jpg, gif customize */
+.stringAttrSelector img[src$=jpg]{
+    width: 200px; height: 200px; border: 5px solid #0f0;
+}
+.stringAttrSelector img[src$=gif]{
+    width: 300px; height: 300px; border: 10px solid #00f;
+}
+.sameSelector h1 ~ h2{
+    background-color: #333; color: white;
+}
+.sameSelector h1 + h2{
+    font-size: 40px; color: lime;
+}
+.eventSelector a{
+    display: block; line-height: 30px;
+}
+.eventSelector a:link{
+    font-size: 13px; color: red;
+}
+.eventSelector a:hover,
+.eventSelector h1:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
 }

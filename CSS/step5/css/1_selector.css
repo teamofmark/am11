@@ -146,3 +146,12 @@ IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
     * http://nthmaster.com
 
 */
+.shapeSelector h1:last-of-type{
+    color: #30f;
+}
+.shapeSelector h2:last-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:last-of-type{
+    color: #f06;
+}

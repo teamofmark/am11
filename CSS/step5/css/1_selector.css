@@ -116,3 +116,33 @@
 .statusSelector input[type='password']:disabled{
     background-color: deeppink; color: black;
 }
+.normalSelector ul{
+    overflow: hidden; margin: 30px 0; padding: 0; list-style: none;
+}
+.normalSelector ul li{
+    width: 14.28%; box-sizing: border-box; text-align: center;
+    padding: 15px; margin: 0; float: left;
+    background-color: greenyellow;
+}
+
+
+.normalSelector ul li:first-child{
+    border-radius: 20px 0 0 20px;
+}
+.normalSelector ul :last-child{
+    border-radius: 0 20px 20px 0;
+}
+/* 2n+1, 2n */
+.normalSelector ul li:nth-child(odd){
+    background-color: #555; color: white;
+}
+.normalSelector ul li:nth-child(even){
+    background-color: #9cf;
+}
+/*
+normal selector의 브라우저별 지원 현황
+IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
+
+    * http://nthmaster.com
+
+*/

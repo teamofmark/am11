@@ -1,0 +1,17 @@
+body > div{
+    max-width: 960px; margin: 0 auto;
+}
+div fieldset{
+    border: 1px solid #05f; padding: 15px 20px 25px 20px;
+}
+div fieldset:not(:last-child){
+    margin-bottom: 25px;
+}
+div fieldset textarea{
+    display: block; width: 100%; border: 1px solid #50f; margin: 25px auto 0;
+    box-sizing: border-box; resize: none; height: 150px;
+    transition-duration: 0.75s;
+}
+div fieldset input[type='checkbox']:checked + textarea{
+    height: 0; padding: 0;
+}

@@ -176,7 +176,7 @@ IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
     color: #fff;
 }
 .reactionSelector > *::selection{
-    /* background-color: #000; color: #ff0; */
+    background-color: #000; color: #ff0;
 }
 .notSelector input:not([type='password']){
     background-color: red;

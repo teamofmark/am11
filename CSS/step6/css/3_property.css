@@ -27,3 +27,16 @@
 .visibilityProperty table{
     visibility: collapse;
 }
+.shadowProperty h1{
+    text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid slategray;
+    padding: 10px; box-sizing: border-box;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 4px 5px 10px rgba(0,0,0,0.7);
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 4px 5px 10px rgba(0,0,0,0.7);
+}

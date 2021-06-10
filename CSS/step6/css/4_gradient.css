@@ -2,12 +2,12 @@
     background: linear-gradient(45deg,#9b1f1f 0%, #ea4e4e 100%);
 }
 .greenG{
-
+    /* 녹색 막대 gradient */
 }
 .blueG{
-    
+    /* 파란 막대 gradient */
 }
 .yellowG{
-
+    /* 원을 만들고 gradient 적용하기. */
 }
 /* http://www.colorzilla.com/gradient-editor 에서 제작 가능*/

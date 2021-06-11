@@ -35,3 +35,7 @@ div:nth-of-type(5) span{
     background-color: lemonchiffon;
     transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg);
 }
+div:last-of-type span{
+    background-color: lightseagreen;
+    transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg) scale(1.2, 1.2);
+}

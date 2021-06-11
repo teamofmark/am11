@@ -8,7 +8,10 @@ body{
     position: absolute; width: 200px; height: 200px; border-radius: 100px;
     background: linear-gradient(#90f 0%, #d0f 100%); text-align: center;
     animation-name: moveCircle;
-    animation-duration: 4s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 .circle h1{
     line-height: 200px;

@@ -1,0 +1,39 @@
+body{
+    width: 200px; margin: 200px auto; perspective: 400px;
+}
+div{
+    width: 200px; height: 200px; position: relative;
+    animation-name: playBox;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+}
+@keyframes playBox{
+    from{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }to{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+div span{
+    width: 200px; height: 200px; display: block; position: absolute; left: 0; top: 0;
+    opacity: 0.5; backface-visibility: visible;
+}
+
+
+div span:nth-of-type(1){background-color: red; transform: rotateY(0deg) translateZ(100px);}
+div span:nth-of-type(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-of-type(3){background-color: blue; transform: rotateY(180deg) translateZ(100px);}
+div span:nth-of-type(4){background-color: yellow; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-of-type(5){background-color: brown; transform: rotateX(90deg) translateZ(100px);}
+div span:nth-of-type(6){background-color: purple; transform: rotateX(270deg) translateZ(100px);}
+/* 
+    ?perspective
+    ! 대상면적 정도가 기준(적당). 줄어들수록 입체감이 증가, 늘어날수록 입체감이 감소.
+    ! (2000px 미만) 권장.
+    ?backface-visibility(이면가시성)
+    *visible : default. 이면을 보이겠다. hidden : 이면을 보이지 않겠다.
+    ?transform-style
+    *preserve-3d 자식요소의 3차원 속성 유지. flat : 자식요소의 3차원 속성 무시.
+*/

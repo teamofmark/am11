@@ -1,5 +1,56 @@
+/* todo. 스마트폰 에서 구현될 화면의 코드 작성하기.(가로,세로) 갤럭시폴드에서 확인. */
+@media screen and (max-width: 767px) and (orientation: landscape){
+    html{
+        background-color: palegreen; color: forestgreen; font-weight: normal;
+    }
+    h1{
+        font-size: 1.5rem; line-height: 3rem; text-align: center;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem; text-align: center;
+    }
+}
+/* ? device - mobile 사용자 해상도가 767 까지 이 코드가 실행.(가로) */
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    html{
+        background-color: palevioletred; color: darkred; font-weight: bold;
+    }
+    h1{
+        font-size: 1.5rem; line-height: 3rem; text-align: center;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem; text-align: center;
+    }
+}
+/* ? device - mobile 사용자 해상도가 767 까지 이 코드가 실행.(세로) */
 
 
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    html{
+        background-color: greenyellow; color: black; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: left;
+    }
+    p{
+        font-size: 1rem; text-align: left; line-height: 1.5rem;
+    }
+}
+/* ? device - tablet 사용자 해상도가 768 이상 1280미만 일때 이 코드가 실행.(가로) */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
+    html{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 3rem; line-height: 4rem; text-align: right;
+    }
+    p{
+        font-size: 2rem; text-align: right; line-height: 2.5rem;
+    }
+}
+/* ? device - tablet 사용자 해상도가 768 이상 1280미만 일때 이 코드가 실행.(세로) */
 
 @media screen and (min-width:1280px){
     html{

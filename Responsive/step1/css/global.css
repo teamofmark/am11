@@ -12,4 +12,8 @@
         font-size: 1rem; text-align: right; line-height: 1.5rem;
     }
 }
-/* ? device - pc 사용자 해상도가 1280 이상일 때 이 코드가 실행된다.*/
+/*
+    ? device - pc 사용자 해상도가 1280 이상일 때 이 코드가 실행된다.
+    ! rem : browser font default size. =  16px.? 1rem = 16px.
+    ! http://pxtoem.com/
+*/

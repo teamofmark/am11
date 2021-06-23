@@ -6,6 +6,8 @@ section.expArea ul li > *,
 section.teamArea p:last-of-type,
 section.teamArea ul li figure figcaption dl,
 section.worksArea h2 a,
+section.contactArea form fieldset input:not([type='submit']),
+section.contactArea form fieldset textarea,
 footer > div *{
     font-family: 'Roboto';
 }
@@ -14,7 +16,9 @@ header > div > ul li h2,
 section.expArea > *:not(ul),
 section.teamArea h2,
 section.teamArea p:not(:last-of-type),
-section.worksArea h2{
+section.worksArea h2,
+section.contactArea form fieldset legend,
+section.contactArea div h3{
     font-family: 'Playfair Display';
 }
 a{
@@ -32,6 +36,7 @@ section[class$=Area] > hr{
 @media screen and (min-width: 1280px){
     #about,
     section.expArea,
+    section.contactArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }

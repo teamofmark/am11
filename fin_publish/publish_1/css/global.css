@@ -3,12 +3,16 @@ header > div > ul li p,
 #about figcaption p,
 section.videoArea h2,
 section.expArea ul li > *,
+section.teamArea p:last-of-type,
+section.teamArea ul li figure figcaption dl,
 footer > div *{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 #about figcaption h2,
-section.expArea > *:not(ul){
+section.expArea > *:not(ul),
+section.teamArea h2,
+section.teamArea p:not(:last-of-type){
     font-family: 'Playfair Display';
 }
 a{

@@ -6,6 +6,7 @@ section.expArea ul li > *,
 section.teamArea p:last-of-type,
 section.teamArea ul li figure figcaption dl,
 section.worksArea h2 a,
+section.talkArea p > *,
 section.contactArea form fieldset input:not([type='submit']),
 section.contactArea form fieldset textarea,
 footer > div *{
@@ -17,6 +18,7 @@ section.expArea > *:not(ul),
 section.teamArea h2,
 section.teamArea p:not(:last-of-type),
 section.worksArea h2,
+section.talkArea p,
 section.contactArea form fieldset legend,
 section.contactArea div h3{
     font-family: 'Playfair Display';

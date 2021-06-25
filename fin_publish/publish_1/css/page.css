@@ -127,7 +127,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 728px;
         margin: 0 auto 70px; position: relative;
     }
     section.worksArea h2 a{
@@ -159,7 +159,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 940px; margin: 0 auto 45px;
+        max-width: 728px; margin: 0 auto 45px;
         background: url('../images/quote.png') no-repeat center top;
         padding-top: 70px; color: white; font-size: 16px;
         line-height: 26px; font-weight: 400;

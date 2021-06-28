@@ -1,0 +1,15 @@
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+.crim{
+    font-family: 'Crimson Text', serif;
+}
+/* all Using */
+
+@media screen and (min-width: 1280px) {
+    
+}
+/* ? desktop */

@@ -13,6 +13,13 @@
 
 .flexContainer.direction{
     flex-direction: column-reverse;
+    /* 
+        flex-direction : 
+        flex-direction 속성은 flexContainer의 주축(main axis) 방향을 설정한다.
+
+        row (ltr), row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
+    */
+
 }
 
 .flexContainer.wrap{
@@ -27,6 +34,18 @@
         
     */
 }
-.flexContainer.wrap .flexItem{
+.flexContainer.wrap .flexItem,
+.flexContainer.flow .flexItem{
     width: 500px;
+}
+
+.flexContainer.flow{
+    flex-flow: row wrap;
+    /* 
+        flex-flow : 
+        direction 과 wrap 을 줄여 쓸 수(shorthand)있다.
+
+        <flex-direction> | <flex-wrap>;
+        
+    */
 }

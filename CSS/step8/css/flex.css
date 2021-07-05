@@ -106,3 +106,17 @@
 .flexContainer.alignItems .flexItem:nth-of-type(2){
     line-height: 100px;
 }
+
+.flexContainer.justifyItems{
+    background-color: yellow;
+    display: grid; width: 300px;
+    justify-items: stretch;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
+.flexContainer.justifyItems .flexItem{
+    /* margin: 1px; */
+}
+
+/* !이하 item  */

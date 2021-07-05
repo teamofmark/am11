@@ -111,6 +111,16 @@
     background-color: yellow;
     display: grid; width: 300px;
     justify-items: stretch;
+    /* 
+        ? justify-items : 
+        * flexItem을 parent Width기준으로 flexContainer의 수평 방향으로 정렬한다.
+        * justify-items 속성은 모든 flexItem에 적용된다.
+    
+        * stretch (cross Start 에서 End까지 꽉찬 높이)
+        * flex-start (cross Start 기준으로 정렬.)
+        * flex-end (cross End 기준으로 정렬.)
+        * center  (flexContainer의 주축 중앙에 정렬.)
+    */
 }
 .flexContainer.justifyItems:hover{
     justify-items: flex-start;

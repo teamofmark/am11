@@ -63,3 +63,16 @@
 
 var name = "";
 var age = 0;
+
+// *동시선언, 동시 초기화.
+var radius, pi; //? 변수 한번에 선언.(undefined)
+radius = 10, pi = 3.14159265; //? 변수 한번에 초기화.
+
+// *변수의 특성
+var cup = 'Coffee'; //? 컵에 커피를 담았다.
+cup = 'Green Tea'; //? 커피를 버리고 녹차를 담았다.
+cup = 'Water'; //? 녹차를 버리고 물을 담았다.
+
+// *연산자 사용시
+var value = 10;
+// value = value + 20;

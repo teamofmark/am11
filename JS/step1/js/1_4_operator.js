@@ -145,5 +145,5 @@ function logicalOperator2(){
 // todo. 다음 코드를 작성후 결과를 예상해보고 문제점 해결하기.
 
 function compareOperator4(){
-    console.log(30 > 20 > 10); //? 
+    console.log(30 > 20 && 20 > 10); //? (30>20) > 10 ,true > 10 , 1 > 10  = false
 }

@@ -49,7 +49,7 @@ function mealTime(){
         alert('점심먹어');
     }else{
         alert('저녁먹어');
-    }
+    } 
 }
 // todo.1 prompt로 임의의 숫자를 입력받아 양수인지 음수인지 판단해주는 함수를 만들어보자.
 function numbJudgment(){

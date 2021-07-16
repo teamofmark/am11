@@ -88,19 +88,19 @@ function numbString(){
 // todo. 1-1 암시적형변환 사용. 
 function todo1(){
     var test = 100;
-    var result = ? ;
+    var result = test + '';
     console.log(typeof(result) + " = " + result);
 } 
 //todo. 1-2 String 사용.
 function todo2(){
     var test = 100;
-    var result = ? ;
+    var result = String(test);
     console.log(typeof(result) + " = " + result);
 } 
 //todo. 1-3 .toString 사용. 
 function todo3(){
     var test = 100;
-    var result = ? ;
+    var result = test.toString();
     console.log(typeof(result) + " = " + result);
 } 
 // todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들어라.
@@ -108,13 +108,13 @@ function todo3(){
 // todo. 2-1 parse 사용
 function todo4(){
     var test = "100.50";
-    var result = test + 150 + "20";
+    var result = parseFloat(test) + 150 + parseInt("20");
     console.log("result = " + result);
 }
 
 // todo. 2-2 Number 사용
 function todo5(){
     var test = "100.50";
-    var result = test + 150 + "20";
+    var result = Number(test) + 150 + Number("20");
     console.log("result = " + result);
 }

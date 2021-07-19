@@ -46,7 +46,7 @@ function mealTime(){
     if(hour < 10){
         alert('아침먹어');
     }else if(hour < 16){
-        alert('점심먹어');
+        alert('점심먹어'); 
     }else{
         alert('저녁먹어');
     } 

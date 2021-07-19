@@ -22,5 +22,34 @@ function switchGrammar(){
 }
 // todo.1 (if과제 풀고나서) 1번 복권문제를 switch로 변경.
 function lotto(){
-    
+
+}
+
+// *case. 2 switch문을 이용한 계산기
+
+function calculator(){
+    var firstNumb = window.prompt('첫번째 숫자를 입력하세요.');
+    var operator = window.prompt('사칙연산자중 하나를 입력하세요.');
+    var lastNumb = window.prompt('두번째 숫자를 입력하세요.');
+
+    firstNumb = parseInt(firstNumb);
+    lastNumb = parseInt(lastNumb);
+
+    switch(operator){
+        case "+":
+            alert(firstNumb + lastNumb);
+            break;
+        case "-":
+            alert(firstNumb - lastNumb);
+            break;
+        case "*":
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default :
+            alert("연산자가 잘못되었습니다.");
+            break;
+    }
 }

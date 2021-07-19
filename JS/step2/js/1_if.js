@@ -53,5 +53,44 @@ function mealTime(){
 }
 // todo.1 prompt로 임의의 숫자를 입력받아 양수인지 음수인지 판단해주는 함수를 만들어보자.
 function numbJudgment(){
-    
+    var numb = window.prompt('숫자를 입력하세요.', '양수,음수 상관없음');
+
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('입력하신 수가 0이거나 잘못된 입력값입니다.');
+    }
+}
+// todo.2 홀수, 짝수 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력하시면', '홀,짝을 구분합니다.');
+
+    // ? 조건처리
+    if(numb%2 == 0){
+        alert('짝수');
+    }else{
+        alert('홀수');
+    }
+}
+// *case.4 세과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력해보자.
+function avgScore(){
+    var koreanScore = prompt('국어점수를 입력하시오.');
+    var englishScore = prompt('영어점수를 입력하시오.');
+    var mathScore = prompt('수학점수를 입력하시오.');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다. 수려');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다. 괜찮');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다. 맞겠');
+    }else{
+        alert('평균' + avg + '점 \n' + '가 입니다. 망했');
+    }
 }

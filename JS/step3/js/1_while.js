@@ -41,3 +41,13 @@ function whileBreak(){
     }
     document.write('최종 i = ' + i + '<br>');
 }
+
+// todo.1 구구단 숫자를 입력받아 출력하는 while 문.
+function gugudan(){
+    var guguNumb = window.prompt('알고싶은 구단 숫자를 입력');
+    var i = 1;
+    while (i <= 9){
+        document.write(guguNumb + 'x' + i + '=' + guguNumb*i + '<br>');
+        i++; 
+    }
+}

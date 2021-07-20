@@ -25,8 +25,8 @@ function whileContinue(){
     var i = 1;
     while (i <= 10){
         i++;
-        document.write(i + '<br>');
         continue;
+        document.write(i + '<br>');
     }
     document.write('최종 i = ' + i + '<br>');
 }
@@ -36,8 +36,8 @@ function whileBreak(){
     var i = 1;
     while (i <= 10){
         i++;
-        document.write(i+ '<br>');
         break;
+        document.write(i+ '<br>');
     }
     document.write('최종 i = ' + i + '<br>');
 }

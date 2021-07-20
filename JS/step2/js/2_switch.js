@@ -22,7 +22,22 @@ function switchGrammar(){
 }
 // todo.1 (if과제 풀고나서) 1번 복권문제를 switch로 변경.
 function lotto(){
+    var numbValue = window.prompt('입력하실 번호는?');
 
+    switch(numbValue){
+        case "1":
+            alert("1등10억!");
+            break;
+        case "2":
+            alert("2등5천!");
+            break;
+        case "3":
+            alert("3등3백!");
+            break;
+        default:
+            alert('낙첨...');
+            break;
+    }
 }
 
 // *case. 2 switch문을 이용한 계산기

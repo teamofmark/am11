@@ -47,23 +47,23 @@ function thinkJs(){
 }
 // todo.2 1 - 10 까지 출력되는 반복문의 다양한 방법.
 function answer1(){
-    for(var i = 0; i < 10; i++){
-        document.write((i + 1) + '<br>');
+    for(var i = 0; i < 10; i++){ //? 10보다 작을때 (0~9)까지만 수행
+        document.write((i + 1) + '<br>'); //?(0+1,1+1...) 1 - 10번까지 출력
     }
 }
 function answer2(){
-    for(var i = 100; i < 110; i++){
-        document.write((i-99) + '<br>');
+    for(var i = 100; i < 110; i++){ //? 110작거나 같을때 (100-109)까지만 수행
+        document.write((i-99) + '<br>'); //? (100-99, 101-99....) 1 - 10까지 출력.
     }
 }
 function answer3(){
-    for(var i = 1; i <= 10; i+=2){
-        document.write(i + '<br>');
-        document.write((i+1) + '<br>');
+    for(var i = 1; i <= 10; i+=2){ //? 10보다 작거나 같을때 (1-10)까지만 반복 수행. 루프 이후 +2.
+        document.write(i + '<br>'); //? 1,3,5,7,9.. (증감이 이루어지지 않은 iteration)
+        document.write((i+1) + '<br>'); //? 2,4,6,8,10...(증감이 이루어진 후 iteration)
     }
 }
 function answer4(){
-    for (var i = 10; i >= 1; i--){
-        document.write((11-i) + '<br>');
+    for (var i = 10; i >= 1; i--){ //? 1보다 크거나 같을때 (10 - 1)까지만 수행.
+        document.write((11-i) + '<br>'); //? (11-10, 11-9...) 1 - 10 까지 출력.
     }
 }

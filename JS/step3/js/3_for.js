@@ -67,3 +67,23 @@ function answer4(){
         document.write((11-i) + '<br>'); //? (11-10, 11-9...) 1 - 10 까지 출력.
     }
 }
+// *case.4 * 10개가 찍힌 결과를 출력.
+
+function star10(){
+    var star = '';
+    for (var i = 0; i < 10; i++){
+        star += '*';
+    }
+    document.write('result = ' + star);
+}
+// *case.5 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력.
+function favorFluit(){
+    var array = ['포도','딸기','메론','자두','파인애플','사과'];
+    for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo.3 지금까지 배웠던 js 단원을 배열을 활용해 출력해보기.
+function arrayFor(){
+    // *배열값 : 변수, 연산자, 형변환, 조건문if, 조건문 switch, 반복문 while, 반복문 for
+}

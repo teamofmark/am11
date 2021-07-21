@@ -53,3 +53,20 @@ function gugudan(){
 }
 // todo.2 end가 입력될 때 까지 숫자를 계속해서 입력받아 입력값 합을 출력.
 // todo. prompt에는 몇번 수행했는지 'x 번째 입력중' 이라는 text 표시.
+
+function sumNumb(){
+    var i = 1; // ? count Var
+    var result = 0; //? 최종합 (결과)을 담을 변수.
+    while(true){
+        var numb = window.prompt(i + '번째 입력'); //? 무한루프로 숫자 입력받기
+
+        if(numb=="end"){ //? end라는 값과 일치하면
+            alert('입력이 종료되었습니다.'); //? 경고창발생.
+            break; //? 루프중단.
+        }
+
+        result += parseInt(numb); //? result 변수에 형변환후 기존값에 더해서 저장.
+        document.write('현재까지의 총합 : ' + result + '<br>'); //? 저장된 result값을 매번 출력.(while이 끝나기 전에는 확인불가.)
+        i++; //? write누적이후 i count 증가.
+    }
+}

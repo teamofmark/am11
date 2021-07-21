@@ -16,8 +16,54 @@
 // *case.1 이름을 10번 출력해보자.
 function namePrint10(){
     var userName = "Mark";
-
+    
     for (var i = 1; i <= 10; i++){
         document.write(i + '.' + userName + '<br>');
+    }
+}
+
+// *case.2 이름을 1000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case.3 이름을 500번만 찍되 홀수만.
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+
+// todo.1 js Engine처럼 생각해보기.
+
+function thinkJs(){
+    for (var i = 0; i < 10; i++){ //? 10보다 작을때 (0 - 9)까지만 반복수행.
+        document.write('i = ' + i, '<br>'); //? 0 - 9까지 출력.
+    } //? i 가 10이되는순간 break.
+    document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
+}
+// todo.2 1 - 10 까지 출력되는 반복문의 다양한 방법.
+function answer1(){
+    for(var i = 0; i < 10; i++){
+        document.write((i + 1) + '<br>');
+    }
+}
+function answer2(){
+    for(var i = 100; i < 110; i++){
+        document.write((i-99) + '<br>');
+    }
+}
+function answer3(){
+    for(var i = 1; i <= 10; i+=2){
+        document.write(i + '<br>');
+        document.write((i+1) + '<br>');
+    }
+}
+function answer4(){
+    for (var i = 10; i >= 1; i--){
+        document.write((11-i) + '<br>');
     }
 }

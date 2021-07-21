@@ -14,7 +14,7 @@
 */
 
 // *case.1 이름을 10번 출력해보자.
-function namePrint10(){ 
+function namePrint10(){
     var userName = "Mark";
 
     for (var i = 1; i <= 10; i++){

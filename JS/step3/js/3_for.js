@@ -86,4 +86,43 @@ function favorFluit(){
 // todo.3 지금까지 배웠던 js 단원을 배열을 활용해 출력해보기.
 function arrayFor(){
     // *배열값 : 변수, 연산자, 형변환, 조건문if, 조건문 switch, 반복문 while, 반복문 for
+    var data = ["변수", "연산자", "형변환", "조건문if", "조건문 switch", "반복문 while", "반복문 for"];
+    for (let i = 0; i < data.length; i++){
+        const element = data[i];
+        document.write((i + 1) + '번째 내용 = ' + element + '<br>');
+    }
+}
+// *case. 6 역반복 배열부르기
+
+function reverseFavorFluit(){
+    var array = ['포도','딸기','메론','자두','파인애플','사과'];
+
+    for(var i = array.length - 1; i >= 0; i--){ //? i var 는 배열의 갯수(6) - 1 index와동기화
+        alert(array[i]);
+    }
+}
+// *case. 7 continue문
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i+'<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case. 8 continue활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 100; i++){
+        // condition
+        if( i % 2 == 1){
+            continue;
+            /*
+                ?i가 홀수일 경우 반복중지, 다음반복수행.
+                * 3을 2로 나눈 나머지가 1과 일치 = 다음반복수행
+                * 4를 2로 나눈 나머지가 1과 일치 != 하단로직수행
+            */
+        }
+        output += i; //? 2, 6, 12, 20.....
+        document.write(output + '<br>');
+    }
 }

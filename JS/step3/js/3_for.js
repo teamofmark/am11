@@ -144,3 +144,24 @@ function runBreak(){
     }
 }
 // ! 다중 for
+// *case. 1 반절 피라미드
+
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo.1 역반절 피라미드
+function reverseHalfPyramid(){
+
+}
+
+// todo.2 피라미드
+function pyramid(){
+    
+}

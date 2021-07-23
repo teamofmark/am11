@@ -158,10 +158,27 @@ function halfPyramid(){
 }
 // todo.1 역반절 피라미드
 function reverseHalfPyramid(){
-
+    var star = '';
+    for (var i = 10; i >= 1; i--){ //? 
+        for (var j = 0; j < i; j++){ //? 
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star); //?
 }
 
 // todo.2 피라미드
 function pyramid(){
-    
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //?
+        for (var e = 10; e >= i; e--){ //?
+            star += '&nbsp;'; //?
+        }
+        for (var s = 0; s < 2*i -1; s++){ //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star);
 }

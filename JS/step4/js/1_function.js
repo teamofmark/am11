@@ -69,4 +69,22 @@ function sumReturn1(num1, num2){
     var result = num1 + num2;
     return result;
 }
-alert('두 수의 합은 = ' + sumReturn1(1,2));
+// var value = sumReturn1(13,26);
+// alert('두 수의 합은 = ' + value);
+
+// *case.5 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하되 0이 입력되면 실행중지.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(window.prompt('숫자만 입력'));
+        if(value == 0){
+            document.write('종료');
+            return;
+        }
+        sum += value;
+        document.write(count + '. ' + sum + '<br>');
+        count++;
+    }
+    document.write('총 ' + count + '번 실행함.');
+}

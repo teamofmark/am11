@@ -88,3 +88,78 @@ function infiniteSum(){
     }
     document.write('총 ' + count + '번 실행함.');
 }
+// todo.1 구구단 출력을 함수로 만들기.
+function printGugudan(){
+    for (var i = 2; i <= 15; i++){
+        document.write(i + '단 출력', '<br>');
+        for(var m = 1; m <= 9; m++){
+            document.write(i + '*' + m + '=' +(i*m), '<br>');
+        }
+        document.write('<br>');
+    }
+}
+// *case.6 다음실행 구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+/*
+    *실행구문
+    todo. document.write('1 결과 = ' + calculator('+',20,10)); 
+*/
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+            case "-":
+                result = numb1 - numb2;
+                break;
+                case "*":
+                    result = numb1 * numb2;
+                    break;
+                    case "/":
+                        result = numb1 / numb2;
+                        break;
+                        default:
+                            result = '잘못된 연산자 혹은 숫자가 아닙니다.';
+                            break;
+    }
+    return result;
+}
+// document.write('1 결과 = ' + calculator('/',20,10));
+
+// todo.2 다음실행 구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+
+/*
+    *실행구문
+    todo. document.write(calculator("+", 20, 10));
+    todo. document.write(add(20, 10)); +
+    todo. document.write(sub(20, 10)); -
+    todo. document.write(mul(20, 10)); *
+    todo. document.write(div(20, 10)); /
+*/
+
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = sub(numb1,numb2);
+            break;
+            case "-":
+                result = ;
+                break;
+                case "*":
+                    result = ;
+                    break;
+                    case "/":
+                        result = ;
+                        break;
+                        default:
+                            result = '잘못된 연산자 혹은 숫자가 아닙니다.';
+                            break;
+    }
+    return result;
+}
+function add(numb1,numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+    // return numb1 + numb2;
+}

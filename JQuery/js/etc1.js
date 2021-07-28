@@ -31,7 +31,7 @@ function addBorder(){
 // todo.
 function textChange(){
     $("#panel2").css({
-        "font-size" : "25px",
+        "font-size" : "25px", //! or fontSize
         "color" : "green",
         "font-weight" : "bold"
     });

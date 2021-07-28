@@ -9,6 +9,10 @@ $(document).ready(function(){
     // *case.3
     $("#btnAddBorder").click(addBorder);
     // addBorder();
+
+    // todo.
+    $("#btnTextChange").click(textChange);
+    // textChange();
 });
 
 // *case.2
@@ -26,5 +30,16 @@ function addBorder(){
 
 // todo.
 function textChange(){
-    
+    $("#panel2").css({
+        "font-size" : "25px",
+        "color" : "green",
+        "font-weight" : "bold"
+    });
+    // $("#btnTextChange").click(function(){
+    //     $("#panel2").css({
+    //         "font-size" : "25px",
+    //         "color" : "green",
+    //         "font-weight" : "bold"
+    //     });
+    // });
 }

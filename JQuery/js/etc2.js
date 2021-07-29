@@ -4,6 +4,8 @@ $(document).ready(function(){
     // *case.2
     // detailMoveCircle();
     detailMoveCircleExt();
+    // *case.3
+    keyControl();
 });
 
 // *case.1 prompt를 이용한 원 움직이기 (xAxis)
@@ -66,4 +68,36 @@ function circleMovCommand(xpos, ypos){
             "top" : ypos
         });
     }
+}
+
+// *case.3 조작key로 제어하기.
+
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 키 코드" + e.keyCode);
+        
+        switch(e.keyCode){
+            case 65:
+                currentXpos -= range;
+                break;
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+        }
+        // todo. 조건문작성
+        
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
+    });
 }

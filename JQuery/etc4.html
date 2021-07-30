@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etc4 - gallery</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/etc4.js"></script>
+    <style>
+        div[class^='img']{
+            position: relative;
+        }
+        .imgContainer{
+            height: 150px;
+        }
+        .imgContainerMix{
+            height: 600px;
+        }
+        div[class^='img'] img{
+            transition: all 0.5s ease-in-out; position: absolute; left: 0; top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgContainer">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+        <img src="https://via.placeholder.com/150" alt="undefined">
+    </div>
+    <button class="alignHori">정렬!</button>
+    <button class="reset">원위치!</button>
+    
+    <div class="imgContainerMix">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+        <img src="https://via.placeholder.com/200" alt="undefined">
+    </div>
+    <button class="alignMix">정렬!</button>
+    <button class="resetMix">원위치!</button>
+</body>
+</html>

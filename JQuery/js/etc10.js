@@ -22,9 +22,11 @@ function initEvent(){
     });
 }
 function moveStart(){
-    setInterval(function(){
-        moveCircle();
-    }, 0);
+    if(timerID == 0){
+        timerID = setInterval(function(){
+            moveCircle();
+        }, 0);
+    }
 }
 
 function moveCircle(){
@@ -33,9 +35,12 @@ function moveCircle(){
     $circle.css({
         left: xpos
     });
-
+    if(xpos > railWidth || xpos < 0){
+        runStep *= -1;
+    }
 }
 
 function moveStop(){
- 
+    clearInterval(timerID);
+    timerID = 0;
 }

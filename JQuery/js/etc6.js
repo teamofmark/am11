@@ -12,3 +12,22 @@ $(document).ready(function(){
     $(".10way").click(function(){gallery(10,100,100)});
 });
 // todo. 함수가 한개만.
+function gallery(count, imgWidth, imgHeight){
+    var $images = $("#imgContainer img");
+    var $imgLength = $images.length;
+
+    var xpos, ypos;
+
+    for(i = 0; i<$imgLength; i++){
+        var $image = $images.eq(i);
+        xpos = (i % count) * imgWidth; 
+        ypos = parseInt(i / count) * imgHeight;
+
+        $image.css({
+            'left' : xpos,
+            'top' : ypos,
+            'width' : imgWidth,
+            'height' : imgHeight
+        });
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etc7 - tabMenu 함수구조분리</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/etc7.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{display: flex; flex-flow: row nowrap; border: 1px solid black;}
+        ul:first-of-type{border-bottom: none;}
+        ul li{
+            display: block; flex: auto; text-align: center; line-height: 40px;
+            box-sizing: border-box; border-left: 1px solid black;
+        }
+        ul li:first-child{border-left: none;}
+        ul li.activated,ul li:hover{background-color: black; color: white;}
+    </style>
+</head>
+<body>
+    <ul id="tabMenuDepth0">
+        <li>tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+        <li>tab4</li>
+        <li>tab5</li>
+        <li>tab6</li>
+    </ul>
+    <ul id="tabMenuDepth1">
+        <li>tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+        <li>tab4</li>
+        <li>tab5</li>
+        <li>tab6</li>
+    </ul>
+</body>
+</html>

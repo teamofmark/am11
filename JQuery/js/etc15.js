@@ -48,13 +48,13 @@ function startGame(){
             displayFishPositionInfo();
             
             checkGoalFish();
-        }, 200);
+        }, 1000);
     }
 }
 function updateFishPosition(){
     for(var i = 0; i < $fishList.length; i++){
         var $fish = $fishList.eq(i);
-        var step = Math.ceil(Math.random()*30);
+        var step = Math.ceil(Math.random()*100);
         var newLeft = $fish.position().left + step;
 
         $fish.css("left", newLeft);

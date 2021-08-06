@@ -8,6 +8,7 @@ $(document).ready(function(){
         easing: 'ease-in-out', //? default: null. slide전환 가속도 설정. = timing-function 옵션 모두 사용가능.
         captions: true, //? default: false.
         video: true, //? default: false. video option 활성화. fitvids.js 연결하기.(반응성향상).
+        responsive: true, //? default: true. slider 자체 반응형 키고 끄기
 
         // * startSlide, randomStart 충돌.
         startSlide: 0, //? default: 0. 시작시 노출될 slider index 설정.
@@ -20,5 +21,9 @@ $(document).ready(function(){
         // ?adaptiveHeight
         adaptiveHeight: true, //? default: false. slide내 img의 높이에 따라 frame자체가 변함.
         adaptiveHeightSpeed: 750, //? default: 500. frame이 변하는 시간.
+
+        // *pager - indicator
+        pager: true, //? default: true. pager 키고 끄기.
+        pagerType: 'short' //?default: full(circle). short: count로 변경.
     });
 });

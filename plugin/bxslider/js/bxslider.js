@@ -24,6 +24,8 @@ $(document).ready(function(){
 
         // *pager - indicator
         pager: true, //? default: true. pager 키고 끄기.
-        pagerType: 'short' //?default: full(circle). short: count로 변경.
+        pagerType: 'full', //? default: full(circle). short: count로 변경.
+        //? pagerShortSeparator: '|' type = short. 식별자 변경.
+        pagerSelector: '.newPager'
     });
 });

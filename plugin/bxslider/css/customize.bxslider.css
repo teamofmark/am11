@@ -1,0 +1,18 @@
+.bx-wrapper ul.slider:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.newPager{
+    text-align: center;
+}
+.newPager .bx-pager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager .bx-pager-item a{
+    display: block; text-decoration: none; font-size: 16px; color: slateblue;
+}
+.newPager .bx-pager .bx-pager-item a:hover{
+    color: red; font-size: 22px;
+}

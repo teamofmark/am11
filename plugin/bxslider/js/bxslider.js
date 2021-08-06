@@ -25,7 +25,19 @@ $(document).ready(function(){
         // *pager - indicator
         pager: true, //? default: true. pager 키고 끄기.
         pagerType: 'full', //? default: full(circle). short: count로 변경.
-        //? pagerShortSeparator: '|' type = short. 식별자 변경.
-        pagerSelector: '.newPager'
+        //? pagerShortSeparator: '|', type = short. 식별자 변경.
+        // pagerSelector: '.newPager',
+        pagerCustom: '.customPager', //? default: null. pager 구조직접 작성 및 data-slide-index attr 이용 targeting
+
+        // *controler
+        controls: true, //?default: true. controlButton 켜기 끄기.
+        //? nextSelector: '.btn_next', next 대상 지정
+        //? prevSelector: '.btn_prev', prev 대상 지정
+        //? nextText: '다음', 대상 내부 text 변경
+        //? prevText: '이전', 대상 내부 text 변경
+        // ! img 변경시 contorls.png file 수정을 통해 변경가능. attr: background-position 조절.
+
+        // *auto
+
     });
 });

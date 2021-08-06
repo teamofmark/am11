@@ -3,6 +3,7 @@
 }
 .newPager{
     text-align: center;
+    display: none; /*? customPager 사용시*/
 }
 .newPager .bx-pager .bx-pager-item:not(:first-of-type){
     margin-left: 2%;
@@ -15,4 +16,21 @@
 }
 .newPager .bx-pager .bx-pager-item a:hover{
     color: red; font-size: 22px;
+}
+
+.customPager{
+    margin: 100px 0;
+}
+.customPager:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.customPager li{
+    float: left; width: 16.66%; display: block;
+}
+.customPager li a{
+    background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px;
+    cursor: pointer;
+}
+.customPager li a.active{
+    background-color: black;
 }

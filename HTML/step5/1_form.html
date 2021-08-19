@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form 이하 tag</title>
+    <style>
+        label[for='selectSize']{
+            display: block;
+        }
+        datalist{
+            width: 300px; display: block !important;
+        }
+        #test option{
+            display: inline; margin-left: 10px; font-size: 12px;
+        }
+        #test option:first-of-type{
+            margin-left: 0;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -69,7 +83,27 @@
             <ul>
                 <li>
                     <label for="userName">이름 : </label>
-                    <input type="text" id="userName" required maxlength="8" autofocus readonly>
+                    <input type="text" id="userName" value="Mark" required maxlength="8" autofocus readonly>
+                </li>
+                <li>
+                    <input type="email" title="사용하시는 메일을 입력하세요." placeholder="example@example.com">
+                </li>
+                <li>
+                    <input type="url" title="웹사이트 주소를 입력하세요." placeholder="https://www.example.com">
+                </li>
+                <li>
+                    <label for="selectNumber">수량</label>
+                    <input type="number" id="selectNumber" min="1" max="99" step="1" value="1">
+                </li>
+                <li>
+                    <label for="selectSize">사이즈선택</label>
+                    <input type="range" list="test" id="selectSize" min="-2" max="2" step="1" value="0">
+                    <datalist id="test">
+                        <option value="120">120</option>
+                        <option value="130">130</option>
+                        <option value="140">140</option>
+                        <option value="150">150</option>
+                    </datalist>
                 </li>
             </ul>
         </fieldset>

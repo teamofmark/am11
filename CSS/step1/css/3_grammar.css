@@ -1,0 +1,30 @@
+body{
+    margin: 0; font-size: 12px; color: #60f;
+}
+h1{
+    font-size: 14px; color: #f03;
+}
+img{
+    width: 150px; height: 150px; border: 5px solid #3f3;
+}
+/* ? 각각의 대상을 지정하여 스타일을 설정. */
+
+ul,ol,dl{
+    color: midnightblue;
+}
+/* ? 동일한 규칙의 스타일을 여러대상에 동시 설정 grouping*/
+
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
+ul li, ol li{
+    background-color: greenyellow;
+}
+/* ? 하위 대상을 지목하여 스타일을 설정 */
+dl dt, dl dd{
+    font-size: 35px;
+}
+/* ?하위 대상들에 동일한 스타일을 설정 */

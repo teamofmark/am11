@@ -35,3 +35,11 @@ p.w_nowrap{
 .v_alignTest span{
     vertical-align: 100%;
 }
+p.t_indent{
+    text-indent: 200px; font-size: 40px;
+}
+.testIndent{
+    background: url('https://via.placeholder.com/150x50?text=blablaButton');
+    border: none; width: 150px; line-height: 50px; font-size: 12px;
+    text-indent: -9999px;
+}

@@ -3,3 +3,35 @@
 body{
     font-family: 'Nanum Gothic';
 }
+
+h1{
+    font-size: 20px; line-height: 30px; width: 50px; color: rgba(30,30,30,0.75);
+}
+h2{font-size:15px; line-height:21px; color:#966;}
+
+h3{font-size:13px; line-height:19px; color:#F90;}
+
+p{
+    font-size: 14px;
+}
+
+p.letter{
+    letter-spacing: -1px;
+}
+p.word{
+    word-spacing: 10px;
+}
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 21px;
+    border: 3px solid greenyellow;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap; text-overflow: ellipsis;
+    overflow: hidden; border: 3px solid greenyellow;
+}
+.v_alignTest img{
+    width: 200px; height: 200px; vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: 100%;
+}

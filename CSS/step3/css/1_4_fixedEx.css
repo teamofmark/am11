@@ -1,0 +1,27 @@
+*{
+    margin: 0; padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background: url('../images/example.jpg') center / cover no-repeat fixed;
+    
+    /*
+        ?shortHand
+        ?background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color];
+        background-blend-mode: > photoshop Layer Effect
+    */
+    /* background-image: url('../images/example.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+body > div{
+    background-color: white; margin-bottom: 15%; padding: 5%;
+}
+body > div h2{
+    font-size: 38px; margin-bottom: 20px;
+}

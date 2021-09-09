@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin: 30px;
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039;
+    color: white;
+}
+.secondDiv{
+    background-color: #ddd;
+    margin: 30px;
+    padding: 0 10px 10px;
+}
+.secondDiv article{
+    background-color: #930;
+    /* margin: 10px; */
+}

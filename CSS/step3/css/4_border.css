@@ -5,7 +5,23 @@ div{
     border: 3px solid #60f;
 }
 .multiBox{
-    border-width: 1px 3px 10px 25px;
-    border-style: solid dotted dashed double;
-    border-color: #1958b7 #f06 #0f6 #fc6;
+    border-width: 1px 10px 5px;
+    border-style: solid dotted dashed;
+    border-color: #1958b7 #f06 #fc6;
+    /* border-top: 1px solid #1958b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #0f6;
+    border-left: 25px double #fc6; */
+}
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #999;
+}
+.outsetBox{
+    border: 20px outset #999;
 }

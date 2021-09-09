@@ -25,3 +25,17 @@ div{
 .outsetBox{
     border: 20px outset #999;
 }
+.radiusBox{
+    background-color: black;
+    color: yellow;
+    border-radius: 75px;
+    line-height: 150px;
+    text-align: center;
+}
+.circleBox{
+    background-color: midnightblue;
+    color: white;
+    width: 500px; height: 500px;
+    border-radius: 250px;
+    text-indent: -9999px;
+}

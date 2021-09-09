@@ -4,3 +4,8 @@ div{
 .singleBox{
     border: 3px solid #60f;
 }
+.multiBox{
+    border-width: 1px 3px 10px 25px;
+    border-style: solid dotted dashed double;
+    border-color: #1958b7 #f06 #0f6 #fc6;
+}

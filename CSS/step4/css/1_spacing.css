@@ -18,3 +18,19 @@ body{
     background-color: #930;
     /* margin: 10px; */
 }
+.centerDiv{
+    border: 1px solid #33f;
+    padding: 10px 20px;
+    width: 300px;
+    margin: 0 auto;
+    /* ! center 
+        (browser Width - target Width) / 2 
+    */
+    text-align: center;
+}
+.centerDiv article{
+    /* margin: 0 10px; */
+    /* ! margin과 parent Padding은 안섞인다. 무조건 가산 */
+    background-color: #f33;
+    color: white;
+}

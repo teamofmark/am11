@@ -1,0 +1,13 @@
+#wrap{
+    width: 300px; height: 200px; margin: 0 auto; background-color: #999;
+}
+
+#wrap .redBox{
+    background-color: #f00; color: #fff; width: 150px; height: 150px;
+}
+#wrap .greenBox{
+    background-color: #0c0; width: 150px; height: 150px;
+}
+#wrap .blueBox{
+    background-color: #39f; width: 150px; height: 150px;
+}

@@ -1,0 +1,12 @@
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1 img{
+    float: left;
+}
+.wrap .exam_2{
+    background-color: midnightblue;
+}
+.wrap .exam_2 div{
+    background-color: slateblue; width: 300px; height: 300px; float: left;
+}

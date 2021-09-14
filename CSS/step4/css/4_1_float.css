@@ -15,3 +15,7 @@
 .wrap .exam_2 div{
     background-color: slateblue; width: 300px; height: 300px; float: left;
 }
+.wrap .exam_3{
+    background-color: orange;
+    clear: left;
+}

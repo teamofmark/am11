@@ -7,10 +7,22 @@
 .wrap header{
     background-color: #ff6a00;
 }
-
+.wrap header:after{
+    content: ''; display: block; clear: both; visibility: hidden; 
+}
 .wrap header h1{
-    background-color: red;
+    background-color: red; width: 130px; float: left; text-align: center; color: white;
+    font-size: 20px; line-height: 55px;
 }
 .wrap header nav{
-    background-color: blue;
+    background-color: blue; width: 830px; float: left;
+}
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    display: inline-block;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px; display: block;
 }

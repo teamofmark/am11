@@ -1,0 +1,25 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto; background-color: #ffc;
+}
+header{
+    background-color: skyblue;
+}
+header nav{
+    background-color: palegreen;
+}
+aside, section{
+    height: 800px; float: left;
+    margin-bottom: 20px;
+}
+aside{
+    width: 200px; background-color: #f96;
+}
+section{
+    width: 760px; background-color: #69f;
+}
+footer{
+    background-color: #f9f; clear: both;
+}

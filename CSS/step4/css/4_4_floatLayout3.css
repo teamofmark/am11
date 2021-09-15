@@ -30,3 +30,25 @@ header nav ul li a:hover{
     color: #fff;
 }
 /* *Header Fin */
+
+.wrap{
+    /* overflow: hidden; */
+}
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap div{
+    margin-bottom: 30px;
+}
+.wrap article{
+    width: 310px; float: left; border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.wrap article.latest2,
+.wrap article.latest3{
+    margin-left: 15px;
+}
+footer{
+    background-color: springgreen; line-height: 40px; text-align: center;
+}

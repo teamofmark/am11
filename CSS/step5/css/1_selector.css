@@ -36,3 +36,17 @@
 .attrSelector fieldset ul li input{
     padding: 5px; vertical-align: middle;
 }
+.attrSelector fieldset ul li label[for='nameField']{
+    color: yellowgreen; font-weight: bold;
+}
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid lightcoral; color: maroon;
+}
+/* todo. input password 와 label 을 변형 시켜보자. */
+
+.attrSelector fieldset ul li label[for*='pw']{
+    color: lime;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime; color: forestgreen;
+}

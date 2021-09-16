@@ -99,7 +99,7 @@
 .statusSelector input[type='password']:disabled{
     background-color: deeppink; color: black;
 }
-
+/* disabled -> 모두수정불가. (privateData), readOnly -> 읽기전용 (사용자만) */
 .eventSelector a{
     display: block;
 }
@@ -115,3 +115,4 @@
 .eventSelector a:visited{
     font-size: 40px; color: yellowgreen;
 }
+/* ? a:visited => a:link 로 인해 font-size 변경불가. */

@@ -68,3 +68,25 @@
     |= : 해당단어로 시작하거나 -로 구분되는 대상선택.
     ~= : 해당단어 포함.(띄어쓰기 기준)
 */
+
+.sameSelector h1~h2{
+    background-color: #333; color: white;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+
+.directSelector > h1{
+    font-size: 18px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906;
+}
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; height: 20px; overflow: hidden;
+    transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}

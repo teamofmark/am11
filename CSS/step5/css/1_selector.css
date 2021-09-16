@@ -90,3 +90,28 @@
 .statusSelector input[type='checkbox']:checked + label{
     height: 0px;
 }
+.statusSelector input[type='text']:focus{
+    border: 10px solid red;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='password']:disabled{
+    background-color: deeppink; color: black;
+}
+
+.eventSelector a{
+    display: block;
+}
+.eventSelector a:link{
+    font-size: 13px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
+}

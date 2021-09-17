@@ -147,3 +147,13 @@
     color: #090; line-height: 50px; font-size: 34px;
     text-decoration: underline;
 }
+
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) "."; color: #f06; font-weight: bold;
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; color: #30f; font-weight: bold;
+}

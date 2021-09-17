@@ -157,3 +157,10 @@
 .backandfrontSelector p::after{
     content: "-" attr(data-page) "page"; color: #30f; font-weight: bold;
 }
+
+.reactionSelector > *{
+    color: #fff;
+}
+.reactionSelector > *::selection{
+    background-color: #000; color: #ff0;
+}

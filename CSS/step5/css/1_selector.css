@@ -164,3 +164,7 @@
 .reactionSelector > *::selection{
     background-color: #000; color: #ff0;
 }
+
+.notSelector input:not([type='submit'],[type='reset']){
+    background-color: red;
+}

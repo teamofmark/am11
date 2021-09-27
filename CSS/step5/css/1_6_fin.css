@@ -40,3 +40,19 @@ h2 strong:not(:nth-of-type(2)){
 h2 strong:nth-of-type(2){
     text-transform: uppercase;
 }
+ul{
+    margin: 0 0 30px; padding: 0; list-style: none;
+}
+ul li{
+    position: relative;
+}
+ul li:first-child{
+    border-width: 3px 0 1px; border-style: solid; border-color: darkred;
+    padding: 10px 0;
+}
+ul li:not(:first-child){
+    border-bottom: 1px solid black;
+}
+ul li:nth-child(even){
+    background-color: #9a9a9a;
+}

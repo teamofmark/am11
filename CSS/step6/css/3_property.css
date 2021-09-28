@@ -37,3 +37,13 @@ div{
 .visibilityProperty span:nth-child(2){
     height: 500px; visibility: hidden;
 }
+.visibilityProperty input[type='checkbox']:checked ~ table{
+    visibility: visible;
+}
+.visibilityProperty table{
+    visibility: collapse;
+}
+/* 
+    ?visibility
+    visible = 보여주다. / hidden = 감추다.(영역보존? render는됨)
+*/

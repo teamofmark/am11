@@ -37,11 +37,18 @@ body{
     content: ''; display: block; visibility: hidden; clear: both;
 }
 .wrap > ul li{
-    width: 30%; float: left; 
+    width: 30%; float: left; margin-bottom: 5%;
 }
-.wrap > ul li:not(?){
-    margin-? : 5%; 
+.wrap > ul li:not(:nth-child(3n+1)){
+    margin-left: 5%; 
 }
+/* or  margin-right , 3n */
 .wrap > ul li a img{
-    width: 100%;
+    width: 100%; border: none; opacity: 0.5; transition-duration: 0.75s;
+}
+.wrap > ul li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
 }

@@ -1,0 +1,14 @@
+.redG{
+    background: linear-gradient(135deg, rgba(255,10,10,0.5) 0%, rgba(255,5,5,0.7) 40%, rgba(255,0,0,0.8) 80%, rgba(255,0,0,1) 100%);
+    /* 각도, 색상(+투명도), 적용위치 */
+}
+.greenG{
+    background: linear-gradient(to bottom,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.blueG{
+    background: linear-gradient(to right,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.yellowG{
+    width: 500px; height: 500px; border-radius: 250px; line-height: 500px; text-align: center;
+    background: radial-gradient(ellipse at center,  #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

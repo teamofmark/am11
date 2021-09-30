@@ -30,6 +30,9 @@ aside:last-of-type ul li{
     padding: 10px 5%; text-align: right; display: block;
     transition-duration: 1s; overflow-y: hidden;
 }
+aside:last-of-type ul li:hover{
+    padding: 5%; cursor: pointer;
+}
 aside:last-of-type ul li:nth-child(1){background-color: #999;}
 aside:last-of-type ul li:nth-child(2){background-color: #888;}
 aside:last-of-type ul li:nth-child(3){background-color: #777;}
@@ -38,8 +41,7 @@ aside:last-of-type ul li:nth-child(5){background-color: #555;}
 aside:last-of-type ul li:nth-child(6){background-color: #444;}
 aside:last-of-type ul li:nth-child(7){background-color: #333;}
 aside:last-of-type ul li p{
-    width: 80%; float: left; height: 0; opacity: 0;
-    transition-property:  height, opacity;
+    width: 80%; float: left; height: 0; opacity: 0; transition-property:  height, opacity;
     transition-duration: 1s, 2s;
 }
 aside:last-of-type ul li:hover p{

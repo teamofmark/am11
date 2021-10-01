@@ -9,9 +9,9 @@ body{
     background: linear-gradient(#60b3cb 0%, #36a4db 100%); text-align: center;
     animation-name: moveCircle;
     animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; /*? 재생1회당 2s사용. (ex > 돌아올때 2s)*/
+    animation-direction: alternate; /*? 재생1회당 2s사용. (ex > 돌아올때 2s)*/
 }
 /* 
     ? animation
@@ -28,14 +28,30 @@ body{
 */
 @keyframes moveCircle{
     from{
-        left: 0; /* ? start */
-    }50%{
-        left: 250px;
-    }to{
+        left: 0;
+        transform: rotate(0deg);
+         /* ? start */
+    }
+    /* 50%{
         left: 500px;
+    } */
+    to{
+        left: 500px;
+        transform: rotate(360deg);
         /* ? end */
     }
-} 
+}
+
+/* 
+    ?keyframes
+    * 0 ~ 100% 사이 소수점 포함 입력 가능
+    * keyframe start = from, end = to, 나머지는 %
+    ! ex> 0 - 50% - 100% (위 예제)
+    *  rotate는 회전속성, deg는 각도를 뜻한다.
+*/
+.circle:hover{
+    animation-play-state: paused; /*? running : 재생*/
+}
 .circle h1{
     line-height: 200px; color: midnightblue;
 }

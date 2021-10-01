@@ -1,0 +1,41 @@
+body,h1{
+    margin:0;
+}
+body{
+    position: relative;
+}
+.circle{
+    position: absolute; width: 200px; height: 200px; border-radius: 100px;
+    background: linear-gradient(#60b3cb 0%, #36a4db 100%); text-align: center;
+    animation-name: moveCircle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; /*? 재생1회당 2s사용. (ex > 돌아올때 2s)*/
+}
+/* 
+    ? animation
+    * 1. moveCircle이라는 이름의 keyframes를 호출.
+    * 2. duration으로 재생시간을 설정.
+    * 3. timing-function 으로 가속도 설정.
+    * 4. iteration-count 로 무반한복 설정.
+    ! 반복횟수를 숫자로 입력해도 가능.
+    * 5. direction으로 재생 방향 설정.
+    todo normal 표준재생(0-100%)
+    todo reverse 반대로재생(100%-0)
+    todo alternate 반복재생 (0-100%,100%-0)
+    todo alternate-reverse alternate역방향반복재생
+*/
+@keyframes moveCircle{
+    from{
+        left: 0; /* ? start */
+    }50%{
+        left: 250px;
+    }to{
+        left: 500px;
+        /* ? end */
+    }
+} 
+.circle h1{
+    line-height: 200px; color: midnightblue;
+}

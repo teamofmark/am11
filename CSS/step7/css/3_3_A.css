@@ -11,9 +11,9 @@ div{
 }
 @keyframes rotate3D{
     from{
-        transform: rotate3d(0,0,0,0deg);
+        transform: rotateX(90deg) rotateY(60deg);
     }to{
-        transform: rotate3d(1,1,1,360deg);
+        transform: rotateX(450deg) rotateY(60deg);
     }
 }
 div span{
@@ -21,5 +21,10 @@ div span{
     top: 0; opacity: 0.5;
 }
 div span:nth-of-type(1){background-color: palevioletred;}
-div span:nth-of-type(2){background-color: palegreen;}
-div span:nth-of-type(3){background-color: paleturquoise;}
+div span:nth-of-type(2){
+    background-color: palegreen; transform: rotateY(60deg); transform-origin: left top;
+}
+div span:nth-of-type(3){
+    background-color: paleturquoise; transform: rotateY(-60deg); width: 100px;
+    transform-origin: right top;
+}

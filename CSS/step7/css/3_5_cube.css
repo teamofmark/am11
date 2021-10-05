@@ -18,10 +18,11 @@ div{
 }
 div span{
     width: 200px; height: 200px; display: block; position: absolute; left: 0; top: 0;
+    
 }
-div span:nth-of-type(){background-color: ; transform: ;}
-div span:nth-of-type(){background-color: ; transform: ;}
-div span:nth-of-type(){background-color: ; transform: ;}
-div span:nth-of-type(){background-color: ; transform: ;}
-div span:nth-of-type(){background-color: ; transform: ;}
-div span:nth-of-type(){background-color: ; transform: ;}
+div span:nth-of-type(1){background-color: red; transform: rotateY(0deg) translateZ(100px);}
+div span:nth-of-type(2){background-color: orange; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-of-type(3){background-color: yellow; transform: rotateY(180deg) translateZ(100px);}
+div span:nth-of-type(4){background-color: greenyellow; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-of-type(5){background-color: blue; transform: rotateX(90deg) translateZ(100px);}
+div span:nth-of-type(6){background-color: navy; transform: rotateX(270deg) translateZ(100px);}

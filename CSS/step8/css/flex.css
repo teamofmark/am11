@@ -2,9 +2,22 @@
     margin: 10px; padding: 15px;
     border-radius: 23px;
     background-color: #a4a4a4;
+    display: flex;
 }
 
 .flexContainer .flexItem{
     margin: 10px; padding: 20px; color: white; text-align: center;
     border-radius: 27px; background-color: black;
 }
+/* 
+    ! 기본
+    ! 1. 부모요소가 flex(부모요소가 block이어야할때) / inline-flex(부모요소가 inline이어야 할때)로 지정되면 
+    * 2. 자손요소는 모두 flexItem이 된다.
+*/
+
+.flexContainer.direction{
+    flex-direction: column-reverse;
+}
+/* 
+    row (ltr), row-reverse(rtl), column(TtB), column-reverse(BtT) 
+*/

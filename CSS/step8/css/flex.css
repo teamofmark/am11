@@ -78,6 +78,10 @@
         space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
     */
 }
+
+
+/* !이하 요소들 */
+
 .flexContainer.justifyItems{
     background-color: yellow; display: grid; width: 300px;
     justify-items: stretch;
@@ -96,4 +100,63 @@
     * center  (flexContainer의 주축 중앙에 정렬.)
 */
 
-.flexContainer
+.flexContainer.alignItems{
+    background-color: orange; align-items: baseline;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-start;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(1){
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+/* 
+    ? align-items : 
+    * flexItem을 line-height기준으로 flexContainer의 수직 방향으로 정렬한다.
+    * align-items 속성은 모든 flexItem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 높이)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center  (flexContainer의 주축 중앙에 정렬.)
+    * baseline (안의 컨텐츠 End 기준으로 정렬.)
+*/
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 0;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: -1;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/
+.flexContainer.flexShortHand{
+    margin: 0; padding: 0; width: 50%;
+}
+.flexContainer.flexShortHand .flexItem{
+    margin: 0; padding: 0; word-break: break-all;
+}
+.flexContainer.flexShortHand .flexItem:first-child{
+    /* *ex.1 
+    flex-grow: 2;
+    flex-basis: 0;*/
+    
+    /* *ex.2 */
+    flex-shrink: 2;
+    flex-basis: 150px;
+}
+.flexContainer.flexShortHand .flexItem:not(:first-child){
+    /* *ex.1     
+    flex-grow: 1;
+    flex-basis: 0;*/
+    /* *ex.2 */
+    flex-shrink: 1;
+    flex-basis: 150px;
+}

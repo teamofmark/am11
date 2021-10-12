@@ -1,0 +1,62 @@
+/* mediaQuery */
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        background-color: darkturquoise; color: midnightblue; font-weight: bold;
+    }
+    h1{
+        font-size: 30px; text-align: left; line-height: 36px; margin-bottom: 30px;
+    }
+    p{
+        font-size: 16px; line-height: 22px; text-align: left;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: midnightblue; color: darkturquoise; font-weight: bold;
+    }
+    h1{
+        font-size: 16px; text-align: right; line-height: 22px; margin-bottom: 15px;
+    }
+    p{
+        font-size: 12px; line-height: 18px; text-align: right;
+    }
+}
+
+/* todo mobile Device 사용자 해상도가 768미만일 때(0 ~ 767) 이 코드가 실행됨. */
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: greenyellow; color: black; font-weight: bold;
+    }
+    h1{
+        font-size: 30px; text-align: center; line-height: 35px; margin-bottom: 25px;
+    }
+    p{
+        font-size: 15px; line-height: 18px; text-align: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
+    body{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 25px; text-align: right; line-height: 35px; margin-bottom: 50px;
+    }
+    p{
+        font-size: 12px; line-height: 18px;
+    }
+}
+
+/* ?Tablet Device - 사용자 해상도가 768px 이상 1279 이하 까지*/
+
+@media screen and (min-width: 1280px){
+    body{
+        background-color: blue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 30px; line-height: 30px; margin-bottom: 50px;
+    }
+    p{
+        font-size: 16px; line-height: 21px; text-align: right;
+    }
+}
+/* ?Desktop Device */

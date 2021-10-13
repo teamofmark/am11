@@ -1,6 +1,9 @@
 header > div nav ul li a{
     font-family: 'Roboto';
 }
+header > div > ul li h2{
+    font-family: 'Playfair Display';
+}
 
 a{
     text-decoration: none;
@@ -51,5 +54,17 @@ a{
         color: #00e0d0;
     }
     /* ? header Nav Fin */
+
+    header > div > ul{
+        margin-bottom: 125px;
+    }
+    header > div > ul li{
+        padding-top: 160px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center;
+        padding-bottom: 22px; background: url('../images/bd_01.png') no-repeat center bottom;
+        margin-bottom: 30px;
+    }
 }
 /* ?desktop */

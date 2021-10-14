@@ -1,4 +1,5 @@
-header > div nav ul li a{
+header > div nav ul li a,
+header > div > ul li p{
     font-family: 'Roboto';
 }
 header > div > ul li h2{
@@ -66,5 +67,27 @@ a{
         padding-bottom: 22px; background: url('../images/bd_01.png') no-repeat center bottom;
         margin-bottom: 30px;
     }
+    header > div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; line-height: 24px;
+        max-width: 775px; margin: 0 auto 50px; text-align: center;
+    }
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; text-indent: -9999px; width: 10px; height: 10px;
+        border-radius: 5px; border: 1px solid rgba(255,255,255,0.8);
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* * header Fin */
 }
 /* ?desktop */

@@ -131,5 +131,11 @@ a{
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
     }
+    footer > div div:nth-of-type(3) input{
+        float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        
+    }
 }
 /* ?desktop */

@@ -131,5 +131,18 @@
         max-width: 140px; margin: 0 auto;
     }
     /* *teamArea Fin */
+
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px;
+        margin: 0 auto 70px; position: relative;
+    }
+    section.worksArea h2 a{
+        font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
+        right: 0; top: 0; top: 8px;
+    }
+    /* todo. imglist 완성시키기 */
 }
 /* ?desktop */

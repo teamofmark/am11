@@ -110,7 +110,7 @@
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
-        padding-top: 230px;
+        padding-top: 179px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
@@ -133,7 +133,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 728px;
         margin: 0 auto 70px; position: relative;
     }
     section.worksArea h2 a{

@@ -1,0 +1,38 @@
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+.crim{
+    font-family: 'Crimson Text', serif;
+}
+/* ?All Use */
+
+@media screen and (min-width: 1280px){
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-icons{
+        width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block;
+    }
+    header > div h1{
+        min-width: 125px; width: 10.7%;
+    }
+    header > div h1 a{
+        display: block; text-align: right; padding: 31px 0;
+    }
+    header > div h1 a img{
+        max-width: 92px; width: 100%;
+    }
+}

@@ -96,7 +96,7 @@
         margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        background: url('https://via.placeholder.com/220x230') center top / cover no-repeat;
         padding-top: 179px;
     }
     section.teamArea ul li figure figcaption{
@@ -120,23 +120,23 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 728px;
+        font-size: 18px; font-weight: 700; color: #413d4b;
         margin: 0 auto 70px; position: relative;
     }
     section.worksArea h2 a{
-        font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 0; top: 8px;
+        font-size: 12px; font-weight: 300; color: #413d4b; position: absolute; right: 3%;
+        top: 4px;
     }
     /* todo. imglist 완성시키기 */
     
     section.worksArea ul{
         margin-bottom: 70px;
     }
-    section.worksArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.worksArea ul li{
-        width: 16.66%; float: left; display: block; line-height: 0;
+        display: block; line-height: 0;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 25px;
     }
     section.worksArea ul li img{
         width: 100%;
@@ -400,7 +400,7 @@
     }
     section.worksArea h2 a{
         font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 0; top: 8px;
+        right: 0; top: 0;
     }
     /* todo. imglist 완성시키기 */
     
@@ -678,7 +678,7 @@
     }
     section.worksArea h2 a{
         font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 0; top: 8px;
+        right: 0; top: 0;
     }
     /* todo. imglist 완성시키기 */
     

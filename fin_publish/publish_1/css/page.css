@@ -205,18 +205,11 @@
         width: 100%;
     }
     /* *talk Area */
-    section.contactArea:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
-    section.contactArea div{
-        float: left; display: block;
-    }
     section.contactArea form fieldset{
-        width: 50%;
+        margin-bottom: 50px;
     }
     section.contactArea form fieldset legend,
     section.contactArea div h3{
@@ -238,13 +231,10 @@
     }
     section.contactArea form fieldset .btn_more{
         background-color: transparent; cursor: pointer;
-        min-width: 120px;
+        min-width: 120px; margin-left: auto;
     }
     /* * left Fieldset Fin */
-    
-    section.contactArea div{
-        width: 40%; margin-left: 10%;
-    }
+
     section.contactArea div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }

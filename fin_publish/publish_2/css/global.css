@@ -7,6 +7,13 @@ body{
 .crim{
     font-family: 'Crimson Text', serif;
 }
+input[type='checkbox'],
+input[type='radio']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
 /* ?All Use */
 
 @media screen and (min-width: 1280px){
@@ -35,4 +42,43 @@ body{
     header > div h1 a img{
         max-width: 92px; width: 100%;
     }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 700; color: #343e5c;
+        line-height: 90px;
+    }
+    header > div div{
+        width: 29.3%; font-size: 11px; color: #343e5c; line-height: 90px;
+        text-align: right;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 17px;
+        background: url('../images/bul_cart.png') left top / contain no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; border-radius: 12px; text-align: center;
+        background-color: #e3e8f0; margin-left: 2%; font-weight: 700;
+    }
+    header > div div input[type='button']{
+        min-width: 85px; background-color: white; font-size: 11px; padding: 8px 15px;
+        border: 2px solid #e3e8f0; border-radius: 18px; font-weight: 700;
+        margin-left: 8%;
+    }
+    /* header FIn */
+
+    /* todo. pager */
 }

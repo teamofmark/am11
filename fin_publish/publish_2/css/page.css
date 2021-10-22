@@ -133,9 +133,15 @@
     .contentArea > form fieldset label[for='freeShipCheck']{
         margin-left: 2.56%;
     }
-
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; color: #343e5c; transition: background 0.5s ease-out;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
     .contentArea > form fieldset .shipSelect select{
         text-align: right;
     }
+    /* * sortBy Fin */
 }
 /* ?desktop */

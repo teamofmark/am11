@@ -143,5 +143,31 @@
         text-align: right;
     }
     /* * sortBy Fin */
+    .contentArea aside{
+        width: 23%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; margin-bottom: 30px; border-radius: 5px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c; padding: 15px 7.4%;
+        font-weight: 700;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right;
+        transform: rotate(-90deg); transition: transform 0.5s ease-in-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{}
+
+    .contentArea section{
+        width: 74.44%; margin-left: 2.56%; float: left;
+    }
 }
 /* ?desktop */

@@ -164,7 +164,20 @@
         content: url('../images/bg_arrow.png'); float: right;
         transform: rotate(-90deg); transition: transform 0.5s ease-in-out;
     }
-    .contentArea aside nav ul > li:hover > a:after{}
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; color: #a1a7bd; opacity: 0;
+        padding: 0px 7.4%; transition-duration: 0.3s;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; opacity: 1; padding: 15px 7.4%;
+        border-bottom: 1px solid #dfe4ee;
+    }
 
     .contentArea section{
         width: 74.44%; margin-left: 2.56%; float: left;

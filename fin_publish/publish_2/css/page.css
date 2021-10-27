@@ -144,7 +144,7 @@
         text-align: right;
     }
     /* * sortBy Fin */
-    
+
     .contentArea aside{
         width: 23%; float: left;
     }
@@ -218,36 +218,35 @@
     .contentArea aside fieldset legend{
         position: relative; top: 30px; font-size: 11px; color: #343e5c;
         border-bottom: 1px solid #f0f2f7; width: 100%; padding: 0 7.4% 15px;
-        font-weight: 500; box-sizing: border-box;
+        font-weight: 500; box-sizing: border-box; margin-bottom: 20px;
+        text-transform: uppercase;
     }
     .contentArea aside fieldset legend a{
         color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
     }
-    .contentArea aside fieldset label,
-    .contentArea aside fieldset span{
-        line-height: 50px;
-    }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; display: inline-block; box-sizing: border-box;
-        padding-left: 20.37%;
+        padding-left: 24.37%; margin-bottom: 20px; line-height: 21px;
     }
     .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
-        width: 15%; max-width: 65px;
+        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 65px; */
+        display: none;
     }
     .contentArea aside fieldset label[for*='ava'],
-    .contentArea aside fieldset label[for*='brand']{
+    .contentArea aside fieldset label[for*='brand'],
+    .contentArea aside fieldset label[for*='dlvr']{
         width: 83%; max-width: 205px;
     }
     .contentArea aside fieldset label[for*='Condition']{
         width: 93%; max-width: 270px;
     }
-    .contentArea aside fieldset label[for*='dlvr']{
+    /* .contentArea aside fieldset label[for*='dlvr']{
         width: 49%; max-width: 135px;
-    }
-    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+    } */
+    /* .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
-    }
+    } */
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') no-repeat 8.5% center;
     }

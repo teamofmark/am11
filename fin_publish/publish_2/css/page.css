@@ -142,14 +142,12 @@
     /* * sortBy Fin */
 
     .contentArea aside{
-        width: 23%; float: left;
+        display: none;
+        /* width: 23%; float: left; */
     }
-    .contentArea aside nav{
+    /* .contentArea aside nav{
         background-color: white; margin-bottom: 30px; border-radius: 5px;
     }
-    /* 
-        ? 1depth menu 배경 및 외곽선처리 및 fieldset사이 margin.
-    */
     .contentArea aside nav ul li,
     .contentArea aside nav ul li a{
         display: block;
@@ -157,56 +155,28 @@
     .contentArea aside nav ul > li:not(:last-child){
         border-bottom: 1px solid #f0f2f7;
     }
-    /* 
-        ? 1depth menu 각 li 당 밑에 border. 마지막 자손 제외
-    */
     .contentArea aside nav ul > li > a{
         font-size: 13px; color: #343e5c; padding: 15px 7.4%;
         font-weight: 700;
     }
-    /* 
-        ? 1depth menu 항목 css.
-    */
     .contentArea aside nav ul > li > a:after{
         content: url('../images/bg_arrow.png'); float: right;
         transform: rotate(-90deg); transition: transform 0.5s ease-in-out;
     }
-    /* 
-        ?1depth menu 우측 화살표 설치.
-        ? a의 후위선택자 로 content img 추가. float right로 우측정렬.
-        ? 화살표 회전 애니메이션 transition으로 부드럽게.
-    */
     .contentArea aside nav ul > li:hover > a:after{
         transform: rotate(0deg);
     }
-    /* 
-        ? 1depth menu li에 hover 시 화살표 회전.
-    */
     .contentArea aside nav ul > li ol{
         background-color: #f0f2f7;
     }
-    /* 
-        ?2depth menu background
-    */
     .contentArea aside nav ul > li ol li a{
         font-size: 0px; color: #a1a7bd; opacity: 0;
         padding: 0px 7.4%; transition-duration: 0.3s;
     }
-    /* 
-        ?2depth menu hover 전상태.
-        ? font-size는 8px 이하 변환이 이루어지지 않는 문제로 짧은 duration 설정.
-        ? 위,아래로 펼쳐지는 animation이니 padding은 상하 부분만 0으로 설정.
-        ? 변화가 없는 7.4%는  고정. 
-    */
     .contentArea aside nav ul > li:hover ol li a{
         font-size: 11px; opacity: 1; padding: 15px 7.4%;
         border-bottom: 1px solid #dfe4ee;
     }
-    /* 
-        ?위 설정에 따라  font-size, opacity padding top,bottom 에 변화주기.
-        ? 항목이 많은 관계로 transition property설정 안함.
-    */
-
     .contentArea aside fieldset{
         background-color: white; border-radius: 5px; 
         padding-top: 30px;
@@ -246,12 +216,12 @@
     }
     .contentArea aside fieldset input[type='checkbox']:checked + label{
         background-image: url('../images/on_check.png');
-    }
+    } */
     /* *aside Fin */
 
-    .contentArea section{
+    /* .contentArea section{
         width: 75%; margin-left: 2%; float: left;
-    }
+    } */
     .contentArea section h3{
         display: none;
     }

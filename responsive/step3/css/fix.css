@@ -1,0 +1,8 @@
+/* 변수선언 */
+@ColumnWidth: 60px;
+@GutterWidth: 20px;
+
+/* 믹스인 */
+.span(@column){
+    width:(@ColumnWidth * @column) + (@GutterWidth * (@column - 1));
+}

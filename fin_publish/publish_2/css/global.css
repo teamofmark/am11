@@ -103,10 +103,11 @@ a{
     /* *header Fin */
 
     .paging{
-        position: relative; background-color: white; border-radius: 4px;
-        clear: both;
+        display: none;
+        /* position: relative; background-color: white; border-radius: 4px;
+        clear: both; */
     }
-    .paging > a{
+    /* .paging > a{
         position: absolute; width: 16%; line-height: 90px; text-align: center;
         font-size: 18px; font-weight: 700; color: #3a405b; top: 0;
     }
@@ -129,7 +130,7 @@ a{
     }
     .paging ol li a:hover{
         box-shadow: 0 5px 20px #dfe0e5; color: #b9bed1;
-    }
+    } */
 
     /* todo. pager */
 
@@ -143,13 +144,13 @@ a{
         position: absolute; display: block;
     }
     footer > div:first-child{
-        padding: 60px 15px; border-bottom: 1px solid rgba(255,255,255,0.05);
+        padding: 30px 5%; border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        max-width: 92px; width: 7.86%; position: absolute; left: 15px;
+        max-width: 92px; width: 40%; position: absolute; left: 5%;
     }
     footer > div:first-child ul{
-        text-align: center; padding: 0 12%;
+        text-align: center; padding: 45px 5% 0;
     }
     footer > div:first-child ul li{
         display: inline-block;
@@ -161,7 +162,7 @@ a{
         display: block; color: white; font-size: 12px; font-weight: 500;
     }
     footer > div:first-child span{
-        right: 15px; top: 60px; width: 11.54%;
+        right: 5%; top: 30px; width: 35%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.8%;

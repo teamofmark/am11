@@ -1,0 +1,34 @@
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto'; background-color: #635f59;
+}
+header nav{
+    max-width: 1170px; margin: 0 auto;
+}
+
+/* *All Use */
+
+@media screen and (min-width: 960px){
+    header{
+        background-color: white; position: fixed; width: 100%;
+    }
+    header nav{
+        padding: 10px 0;
+    }
+    header nav ul{
+        text-align: center;
+    }
+    header nav ul li{
+        display: inline-block; width: 19%;
+    }
+    header nav #MUI_on,
+    header nav ul li.mobileUI{
+        display: none;
+    }
+    header nav ul li a{
+        text-transform: uppercase; display: block; text-decoration: none; font-size: 14px;
+        color: #635f59; padding: 20px; border: 5px solid white;
+    }
+}

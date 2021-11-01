@@ -19,9 +19,9 @@ header nav, .row{
 .row > .span_7{background-color: #ff5151;}
 .row > .span_8{background-color: #ff9b6a;}
 .row > .span_9{background-color: #ff0075;}
-.row > .span_1{background-color: #77d970;}
-.row > .span_1{background-color: #916bbf;}
-.row > .span_1{background-color: #ffb085;}
+.row > .span_10{background-color: #77d970;}
+.row > .span_11{background-color: #916bbf;}
+.row > .span_12{background-color: #ffb085;}
 /* *All Use */
 
 @media screen and (min-width: 960px){

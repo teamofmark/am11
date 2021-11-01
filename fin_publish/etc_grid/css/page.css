@@ -12,45 +12,12 @@
   /* All Use */
 
   @media screen and (max-width: 767px){
-    .span_1 {
-        width: 6.5%;
-    }
-    .span_2 {
-        width: 23%;
-    }
-    .span_3 {
-        width: 23.5%;
-    }
-    .span_4 {
-        width: 50%;
-    }
-    .span_8 {
-        width: 66%;
-    }
-    .container .row.line1 article.span_2:nth-child(4),
-    .container .row.line1 article.span_2:nth-child(5),
-    .container .row.line2 article.span_2:nth-child(4),
-    .container .row.line2 article.span_2:nth-child(5){
-        width: 48%; background-color: #6adfea;
-    }
-    .container .row.line3 article.span_1{
-        width: 74.5%;
-    }
-    .container .row.line3 article.span_3:nth-child(3),
-    .container .row.line3 article.span_3:nth-child(5){
-        width: 35.5%;
-    }
-    .container .row.line4 article.span_2{
-        width: 15%;
-    }
-    .container .row.line1 article[class^='span'],
-    .container .row.line2 article[class^='span'],
-    .container .row.line4 article[class^='span']{
-        height: 116px;
-    }
-    .container .row.line3 article[class^='span']{
-        height: 228px;
-    }
+      .row article{
+          width: 100%; padding: 30px !important; box-sizing: border-box;
+      }
+      .row article:hover{
+          padding: 50px !important;
+      }
 }
 /* *mobile */
 

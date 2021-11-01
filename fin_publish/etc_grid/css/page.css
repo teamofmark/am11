@@ -16,37 +16,32 @@
         width: 6.5%;
     }
     .span_2 {
-        width: 15%;
+        width: 23%;
     }
     .span_3 {
         width: 23.5%;
     }
     .span_4 {
-        width: 32%;
-    }
-    .span_5 {
-        width: 40.5%;
-    }
-    .span_6 {
-        width: 49%;
-    }
-    .span_7 {
-        width: 57.5%;
+        width: 50%;
     }
     .span_8 {
         width: 66%;
     }
-    .span_9 {
+    .container .row.line1 article.span_2:nth-child(4),
+    .container .row.line1 article.span_2:nth-child(5),
+    .container .row.line2 article.span_2:nth-child(4),
+    .container .row.line2 article.span_2:nth-child(5){
+        width: 48%;
+    }
+    .container .row.line3 article.span_1{
         width: 74.5%;
     }
-    .span_10 {
-        width: 83%;
+    .container .row.line3 article.span_3:nth-child(3),
+    .container .row.line3 article.span_3:nth-child(5){
+        width: 35.5%;
     }
-    .span_11 {
-        width: 91.5%;
-    }
-    .span_12 {
-        width: 100%;
+    .container .row.line4 article.span_2{
+        width: 15%;
     }
     .container .row.line1 article[class^='span'],
     .container .row.line2 article[class^='span'],

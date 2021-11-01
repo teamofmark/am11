@@ -1,0 +1,51 @@
+  .row {
+    overflow: hidden;
+    width: 100%;
+  }
+  [class*=span] {
+    float: left;
+    margin-left: 2%;
+  }
+  [class*=span]:first-child {
+    margin-left: 0;
+  }
+  /* All Use */
+
+@media screen and (min-width: 960px){
+    .span_1 {
+        width: 6.5%;
+    }
+    .span_2 {
+        width: 15%;
+    }
+    .span_3 {
+        width: 23.5%;
+    }
+    .span_4 {
+        width: 32%;
+    }
+    .span_5 {
+        width: 40.5%;
+    }
+    .span_6 {
+        width: 49%;
+    }
+    .span_7 {
+        width: 57.5%;
+    }
+    .span_8 {
+        width: 66%;
+    }
+    .span_9 {
+        width: 74.5%;
+    }
+    .span_10 {
+        width: 83%;
+    }
+    .span_11 {
+        width: 91.5%;
+    }
+    .span_12 {
+        width: 100%;
+    }
+}

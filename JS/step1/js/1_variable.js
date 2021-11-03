@@ -38,7 +38,7 @@ cup = 'water';
 // *case.3 동시선언 / 동시초기화
 
 var radius, pi; // ? 한번에 선언
-var radius = 10, pi = 3.14159265; //? 한번에 선언 및 초기화
+//? var radius = 10, pi = 3.14159265;  한번에 선언 및 초기화
 
 // *case.4 연산자 사용시
 var value = 10;

@@ -58,7 +58,25 @@ function operatorEx(){
 // *case.4 연산자가 뒤로 올 경우.
 function numberPlusAfter(){
     var number = 10; //? number 라는 변수의 선언 및 10으로 초기화.
-    alert(number++); //? 
-    alert(number++); //? 
-    alert(number++); //? 
+    alert(number++); //? 10을 출력후 ++증가. 다시 number로-
+    alert(number++); //? 11을 출력후 ++증가. 다시 number로-
+    alert(number++); //? 12를 출력후 ++증가. 다시 number로 = 최종 13.
+    console.log(number);
+}
+
+// *case.5 연산자가 앞으로 올 경우/
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 10에 1을 더해서 (11) 출력후, 다시 number 로 -
+    alert(++number); //? 11에 1을 더해서 (12) 출력후, 다시 number 로 -
+    alert(++number); //? 12에 1을 더해서 (13) 출력후, 다시 number 로 -
+}
+// todo. 증감연산자복합사용
+function numberPlusTodo(){
+    var number = 10;
+    alert(number++); //? 출력: 10 / 이후 : 11
+    alert(--number); //? 출력: 10 / 이후 : 10
+    alert(++number); //? 출력: 11 / 이후 : 11
+    alert(number--); //? 출력: 11 / 이후 : 10
+    console.log(number); //? 최종 : 10
 }

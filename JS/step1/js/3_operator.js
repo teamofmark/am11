@@ -122,3 +122,17 @@ function logicalOperator2(){
     var result = (a=='남자')||(b == '웹퍼블리셔');
     console.log('result = ' + result);
 }
+// todo. 다음 코드의 결과를 예상한 다음 출력.
+function compareOperator4(){
+    console.log(30 > 20 > 10); //? 예상결과 : true / 출력결과 : false
+}
+
+// todo. 정상적인 결과가 출력되도록 코드 수정.
+function compareOperator4R(){
+    console.log(30 > 20 && 20 > 10);
+}
+/*
+    ! (30 > 20 > 10); 의 결과식은 거짓으로 판별
+    ? (30 > 20) > 10, true > 10, 1> 10, false.
+    *그래서 논리곱연산자로 좌,우측을 따로 비교 후 결과 값 산출.
+*/

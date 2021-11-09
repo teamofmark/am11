@@ -98,3 +98,17 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가 입니다.');
     }
 }
+
+// *case.6 사용자의 id를 입력받아 맞다면 승인 메시지 출력.
+// ? submit > server 요청. (니가 가진 DB 안에 입력된 value가 있니?)
+// ? server > 응 있다. => password대조. // 아니 없다. => 경고(error)창 출력;
+function userIDCheck(){
+    var userID = prompt('사용자의 아이디');
+    if(userID == "Mark"){
+        alert("접속승인");
+        // ? 요소 불러오기( mypage 권한관련정보들. ex> 탈퇴, 정보수정...)
+    }else{
+        alert('잘못된 ID입니다.');
+        // ? 잘못된 횟수 count. 특정 count 넘어갈 시 점검(ex. 비행기사진을 고르세요..) > 차단...
+    }
+}

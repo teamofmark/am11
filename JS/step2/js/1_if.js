@@ -112,3 +112,18 @@ function userIDCheck(){
         // ? 잘못된 횟수 count. 특정 count 넘어갈 시 점검(ex. 비행기사진을 고르세요..) > 차단...
     }
 }
+// *case.7 사용자 id "Mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 접속승인.
+function userInfoCheck(){
+    var userID = prompt('사용자의 아이디');
+    var userPW = prompt('사용자의 비밀번호');
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" || userPW != "1234"){
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴경우, 틀린 정보에 대한 오류 메시지 출력.
+function userInfoCheck2(){
+    
+}

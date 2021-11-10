@@ -62,3 +62,21 @@ function gugudan(){
         alert('9단 이하로 입력하세요.');
     }
 }
+// *case. 4 end가 입력될 때 까지 숫자를 계속해서 입력받고 합을 출력함과 동시에 prompt에 몇번수행했는지 표시.
+
+function sumNumb(){
+    var i = 1; //? count var
+    var result = 0; //? 결과담기.
+
+    while(true){
+        var numb = window.prompt(i + "번째 입력"); //? 무한루프로 입력받기
+        if(numb == "end"){
+            alert('입력이 종료되었습니다.'); //? 종료 alert 출력.
+            break; //? loop 이탈
+        }
+
+        result += parseInt(numb); //? 결과변수에 형변환후 더해서 저장.
+        document.write('현재까지의 총합 : ' + result + '<br>'); //? 저장된 result 출력.
+        i++; //? 수행시 마다 i 1씩 증가
+    }
+}

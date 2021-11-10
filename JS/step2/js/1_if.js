@@ -125,5 +125,13 @@ function userInfoCheck(){
 
 // todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴경우, 틀린 정보에 대한 오류 메시지 출력.
 function userInfoCheck2(){
-    
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark"){
+        alert("ID가 존재하지 않습니다.");
+    }else{
+        alert("password가 틀렸습니다.");
+    }
 }

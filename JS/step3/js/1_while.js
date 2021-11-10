@@ -37,3 +37,28 @@ function whileBreak(){
     }
     document.write("최종 i = " + i + "<br>");
 }
+
+// todo. 구구단 숫자를 입력받아 출력하는 while문
+// ? 1. 숫자입력받을 prompt 출력.
+// ? 2. 숫자를 입력받으면 해당 구구단을 출력.
+// * 9단이내로만 입력받기. ex> 9단이 넘어 갈시 '9단 이하로 입력하세요.'
+function gugudan(){
+    var guguNumb = window.prompt('구구단 숫자를 입력(1~9)');
+    var i = 1;
+    // while(i<=9){
+    //     if(guguNumb > 9){
+    //         alert('9단 이하로 입력하세요.');
+    //         break;
+    //     }
+    //     document.write(guguNumb + 'x' + i + '=' + guguNumb * i + '<br>') //? ex. 9 x 1 = 9
+    //     i++;
+    // }
+    if(guguNumb <= 9){
+        while(i<=9){
+            document.write(guguNumb + 'x' + i + '=' + guguNumb * i + '<br>') //? ex. 9 x 1 = 9
+            i++;
+        }
+    }else{
+        alert('9단 이하로 입력하세요.');
+    }
+}

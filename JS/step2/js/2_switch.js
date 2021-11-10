@@ -54,8 +54,23 @@ function calculator(){
 //! 그외 나머지는 낙첨되었습니다.
 
 function lotto(){
+    var numbValue = prompt("입력하실 번호는?");
     // ?변수선언부
-
-    // ?switch 조건처리부 (내 출력 alert.)
     
+    switch(numbValue){
+        case "1":
+            alert("1등 10억!");
+            break;
+        case "2":
+            alert("2등 5천!");
+            break;
+        case "3":
+            alert("3등 3백!")
+            break;
+        default:
+            alert("낙첨되었습니다.");
+            break; 
+    }
+    // ?switch 조건처리부 (내 출력 alert.)
+
 }

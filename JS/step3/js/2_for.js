@@ -51,3 +51,19 @@ function answer5(){
         document.write((11 - i) + '<br>'); //? 11 - (10,9,8..) 1 ~ 10번까지 출력.
     }
 }
+
+// *case. 3 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력.
+function favorFluit(){
+    var array = ['포도', '사과', '바나나', '망고'];
+    
+    for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// *case. 4 지금까지 배웠던 js step들을 배열에 배치하고 출력.
+function arrayFor(){
+    var data = ['변수','연산자','자료형','형변환','조건문 if','조건문 switch', '반복문 while', '반복문 for'];
+    for (var i = 0; i < data.length; i++){
+        document.write((i+1) + '.' + data[i] + '<br>');
+    }
+}

@@ -75,3 +75,29 @@ function reverseFavorFluit(){
         document.write(array[i]); //? 3,2,1,0순으로 출력.
     }
 }
+// *case. 5 for 에서 continue
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case. 6 continue 활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i%2 == 1){
+            continue;
+            /*
+                * i가 홀수일 경우 반복중지. 다음반복수행.
+                * 1을 2로 나눈 나머지가 1과 일치 할 경우 다음 반복을 수행하라. = 다시 반복문으로
+                * 2를 2로 나눈 나머지가 1과 일치 할 경우 다음 반복을 수행하라. = 이탈 / output += i;
+                * .....
+                * 이 조건으로 i value가 10보다 작거나 같을 때 까지 수행 및 출력.
+            */
+        }
+        output += i;
+        alert(output);
+    }
+}

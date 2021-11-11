@@ -67,3 +67,11 @@ function arrayFor(){
         document.write((i+1) + '.' + data[i] + '<br>');
     }
 }
+// todo. 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도', '사과', '바나나', '망고'];
+    // todo. 역반복걸어보기
+    for (var i = array.length - 1; i >= 0; i--){ //? i 변수는 배열의 수 -1 (4 - 1 = 3)
+        document.write(array[i]); //? 3,2,1,0순으로 출력.
+    }
+}

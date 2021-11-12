@@ -101,3 +101,33 @@ function runContinue(){
         alert(output);
     }
 }
+
+// *case. 7 for break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i =' + i + '<br>');
+}
+// *case. 8 for break 활용
+function runBreak(){
+    for (var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){ //? 조건내부에 함수를 사용시에는 반환값 = boolean 유형만가능.
+            break;
+        }
+    }
+}
+// ! 다중 for
+
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for (var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}

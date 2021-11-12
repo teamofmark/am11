@@ -123,11 +123,49 @@ function runBreak(){
 
 function halfPyramid(){
     var star = '';
-    for (var i = 1; i <= 10; i++){
-        for (var j = 0; j < i; j++){
+    for (var i = 1; i <= 10; i++){ //?
+        for (var j = 0; j < i; j++){ //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star); //?
+}
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
             star += '*';
         }
         star += '<br>';
     }
     document.write(star);
 }
+function pyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //? 1. ifor = 1 ~ 10 까지 수행
+        for (var e = 10; e >= i; e--){ //? 2. efor = 10 ~ 1까지 수행
+            star += '&nbsp;'; //? 공백이 10개부터 1개까지 들어감.
+        }
+        for (var s = 0; s < 2*i-1; s++){ //? 3. sfor = i가 들어올때마다 홀수화 됨(1,3,5,7...)
+            star += '*'; //? 홀수화 된 s의 수치만큼 반복해서 *이 들어감.
+        }
+        star += '<br>'; //? ifor만큼 <br>을 변수 star에 추가해주기.
+    }
+    document.write(star);
+}
+/*
+    ? &nbsp 
+    ? (10,9,8,7,6,5,4,3,2,1) 10 > 0
+    ? (10,9,8,7,6,5,4,3,2) 10 > 1
+    ? (10,9,8,7,6,5,4,3) 10 > 2
+    ? (10,9,8,7,6,5,4) 10 > 3
+    .
+    .
+    .
+    .
+    .
+   ?  * 0 < 1 (2*1-1)
+   ? *** 0 < 3 (2*2-1)
+  ? ***** 0 < 5 (2*3-1)
+*/

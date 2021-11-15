@@ -109,3 +109,50 @@ function calculator(op, numb1, numb2){
     }
     return result;
 }
+//todo. 위의 예제에 추가로 사칙연산 부분을 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+/*
+    ? 실행구문
+    ? document.write(calculator2("+", 20, 10) + "<br>"); 1. calculator 함수로도 사용가능.
+    ? document.write(add(20, 10) + "<br>"); . 개별 연산함수(add)로도 사용가능.
+    ? document.write(sub(20, 10) + "<br>"); . 개별 연산함수(sub)로도 사용가능.
+    ? document.write(mul(20, 10) + "<br>"); . 개별 연산함수(mul)로도 사용가능.
+    ? document.write(div(20, 10) + "<br>"); . 개별 연산함수(div)로도 사용가능.
+    ! 기존 calculator 함수 안에 작은 기능단위 함수들 (add,sub,mul,div) 연결.
+*/
+function calculator2(op, numb1, numb2){
+    var result;
+    switch(op){
+        case "+" :
+            result = add(numb1,numb2);
+            break;
+        case "-" :
+            result = sub(numb1,numb2);
+            break;
+        case "*" :
+            result = mul(numb1,numb2);
+            break;
+        case "/" :
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1, numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+}
+function sub(numb1, numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1, numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1, numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
+}

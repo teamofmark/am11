@@ -58,7 +58,8 @@ function infiniteSum(){
         var value = parseInt(window.prompt('숫자만 입력해요.'));
         if(value == 0){
             document.write('종료');
-            break;
+            return;
+            //? return은 함수를 이탈 / break는 해당 loop를 이탈.
         }
 
         sum += value;
@@ -66,4 +67,45 @@ function infiniteSum(){
         count++;
     }
     document.write('총' + count + '번 실행함.');
+}
+// * case.5 구구단 출력 복습(다중 for)
+function printGugudan(x){
+    for (var i = 2; i <= x; i++){
+        document.write(i + '단 출력', '<br>');
+        for (var m = 1; m <= 9; m++){
+            document.write(i + 'x' + m + '=' + (i*m), '<br>');
+        }
+        document.write('<br>');
+    }
+}
+// todo. 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수.(계산기)
+/*
+    ?실행구문
+    ? document.write ( calculator("+", 20, 10) ); 30
+    ? document.write ( calculator("-", 20, 10) ); 10
+    ? document.write ( calculator("*", 20, 10) ); 200
+    ? document.write ( calculator("/", 20, 10) ); 2
+    ! document.write ( calculator("%", 20, 10) ); 잘못된 연산자 입니다.
+*/
+
+function calculator(op, numb1, numb2){
+    var result;
+    switch(op){
+        case "+" :
+            result = numb1 + numb2;
+            break;
+        case "-" :
+            result = numb1 - numb2;
+            break;
+        case "*" :
+            result = numb1 * numb2;
+            break;
+        case "/" :
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
 }

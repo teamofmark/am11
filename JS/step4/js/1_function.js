@@ -156,3 +156,41 @@ function div(numb1, numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// *case. 6 함수를 변수에 담기.
+function hello(name){
+    console.log(name + 'welcome!');
+}
+
+var func = hello; //? func라는 변수에 hello라는 함수를 담았다.
+
+// *case. 7 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log('Hello');
+}
+function hi2(){
+    console.log('안녕하세요');
+}
+function execute(func){
+    func();
+}
+// *case. 8 button Click 시 매개변수 값으로 넘긴 함수 호출.
+function welcome(){
+    alert('환영합니다. 반갑습니다.');
+}
+$(document).ready(function(){
+    $("#runEx8").click(welcome); //? 본래 jquery click = 인자를 전달받을 때 함수형태를 전달 받는다.(실행목적);
+    //? js : GlobalEventHandlers .on~(click)
+
+    // $("#runEx8").click(function(){
+    //     alert('환영합니다. 반갑습니다.');
+    // });
+});
+
+// *case.9 1초마다 매개변수 값으로 넘긴 익명함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('hi, hello');
+    }, 1000);
+    //? setInterval(func, interval)
+}

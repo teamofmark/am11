@@ -102,3 +102,68 @@ function divPrint(value){
     document.write('두 수의 나누기는' + value);
 }
 // ? callBack 함수.
+
+// *case.3 return 대신 callBack?
+// ? 그렇지 않다. 구현부와 처리부가 나눠져있지 않은 상태 일때  단순 value 는 return이 더편하다.
+/*
+// * 기존 단순 리턴.
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write('두 수 합' + result);
+
+// * 단순 리턴을 callBack으로 전환?
+
+function sum(numb1, numb2, callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function result(value){
+    document.write('두 수 합 ' + value);
+}
+sum(10,20,result);
+*/
+
+// *case.4 동기 와 비동기처리
+
+// *동기 - 함수 호출 이후 끝날 때 까지 다음 구문 수행 안됨.
+
+function sync(){
+    alert('hi');
+    document.write('End Alert');
+    console.log('End Alert & write');
+}
+
+// *비동기 - 함수 호출 이후 끝나는 여부와 상관없이 다음 구문 수행.
+// ! 함수 호출 이후 끝나는 것과 상관없이 다음 구문 수행.  (그래서 callBack 함수를 많이 쓸수밖에 없다. / 함수실행이 다 완료된 이후 실행 될수 있도록 처리.)
+
+function async(){
+    var count = 1;
+    setInterval(function(){
+        document.write('2. count = ' + count + '<br>');
+    },3000);
+
+    document.write('1. 동작과 상관없이 바로 실행');
+}
+// *case.5 클로저
+
+// ? 함수내부에 만든 지역변수가 안죽고 계속해서 값을 유지하고 있는 상태.
+
+// * 일반함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// * 클로저 사용시
+function createCount(){
+    var count = 0;
+
+    function addCount(){
+        count++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();

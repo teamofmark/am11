@@ -194,3 +194,24 @@ function loopStart(){
     }, 1000);
     //? setInterval(func, interval)
 }
+
+// *case.10 함수 자체를 매개변수로 전달받아 반복호출하기.
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+// callFunctionTenTimes(function(){
+//     document.write('hello..!');
+// });
+function justFunction(){
+    document.write('Hello..!','<br>');
+}
+// *case.11 return Value로 함수를 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();

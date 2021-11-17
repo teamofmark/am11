@@ -12,6 +12,8 @@ $(document).ready(function(){
     */
     // *case.3
     $("#btnAddBorder").click(addBorder);
+
+    // todo.
 });
 function sayHello(){
     alert('hello');
@@ -21,3 +23,4 @@ function sayHello(){
 function addBorder(){
     $("#panel").css("border","5px solid black");
 }
+// todo.

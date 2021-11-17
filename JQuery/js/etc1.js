@@ -5,6 +5,11 @@ $(document).ready(function(){
 
     // *case.2
     $("#btnCheck").click(sayHello);
+    /*
+        $("#btnCheck").click(function(){
+            alert('hello');
+        });
+    */
 
 });
 function sayHello(){

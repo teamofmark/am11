@@ -10,9 +10,14 @@ $(document).ready(function(){
             alert('hello');
         });
     */
-
+    // *case.3
+    $("#btnAddBorder").click(addBorder);
 });
 function sayHello(){
     alert('hello');
 }
 
+// *case.3
+function addBorder(){
+    $("#panel").css("border","5px solid black");
+}

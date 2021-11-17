@@ -14,6 +14,7 @@ $(document).ready(function(){
     $("#btnAddBorder").click(addBorder);
 
     // todo.
+    $("#btnTextChange").click(textChange);
 });
 function sayHello(){
     alert('hello');
@@ -24,3 +25,11 @@ function addBorder(){
     $("#panel").css("border","5px solid black");
 }
 // todo.
+function textChange(){
+    $("#panel2").css({
+        'font-size' : '25px',
+        'color' : 'green',
+        'font-weight' : 'bold'
+    });
+    //? 배열방식 기억하기 [1,2,3,4,5,6,7,8,9,10];
+}

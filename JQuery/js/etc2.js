@@ -3,6 +3,9 @@ $(document).ready(function(){
     // moveCircle();
     $("#btnMoveCircle").click(moveCircle);
 
+    // *case.2 x,y축 원움직이기
+    detailMoveCircle();
+
 });
 // *case.1 
 function moveCircle(){
@@ -15,4 +18,26 @@ function moveCircle(){
     }else{
         alert('잘못된 수치입니다.');
     }
+}
+
+// *case.2
+function detailMoveCircle(){
+    var $circle = $(".circleDetail");
+    $("#btnDetailMove").click(function(){
+        var xpos = $("#xpos").val();
+        var ypos = $("#ypos").val();
+        // ? input에 입력된 값(value) 당기기. = target.val(); -> target의 value를 가져옴. 
+
+        xpos = parseInt(xpos);
+        ypos = parseInt(ypos);
+
+        if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+            alert('잘못된 수치입니다. 0 - 380이내로 입력하세요.');
+        }else{
+            $circle.css({
+                'left' : xpos,
+                'top' : ypos
+            });
+        }
+    });
 }

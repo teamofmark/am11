@@ -4,7 +4,10 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
 
     // *case.2 x,y축 원움직이기
-    detailMoveCircle();
+    // detailMoveCircle();
+
+    // *case.2-1 x,y축 원움직이기 (함수분리)
+    detailMoveCircleExt();
 
 });
 // *case.1 
@@ -40,4 +43,32 @@ function detailMoveCircle(){
             });
         }
     });
+}
+
+// *case.2-1
+function detailMoveCircleExt(){
+    var $circle = null;
+
+    circleInit();
+    $('#btnDetailMove').click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+    circleMoveCommand(xpos,ypos);
+}
+function circleMoveCommand(){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert('잘못된 수치입니다. 0 ~ 380이내로 입력하세요.');
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        })
+    }
 }

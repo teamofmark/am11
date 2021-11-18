@@ -76,5 +76,32 @@ function circleMovCommand(xpos,ypos){
 
 // *case.3
 function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
 
+    $(document).keydown(function(e){
+        console.log('입력한 키 코드' + e.keyCode);
+
+        switch(e.keyCode){
+            case 65:
+                currentXpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 87:
+                currentYpos -= range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+        }
+        // todo. 조건문 세워서 테두리 안에 원 가두기.
+        $circle.css('left',currentXpos);
+        $circle.css('top',currentYpos);
+    });
 }
+
+// ! w(y상) : 87, a(x좌) : 65, s(y하) : 83, d(x우) : 68.

@@ -9,6 +9,8 @@ $(document).ready(function(){
     // *case.2-1 x,y축 원움직이기 (함수분리)
     detailMoveCircleExt();
 
+    // *case.3 key조작으로 원움직이기
+    keyControl();
 });
 // *case.1 
 function moveCircle(){
@@ -48,7 +50,6 @@ function detailMoveCircle(){
 // *case.2-1
 function detailMoveCircleExt(){
     var $circle = null;
-
     circleInit();
     $('#btnDetailMove').click(circleEvent);
 }
@@ -71,4 +72,9 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         })
     }
+}
+
+// *case.3
+function keyControl(){
+
 }

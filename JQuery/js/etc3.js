@@ -41,5 +41,7 @@ function tabUI(){
         /* 
             todo. tabMenu에 반응하여 해당 tabPage 열리게 하기. 
          */
+        $(".tabPage").removeClass("activated");
+        $("#" + activeTab).addClass("activated");
     });
 }

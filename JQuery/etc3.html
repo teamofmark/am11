@@ -10,8 +10,14 @@
     <script src="https://kit.fontawesome.com/bba7cacd9f.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        .material-icons{
+        .material-icons, .cp .label{
             cursor:pointer;
+        }
+        .cp .ico{
+            width: 15px;
+        }
+        .cp span{
+            display: inline-block; vertical-align: middle; line-height: 15px;
         }
     </style>
 </head>
@@ -22,6 +28,21 @@
     </span>
 
     <!-- *case.2 checkBox 만들어보기 -->
-    
+    <div class="cp checkBox">
+        <span class="ico check"></span>
+        <span class="label">
+            click!
+        </span>
+    </div>
+
+    <!-- *case.3 tabPage 구현 -->
+    <ul class="tabMenu">
+        <li data-tabNumb="tab1">tabMenu1</li>
+        <li data-tabNumb="tab2">tabMenu2</li>
+        <li data-tabNumb="tab3">tabMenu3</li>
+    </ul>
+    <div id="tab1" class="tabPage">tabPage1</div>
+    <div id="tab2" class="tabPage">tabPage2</div>
+    <div id="tab3" class="tabPage">tabPage3</div>
 </body>
 </html>

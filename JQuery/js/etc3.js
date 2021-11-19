@@ -1,5 +1,9 @@
 $(document).ready(function(){
+    // *case. 1
     toggleMenu();
+
+    // *case. 2
+    toggle();
 });
 function toggleMenu(){
     var $menuTarget = $(".material-icons.menu");
@@ -13,5 +17,13 @@ function toggleMenu(){
         }else{
             $menuTarget.text("menu");
         }
+    });
+}
+
+function toggle(){
+    var $checkTarget = $(".ico.check");
+
+    $(".label").click(function(){
+        $checkTarget.toggleClass("fas fa-check");// ? class Toggle이 가능해야함.
     });
 }

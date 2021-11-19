@@ -19,6 +19,23 @@
         .cp span{
             display: inline-block; vertical-align: middle; line-height: 15px;
         }
+        .tabMenu{
+            display: flex; padding: 0;
+        }
+        .tabMenu li{
+            width: 33.33%; flex-flow: row nowrap; padding: 0; list-style: none; display: block;
+            text-align: center; background-color: black; color: white;
+            border: 1px solid black; justify-content: space-between; align-content: space-between;
+        }
+        .tabMenu li.activated{
+            background-color: white; color: black;
+        }
+        .tabPage{
+            border: 1px solid black; padding: 30px; display: none;
+        }
+        .tabPage.activated{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -37,11 +54,11 @@
 
     <!-- *case.3 tabPage 구현 -->
     <ul class="tabMenu">
-        <li data-tabNumb="tab1">tabMenu1</li>
+        <li data-tabNumb="tab1" class="activated">tabMenu1</li>
         <li data-tabNumb="tab2">tabMenu2</li>
         <li data-tabNumb="tab3">tabMenu3</li>
     </ul>
-    <div id="tab1" class="tabPage">tabPage1</div>
+    <div id="tab1" class="tabPage activated">tabPage1</div>
     <div id="tab2" class="tabPage">tabPage2</div>
     <div id="tab3" class="tabPage">tabPage3</div>
 </body>

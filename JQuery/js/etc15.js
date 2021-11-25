@@ -13,6 +13,7 @@ var $fishWidth = 0;
 $(document).ready(function(){
     init();
     fishStartPosition();
+    initEvent();
 });
 function init(){
     $fishList = $(".fish");
@@ -30,5 +31,30 @@ function fishStartPosition(){
             left: 0,
             top: 100 + (i * 150)
         });
+    }
+}
+
+function initEvent(){
+    $("#start").click(startGame); //? 게임 시작 함수 작동
+}
+
+function startGame(){ //? 게임시작함수
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition(); //? 1. 물고기 움직임 함수
+            //? 2. 물고기 위치정보 출력 함수
+            //? 3. 결승선을 통과했는지? 판별 함수.(게임종료함수 내재)
+        }, 200);
+    }
+}
+
+function updateFishPosition(){
+    console.log("1. 물고기 움직인다.");
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i); //? 루프당 개별(ex> i = 0 -> 0번물고기) 물고기
+        var step = Math.ceil(Math.random()*10); //? 최대설정수치 이내로 +1 까지 범위 random
+        var newLeft = $fish.position().left + step;
+        //? 이동한 현재 위치에서 지속가산 ? = 10 (+5+2+3+6).....
+        $fish.css("left", newLeft); //? 지속가산되는 newLeft를 css에 적용.
     }
 }

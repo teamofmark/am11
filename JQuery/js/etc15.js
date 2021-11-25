@@ -42,8 +42,8 @@ function startGame(){ //? 게임시작함수
     if(timerID == -1){
         timerID = setInterval(function(){
             updateFishPosition(); //? 1. 물고기 움직임 함수
-            //? 2. 물고기 위치정보 출력 함수
-            //? 3. 결승선을 통과했는지? 판별 함수.(게임종료함수 내재)
+            displayFishPositionInfo(); //? 2. 물고기 위치정보 출력 함수
+            checkGoalFish(); //? 3. 결승선을 통과했는지? 판별 함수.(게임종료함수 내재)
         }, 200);
     }
 }
@@ -57,4 +57,32 @@ function updateFishPosition(){
         //? 이동한 현재 위치에서 지속가산 ? = 10 (+5+2+3+6).....
         $fish.css("left", newLeft); //? 지속가산되는 newLeft를 css에 적용.
     }
+}
+function displayFishPositionInfo(){
+    console.log('2. 물고기 정보 출력');
+    var info = ""; //? 출력정보 text를 담을 지역변수 선언
+
+    for(var i = 0; i < $fishList.length; i++){ //? 물고기 마릿수 만큼 반복
+        var $fish = $fishList.eq(i); //? 각 i번째 물고기 선택
+
+        info += i + "번 물고기 : " + $fish.position().left + "px <br>";
+        //? 해당 string 조합식을 info에 담기 ($fish = ith 물고기);
+    }
+    $info.html(info); //? tag와 text를 별도로 적용.
+}
+function checkGoalFish(){
+    var winnerList = [];
+
+    for(var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                // ? goalLine을 넘은 물고기가 발생시 winnerList 배열에 position 값 저장.
+                index: (i),
+                position: fishCurrentPosition
+            });
+        }
+    }
+    
 }

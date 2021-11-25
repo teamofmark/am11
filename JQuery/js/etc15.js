@@ -84,5 +84,9 @@ function checkGoalFish(){
             });
         }
     }
-    
+    if(winnerList.length > 0){ //? 배열에 position 값이 담기고 나면
+        winnerList.sort(function(a,b){
+            return b.position-a.position; //? position 값 기준 내림차순 정렬
+        });
+    }
 }

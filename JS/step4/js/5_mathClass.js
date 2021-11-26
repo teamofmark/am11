@@ -25,3 +25,26 @@ function showRandom(){
     $numb.text(value);
 }
 // *case.2 10에서 100사이의 값 입력받기.
+function rangeNumb(){
+    $numb = $("#numb");
+    insertNumb();
+}
+function insertNumb(){
+    var value = prompt('숫자를 입력하시오.', 0);
+    range(value);
+}
+function range(value){
+    value = Math.min(100,Math.max(10,value));
+    /*
+        !Math.min method : 매개변수 = minValue(최소값), userValue(비교값)
+        ? 1. Math.min(minValue(100), userValue(Math.max(10,value)))
+        ? - 100이라는 최소값과 비교값을 비교하여 작은수를 return.
+        ? - 한마디로 100이하 수는 그대로 return / 100이상 수는 100을 return.
+
+        !Math.max method : 매개변수 = maxValue(최대값), userValue(비교값)
+        ? 2. Math.max(10, value)
+        ? - 10이라는 최대값과 비교값을 비교해 큰 수를 return.
+        ? - 한마디로 10이상 수는 그대로 return / 10이하 수는 10을 return.
+    */
+   $numb.text(value);
+}

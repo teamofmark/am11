@@ -31,10 +31,14 @@ function print1ch(){
     var charCount = 0;
 
     var timerID = setInterval(function(){
-        charCount ++;
         $("#panel").text(str.charAt(charCount));
+        charCount ++;
 
         // todo. 종료구문.
-        
+        if(charCount >= str.length){
+            clearInterval(timerID);
+            alert('종료.');
+        }
+
     },1000);
 }

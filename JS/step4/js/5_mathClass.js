@@ -48,3 +48,22 @@ function range(value){
     */
    $numb.text(value);
 }
+
+// *case.3 총 페이지수 구하기
+function pageCount(){
+    $numb = $("#numb");
+    count(105);
+}
+function count(postNumb){
+    var pages = Math.ceil(postNumb / 10);
+    /*
+        ! Math.floor method: 매개변수 = num: 실수값. 리턴값 = 입력값이 실수인 경우 내림처리(ex 10.8 = 10)
+
+        ! Math.ceil method: 매개변수 = num: 실수값. 리턴값 = 입력값이 실수 인 경우 올림처리(ex 10.2 = 11)
+
+        ? Math.ceil(postNumb / 10)
+        ? 매개변수로 전달받은 게시글수(105)를 한페이지당 출력값인 (10)으로 나누어 올림처리.
+        ? 105 / 10 = 10.5  = 11.
+    */
+   $numb.text(pages);
+}

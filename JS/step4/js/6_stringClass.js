@@ -90,8 +90,12 @@ function substrText(){
 // !slice
 function sliceAddText(){
     var str = "Mak"; //? Mark
+    var strSlice = str.slice(0,2) + "r" + str.slice(2,3);
+    console.log(strSlice);
 }
 // !substr
 function subStrAddText(){
     var str = "MakStark"; //? Mark
+    var strSubstr = str.substr(0,2) + "r" + str.substr(2,6);
+    console.log(strSubstr);
 }

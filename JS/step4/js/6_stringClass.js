@@ -111,3 +111,56 @@ function changeName(){
     var result = data.replace("?", "Mark");
     alert(result);
 }
+// todo. 다음 변수에서 "-" 제거.
+
+function deleteText(){
+    var data = "mark-II";
+    var result = data.slice(0,4) + data.slice(5,7);
+    //! alert으로출력
+    alert(result);
+}
+
+// *case.8 세자리수마다 , 추가 기능.
+
+$(document).ready(function(){
+    var $numbIn = $("#numbInput");
+    var $numbOut = $("#numbOutput");
+
+    $("#confirm").click(function(){
+        var numbVal = $numbIn.val();
+        var result = money(numbVal);
+        $numbOut.html(numbVal + "=>" + result);
+    });
+});
+
+function money(str){
+    if(str.length <= 3){
+        return str;
+    }
+
+    var loopCount = Math.floor((str.length - 1) / 3);
+
+    /*
+        ? 반복횟수
+        * ex> 123456789= length 9. 9/3 = 3floor 내림정수값 3.
+        * -1 = length 8. 8/3 = 2.666.... floor 내림정수값 2.
+    */
+    var result = ''; //? 최종결과 담을 변수
+
+    for(var index = 0; index < loopCount; index++){
+        var strLength = str.length; //? 입력받은 값 길이.
+        var cutStr = str.substr(strLength-3, strLength); //?
+        result = ","+cutStr+result; //?
+        str = str.slice(0, strLength-3); //?
+        /*
+            ? 중간에 , 삽입.
+            * ex> 123456789
+            * 1. result = ,789 + "";, str = 123456;
+            * 2. result = ,456 + ,789;, str = 123;
+            * fin. result = ,456,789; + str = 123;
+        */
+    }
+    result = str + result; //? 123 + ,456,789; 
+
+    return result; //? 최종결과 return(호출부)
+}

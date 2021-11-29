@@ -99,3 +99,15 @@ function subStrAddText(){
     var strSubstr = str.substr(0,2) + "r" + str.substr(2,6);
     console.log(strSubstr);
 }
+/*
+    ? 특정 위치 문자 변경
+    ! replace(searchvalue, newvalue)
+    ! 매개변수 = searchvalue = 찾는 문자, newvalue : 교체 문자.
+    ! 리턴값 = 찾는 문자를 교체문자로 변경.
+*/
+// *case.7 다음 문자열의 ?를 자신의 이름으로 변경.
+function changeName(){
+    var data = "hi, ?. welcome";
+    var result = data.replace("?", "Mark");
+    alert(result);
+}

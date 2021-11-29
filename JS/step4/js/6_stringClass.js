@@ -42,3 +42,56 @@ function print1ch(){
 
     },1000);
 }
+
+/*
+    ?문자(열) 위치 찾기 (indexof)
+    ! indexof(searchValue, start)
+    ! 매개변수 = searchValue : 찾는 문자열, start: 시작위치(default 0)
+    ! 리턴값 = 찾는 문자열의 위치 값. 못찾는경우 -1
+*/
+
+// *case.4 문자열 입력받고 example 문자 포함 여부 판단. 참일 경우 몇번째 위치인지 출력.
+// ! 거짓일 경우 '존재하지 않습니다.' 출력.
+
+function findString(){
+    var insertWord = window.prompt('문자를 입력');
+    var finder = insertWord.indexOf('example');
+    if(finder >= 0){ //? 찾았다면 위치값을 리턴했을것이고 -> 0보다크다.
+        alert(finder + '번째 위치에 있습니다.');
+    }else{ //? 못찾으면 위치값이 리턴되지 않음.
+        alert("존재하지 않습니다.");
+    }
+}
+/*
+    ? 특정 위치에 문자 추가.
+    ! slice(start, end)
+    ! 매개변수 = start : 문자열 시작 위치, end : 문자열 끝 위치
+    ! 리턴값 = 지정된 문자열(의미상 잘라내기 - 복사).
+    
+    ! substr(start, length)
+    ! 매개변수 = start : 문자열 시작 위치, length : 시작위치부터 복사할 길이.
+    ! 리턴값 = 지정한 문자열
+*/
+// *case.5 문자열 일부 잘라내보기.
+function sliceText(){
+    var str = "Abcdef";
+    var strSlice = str.slice(0,5); //? 이해가 어려울 경우 문자로 세지말고 문자사이 커서를 셀 것.
+    console.log(str);
+    console.log(strSlice);
+}
+// *case.6 문자열 일부 잘라내보기.(substr)
+function substrText(){
+    var str = "Abcdef";
+    var strSubstr = str.substr(0,2);
+    console.log(str);
+    console.log(strSubstr);
+}
+// todo. slice, subStr 각각을 활용하여 이름을 마저 완성시키기.
+// !slice
+function sliceAddText(){
+    var str = "Mak"; //? Mark
+}
+// !substr
+function subStrAddText(){
+    var str = "MakStark"; //? Mark
+}

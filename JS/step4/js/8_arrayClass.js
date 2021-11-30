@@ -80,3 +80,25 @@ function stringArr(){
     * element : (배열)추가요소.
     ? 리턴 값 : 삭제한 요소들 외 배열. 추가할 경우? 리턴 값 없음.
 */
+// *case. 5-1 배열뒤에 요소추가.
+function addAfterArr(){
+    var menuItems = ["menu1","menu2","menu3","menu4"];
+    console.log("push 실행 전 :" + menuItems);
+    menuItems.push("newMenu");
+    console.log("push 실행 후 :" + menuItems);
+}
+// *case. 5-2 배열 앞에 요소추가.
+function addBeforeArr(){
+    var menuItems = ["menu1","menu2","menu3","menu4"];
+    console.log("unshift 실행 전 :" + menuItems);
+    menuItems.unshift("newMenu");
+    console.log("unshift 실행 후 :" + menuItems);
+}
+// *case. 5-3 배열중 n번째에 요소 추가.
+function nAddArr(){
+    var menuItems = ["menu1","menu2","menu3","menu4"];
+    console.log("splice실행 전 : " + menuItems);
+    menuItems.splice(3,0,"newMenu");
+    console.log("splice실행 후 : " + menuItems);
+}
+// ! splice - add(nth) , remove(nth) / 삭제전용 - shift(), pop();

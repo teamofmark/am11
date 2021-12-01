@@ -1,0 +1,13 @@
+.bx-wrapper .bx-caption{
+    background-color: rgba(200,200,0,0.8); width: 50%; position: absolute;
+    left: 70%; bottom: 80%;
+}
+.bx-wrapper .bx-caption span{
+    color: black; font-size: 30px; line-height: 45px;
+}
+.bx-wrapper .bx-viewport li .hoverContainer{
+    font-size: 50px; color: white; position: absolute; left: 0; top: 0;
+}
+.bx-wrapper .bx-viewport li:hover .hoverContainer{
+    position: absolute; top: 50%; color: lightcoral;
+}

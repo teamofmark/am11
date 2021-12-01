@@ -39,6 +39,8 @@ $(document).ready(function(){
         adaptiveHeightSpeed: 750, //? default: 500. adaptiveHeight가 적용되는 시간.
 
         easing: 'ease-in-out', //? default: null. slide전환 가속도. CSS timing-function option 사용가능. 
-        captions: true
+        captions: true, //? default : false. img에 title Attr을 img 위에 띄워주기.
+        video: true //! default: false. video 미사용시 절대 활성화 하지 말것.
+        //! video option 활성화. fitVids.js를 연결하면(iframe, video) width,height 자동설정.
     });
 });

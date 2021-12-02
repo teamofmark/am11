@@ -36,9 +36,14 @@
     float: left; width: 20%; display: block;
 }
 .customPager li a{
-    background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px;
-    cursor: pointer; transition: background-color 0.75s ease-in-out;
+    display: block; cursor: pointer; background-size: cover;
+    box-sizing: border-box;
+    /* height: 5px; background-color: #eaeaea; text-indent: -9999px; */
+}
+.customPager li a img{
+    width: 100%;
 }
 .customPager li a.active{
-    background-color: black;
+    border: 5px solid black;
+    /* background-color: black; */
 }

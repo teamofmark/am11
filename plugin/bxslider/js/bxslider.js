@@ -48,6 +48,7 @@ $(document).ready(function(){
         pager: true, //? default: true. pager 켜기 / 끄기
         pagerType: 'full', //? default: full.(circle) / short : count로 변경
         //? pagerShortSeparator: ' . '  short일 경우 식별자(separator) 변경.
-        pagerSelector: '.newPager'
+        //? pagerSelector: '.newPager' pagerCustom - 1 : default: '', pager 공간 생성 및 기본뼈대제공
+        pagerCustom: '.customPager' //? default : null. pager 구조 직접 작성 및 data-slide-index="i"로 지정
     });
 });

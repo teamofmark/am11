@@ -11,10 +11,34 @@
 .bx-wrapper .bx-viewport li:hover .hoverContainer{
     position: absolute; top: 50%; color: lightcoral;
 }
-/* *pagerCustom - 1 */
+/* *pagerCustom - 1 : 구조를 내마음대로 할 수 없다. / 자동으로 length만큼 pager생성가능. */
 .newPager{
     text-align: center; padding: 10px 0;
+    display: none; /*? pagerCustom - 2 사용시*/
 }
 .newPager .bx-pager-item{
     display: inline-block; margin-left: 2%;
+}
+.newPager .bx-pager-item .bx-pager-link{
+    display: block; text-decoration: none; font-size: 20px; color: slateblue;
+}
+.newPager .bx-pager-item .bx-pager-link.active{
+    font-weight: bold; border: 3px solid deepskyblue; padding: 5px;
+}
+.newPager .bx-pager-item .bx-pager-link:hover{
+    color: deeppink;
+}
+/* *pagerCustom - 2 : 구조를 내마음대로 할 수 있다. / 자동으로 length만큼 pager생성불가 */
+.customPager:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.customPager li{
+    float: left; width: 20%; display: block;
+}
+.customPager li a{
+    background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px;
+    cursor: pointer; transition: background-color 0.75s ease-in-out;
+}
+.customPager li a.active{
+    background-color: black;
 }

@@ -46,7 +46,8 @@ $(document).ready(function(){
 
         // *pager - indicator
         pager: true, //? default: true. pager 켜기 / 끄기
-        pagerType: 'short', //? default: full.(circle) / short : count로 변경
-        pagerShortSeparator: ' . ' //? short일 경우 식별자(separator) 변경.
+        pagerType: 'full', //? default: full.(circle) / short : count로 변경
+        //? pagerShortSeparator: ' . '  short일 경우 식별자(separator) 변경.
+        pagerSelector: '.newPager'
     });
 });

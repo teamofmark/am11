@@ -109,17 +109,31 @@
 
         <fieldset>
             <legend>HTML5 Input</legend>
-            <label for="userName" title="8자미만으로입력하세요.">이름 : </label>
-            <input type="text" id="userName" placeholder="이름을 8자 미만으로 입력하세요." required maxlength="8" autofocus disabled>
-            <!-- 
-                ? placeholder : 시각적으로 input 안에 massage를 담을 경우. (청각적x)
-                ? required : 필수항목지정
-                ? maxlength : 최대자수지정
-                ? autofocus : 자동초점고정
-                ? readonly : 읽기전용전환 ( server -> input , client -> output(잠김상태여야 할때.))
-                ! disabled : 비활성화 (server -/> input(입력차단))
-                ! enabled : 활성화 (sever -> input(입력가능하게변경)).
-             -->
+            <ul>
+                <li>
+                    <label for="userName" title="8자미만으로입력하세요.">이름 : </label>
+                    <input type="text" id="userName" placeholder="이름을 8자 미만으로 입력하세요." required maxlength="8" autofocus disabled>
+                    <!-- 
+                        ? placeholder : 시각적으로 input 안에 massage를 담을 경우. (청각적x)
+                        ? required : 필수항목지정
+                        ? maxlength : 최대자수지정
+                        ? autofocus : 자동초점고정
+                        ? readonly : 읽기전용전환 ( server -> input , client -> output(잠김상태여야 할때.))
+                        ! disabled : 비활성화 (server -/> input(입력차단))
+                        ! enabled : 활성화 (sever -> input(입력가능하게변경)).
+                     -->
+                </li>
+                <li>
+                    <label for="userEmail">이메일 : </label>
+                    <input type="email" id="userEmail" placeholder="example@example.com">
+                <!--type을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @ 버튼이 생긴다. placeholder(ie10이하지원불가)-->
+                </li>
+                <li>
+                    <label for="userURL">URL : </label>
+                    <input type="url" id="userURL">
+                </li>
+                <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
+        </ul>
         </fieldset>
     </form>
 </body>

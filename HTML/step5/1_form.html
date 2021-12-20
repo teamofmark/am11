@@ -74,12 +74,22 @@
                         <option value="d3">gmail.com</option>
                     </select>
                     <select>
-                        <option value="">직업선택</option>
-                        <option value="">무직</option>
-                        <option value="">학생</option>
-                        <option value="">전문직</option>
-                        <option value="">공무원</option>
+                        <option>직업선택</option>
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
                     </select>
+                    <!-- 
+                        ? select는 선택항목을 목록형의 단축메뉴 형식으로 만드는 입력 양식이다.
+                        ? 항목 수 만큼의 option이 필요하고, 이 안의 value로 값을 정해 전달한다.
+                        * multiple 속성값을 이용해 다중 선택을 지원 할 수 있고, size속성값으로 초기 노출수를 정할 수 있다.
+                        ? optgroup을 통해 중간 grouping이 가능하다.
+                     -->
                 </li>
             </ul>
         </fieldset>

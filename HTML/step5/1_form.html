@@ -95,16 +95,30 @@
                     <input type="button" value="우편번호확인">
                     <!-- 읽기, 수정 -->
                     <input type="submit" value="확인">
-                    <!-- Submit = 생성, 저장, 삭제 -->
+                    <!-- Submit = 생성, 저장, 삭제 (form 안에 존재해야함) -->
                     <input type="file">
                     <!--  file 첨부기능 -->
 
                     <button>우편번호확인</button>
                     <!-- 기존 웹전용시에는 사용 빈도수가 높지 않음 -->
                     <input type="reset" value="취소">
-                    <!-- 입력한 양식 초기화 -->
+                    <!-- 입력한 양식 초기화 (form 안에 존재해야함)-->
                 </li>
             </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName" title="8자미만으로입력하세요.">이름 : </label>
+            <input type="text" id="userName" placeholder="이름을 8자 미만으로 입력하세요." required maxlength="8" autofocus disabled>
+            <!-- 
+                ? required : 필수항목지정
+                ? maxlength : 최대자수지정
+                ? autofocus : 자동초점고정
+                ? readonly : 읽기전용전환 ( server -> input , client -> output(잠김상태여야 할때.))
+                ! disabled : 비활성화 (server -/> input(입력차단))
+                ! enabled : 활성화 (sever -> input(입력가능하게변경)).
+             -->
         </fieldset>
     </form>
 </body>

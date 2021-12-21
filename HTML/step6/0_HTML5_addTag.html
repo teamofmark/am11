@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5에서 새로 추가 된 Tag</title>
+</head>
+<body>
+    <figure>
+        <img src="https://via.placeholder.com/250" alt="undefined">
+        <figcaption>
+            image에 따른 설명글.
+        </figcaption>
+    </figure>
+    <!-- 
+        ? 1. image가 text보다 중요한 곳인가? (사람, 상품(제품)목록, 특정느낌의 이미지를 부가적 text로 보완...)
+        ? 2. image를 필수로 써야하나 상황에 따라 css를 통해 img를 생략하는 경우도 있다.
+        ? 3. figcaption 내부에는 tag를 사용 하는 것이 가능하나, 너무 큰 범위의 공간Tag 등은 사용할 수 없다.
+        * figcaption 자체는 생략도 가능하다.
+    -->
+    <time datetime="2021-12-21T12:09:00Z">2021년 12월 21일 오후 12:09분</time>
+    <!-- 
+        ? 날짜, 시간기록을 하는 time Tag.
+        ? 1. datetime은 browser(server)에서 인식하는 날짜 부분. yyyy-mm-dd형식을 따른다.
+        ? - 날짜만? : 2021-12-21. 시간만? : 12:09:00, Z는 그리니치 시간대를 나타내는 Zulu의 약자.
+        ! 2. pubdate(문서작성날짜) = 비사용권고
+     -->
+</body>
+</html>

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5에서 새로 추가 된 Tag</title>
-</head>
-<body>
+  </head>
+  <body>
     <figure>
-        <img src="https://via.placeholder.com/250" alt="undefined">
-        <figcaption>
-            image에 따른 설명글.
-        </figcaption>
+      <img src="https://via.placeholder.com/250" alt="undefined" />
+      <figcaption>image에 따른 설명글.</figcaption>
     </figure>
     <!-- 
         ? 1. image가 text보다 중요한 곳인가? (사람, 상품(제품)목록, 특정느낌의 이미지를 부가적 text로 보완...)
@@ -26,18 +24,26 @@
         ? - 날짜만? : 2021-12-21. 시간만? : 12:09:00, Z는 그리니치 시간대를 나타내는 Zulu의 약자.
         ! 2. pubdate(문서작성날짜) = 비사용권고
      -->
-     
-     <progress value="20" max="100"></progress>
-     <!-- 
+
+    <progress value="20" max="100"></progress>
+    <!-- 
         ? progress : 진행상황표기. 진행상황을 실시간으로 나타낼 때 사용. (max : 100%)
         ? ex> download gauge, file copy gauge....
     -->
-     <meter value="93" max="100" min="10" high="90" low="40"></meter>
-     <!-- 
+    <meter value="93" max="100" min="10" high="90" low="40"></meter>
+    <!-- 
          ? meter : 현재상황갱신표기. 현재 값(상황)을 갱신하여 표기할 때 사용. (max : 100% or 그외 나머지 수치)
          ? value = 현재 값, min = 최소값, max = 최대값, low = '낮다'기준범위, high = '높다' 기준범위
          * optimum = '적당' 기준범위.
       -->
-      
-</body>
+    <ruby> 漢 <rt>かん</rt> </ruby>
+    <!-- 
+          ? 표기 / 읽기가 다를 시 ruby로 감싸고, 읽기 부분을 rt로 처리.
+       -->
+    <address>
+        by <a href="url" target="_blank">URL Target.</a>
+        mailto : <a href="mailto:teamofmark@gmail.com">email address</a>
+        localAddr : <a href="apiMenwal">view the spot</a>
+    </address>
+  </body>
 </html>

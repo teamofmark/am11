@@ -171,6 +171,22 @@
                     <input type="week">
                     <input type="datetime">
                 </li>
+                <li>
+                    <label for="searchField">검색 : </label>
+                    <input type="search" id="searchField" placeholder="검색어를 입력하세요.">
+                    <!-- 
+                        ? x버튼이 우측에 생기는 검색전용필드.
+                        ? autocomplete을 추가하면 자동완성기능을 만들수 있다.
+                        ! safari에서 css적용이 안됨.
+                     -->
+                </li>
+                <li>
+                    <label for="selectColor">색상선택 : </label>
+                    <input type="color" id="selectColor">
+                    <!-- 
+                        ? color Picker 호출 하여 color value를 저장하는 input.
+                     -->
+                </li>
             </ul>
         </fieldset>
     </form>

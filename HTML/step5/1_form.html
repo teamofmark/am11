@@ -133,7 +133,23 @@
                     <input type="url" id="userURL">
                 </li>
                 <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
-        </ul>
+                <li>
+                    <label for="numbCount">수량 : </label>
+                    <input type="number" min="1" max="10" step="1" value="1" id="numbCount">
+                    <!-- 
+                        ?상,하 버튼으로 숫자를 기입하는 spinBox를 생성. (음수사용불가)
+                        ? min = 최저, max = 최대, step = 단계/상승, value = 전달할 데이터 및 초기 데이터 
+                    -->
+                </li>
+                <li>
+                    <label for="numbRange">범위내선택 : </label>
+                    <input type="range" id="numbRange" min="-2" max="2" step="1" value="0">
+                </li>
+                <!-- 
+                    ? 슬라이드바로 숫자를 선택하는 막대를 생성. (음수사용가능)
+                    ? min = 최저, max = 최대, step = 단계/상승, value = 전달할 데이터 및 초기 데이터 
+                -->
+            </ul>
         </fieldset>
     </form>
 </body>

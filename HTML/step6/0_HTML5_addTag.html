@@ -26,5 +26,18 @@
         ? - 날짜만? : 2021-12-21. 시간만? : 12:09:00, Z는 그리니치 시간대를 나타내는 Zulu의 약자.
         ! 2. pubdate(문서작성날짜) = 비사용권고
      -->
+     
+     <progress value="20" max="100"></progress>
+     <!-- 
+        ? progress : 진행상황표기. 진행상황을 실시간으로 나타낼 때 사용. (max : 100%)
+        ? ex> download gauge, file copy gauge....
+    -->
+     <meter value="93" max="100" min="10" high="90" low="40"></meter>
+     <!-- 
+         ? meter : 현재상황갱신표기. 현재 값(상황)을 갱신하여 표기할 때 사용. (max : 100% or 그외 나머지 수치)
+         ? value = 현재 값, min = 최소값, max = 최대값, low = '낮다'기준범위, high = '높다' 기준범위
+         * optimum = '적당' 기준범위.
+      -->
+      
 </body>
 </html>

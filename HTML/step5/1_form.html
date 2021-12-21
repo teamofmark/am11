@@ -149,6 +149,28 @@
                     ? 슬라이드바로 숫자를 선택하는 막대를 생성. (음수사용가능)
                     ? min = 최저, max = 최대, step = 단계/상승, value = 전달할 데이터 및 초기 데이터 
                 -->
+                <li>
+                    <label for="schaSelect">일정선택 : </label>
+                    <input type="date" id="schaSelect">
+                    <!-- 
+                        ? 각 O/S (ios / android..)의 기본 달력을 호출.
+                        ! 일정관련 tag는 낙후된 browser(IE10이하)에서는 사용불가.
+                     -->
+                </li>
+                <li>
+                    <label for="schaSelect2">상세일정선택 : </label>
+                    <input type="datetime-local" id="schaSelect2">
+                    <!-- 
+                        ? 각 O/S (ios / android..)의 기본 달력/시계를 호출.
+                     -->
+                </li>
+                <li>
+                    <!-- * 비사용 부류 -->
+                    <input type="time">
+                    <input type="month">
+                    <input type="week">
+                    <input type="datetime">
+                </li>
             </ul>
         </fieldset>
     </form>

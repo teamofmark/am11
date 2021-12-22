@@ -45,5 +45,52 @@
         mailto : <a href="mailto:teamofmark@gmail.com">email address</a>
         localAddr : <a href="apiMenwal">view the spot</a>
     </address>
+
+    <!-- ! IE 지원불가 -->
+    <details>
+      <summary>Copyright 1999-2021</summary>
+      <p>- by Refsns Data. All rights Reserved.</p>
+      <p>All Content and graphics on this web site area the property.</p>
+    </details>
+    <!-- 
+      * 상부의 (summary) 요약및 요소들을 넣어두고 click Event로 show / hide 기능이 자동작동.
+     -->
+     <main>
+       <h1>Web Browsers</h1>
+       <p>
+         Google Chrome, firefox, Internet Explorer are the most used browsers today.
+       </p>
+       <article>
+         <h2>Google Chrome</h2>
+         <p>
+           Google Chrome is a free.
+         </p>
+       </article>
+     </main>
+     <!-- 
+       ? web site(system)안에서 mainPage에 해당하는 page, section을 감쌀 때 사용하는 공간 Tag.
+      -->
+      <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50"> 100 + <input type="number" id="b" value="50">
+        = <output id="x" name="x" for="a b"></output>
+      </form>
+      <!-- 
+        ? output = form 내부의 input에 지정된 연산등의 결과값을 산출해 낼수 있는 Tag.
+       -->
+       
+       <!-- ! IE 11이하 safari 지원불가 -->
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">IE</option>
+          <option value="FireFox">FF</option>
+          <option value="Chrome">CR</option>
+          <option value="Opera">O</option>
+          <option value="Safari">SF</option>
+        </datalist>
+        <!-- 
+          ? datalist tag 와 option tag를 같이 사용하면 기존의 검색자동완성기능을 쉽게 만들수 있으나
+          ? safari, ie에서 사용이 안되는 관계로 현재는 외면받고있다.
+         -->
   </body>
 </html>

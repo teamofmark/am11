@@ -7,34 +7,49 @@
     <title>div Layout</title>
     <style>
         .header{
-            background-color: red;
+            background-color: red; margin-bottom: 20px; text-align: center;
         }
         .nav span{
-            background-color: blue;
+            background-color: blue; display: inline-block; width: 19%;
+            color: white;
+        }
+        .section{
+            background-color: red; margin-bottom: 20px;
+        }
+        .section .article{
+            background-color: yellow; height: 500px; display: inline-block; width: 80%;
+        }
+        .section .aside{
+            background-color: green; height: 500px; display: inline-block; width: 18%;
+        }
+        .footer{
+            background-color: orange; text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header>
         <span>global Header</span>
-        <div class="nav">
-            <span>menu 1</span>
-            <span>menu 2</span>
-            <span>menu 3</span>
-            <span>menu 4</span>
-            <span>menu 5</span>
-        </div>
-    </div>
-    <div>
-        <div>
+        <nav>
+            <ul>
+                <li>menu 1</li>
+                <li>menu 2</li>
+                <li>menu 3</li>
+                <li>menu 4</li>
+                <li>menu 5</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
             <span>text</span>
-        </div>
-        <div>
+        </article>
+        <aside>
             <span>quick Menu</span>
-        </div>
-    </div>
-    <div>
+        </aside>
+    </section>
+    <footer>
         <span>global footer</span>
-    </div>
+    </footer>
 </body>
 </html>

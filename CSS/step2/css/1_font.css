@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+body{
+    font-family: 'Nanum Gothic';
+    /* 
+        ? 주어 + 부어 다를경우
+        ? 주어와 부어중 일반적으로 주어가 범위가 넓다. (ex> english).
+        ? 타 국가 언어가 부어로 된다. 일반적으로 국소적 범위만 타 국가 언어로 표현.
+        ! 주어 + 부어 다를경우 . 주어가 만약  타국가언어라면 부어는 범위가넓은 (영어) 언어로 적용이 불필요.
+
+        ? 주어 + 부어 같을경우
+        ? 주어와 부어가 같음 으로 1번 font가 비 적용시  2번 font가 대신 적용.
+    */
+}
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+    /* letter-spacing : 글자간 간격 */
+}
+p.word{
+    word-spacing: 10px;
+    /* 단어간격 (spaceBar 기준) */
+}

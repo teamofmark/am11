@@ -1,0 +1,33 @@
+body{
+    margin: 0; padding: 0;
+}
+h1{
+    font-size: 14px; margin: 0;
+}
+img{
+    width: 150px; height: 150px; border: 3px solid #33ff33;
+}
+
+ul,ol,dl{
+    color: #f00;
+}
+ul,ol{
+    list-style: none;
+}
+/* 상위 대상 묶기 */
+
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
+/* 하위 대상 접근 */
+li{
+    color: black;
+}
+
+dl dt, dl dd{
+    font-size: 35px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 하위 대상 들 끼리 묶기 */

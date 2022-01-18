@@ -22,3 +22,11 @@ p.word{
     word-spacing: 10px;
     /* 단어간격 (spaceBar 기준) */
 }
+p.w_normal{
+    width: 150px; white-space: normal;
+    line-height: 21px;
+}
+p.w_nowrap{
+    width: 150px; border: 1px solid red;
+    white-space: nowrap; overflow: ;
+}

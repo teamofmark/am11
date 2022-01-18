@@ -28,5 +28,5 @@ p.w_normal{
 }
 p.w_nowrap{
     width: 150px; border: 1px solid red;
-    white-space: nowrap; overflow: ;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }

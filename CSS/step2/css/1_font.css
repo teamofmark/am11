@@ -52,3 +52,18 @@ button.indentTest{
     background: url('https://via.placeholder.com/150x50?text=blabla button');
     text-indent: -9999px;
 }
+a{
+    display: block;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #999;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #090;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #ea8;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: #a9e;
+}

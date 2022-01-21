@@ -1,0 +1,25 @@
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+}
+.multiBox{
+    /* ? 속성별분리 */
+    border-width: 1px 10px 5px;
+    border-style: solid dashed dotted;
+    border-color: #1985b7 #66f #f06;
+
+    /* ? 방향별분리 */
+    /* border-top: 1px solid #1985b7; */
+    /* border-right: 3px dotted #f06; */
+    /* border-bottom: 10px dashed #66f; */
+    /* border-left: 25px double #fc6; */
+}
+/*solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/
+/*
+border 개별 설정
+border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
+또는 border: 5px 10px; 방식으로 상하, 좌우로 묶어 표현 할 수 있다.
+    또는 border: 5px 8px 10px; 방식으로 상하 별도, 좌우 묶기 로 표현가능            
+*/

@@ -26,5 +26,8 @@ body{
 .secondDiv article{
     background-color: #930;
     /* margin: 10px; */
-    /* ! 잘못된 case. */
+    /* 
+        ! 잘못된 case. 
+        ? margin-bottom 비적용 됨. 부모요소가 자손요소에게 padding을 사용함이 바람직.
+    */
 }

@@ -31,3 +31,21 @@ body{
         ? margin-bottom 비적용 됨. 부모요소가 자손요소에게 padding을 사용함이 바람직.
     */
 }
+.centerDiv{
+    width: 300px; background-color: lightcoral;
+    margin: 0 auto; padding: 10px;
+    border: 5px solid #33f;
+    /* 
+        ? auto
+        ! (parent(Width) - child(Width)) / 2.
+    */
+    /* 
+        ! padding은 본래 대상의 크기에 가산된다. border도 마찬가지. 
+    */
+}
+
+.centerDiv article{
+    margin: 0 10px;
+    background-color: lightseagreen;
+    color: white;
+}

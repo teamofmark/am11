@@ -46,6 +46,18 @@ body{
 
 .centerDiv article{
     margin: 0 10px;
+    /* ! margin과 부모의 padding 은 섞이지 않는다. 무조건 가산됨. */
     background-color: lightseagreen;
     color: white;
+}
+.paddingDiv{
+    padding: 10px 20px; border: 3px solid #333; background-color: #ff3;
+    width: 100px; box-sizing: content-box;
+    /* 
+        ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 width에 가산되지 않는다.  
+        ? box-sizing default - content-Box; 평시처럼 가산됨.
+    */
+}
+.paddingDiv article{
+    background-color: #039; color: white;
 }

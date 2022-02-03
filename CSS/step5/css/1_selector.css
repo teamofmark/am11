@@ -59,3 +59,12 @@
     ? 동작하는 input들은 기존 browser에서 설정된 style이 존재 하기 때문에 임의설정불가.
     ! 변경하는 법은 추후에...
 */
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906;
+}
+/* 
+    구조적으로 다른 동일 Tag를 제외하고, 직계 자손 Tag에 동일한 style 적용.
+*/

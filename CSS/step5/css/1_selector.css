@@ -106,3 +106,16 @@
 .sameAttrSelector h2[title $= "여자"]{
     color: pink;
 }
+
+.eventSelector a:link{
+    font-size: 12px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: green;
+}
+.eventSelector a:active{
+    font-size: 30px; color: blue;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellow;
+}

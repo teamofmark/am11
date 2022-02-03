@@ -68,3 +68,13 @@
 /* 
     구조적으로 다른 동일 Tag를 제외하고, 직계 자손 Tag에 동일한 style 적용.
 */
+
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/* 
+    동위선택자 A+B는 A바로 뒤 B, A~B는 A 뒤에 모든 B.
+*/

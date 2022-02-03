@@ -107,6 +107,9 @@
     color: pink;
 }
 
+.eventSelector{
+    margin-bottom: 50px;
+}
 .eventSelector a:link{
     font-size: 12px; color: red;
 }
@@ -119,3 +122,34 @@
 .eventSelector a:visited{
     font-size: 40px; color: yellow;
 }
+
+.statusSelector input[type='checkBox'] + label{
+    display: inline-block; transition-duration: 0.75s;
+    height: 20px; overflow-y: hidden;
+    /* font-size: 16px; */
+}
+.statusSelector input[type='checkBox']:checked + label{
+    height: 0px;
+    /* font-size: 0px; ? font-size: 6.888888888px;*/
+}
+.statusSelector input[type='text']:focus{
+    border: 10px solid red;
+}
+
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='password']:disabled::placeholder{
+    background-color: deeppink; color: black;
+}
+/*
+input 상태에 따라 대상을 작동 시킬 수 있다.
+1. checkbox의 상태가 checked 일 경우 바로 뒤에 label을 height:0px로 만든다.
+(상태옵션은 :checked 체크된 input 상태 , :focus 초점이 맞춰진 input 상태 , 
+:enabled 사용가능한 input 상태, :disabled 사용 불가능한 input 상태)
+
+2. label의 기본설정을 잡는다. 이 부분에서 height의 값이 있어야만 에니메이션이
+일어난다.
+또한 display옵션을 block 계열로 잡아야하며, overflow의 값은 hidden으로 설정
+해둔다.(사라지는값)
+*/

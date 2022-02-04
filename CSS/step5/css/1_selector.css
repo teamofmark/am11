@@ -153,3 +153,25 @@ input 상태에 따라 대상을 작동 시킬 수 있다.
 또한 display옵션을 block 계열로 잡아야하며, overflow의 값은 hidden으로 설정
 해둔다.(사라지는값)
 */
+
+.normalSelector ul{
+    overflow: hidden; list-style: none; padding: 0; margin: 30px 0;
+}
+.normalSelector ul li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px;
+    float: left; text-align: center;
+}
+.normalSelector ul :nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.normalSelector ul :nth-child(2n){
+    background-color: #0c0;
+}
+/*nth-child 에서 (odd) 값은 홀수를 , (even)은 짝수를 지정 할 수 있다. js는 반대 (0부터인식)*/
+
+.normalSelector ul :first-child{
+    border-radius: 25px 0 0 25px;
+}
+.normalSelector ul :last-child{
+    border-radius: 0 25px 25px 0;
+}

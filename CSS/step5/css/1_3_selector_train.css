@@ -6,7 +6,7 @@ body{
 }
 body > div:first-of-type{
     width: 50%; height: 50%; position: absolute; top: 25%; left: 25%;
-    background-color: #232323; min-height: 400px;
+    background-color: #232323; min-height: 285px;
 }
 body > div:first-of-type nav{
     margin-bottom: 20px;

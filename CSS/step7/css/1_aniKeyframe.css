@@ -31,7 +31,9 @@ body{
 .circle h1{
     line-height: 200px;
 }
-
+.circle:hover{
+    animation-play-state: paused;
+}
 @keyframes moveCircle{
     0%{
         left: 0;
@@ -39,5 +41,13 @@ body{
     }
     100%{
         left: 500px;
+        transform: rotate(360deg);
     }
 }
+/* 
+    ?keyframes
+    * 0% ~ 100% 사이 소수점 포함 입력 가능.
+    * keyframe start = from , end = to, 나머지는 %
+    ! ex> 0 - 50% - 100%
+    *rotate는 transfrom의 회전함수, deg 는 각도
+*/

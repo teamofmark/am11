@@ -8,12 +8,36 @@ body{
     position: absolute; width: 200px; height: 200px; border-radius: 100px;
     background: linear-gradient(-45deg, #1E5799 0%, #7db9e8 100%);
     /* https://www.colorzilla.com/gradient-editor/ */
-    text-align: center; 
+    text-align: center;
+    animation-name: moveCircle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+/* 
+    ? animation
+    * 1. moveCircle이라는 이름의 keyframes를 호출.
+    * 2. duration으로 재생시간을 설정.
+    * 3. timing-function 으로 가속도 설정.
+    * 4. iteration-count 로 무반한복 설정.
+    ! 반복횟수를 숫자로 입력해도 가능.
+    * 5. direction으로 재생 방향 설정.
+    todo normal 표준재생(0-100%)
+    todo reverse 반대로재생(100%-0)
+    todo alternate 반복재생 (0-100%,100%-0)
+    todo alternate-reverse alternate역방향반복재생
+*/
 .circle h1{
     line-height: 200px;
 }
 
 @keyframes moveCircle{
-    
+    0%{
+        left: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 500px;
+    }
 }

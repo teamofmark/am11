@@ -1,0 +1,19 @@
+body,h1{
+    margin: 0;
+}
+body{
+    position: relative;
+}
+.circle{
+    position: absolute; width: 200px; height: 200px; border-radius: 100px;
+    background: linear-gradient(-45deg, #1E5799 0%, #7db9e8 100%);
+    /* https://www.colorzilla.com/gradient-editor/ */
+    text-align: center; 
+}
+.circle h1{
+    line-height: 200px;
+}
+
+@keyframes moveCircle{
+    
+}

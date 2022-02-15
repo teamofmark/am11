@@ -34,6 +34,10 @@ body{
 .circle:hover{
     animation-play-state: paused;
 }
+/* 
+    ?play-state
+    * paused 는 중지, running 은 재생.
+*/
 @keyframes moveCircle{
     0%{
         left: 0;

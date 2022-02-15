@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+.property{
+    width: 610px; margin: 0 auto; border: 3px solid #3a00b6;
+}
+.property span{
+    display: block; width: 10px; height: 50px; background-color: #3a00b6; margin: 5px;
+    transition-property: background-color, width;
+    transition-duration: 1s, 5s;
+    /* ? shortHand : property duration timingfunction delay */
+}
+.property:hover span:nth-child(1){background-color: #3abbb6; width: 100px;}
+.property:hover span:nth-child(2){background-color: #9c11c7; width: 300px;}
+.property:hover span:nth-child(3){background-color: #ec00b6; width: 400px;}
+.property:hover span:nth-child(4){background-color: #ef33c8; width: 200px;}
+.property:hover span:nth-child(5){background-color: #2aeebc; width: 500px;}

@@ -1,0 +1,41 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative;
+    animation-name: rotate3D;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+}
+@keyframes rotate3D {
+    from{
+        /* 
+            todo.1 x축으로 일으켜 세우기, y축으로 회전시켜 반듯이 놓기.
+        */
+    }to{
+        /* 
+            todo.2 그상태에서 x축을 기준으로 360도회전(기존 세운각도 +360)
+            todo.3 y축 회전값 유지    
+        */
+    }
+}
+div span{
+    width: 200px; height: 100px; position: absolute; left: 0; top: 0;
+    opacity: 0.5;
+}
+div span:nth-of-type(1){
+    background-color: red;
+}
+div span:nth-of-type(2){
+    background-color: green;
+    /* todo.4 기존 삼각형 문제와 동일 */
+}
+div span:nth-of-type(3){
+    background-color: blue;
+    /* 
+        todo.5 기존 삼각형 문제 대비 길이가 절반이므로 width 조절.
+        todo.6 회전부 동일.
+    */
+}

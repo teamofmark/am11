@@ -1,4 +1,57 @@
 
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        background-color: palevioletred;; color: white;
+    }
+    h1{
+        font-size: 1rem; line-height: 1.4rem; text-align: right; margin-bottom: 2rem;
+        width: 30%; float: left; margin-right: 10%;
+    }
+    p{
+        font-size: 0.8rem; text-align: right; line-height: 1.2rem; text-align: right;
+        color: darkred;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: orange; color: white;
+    }
+    h1{
+        font-size: 1rem; line-height: 1.4rem; text-align: right; margin-bottom: 2rem;
+    }
+    p{
+        font-size: 0.8rem; text-align: right; line-height: 1.2rem; text-align: right;
+        color: brown;
+    }
+}
+/* ? smart Device - 사용자 해상도가 768px 미만 일 때. 제한없음 */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: lime; color: black; font-weight: bold;
+    }
+    h1{
+        font-size: 2.5rem; line-height: 3.25rem; text-align: left; margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.5rem; text-align: right; line-height: 1.9rem; text-align: right;
+        color: darkgreen;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
+    body{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem; text-align: center;
+    }
+}
+/* ? tablet Device - 사용자 해상도가 768px 이상 1280미만 일 때. */
 
 @media screen and (min-width: 1280px){
     body{
@@ -10,4 +63,8 @@
     p{
         font-size: 1rem; text-align: right; line-height: 1.5rem;
     }
+    /* 
+        ? rem : browserFontDefaultSize = 26px. = 1rem.
+    */
 }
+/* ? desktop Resolution : 사용자의 해상도가 1280이상일 때. 제한없음. */

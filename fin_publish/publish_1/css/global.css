@@ -7,7 +7,8 @@ section.expArea ul,
 section.teamArea ul,
 section.teamArea ul+p,
 section.worksArea h2 a,
-section.talkArea p > *{
+section.talkArea p > *,
+section.contactArea form fieldset > *:not([type='submit'], legend){
     font-family: 'Roboto';
 }
 header > div > ul li h2,
@@ -16,7 +17,9 @@ section.expArea > *:not(ul),
 section.teamArea h2,
 section.teamArea > p:not(:last-of-type),
 section.worksArea h2,
-section.talkArea p{
+section.talkArea p,
+section.contactArea form fieldset legend,
+section.contactArea div h3{
     font-family: 'Playfair Display';
 }
 a{
@@ -29,9 +32,12 @@ a{
 section[class *= 'Area'] > hr{
     width: 3%; min-width: 50px; border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
 }
+/* todo. tablet M/Q 이관하기 */
+
 @media screen and (min-width: 1280px){
     #about,
     section.expArea,
+    section.contactArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }

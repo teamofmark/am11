@@ -253,7 +253,9 @@ section[class *= 'Area'] > hr{
         max-width: 728px; margin: 0 auto; padding: 70px 0;
         /* max-width: 940px; */
     }
-
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }
@@ -440,7 +442,9 @@ section[class *= 'Area'] > hr{
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
-
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }

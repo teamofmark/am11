@@ -7,8 +7,19 @@ body{
 .crim{
     font-family: 'Crimson Pro', serif;
 }
+a{
+    text-decoration: none;
+}
 
 @media screen and (min-width: 1280px){
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div > *{
+        float: left;
+    }
 }
 /* ?desktop */

@@ -74,5 +74,34 @@ a{
         border-radius: 18px; min-width: 85px; font-weight: 600; letter-spacing: 1px; margin-left: 8%;
     }
     /* ? header Fin */
+
+    .paging{
+        position: relative; background-color: white; border-radius: 4px; clear: both;
+    }
+    .paging > a{
+        position: absolute; width: 16%; line-height: 90px; color: #3a405b; font-size: 18px;
+        font-weight: 600; top: 0; text-align: center;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding: 20px 17%; box-sizing: border-box; text-align: center;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; font-size: 14px; color: #3a405b; line-height: 50px; width: 50px;
+        background-color: white; border-radius: 25px; transition-duration: 0.5s;
+        font-weight: 600;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5;
+    }
+    /* ? pager Fin */
 }
 /* ?desktop */

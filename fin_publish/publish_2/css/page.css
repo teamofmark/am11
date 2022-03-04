@@ -193,7 +193,7 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer; padding-left: 20.37%; display: inline-block;
-        box-sizing: border-box;
+        box-sizing: border-box; font-weight: 500;
     }
     .contentArea aside fieldset span{
         font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center; width: 15%;
@@ -215,6 +215,20 @@
     }
     .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
+    }
+    /* todo. inputCustomize */
+
+    .contentArea aside fieldset input[type='radio'] + label{
+        background: url('../images/off_radio.png') no-repeat 10% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') no-repeat 10% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
     }
 
     .contentArea section{

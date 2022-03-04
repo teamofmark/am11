@@ -247,10 +247,10 @@
     .contentArea section ul li:nth-child(5){
         width: 65.5%;
     }
-    .contentArea section ul:nth-child(1),
-    .contentArea section ul:nth-child(4),
-    .contentArea section ul:nth-child(6),
-    .contentArea section ul:nth-child(9){
+    .contentArea section ul li:nth-child(1),
+    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(6),
+    .contentArea section ul li:nth-child(9){
         margin-left: 0;
     }
     .contentArea section ul li figure img{
@@ -268,7 +268,7 @@
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:not(:last-of-type){
         margin-bottom: 15px;
     }
-    .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
+    .contentArea section ul li figure figcaption dl dd:last-of-type{
         font-size: 14px; color: #343e5c; font-weight: 600;
     }
     .contentArea section ul li:nth-child(5) figure figcaption{
@@ -290,6 +290,19 @@
     }
     .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
         border-radius: 0 17px 17px 0; border-left: none;
+    }
+    .contentArea section ul li:last-child{
+        position: relative;
+    }
+    .contentArea section ul li:last-child figure figcaption dl{
+        position: absolute; left: 0; top: 40px; width: 100%; padding: 0 4.2%; box-sizing: border-box;
+    }
+    .contentArea section ul li:last-child figure figcaption dl dd:nth-child(2){
+        display: none;
+    }
+    .contentArea section ul li:last-child figure figcaption dl dd{
+        color: rgba(28,30,35,0.5);
+        /*  !important 는 조건, 환경 무관 최우선순위를 가져오기 때문에 특별한 상황에만 사용 할 것. */
     }
 }
 /* ?desktop */

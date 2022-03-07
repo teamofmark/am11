@@ -125,7 +125,7 @@ a{
         background-color: #222328;
     }
     footer > div{
-        position: relative; padding: 60px 0;
+        position: relative; padding: 60px /*0*/15px;
     }
     footer > div span{
         position: absolute; display: block;
@@ -134,7 +134,7 @@ a{
         border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        max-width: 92px; width: 7.86%; position: absolute; left: 0; top: 60px;
+        max-width: 92px; width: 7.86%; position: absolute; left: /*0*/15px; top: 60px;
     }
     footer > div:first-child ul{
         text-align: center; padding: 0 10%;
@@ -149,7 +149,7 @@ a{
         display: block; color: white; font-size: 12px; font-weight: 600;
     }
     footer > div:first-child span{
-        right: 0; top: 60px; width: 8.54%;
+        right: /*0*/15px; top: 60px; width: /*8.54%*/11.54%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -164,10 +164,11 @@ a{
     footer > div:first-child span a:nth-child(3){background-image: url('../images/sns_03.png');}
 
     footer > div:nth-child(2) p{
-        width: 50%; font-size: 14px; font-size: italic; max-width: 510px; color: rgba(255,255,255,0.3);
+        width: /*50%*/60%; font-size: 14px; font-style: italic; max-width: 510px; color: rgba(255,255,255,0.3);
+        line-height: 21px;
     }
     footer > div:nth-child(2) span{
-        width: 50%; right: 0; top: 60px; text-align: right;
+        width: /*50%*/40%; right: /*0*/15px; top: 60px; text-align: right;
     }
     footer > div:nth-child(2) span a{
         font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block;
@@ -318,7 +319,7 @@ a{
     footer > div:first-child span a:nth-child(3){background-image: url('../images/sns_03.png');}
 
     footer > div:nth-child(2) p{
-        width: 50%; font-size: 14px; font-size: italic; max-width: 510px; color: rgba(255,255,255,0.3);
+        width: 50%; font-size: 14px; font-style: italic; max-width: 510px; color: rgba(255,255,255,0.3);
     }
     footer > div:nth-child(2) span{
         width: 50%; right: 0; top: 60px; text-align: right;

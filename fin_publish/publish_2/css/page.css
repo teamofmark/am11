@@ -304,5 +304,43 @@
         color: rgba(28,30,35,0.5);
         /*  !important 는 조건, 환경 무관 최우선순위를 가져오기 때문에 특별한 상황에만 사용 할 것. */
     }
+
+    section.bestArea{
+        background-color: white; border-radius: 4px; margin-bottom: 50px;
+    }
+    section.bestArea h2{
+        font-size: 11px; color: #343e5c; line-height: 55px; text-align: center; font-weight: 600;
+        text-transform: uppercase; border-bottom: 1px solid #f0f2f7;
+    }
+    section.bestArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.bestArea ul li{
+        float: left; width: 25%; padding-bottom: 35px; display: block;
+    }
+    section.bestArea ul li:not(:first-child){
+        border-left: 1px solid #f0f2f7; box-sizing: border-box;
+    }
+    section.bestArea ul li figure img{
+        width: 100%;
+    }
+    section.bestArea ul li figure figcaption dl{
+        text-align: center;
+    }
+    section.bestArea ul li figure figcaption dl dt{
+        font-size: 16px; color: #343e5c; margin-bottom: 10px; font-weight: 600;
+    }
+    section.bestArea ul li figure figcaption dl dd:first-of-type{
+        font-size: 11px; color: #a1a8bd; margin-bottom: 20px;
+    }
+    section.bestArea ul li figure figcaption dl dd:last-of-type{
+        font-size: 14px; color: #343e5c; font-weight: 600;
+    }
+    section.bestArea ul li figure figcaption dl dd:last-of-type del{
+        color: #a1a8bd; margin-right: 20px;
+    }
+    /* ?bestArea Fin */
+
+    
 }
 /* ?desktop */

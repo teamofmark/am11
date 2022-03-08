@@ -3,22 +3,24 @@
 
 @media screen and (max-width: 767px){
     header + nav{
-        background-color: white;
+        background-color: white; margin-bottom: 30px;
     }
-    header + nav .slideNav:after{
+    /* header + nav .slideNav:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
-    header + nav .slideNav > *{
+    } */
+    /* header + nav .slideNav > *{
         float: left;
-    }
+    } */
     header + nav .slideNav ul{
-        width: /*80.34%*/ 53%; padding: 0 15px; box-sizing: border-box;
+        padding: 0 15px; box-sizing: border-box; text-align: center; white-space: nowrap;
+        overflow-x: scroll;
+        /*width: 53%;*/
     }
     header + nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
     header + nav .slideNav ul li/*:not(:last-child)*/{
-        float: left;
+        /* float: left; */ display: inline-block;
     }
     /* header + nav .slideNav ul li:last-child{
         float: right;
@@ -32,16 +34,18 @@
     }
 
     header + nav .slideNav input[type='search']{
-        margin-left: /*2.56%*/20%; width: /*17.1%*/27%; padding: 21px 2% 20px 4%; box-sizing: border-box;
+        display: none;
+        /* margin-left: 20%; width: 27%; padding: 21px 2% 20px 4%; box-sizing: border-box;
         border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
-        background: url('../images/bul_search.png') no-repeat /*12%*/ 5% center;
+        background: url('../images/bul_search.png') no-repeat 5% center; */
     }
     /* ?slide Nav Fin */
 
     section.slideArea{
-        background-color: #1c1e23; margin-bottom: 50px; line-height: 0;
+        display: none;
+        /* background-color: #1c1e23; margin-bottom: 50px; line-height: 0; */
     }
-    section.slideArea h2{
+    /* section.slideArea h2{
         display: none;
     }
     section.slideArea > div{
@@ -50,13 +54,13 @@
     section.slideArea > div > a{
         display: block; width: 42px; padding: 10px 0 14px; color: white; border-radius: 22px;
         font-size: 18px; font-weight: 600; text-align: center; border: 1px solid rgba(255,255,255,0.2);
-        position: absolute; top: /*45.8*/45%; z-index: 10; line-height: 19px;
+        position: absolute; top: 45%; z-index: 10; line-height: 19px;
     }
     section.slideArea > div > a.btn_conL{
-        left: /*4.27%*/ 2%;
+        left:  2%;
     }
     section.slideArea > div > a.btn_conR{
-        right: /*4.27%*/ 2%;
+        right:  2%;
     }
     section.slideArea > div ol{
         position: absolute; left: 50%; bottom: 10%; z-index: 1;
@@ -83,18 +87,18 @@
         width: 100%;
     }
     section.slideArea > div ul li figure figcaption{
-        left: /*15.21%*/ 10%; position: absolute; color: white; width: 40%; top: /*21%*/ 15%; max-width: 460px;
+        left: 10%; position: absolute; color: white; width: 40%; top: 15%; max-width: 460px;
     }
     section.slideArea > div ul li figure figcaption dl dt{
-        font-size: /*42px*/ 30px; font-weight: 900; line-height: /*50px*/35px; margin-bottom: 25px;
+        font-size:  30px; font-weight: 900; line-height: 35px; margin-bottom: 25px;
     }
     section.slideArea > div ul li figure figcaption dl dd{
-        font-size: /*16px*/ 13px; line-height: /*24px*/ 16px; margin-bottom: /*60px*/ 10px;
+        font-size:  13px; line-height:  16px; margin-bottom:10px;
     }
     section.slideArea > div ul li figure figcaption input[type='button']{
-        background-color: #2754eb; border: none; width: /*35.86%*/55%; border-radius: 21px; font-size: 11px;
+        background-color: #2754eb; border: none; width: 55%; border-radius: 21px; font-size: 11px;
         line-height: 42px; font-weight: 600; color: white;
-    }
+    } */
     /* ? slideArea Fin */
 
     .contentArea{
@@ -107,8 +111,9 @@
     /* .contentArea > form fieldset span.sbSelect{
         margin-left: 4.27%;
     } */
-    .contentArea > form fieldset span.selectBox,
-    .contentArea > form fieldset label[for='ship_Select']{
+    .contentArea > form fieldset span/*.selectBox*/,
+    .contentArea > form fieldset label:not([for='sb_keywords'])/*[for='ship_Select']*/,
+    .contentArea > form fieldset input:not(#sb_keywords){
         display: none;
     }
     .contentArea > form fieldset label{
@@ -117,21 +122,22 @@
     }
     .contentArea > form fieldset label[for='sb_keywords']
     /*,.contentArea > form fieldset label[for='ship_Select']*/{
-        padding-left: 2.56%; margin-left: 1.7%; border-left: 1px solid rgba(0,0,0,0.05);
+        padding-left: 2.56%;
+        /* margin-left: 1.7%; border-left: 1px solid rgba(0,0,0,0.05); */
     }
-    .contentArea > form fieldset input:not([type='checkbox']){
+    .contentArea > form fieldset input#sb_keywords/*:not([type='checkbox'])*/{
         font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
-        line-height: 30px; padding: 0 1%; box-sizing: border-box; border-radius: 16px;
+        line-height: 30px; padding: 0 /*1%*/3%; box-sizing: border-box; border-radius: 16px;
         color: #343e5c; font-weight: 600;
     }
-    .contentArea > form fieldset input:not([type='checkbox'])::placeholder{
+    .contentArea > form fieldset input#sb_keywords/*:not([type='checkbox'])*/::placeholder{
         color: #b9bfd3; font-weight: 600;
     }
     .contentArea > form fieldset input[type='search']{
-        width: /*14%*/20%;
+        width: /*20%*/ 65%; margin-left: 2%;
     }
-    .contentArea > form fieldset input[type='text']{
-        width: /*7%*/13%;
+    /* .contentArea > form fieldset input[type='text']{
+        width: 13%;
     }
     .contentArea > form fieldset input[type='search'],
     .contentArea > form fieldset input[id='range_minprice']{
@@ -142,14 +148,14 @@
         margin-left: 2.56%;
     }
     .contentArea > form fieldset label[for='freeShipCheck']{
-        padding-left: /*2.56%*/4.56%; color: #343e5c; transition: background 0.5s ease-out;
+        padding-left: 4.56%; color: #343e5c; transition: background 0.5s ease-out;
     }
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
         background: url('../images/bul_check.png') no-repeat left center;
     }
     .contentArea > form fieldset .shipSelect select{
         text-align: right;
-    }
+    } */
     /* ?sortBy Fin */
 
     .contentArea aside{

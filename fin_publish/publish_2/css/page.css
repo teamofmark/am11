@@ -159,9 +159,10 @@
     /* ?sortBy Fin */
 
     .contentArea aside{
-        width: 23%; float: left;
+        /* width: 23%; float: left; */
+        display: none;
     }
-    .contentArea aside nav{
+    /* .contentArea aside nav{
         background-color: white; border-radius: 5px; margin-bottom: 30px;
     }
     .contentArea aside nav ul li,
@@ -194,7 +195,7 @@
     }
     
     .contentArea aside fieldset{
-        background-color: white; border-radius: 5px; padding-top: /*28px*/ 48px;
+        background-color: white; border-radius: 5px; padding-top: 48px;
     }
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; border-bottom: 1px solid #f0f2f7; font-weight: 600;
@@ -204,17 +205,12 @@
         color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
     }
     .contentArea aside fieldset label{
-        font-size: 13px; color: #343e5c; cursor: pointer; padding-left: /*20.37%*/24.37%; display: inline-block;
+        font-size: 13px; color: #343e5c; cursor: pointer; padding-left: 24.37%; display: inline-block;
         box-sizing: border-box; font-weight: 500; line-height: 21px; margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center; width: 15%;
-        max-width: 76px; */ display: none;
+        display: none;
     }
-    /* .contentArea aside fieldset label,
-    .contentArea aside fieldset span{
-        line-height: 50px;
-    } */
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
         width: 83%; max-width: 215px;
@@ -224,9 +220,6 @@
     }
     .contentArea aside fieldset label[for*='dlvr']{
         width: 49%; max-width: 135px;
-    }
-    /* .contentArea aside fieldset label[for*='dlvr']:last-of-type{
-        border-left: 2px solid #f0f2f7;
     } */
     /* todo. inputCustomize */
 

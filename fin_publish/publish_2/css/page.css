@@ -317,6 +317,10 @@
         color: rgba(28,30,35,0.5);
         /*  !important 는 조건, 환경 무관 최우선순위를 가져오기 때문에 특별한 상황에만 사용 할 것. */
     }
+    .contentArea .paging{
+        display: none;
+    }
+    
 
     section.bestArea{
         background-color: white; border-radius: 4px; margin-bottom: 50px;
@@ -325,11 +329,12 @@
         font-size: 11px; color: #343e5c; line-height: 55px; text-align: center; font-weight: 600;
         text-transform: uppercase; border-bottom: 1px solid #f0f2f7;
     }
-    section.bestArea ul:after{
+    /* section.bestArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.bestArea ul li{
-        float: left; width: 25%; padding-bottom: 35px; display: block;
+        /* float: left; width: 25%; */
+        padding-bottom: 35px; display: block;
     }
     section.bestArea ul li:not(:first-child){
         border-left: 1px solid #f0f2f7; box-sizing: border-box;

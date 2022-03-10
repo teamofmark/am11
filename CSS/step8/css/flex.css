@@ -62,3 +62,13 @@
 .flexContainer.justifyContent .flexItem{
     margin: 0; 
 }
+
+.flexContainer.alignContent{
+    flex-wrap: wrap; justify-content: center; align-content: flex-end;
+    padding: 0; height: 400px;
+}
+.flexContainer.alignContent .flexItem{
+    margin: 0;
+}
+
+

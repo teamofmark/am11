@@ -129,3 +129,21 @@
     * flex-end (cross End 기준으로 정렬.)
     * center (flexContainer의 주축 중앙에 정렬.)
 */
+
+/* !이하 item */
+
+/* frontEnd -> css -> layout skill -> flex.(float x) */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 0;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 0;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: -1;
+}
+/* 
+    ? order:
+    * flexContainer의 flexItem을 0(default)을 기준으로 적은 수 일수록(음수가능) 먼저배치.
+*/

@@ -83,3 +83,49 @@
 .flexContainer.alignContent .flexItem{
     margin: 0;
 }
+
+.flexContainer.alignItems{
+    background-color: orange;
+    align-items: baseline;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-end;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+/* 
+    ?align-items : 
+    * flexItem을 line-height 기준으로 flexContainer의 수직방향 정렬
+    * align-items 속성은 모든 flexItem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 높이)
+    * flex-start (cross Start 기준으로 정렬)
+    * flex-end (cross End 기준으로 정렬)
+    * center (flexContainer의 주축 중앙에 정렬)
+    * baseline (안의 content end 기준으로 정렬.)
+*/
+
+.flexContainer.justifyItems{
+    background-color: yellow; display: grid; width: 500px;
+    justify-items: stretch;
+}
+.flexContainer.justifyItems .flexItem{
+    margin: 1px;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
+/* 
+    ? justify-items:
+    * flexItem을 parent Width기준으로 flexContainer의 수평 방향으로 정렬한다.
+    * justify-items 속성은 모든 flexitem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 너비)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center (flexContainer의 주축 중앙에 정렬.)
+*/

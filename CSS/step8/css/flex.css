@@ -199,3 +199,33 @@
     ! item의 너비를 정한다. 기본값은 auto 이며 다양한 단위 percentages(%) || ems || rems || pixels 를 사용 할 수있다.
     ! auto : 안의 컨텐츠의 길이만큼 너비가 늘어난다.
 */
+/* 
+    ! 주의
+    ! 1. shorthand로 묶어 사용할 시엔 따로 auto라고 선언하지 않으면 0이 된다.
+    ! 2. width와 중복될 경우 basis가 우선시 되기 때문에 중복사용 금지.
+    ! 3. content 값은 사용 할 수 없다. 만약 어쩔 수 없는 상황이라면 auto로 풀고 width를 사용하지 말아야 한다.
+
+    * 생략되는 형식
+    ? flex: none;
+    ? = flex-grow: 0; flex-shrink: 0; flex-basis: auto;
+
+    ? flex: <flex-grow>
+    ? = flex-shrink: 1; flex-basis: 0;
+
+    ? flex: <flex-basis>
+    ? = flex-grow: 1; flex-shrink: 1;
+
+    ? flex: <flex-grow> <flex-shrink>
+    ? = flex-basis: 0;
+
+    ? flex: <flex-grow> <flex-basis>
+    ? = flex-shrink: 1;
+
+    ! flex: 0 1 auto; 남는공간을 채우지 않는다. > 수축만 일어나며 content의 너비만큼 너비가 설정.
+    ! flex: none; = 자동계산 및 가변 불가.(ex> mobile..) > 남는공간을 채우지도 줄어들지도 않는다. content의 너비만큼 너비가 설정.
+    ! flex: auto; = 1 1 auto. > content 개수만큼 비율로 분배되고, content의 너비만큼 너비가 설정.(만약 그 너비가 content보다 작을때 -> item이 container의 너비를 넘는다.)
+
+    ! 모든 항목에서 알아둬야할 사항.
+    ! 1. flexItem의 크기가 각자 다른 경우, 남은 공간은 균등하게 분배되지 않고 flexItem의 크기에 정비례하여 분배된다.
+    ! 2. container의 item에 적용된 margin, padding의 영향으로 오차 발생.
+*/

@@ -25,3 +25,21 @@
     * 4. 멤버변수 - class = 집합(특정분류의) 내부에 만들어지면서 동시에 객체(object)에서 사용하는 정보를 담는 변수.
 */
 
+// *case.1 변수 만들기.
+var name = "Mark";
+
+// *case.1-2 한번에 만들기.
+var name = "mark", age = "40";
+
+// *case.2 선언? 초기화?
+var radius;
+var radius = ''; //? '' < string(문자형data). ex> '1' 문자 일, 1 숫자 일
+
+// *case.3 변수의 특성.
+var cup = 'Coffee'; //? 컵에 커피를 담았다.
+cup = 'Green Tea'; //? 컵에 커피를 버리고, 녹차를 담았다.
+cup = 'Water';//? 컵에 녹차를 또 버리고, 물을 담았다.
+
+function callCup(){
+    console.log(cup);
+}

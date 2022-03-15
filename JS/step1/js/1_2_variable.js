@@ -43,3 +43,7 @@ cup = 'Water';//? 컵에 녹차를 또 버리고, 물을 담았다.
 function callCup(){
     console.log(cup);
 }
+
+// *case.4 연산자 사용시.
+var value = 10;
+value += 20;

@@ -90,10 +90,10 @@ function logicalOperator2(){
 
 // todo. 다음 코드를 작성 후 결과를 예상한 다음 출력하라.
 function compareOperator4(){
-    console.log(30 > 20 > 10); //? 결과 : 
+    console.log(30 > 20 > 10); //? 결과 : false.
 }
 
 // todo. 위 예제의 결과를 정상적인 결과로 수정하기.
 function compareOperator4R(){
-    console.log(?);
+    console.log(30 > 20 && 20 > 10);
 }

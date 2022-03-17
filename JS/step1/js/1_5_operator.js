@@ -45,9 +45,55 @@ function numberPlusAfter(){
 // todo. 증감연산자 복합.
 function numberPlusTodo(){
     var number = 10;
-    alert(number++); // ? 출력 : 현재 : 
-    alert(--number); // ? 출력 : 현재 : 
-    alert(++number); // ? 출력 : 현재 : 
-    alert(number--); // ? 출력 : 현재 : 
-    console.log(number); // ? 출력 : 현재 : 
+    alert(number++); // ? 출력 : 10 현재 : 11 
+    alert(--number); // ? 출력 : 10 현재 : 10
+    alert(++number); // ? 출력 : 11 현재 : 11
+    alert(number--); // ? 출력 : 11 현재 : 10
+    console.log(number); // ? 출력 : 10.
+}
+
+// *case. 5 숫자 10이 담긴 변수 a와 숫자 20이 담긴 변수b의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10, b = 20;
+    var result = a > b; // ? 결과반환은 boolean.
+    console.log("10 > 20 = " + result);
+}
+
+// *case.6 숫자 10이 담긴 변수a와 숫자 20이 담긴 변수b가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a == b;
+    console.log("10 = 20 ? " + result);
+}
+// todo. 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b가 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10과 20은 다릅니까?" + result);
+}
+// *case. 7 a변수에는 '여자', b변수에는 '웹디자이너'라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장 후 출력.
+function logicalOperator1(){
+    var a = '여자';
+    var b = '웹디자이너';
+    var result = (a=="여자")&&(b=="웹디자이너");
+    console.log("result = " + result);
+}
+// *case. 8 a변수에는 '남자'. b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지  result 변수에 저장 후 출력.
+function logicalOperator2(){
+    var a = "여자";
+    var b = "웹퍼블리셔";
+    var result = (a=="남자")||(b=="웹퍼블리셔");
+    console.log("result = " + result);
+}
+
+// todo. 다음 코드를 작성 후 결과를 예상한 다음 출력하라.
+function compareOperator4(){
+    console.log(30 > 20 > 10); //? 결과 : 
+}
+
+// todo. 위 예제의 결과를 정상적인 결과로 수정하기.
+function compareOperator4R(){
+    console.log(?);
 }

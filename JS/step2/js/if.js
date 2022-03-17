@@ -52,5 +52,24 @@ function mealTime(){
     }else{ //? 그마저도 아닐 시 저녁.
         alert('저녁먹을시간');
     }
+}
+// *case.4 숫자판별(양,음수)
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요','양,음수 상관없음.');
+    console.log(typeof(numb) + ' = ' + numb);
+    
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('0 이거나 잘못된 값이 입력되었습니다.');
+    }
+}
+// todo. 홀,짝 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요', '홀,짝을 구분해드립니다.');
 
+    
+    // ?조건처리부
 }

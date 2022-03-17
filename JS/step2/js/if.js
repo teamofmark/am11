@@ -69,7 +69,24 @@ function numbJudgment(){
 // todo. 홀,짝 판별
 function oddOrEven(){
     var numb = prompt('숫자를 입력하세요', '홀,짝을 구분해드립니다.');
-
-    
+    if(numb%2 == 0){
+        alert('짝수입니다.');
+    }else if(numb%2 == 1){
+        alert('홀수입니다.');
+    }else{
+        alert('값똑바로넣어');
+    }
     // ?조건처리부
 }
+
+
+// *case.6 사용자 id를 입력받아 맞다면 승인메시지 출력.
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID == "Mark"){
+        alert('접속을 승인합니다.');
+    }else{
+        alert('잘못된 ID입니다.');
+    }
+}
+// todo. 사용자 id "mark"와 password"1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력. 

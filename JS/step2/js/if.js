@@ -100,6 +100,15 @@ function userInfoCheck(){
         alert('ID 혹은 Password가 틀렸습니다.');
     }
 }
+
+// !간소화
+function userInfoCheck1(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+
+    (userID == "Mark"&&userPW=="1234")? alert("Mark로 확인됨.") : alert("ID 혹은 Password가 틀렸음.");
+}
+
 // todo. 사용자 id "mark"와 password"1234"를 입력받고 정보가 틀릴 경우 틀린정보에 대한 오류 메시지출력.
 function userInfoCheck2(){
     var userID = window.prompt('사용자의 아이디');

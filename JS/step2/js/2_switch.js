@@ -45,9 +45,25 @@ function calculator(){
     var firstNumb = window.prompt('첫번째 숫자를 입력해주세요.');
     var operator = window.prompt('사칙연산자중 하나를 입력해주세요.(+,-,*,/)');
     var lastNumb = window.prompt('두번째 숫자를 입력해주세요.');
+    
+    firstNumb = parseInt(firstNumb);
+    lastNumb = parseInt(lastNumb);
 
-
-    switch(key){
-        case val:
+    switch(operator){
+        case "+":
+            alert(firstNumb + lastNumb);
+            break;
+        case "-":
+            alert(firstNumb - lastNumb);
+            break;
+        case "*":
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default:
+            alert("잘못된 연산자입니다.");
+            break;
     }
 }

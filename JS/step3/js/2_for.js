@@ -29,3 +29,10 @@ function namePrint1000(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+// todo. JSEngine처럼 생각하기
+function thinkJS(){
+    for (var i = 0; i < 10; i++){ //?
+        document.write('i = ' + i, '<br>'); //?
+    }
+    document.write('종료 i = ' + i); //? 
+}

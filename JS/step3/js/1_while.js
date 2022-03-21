@@ -39,3 +39,20 @@ function whileBreak(){
     }
     document.write('최종 i = ' + i + '<br>'); //? 증감부가 1회만 구동된 상태로 최종결과 출력.
 }
+// todo. 구구단 숫자를 입력받아 출력하는 while문
+// ? 1. 숫자(단수)입력받을 prompt출력.
+// ? 2. 입력받으면 해당 구구단을 출력.
+// * 9단 이내로만 입력받기. ex> 9단이 넘어갈 시 '9단 이하로 입력하세요'.
+function gugudan(){
+    var guguNumb = window.prompt('구구단숫자를 입력하세요.(1~9)');// ? prompt로 입력받아서 변수에 담기.
+    var i = 1;// ? 증감부 변수.
+    // ? 조건부 (9단 이내 / 아닐때) -> 이 조건이 참일때 while. 그외는 경고창.
+    if(guguNumb <= 9){
+        while(i <= 9){
+            document.write(guguNumb + 'x' + i + '=' + guguNumb*i + '<br>');
+            i++;
+        }
+    }else{
+        alert('9단 이하로 입력하세요.');
+    }
+}

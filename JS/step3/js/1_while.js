@@ -62,13 +62,19 @@ function gugudan(){
 // * 'end'가 입력되었을 때 '입력이 종료되었습니다.' 경고창이 출력.
 // * prompt 상단 guide에 i번째 출력.
 function sumNumb(){
-    // ? prompt count 변수.
-    // ? 입력받은 숫자를 계속 더해서 담아낼 결과 변수.
+    var i = 1;// ? prompt count 변수.
+    var result = 0;// ? 입력받은 숫자를 계속 더해서 담아낼 결과 변수.
 
     // ? 반복 -> 무한반복.
-        // ? prompt 띄워주기
-        // ? 'end' string과 관련된 조건문 부분이 있어야된다.( loop를 종료 시킬수 있어야 함.)
+    while(true){
+        var numb = window.prompt(i + '번째 입력'); // ? prompt 띄워주기
+        if(numb == "end"){
+            alert('입력이 종료되었습니다.');
+            break;
+        }// ? 'end' string과 관련된 조건문 부분이 있어야된다.( loop를 종료 시킬수 있어야 함.)
 
-        //? 결과변수에 저장.
-        //? 저장된값을 출력.
+        result += parseInt(numb);//? 결과변수에 저장.
+        document.write('현재까지의 총합 : ' + result + '<br>');//? 저장된값을 출력.
+        i++; //? 수행시 prompt count 증가.
+    }
 }

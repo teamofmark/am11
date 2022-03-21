@@ -21,21 +21,21 @@ function pwCheck(){
 // *case.2 while Continue
 function whileContinue(){
     var i = 1;
-    while(i <= 10){ //?
-        i++; //?
-        continue; //?
+    while(i <= 10){ //? 총 10회 반복
+        i++; //? i 초기값부터 10번증가.
+        continue; //? continue로 인해 하단 logic 수행 불가.
 
-        document.write(i + '<br>'); //?
+        document.write(i + '<br>'); //? color 로 보인다.(vsCode)
     }
-    document.write('최종 i = ' + i + '<br>'); //?
+    document.write('최종 i = ' + i + '<br>'); //? 최종결과만 출력.
 }
 // *case.3 while Break
 function whileBreak(){
     var i = 1;
-    while(i <= 10){ //?
-        i++; //?
-        break; //?
-        document.write(i + '<br>'); //?
+    while(i <= 10){ //? 총 10회 반복
+        i++; //? i 초기값 부터 10번 증가.
+        break; //? break로 인해 loop 탈출.
+        document.write(i + '<br>'); //? 실행불가
     }
-    document.write('최종 i = ' + i + '<br>'); //?
+    document.write('최종 i = ' + i + '<br>'); //? 증감부가 1회만 구동된 상태로 최종결과 출력.
 }

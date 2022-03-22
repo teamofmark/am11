@@ -31,8 +31,38 @@ function namePrint1000(){
 }
 // todo. JSEngine처럼 생각하기
 function thinkJS(){
-    for (var i = 0; i < 10; i++){ //?
-        document.write('i = ' + i, '<br>'); //?
+    for (var i = 0; i < 10; i++){ //? 10보다 작을 때 (0 ~ 9) 까지만 반복 수행
+        document.write('i = ' + i, '<br>'); //? 0 ~ 9 번까지 출력. i가 10이되는 순간 break.
     }
-    document.write('종료 i = ' + i); //? 
+    document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
+}
+
+// todo. 1 - 10까지 출력되는 반복문의 여러 방법.
+
+function answer1(){
+    for(var i = 0; i < 10; i++){
+        document.write((i+1)+"<br>");
+    }
+}
+function answer2(){
+    for(var i = 1; i<=10; i++){
+        document.write(i+"<br>");
+    }
+}
+function answer3(){
+    for(var i= 100; i<110; i++){
+        document.write((i-99) + "<br>");
+    }
+}
+function answer4(){
+    for(var i = 1; i<=10; i+=2){
+        document.write(i + '<br>');
+        document.write((i+1) + '<br>');
+    }
+}
+function answer5(){
+    // todo. 1~10까지 나오기만 하면됨.
+    for(var i = 10; i>=1; i--){
+        document.write((11-i)+'<br>');
+    }
 }

@@ -92,3 +92,75 @@ function arrayFor(){
         document.write((i+1) + '번째 내용 = ' + data[i] + '<br>');
     }
 } 
+
+function arrayForES6(){
+    var data = ['변수','연산자','형변환','조건문if','조건문switch','반복문while','반복문for']; //? 배웠던 js 단원명 배열화.
+    for(let i = 0; i < data.length; i++){
+        const element = data[i];
+        document.write(i + '번째 내용 = ' + element + '<br>');
+    }
+}
+
+// *case.4 역반복배열
+function reverseFavorFluit(){
+    var array = ['딸기','수박','망고','포도'];
+
+    for (var i = array.length - 1; i>=0; i--){
+        document.write(array[i]);
+    }
+}
+
+// *case.5 continue
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i +'<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+
+// *case.5-1 활용
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i<=10; i++){
+        if(i%2==1){
+            continue;
+        }
+        output += i; //? i = 짝수만 들어옴. 짝수는 계속해서 누적하여 더해지겠지. = 짝수의 누적증가총합.
+        alert(output);
+    }
+}
+
+// *case.6 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = '+ i + '<br>');
+}
+// *case.6-1 활용
+function runBreak(){
+    for (var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속하시겠습니까?')){
+            break;
+        }
+    }
+}
+
+// !다중 for
+
+// *case.1 반절피라미드
+
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){ //?
+        for(var j = 0; j < i; j++){ //?
+            star += '*'; //?
+        }
+        star += '<br>';// ? 너가 무슨 반복 담당할래? -> 줄바꿈(br)
+    }
+    document.write(star); //?
+}
+//*todo.1 역반절 피라미드

@@ -164,3 +164,29 @@ function halfPyramid(){
     document.write(star); //?
 }
 //*todo.1 역반절 피라미드
+
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--) { //?
+        for (var j = 0; j < i; j++) { //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star);
+}
+// todo. pyramid
+function pyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star +="&nbsp;";
+        }
+        for(var s = 0; s < 2*i-1; s++){ //? sfor = i가 들어올때마다 홀수화 됨(1,3,5,7,9,11..)
+            star += "*";
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// ? 공백을 담당할 loop, *를 출력할 loop, <br>을 담당할 loop

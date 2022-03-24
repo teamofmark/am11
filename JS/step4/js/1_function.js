@@ -39,3 +39,35 @@ function sumAll(){
     }
     return willReturn;
 }
+
+// *case.4 returnExample
+function f(x){
+    return x * x;
+}
+// *case. 5 두 수를 매개변수로 받고, 두 값을 더한 결과값을 리턴하는 함수를 만들어보자.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+var value = sumReturn1(10,20);
+
+// *case.6 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수.
+// ! 단 입력값이 0 이면 즉시 실행 중지.
+
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt("숫자만 입력해라."));
+        if(value == 0){
+            document.write('종료!');
+            return;
+        }
+
+        sum += value;
+        document.write(count + "." + sum + "<br>");
+        count++;
+    }
+    document.write("총 " + count + "번 실행함");
+}

@@ -71,3 +71,14 @@ function infiniteSum(){
     }
     document.write("총 " + count + "번 실행함");
 }
+
+// todo.1 구구단 출력을 함수로 만들기.
+function printGugudan(){
+    for(var i = 2; i <= 9; i++){
+        document.write(i + "단 출력", "<br>");
+        for(var m = 1; m <= 9; m++){
+            document.write(i + "*" + m + "=" + (i*m), "<br>");
+        }
+        document.write("<br>");
+    }
+}

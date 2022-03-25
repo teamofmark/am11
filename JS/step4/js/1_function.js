@@ -168,3 +168,56 @@ function div(numb1,numb2){
     divResult = numb1 / numb2;
     return divResult;
 }
+
+// *case.7 함수를 변수에 담기.
+
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+
+// *case.8 매개변수 값으로 함수 넘기기.
+function hi1(){
+    console.log("Hello.");
+}
+function hi2(){
+    console.log("안녕하세요.");
+}
+function execute(func){
+    func();
+}
+
+// *case.8 button click시 매개변수 값으로 넘긴 함수 호출하기.
+function welcome(){
+    alert('환영합니다. 반갑습니다.');
+}
+$(document).ready(function(){
+    $("#runEx8").click(welcome);
+});
+
+// *case.9 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('hi,hello!');
+    },1000);
+}
+
+// todo. justFunction함수를 매개변수로 전달받아 for문으로 10번 반복호출하기.
+function justFunction(){
+    document.write('hello world', '<br>');
+}
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+
+// *case. 10 return Value로 함수를 사용하기.
+function createHello(){
+    function hello(user){//? user 매개변수 생성하는 hello 함수 만들기
+        document.write(user + 'welcome!');
+    }
+    return hello; //?createHello가 호출되는 곳으로 생성된 hello함수 return.
+}
+var result = createHello(); //? createHello 호출부기 때문에 hello함수가 들어옴.
+// ? result = hello function 과 같음.

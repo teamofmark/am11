@@ -221,3 +221,17 @@ function createHello(){
 }
 var result = createHello(); //? createHello 호출부기 때문에 hello함수가 들어옴.
 // ? result = hello function 과 같음.
+
+/*
+    ?리터럴 방식
+    * var age = 10, var name = "Mark";
+
+    *var hello = function(name){
+    *    alert(name + "hello");
+    * }
+    * 
+    ?객체방식
+    * var age = new Number(10);
+    * var name = new String("Mark");
+    * var hello = new Function("name", "alert(name+'hello');");
+*/

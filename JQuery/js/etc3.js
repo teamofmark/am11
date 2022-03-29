@@ -42,6 +42,7 @@ function tabUI(){
         $(this).addClass("activated");
         // todo. tabPage 같이 묶어 키고 끄기.
 
-        
+        $(".tabPage").removeClass("activated");
+        $("#"+activeTab).addClass("activated");
     });
 }

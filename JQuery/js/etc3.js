@@ -19,5 +19,16 @@ function toggleCheck(){
 }
 
 function toggleTodo(){
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var toggleStatus = false;
+
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $toggleTarget.text("visibility");
+        }else{
+            $toggleTarget.text("visibility_off");
+        }
+    });
 
 }

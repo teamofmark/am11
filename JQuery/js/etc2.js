@@ -95,12 +95,33 @@ function keyControl(){
         
         switch(e.keyCode){
             case 87:
-                alert('위방향 테스트');
+                currentYpos -= range;
                 break;
-            default:
-                alert('다른키');
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
                 break;
         }
         // todo . 움직임 완성. (필수). 조건안에 갇히게 만들기(0,380) (선택)
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
     });
 }

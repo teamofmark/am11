@@ -2,6 +2,7 @@ $(document).ready(function(){
     toggleCheck();
     // todo. 자신만의 component 한개 만들기.
     toggleTodo();
+    tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -31,4 +32,16 @@ function toggleTodo(){
         }
     });
 
+}
+
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        var activeTab = $(this).attr("data-tabNumb");
+
+        $('.tabMenu li').removeClass("activated");
+        $(this).addClass("activated");
+        // todo. tabPage 같이 묶어 키고 끄기.
+
+        
+    });
 }

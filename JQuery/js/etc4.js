@@ -1,5 +1,6 @@
 $(document).ready(function(){
     imgAlignHori();
+    imgAlignMix();
 });
 
 function imgAlignHori(){
@@ -18,4 +19,9 @@ function imgAlignHori(){
     $(".reset").click(function(){
         img.css("left",0);
     });
+}
+function imgAlignMix(){
+    // ? x좌표,y좌표
+    // ? -> x의 좌표는 0,1,2번 img는 0,1,2를 곱하지만 3에서는 다시 0이 되어야 한다.
+    // ? -> y의 좌표는 0,1,2번 img는 0,0,0,을 곱하지만 3부터 5까지는 1을 곱해야 한다.
 }

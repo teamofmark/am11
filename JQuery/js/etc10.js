@@ -4,12 +4,12 @@ $(document).ready(function(){
     var runStep = 10;
     var xpos = $circle.position().left;
     var railWidth = $("#rail").width();
-
-    startMove($circle, runStep, xpos, railWidth);
+    var timerID = 0;
+    startMove($circle, runStep, xpos, railWidth, timerID);
 });
-function startMove($circle, runStep, xpos, railWidth){
+function startMove($circle, runStep, xpos, railWidth, timerID){
     $("#btn_start").click(function(){
-        setInterval(function(){
+        timerID = setInterval(function(){
             xpos += runStep;
 
             $circle.css({
@@ -17,8 +17,15 @@ function startMove($circle, runStep, xpos, railWidth){
             });
             if(xpos > railWidth || xpos < 0){
                 // todo. 원의 움직임에 방향전환
-                
+                runStep *= -1;
             }
         },0);
+
+        return stopMove(timerID);
+    });
+}
+function stopMove(timerID){
+    $("#btn_stop").click(function(){
+        clearInterval(timerID);
     });
 }

@@ -52,5 +52,12 @@ function updateFishPosition(){
 }
 // todo. 물고기 위치 출력함수 만들기
 function displayFishPositionInfo(){
+    var infoText = "";
 
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i); // ? nth물고기.
+        infoText += i + "번 물고기 : " + $fish.position().left + "px <br>"; // ? 문구완성
+    }
+
+    $info.html(infoText);// ? 출력부 - 전광판 아이디 불러다 값넣어주기.
 }

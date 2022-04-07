@@ -36,3 +36,9 @@
 .customPager li a img{
     width: 100%;
 }
+
+/* controlPart */
+.newControler a{
+    display: block; text-decoration: none;
+    font-size: 20px;
+}

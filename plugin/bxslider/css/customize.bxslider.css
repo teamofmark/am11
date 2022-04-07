@@ -1,0 +1,11 @@
+.bx-wrapper .bx-caption{
+    background-color: rgba(255,0,0,0.5); bottom: 20px; font-weight: 700;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: transparent; border: 1px solid cyan;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    border: 1px solid darkblue; background-color: darkblue;
+}

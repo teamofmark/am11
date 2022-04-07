@@ -17,6 +17,13 @@ $(document).ready(function(){
         // * adaptiveHeight
         adaptiveHeight: true, //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
         adaptiveHeightSpeed: 750, //? default : 500. adaptiveHeight 작동속도.
+
+        easing: 'ease-in-out', //? default : null. slide간 전환 가속도 설정. CSS timing-function option 사용가능.
+        captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 이미지 위로 보여준다.
+        video: true, //? default: false. video 활성화.(slide에 video가 있을 시만) fitvids.js를 연결해두면 iframe,video등의 width,height 자동설정 가능. 
+        responsive: true //? default: true. slider 자체 반응형 켜기.
+
+        // *pager - indicator
         
     });
 });

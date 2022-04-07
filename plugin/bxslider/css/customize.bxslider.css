@@ -24,3 +24,15 @@
     font-size: 14px; border-radius: 5px;
     background-color: #c4c4c4; padding: 5px;
 }
+.customPager{
+    text-align: center;   
+}
+.customPager li{
+    display: inline-block;
+}
+.customPager li a{
+    display: block;
+}
+.customPager li a img{
+    width: 100%;
+}

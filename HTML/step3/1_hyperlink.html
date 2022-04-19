@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyperLink</title>
+    <style>
+        html, body{height: 100%;}
+        #targetAnchor{height: 100%;}
+    </style>
 </head>
 <body>
     <h1>하이퍼링크 목록</h1>
@@ -36,7 +40,10 @@
         -->
         <li><a href="tel:+821056658312">걸기</a></li>
         <!-- *tel: 로 선언하면 전화걸기 기능이 가능하고 모바일에서는 다이얼패드가열린다. -->
-        <li><a href=""></a></li>
+        <li><a href="#targetAnchor">바로가기테스트</a></li>
     </ul>
+    <div id="targetAnchor">
+        목표지점
+    </div>
 </body>
 </html>

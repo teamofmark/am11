@@ -42,7 +42,37 @@
                         </optgroup>
                     </select>
                 </li>
+                <li>
+                    <input type="image" src="https://via.placeholder.com/100x30?text=button" alt="undefined">
+                    <input type="file">
+                    <input type="button" value="비밀번호확인">
+                    <button>비밀번호확인</button>
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" placeholder="8자미만" maxlength="8" required autofocus readonly>
+            <input type="email" placeholder="example@example.com">
+            <!-- ? default : @, 영문으로 셋팅 -->
+            <input type="url" placeholder="https://file-examples.com">
+            <!-- ? default : domain(.com,.co.kr,.net,.or.kr....), www, http:// protocol 자동으로 인식 -->
+            <input type="search" placeholder="검색어를 입력하세요." autocomplete="on">
+
+            <input type="number" min="1" max="10" step="1" value="1">
+            <!-- ?최저,최대,상승값,초기값 -->
+            <!-- ! 일반 숫자를 넣는 곳에 사용하면 안됨. -->
+            <input type="range" min="-2" max="2" step="1" value="0">
+
+            <input type="date">
+            <input type="datetime-local">
+            <input type="month">
+            <input type="week">
+            <input type="time">
+            <!-- <input type="datetime"> -->
         </fieldset>
     </form>
 </body>

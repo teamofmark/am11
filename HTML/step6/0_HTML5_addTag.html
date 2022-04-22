@@ -58,5 +58,38 @@
         <input type="number" id="b" value="50"> =
         <output id="x" name="x" for="a b"></output>
     </form>
+    
+    <!--이하 IE7,8,9, safari 지원 불가-->
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!--select와 유사함. 입력요소에 대한사전 정의 목록을 넣어두는데 활용.
+        동시에 사용자가 입력필드에 해당 옵션일부를 작성하면 일치되는 결과값 출력.
+        (자동완성기능)-->
+
+
+    <!--대부분 브라우저 지원불가-->
+
+    <table>
+        <tr>
+            <th>January <dialog open>This is an open dialog window</dialog></th>
+            <th>February</th>
+            <th>March</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+    <!--해당 객체의 간단한 대화상자를 생성해 낼 수있다. 
+        open 값을 제하면, 안보이고
+        넣으면 보인다. 크롬, 오페라만 지원-->
 </body>
 </html>

@@ -2,7 +2,7 @@ p.classEx1{
     color: red;
 }
 .btn{
-    padding: 10px 30px; border-width: 1px; font-size: 12px;
+    padding: 10px 30px; border-width: 1px; font-size: 12px; text-decoration: none;
 }
 .btn.create{
     background-color: white; color: black; border-color: black; border-style: solid;
@@ -18,4 +18,13 @@ p.classEx1{
 }
 .btn.cancel{
     color: gray; border-color: gray; border-style: dotted;
+}
+/* 
+#userName{
+} */
+input[id^='user']{
+    border: 1px solid #eaeaea;
+    line-height: 21px; font-size: 12px;
+    padding: 5px 15px; color: green;
+
 }

@@ -26,3 +26,12 @@ dl dt{
 dl dd{
     color: brown;
 }
+section ul li figure figcaption dl{
+    background-color: palegreen;
+}
+section ul li figure figcaption dl dt{
+    color: forestgreen;
+}
+section ul li figure figcaption dl dd{
+    font-size: 40px;
+}

@@ -47,3 +47,10 @@ p.w_nowrap{
     * 4. 작은 애에게 상대적 수치(%)를 이용하여 나머지 설정을 마무리.
     ! 작은 애의 높이를 기준으로 100% 설정. 양수일 경우 위로, 음수일 경우 아래로.
 */
+p.t_indent{
+    text-indent: 50px; font-size: 30px;
+}
+.test{
+    width: 150px; line-height: 50px; border: none; font-size: 12px; color: rgba(0,0,0,0.3);
+    background: url('https://via.placeholder.com/150x50?text=blablaButton');
+}

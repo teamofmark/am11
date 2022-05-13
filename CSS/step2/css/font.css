@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 body{
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Noto Sans KR';
 }
 h1{
     font-size: 15px; line-height: 21px; color: #966; font-weight: 400;
@@ -14,4 +14,14 @@ h2{
 }
 h3{
     font-weight: 400; font-size: 13px; line-height: 19px; color: #f90;
+}
+
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+p.word{
+    word-spacing: 10px;
 }

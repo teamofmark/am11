@@ -3,3 +3,15 @@
 body{
     font-family: 'Nanum Brush Script', cursive;
 }
+h1{
+    font-size: 15px; line-height: 21px; color: #966; font-weight: 400;
+    /* ?-size : 크기, -weight : 굵기정도, line-height : 줄간, color : 글자색상 */
+}
+
+/* todo. font설정 변경해보기 */
+h2{
+    font-weight: 400; font-size: 20px; line-height: 26px; color: #06f;
+}
+h3{
+    font-weight: 400; font-size: 13px; line-height: 19px; color: #f90;
+}

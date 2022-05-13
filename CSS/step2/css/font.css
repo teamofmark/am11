@@ -51,6 +51,7 @@ p.t_indent{
     text-indent: 50px; font-size: 30px;
 }
 .test{
-    width: 150px; line-height: 50px; border: none; font-size: 12px; color: rgba(0,0,0,0.3);
+    width: 150px; line-height: 50px; border: none; font-size: 12px; color: rgba(0,0,0,1);
     background: url('https://via.placeholder.com/150x50?text=blablaButton');
+    text-indent: -9999px;
 }

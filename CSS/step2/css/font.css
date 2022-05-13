@@ -25,3 +25,11 @@ p.letter{
 p.word{
     word-spacing: 10px;
 }
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 20px;
+    border: 1px solid black;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap;
+    border: 1px solid black;
+}

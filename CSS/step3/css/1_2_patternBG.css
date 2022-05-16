@@ -1,0 +1,21 @@
+html, body, .wrap{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+    /* ? background-image(default) : pattern -> background-repeat(default) : repeat; */
+    background-repeat: repeat;
+}
+.wrap p{
+    background-color: paleturquoise; padding: 40px;
+}
+
+/* todo. 버튼에 images folder에 있는 pt_ex.png 파일을 이용해서 그라데이션 버튼 만들기 */
+/* 
+    todo.1 button 대상 선택.
+    todo.2 img의 형태를 파악.
+    todo.3 button의 규격을 정하고 배경을 설정.
+*/

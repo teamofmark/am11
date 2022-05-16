@@ -19,3 +19,7 @@ body{
     todo.2 img의 형태를 파악.
     todo.3 button의 규격을 정하고 배경을 설정.
 */
+.wrap button{
+    background-image: url('../images/pt_ex.png'); background-repeat: repeat-x;
+    color: white; width: 120px; line-height: 70px;
+}

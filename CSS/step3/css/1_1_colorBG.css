@@ -1,0 +1,12 @@
+html,body{
+    height: 100%;
+}
+body, .wrap p{
+    margin: 0;
+}
+.wrap{
+    background-color: palevioletred; height: 100%; padding-top: 20px;
+}
+.wrap p{
+    background-color: papayawhip; padding: 15px;
+}

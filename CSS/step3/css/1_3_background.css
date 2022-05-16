@@ -3,5 +3,11 @@ html,body{
 }
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* 
+        ? background-size:
+        * - width / height
+    */
 }

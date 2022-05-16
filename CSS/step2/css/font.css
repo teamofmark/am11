@@ -55,3 +55,6 @@ p.t_indent{
     background: url('https://via.placeholder.com/150x50?text=blablaButton');
     text-indent: -9999px;
 }
+a{
+    display: block;
+}

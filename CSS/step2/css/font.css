@@ -71,8 +71,12 @@ a.t_deco_T{
     text-decoration: line-through; text-transform: uppercase; color: #f63;
 }
 p.DR_ltr{
-    direction: ltr;
+    /* direction: ltr; */
+    text-align: left;
 }
 p.DR_rtl{
-    direction: rtl;
+    /* direction: rtl; */
+    text-align: right;
+    /* center : 중앙 */
 }
+/* ! text-align은 inline 관련 속성을 정렬 한다. */

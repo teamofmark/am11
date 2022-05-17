@@ -25,5 +25,11 @@ body{
         * preset - left,center,right - 좌,중,우 / top, center, bottom - 상,중,하
         * css 기본 방향은 정시방향(top right bottom left).
     */
-    
+    background-attachment: fixed;
+    /* 
+        ? background-attachment는 기본 scroll / fixed으로 고정가능.
+    */
+}
+p{
+    height: 2000px;
 }

@@ -1,0 +1,14 @@
+*{
+    margin: 0; padding: 0;
+}
+/* 
+    ? * - 전체선택자.
+    ! 단, 이 코드는 test용도로만 사용해야 함.
+*/
+html,body{
+    background: url('')
+    /* 
+        ? background shortHand
+        * background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color];
+    */
+}

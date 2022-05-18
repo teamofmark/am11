@@ -32,14 +32,14 @@ ul li.ironman{
 }
 /* todo. 나머지부분 풀어오기 */
 ul li.spiderman{
-    background-position: px px;
+    background-position: 0px -140px;
 }
 ul li.superman{
-    background-position: px px;
+    background-position: -160px -140px;
 }
 ul li.rangerRed{
-    background-position: px px;
+    background-position: -320px -140px;
 }
 ul li.rangerBlue{
-    background-position: px px;
+    background-position: -480px -140px;
 }

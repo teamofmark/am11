@@ -1,0 +1,19 @@
+div{
+    width: 300px; height: 150px;
+    margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+    /* * shortHand : width style color; */
+}
+.multiBox{
+    /* ? 속성별분리 : top right bottom left*/
+    /* border-width: 1px 3px 10px 25px;
+    border-style: solid dotted dashed double;
+    border-color: #666 #f06 #66f #fc6; */
+    /* ? 방향별분리 :  */
+    border-top: ;
+    border-right: ;
+    border-bottom: ;
+    border-left: ;
+}

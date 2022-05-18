@@ -42,3 +42,15 @@ border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
 .outsetBox:hover{
     border-style: inset;
 }
+.radiusBox{
+    background-color: goldenrod;
+    border-radius: 0;
+}
+.radiusBox:hover{
+    border-radius: 20px 20px 0 0;
+}
+.circleBox{
+    width: 500px; height: 500px;
+    background-color: midnightblue;
+    border-radius: 250px; text-indent: -9999px;
+}

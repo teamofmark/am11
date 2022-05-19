@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039;
+    color: white;
+}
+
+.secondDiv{
+    background-color: #ddd;
+    margin-top: 10px;
+    /* B/A */
+    padding: 0 10px 10px;
+}
+.secondDiv span{
+    margin-bottom: 10px; display: block;
+}
+.secondDiv article{
+    background-color: #930;
+    /* before :  margin: 10px; */
+}
+/* ! margin은 동일 방향에서 만날 경우 서로 상쇄 */
+/* ! 부모경계를 margin-bottom으로 밀어 낼시에(before) 부모경계선 밖으로 margin이 적용되는 문제*/

@@ -28,3 +28,12 @@ body{
 }
 /* ! margin은 동일 방향에서 만날 경우 서로 상쇄 */
 /* ! 부모경계를 margin-bottom으로 밀어 낼시에(before) 부모경계선 밖으로 margin이 적용되는 문제*/
+
+.centerDiv{
+    width: 300px; border: 5px solid #33f;
+    padding: 10px; text-align: center;
+    /* ! width = contentWidth + padding + border */
+    margin-left: auto;
+    /* margin: 0 auto; */
+    /* ! (부모의 width - 자손의 width) / 2 -> left, right 부여 */
+}

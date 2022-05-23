@@ -1,0 +1,29 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto;
+    /* ? 960px? -> 예전 desktop GuideLine. : resolution(해상도 : 1024px)
+        ? 현재 1024px -> 작은 tablet. / desktop: 1280px; -> 960(x), 1200px(o)*/
+}
+.wrap header{
+    background-color: #ff6a00;
+    padding-bottom: 10px;
+}
+
+.wrap header h1{
+    text-align: center; color: white; font-size: 20px; line-height: 55px; background-color: red;
+    width: 130px; float: left;
+}
+.wrap header nav{
+    float: left; width: 830px; background-color: blue;
+}
+.wrap header nav ul{
+
+}
+.wrap header nav ul li{
+
+}
+.wrap header nav ul li a{
+    color: white; 
+}

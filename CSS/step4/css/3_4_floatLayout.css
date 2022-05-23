@@ -1,0 +1,24 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto; background-color: palegoldenrod;
+}
+header{
+    background-color: paleturquoise;
+}
+header nav{
+    background-color: palegreen;
+}
+aside, section{
+    float: left; height: 800px; margin-bottom: 30px;
+}
+aside{
+    width: 200px; background-color: palevioletred;
+}
+section{
+    width: 760px; background-color: lightseagreen;
+}
+footer{
+    background-color: #f9f; clear: both;
+}

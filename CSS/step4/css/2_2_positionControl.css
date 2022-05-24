@@ -1,0 +1,18 @@
+body{
+    height: 3000px;
+}
+.position_A{
+    position: absolute; left: 300px; top: 300px; background-color: #fc0; width: 150px; height: 150px;
+}
+.position_R{
+    width: 150px; height: 150px; background-color: #0f0; position: relative; margin: 0 auto;
+    top: 100px;
+}
+.position_R .position_A2{
+    position: absolute; top: 50px; left: 50px; width: 50px; height: 50px; background-color: skyblue;
+}
+.position_F{
+    position: fixed; width: 100%; background-color: rgba(0,0,0,0.3); color: white;
+    top: 0; left: 0; line-height: 30px;
+}
+/* ? static 이라는 값은 position을 해제하고 기존 개체 속성으로 되돌려 놓는다. */

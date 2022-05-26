@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selector List</title>
     <link rel="stylesheet" href="css/1_selector.css">
+    <style>
+        #customCheck{
+            display: none;
+        }
+        #customCheck+label{
+            font-size: 40px;
+        }
+        #customCheck:checked+label{
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
+    <!-- <input type="checkbox" id="customCheck">
+    <label for="customCheck">checkLabel</label> -->
+
     <div class="tagSelector">
         <h1>h1 태그를 지목하여 css를 삽입</h1>
         <p>p 태그를 지목하여 css를 삽입</p>
@@ -75,6 +89,15 @@
                 부모의 구조가 동일함으로 밖에 위치한 span과 같은 영향을 받음.
             </span>
         </span>
+    </div>
+
+    <div class="sameSelector">
+        <h1>heading - 1</h1>
+        <h2>heading - 2</h2>
+        <h3>heading - 3</h3>
+        <h3>heading - 3</h3>
+        <h2>heading - 2</h2>
+        <h1>heading - 1</h1>
     </div>
 </body>
 </html>

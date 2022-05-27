@@ -88,3 +88,19 @@
 .stringAttrSelector2 h2[title$='여자']{
     color: pink;
 }
+
+.eventSelector a:link{
+    font-size: 13px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
+}
+/* ? a:visited => a:link. font-size변경불가 */
+
+/*반응선택자 - 링크 수업 부분 과 동일*/

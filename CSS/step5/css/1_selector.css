@@ -135,9 +135,26 @@
 .normalSelector ul li:last-child{
     border-radius: 0 10px 10px 0;
 }
-.normalSelector ul li:nth-child(odd){
+.normalSelector ul li:nth-child(2n+1){
     background-color: #444; color: white;
 }
-.normalSelector ul li:nth-child(even){
+.normalSelector ul li:nth-child(2n){
     background-color: #09f;
 }
+/* 
+    todo. http://nthmaster.com/
+*/
+
+.normalSelector2 h1:nth-of-type(2){color: #30f;}
+.normalSelector2 h2:nth-of-type(2){color: #0c6;}
+.normalSelector2 h3:nth-of-type(2){color: #f06;}
+/* 
+    * first(첫), last(마지막) - of-type에도 적용.
+    * nth - child개념과 마찬가지로 수열 사용 가능.
+    * 전체선택자(*)와 혼용하여 body > *:first-of-type 이런 방식도 가능
+    ! body > *:first-child
+*/
+
+/* .normalSelector2 :nth-child(6){color: #30f;}
+.normalSelector2 :nth-child(5){color: #0c6;}
+.normalSelector2 :nth-child(4){color: #f06;} */

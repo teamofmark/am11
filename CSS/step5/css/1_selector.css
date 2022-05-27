@@ -104,3 +104,20 @@
 /* ? a:visited => a:link. font-size변경불가 */
 
 /*반응선택자 - 링크 수업 부분 과 동일*/
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; height: 20px; overflow-y: hidden; transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+
+.statusSelector input[type='text']:focus{
+    border: 10px solid red;
+}
+.statusSelector input[type='text']:enabled::placeholder{
+    background-color: black; color: white;
+}
+.statusSelector input[type='password']:disabled::placeholder{
+    background-color: deeppink; color: black;
+}

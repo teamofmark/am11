@@ -158,3 +158,11 @@
 /* .normalSelector2 :nth-child(6){color: #30f;}
 .normalSelector2 :nth-child(5){color: #0c6;}
 .normalSelector2 :nth-child(4){color: #f06;} */
+
+.textSelector h1:first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px; font-size: 14px;
+    text-decoration: underline;
+}

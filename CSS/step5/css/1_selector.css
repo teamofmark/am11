@@ -202,3 +202,9 @@ ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 �
 모바일에서의 리스트 출력 작동법 및 스타일 이 된다.
 */
 
+.reactionSelector > *{
+    color: #fff;
+}
+.reactionSelector > *::selection{
+    background-color: black; color: yellow;
+}

@@ -22,5 +22,10 @@ body > div:first-of-type nav ul li{
     width: 25%; float: left; display: block;
 }
 body > div:first-of-type nav ul li a{
-    display: block; text-align: center;
+    display: inherit; text-align: center; text-decoration: none; font-size: 12px; color: #ea1d43;
+    text-transform: capitalize; padding: 10px 0;
+}
+body > div:first-of-type nav ul li a:hover,
+body > div:first-of-type nav ul li a.currentStat{
+    background-color: #ea1d43; color: white;
 }

@@ -1,0 +1,26 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0; height: 100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+body > div:first-of-type{
+    width: 50%; height: 50%; position: absolute; top: 25%; left: 25%; background-color: #333;
+
+}
+body > div:first-of-type nav{
+    margin-bottom: 30px;
+}
+body > div:first-of-type nav ul{
+    margin: 0; padding: 0;
+}
+body > div:first-of-type nav ul:after{
+    content: ''; display: block; clear: both;
+}
+body > div:first-of-type nav ul li{
+    width: 25%; float: left; display: block;
+}
+body > div:first-of-type nav ul li a{
+    display: block; text-align: center;
+}

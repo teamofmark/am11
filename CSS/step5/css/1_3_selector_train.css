@@ -10,9 +10,9 @@ body > div:first-of-type{
 
 }
 body > div:first-of-type nav{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
-body > div:first-of-type nav ul{
+body > div:first-of-type ul{
     margin: 0; padding: 0;
 }
 body > div:first-of-type nav ul:after{
@@ -28,4 +28,30 @@ body > div:first-of-type nav ul li a{
 body > div:first-of-type nav ul li a:hover,
 body > div:first-of-type nav ul li a.currentStat{
     background-color: #ea1d43; color: white;
+}
+body > div:first-of-type h1{
+    font-size: 14px; color: white; text-transform: capitalize; text-align: center;
+    margin: 0 0 25px;
+}
+body > div:first-of-type fieldset{
+    border: none; padding: 0; width: 90%; margin: 0 auto 25px;
+}
+body > div:first-of-type fieldset ul li{
+    display: block;
+}
+body > div:first-of-type fieldset ul li:first-of-type{
+    margin-bottom: 25px;
+}
+body > div:first-of-type fieldset ul li label{
+    width: 15%; display: block; text-align: center; background-color: #ea1d43; color: white;
+    text-transform: uppercase; font-size: 12px; padding: 10px 0; float: left;
+}
+body > div:first-of-type fieldset ul li input{
+    padding: 11px 2.5%; font-size: 12px; width: 85%; box-sizing: border-box; border: none;
+}
+body > div:first-of-type fieldset ul li input:focus{
+    background-color: #ea1d43;
+}
+body > div:first-of-type fieldset ul li input[type='password']:focus{
+    color: white;
 }

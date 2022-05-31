@@ -1,0 +1,24 @@
+body, article p{
+    margin: 0;
+}
+article:not(:last-child){
+    margin-bottom: 30px;
+}
+article:after{
+    content: ''; display: block; clear: both;
+}
+article > :first-child{
+    font-size: 200px; line-height: 140px;  width: 40%; background-color: gray; color: white;
+}
+article:nth-child(2n+1) > :first-child{
+    float: right; margin: 0 0 10px 30px;
+}
+article:nth-child(2n) > :first-child{
+    float: left; margin: 0 30px 10px 0;
+}
+article > p > *{
+    color: skyblue; background-color: transparent;
+}
+article > p > *:not(mark){
+    text-decoration: underline;
+}

@@ -37,11 +37,12 @@ body > div:first-of-type fieldset{
     border: none; padding: 0; width: 90%; margin: 0 auto 25px;
 }
 body > div:first-of-type fieldset ul li{
-    display: block;
+    display: block; margin-bottom: 25px;
 }
-body > div:first-of-type fieldset ul li:first-of-type{
+/*body > div:first-of-type fieldset ul li:first-of-type{
     margin-bottom: 25px;
 }
+*/
 body > div:first-of-type fieldset ul li label{
     width: 15%; display: block; text-align: center; background-color: #ea1d43; color: white;
     text-transform: uppercase; font-size: 12px; padding: 10px 0; float: left;
@@ -56,3 +57,12 @@ body > div:first-of-type fieldset ul li input[type='password']:focus{
     color: white;
 }
 /* todo. submit button 완성하기. */
+
+body > div:first-of-type fieldset input[type='submit']{
+   width: 100%; display: block; border: none; padding: 10px 0; background-color: #4e4e4e;
+    color: #ea1d43;
+    /* width: 90%; margin: 0 auto;  */
+}
+body > div:first-of-type fieldset input[type='submit']:hover{
+    background-color: #ea1d43; color: black; cursor: pointer;
+}

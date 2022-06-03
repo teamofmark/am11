@@ -41,4 +41,47 @@ ul li span:nth-child(2){
 ul li span:nth-child(4){
     width: 30%;
 }
+ul li:first-child span:not(:nth-child(2)){ /*? ul의 자손(li)중 첫번째 안에 자손(span)중 두 번째 제외한 나머지*/
+    color: palevioletred;
+}
+ul li:first-child span:nth-child(2){
+    color: palegoldenrod;
+}
+ul li:not(:first-child) span:nth-child(2){
+    color: black;
+}
+ul li:not(:first-child):hover span:nth-child(2){
+    color: springgreen;
+}
 /* 게시판 목록 hover부분 처리 및 pager , 검색 부 미 진행 */
+
+body > div{
+    position: relative; width: 50%; margin: 0 auto 15px; padding: 0 3%;
+}
+body > div a{
+    text-decoration: none; color: #555; display: block; text-align: center; line-height: 23px; font-size: 13px;
+}
+body > div > a{
+    position: absolute; width: 3%; top: 0;
+}
+body > div > a:first-of-type{
+    left: 0;
+}
+body > div > a:last-of-type{
+    right: 0;
+}
+body > div ol{
+    margin: 0; padding: 0;
+}
+body > div ol:after{
+    content: ''; display: block; clear: both;
+}
+body > div ol li{
+    display: block; float: left; width: 9%;
+}
+body > div ol li:not(:first-child){
+    margin-left: 1.11%;
+}
+body > div ol li a:hover{
+    background-color: darkorchid; color: white; border-radius: 5px;
+}

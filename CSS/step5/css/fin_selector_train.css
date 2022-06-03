@@ -82,6 +82,17 @@ body > div ol li{
 body > div ol li:not(:first-child){
     margin-left: 1.11%;
 }
+/* 
+    ? contentList 에서의 margin은 좌측을 불필요하기 때문에 :not(:first-child) / :not(3n+1)....
+    ! margin 계산시에는 작은 단위 부터 우선 계산을. (나머지 = 큰 단위. 대상 수만큼 나누기만 하면 끝)
+*/
 body > div ol li a:hover{
     background-color: darkorchid; color: white; border-radius: 5px;
+}
+body > form fieldset{
+    border: none; padding: 0; margin: 0; text-align: center;
+}
+body > form fieldset input[type='submit']{
+    border: 1px solid darkmagenta; background-color: plum; color: darkmagenta;
+    text-transform: uppercase;
 }

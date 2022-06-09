@@ -51,7 +51,10 @@ ul{
 .delay3 ul li:nth-child(3){transition-timing-function:;}
 .delay3 ul li:nth-child(4){transition-timing-function:;}
 .delay3 ul li:nth-child(5){transition-timing-function:;}
-
+/* 
+    ?
+    ? 가속도 운용 - https://cubic-bezier.com/
+ */
 .delay3 ul:hover li{
     height: 300px; background-color: #ff0;
 }

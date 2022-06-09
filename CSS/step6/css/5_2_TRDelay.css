@@ -46,11 +46,11 @@ ul{
     display: block; float: left; width: 20%; height: 0;
     transition-duration: 3s;
 }
-.delay3 ul li:nth-child(1){transition-timing-function:;}
-.delay3 ul li:nth-child(2){transition-timing-function:;}
-.delay3 ul li:nth-child(3){transition-timing-function:;}
-.delay3 ul li:nth-child(4){transition-timing-function:;}
-.delay3 ul li:nth-child(5){transition-timing-function:;}
+.delay3 ul li:nth-child(1){transition-timing-function: ease;}
+.delay3 ul li:nth-child(2){transition-timing-function: ease-in;}
+.delay3 ul li:nth-child(3){transition-timing-function: ease-out;}
+.delay3 ul li:nth-child(4){transition-timing-function: ease-in-out;}
+.delay3 ul li:nth-child(5){transition-timing-function:cubic-bezier(0,1.02,1,-0.03);}
 /* 
     ?
     ? 가속도 운용 - https://cubic-bezier.com/

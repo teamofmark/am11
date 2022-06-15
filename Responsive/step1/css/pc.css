@@ -1,0 +1,12 @@
+body{
+    font-family: 'Roboto';
+}
+h1{
+    color: orange; text-align: right;
+}
+blockquote{
+    color: red;
+}
+p{
+    color: darkgreen; text-align: center;
+}

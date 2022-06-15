@@ -1,0 +1,12 @@
+body{
+    font-family: 'Cinzel Decorative';
+}
+h1{
+    color: cornflowerblue; text-align: left;
+}
+blockquote{
+    color: purple; text-align: right;
+}
+p{
+    color: midnightblue; text-align: left;
+}

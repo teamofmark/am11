@@ -1,4 +1,34 @@
 
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: palevioletred; color: green; font-weight: normal;
+    }
+    h1{
+        font-size: 18px; line-height: 24px; margin-bottom: 30px;
+    }
+    blockquote{
+        background-color:forestgreen; color: white; margin-bottom: 20px; padding: 40px 0;
+    }
+    p{
+        font-size: 14px; text-align: center; line-height: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: portrait){
+    body{
+        background-color: palegreen; color: green; font-weight: normal;
+    }
+    h1{
+        font-size: 18px; line-height: 24px; margin-bottom: 30px;
+    }
+    blockquote{
+        background-color:forestgreen; color: white; margin-bottom: 20px; padding: 40px 0;
+    }
+    p{
+        font-size: 14px; text-align: center; line-height: 20px;
+    }
+}
+/* ?tablet Device - 사용자의 해상도가 768이상, 1280미만 일 때 위 code가 실행됨. */
 
 @media screen and (min-width:1280px){
     body{

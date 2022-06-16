@@ -1,16 +1,47 @@
 
-@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
+@media screen and (max-width: 767px) and (orientation: landscape){
     body{
-        background-color: palevioletred; color: green; font-weight: normal;
+        background-color: blue; color: cyan; font-weight: normal; text-align: left;
     }
     h1{
-        font-size: 18px; line-height: 24px; margin-bottom: 30px;
+        font-size: 14px; line-height: 20px; margin-bottom: 10px; text-align: left;
     }
     blockquote{
-        background-color:forestgreen; color: white; margin-bottom: 20px; padding: 40px 0;
+        background-color: paleturquoise; color: midnightblue; margin-bottom: 10px; padding: 20px 0;
     }
     p{
-        font-size: 14px; text-align: center; line-height: 20px;
+        font-size: 12px; text-align: left; line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: red; color: yellow;
+    }
+    h1{
+        font-size: 16px; line-height: 22px; margin-bottom: 20px; padding: 20px 0;
+    }
+    blockquote{
+        background-color: darkred; color: white; margin-bottom: 20px; padding: 20px 0; text-align: right;
+    }
+    p{
+        font-size: 12px; text-align: right; line-height: 20px;
+    }
+}
+/* ?mobile Device - 사용자의 해상도가 768미만일 때 위 code가 실행됨. */
+
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: palevioletred; color: darkmagenta; font-weight: normal; text-align: right;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; margin-bottom: 40px; text-align: right;
+    }
+    blockquote{
+        background-color: mediumorchid; color: black; margin-bottom: 30px; padding: 20px 0;
+    }
+    p{
+        font-size: 24px; text-align: right; line-height: 30px;
     }
 }
 

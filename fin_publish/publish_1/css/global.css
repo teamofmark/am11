@@ -104,7 +104,7 @@ a{
         margin-left: 0;
     }
     footer > div div h2{
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     footer > div div:first-of-type h2{
         line-height: 0;
@@ -134,4 +134,20 @@ a{
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
     }
+    footer > div div:nth-of-type(3) input{
+        float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; font-size: 14px; border: 1px solid rgba(255,255,255,0.5); background-color: transparent;
+        display: block; color: rgba(255,255,255,0.75); line-height: 43px; padding: 0 15px; box-sizing: border-box;
+    }
+    /* footer > div div:nth-of-type(3) input[type='email']::placeholder{} */
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%; line-height: 43px; border: none; text-indent: -9999px;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+    }
+    footer > div div:nth-of-type(3) ul{
+        clear: left;
+    }
+    /* todo. SNS ICON 배치하기 */
 }

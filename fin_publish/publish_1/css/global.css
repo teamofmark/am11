@@ -20,6 +20,11 @@ a{
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }
+    
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+    /* desktop Module,group */
 
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
@@ -87,4 +92,14 @@ a{
         background-color: #00e0d0; border-color: #00e0d0;
     }
     /* ? header Fin */
+
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 32%; margin: 0 0 70px 2%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
 }

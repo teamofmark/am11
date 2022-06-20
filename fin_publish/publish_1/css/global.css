@@ -3,11 +3,13 @@ header > div nav ul li a,
 header > div > ul li p,
 footer > div *,
 #about figcaption p,
-section.videoArea h2{
+section.videoArea h2,
+section.expArea ul{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
-#about figcaption h2{
+#about figcaption h2,
+section.expArea > *:not(ul){
     font-family: 'Playfair Display';
 }
 a{
@@ -17,6 +19,9 @@ a{
     font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block; color: #00e0d0;
     border: 1px solid #00e0d0; font-size: 16px;
 }
+[class$='Area'] > hr{
+    width: 5%; min-width: 50px; border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
+}
 /* All Use Part */
 
 @media screen and (min-width:1280px){
@@ -25,7 +30,8 @@ a{
         padding: 13px 0.6%; box-sizing: border-box;
     }
     #about,
-    footer > div{
+    footer > div,
+    section.expArea{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
     /* desktop Module,group */

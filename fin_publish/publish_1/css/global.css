@@ -82,6 +82,15 @@ a{
     header > div nav label.mui span:not(:last-of-type){
         margin-bottom: 3px;
     }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav ul{
+        height: 0; overflow-y: hidden; transition: height 1s ease-in-out;
+    }
+    header > div nav input[type='checkbox']#mnav:checked + ul{
+        height: 350px;
+    }
     header > div nav ul li{
         display: inline-block;
     }

@@ -141,7 +141,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        max-width: 940px; margin: 0 auto 70px; color: #413d4b; font-weight: 700; font-size: 22px;
+        max-width: /*940px*/728px; margin: 0 auto 70px; color: #413d4b; font-weight: 700; font-size: 22px;
         position: relative;
     }
     section.worksArea h2 a{
@@ -176,7 +176,7 @@
     }
     section.talkArea p{
         padding-top: 70px; background: url('../images/quote.png') no-repeat center top;
-        font-size: 16px; line-height: 26px; font-weight: 400; color: white; max-width: 770px;
+        font-size: 16px; line-height: 26px; font-weight: 400; color: white; max-width: /*770px*/ 728px;
         margin: 0 auto 45px;
     }
     section.talkArea p > *{
@@ -190,7 +190,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/ 728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -199,7 +199,7 @@
        font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: 40%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;

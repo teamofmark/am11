@@ -44,7 +44,7 @@ a{
     footer > div,
     section.expArea,
     section.contactArea{
-        max-width: 728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/ 600px; margin: 0 auto; padding: 70px 3%;
         /* 
             ? gutter
             * 1. width 자체(100%)에서 gutter만큼을 빼고 적용. margin: 0 auto; ex> 94% margin: 0 auto;
@@ -58,10 +58,10 @@ a{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: 728px; margin: 0 auto; position: relative;
+        max-width: /*728px*/ 600px; margin: 0 auto; position: relative; padding: 0 3%;
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -70,8 +70,17 @@ a{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%; box-sizing: border-box;
-        text-align: right;
+        /*position: absolute; right: 0; top: 0; padding-left: 130px; box-sizing: border-box;*/
+        width: /*100%*/50%; text-align: right; float: right; margin-left: 15%;
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block; margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
     }
     header > div nav ul li{
         display: inline-block;
@@ -216,8 +225,19 @@ a{
 }
 /* ? mobile Global. */
 
-@media screen and (min-width:768px) and (max-width: 1279px){
+/*
+@media screen and (min-width: 768px){
+    .mui{
+        display: none;
+    }
+}
+ ? desk & tab Global 
+ */
 
+@media screen and (min-width:768px) and (max-width: 1279px){
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }
@@ -399,6 +419,9 @@ a{
 
 @media screen and (min-width:1280px){
 
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }

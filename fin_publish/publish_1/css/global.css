@@ -44,6 +44,7 @@ a{
     footer > div,
     section.expArea,
     section.teamArea ul,
+    section.worksArea h2,
     section.contactArea{
         max-width: /*728px*/ 600px; margin: 0 auto; padding: 70px 3%;
         /* 

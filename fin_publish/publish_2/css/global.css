@@ -1,4 +1,25 @@
 
+.mont{
+    font-family: 'Montserrat';
+}
+.crim{
+    font-family: 'Crimson Pro';
+}
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.selectBox{
+    display: inline-block; padding-right: 20px; box-sizing: border-box;
+    background: url('../images/bul_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image: none; background-color: transparent;
+    -webkit-appearance: none; -moz-appearance: none; padding: 10px 0; font-size: 11px; color: #343e5c;
+}
 /* ? All Use */
 
 @media screen and (min-width: 1280px){

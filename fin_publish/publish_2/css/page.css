@@ -62,5 +62,22 @@
     section.slideArea > div > a.btn_conR{
         right: 11.78%;
     }
+    /* ? controler Fin */
+    
+    section.slideArea > div ol{
+        position: absolute; left: 47.85%; bottom: 6%; z-index: 1;
+    }
+    section.slideArea > div ol li{
+        display: inline-block;
+    }
+    section.slideArea > div ol li a{
+        display: block; width: 8px; height: 8px; text-indent: -9999px; border-radius: 6px;
+        border: 2px solid rgba(255,255,255,0.5); box-sizing: border-box;
+    }
+    section.slideArea > div ol li a:hover,
+    section.slideArea > div ol li a.active{
+        background-color: white;
+    }
+    /* ? indicator Fin */
 }
 /* ?desktop */

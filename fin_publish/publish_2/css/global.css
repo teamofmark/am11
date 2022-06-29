@@ -116,5 +116,37 @@ a{
         box-shadow: 0 5px 20px #dfe0e5;
     }
     /* ? pager Fin */
+
+    /* todo. footer */
+    footer{
+        background-color: #222328;
+    }
+    footer > div{
+        position: relative; padding: 60px 0;
+    }
+    footer > div span{
+        position: absolute; display: block;
+    }
+    footer > div:first-child{
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    footer > div:first-child h2{
+        position: absolute; left: 0; top: 60px; width: 7.69%; max-width: 92px;
+    }
+    footer > div:first-child h2 img{
+        width: 100%; min-width: 92px;
+    }
+    footer > div:first-child ul{
+        padding: 0 10%; text-align: center;
+    }
+    footer > div:first-child ul li{
+        display: inline-block;
+    }
+    footer > div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer > div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 600;
+    }
 }
 /* ?desktop */

@@ -134,8 +134,8 @@
     .contentArea > form fieldset input#range_minprice{
         margin-left: 0.85%;
     }
-    .contentArea > form fieldset label[for='range_minprice']
-    {
+    .contentArea > form fieldset label[for='range_minprice'],
+    .contentArea > form fieldset label[for='freeShipCheck']{
         margin-left: 2.56%;
     }
     .contentArea > form fieldset span.sbSelect{
@@ -147,7 +147,16 @@
     .contentArea > form fieldset input[type='text']{
         width: 6.5%;
     }
-    
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; font-size: 13px; color: #343e5c; transition: background 0.5s ease-out;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
+    .contentArea > form fieldset .shipSelect select{
+        text-align: right;
+    }
+    /* ? sortBar Fin */
     
 }
 /* ?desktop */

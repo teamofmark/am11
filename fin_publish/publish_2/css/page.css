@@ -321,7 +321,7 @@
     .contentArea section ul li:last-child figure figcaption dl{
         position: absolute; left: 0; top: 40px; width: 100%; box-sizing: border-box;
     }
-    .contentArea section ul li:last-child figure figcaption dl:nth-child(2){
+    .contentArea section ul li:last-child figure figcaption dl dd:nth-child(2){
         display: none;
     }
     .contentArea section ul li:last-child figure figcaption dl dd{

@@ -80,3 +80,23 @@
     * space-around (flexContainer 공간안에 모든 행 균등하게)
     * space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
 */
+
+.flexContainer.justifyItems{
+    background-color: yellow; display: grid; width: 300px; justify-items: stretch;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: center;
+}
+.flexContainer.justifyItems .flexItem{
+    margin: 1px;
+}
+/* 
+    ? justify-items:
+    * flexItem을 parent Width기준으로 flexContainer의 수평 방향으로 정렬한다.
+    * justify-items 속성은 모든 flexitem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 너비)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center (flexContainer의 주축 중앙에 정렬.)
+*/

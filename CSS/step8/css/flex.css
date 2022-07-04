@@ -37,6 +37,17 @@
     ! wrap-reverse(개행하되 역배치)
 */
 
-.flexContainer.wrap .flexItem{
+.flexContainer.wrap .flexItem,
+.flexContainer.flow .flexItem{
     width: 500px;
+}
+.flexContainer.flow{
+    flex-flow: row wrap;
+    /* 
+        ? flex-flow : 
+        * direction 과 wrap 을 줄여 쓸 수(shorthand)있다.
+
+        !<flex-direction> | <flex-wrap>;
+    */
+    
 }

@@ -124,3 +124,17 @@
     * center  (flexContainer의 주축 중앙에 정렬.)
     * baseline (안의 컨텐츠 End 기준으로 정렬.)
 */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    /* todo */
+}
+.flexContainer.orderItem .flexItem.order3{
+    /* todo */
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/

@@ -7,8 +7,21 @@
     text-align: center; border-radius: 27px;
     background-color: black;
 }
-
+/* 
+    기본
+    display: flex;
+    justify-content: space-around; ( flexItem 주변 동일 간격 유지 정렬 )
+    ! 1. 부모 요소는 flex 혹은 inline-flex 로 지정되어야 한다.
+    ? flex = 부모요소가 block 인 경우, inline-flex = 부모요소가 inline일 경우
+    * 그러면 자동으로 이하 자식요소는 모두 flexItem이 된다.
+*/
 
 .flexContainer.direction{
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
+/* 
+? flex-direction : 
+* flex-direction 속성은 flexContainer의 주축(main axis) 방향을 설정한다.
+
+! row (ltr), row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
+*/

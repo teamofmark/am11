@@ -129,12 +129,36 @@
     order: 1;
 }
 .flexContainer.orderItem .flexItem.order2{
-    /* todo */
+    order: 1;
 }
 .flexContainer.orderItem .flexItem.order3{
-    /* todo */
+    order: 0;
 }
 /* 
     order:
     flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
 */
+
+.flexContainer.flexShortHand{
+    width: 50%; margin: 0; padding: 0;
+}
+.flexContainer.flexShortHand .flexItem{
+    word-break: break-all; margin: 0; padding: 0; border-radius: 0;
+}
+.flexContainer.flexShortHand .flexItem:first-child{
+    /* *ex.1 grow */
+    flex-grow: 2;
+    flex-basis: 0;
+    /* *ex.2 shrink */
+
+    /* *op basis(선택적) */
+}
+.flexContainer.flexShortHand .flexItem:first-child~*{
+    /* *ex.1 grow */
+    flex-grow: 1;
+    flex-basis: 0;
+    /* *ex.2 shrink */
+
+    /* *op basis(선택적) */
+
+}

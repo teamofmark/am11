@@ -58,3 +58,32 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// * 변수만들기 - var 변수이름 = 값;
+var name = 'Mark';
+var age = '99';
+// ? 전역변수.
+
+// *case. 1 한번에 동시 선언 및 초기화
+var name = "mark", age = "99";
+
+// ? 선언 / 초기화 의 차이
+var pi; //? 선언. -> undefined.(자료형태)
+var pi = 3.14159265; //? 선언 및 초기화 -> number.(자료형태)
+
+// !----------------------------------------------- 전역변수
+
+// * case. 2 변수의 특성
+
+var cup = 'Coffee'; //? 컵에 커피를 담았다.
+cup = 'Green Tea'; //? 컵에 커피를 버리고, 녹차를 담았다.
+cup = 'Water'; //? 컵에 녹차를 버리고, 물을 담았다.
+
+// ! 잘못된 예
+// * var cup = 'Coffee';
+// * var cup = 'Green Tea';
+// * var cup = 'Water';
+
+// *case. 3 변수 기본적활용
+var value = 10; //? value라는 변수를 10으로 선언 및 초기화.
+value = value + 20; //? 기존 value라는 변수에 기존 value의 값 10과 20을 더하여 다시 담아라.

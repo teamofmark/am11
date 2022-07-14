@@ -85,27 +85,35 @@ function numbString(){
 // todo. 1 변수 test에 들어있는 숫자 100을 문자형으로 변형. result로 출력(typeof 검수 필수).
 // todo. 1-1 암시적형변환
 function todo1(){
-    
+    var test = 100;
+    var result = test + '';
+    console.log(typeof(result) + '=' + result);
 }
 // todo. 1-2 String 형변환
 function todo2(){
-
+    var test = 100;
+    var result = String(test);
+    console.log(typeof(result) + '=' + result);
 }
 // todo. 1-3 toString 형변환
 function todo3(){
-
+    var test = 100;
+    var result = test.toString();
+    console.log(typeof(result) + '=' + result);
 }
 
 // todo. 2 문자 형을 숫자형으로 변환하여 연산이 가능하게 만들기.
 // todo. 2-1 parse 형변환.
 function todo4(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 형변환 실습대상
+    var result = parseFloat(test) + 150 + parseInt("20"); // todo. 형변환 실습대상
     // todo. typeof로 자료형 검수 및 출력.
+    console.log(typeof(result) + '=' + result);
 }
 // todo. 2-2 Number 형변환.
 function todo5(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 형변환 실습대상
+    var result = Number(test) + 150 + Number("20"); // todo. 형변환 실습대상
     // todo. typeof로 자료형 검수 및 출력.
+    console.log(typeof(result) + '=' + result);
 }

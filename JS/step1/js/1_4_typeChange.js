@@ -64,6 +64,6 @@ function bgColorRandom(){
         bgColor = parseInt(bgColor);
         bgColor = bgColor.toString(16);
 
-        $("body").css("background-color", "#" + bgColor)
+        $("body").css("background-color", "#" + bgColor);
     },1000);
 }

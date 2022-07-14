@@ -64,4 +64,26 @@ function operatorEx(){
     list += '   <li>JavaScript!</li>';
     list += '</ul>';
     document.body.innerHTML = list;
-};
+}
+// *case.4 연산자가 뒤로 올 경우
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); //? 예상 답: 10.
+    alert(number++); //? 예상 답: 11.
+    alert(number++); //? 예상 답: 12.
+}
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 예상 답: .
+    alert(++number); //? 예상 답: .
+    alert(++number); //? 예상 답: .
+}
+// todo.
+function numberPlusTodo(){
+    var number = 10;
+    alert(number++); //? 예상 : .
+    alert(--number); //? 예상 : .
+    alert(++number); //? 예상 : .
+    alert(number--); //? 예상 : .
+    console.log(number); //? 최종 : .
+}

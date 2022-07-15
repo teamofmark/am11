@@ -29,7 +29,7 @@ function amORpm(){
         alert('오후입니다.');
     }
 }
-// *casd. 2 현재 날짜가 말일인가 아닌가.
+// *case. 2 현재 날짜가 말일인가 아닌가.
 function lastDay(){
     var date = new Date();
     var day = date.getDate();
@@ -41,4 +41,32 @@ function lastDay(){
         alert('말일입니다.');
     }
     // ? 조건문
+}
+// todo. 현재 시각이 아침 / 점심 / 저녁 먹을 시간인지를 판별하는 기능.
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+    // ?변수선언 - 시간을 불러오기
+
+    if(hour < 8){
+        alert('아침먹을시간');
+    }else if(hour < 15){
+        alert('점심먹을시간');
+    }else{
+        alert('저녁먹을시간');
+    }
+    // ?조건문 - if(아침먹는조건) elseif(점심먹을조건) else(나머지는 저녁먹는시간)
+    // *출력은 alert('xx먹을시간');
+}
+// *case. 3 숫자판별
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요.', '양,음수판별');
+    console.log(typeof(numb) + ' = ' + numb);
+    if(numb > 0){
+        alert('양수');
+    }else if(numb < 0){
+        alert('음수');
+    }else{
+        alert('0 이거나 잘못된 값이 입력되었습니다.');
+    }
 }

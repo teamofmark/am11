@@ -72,18 +72,20 @@ function numberPlusAfter(){
     alert(number++); //? 예상 답: 11.
     alert(number++); //? 예상 답: 12.
 }
+// *case.5 연산자가 앞으로 올 경우
 function numberPlusBefore(){
     var number = 10;
-    alert(++number); //? 예상 답: .
-    alert(++number); //? 예상 답: .
-    alert(++number); //? 예상 답: .
+    alert(++number); //? 10에 1을 더해서(11) 출력후, 다시 number로 - 
+    alert(++number); //? 11에 1을 더해서(12) 출력후, 다시 number로 -
+    alert(++number); //? 12에 1을 더해서(13) 출력후, 다시 number로 - 
 }
-// todo.
+
+// todo. 증감연산자복합.
 function numberPlusTodo(){
-    var number = 10;
-    alert(number++); //? 예상 : .
-    alert(--number); //? 예상 : .
-    alert(++number); //? 예상 : .
-    alert(number--); //? 예상 : .
-    console.log(number); //? 최종 : .
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //?출력 : 10 현재 : 11  10출력후 더하기(11). 다시 number로.
+    alert(--number); //?출력 : 10 현재 : 10  11에서 1빼고 10 출력후. 다시 number로
+    alert(++number); //?출력 : 11 현재 : 11  10에서 1더하고 11 출력후. 다시 number로
+    alert(number--); //?출력 : 11 현재 : 10  11출력후 1빼서 다시 number로. 출력: 11, 최종 10.
+    console.log(number); //? 최종확인
 }

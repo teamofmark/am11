@@ -70,3 +70,7 @@ function numbJudgment(){
         alert('0 이거나 잘못된 값이 입력되었습니다.');
     }
 }
+// todo. 홀수 / 짝수 판별
+function oddOrEven(){
+    
+}

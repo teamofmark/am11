@@ -72,5 +72,39 @@ function numbJudgment(){
 }
 // todo. 홀수 / 짝수 판별
 function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요.','홀수,짝수를 구분해드립니다.');
+
+    if(numb%2 == 0){
+        alert('짝수입니다.');
+    }else if(numb%2 == 1){
+        alert('홀수입니다.');
+    }else{
+        alert('올바른 값을 입력하세요.');
+    }
+}
+
+// *case.4 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+
+function avgScore(){
+    // ? 수 -> 90 ~ 100 / 우 -> 80 ~ 89 / 미 -> 70~79 / 양 -> 60~69 / 가 -> ~59.
     
+    var koreanScore = prompt('국어 점수를 입력하시오');
+    var englishScore = prompt('영어 점수를 입력하시오');
+    var mathScore = prompt('수학 점수를 입력하시오');
+
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    // console.log(avg);
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급!');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수!');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다. 괜찮.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다. 망했..');
+    }else{
+        alert('평균' + avg + '점 \n' + '가 입니다. 맞겠...');
+    }
 }

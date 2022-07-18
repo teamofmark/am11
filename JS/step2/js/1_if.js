@@ -127,3 +127,17 @@ function userInfoCheck1(){
     (userID == "Mark" && userPW =="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
     // ? (조건식)? (참일경우실행) : (거짓일경우실행);
 }
+
+function userInfoCheck2(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark"){
+        alert("ID가 존재하지 않습니다.");
+        // ? id찾기 page로 자동이동
+    }else{
+        alert("Password가 틀렸습니다.");
+        // ? password찾기 page로 자동 이동 , id는 미리 삽입된 상태.
+    }
+}

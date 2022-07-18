@@ -108,3 +108,22 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가 입니다. 맞겠...');
     }
 }
+
+// todo. 사용자 id "Mark" 와 password "1234"를 입력받고(prompt). 둘다 맞을 경우엔 "Mark님으로 확인되었습니다."
+// todo. 둘중에 하나라도 틀릴 경우에는 "ID 혹은 password가 틀렸습니다." 메시지를 출력.
+function userInfoCheck(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 비밀번호");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{
+        //? if(userID!="Mark" || userPW != "1234")
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+function userInfoCheck1(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 비밀번호");
+    (userID == "Mark" && userPW =="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+    // ? (조건식)? (참일경우실행) : (거짓일경우실행);
+}

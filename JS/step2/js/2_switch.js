@@ -34,18 +34,18 @@ function calculator(){
     firstNumb = parseInt(firstNumb);
     lastNumb = parseInt(lastNumb);
 
-    switch(?){
-        case "?":
-            alert(firstNumb ? lastNumb);
+    switch(operator){
+        case "+":
+            alert(firstNumb + lastNumb);
             break;
-        case "?":
-            alert(firstNumb ? lastNumb);
+        case "-":
+            alert(firstNumb - lastNumb);
             break;
-        case "?":
-            alert(firstNumb ? lastNumb);
+        case "*":
+            alert(firstNumb * lastNumb);
             break;
-        case "?":
-            alert(firstNumb ? lastNumb);
+        case "/":
+            alert(firstNumb / lastNumb);
             break;
         default:
             alert("잘못된 값이 입력되었습니다.");

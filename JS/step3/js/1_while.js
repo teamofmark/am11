@@ -43,7 +43,11 @@ function whileBreak(){
 // todo. 구구단 숫자를 입력받아 출력해주는 반복문 만들기.
 function gugudan(){
     // ! 집에서
+    // ? 1. 숫자입력받을 prompt 출력.
+    // ? 2. 숫자를 입력받으면 해당 구구단을 출력.
+    // * 9단이내로만 입력받기. ex> 9단이 넘어 갈시 '9단 이하로 입력하세요.'
 }
+
 // todo. end가 입력될 때 까지 숫자를 입력받고 합을 출력 하되 prompt에는 몇번 수행 했는가에 대한 표시 하기.
 function sumNumb(){
     var i = 1;//? count 변수

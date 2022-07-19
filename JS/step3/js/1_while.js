@@ -46,13 +46,17 @@ function gugudan(){
 }
 // todo. end가 입력될 때 까지 숫자를 입력받고 합을 출력 하되 prompt에는 몇번 수행 했는가에 대한 표시 하기.
 function sumNumb(){
-    //? count 변수
-    //? 결과를 담을 변수
-    //? 반복문
-        //? 무한반복으로 입력받기
-        //? 조건문 - end value 일치 할 경우
-            //? 출력 - '입력이 종료되었습니다.' 및 중단.
-        //? 결과변수에 더해서 저장하기.
-        //? 저장된 최종 result 출력.(document.write).
-        //? n회 수행 완료시마다 count 변수 증가.
+    var i = 1;//? count 변수
+    var result = 0;//? 결과를 담을 변수
+    while(true){//? 반복문
+        var numb = window.prompt(i+'번째 입력');//? 무한반복으로 입력받기
+        if(numb == "end"){//? 조건문 - end value 일치 할 경우
+            alert('입력이 종료되었습니다.');//? 출력 - '입력이 종료되었습니다.' 및 중단.
+            break;
+        }
+            
+        result += parseInt(numb);//? 결과변수에 더해서 저장하기.
+        document.write('현재까지의 총합 : ' + result + '<br>');//? 저장된 최종 result 출력.(document.write).
+        i++;//? n회 수행 완료시마다 count 변수 증가.
+    }
 }

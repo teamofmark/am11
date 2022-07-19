@@ -40,3 +40,11 @@ function whileBreak(){
     document.write('최종 i = ' + i + '<br>'); //? 최종결과만 출력.
 }
 // ! continue = 튕겨냄 . break = 즉각적 중단.
+// todo. 구구단 숫자를 입력받아 출력해주는 반복문 만들기.
+function gugudan(){
+
+}
+// todo. end가 입력될 때 까지 숫자를 입력받고 합을 출력 하되 prompt에는 몇번 수행 했는가에 대한 표시 하기.
+function sumNumb(){
+    
+}

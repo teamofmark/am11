@@ -24,8 +24,19 @@ function whileContinue(){
     var i = 1;
     while(i <= 10){ //? 총 10회 반복
         i++; //? i 초기값으로부터 10번증가.
-        continue; //? for문과 마찬가지로 continue로 인해 하단 logic 수행 불가.
+        continue; //? continue로 인해 하단 logic 수행 불가.
         document.write(i + '<br>');
     }
     document.write('최종 i = ' + i + '<br>');  //? 최종결과만 출력.
 }
+// *case.3 while Break
+function whileBreak(){
+    var i = 1;
+    while(i <= 10){ //? 총 10회 반복
+        break; //? break로 인해 loop 실행 불가.
+        i++;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>'); //? 최종결과만 출력.
+}
+// ! continue = 튕겨냄 . break = 즉각적 중단.

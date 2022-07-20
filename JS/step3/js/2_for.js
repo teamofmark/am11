@@ -40,28 +40,28 @@ function namePrint500(){
 
 // todo.1 JS Engine처럼 생각해보기
 function answer1(){
-    for(var i = 0; i < 10; i++){ //?
-        document.write((i+1)+"<br>"); //?
+    for(var i = 0; i < 10; i++){ //? i가 10보다 작을때 (0~9)까지 만 반복 수행
+        document.write((i+1)+"<br>"); //? 0+1 = 1....2.3.4.5.. 출력.
     }
 }
 function answer2(){
-    for(var i = 1; i <= 10; i++){
-        document.write(i + '<br>');
+    for(var i = 1; i <= 10; i++){ //? 10보다 작거나 같을 때 (1~10)까지 만 반복 수행
+        document.write(i + '<br>'); //? 1~10까지 출력.
     }
 }
 function answer3(){
-    for(var i = 100; i < 110; i++){
-        document.write((i-99) + '<br>');
+    for(var i = 100; i < 110; i++){ //? 110보다 작거나 같을때 (100~109)까지 만 반복
+        document.write((i-99) + '<br>'); //? (-99) 로인한 1~10까지 출력.
     }
 }
 function answer4(){
-    for(var i = 1; i <= 10; i+=2){
-        document.write(i + '<br>');
-        document.write((i+1) + '<br>');
+    for(var i = 1; i <= 10; i+=2){ //? 10보다 작거나 같을 때(1~10)까지 만 반복.
+        document.write(i + '<br>'); //? 1, 3, 5, 7, 9...(증감이 이뤄지지 않은 iteration)
+        document.write((i+1) + '<br>'); //? 2, 4, 6, 8, 10...(증감이 이뤄진 iteration)
     }
 }
 function answer5(){
-    for(var i = 10; i >= 1; i--){
-        document.write((11 - i) + "<br>");
+    for(var i = 10; i >= 1; i--){ //? 1보다 크거나 같을 때 (10~1) 까지 만 반복 수행.
+        document.write((11 - i) + "<br>"); //? (11-) 1~10번까지 출력.
     }
 }

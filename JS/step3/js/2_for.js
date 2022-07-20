@@ -65,3 +65,25 @@ function answer5(){
         document.write((11 - i) + "<br>"); //? (11-) 1~10번까지 출력.
     }
 }
+// *case. 3 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력하라.
+function favorFluit(){
+    var array = ['포도','사과','바나나','수박','딸기','자두'];
+    
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS 단원명을 배열을 활용해 출력해보기.
+function arrayFor(){
+    var data = ['변수',]; //? 기억나는 단원 다 적기.
+    // ? 갯수만큼 반복문으로 출력해보기.
+    /*
+        * 1번째 내용 =변수
+        * 2번째 내용 =연산자
+        * 3번째 내용 =형변환
+        * 4번째 내용 =조건문 if
+        * 5번째 내용 =조건문 switch
+        * 6번째 내용 =반복문 while
+        * 7번째 내용 =반복문 for
+    */
+}

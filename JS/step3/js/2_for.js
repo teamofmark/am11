@@ -75,8 +75,11 @@ function favorFluit(){
 }
 // todo. 지금까지 배웠던 JS 단원명을 배열을 활용해 출력해보기.
 function arrayFor(){
-    var data = ['변수',]; //? 기억나는 단원 다 적기.
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
     // ? 갯수만큼 반복문으로 출력해보기.
+    for (var i = 0; i < data.length; i++) {
+        document.write((i+1) + "번째 내용 =" + data[i] + '<br>');
+    }
     /*
         * 1번째 내용 =변수
         * 2번째 내용 =연산자

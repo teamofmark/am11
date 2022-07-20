@@ -9,7 +9,59 @@
     5. os 등의 파일 탐색기의 파일 목록 출력 할 때...
 
     *루프
-    1. 초기식실행 > 2. 조건식 비교, 조건이 거짓일 경우 반복문 종료 > 
-    3. 참일경우 문장 실행 > 4. 종결식 실행 > 5. 2단계
+    ? 1. 초기식실행 > 2. 조건식 비교, 조건이 거짓일 경우 반복문 종료 > 
+    ? 3. 참일경우 문장 실행 > 4. 종결식 실행 > 5. 2단계
 
 */
+// !단일 for
+
+// *case.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName =  "Mark";
+    for(var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case.2 이름을 1000번을 출력해보자.
+function namePrint1000(){
+    var userName = 'Mark';
+    for (var i = 1; i <= 1000; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo. 1,000번 출력 중 홀수 번째만 출력되게 해보자.
+function namePrint500(){
+    var userName= "Mark";
+    // ? 반복문 작성
+    for (var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+
+// todo.1 JS Engine처럼 생각해보기
+function answer1(){
+    for(var i = 0; i < 10; i++){ //?
+        document.write((i+1)+"<br>"); //?
+    }
+}
+function answer2(){
+    for(var i = 1; i <= 10; i++){
+        document.write(i + '<br>');
+    }
+}
+function answer3(){
+    for(var i = 100; i < 110; i++){
+        document.write((i-99) + '<br>');
+    }
+}
+function answer4(){
+    for(var i = 1; i <= 10; i+=2){
+        document.write(i + '<br>');
+        document.write((i+1) + '<br>');
+    }
+}
+function answer5(){
+    for(var i = 10; i >= 1; i--){
+        document.write((11 - i) + "<br>");
+    }
+}

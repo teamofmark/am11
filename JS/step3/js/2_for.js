@@ -90,3 +90,37 @@ function arrayFor(){
         * 7번째 내용 =반복문 for
     */
 }
+// *case.4 역반복 호출
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','수박','딸기','자두'];
+    for(var i = array.length - 1; i >= 0; i--){
+        document.write(array[i]);
+    }
+}
+// *case.5 continue문
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case.6 continue 활용한 filter.
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        alert(output);
+    }
+}
+// *case.7 for break
+function forBreak(){
+    for(var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}

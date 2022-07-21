@@ -124,3 +124,28 @@ function forBreak(){
     }
     document.write('최종 i = ' + i + '<br>');
 }
+// *case.8 break 활용
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복 수행중입니다.');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+
+// ! 다중 for
+
+// *case. 1 반절피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){ //?
+
+        for(var j = 0; j < i; j++){ //?
+            star += '*'; //?
+        }
+
+        star += '<br>';     //?   
+    }
+    document.write(star); //?
+}

@@ -149,3 +149,42 @@ function halfPyramid(){
     }
     document.write(star); //?
 }
+// todo. 역반절피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 피라미드(완성형)
+function pyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //?
+        for(var e = 10; e>=i; e--){ //?
+            star += '&nbsp;'; //?
+        }
+        for(var s = 0; s < 2*i-1; s++){ //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star); //?
+}
+function pyramidEx(){
+    for(var i = 0; i < 10; i++){ //?
+        for(var j = 9; j > i; j--){ //?
+            document.write("&nbsp;");
+        }
+        for(var j = 0; j <= i; j++){ //?
+            document.write('*'); //?
+        }
+        for(var j = 1; j <= i; j++){ //?
+            document.write('*'); //?
+        }
+        document.write('<br>'); //?
+    }
+}

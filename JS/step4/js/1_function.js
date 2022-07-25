@@ -52,3 +52,42 @@ function sumAllEX(){
     }
     return willReturn; //? 최종결과값을 호출부(sumAllEX)로 리턴
 }
+// *case.5 "자신의 이름"의 나이는 "자신의 나이"세 입니다. 를 arguments를 이용해 만들어보기.
+function showInfo(){
+    console.log("이름 =" + arguments[0]);
+    console.log("나이 =" + arguments[1]);
+    alert(arguments[0] + "의 나이는" + arguments[1] + "세 입니다.");
+}
+/*
+    ? return(리턴)
+    * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
+    * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return Value는 이와 반대되는 개념.
+    * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는(input) 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를 외부로 전달하기 위해 사용하는 출력부.
+
+    * function f(x){ return x * x; }
+
+*/
+// *case. 6 두 수를 매개변수로 입력받고, 두 값을 더한 결과를 리턴하는 함수.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result; //! 호.출.부.리.턴
+}
+// *case. 7 무한루프를 돌며 숫자를 입력받고, 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// ! 단, 입력값이 0이면 즉시 실행 중지.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt('숫자만 입력하라'));
+        if(value == 0){
+            document.write('종료');
+            break;
+        }
+
+        sum += value;
+        document.write(count + ". " + sum + "<br>");
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}

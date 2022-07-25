@@ -128,6 +128,7 @@ function calculator(op,numb1,numb2){
     }
     return result;
 }
+
 // todo.위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
 
 /*
@@ -138,7 +139,7 @@ function calculator(op,numb1,numb2){
     todo. document.write(mul(20,10) + "<br>");
     todo. document.write(div(20,10) + "<br>");
     todo. 그 외 나머지
-    
+
     ? 결과
     * 결과 = 30
     * 결과 = 10
@@ -146,3 +147,28 @@ function calculator(op,numb1,numb2){
     * 결과 = 2
     * 결과 = 잘못된 연산자입니다.
 */
+function calculator2(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = sub(numb1,numb2);
+            break;
+        case "*":
+            result = mul(numb1,numb2);
+            break;
+        case "/":
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1,numb2){ return numb1 + numb2; }
+function sub(numb1,numb2){ return numb1 - numb2; }
+function mul(numb1,numb2){ return numb1 * numb2; }
+function div(numb1,numb2){ return numb1 / numb2; }

@@ -128,3 +128,21 @@ function calculator(op,numb1,numb2){
     }
     return result;
 }
+// todo.위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+
+/*
+    ? 실행구문
+    * document.write(" 1. 결과 = " + calculator("+",20,10));(이전 실행구문은 모두 실행됨.)
+    todo. document.write(add(20,10) + "<br>");
+    todo. document.write(sub(20,10) + "<br>");
+    todo. document.write(mul(20,10) + "<br>");
+    todo. document.write(div(20,10) + "<br>");
+    todo. 그 외 나머지
+    
+    ? 결과
+    * 결과 = 30
+    * 결과 = 10
+    * 결과 = 200
+    * 결과 = 2
+    * 결과 = 잘못된 연산자입니다.
+*/

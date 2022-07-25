@@ -82,7 +82,7 @@ function infiniteSum(){
         var value = parseInt(window.prompt('숫자만 입력하라'));
         if(value == 0){
             document.write('종료');
-            break;
+            return; //! break는 해당 로직범위를 빠져 나오지만 return은 함수를 빠져나온다.
         }
 
         sum += value;
@@ -90,4 +90,41 @@ function infiniteSum(){
         count++;
     }
     document.write("총 " + count + "번 실행함.");
+}
+// todo. 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+/*
+    ? 실행구문
+    todo. document.write(" 1. 결과 = " + calculator("+",20,10));
+    todo. document.write(" 2. 결과 = " + calculator("-",20,10));
+    todo. document.write(" 3. 결과 = " + calculator("*",20,10));
+    todo. document.write(" 4. 결과 = " + calculator("/",20,10));
+    todo. document.write(" 5. 결과 = " + calculator("%",20,10));
+
+    ? 결과
+    * 결과 = 30
+    * 결과 = 10
+    * 결과 = 200
+    * 결과 = 2
+    * 결과 = 잘못된 연산자입니다.
+*/
+function calculator(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
 }

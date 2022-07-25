@@ -172,3 +172,9 @@ function add(numb1,numb2){ return numb1 + numb2; }
 function sub(numb1,numb2){ return numb1 - numb2; }
 function mul(numb1,numb2){ return numb1 * numb2; }
 function div(numb1,numb2){ return numb1 / numb2; }
+
+// *case. 8 함수를 변수에 담기.
+function hello(name){
+    console.log(name+"환영합니다.");
+}
+var func = hello;

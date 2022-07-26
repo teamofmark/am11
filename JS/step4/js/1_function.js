@@ -178,3 +178,40 @@ function hello(name){
     console.log(name+"환영합니다.");
 }
 var func = hello;
+
+// *case. 9 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log("Hello."); 
+}
+function hi2(){
+    console.log("안녕하세요.");
+}
+function execute(func){
+    func();
+}
+// *cased. 10 button click시 매개변수 값으로 넘긴 함수 호출하기.
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+$(document).ready(function(){
+    $("#runEx8").click(welcome);
+});
+// todo. 함수를 매개변수로 전달받아 반복호출하기.
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i ++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write("hello, world!", "<br>");
+}
+// *case. 11 returnValue로 함수 사용하기.
+
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
+// ? result = hello 함수와 같음.

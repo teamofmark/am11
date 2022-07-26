@@ -83,3 +83,6 @@ function calculatorCallBack(op, numb1, numb2, callBack){
     // ? 내부중첩함수 : 처리부.
     callBack(result);
 }
+function addPrint(value){
+    document.write('두 수의 합은 ? ' + value + '입니다.');
+}

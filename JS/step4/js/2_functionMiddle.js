@@ -149,3 +149,27 @@ var counter = createCount();
     ! 이 상태에서 "외부"로 return 되기 때문에 해당 지역변수는 삭제되지 않고 남아있게 된다.(closure Effect).
     ! addCount(closure Function)가 실행 될 때마다 해당 지역변수는 계속 값을 유지 및 갱신 하게 된다.
 */
+// todo.1 사용중 함수를 return 해야만 closure는 아니다. (js Engine처럼 생각해보기)
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start(); //? 1. 
+        document.write('count Start');
+    });
+});
+function start(){
+    var count = 0; //? 2. 
+    setInterval(function(){
+        count ++; //? 3. 
+        document.write(count); //? 4. 
+    }, 1000);
+}//? 5. 
+
+// todo.2 익명함수로 사용된 closure (js Engine처럼 생각해보기)
+function outerFunction(name){
+    var output = 'hello' + name + '..!'; //? 1. 
+    return function(){  //? 2. 
+        return output; //? 3. 
+    }
+}
+var first = outerFunction('Java Script'); //?
+var second = outerFunction('JQuery'); //?

@@ -86,3 +86,55 @@ function calculatorCallBack(op, numb1, numb2, callBack){
 function addPrint(value){
     document.write('두 수의 합은 ? ' + value + '입니다.');
 }
+
+// *case. 3 return 대신 callback?
+// ? 그렇지 않다. 구현부와 처리부가 나눠져 있지 않은 상태 일 때는 단순 return이 더 편리하다.
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+// var result = sum(10,20);
+
+function sum2(numb1, numb2, callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function result(value){
+    document.write(value);
+}
+// *case. 4 동기(sync) 와 비동기(async)처리
+
+// * 동기 - 함수 호출 이후 끝날 때 까지 다음 구문 수행 안됨.
+function sync(){
+    alert('hi');
+    document.write('End Alert');
+    console.log('End Alert & write');
+}
+// *비동기 - 함수 호출 이후 끝나는 여부와 상관없이 다음 구문 수행.
+// ! 함수 호출 이후 끝나는 것과 상관없이 다음 구문 수행.
+// ? callBack함수를 많이 쓸 수밖에 없는 방식. / 함수 실행이 다 완료된 이후에 실행 될 수 있도록 처리.
+function async(){
+    var count = 1;
+    setInterval(function(){
+        document.write('2. count = ' + count + '<br>');
+    },3000);
+    document.write('1. 동작과 상관없이 바로 실행');
+}
+
+// *case.5 클로저 (closer(x) / closure(o))
+// ? 함수내부에 만든 지역변수가 안죽고 계속해서 값을 유지하고 있는 상태.
+
+// * 일반함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// * 클로저 사용시
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count ++;
+        return count;
+    }
+    return addCount;
+}

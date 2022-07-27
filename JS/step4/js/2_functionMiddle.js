@@ -138,3 +138,14 @@ function createCount(){
     }
     return addCount;
 }
+var counter = createCount();
+// ? 1. createCount 함수 호출과 동시에 지역변수 count = 0을 초기화 및 생성.
+// ? 이후 내부 함수 addcount를 생성. 그것 자체를 return 한 후 createCount 함수는 종료.
+// todo. counter();가 실행되면 addCount(); 함수가 실행 되는 것과 같은 의미.
+
+/*
+    ? createCount 함수가 죽지 않는다? 
+    ! createCount 함수가 종료 되더라도 내부함수인 addCount 안에서 createCount의 지역변수인 count를 사용 중.
+    ! 이 상태에서 "외부"로 return 되기 때문에 해당 지역변수는 삭제되지 않고 남아있게 된다.(closure Effect).
+    ! addCount(closure Function)가 실행 될 때마다 해당 지역변수는 계속 값을 유지 및 갱신 하게 된다.
+*/

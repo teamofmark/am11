@@ -4,6 +4,9 @@ $(document).ready(function(){
 
     // *case.2 원 움직이기(xAxis,yAxis)
     detailMoveCircle();
+
+    // *case.3 원 움직이기(xAxis,yAxis divide)
+    detailMoveCircleExt();
 });
 // *case. 1
 function moveCircle(){
@@ -32,7 +35,10 @@ function detailMoveCircle(){
         if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
             alert('잘못된 수치입니다. 0 ~ 380이내로 입력하세요.');
         }else{
-            
+            $circle.css({
+                "left" : xpos,
+                "top" : ypos
+            });
         }
     });
 }

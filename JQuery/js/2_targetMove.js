@@ -7,6 +7,9 @@ $(document).ready(function(){
 
     // *case.3 원 움직이기(xAxis,yAxis divide)
     detailMoveCircleExt();
+
+    // *case.4
+    keyControl();
 });
 // *case. 1
 function moveCircle(){
@@ -68,4 +71,36 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+
+// *case. 4
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 키코드는 " + e.keyCode);
+        // ? w : 87(ypos-) d: 68(xpos+) s: 83(ypos+) a: 65(xpos-)
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+        // todo. 조건처리부
+
+        // ?실행구문
+        $circle.css("left", currentXpos);
+        $circle.css("top", currentYpos);
+    });
 }

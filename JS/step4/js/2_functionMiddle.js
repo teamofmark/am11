@@ -152,24 +152,24 @@ var counter = createCount();
 // todo.1 사용중 함수를 return 해야만 closure는 아니다. (js Engine처럼 생각해보기)
 $(document).ready(function(){
     $("#btnStart").click(function(){
-        start(); //? 1. 
+        start(); //? 1. start함수 실행.
         document.write('count Start');
     });
 });
 function start(){
-    var count = 0; //? 2. 
+    var count = 0; //? 2. count 변수 초기화 및 생성.
     setInterval(function(){
-        count ++; //? 3. 
-        document.write(count); //? 4. 
+        count ++; //? 3. start 함수 내부 setInterval core 함수가 count변수 사용중
+        document.write(count); //? 4. 계속 증가되는(사용중인) count가 1초간격으로 출력.
     }, 1000);
-}//? 5. 
+}//? 5. start함수가 종료되어도 삭제되지 않고 계속 유지되면서 값이 이어져간다.(closure).
 
 // todo.2 익명함수로 사용된 closure (js Engine처럼 생각해보기)
 function outerFunction(name){
-    var output = 'hello' + name + '..!'; //? 1. 
-    return function(){  //? 2. 
-        return output; //? 3. 
+    var output = 'hello' + name + '..!'; //? 1. outerFunction 함수 실행시 output 변수 초기화 및 생성.
+    return function(){  //? 2. 익명함수를 outerFunction이 실행된 위치로 return.
+        return output; //? 3. 익명함수로 지역변수 output을 return (closure).
     }
 }
-var first = outerFunction('Java Script'); //?
-var second = outerFunction('JQuery'); //?
+var first = outerFunction('Java Script'); //? outerFunction의 인자로 들어간 string data 가 return.
+var second = outerFunction('JQuery');//? 상동

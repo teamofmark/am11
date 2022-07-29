@@ -1,6 +1,7 @@
 $(document).ready(function(){
     toggleCheck();
     toggleTodo();
+    tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -24,7 +25,7 @@ function toggleTodo(){
     var $toggleTarget = $(".material-icons.toggleVisible");
     var toggleStatus = false;
     var $pwInput = $("#userPW");
-    
+
     $toggleTarget.click(function(){
         toggleStatus = !toggleStatus;
         if(toggleStatus == true){
@@ -36,4 +37,16 @@ function toggleTodo(){
         }
     });
 
+}
+
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        var activeTab = $(this).attr("data-tabNumb");
+        // console.log(activeTab);
+        $(".tabMenu li").removeClass("activated");
+        $(this).addClass("activated");
+
+        $(".tabPage").removeClass("activated");
+        $("#" + activeTab).addClass("activated");
+    });
 }

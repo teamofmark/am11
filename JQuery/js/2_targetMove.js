@@ -98,7 +98,18 @@ function keyControl(){
                 break;
         }
         // todo. 조건처리부
-
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
         // ?실행구문
         $circle.css("left", currentXpos);
         $circle.css("top", currentYpos);

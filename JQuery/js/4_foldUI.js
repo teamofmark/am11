@@ -35,8 +35,8 @@ function imgAlignMix(){
 
         for(var i = 0; i < imgLength; i++){
             var image = img.eq(i);
-            xpos = (i%3)*imgHeight; //?
-            ypos = ; //todo. ypos 연산식 세우기
+            xpos = (i%3) * imgHeight; //?
+            ypos = parseInt(i/3) * imgHeight; //todo. ypos 연산식 세우기
 
             image.css({
                 "left" : xpos,
@@ -44,4 +44,12 @@ function imgAlignMix(){
             })
         }
     });
+    // todo. 원위치 풀기.
+    $(".resetMix").click(function(){
+        img.css({
+            "left" : 0,
+            "top" : 0
+        }); 
+    });
+
 }

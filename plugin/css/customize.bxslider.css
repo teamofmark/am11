@@ -7,13 +7,13 @@
 
 
 .customPager{
-    margin: 100px 0;
+    margin: 10px 0;
 }
 .customPager:after{
     content: ''; display: block; visibility: hidden; clear: both;
 }
 .customPager li{
-    float: left; width: 16.66%; display: block;
+    float: left; width: 25%; display: block;
 }
 .customPager li a{
     background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px;

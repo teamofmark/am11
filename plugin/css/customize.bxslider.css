@@ -1,0 +1,6 @@
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background: palevioletred;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: darkred;
+}

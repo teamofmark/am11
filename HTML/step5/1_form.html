@@ -64,7 +64,20 @@
             <label for="userName">이름</label>
             <input type="text" id="userName" maxlength="8" required autofocus readonly>
             <!-- disabled / enabled : 비활성화 / 활성화(data insert and load 금지.) -->
-            <input type="email" placeholder="사용자의 이메일을 입력하세요.">
+            <input type="email" placeholder="사용자의 이메일을 입력하세요." title="사용자의 이메일을 입력하세요.">
+            <input type="url" placeholder="https://www.examples.com">
+            <input type="number" min="10" max="100" step="1" value="1">
+            <input type="range" min="-2" max="2" step="1" value="0">
+            <input type="date">
+            <input type="month">
+            <input type="time">
+            <input type="week">
+            <input type="datetime-local">
+            <!-- <input type="datetime"> -->
+            <input type="search" placeholder="검색어를 입력하세요" autocomplete="">
+            <!-- ! safari 지원불가 -->
+            <label for="typecolor">색상선택 : </label>
+            <input type="color" id="typecolor">
         </fieldset>
     </form>
     <!-- 

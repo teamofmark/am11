@@ -1,9 +1,12 @@
 body{
     margin: 0;
 }
+/* ? body 의 기본 margin 8px 제거 */
 h1{
     margin: 0; font-size: 12px; color: #f0c;
 }
+/* ?h tag 가 지닌 기본 margin 과 fontsize 변경. */
+
 img{
     width: 150px; height: 150px; border: 3px solid #3f3;
 }

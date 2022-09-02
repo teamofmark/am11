@@ -10,3 +10,33 @@
     * 8. extraBold - 800. (명칭가변가능)
     * 9. black - 900. 
 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 50px; line-height: 62px; color: #0066ff;
+    font-weight: 100;
+}
+h2{
+    font-size: 35px; line-height: 45px; color: #60f;
+    font-weight: 300;
+}
+h3{
+    font-size: 20px; line-height: 26px; color: #f60;
+    font-weight: 500;
+}
+p.letter{
+    letter-spacing: -1px;
+    /* ? 자간 */
+}
+p.word{
+    word-spacing: 10px;
+    /* ? 단간 */
+}
+
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 21px;
+}

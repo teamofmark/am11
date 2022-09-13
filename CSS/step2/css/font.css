@@ -83,3 +83,12 @@ a.t_deco_O{
 a.t_deco_T{
     text-decoration: line-through; text-transform: uppercase; color: #f63;
 }
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: center;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: right;
+}
+/* ! text-align이란 단순 글자가 아닌 inline관련 tag도 정렬 할 수 있다. */

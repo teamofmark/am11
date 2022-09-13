@@ -64,3 +64,7 @@ p.w_nowrap{
 p.t_indent{
     text-indent: 50px; font-size: 20px;
 }
+.test{
+    background: url('https://via.placeholder.com/150x50?text=blablaButton'); border: none; width: 150px;
+    line-height: 50px; font-size: 12px; text-indent: -9999px;
+}

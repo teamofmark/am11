@@ -3,9 +3,12 @@ html,body{
 }
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+	/*
+		background-image는 대상의 배경 설정, css3부터는 , 로 구분하여 2개 이상 설정가능
+	*/
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 	/*
 		background-size는 100% 250px 처럼 공백으로 구분하면 width와 height를 설정
 		100% 250px, 200% 250px 처럼 , 로 구분하면 1번이미지, 2번이미지 로 나눠서 설정

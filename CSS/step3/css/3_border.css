@@ -6,9 +6,13 @@ div{
     /* ? width, style, color */
 }
 .multiBox{
-    border-width: 1px 3px 10px 25px;
+    /* border-width: 1px 3px 10px 25px;
     border-style: solid dotted dashed double;
-    border-color: #1958b7 #ff0066 #6f6 #fc6;
+    border-color: #1958b7 #ff0066 #6f6 #fc6; */
+    border-top: 1px solid #1958b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #6f6;
+    border-left: 25px double #fc6;
 }
 
 /*solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/

@@ -27,3 +27,8 @@ body{
     margin: 0 auto; width: 300px; padding: 10px;
     /* ! padding, border 는 대상너비에 가산된다. */
 }
+.paddingDiv{
+    width: 300px; padding: 10px 20px; background-color: #ff3; border: 10px solid #333;
+    box-sizing: border-box; margin: 0 auto;
+    /* calc(10% - 20px); */
+}

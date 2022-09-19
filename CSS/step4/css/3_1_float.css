@@ -14,7 +14,7 @@
     content: ''; display: block; clear: both;
 }
 .wrap .exam_2 div{
-    width: 300px; height: 300px; float: left;
+    width: 300px; height: 300px; float: right;
     background-color: slateblue;
 }
 .wrap .exam_3{

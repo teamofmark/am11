@@ -27,11 +27,11 @@
     color: white; display: block;
 }
 section{
-    margin-bottom: 300px; background-color: paleturquoise;
+    margin-bottom: 300px;
 }
-/* section:after{
+section:after{
     content: ''; display: block; clear: both;
-} */
+}
 
 section h2{
     background-color: greenyellow;
@@ -39,10 +39,12 @@ section h2{
 section article{
     float: left; width: 33.33%;
 }
-
-
-
-
+section article h3{
+    color: white; background-color: black;
+}
+section article ul li{
+    display: block; font-size: 16px; line-height: 35px;
+}
 footer{
     background-color: blueviolet; color: white; text-align: center;
 }

@@ -4,9 +4,9 @@
 .wrap div{
     width: 150px; height: 150px; position: absolute; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
-.wrap .redBox{background-color: red; left: 10px; top: 10px;}
-.wrap .greenBox{background-color: green; left: 50px; top: 50px;}
-.wrap .blueBox{background-color: blue; left: 90px; top: 90px;}
+.wrap .redBox{background-color: red; left: 10px; top: 10px; z-index: 100;}
+.wrap .greenBox{background-color: green; left: 50px; top: 50px; z-index: 10;}
+.wrap .blueBox{background-color: blue; left: 90px; top: 90px; z-index: 1;}
 
 /*
     좌표의 기준이 될 부모의 객체에 position:relative; 를 선언

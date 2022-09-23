@@ -56,3 +56,10 @@
 .directSelector > span{
     display: block; font-size: 22px; color: #906; line-height: 40px;
 }
+
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}

@@ -73,7 +73,12 @@
 .stringAttrSelector img[src$='gif']{
     width: 300px; border: 10px solid blue;
 }
-
+.stringAttrSelector h1[title *= "남자"]{
+    color: blue;
+}
+.stringAttrSelector h1[title $= "여자"]{
+    color: red;
+}
 /* 
     ?속성값일치선택자.
     ? *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
@@ -82,3 +87,11 @@
     ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
     ? ~= : 띄어쓰기 기준. 해당 단어 포함.
 */
+.eventSelector a{
+    display: block; line-height: 40px;
+}
+.eventSelector a:link{font-size: 12px; color: red;}
+.eventSelector a:hover{font-size: 16px; color: green;} 
+.eventSelector a:active{font-size: 20px; color: blue;}
+.eventSelector a:visited{font-size: 24px; color: cyan;}
+.eventSelector a:focus{font-size: 28px; color: magenta;}

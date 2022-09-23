@@ -35,3 +35,17 @@
 .attrSelector fieldset ul li input{
     padding: 5px; vertical-align: middle;
 }
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid lightseagreen; color: maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: seagreen; border: 3px solid lime; color: lightgreen;
+}
+.attrSelector fieldset ul li input[type='email']{
+    background-color: paleturquoise; border: 3px solid cornflowerblue; color: midnightblue;
+}
+
+.attrSelector fieldset ul li input[type='radio'],
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 25px; height: 25px;
+}

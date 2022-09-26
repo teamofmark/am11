@@ -1,4 +1,6 @@
-
+body{
+    padding-bottom: 500px;
+}
 .tagSelector h1{color:#0c0; font-size:20px;}
 .tagSelector p{color:#0cf; font-size:15px;}
 .tagSelector span{color:#336; font-size:13px;}
@@ -95,3 +97,41 @@
 .eventSelector a:active{font-size: 20px; color: blue;}
 .eventSelector a:visited{font-size: 24px; color: cyan;}
 .eventSelector a:focus{font-size: 28px; color: magenta;}
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; transition-duration: 0.75s;
+    line-height: 20px; overflow-y: hidden;
+    /* font-size: 16px; */
+    /* height: 20px; overflow-y: hidden; */
+    -ms-transition-duration:0.75s;
+    -webkit-transition-duration:0.75s;
+    -moz-transition-duration:0.75s;
+    -o-transition-duration:0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    line-height: 0px;
+    /* font-size: 0px; */
+    /* height: 0px; */
+}
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:disabled{
+    background-color: deeppink; color: black;
+}
+/*
+input 상태에 따라 대상을 작동 시킬 수 있다.
+1. checkbox의 상태가 checked 일 경우 바로 뒤에 label을 height:0px로 만든다.
+(상태옵션은 :checked 체크된 input 상태 , :focus 초점이 맞춰진 input 상태 , 
+:enabled 사용가능한 input 상태, :disabled 사용 불가능한 input 상태)
+
+2. label의 기본설정을 잡는다. 이 부분에서 height의 값이 있어야만 에니메이션이
+일어난다.
+또한 display옵션을 block 계열로 잡아야하며, overflow의 값은 hidden으로 설정
+해둔다.(사라지는값)
+
+3.벤더프리픽스를 통해 각 브라우저별 애니메이션을 설정한다.
+
+-p.s- 크로스브라우징을 해야 할 때, 모든 브라우저를 테스트 하지말고,
+ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하게 적용 된다. 
+*/

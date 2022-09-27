@@ -193,3 +193,12 @@ ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하�
 .shapeSelector > h2:nth-of-type(1){color: #0c6;}
 .shapeSelector h3:nth-of-type(2){color: #f06;}
 /* https://css-tricks.com/useful-nth-child-recipies/ */
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px; font-size: 14px;
+    text-decoration: underline;
+}
+

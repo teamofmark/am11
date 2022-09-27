@@ -174,6 +174,22 @@ ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하�
 .normalSelector div :last-child{
     background-color: purple; color: white;
 }
+.normalSelector table{
+	width:100%;
+	border-width:3px 1px 2px 1px;
+	border-style:solid;
+	border-color:#3CF;
+}
+.normalSelector table caption{color:#666; font-size:12px; line-height:40px;}
+.normalSelector table tr th,.normalSelector table tr td{
+	width:14.28%;
+	border-right:1px solid #3cf;
+	border-bottom:1px solid #3cf;
+	padding:10px 0;
+}
+.normalSelector table tr th{background-color:#6CF; }
+.normalSelector table tr td{text-align:center;}
 .shapeSelector h1:nth-of-type(2){color: #30f;}
 .shapeSelector > h2:nth-of-type(1){color: #0c6;}
 .shapeSelector h3:nth-of-type(2){color: #f06;}
+/* https://css-tricks.com/useful-nth-child-recipies/ */

@@ -202,3 +202,23 @@ ie 와 chrome 만 테스트를 하면 firefox 와 safari는 대부분 동일하�
     text-decoration: underline;
 }
 
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) ".";
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; font-weight: bold; color:deeppink;
+}
+
+.reactionSelector > *{
+    color: #fff;
+}
+.reactionSelector > *::selection{
+    background-color: #000; color: #ff0;
+}
+
+.notSelector input:not([type='password'],[type='submit']){
+    background-color: red;
+}

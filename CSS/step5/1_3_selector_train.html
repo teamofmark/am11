@@ -17,7 +17,9 @@
                 <li><a href="">help</a></li>
             </ul>
         </nav>
+        <!-- 별도 page일 경우에만 nav / 그외 ul -->
         <h1>member's login</h1>
+        <!-- 별도 page일 경우에만 h1 / 그외 h2(popup,panel) -->
         <form action="">
             <fieldset>
                 <ul>
@@ -30,8 +32,10 @@
                         <input type="password" id="userPW" maxlength="16">
                     </li>
                 </ul>
+                <!-- li로 line구분을 해놓으면 css가 좀 더 편리해질수 있다. -->
             </fieldset>
             <input type="submit" value="login">
+            <!-- submit은 fieldset 안에 있는 상태일 때 수월. -->
         </form>
     </div>
 </body>

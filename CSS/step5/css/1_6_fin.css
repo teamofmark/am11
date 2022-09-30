@@ -25,3 +25,44 @@ body fieldset select{
     position: absolute; right: 0; padding: 4px 0; background-color: lightseagreen;
     border-color: lightskyblue;
 }
+body > h2{
+    padding: 30px 0; margin: 0; color: #555;
+}
+body > h2 strong{
+    color: seagreen;
+}
+body > h2 strong:not(:nth-of-type(2)){
+    text-transform: capitalize;
+}
+body > h2 strong:nth-of-type(2){
+    text-transform: uppercase;
+}
+
+body > ul{
+    margin: 0 0 30px; padding: 0; list-style: none;
+}
+body > ul li:first-child{
+    border-width: 3px 0 1px; border-style: solid none; border-color: darkgreen; padding: 10px 0;
+}
+body > ul li:not(:first-child){
+    border-bottom: 1px solid mediumpurple; position: relative;
+}
+body > ul li:nth-child(2n){
+    background-color: #cacaca;
+}
+body > ul li:after{
+    content: ''; display: block; clear: both;
+}
+body > ul li span{
+    display: block; float: left; padding: 10px 2.5%; font-size: 14px; word-break: break-all;
+}
+body > ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+body > ul li span:nth-child(2){
+    width: 35%;
+}
+body > ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
+    background-color: rgba(127,255,0,0.5);
+}

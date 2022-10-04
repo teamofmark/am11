@@ -99,3 +99,18 @@ div{
 /*
     ! opacity의 값은 객체의 투명도를 설정 하며 0 ~ 1 로 규정 할 수 있고 1/100 % 로 표현된다.
 */
+
+.shadowProperty h1{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    /* ? text-shadow: [xAxis] [yAxis] [blur] [spread] [color]; */
+}
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid #f00;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 1px rgba(255,200,200,0.7);
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 10px rgba(255,200,200,0.5);
+}
+/* ? https://css3generator.com */

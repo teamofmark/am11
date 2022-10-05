@@ -1,0 +1,7 @@
+.redG{
+    /* background: #9b1f1f;
+    background: -moz-linear-gradient(-45deg, #9b1f1f 0%, #ea7e7e 100%);
+    background: -webkit-linear-gradient(-45deg, #9b1f1f 0%, #ea7e7e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#9b1f1f', endColorstr = '#ea7e7e'); */
+    background: linear-gradient(-45deg, #9b1f1f 0%, #ea7e7e 100%);
+}

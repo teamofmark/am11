@@ -25,3 +25,7 @@ body{
         left: 800px; transform: rotate(360deg);
     }
 }
+
+.circle:hover{
+    animation-play-state: paused; /* ? running 재생. */
+}

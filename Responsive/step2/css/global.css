@@ -1,6 +1,54 @@
+/* 
+    ? rem - browser default font size(16px)에 근거를 두고 산출하는 단위( 1rem = 16px ).
+    ? em - 자신을 포함한 자신의 부모로부터 가장 가까운 font size에 근거를 두고 산출하는 단위 
+    * ex>
+    * html - font-size: 14px;
+    *   div - font-size: 12px;
+    *       p - font-size: 1rem; margin-bottom : 1em = 14px;
+*/
+html{
+    font-size: 12px;
+}
+@media screen and (max-width:767px) and (orientation: landscape){
+    body{
+        background-color: pink; color: purple; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 2.5rem; text-align: center; margin-bottom: 10px;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem; text-align: center;
+    }
+}
+/* ? mobile - L*/
 
+@media screen and (max-width:767px) and (orientation: portrait){
+    body{
+        background-color: purple; color: pink; font-weight: bold;
+    }
+    h1{
+        font-size: 1.5rem; line-height: 2rem; text-align: right;
+    }
+    p{
+        font-size: 0.75rem; line-height: 1rem;
+    }
+}
+/* ? mobile - P */
 
-@media screen and (min-width: 768px) and (max-width:1279px){
+@media screen and (min-width: 768px) and (max-width:1279px) and (orientation: landscape){
+    body{
+        background-color: greenyellow; color: green; font-weight: bold;
+    }
+    h1{
+        font-size: 3rem; line-height: 3.5rem; text-align: center; margin-bottom: 10px;
+    }
+    p{
+        font-size: 1.5rem; line-height: 2rem; text-align: center;
+    }
+}
+/* ? tablet - L*/
+
+@media screen and (min-width: 768px) and (max-width:1279px) and (orientation: portrait){
     body{
         background-color: green; color: limegreen; font-weight: bold;
     }
@@ -11,7 +59,7 @@
         font-size: 1rem; line-height: 1.5rem;
     }
 }
-/* ? tablet */
+/* ? tablet - P */
 
 @media screen and (min-width: 1280px){
     body{

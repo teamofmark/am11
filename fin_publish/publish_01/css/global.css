@@ -67,6 +67,15 @@ section[class$='Area'] > hr{
         position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%; box-sizing: border-box;
         text-align: right;
     }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block; margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
     header > div nav ul li{
         display: inline-block;
     }
@@ -223,7 +232,9 @@ section[class$='Area'] > hr{
         max-width: 728px; margin: 0 auto; padding: 70px 0;
         /* max-width: 940px */
     }
-
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }
@@ -404,6 +415,10 @@ section[class$='Area'] > hr{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
 
+    .mui{
+        display: none;
+    }
+    
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }

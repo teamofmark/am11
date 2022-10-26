@@ -39,8 +39,8 @@ section[class$='Area'] > hr{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 728px; margin: 0 auto; padding: 70px 0;
-        /* max-width: 940px */
+        max-width: 600px; margin: 0 auto; padding: 70px 3%;
+        /* max-width: 728px */
     }
 
     .btn_more{
@@ -51,8 +51,8 @@ section[class$='Area'] > hr{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: 728px; margin: 0 auto; position: relative;
-        /* max-width: 940px; */
+        max-width: 600px; margin: 0 auto; position: relative; padding: 0 3%;
+        /* max-width: 728px; */
     }
     header > div h1{
         max-width: 128px; width: 35%; float: left;
@@ -94,8 +94,8 @@ section[class$='Area'] > hr{
     header > div nav ul li a{
         display: block; font-size: 13px; color: white; font-weight: 900; line-height: 50px;
     }
-    header > div nav ul li a.active,
-    header > div nav ul li a:hover{
+    header > div nav ul li a.active
+    /*,header > div nav ul li a:hover*/{
         color: #00e0d0;
     }
     /* ? header GNB Fin */
@@ -136,19 +136,15 @@ section[class$='Area'] > hr{
     footer{
         background: url('../images/bg_05.png') left top / cover no-repeat;
     }
-    /* footer > div div:not(:last-of-type){
-        float: left; width: 32%; margin: 0 0 70px 2%;
-    } 
-    footer > div div:first-of-type{
-        margin-left: 0;
-    }
-    */
-    footer > div div:nth-of-type(1),
+    /* footer > div div:nth-of-type(1),
     footer > div div:nth-of-type(2){
         float: left; width: 47.5%; margin: 0 0 70px;
     }
     footer > div div:nth-of-type(2){
         margin-left: 5%;
+    } */
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
     }
     footer > div div h2{
         margin-bottom: 20px;
@@ -188,24 +184,24 @@ section[class$='Area'] > hr{
         float: left; margin-bottom: 25px; display: block;
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: /*70%*/35%; font-size: 14px; font-weight: 300; color: white; line-height: 43px; padding: 0 15px;
+        width: /*35%*/75%; font-size: 14px; font-weight: 300; color: white; line-height: 43px; padding: 0 15px;
         border: 1px solid rgba(255,255,255,0.5); background-color: transparent; box-sizing: border-box;
     }
     footer > div div:nth-of-type(3) input[type='email']::placeholder{
         color: rgba(255,255,255,0.75);
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: /*25%*/10%; margin-left: /*5%*/2%; text-indent: -9999px; border: none; line-height: 43px;
+        width: /*10%*/25%; /*margin-left: 2%;*/ text-indent: -9999px; border: none; line-height: 43px;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
     }
-    footer > div div:nth-of-type(3) ul{
-        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
-    }
+    /* footer > div div:nth-of-type(3) ul{
+        float: left; width: 45%; margin-left: 8%;
+    } */
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: /*5px*/ 5.8%;
+        margin-left: /* 5.8%*/ 2.5%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px; background-repeat: no-repeat; background-size: contain;
@@ -218,17 +214,17 @@ section[class$='Area'] > hr{
     footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_sns_06.png');}
 
     footer > div div:last-of-type{
-        clear: left;
+        /* clear: left; */ text-align: center;
     }
     footer > div div:last-of-type a{
         display: inline-block;
     }
     footer > div div:last-of-type a:not(:first-of-type){
-        margin-left: 30px;
+        margin-left: /*30px*/ 5.5%;
     }
-    footer > div div:last-of-type p{
+    /* footer > div div:last-of-type p{
         float: right;
-    }
+    } */
     /* ?footer Fin */
 }
 /* ?mobile */

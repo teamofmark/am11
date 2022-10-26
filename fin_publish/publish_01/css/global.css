@@ -55,7 +55,7 @@ section[class$='Area'] > hr{
         /* max-width: 940px; */
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -64,8 +64,8 @@ section[class$='Area'] > hr{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%; box-sizing: border-box;
-        text-align: right;
+        /* position: absolute; right: 0; top: 0; padding-left: 130px; box-sizing: border-box; */
+        text-align: right; width: /*100%*/50%; float: right; margin-left: 15%;
     }
     header > div nav label.mui{
         padding: 5px 3px; border: 1px solid white; width: 22px; display: block; margin: 5px 0 0 auto;
@@ -76,12 +76,21 @@ section[class$='Area'] > hr{
     header > div nav label.mui span:not(:last-of-type){
         margin-bottom: 3px;
     }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav ul{
+        height: 0; overflow: hidden; transition: height 1s ease-in-out;
+    } 
+    header > div nav input[type='checkbox']#mnav:checked + ul{
+        height: 350px;
+    }
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         display: block; font-size: 13px; color: white; font-weight: 900; line-height: 50px;
     }
@@ -92,10 +101,10 @@ section[class$='Area'] > hr{
     /* ? header GNB Fin */
 
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165*/55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center; margin-bottom: 25px;

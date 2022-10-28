@@ -62,7 +62,7 @@
         right: 11.78%;
     }
     section.slideArea > div ol{
-        position: absolute; left: 47.85%; bottom: 6%;
+        position: absolute; left: 47.85%; bottom: 6%; z-index: 1;
         /* 
             width: 100%; left: 0; text-align: center;
         */
@@ -102,6 +102,21 @@
     section.slideArea > div ul li figure figcaption input[type='button']{
         width: 35.86%; background-color: #2754eb; font-size: 11px; font-weight: 600; line-height: 42px;
         border-radius: 21px; color: white; border: none;
+    }
+    /* ?sliderArea Fin */
+
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 10px; line-height: 56px; padding: 0 1.7%;
+        box-sizing: border-box; margin-bottom: 30px;
+    }
+    .contentArea > form fieldset label{
+        display: inline-block; vertical-align: middle; font-weight: 600;
+    }
+    .contentArea > form fieldset label:not([for='freeShipCheck']){
+        font-size: 11px; color: #a1a7bd; text-transform: uppercase;
     }
 }
 /* ? desktop */

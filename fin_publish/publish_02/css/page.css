@@ -40,5 +40,26 @@
         color: #a1a7bd;
     }
     /* ?slide Nav Fin */
+
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px; margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; padding: 10px 0 14px; font-size: 18px; color: white; top: 46%;
+        font-weight: 600px; border-radius: 24px; border: 2px solid rgba(255,255,255,0.2); z-index: 10;
+        position: absolute; text-align: center;
+    }
+    section.slideArea > div > a.btn_conL{
+        left: 11.78%;
+    }
+    section.slideArea > div > a.btn_conR{
+        right: 11.78%;
+    }
 }
 /* ? desktop */

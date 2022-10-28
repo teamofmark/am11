@@ -16,7 +16,8 @@ input[type='radio']{
 }
 @media screen and (min-width:1280px){
     header > div,
-    footer > div{
+    footer > div,
+    header + nav .slideNav{
         max-width: 1170px; margin: 0 auto;
     }
     header{

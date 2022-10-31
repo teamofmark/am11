@@ -162,6 +162,60 @@
     .contentArea aside{
         width: 23.07%; float: left;
     }
+    .contentArea aside nav{
+        background-color: white; border-radius: 10px; margin-bottom: 30px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c; font-weight: 600; padding: 15px 7%;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right; transform: rotate(-90deg);
+        transition: transform 0.5s ease-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; opacity: 0; padding: 0px 7%; font-weight: 600; color: #a1a7bd;
+        transition: all 0.3s ease-out;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; padding: 15px 7%; opacity: 1; border-bottom: 1px solid #dfe4ee;
+    }
+    /* ?side Menu Fin */
+
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 10px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 55px 0 20px;
+        /* 
+            ? fieldset 이 legend를 포함할 경우 상단 기본 30px. 
+            * psd 내 70에서 30을 제하면 되어야 하지만, 상단에 legend 영역으로 잡힌 padding이 있기 때문에
+            * 그의 절반인 15를 제한다.
+        */
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 35px;
+        /* 
+            ? 마지막 fieldset의 dlvr 들은 경계선을 가지고 있어야 하고 그 경계선이 legend border-bottom과 맞물려야 하니까
+        */
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; box-sizing: border-box;
+        border-bottom: 1px solid #f0f2f7; padding: 0 7% 15px; position: relative; width: 100%;
+        top: 27px;
+    }
 
 
 

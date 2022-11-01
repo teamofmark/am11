@@ -198,7 +198,7 @@
         background-color: white; border-radius: 10px;
     }
     .contentArea aside fieldset:not(:last-of-type){
-        padding: 55px 0 20px;
+        padding: 58px 0 20px; margin-bottom: 10px;
         /* 
             ? fieldset 이 legend를 포함할 경우 상단 기본 30px. 
             * psd 내 70에서 30을 제하면 되어야 하지만, 상단에 legend 영역으로 잡힌 padding이 있기 때문에
@@ -206,7 +206,7 @@
         */
     }
     .contentArea aside fieldset:last-of-type{
-        padding-top: 35px;
+        padding-top: 30px;
         /* 
             ? 마지막 fieldset의 dlvr 들은 경계선을 가지고 있어야 하고 그 경계선이 legend border-bottom과 맞물려야 하니까
         */
@@ -214,9 +214,53 @@
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; font-weight: 700; box-sizing: border-box;
         border-bottom: 1px solid #f0f2f7; padding: 0 7% 15px; position: relative; width: 100%;
-        top: 27px;
+        top: 30px;
     }
-
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
+        padding-left: 20.37%; box-sizing: border-box; line-height: 20px;
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset span{
+        width: 18%; display: inline-block; text-align: center; font-size: 11px; color: #b8dfd3;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 80%;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width: 100%;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; margin-bottom: 0; line-height: 50px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7;
+    }
+    .contentArea aside fieldset input[type='radio'] + label{
+        background-image: url('../images/off_radio.png'); background-repeat: no-repeat;
+    }
+    .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
+        background-position: 9.3% center;
+    }
+    .contentArea aside fieldset input[type='radio'] + label[for*='dlvr']{
+        background-position: 15.15% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
 
 
 

@@ -198,7 +198,7 @@
         background-color: white; border-radius: 10px;
     }
     .contentArea aside fieldset:not(:last-of-type){
-        padding: 58px 0 20px; margin-bottom: 10px;
+        padding: 50px 0 20px; margin-bottom: 10px;
         /* 
             ? fieldset 이 legend를 포함할 경우 상단 기본 30px. 
             * psd 내 70에서 30을 제하면 되어야 하지만, 상단에 legend 영역으로 잡힌 padding이 있기 때문에

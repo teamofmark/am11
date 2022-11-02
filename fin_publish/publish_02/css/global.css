@@ -27,7 +27,8 @@ input[type='radio']{
     header > div,
     footer > div,
     header + nav .slideNav,
-    .contentArea{
+    .contentArea,
+    section.bestArea{
         max-width: 1170px; margin: 0 auto;
     }
     header{

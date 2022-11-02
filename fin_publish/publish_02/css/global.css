@@ -29,7 +29,7 @@ input[type='radio']{
     header + nav .slideNav,
     .contentArea,
     section.bestArea{
-        max-width: 1170px; margin: 0 auto;
+        max-width: /*1170px*/ 1000px; margin: 0 auto;
     }
     header{
         background-color: white; border-bottom: 1px solid #f0f2f7;
@@ -41,42 +41,43 @@ input[type='radio']{
         float: left;
     }
     header > div label.material-icons{
-        width: 5.3%; max-width: 60px; line-height: 90px; border-right: 1px solid #f0f2f7; display: block;
-        box-sizing: border-box;
+        /* width: 5.3%; max-width: 60px; line-height: 90px; border-right: 1px solid #f0f2f7; 
+        box-sizing: border-box; */
+        display: /*block*/none;
     }
     header > div h1{
         min-width: 125px; width: 10.7%;
     }
     header > div h1 a{
-        display: block; text-align: right; padding: 31px 0;
+        display: block; text-align: /*right*/ center; padding: 31px 0;
     }
     header > div h1 a img{
         width: 100%; max-width: 92px;
     }
     header > div nav{
-        width: 55%;
+        width: /*55%*/60%;
     }
     header > div nav ul{
-        text-align: right;
+        text-align: center;
     }
     header > div nav ul li{
         display: inline-block;
     }
     header > div nav ul li:not(:first-child){
-        margin-left: 2.56%;
+        margin-left: /*2.56%*/ 2%;
     }
     header > div nav ul li a{
         display: block; font-size: 14px; font-weight: 600; color: #343e5c; line-height: 90px;
     }
     header > div div{
-        width: 29%; font-size: 11px; color: #343e5c; text-align: right; line-height: 90px;
+        width: /*29%*/23%; font-size: 11px; color: #343e5c; text-align: /*right*/ center; line-height: 90px;
     }
     header > div div *:not(input){
         display: inline-block;
     }
     header > div div strong{
-        padding-left: 25px; line-height: 17px;
-        background: url('../images/bul_cart.png') left top / contain no-repeat;
+        line-height: 17px;
+        /* padding-left: 25px; background: url('../images/bul_cart.png') left top / contain no-repeat; */
     }
     header > div div span{
         width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px; text-align: center;
@@ -121,16 +122,16 @@ input[type='radio']{
         background-color: #222328;
     }
     footer > div{
-        position: relative; padding: 60px 0;
+        position: relative; padding: 60px /*0*/ 15px;
     }
     footer > div span{
-        position: absolute; right: 0; top: 60px; display: block; 
+        position: absolute; right: /*0*/15px; top: 60px; display: block; 
     }
     footer > div:first-child{
         border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        position: absolute; left: 0; top: 60px; width: 7.69%; max-width: 92px;
+        position: absolute; left: /*0*/15px; top: 60px; width: 7.69%; /*max-width*/min-width: 92px;
     }
     footer > div:first-child h2 img{
         width: 100%; min-width: 92px;
@@ -148,7 +149,7 @@ input[type='radio']{
         display: block; color: white; font-size: 12px; font-weight: 600;
     }
     footer > div:first-child span{
-        width: 8.94%;
+        width: /*8.94%*/11.94%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;

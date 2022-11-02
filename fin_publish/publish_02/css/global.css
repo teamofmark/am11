@@ -23,7 +23,7 @@ input[type='radio']{
     -webkit-appearance: none; -moz-appearance: none; font-family: inherit; font-weight: 600;
     padding: 10px 20px 10px 0; font-size: 11px; color: #343e5c;
 }
-@media screen and (min-width:768px) and (max-width:1279px){
+@media screen and (min-width: 768px) and (max-width: 1279px){
     header > div,
     footer > div,
     header + nav .slideNav,

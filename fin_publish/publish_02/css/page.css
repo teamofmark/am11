@@ -274,16 +274,18 @@
         content: ''; display: block; clear: both;
     }
     .contentArea section ul li{
-        display: block; float: left; width: 31%; background-color: white; border-radius: 10px;
-        margin: 0 0 30px 3.5%; min-height: 380px;
+        display: block; float: left; width: /*31%*/48%; background-color: white; border-radius: 10px;
+        margin: 0 0 30px 4%; min-height: /*380px*/360px; max-height: 510px; overflow-y: hidden;
     }
     .contentArea section ul li:nth-child(5){
-        width: 65.5%;
+        /* width: 65.5%; */ width: 100%; clear: both;
     }
     .contentArea section ul li:nth-child(1),
-    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(3),
+    .contentArea section ul li:nth-child(5),
     .contentArea section ul li:nth-child(6),
-    .contentArea section ul li:nth-child(9){
+    .contentArea section ul li:nth-child(8),
+    .contentArea section ul li:nth-child(10){
         margin-left: 0;
     }
     .contentArea section ul li figure img{

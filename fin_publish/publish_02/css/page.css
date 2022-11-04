@@ -170,9 +170,10 @@
     /* ?sortBar Fin */
 
     .contentArea aside{
-        width: 23.07%; float: left;
+        display: none;
+        /* width: 23.07%; float: left; */
     }
-    .contentArea aside nav{
+    /* .contentArea aside nav{
         background-color: white; border-radius: 10px; margin-bottom: 30px;
     }
     .contentArea aside nav ul li,
@@ -202,24 +203,15 @@
     .contentArea aside nav ul > li:hover ol li a{
         font-size: 11px; padding: 15px 7%; opacity: 1; border-bottom: 1px solid #dfe4ee;
     }
-    /* ?side Menu Fin */
 
     .contentArea aside fieldset{
         background-color: white; border-radius: 10px;
     }
     .contentArea aside fieldset:not(:last-of-type){
         padding: 50px 0 20px; margin-bottom: 10px;
-        /* 
-            ? fieldset 이 legend를 포함할 경우 상단 기본 30px. 
-            * psd 내 70에서 30을 제하면 되어야 하지만, 상단에 legend 영역으로 잡힌 padding이 있기 때문에
-            * 그의 절반인 15를 제한다.
-        */
     }
     .contentArea aside fieldset:last-of-type{
         padding-top: 30px;
-        /* 
-            ? 마지막 fieldset의 dlvr 들은 경계선을 가지고 있어야 하고 그 경계선이 legend border-bottom과 맞물려야 하니까
-        */
     }
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; font-weight: 700; box-sizing: border-box;
@@ -231,25 +223,20 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
-        padding-left: /*20.37%*/24.37%; box-sizing: border-box; line-height: 20px;
+        padding-left:24.37%; box-sizing: border-box; line-height: 20px;
     }
     .contentArea aside fieldset label:not(:last-of-type),
     .contentArea aside fieldset span:not(:last-of-type){
         margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        display: /*inline-block*/ none;
-        /* width: 18%;  text-align: center; font-size: 11px; color: #b8dfd3; */
+        display: none;
     }
-    /* .contentArea aside fieldset label[for*='ava'],
-    .contentArea aside fieldset label[for*='brand']{
-        width: 80%;
-    } */
-    .contentArea aside fieldset label:not([for*='dlvr'])/*[for*='Condition']*/{
+    .contentArea aside fieldset label:not([for*='dlvr']){
         width: 100%;
     }
     .contentArea aside fieldset label[for*='dlvr']{
-        width: /*49%*/ 48%; margin-bottom: 0; line-height: 50px;
+        width: 48%; margin-bottom: 0; line-height: 50px;
     }
     .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 1px solid #f0f2f7;
@@ -275,33 +262,36 @@
     
     .contentArea section{
         width: 74.35%; margin-left: 2.58%; float: left;
-    }
+    } */
     .contentArea section h3{
         display: none;
     }
-    .contentArea section ul:after{
+    /* .contentArea section ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     .contentArea section ul li{
-        display: block; float: left; width: /*31%*/48%; background-color: white; border-radius: 10px;
-        margin: 0 0 30px 4%; min-height: /*380px*/360px; max-height: 510px; overflow-y: hidden;
+        display: block; background-color: white; border-radius: 10px; margin: 0 0 30px /*4%*/0;
+        /* float: left; width: 48%; min-height: 360px; max-height: 510px;  overflow-y: hidden; */
     }
-    .contentArea section ul li:nth-child(5){
-        /* width: 65.5%; */ width: 100%; clear: both;
+    .contentArea section ul li:not(:nth-child(5)){
+        min-height: 360px;
     }
-    .contentArea section ul li:nth-child(1),
+    /* .contentArea section ul li:nth-child(5){
+        width: 100%; clear: both;
+    } */
+    /* .contentArea section ul li:nth-child(1),
     .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(5),
     .contentArea section ul li:nth-child(6),
     .contentArea section ul li:nth-child(8),
     .contentArea section ul li:nth-child(10){
         margin-left: 0;
-    }
+    } */
     .contentArea section ul li figure img{
         width: 100%; border-radius: 10px;
     }
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl{
-        text-align: center; padding: 0 7.5%;
+        text-align: center; padding: 0 /*7.5%*/ 9%;
     }
     .contentArea section ul li figure figcaption dl dt{
         font-size: 16px; color: #1c1e23; font-weight: 600; line-height: 20px; margin-bottom: 10px;
@@ -309,7 +299,7 @@
     .contentArea section ul li figure figcaption dl dd:not(:last-of-type){
         font-size: 12px; color: #b8dfd3;
     }
-    .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:not(:last-of-type){
+    .contentArea section ul li/*:not(:nth-child(5))*/ figure figcaption dl dd:not(:last-of-type){
         margin-bottom: 15px;
     }
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
@@ -319,14 +309,19 @@
         border-radius: 10px 10px 0 0;
     }
     .contentArea section ul li:nth-child(5) figure figcaption{
-        position: relative; padding: 15px 45% 15px 4.2%; box-sizing: border-box;
+        position: relative; padding: 15px /*45% 15px*/ 4.2%; box-sizing: border-box;
     }
     .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
         background-color: black; color: white; font-weight: 600; font-size: 12px;
-        padding: 6px 14px; border-radius: 5px; position: absolute; top: -296px; left: 2.1%;
+        padding: 6px 14px; border-radius: 5px; position: absolute;
+        top: /*-296px*/15px; /*left: 2.1%;*/ right: 4.2%;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span{
-        position: absolute; right: 4.2%; top: 20px; width: 40%;
+        display: block;
+        /* position: absolute; right: 4.2%; top: 20px; width: 40%; */
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span:after{
+        content: ''; display: block; clear: both;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span a{
         display: block; width: 50%; float: left; text-align: center; line-height: 30px;
@@ -364,15 +359,16 @@
         font-size: 11px; color: #343e5c; line-height: 55px; border-bottom: 1px solid #f0f2f7;
         text-transform: uppercase;
     }
-    section.bestArea ul:after{
+    /* section.bestArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.bestArea ul li{
-        float: left; width: 25%; display: block; padding-bottom: 35px;
+        display: block; padding-bottom: 35px;
+        /* float: left; width: 25%;  */
     }
-    section.bestArea ul li:not(:first-child){
+    /* section.bestArea ul li:not(:first-child){
         border-left: 1px solid #f0f2f7; box-sizing: border-box;
-    }
+    } */
     section.bestArea ul li figure img{
         width: 100%;
     }

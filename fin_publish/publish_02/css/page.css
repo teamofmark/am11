@@ -2,53 +2,54 @@
 
 @media screen and (max-width:767px){
     header + nav{
-        background-color: white;
+        background-color: white; margin-bottom: 30px;
     }
-    header + nav .slideNav:after{
+    /* header + nav .slideNav:after{
         content: ''; display: block; clear: both;
     }
     header + nav .slideNav > *{
         float: left;
-    }
+    } */
     header + nav .slideNav ul{
-        width: /*80%*/ 62%; padding: 0 0 0 15px; box-sizing: border-box;
+        padding: 0 5%; box-sizing: border-box; text-align: center; white-space: nowrap;
+        overflow-x: scroll;
+        /* width: 62%; */
     }
     header + nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
-    header + nav .slideNav ul li/*:not(:last-child)*/{
-        float: left;
+    header + nav .slideNav ul li{
+        /* float: left; */ display: inline-block;
     }
-    /* header + nav .slideNav ul li:last-child{
-        float: right;
-    } */
     header + nav .slideNav ul li a{
         display: block; font-size: 11px; color: #b9bed1; line-height: 56px; font-weight: 600;
-        text-transform: uppercase; /*letter-spacing: 1px;*/
+        text-transform: uppercase;
     }
     header + nav .slideNav ul li a:hover,
     header + nav .slideNav ul li a.active{
         color: #343e5c;
     }
     header + nav .slideNav input[type='search']{
-        margin-left: /*3%*/13%; width: /*17%*/25%; box-sizing: border-box; padding: 20px 2% 20px 4%;
+        display: none;
+        /* margin-left: 13%; width: 25%; box-sizing: border-box; padding: 20px 2% 20px 4%;
         border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
-        background: url('../images/bul_search.png') no-repeat /*12%*/6% center;
-        font-family: inherit; font-weight: 600;
+        background: url('../images/bul_search.png') no-repeat 6% center;
+        font-family: inherit; font-weight: 600; */
     }
-    header + nav .slideNav input[type='search']::placeholder{
+    /* header + nav .slideNav input[type='search']::placeholder{
         color: #a1a7bd;
-    }
+    } */
     /* ?slide Nav Fin */
 
     section.slideArea{
-        background-color: #1c1e23; margin-bottom: 50px;
+        display: none;
+        /* background-color: #1c1e23; margin-bottom: 50px; */
     }
-    section.slideArea h2{
+    /* section.slideArea h2{
         display: none;
     }
     section.slideArea > div{
-        position: relative; max-width: /*1400px*/1000px; margin: 0 auto;
+        position: relative; max-width:1000px; margin: 0 auto;
     }
     section.slideArea > div > a{
         display: block; width: 42px; padding: 10px 0 14px; font-size: 18px; color: white; top: 46%;
@@ -56,10 +57,10 @@
         position: absolute; text-align: center;
     }
     section.slideArea > div > a.btn_conL{
-        left: /*11.78%*/15px;
+        left: 15px;
     }
     section.slideArea > div > a.btn_conR{
-        right: /*11.78%*/15px;
+        right: 15px;
     }
     section.slideArea > div ol{
         position: absolute; left: 47.85%; bottom: 6%; z-index: 1;
@@ -85,21 +86,21 @@
         width: 100%; display: block;
     }
     section.slideArea > div ul li figure figcaption{
-        position: absolute; left: 15%; top: /*20%*/15%; width: /*32.85%*/40%; max-width: 460px; color: white;
+        position: absolute; left: 15%; top: 15%; width:40%; max-width: 460px; color: white;
     }
     section.slideArea > div ul li figure figcaption dl{
-        margin-bottom: /*60px*/10px;
+        margin-bottom: 10px;
     }
     section.slideArea > div ul li figure figcaption dl dt{
-        font-size: /*42px*/30px; font-weight: 900; line-height: /*50px*/35px; margin-bottom: 25px;
+        font-size: 30px; font-weight: 900; line-height: 35px; margin-bottom: 25px;
     }
     section.slideArea > div ul li figure figcaption dl dd{
-        font-size: /*16px*/13px; line-height: /*24px*/16px;
+        font-size:13px; line-height:16px;
     }
     section.slideArea > div ul li figure figcaption input[type='button']{
-        width: /*35.86%*/55%; background-color: #2754eb; font-size: 11px; font-weight: 600; line-height: 42px;
+        width:55%; background-color: #2754eb; font-size: 11px; font-weight: 600; line-height: 42px;
         border-radius: 21px; color: white; border: none;
-    }
+    } */
     /* ?sliderArea Fin */
 
     .contentArea{

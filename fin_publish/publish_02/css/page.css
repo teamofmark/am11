@@ -344,6 +344,9 @@
         opacity: 0.5;
     }
     /* ?content Section Fin */
+    .contentArea .paging{
+        display: none;
+    }
 
     section.bestArea{
         background-color: white; border-radius: 10px; margin-bottom: 50px; text-align: center;

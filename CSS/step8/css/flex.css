@@ -131,3 +131,74 @@
 .flexContainer.alignItems .flexItem:nth-of-type(2){
     line-height: 100px;
 }
+.flexContainer.justifySelf{
+     background-color: coral; display: grid;
+    /* 
+        ?justify-self
+        * stretch - 내부 공간 기준으로 자신의 너비 맞추기
+        * flex-start - 내부 공간 기준으로 자신의 위치를 좌측으로 맞추기
+        * flex-end - 내부 공간 기준으로 자신의 위치를 우측으로 맞추기
+    */
+}
+.flexContainer.justifySelf .flexItem:nth-of-type(1){width: 100px;}
+.flexContainer.justifySelf .flexItem:nth-of-type(2){width: 200px;}
+.flexContainer.justifySelf .flexItem:nth-of-type(3){width: 300px;}
+.flexContainer.justifySelf .flexItem:nth-of-type(4){width: 400px;}
+.flexContainer.justifySelf .flexItem:nth-of-type(5){width: 500px;}
+.flexContainer.justifySelf:hover .flexItem:first-of-type{
+    justify-self: flex-end;
+}
+.flexContainer.alignSelf{
+    height: 500px;
+}
+/* .flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: flex-end;
+} */
+/* .flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 60px;
+} */
+.flexContainer.alignSelf .flexItem:nth-of-type(1){align-self: flex-start; width: 30%;}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){align-self: center; width: 20%;}
+.flexContainer.alignSelf .flexItem:nth-of-type(3){align-self: flex-end; width: 10%;}
+.flexContainer.alignSelf .flexItem:nth-of-type(4){align-self: baseline;}
+.flexContainer.alignSelf .flexItem:nth-of-type(5){align-self: auto;}
+
+
+.flexContainer.orderItem .flexItem:first-of-type{
+    order: 1;
+}
+
+.flexContainer.orderItem .flexItem:last-of-type{
+    order: -1;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/
+
+.flexContainer.flexShortHand{
+    width: 50%; margin: 0; padding: 0;
+}
+.flexContainer.flexShortHand .flexItem{
+    margin: 0; padding: 0; word-break: break-all;
+}
+.flexContainer.flexShortHand .flexItem:first-child{
+    flex-grow: 2; flex-basis: 0;
+}
+.flexContainer.flexShortHand .flexItem:first-child~*{
+    flex-grow: 1; flex-basis: 0;
+}
+/* 
+    flex : grow shrink basis;
+
+    ? flex-grow(팽창(확장)비):
+    ! item의 증가비율을 정한다. default: 0. 즉, 빈 공간을 알아서 확장하여 채우지 않는다.
+    ! 음수 비허용. 양수 입력 시 '총 증가 내부팽창지수(grow합산)의 너비중 입력된 비율만큼의 너비를 가진다.
+    ! 단, max-width가 설정되면 해당 수치를 넘지 않는다.
+    * example. item이 3개이고 item들에게 grow가 1이 부여된다면 각각 1/3(33.33%)의 너비를 갖게 된다.
+
+    ?ex.1 > 만약 전체 너비 (300px)의 item 3개에 개별적으로 grow가 부여되었다면?
+    todo. flexItem:first-child{flex-grow:2;} -> 0(basis) + (300/4)*2 = 150.
+    todo. flexItem:first-child~*{flex-grow:1;} -> 0(basis) + (300/4)*1 = 75.
+    ? why 3(x) 4? = first 2 +  ~* 1 + 1.
+*/

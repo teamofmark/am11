@@ -37,16 +37,18 @@ div[class*='span']{
 .container {
 	width: 960px;
 	margin: 0 auto;
+    background-color: seagreen;
 }
 
 .row {
+    border-bottom: 3px solid moccasin;
 	overflow: hidden;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
 div[class*='span'] {
-	float: left;
+	float: left; background-color: salmon;
 }
 
 .span_1 {

@@ -60,7 +60,7 @@
 */
 
 // *case. 1 변수 생성
-var name = "Mark", age = 42, gender = man; //? 변수 선언과 동시 초기화.
+var name = "Mark", age = 42, gender = "man"; //? 변수 선언과 동시 초기화.
 var radius, pi; //? 변수 선언. (한번에)
 radius = 10, pi = 3.14159265; //? 변수 초기화(한번에)
 

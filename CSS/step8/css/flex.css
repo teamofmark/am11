@@ -218,7 +218,8 @@
     todo. flexItem:first-child~*{flex-shrink: 1;} -> 150(대상너비) - (150/4)*1 = 112.5;
     
     basis:
-    !item의 너비를 정한다. 기본값은 auto 이며 다양한 단위 percen
+    !item의 너비를 정한다. 기본값은 auto 이며 다양한 단위 percentages(%) || ems || rems || pixels 를 사용 할 수있다.
+    auto : 안의 컨텐츠의 길이만큼 너비가 늘어난다.
     
     !주의
     !1. shorthand로 묶어 사용할 시엔 따로 auto라고 선언하지 않으면 0이 된다.

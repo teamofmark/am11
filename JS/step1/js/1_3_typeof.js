@@ -40,3 +40,25 @@ function textTypeof(){
     var engName = 'Mark';
     console.log('engName 의 자료 유형은 ' + typeof(engName) + '입니다.');
 }
+
+// *case.3 현재 자신이 춥다,아니다를 cold 변수에 담아 자료형으로 check 해보자.
+function check1(){
+    var cold = false;
+    console.log('현재 내가 추운가? ' +  cold + ' 의 자료유형은 ' + typeof(cold));
+}
+// *case.4 현재 sign in 상태가 아니다를 signInStatus 변수에 담아 자료형을 check.
+function check2(){
+    var userID = 'Mark';
+    var signInStatus = false;
+    console.log(userID + '님 의 접속 상태는' + signInStatus + '입니다.');
+}
+// *case.5 test변수를 선언하고 초기화 하지 않은 상태에서 자료형을 check 해보자.
+function check3(){
+    var test;
+    console.log(typeof(test) + ' = ' + test);
+}
+// *case.6 obj변수에 null로 초기화 하여 자료형을 check 해보자.
+function check4(){
+    var obj = null;
+    console.log(typeof(obj) + ' = ' + obj);
+}

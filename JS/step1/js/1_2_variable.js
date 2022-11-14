@@ -64,5 +64,16 @@ var name = "Mark", age = 42, gender = "man"; //? 변수 선언과 동시 초기�
 var radius, pi; //? 변수 선언. (한번에)
 radius = 10, pi = 3.14159265; //? 변수 초기화(한번에)
 
-
 // ? ES6 - let, const... 선언하는 경우. (퍼블리셔는 몰라도됨)
+
+// *case. 2 변수의 특성
+
+var cup = 'Coffee'; //? 선언 및 초기화 - 컵을 만들고 그안에 커피를 담았다.
+cup = 'Green Tea'; //? 컵에 담긴 커피를 버리고 그안에 녹차를 담았다.
+cup = 'Water'; //? 컵에 담긴 녹차를 버리고 그안에 물을 담았다.
+// console.log(cup);
+
+// *case. 3 연산자 사용시
+var value = 10; //? value변수를 선언하고 10으로 초기화.
+value += 20;// ?value에다가 20을 더한 값을 value에 다시 저장해라. -> 복합대입연산자를 통한 간소화.
+console.log(value);// ?출력하기.

@@ -34,3 +34,9 @@ function testTypeof(){
     var favorNumber = 1;
     console.log(typeof(favorNumber));
 }
+
+// *case.2 자신의 영어이름을 engName 변수에 담아 자료형을 check 해보자.
+function textTypeof(){
+    var engName = 'Mark';
+    console.log('engName 의 자료 유형은 ' + typeof(engName) + '입니다.');
+}

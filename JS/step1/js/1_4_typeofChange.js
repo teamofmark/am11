@@ -87,32 +87,34 @@ function numbString(){
 // todo. 1-1 암시적 형변환
 function todo1(){
     var test = 100;
-    // todo. 형변환
-    // todo. typeof로 자료형 검수 및 출력.
+    var result = test + '';// todo. 형변환
+    console.log('result = ' + result + '의 자료 유형은' + typeof(result));// todo. typeof로 자료형 검수 및 출력.
 }
 // todo. 1-2 String 으로 형변환
 function todo2(){
     var test = 100;
-    // todo. 형변환
-    // todo. typeof로 자료형 검수 및 출력.
+    var result = String(test);// todo. 형변환
+    console.log('result = ' + result + '의 자료 유형은' + typeof(result));// todo. typeof로 자료형 검수 및 출력.
 }
 // todo. 1-3 toString 으로 형변환
 function todo3(){
     var test = 100;
-    // todo. 형변환
-    // todo. typeof로 자료형 검수 및 출력.
+    var result = test.toString();// todo. 형변환
+    console.log('result = ' + result + '의 자료 유형은' + typeof(result));// todo. typeof로 자료형 검수 및 출력.
 }
 // todo. 2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기.
 
 // todo. 2-1 parse 형변환.
 function todo4(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 형변환 및 연산식
+    // test = parseFloat(test);
+    var result = parseFloat(test) + 150 + parseInt("20"); // todo. 형변환 및 연산식
     // todo typeof로 자료형 검수 및 출력.
+    console.log('result = ' + result + '의 자료 유형은' + typeof(result));
 }
 // todo. 2-2 Number 형변환.
 function todo5(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 형변환 및 연산식
-    // todo typeof로 자료형 검수 및 출력.
+    var result = Number(test) + 150 + Number("20"); // todo. 형변환 및 연산식
+    console.log('result = ' + result + '의 자료 유형은' + typeof(result)); // todo typeof로 자료형 검수 및 출력.
 }

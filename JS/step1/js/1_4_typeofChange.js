@@ -34,3 +34,14 @@ function forcedString2(){
     var a = '2' + true;
     console.log(a); //? 2true
 }
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환
+
+    ? .toString()
+    * Number.toString(); - 문자형(진수)변환
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
+*/

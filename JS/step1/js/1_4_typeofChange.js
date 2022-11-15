@@ -18,3 +18,19 @@ function agePlus(){
     console.log(typeof(age));
     console.log(result);
 }
+// *case.2 강제 숫자 - 문자형 변환 2.
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 10;
+    console.log(result);
+}
+// *case.3 강제 불린 - 숫자형 변환.
+function forcedNumber(){
+    var result = 2 + true;
+    console.log(result); //? 3
+}
+// *case.4 강제 불린 - 문자형 변환.
+function forcedString2(){
+    var a = '2' + true;
+    console.log(a); //? 2true
+}

@@ -43,3 +43,27 @@
     ? 접근 연산자
     * .
 */
+// *case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장 후 출력.
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+// *case.2 50이 저장된 변수a, 20이 저장된 변수b를 곱한 값을 10으로 나누어 result 변수에 저장 후 출력.
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    var result = a*b/10;
+    console.log(result);
+}
+// todo.1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+// todo.2 'hi'가 담긴 변수 a와 'WEB'이 담긴 변수b 를 합쳐 'hiWEB'을 출력.
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a + b);
+}

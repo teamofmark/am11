@@ -45,3 +45,33 @@ function forcedString2(){
     ? .toFixed()
     * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
 */
+function stringNumb(){
+    var test = 15;
+    var result = String(test);
+    console.log(typeof(result) + ' = ' + result);
+}
+function stringtoNumb(){
+    var test1 = 30;
+    var result = test1.toString();
+    console.log(typeof(result) + ' = ' + result);
+}
+// *case. 5-1 background-color Random
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff;
+        bgColor = parseInt(bgColor);
+        bgColor = bgColor.toString(16);
+        // console.log(bgColor);
+        $("body").css("background-color", "#" + bgColor);
+    },1000);
+}
+
+// *case.6 text에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수, 실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환
+    * 2. parseFloat(value); - 실수형변환
+*/

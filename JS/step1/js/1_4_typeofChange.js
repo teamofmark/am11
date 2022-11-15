@@ -75,3 +75,10 @@ function bgColorRandom(){
     * 1. parseInt(value); - 정수형변환
     * 2. parseFloat(value); - 실수형변환
 */
+function numbString(){
+    var test= '300';
+    console.log(typeof(test));
+    var result = parseInt(test) + 10;
+    console.log(typeof(result));
+    console.log('result = ' + result);
+}

@@ -107,3 +107,25 @@ function numberPlusTodo(){
     ++number;
     console.log(number); //? 최종결과 : 13.
 }
+
+// *case. 5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a > b;
+    console.log("10 > 20 = " + result);
+}
+// *case. 6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log("10 = 20 ?" + result);
+}
+// *case. 7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ? " + result);
+}

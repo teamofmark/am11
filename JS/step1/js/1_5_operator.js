@@ -77,3 +77,11 @@ function operatorEx(){
     list += '</ul>';
     document.body.innerHTML = list;
 }
+
+// *case.4 연산자의 위치에 따른 경우 (뒤로 올 경우)
+function numberPlusAfter(){
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //?  ?을 출력 후 더해서 다시 number로-
+    alert(number++); //?  ?을 출력 후 더해서 다시 number로-
+    alert(number++); //?  ?을 출력 후 더해서 다시 number로-
+}

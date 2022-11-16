@@ -81,7 +81,29 @@ function operatorEx(){
 // *case.4 연산자의 위치에 따른 경우 (뒤로 올 경우)
 function numberPlusAfter(){
     var number = 10; //? 변수 선언 및 초기화
-    alert(number++); //?  ?을 출력 후 더해서 다시 number로-
-    alert(number++); //?  ?을 출력 후 더해서 다시 number로-
-    alert(number++); //?  ?을 출력 후 더해서 다시 number로-
+    alert(number++); //?  10을 출력 후 더해서 다시 number로-
+    alert(number++); //?  11을 출력 후 더해서 다시 number로-
+    alert(number++); //?  12을 출력 후 더해서 다시 number로-
+    //? 그렇기 때문에 최종 number는 13.
+}
+function numberPlusBefore(){
+    var number = 10; //? 변수 선언 및 초기화
+    alert(++number); //? ? 에 ? 을 더해서 ? 출력후, 다시 number로 -
+    alert(++number); //? ? 에 ? 을 더해서 ? 출력후, 다시 number로 -
+    alert(++number); //? ? 에 ? 을 더해서 ? 출력후, 다시 number로 -
+    // ? 그렇기 때문에 최종 number는 ?.
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10;
+    number++; //?출력 : 10 현재 : 11  10출력후 더하기(11). 다시 number로.
+    --number; //?출력 : 10 현재 : 10  11에서 1빼고 10 출력후. 다시 number로
+    ++number; //?출력 : 11 현재 : 11  10에서 1더하고 11 출력후. 다시 number로
+    number--; // todo. 
+    number++;
+    ++number;
+    --number;
+    number++;
+    ++number;
+    console.log(number); //? 최종결과 : 13.
 }

@@ -67,3 +67,13 @@ function stringOP(){
     var b = 'WEB';
     console.log(a + b);
 }
+
+// *case. 3 ul, li 구조의 tag를 html page에 삽입 후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS..!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}

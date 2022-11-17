@@ -74,3 +74,52 @@ function oddOrEven(){
         alert('올바른값을 입력하세요.');
     }
 }
+// *case. 5 다음 세과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    var koreanScore = prompt('국어점수를 입력하시오');
+    var englishScore = prompt('영어점수를 입력하시오');
+    var mathScore = prompt('수학점수를 입력하시오');
+    var avg = (Number(koreanScore)+Number(englishScore)+Number(mathScore)) / 3;
+    if(avg > 100 || avg < 0){
+        alert('점수똑바로입력하라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급이다야');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수하구만');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다. 아름답구만');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다. 망했는데?');
+    }else if(avg < 60){
+        alert('평균' + avg + '점 \n' + '가 입니다. 맞겠다야');
+    }else{
+        alert('숫자를 입력해야지?');
+    }
+}
+
+// *case. 6 사용자 id를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = prompt('사용자의 아이디');
+    if(userID == 'Mark'){
+        alert('접속승인!');
+    }else{
+        alert('잘못된 ID입니다.');
+    }
+}
+// *case. 7 사용자 id "Mark"와 password "1234"가 맞을 경우 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = window.prompt('사용자의 아이디?');
+    var userPW = window.prompt("사용자의 패스워드?");
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+// ! 간소화
+function userInfoCheck1(){
+    var userID = window.prompt('사용자의 아이디?');
+    var userPW = window.prompt("사용자의 패스워드?");
+    (userID == "Mark" && userPW == "1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+    // * 조건식 ? (참실행):(거짓실행);
+}

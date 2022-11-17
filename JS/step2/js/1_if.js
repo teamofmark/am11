@@ -15,3 +15,55 @@
 	alert('종료');
     
 */
+// * case. 1 현재시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours();
+    // ? 변수 선언부
+
+    if(hour < 12){
+        alert("오전입니다.");
+    }
+    if(hour >= 12){
+        alert("오후입니다.");
+    }
+}
+// *case.2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    if(day<30){ //? 어떠한 조건을 잡을 것인가? 30일보다 작은 상황? 30일과 같거나 큰 상황?
+        alert('아직 말일이 아니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+// *case.3 아침? 점심? 저녁?
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+    if(hour < 11){
+        alert('아침먹을시간');
+    }else if(hour < 15){
+        alert('점심먹을시간');
+    }else{
+        alert('저녁먹을시간');
+    }
+}
+// *case.4 숫자판별 (양,음수,0)
+function numbJudgment(){
+    var numb = Number(prompt('숫자를 입력하세요','양수음수상관없음'));
+    // console.log(typeof(numb) + ' = ' + numb);
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('0 혹은 잘못된 입력값입니다.');
+    }
+}
+// todo. 홀수와 짝수를 판별하는 조건문작성
+function oddOrEven(){
+    var numb = Number(prompt('숫자를 입력하세요','홀,짝을 구분해드립니다.'));
+    // todo. 1. 선행조건은 어떤것으로?(ex> 짝수) 2. 그외 조건(ex> 홀수) 3.예외처리.(ex>올바른값을넣어라.)
+}

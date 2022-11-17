@@ -127,7 +127,29 @@ function userInfoCheck1(){
 function userInfoCheck2(){
     var userID = window.prompt('사용자의 아이디?');
     var userPW = window.prompt("사용자의 패스워드?");
-    // todo. 선행조건 - 승인 or 거부(2개case..)
-    // todo. 1차부 - ID가 틀렸습니다.
-    // todo. 2차부 - password가 틀렸습니다.
+    if(userID=="Mark"&&userPW=="1234"){ // todo. 선행조건 - 승인 or 거부(2개case..)
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark"){ // todo. 1차부 - ID가 틀렸습니다.
+        alert("ID가 존재하지 않습니다.");
+    }else{ // todo. 2차부 - password가 틀렸습니다.
+        alert("password가 틀렸습니다.");
+    }
+}
+
+//todo hw.1 각 수를 입력 받아 해당하는 조건의 메시지를 출력하라.
+//? 1일 경우 "1등 10억", 2일 경우 "2등 5천만원", 3일 경우 "3등 300만원", 그외 수일 경우 "낙첨되었습니다."
+
+//todo hw.2 다음 코드를 간소화 시키시오.
+function btnMouseEx(){
+    var clickBtn = window.prompt("누르실 마우스 버튼을 입력하세요 (왼쪽,오른쪽,가운데)");
+    // ? 선행조건 1개에 - 예외 1개. (if{}else{})
+    if(clickBtn=="오른쪽"){
+        document.write("오른쪽!");
+    }else if(clickBtn=="왼쪽"){
+        document.write("왼쪽!");
+    }else if(clickBtn=="가운데"){
+        document.write("가운데!");
+    }else{
+        document.write("올바른값을 입력하세요.");
+    }
 }

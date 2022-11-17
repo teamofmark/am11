@@ -65,5 +65,12 @@ function numbJudgment(){
 // todo. 홀수와 짝수를 판별하는 조건문작성
 function oddOrEven(){
     var numb = Number(prompt('숫자를 입력하세요','홀,짝을 구분해드립니다.'));
-    // todo. 1. 선행조건은 어떤것으로?(ex> 짝수) 2. 그외 조건(ex> 홀수) 3.예외처리.(ex>올바른값을넣어라.)
+    // todo. 1. 선행조건은 어떤것으로?(ex> 짝수? 2 -> 나머지0) 2. 그외 조건(ex> 홀수 2-> 나머지 1) 3.예외처리.(ex>올바른값을넣어라.)
+    if(numb%2 == 0){
+        alert('짝수!');
+    }else if(numb%2 == 1){
+        alert('홀수!');
+    }else{
+        alert('올바른값을 입력하세요.');
+    }
 }

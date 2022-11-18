@@ -25,7 +25,18 @@ function whileContinue(){
     var i = 1; //? i ? - 반복전용변수. 암묵적인룰. i = index. 공식 Ref - [i], var i = 0;...
     while(i <= 10){ //? i가 10보다 작거나 같을때 까지는? 내부를 실행해라.
         i++; //? i 1씩증가.
+        continue;
         document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case.3 while Break
+function whileBreak(){
+    var i = 1;
+    while(i <= 10){
+        i++;
+        document.write(i + "<br>");
+        break;
     }
     document.write('최종 i = ' + i + '<br>');
 }

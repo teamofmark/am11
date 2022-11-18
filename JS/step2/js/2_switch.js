@@ -50,11 +50,20 @@ function calculator(){
 
     switch(operator){
         case "+":
-            alert();// todo. 더하기 연산식
+            alert(firstNumb + lastNumb);// todo. 더하기 연산식
             break;
-            // todo.  -
-            // todo.  *
-            // todo.  /
-            // todo. default
+        case "-":
+            alert(firstNumb - lastNumb);
+            break;
+        case "*":
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default:
+            alert("잘못된 연산자 입니다.");
+            break;
     }
+    
 }

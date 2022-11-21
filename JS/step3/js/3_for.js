@@ -70,4 +70,13 @@ function favorFluit(){
         document.write(array[i] + '<br>');
     }
 }
-
+// todo. 지금까지 배웠던 JS단원명을 배열을 활용해 출력해보자.
+// ? 변수,연산자,자료형,형변환,조건문if,조건문switch,반복문while,반복문for
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"]; //? "1"번째 내용 = 변수 ...
+    // ? ECMA Script.
+    for (let i = 0; i < data.length; i++){ //? 상시변수 - 늘 변할 수 있는 변수
+        const element = data[i]; //? 비상시변수 - 개발자가 원할 시에만 변경해야 하는 변수(잠금?)
+        document.write((i+1) + '번째 내용 = ' + element + '<br>');
+    }
+}

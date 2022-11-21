@@ -13,3 +13,42 @@
     3. 참일경우 문장 실행 > 4. 종결식 실행 > 5. 2단계
 
 */
+// ! 단일 for 문
+
+// *case.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for (var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case.2 이름을 1000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+        document.write(i + '.'+userName + '<br>');
+    }
+}
+// *case.3 1,000번 출력중에 홀수번째만 출력?
+function namePrint500(){
+    var userName = "Mark";
+    for (var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo. 머리속에 생각나는 1 - 10 까지 출력되는 반복문을 직접 짜보자.
+function answer1(){
+
+}
+function answer2(){
+
+}
+function answer3(){
+
+}
+function answer4(){
+
+}
+function answer5(){
+
+}

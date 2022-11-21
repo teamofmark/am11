@@ -38,17 +38,36 @@ function namePrint500(){
 }
 // todo. 머리속에 생각나는 1 - 10 까지 출력되는 반복문을 직접 짜보자.
 function answer1(){
-
+    for(var i = 0; i < 10; i++){
+        document.write((i+1)+"<br>");
+    }
 }
 function answer2(){
-
+    for(var i = 1; i <= 10; i++){
+        document.write(i +"<br>");
+    }
 }
 function answer3(){
-
+    for(var i = 100; i < 110; i++){ //? 일정data를 jump한 다음 불러오기.
+        document.write((i-99)+"<br>");
+    }
 }
 function answer4(){
-
+    for(var i = 1; i <= 10; i+=2){
+        document.write(i +"<br>"); //? 1, 3, 5, 7, 9.. (증감이 이루어지지 않은 iteration)
+        document.write((i+1) +"<br>");//? 2, 4, 6, 8, 10..(증감이 이루어 진 후 iteration)
+    }
 }
 function answer5(){
-
+    for(var i = 10; i >= 1; i--){
+        document.write((11-i) +"<br>");
+    }
 }
+// *case. 4 자신이 좋아하는 과일 4개를 배열로 배치하고, alert 출력.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기','메론'];
+    for (var i = 0; i < array.length; i++){
+        document.write(array[i] + '<br>');
+    }
+}
+

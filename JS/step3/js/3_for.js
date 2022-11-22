@@ -152,5 +152,17 @@ function halfPyramid(){
 }
 //*todo.1 역반절 피라미드
 function reverseHalfPyramid(){
-    
+    var star = '';
+    for (var i = 10; i >= 1; i--) {//? 1. ifor = 10~1 까지 수행
+        for (var j = 0; j < i; j++) { //? jfor = j가 i보다 작을때 까지 반복 수행 10,9,8,7,6....
+            star += '*';//? 변수 star에 반복생성된 만큼 *을 넣음.
+        }
+        star += '<br>';//? ifor 만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star);
+}
+
+// todo. 피라미드
+function pyramid(){
+
 }

@@ -87,3 +87,50 @@ function reverseFavorFluit(){
         document.write(array[i] + '<br>');
     }
 }
+
+// *case. 6 forContinue ?
+function forContinue(){
+    for (var i = 0; i < 10; i++){
+        continue; //? 위 조건이 참일 지라도 continue가 있어서 continue이하 구문 실행불가.
+        document.write(i+'<br>');
+    }
+    document.write('최종 i = ' + i + "<br>"); //? 상관없음(continue) - why? for 밖 logic.
+}
+// *case. 6-1 forContinue 활용.
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i <= 10; i++){
+        // console.log("현재 i = " + i);
+        if(i % 2 == 1){
+            /*
+                i가 홀수일 경우 반복 중지 다음반복수행, 현재 다음 반복은 없다.
+                (1 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (2 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                (3 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (4 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                ..
+                이조건으로 i값이 10보다 작거나 같을때까지 수행하여 출력하라.
+            */
+            continue; //? 홀수 필터
+        }
+        output += i;
+        document.write(output + '<br>');
+    }
+}
+// *case. 7 forbreak?
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break; //? 위 조건이 참일 지라도 break가 존재하면 해당로직 강제 탈출.
+        document.write(i +'<br>');
+    }
+    document.write("최종 i = " + i + "<br>"); //? 상관없음. -> why? for 밖 logic.
+}
+// *case. 8 forBreak 활용?
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문'); //? 한번은 수행시키기.
+        if(!confirm('계속할래?')){ //? 반환받은 값이 !true(false)일 경우 중지 / !false(true)일 경우 재실행.
+            break;
+        }
+    }
+}

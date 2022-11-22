@@ -136,3 +136,21 @@ function runBreak(){
 }
 //* login Process -> 5회이상 틀렸을 때 -> 경고창 출력. 이후 매회 경고창출력(10회도달시까지)
 //* -> 차단.
+
+// ! 다중 for
+// *case. 9 반절 피라미드
+
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+//*todo.1 역반절 피라미드
+function reverseHalfPyramid(){
+    
+}

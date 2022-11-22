@@ -80,3 +80,10 @@ function arrayFor(){
         document.write((i+1) + '번째 내용 = ' + element + '<br>');
     }
 }
+// *case. 5 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기','메론'];
+    for(var i = array.length - 1; i >= 0; i--){
+        document.write(array[i] + '<br>');
+    }
+}

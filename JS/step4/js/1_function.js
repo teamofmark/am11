@@ -106,3 +106,7 @@ function infiniteSum(){
     }
     document.write("총 " + count + "번 실행함.");
 }
+// todo.1 구구단 출력을 함수로 만들기.
+function printGugudan(){
+    // ! 2단~9단까지 반복문으로 자동 출력되게 완성해오기.
+}

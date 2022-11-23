@@ -163,6 +163,30 @@ function reverseHalfPyramid(){
 }
 
 // todo. 피라미드
-function pyramid(){
-
+function pyramidStep1(){
+    for(var i = 0; i < 10; i++){
+        for(var j = 9; j > i; j--){
+            document.write("&nbsp;"); //? space
+        }
+        for(var j = 0; j <= i; j++){
+            document.write('*');
+        }
+        for(var j = 1; j <= i; j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+}
+function pyramidStep2(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){ //? 1. ifor = 1~10까지 수행
+        for(var e = 10; e >= i; e--){ //? 2. efor = 10~1까지 수행 (loop.1)
+            star += '&nbsp;'; //? 공백이 10개부터(loop.1) 1개 까지 들어가.
+        }
+        for(var s = 0; s < 2*i-1; s++){ //? 3. sfor = i가들어올때마다 무조건 홀수화됨. 
+            star += '*'; //? 홀수화된 s의 수치만큼 반복해서 *이 들어감.
+        }
+        star += '<br>'; //? ifor만큼 <br>을 변수 star에 마지막으로 넣음.
+    }
+    document.write(star); //? 최종 누적 star 출력.
 }

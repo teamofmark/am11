@@ -96,7 +96,9 @@ function infiniteSum(){
         var value = parseInt(window.prompt('숫자만 입력해라.'));
         if(value == 0){
             document.write("종료");
-            break;
+            // break;
+            return;
+            //? return은 함수 자체를 빠져나온다. / break는 해당 logic,loop만을 빠져나온다.
         }
         sum += value;
         document.write(count + ". " + sum + "<br>");

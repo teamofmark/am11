@@ -199,3 +199,26 @@ function mul(numb1,numb2){
 function div(numb1,numb2){
     return numb1 / numb2;// ? /, 단독수행가능(처리,출력)
 }
+
+// *case. 9 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+// *case. 10 좋아, 매개변수 값으로 함수 전달은 되냐?
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕하소.');
+}
+function execute(func){ //? 매개변수 func 생성.
+    func();
+}
+// *case.11 button Click시 매개변수값으로 넘긴 함수 실행하기.
+function welcome(){
+    alert("환영! 반갑.");
+}
+$(document).ready(function(){
+    $("#runEx11").click(welcome);
+});

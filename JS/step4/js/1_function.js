@@ -106,6 +106,7 @@ function infiniteSum(){
     }
     document.write("총 " + count + "번 실행함.");
 }
+
 // todo.1 구구단 출력을 함수로 만들기.
 function printGugudan(){
     // ! 2단~9단까지 반복문으로 자동 출력되게 완성해오기.
@@ -117,3 +118,19 @@ function printGugudan(){
         document.write("<br>");
     }
 }
+
+// *case. 8 다음 실행 구문으로 가동 될 수 있는 계산기 만들기.
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10));
+    document.write("2 결과 =" + calculator("-", 20, 10));
+    document.write("3 결과 =" + calculator("*", 20, 10));
+    document.write("4 결과 =" + calculator("/", 20, 10));
+    document.write("5 결과 =" + calculator("%", 20, 10));
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/

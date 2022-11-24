@@ -158,14 +158,15 @@ function calculator(op,numb1,numb2){
 }
 
 // todo. 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
-/* 
+/*
 //* 실행구문
-document.write(calculator2("+", 20, 10) + "<br>");
-document.write(add(20, 10) + "<br>");
-document.write(sub(20, 10) + "<br>");
-document.write(mul(20, 10) + "<br>");
-document.write(div(20, 10) + "<br>");
+* document.write(calculator2("+", 20, 10) + "<br>");
+* document.write(add(20, 10) + "<br>");
+* document.write(sub(20, 10) + "<br>");
+* document.write(mul(20, 10) + "<br>");
+* document.write(div(20, 10) + "<br>");
 */
 function calculator2(){
-    
+    //? <- 이 계산기 함수에서 더하기함수(add),빼기함수(sub)등을 불러 사용해야한다.
+
 }

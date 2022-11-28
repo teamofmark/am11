@@ -75,8 +75,25 @@ function keyControl(){
     var currentXpos = 0;
     var currentYpos = 0;
     $(document).keydown(function(e){
-        console.log("입력한 키" + e.keyCode);
         // ? w: 87(-y), d: 68(+x) , s: 83(+y), a: 65(-x)
         // todo. 움직임 완성 시키기.
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
+
     });
 }

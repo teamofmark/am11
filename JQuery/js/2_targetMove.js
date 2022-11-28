@@ -1,6 +1,8 @@
 $(document).ready(function(){
     // *case. 1 원 움직이기 (xAxis)
     $("#btnMoveCircle").click(moveCircle);
+    // *case. 2 원 움직이기 (x,yAxis)
+    $("#btnDetailMove").click(detailMoveCircle);
 });
 
 function moveCircle(){
@@ -19,12 +21,12 @@ function moveCircle(){
 }
 // *exp.2
 function detailMoveCircle(){
-    var $circle = $(".circleDetail");
-    var xpos = $("#xpos").val();
-    var ypos = $("#ypos").val();
+    var $circle = $(".circleDetail"); //? 움직일 대상 선언.
+    var xpos = $("#xpos").val(); //? 각 id에 담긴 value를 가져오라.
+    var ypos = $("#ypos").val(); //? 각 id에 담긴 value를 가져오라.
 
-    xpos = parseInt(xpos);
-    ypos = parseInt(ypos);
+    xpos = parseInt(xpos); //? 형변환
+    ypos = parseInt(ypos); //? 형변환
 
     if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
         alert('잘못된 수치입니다. 0 ~ 380이내로 입력하세요.');

@@ -5,6 +5,9 @@ $(document).ready(function(){
     // $("#btnDetailMove").click(detailMoveCircle);
     // *case. 2-1 원 움직이기 (함수구조분리)
     detailMoveCircleExt();
+
+    // *case. 3
+    keyControl();
 });
 
 function moveCircle(){
@@ -64,4 +67,16 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+    $(document).keydown(function(e){
+        console.log("입력한 키" + e.keyCode);
+        // ? w: 87(-y), d: 68(+x) , s: 83(+y), a: 65(-x)
+        // todo. 움직임 완성 시키기.
+    });
 }

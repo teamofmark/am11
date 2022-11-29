@@ -20,4 +20,7 @@ function imgAlignHori(){
         }
         // ? 처리부
     });
+    $(".reset").click(function(){
+        img.css("left", 0);
+    });
 }

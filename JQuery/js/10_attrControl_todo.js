@@ -3,9 +3,14 @@ var logos = ["logo_01.jpg","logo_02.jpg","logo_03.jpg","logo_04.jpg","logo_05.jp
 var speed = 0;
 var $banner1 = null;
 var $banner2 = null;
+var $banner3 = null;
+var $banner4 = null;
+var $banner5 = null;
 
 $(document).ready(function(){
     init();
+    swap($banner1,1000);
+    swap($banner2,3000);
     // todo. 실행해보기. 2개 img Banner 시간차 두고 수행되게끔
 });
 function init(){

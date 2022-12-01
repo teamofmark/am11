@@ -3,9 +3,6 @@ var logos = ["logo_01.jpg","logo_02.jpg","logo_03.jpg","logo_04.jpg","logo_05.jp
 var speed = 0;
 var $banner1 = null;
 var $banner2 = null;
-var $banner3 = null;
-var $banner4 = null;
-var $banner5 = null;
 
 $(document).ready(function(){
     init();

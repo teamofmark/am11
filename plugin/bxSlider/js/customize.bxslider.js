@@ -15,6 +15,9 @@ $(document).ready(function(){
 
         // * adaptiveHeight
         adaptiveHeight: true, //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
-        adaptiveHeightSpeed: 750 //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed와 동기화
+        adaptiveHeightSpeed: 750, //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed와 동기화
+    
+        easing: 'ease-in-out', //? default : null. slide간 전환 가속도 설정. CSS timing-function option 사용가능.
+        captions: true
     });
 });

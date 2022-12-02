@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // ? $("부모공간").fitVids();
     $(".slider").bxSlider({
         mode: "horizontal",  //? default : horizontal(수평방향전환), vertical(수직방향전환), fade(사라지고나타나고)
         speed: 750, //? default : 500. 전환속도 제어
@@ -18,6 +19,13 @@ $(document).ready(function(){
         adaptiveHeightSpeed: 750, //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed와 동기화
     
         easing: 'ease-in-out', //? default : null. slide간 전환 가속도 설정. CSS timing-function option 사용가능.
-        captions: true
+        captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 이미지 위로 보여준다.
+        video: true, //? default: false. video 활성화.(slide에 video가 있을 시만) fitvids.js를 연결해두면 iframe,video등의 width,height 자동설정 가능. 
+    
+        // *pager - indicator
+        pager: true, //? default: true. pager 켜기/끄기
+        pagerType: 'full', //? default: full.(circle). short: count로 변경
+        //? pagerShortSeparator: ' - ' default: / -> . 식별자변경.
+        //? pagerSelector: '.newPager', default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
     });
 });

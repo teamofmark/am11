@@ -5,3 +5,33 @@
 .bx-wrapper .bx-caption span{
     color: black;
 }
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: transparent; border: 1px solid cyan;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    border: 1px solid darkblue; background-color: darkblue;
+}
+/* ? default pager 상태일때  */
+
+.newPager{
+    text-align: center; padding: 30px 0;
+}
+.newPager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager-item a{
+    display: block; text-decoration: none; font-size: 14px;
+    border-radius: 5px; background-color: #c4c4c4;
+    padding: 5px;
+}
+.newPager .bx-pager-item a.active{
+    background-color: #db08e3; color: black;
+    border-radius: 15px;
+}
+/* ? 부모공간을 지정해서 뼈대 제공받은 상태 */

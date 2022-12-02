@@ -1,4 +1,7 @@
 
+.bx-wrapper{
+    margin: 0;
+}
 .bx-wrapper .bx-caption{
     background: rgba(255,255,0,0.9);
 }
@@ -18,6 +21,7 @@
 
 .newPager{
     text-align: center; padding: 30px 0;
+    display: none;
 }
 .newPager .bx-pager-item{
     display: inline-block;
@@ -35,3 +39,21 @@
     border-radius: 15px;
 }
 /* ? 부모공간을 지정해서 뼈대 제공받은 상태 */
+
+.customPager{
+    margin: 10px 0;
+}
+.customPager:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.customPager li{
+    float: left; width: 16.66%; display: block;
+}
+.customPager li a{
+    background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px;
+    cursor: pointer;
+}
+.customPager li a.active{
+    background-color: black;
+}
+/* ? 내가 임의로 만든 뼈대 */

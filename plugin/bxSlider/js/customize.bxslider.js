@@ -65,13 +65,13 @@ $(document).ready(function(){
          //? moveSlides: 2 default: 0. 전환시 이동할 슬라이드 장수.
          
         // *비중요
-        wrapperClass: 'bx-wrapper', //? default: 'bx-wrapper' 종속된 css 를 해제하고 다른 부모 class로 변경한다.
-        preloadImages: 'visible', //? default: visible. slider시작전에 한장(첫장)만 load, all. slider 시작전에 slide모든 image download.
-        useCSS: true, //? default: true. css animation(하드웨어가속)사용. 켜기(권장) 끄기.
+        //? wrapperClass: 'bx-wrapper', default: 'bx-wrapper' 종속된 css 를 해제하고 다른 부모 class로 변경한다.
+        //?  preloadImages: 'visible', default: visible. slider시작전에 한장(첫장)만 load, all. slider 시작전에 slide모든 image download.
+        //? useCSS: true, default: true. css animation(하드웨어가속)사용. 켜기(권장) 끄기.
         //? slideSelector : $(parent child) //? default: ''. slide로 작동될 요소를 직접선택 가능.
         //? keyboardEnabled: default: false. slider keyboard 조작가능 하게 변경.
         // ? autoDirection: 'next', 자동전환 방향설정 'prev'는 일반적이지 않다.
-        
+
         // *Public methods.
         // ? goToslide : 특정 index 슬라이드로 전환.
         // ? goToNextSlide : '다음' 슬라이드로 전환. (ex> wheelScroll에 반응하여 다음,이전 작동..)

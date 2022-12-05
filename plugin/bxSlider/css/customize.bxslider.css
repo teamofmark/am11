@@ -57,3 +57,27 @@
     background-color: black;
 }
 /* ? 내가 임의로 만든 뼈대 */
+
+.newControler{
+    text-align: right;
+}
+.newControler span{
+    display: inline-block; width: 10%;
+}
+.newControler span a{
+    display: block; line-height: 30px;
+    text-decoration: none; text-align: center;
+    background-color: lightskyblue;
+    font-size: 12px; font-weight: bold;
+    color: black;
+}
+.newControler span a:hover{
+    background-color:aqua;
+    color: midnightblue;
+}
+.newControler span.btn_prev a:hover:before{
+    content: '<';
+}
+.newControler span.btn_next a:hover:after{
+    content: '>';
+}

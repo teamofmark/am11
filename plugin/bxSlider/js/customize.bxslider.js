@@ -44,6 +44,18 @@ $(document).ready(function(){
         autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
         autoDelay: 1500, //? default: 0(m/s). 자동시작 전 지연시간 설정. (autoStart가 true일 경우 사용. systemDelay고려)
         stopAutoOnClick: false,  //? controler Button을 클릭 하였을 때 자동전환 중지.
-        autoControlsCombine: true,  //? default : false. play/pause toggle.
+        autoControlsCombine: false, //? default : false. play/pause toggle.
+        //? autoControlsSelector: '.newAutoControls', default: null. 공간 생성 및 class 부여 하면 autoControl 뼈대제공.
+        //? startText: '시작', 생성된 뼈대 안에 text 변경
+        //? stopText: '중지'
+
+        // *mobile - 비중요.(사용빈도높지않음)
+        touchEnabled: true, //? default: true. ? 터치스와이프 켜기 끄기.
+        swipeThreshold: 50, //? default: 50. ? slide 터치스와이프시. 터치상태로 움직여야하는 px수.
+        oneToOneTouch: false,  //? default: true. hori,verti 일경우 터치상태를 slide가 따라다닌다.
+        preventDefaultSwipeX: true, //? default: true. screen자체 터치상태에서 x축 움직임을 중지 
+        preventDefaultSwipeY: false //? default: false. screen자체 터치상태에서 Y축 움직임을 중지 
+    
+        // ! carousel
     });
 });

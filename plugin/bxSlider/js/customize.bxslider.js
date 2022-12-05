@@ -31,9 +31,11 @@ $(document).ready(function(){
 
         // *controler
         controls: true,
-        nextSelector: '.btn_next',
-        prevSelector: '.btn_prev'
+        //? nextSelector: '.btn_next',공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공. 
+        //? prevSelector: '.btn_prev', 공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
         //? nextText : '다음',  controler 뼈대 안에 text 변경
         //? prevText : '이전',
+
+        // * auto
     });
 });

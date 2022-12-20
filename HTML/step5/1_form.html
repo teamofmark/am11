@@ -69,11 +69,27 @@
         <fieldset>
             <legend>HTML5 Input</legend>
             <label for="userName">이름 : </label>
-            <input type="text" id="userName" placeholder="8자미만" required maxlength="8" autofocus readonly> -->
-            <input type="email" placeholder="example@example.com" required>
-            <input type="url" placeholder="https://www.example.com" required>
+            <input type="text" id="userName" placeholder="8자미만" required maxlength="8" autofocus readonly>
+           
+            <input type="email" placeholder="example@example.com">
+            <input type="url" placeholder="https://www.example.com">
+            
             <input type="tel">
             
+            <input type="number" min="1" max="10" step="1" value="1">
+            <input type="range" min="-2" max="2" step="1" value="0">
+
+            <input type="date">
+            <input type="datetime-local">
+            <input type="time">
+            <input type="month">
+            <input type="week">
+            <input type="datetime">
+
+            <input type="search" placeholder="검색어를 입력하세요.">
+            <!-- autocomplete="" 자동완성 기능 지원 -->
+            <label for="typeColor">색상선택 : </label>
+            <input type="color" id="typeColor">
         </fieldset>
     </form>
 </body>

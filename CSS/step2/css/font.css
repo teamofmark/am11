@@ -1,0 +1,36 @@
+/* 
+    ? font weight
+    * 100(Thin) 200(ExtraLight:변경가능) 300(Light) 400(Regular) 500(Medium)
+    * 600(semiBold:변경가능) 700(Bold) 800(ExtraBold:변경가능) 900(Black)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*
+웹폰트로드하는방법
+1. 영어권이냐 ? 영어권이아니냐
+
+- 영어권 : alternate(대체).
+- 비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경.
+(한글,영어)
+- 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
+*/
+body{
+    font-family: 'Nanum Gothic';
+}
+h1{
+    font-size: 20px; line-height: 26px; color: #06f;
+}
+h2{
+    font-size: 15px; line-height: 21px; color: #966;
+}
+h3{
+    font-size: 13px; line-height: 19px; color: #f90;
+}
+p{
+    font-size: 14px; font-weight: 800;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+p.word{
+    word-spacing: 10px;
+}

@@ -57,3 +57,11 @@ p.w_nowrap{
     * 4. 작은 애에게 상대적 수치 (%)를 이용하여 나머지 부분을 더 움직일 수 있다.
     ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
 */
+p.t_indent{
+    text-indent: 20px; font-size: 26px;
+}
+.test{
+    background: url("https://via.placeholder.com/150x50?text=blablaButton");
+    border: none; width: 150px; line-height: 50px; font-size: 12px;
+    text-indent: -9999px;
+}

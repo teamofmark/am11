@@ -34,3 +34,12 @@ p.letter{
 p.word{
     word-spacing: 10px;
 }
+p.w_normal{
+    width: 150px; background-color: palegoldenrod;
+    white-space: normal; line-height: 21px;
+}
+p.w_nowrap{
+    width: 150px; background-color: palegoldenrod;
+    line-height: 21px; white-space: nowrap;
+    overflow-x:hidden; text-overflow: ellipsis;
+}

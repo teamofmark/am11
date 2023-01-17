@@ -65,3 +65,28 @@ p.t_indent{
     border: none; width: 150px; line-height: 50px; font-size: 12px;
     text-indent: -9999px;
 }
+a{
+    display: block; line-height: 22px; margin-bottom: 30px;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #009;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #900;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: #f63;
+}
+
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: right;
+}
+/* ! text-align은 부모기준으로 inline관련 속성의 요소를 정렬 할 수 있다. */

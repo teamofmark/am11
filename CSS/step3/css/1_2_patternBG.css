@@ -6,4 +6,14 @@ body{
 }
 .wrap{
     background-image: url('../images/pt.gif');
+    background-repeat: repeat;
+    /* ? background로 image를 사용시 pattern이 무조건 일어난다. */
+}
+.wrap p{
+    background-color: deeppink; padding: 20px; margin: 0 0 20px 0;
+}
+.wrap button{
+    line-height: 75px; padding: 0 40px; color: white;
+    background-image: url('../images/pt_ex.png');
+    background-repeat: repeat-x; border: none;
 }

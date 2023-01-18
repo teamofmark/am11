@@ -5,9 +5,11 @@ html,body{
     height: 100%;
 }
 body{
-    background: 
+    background: url('../images/example.jpg') center / cover no-repeat fixed;
     /* 
         ? background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-orign] [background-clip] [background-color]
+        * background: url('') no-repeat center;
+        ! position과 size를 동시에 쓸때와 아닐때로 나누어서 / 를 구분자로 사용.
     */
     /* background-image: url('../images/example.jpg');
     background-position: center;

@@ -1,0 +1,20 @@
+html,body{
+    height: 100%;
+}
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+}
+.multiBox{
+    /* ? 속성별 분리 / 방향별 분리 */
+    /* 
+        * 1. 1px = 4방향
+        * 2. 1px 3px = 상하,좌우 로 묶기
+        * 3. 1px 3px 10px = 상하 별도, 좌우 묶기.
+    */
+    border-width: 1px 3px 10px 25px;
+    border-style: solid dotted dashed double;
+    border-color: steelblue salmon slateblue goldenrod;
+}

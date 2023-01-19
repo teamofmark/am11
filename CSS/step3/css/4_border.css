@@ -14,7 +14,35 @@ div{
         * 2. 1px 3px = 상하,좌우 로 묶기
         * 3. 1px 3px 10px = 상하 별도, 좌우 묶기.
     */
-    border-width: 1px 3px 10px 25px;
+  /*border-width: 1px 3px 10px 25px;
     border-style: solid dotted dashed double;
-    border-color: steelblue salmon slateblue goldenrod;
+    border-color: steelblue salmon slateblue goldenrod; */
+    border-top: 1px solid steelblue;
+    border-right: 3px dotted salmon;
+    border-bottom: 10px dashed slateblue;
+    border-left: 25px double goldenrod;
+}
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #666;
+}
+.outsetBox{
+    bordeR: 20px outset #666;
+}
+.outsetBox:hover{
+    border-style: inset;
+}
+.radiusBox{
+    background-color: black; color: yellow; border-radius: 10px;
+}
+.circleBox{
+    background-color: midnightblue;
+    /* width: 50%; height: 50%; border-radius: 50%; */
+    width: 500px; height: 500px; border-radius: 500px;
+    color: white; font-size: 24px; text-align: center; line-height: 500px;
 }

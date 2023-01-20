@@ -25,3 +25,9 @@ body{
         ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직하다.
     */
 }
+.centerDiv{
+    width: 45%;
+    border: 1px solid #33f;
+    margin-left: auto;
+    text-align: center;
+}

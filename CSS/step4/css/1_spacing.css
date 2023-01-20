@@ -11,10 +11,17 @@ body{
     /* margin-bottom: 20px; */
 }
 .secondDiv{
-    background-color: #ddd; margin: 20px 15px;
+    background-color: #ddd; margin: 20px 15px;  padding: 0 10px 10px;
     /* 
-    ! firstDiv의  */
+    ! firstDiv의  margin-bottom 10px은 상쇄.
+    ? secondDiv의 margin과 만나는 부분에서 가산없이 병합.
+    */
 }
 .secondDiv article{
     background-color: #930;
+    /* margin: 10px; */
+    /* 
+        ! margin-bottom만 비정상적용 된 것을 확인 할 수 있다.(부모경계선너머적용)
+        ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직하다.
+    */
 }

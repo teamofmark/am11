@@ -48,3 +48,19 @@ body{
     background-color: #039;
     color: white;
 }
+
+.paddingDiv+ul{
+    margin: 0; padding: 0;
+}
+.paddingDiv+ul:after{
+    content: ''; display: block; clear: both;
+}
+.paddingDiv+ul li{
+    width: 33.33%; line-height: 300px;
+    background-color: #c4c4c4;
+    float: left;  display: block;
+    text-align: center;
+    padding: 0 1%;
+    border: 3px solid black;
+    box-sizing: border-box;
+}

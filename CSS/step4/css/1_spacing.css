@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin: 10px;
+    /* margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; */
+    background-color: #555; color: white;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+    /* margin-bottom: 20px; */
+}
+.secondDiv{
+    background-color: #ddd; margin: 20px 15px;
+    /* 
+    ! firstDiv의  */
+}
+.secondDiv article{
+    background-color: #930;
+}

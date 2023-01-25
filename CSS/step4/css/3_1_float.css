@@ -8,7 +8,7 @@
     float: left;
 }
 .wrap .exam_2{
-    background-color: deeppink;
+    background-color: deeppink; margin-bottom: 50px;
     /* clear: left; */
 }
 .wrap .exam_2:after{
@@ -16,5 +16,8 @@
 }
 .wrap .exam_2 div{
     width: 50%; height: 300px; background-color: salmon;
-    float: left;
+    float: right;
+}
+.wrap .exam_3{
+    background-color: orange; clear: left;
 }

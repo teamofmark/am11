@@ -13,6 +13,9 @@ header nav{
 /* .wrap{
     background-color: white;    
 } */
+.wrap{
+    margin-bottom: 50px;
+}
 .wrap:after{
     content: ''; display: block; clear: both;
 }

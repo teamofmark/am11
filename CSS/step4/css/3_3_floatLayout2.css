@@ -1,0 +1,29 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto;
+}
+.wrap header{
+    background-color: orange;
+}
+.wrap header:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header h1{
+    background-color: red; width: 130px; color: white; text-align: center;
+    font-size: 20px; line-height: 55px; float: left;
+}
+.wrap header nav{
+    background-color: blue; width: 830px; float: left;
+}
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    display: inline-block;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px;
+}
+/* todo. section내 article 구현해보기 */

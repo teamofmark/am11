@@ -27,3 +27,28 @@
     color: white; line-height: 55px;
 }
 /* todo. section내 article 구현해보기 */
+section{
+    margin-bottom: 300px;
+}
+section:after{
+    content: ''; display: block; clear: both;
+}
+section h2{
+    background-color: skyblue;
+}
+section article{
+    float: left; width: 33.33%;
+}
+section article h3{
+    color: white; background-color: black;
+}
+section article ul{
+    list-style: none;
+}
+section article ul li{
+    font-size: 14px; line-height: 20px; margin-bottom: 15px;
+}
+footer{
+    color: white; background-color: midnightblue; text-align: center;
+    line-height: 55px;
+}

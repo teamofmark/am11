@@ -1,0 +1,25 @@
+body{
+    margin: 0; height: 2000px;
+}
+.position_A{
+    position: absolute; left: 300px; top: 300px; background-color: #fc0;
+    width: 150px; height: 150px;
+}
+.position_R{
+    position: relative; width: 150px; height: 150px; background-color: #0f0;
+    margin: 0 auto; left: 10px; top: 50px;
+}
+.position_R .position_A2{
+    position: absolute; top: 50px; left: 50px; width: 50px; height: 50px;
+    background-color: #0ff;
+}
+.position_F{
+    position: fixed; top: 0; left: 0;
+    background-color: #9f9;
+    width: 100%; height: 80px;
+}
+/* ? static은 positioning을 해제하고 이동성을 없애는 기존 block 속성으로 돌릴때 사용. */
+.position_S{
+    position: sticky; width: 100%; height: 80px; background-color: blueviolet;
+    left: 0; top: 80px;
+}

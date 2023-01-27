@@ -60,7 +60,7 @@ body,
 .wrap article q{
     font-size: 21px; display: block;
 }
-.wrap article div{
+.wrap article div:not(:last-child){
     margin-bottom: 50px;
 }
 .wrap article div h3{

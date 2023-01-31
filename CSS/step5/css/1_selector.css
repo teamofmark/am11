@@ -80,3 +80,32 @@
     ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
     ? ~= : 띄어쓰기 기준. 해당 단어 포함.
 */
+/* todo. */
+.stringAttrSelector img[src$='jpg']{
+    width: 200px; border: 5px solid #0f0;
+}
+.stringAttrSelector img[src$='gif']{
+    width: 300px; border: 10px solid #00f;
+}
+.stringAttrSelector h1[title*='제목']{
+    color: red;
+}
+.stringAttrSelector h1[title^='남자']{
+    color: blue;
+}
+
+.eventSelector a:link{
+    font-size: 13px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
+}
+/* ? a:visited => a:link. font-size변경불가 */
+
+/*반응선택자 - 링크 수업 부분 과 동일*/

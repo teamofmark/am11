@@ -144,10 +144,10 @@
 .normalSelector ul li:last-child{
     border-radius: 0 10px 10px 0;
 }
-.normalSelector ul li:nth-child(odd){
+.normalSelector ul li:nth-child(2n+1){
     background-color: #444; color:  white;
 }
-.normalSelector ul li:nth-child(even){
+.normalSelector ul li:nth-child(2n){
     background-color: #09f;
 }
 /*nth-child 에서 (odd) 값은 홀수를 , (even)은 짝수를 지정 할 수 있다. js는 반대 (0부터인식)*/

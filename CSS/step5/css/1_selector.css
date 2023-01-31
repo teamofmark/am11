@@ -51,3 +51,11 @@
     /* background-color: green; border: 5px solid yellowgreen; */
 }
 /* ? attrSelector 종료 */
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    display: block; font-size: 22px; color: maroon; line-height: 40px;
+}
+/* ? directSelector 종료 */

@@ -59,3 +59,12 @@
     display: block; font-size: 22px; color: maroon; line-height: 40px;
 }
 /* ? directSelector 종료 */
+
+.sameSelector h1~h2{
+    background-color: #333;
+    color: white;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/* ? sameSelector 종료 */

@@ -163,3 +163,10 @@
 .shapeSelector :nth-child(6){color: #30f;}
 .shapeSelector :nth-child(5){color: #0c6;}
 .shapeSelector :nth-child(4){color: #f06;}
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: darkmagenta;
+}
+.textSelector p::first-line{
+    color: green; line-height: 30px; font-size: 14px; text-decoration: underline;
+}

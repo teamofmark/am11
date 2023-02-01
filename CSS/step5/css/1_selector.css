@@ -170,3 +170,14 @@
 .textSelector p::first-line{
     color: green; line-height: 30px; font-size: 14px; text-decoration: underline;
 }
+
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p:before{
+    content: counter(rint) "."; color: #f06; font-weight: bold; display: block;
+}
+.backandfrontSelector p:after{
+    content: "-" attr(data-page) "page";
+    /* ? attr(); - 대상의 attr의 value를 불러온다. */
+}

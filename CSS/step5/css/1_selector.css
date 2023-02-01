@@ -133,21 +133,33 @@
     color: brown;
 }
 /* ?statusSelector 종료 */
-
+.normalSelector ul{
+    overflow: hidden; list-style: none; margin: 30px 0; padding: 0;
+}
 .normalSelector ul li{
     width: 14.28%; box-sizing: border-box;
     margin:0; padding:15px; float: left; text-align: center;
 }
-.normalSelector ul li:first-child{
-    border-radius:10px 0 0 10px;
+.normalSelector ul :first-child{
+    border-radius:10px 0 0 10px; 
+    /* 좌상, 우상, 우하, 좌하 */
 }
-.normalSelector ul li:last-child{
+.normalSelector ul :last-child{
     border-radius: 0 10px 10px 0;
 }
-.normalSelector ul li:nth-child(2n+1){
+.normalSelector ul :nth-child(2n+1){
     background-color: #444; color:  white;
 }
-.normalSelector ul li:nth-child(2n){
+.normalSelector ul :nth-child(2n){
     background-color: #09f;
 }
 /*nth-child 에서 (odd) 값은 홀수를 , (even)은 짝수를 지정 할 수 있다. js는 반대 (0부터인식)*/
+
+/* .shapeSelector h1:nth-of-type(2){color: #30f;}
+.shapeSelector h2:nth-of-type(2){color: #0c6;}
+.shapeSelector h3:nth-of-type(2){color: #f06;} */
+
+/* todo. 방금 결과를 child로 처리해보기 */
+.shapeSelector :nth-child(6){color: #30f;}
+.shapeSelector :nth-child(5){color: #0c6;}
+.shapeSelector :nth-child(4){color: #f06;}

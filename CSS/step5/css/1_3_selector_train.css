@@ -7,8 +7,7 @@ body{
 }
 div:first-of-type{
     width: 50%; height: 50%; position: absolute; top: 25%; left: 25%;
-    background-color: #262626;
-    /* min-height: */
+    background-color: #262626; min-height: 295px;
 }
 div:first-of-type nav{
     margin-bottom: 25px;
@@ -36,7 +35,7 @@ div:first-of-type h1{
     text-transform: capitalize;
 }
 div:first-of-type fieldset{
-    border: none; padding: 0;
+    border: none; padding: 0; width: 90%; margin: 0 auto 25px;
 }
 div:first-of-type fieldset ul{
     margin: 0; padding: 0;
@@ -63,4 +62,11 @@ div:first-of-type fieldset ul li input:focus{
 }
 div:first-of-type fieldset ul li input[type='password']:focus{
     color: white;
+}
+div:first-of-type input[type='submit']{
+    width: 90%; margin: 0 auto; border: none; display: block;
+    padding: 10px 0; background-color: #3e3e3e; color: #ea0e52;
+}
+div:first-of-type input[type='submit']:hover{
+    background-color: #ea0e52; color: black;
 }

@@ -35,3 +35,32 @@ div:first-of-type h1{
     font-size: 14px; color: white; margin: 0 0 25px; text-align: center;
     text-transform: capitalize;
 }
+div:first-of-type fieldset{
+    border: none; padding: 0;
+}
+div:first-of-type fieldset ul{
+    margin: 0; padding: 0;
+}
+div:first-of-type fieldset ul li{
+    display: block;
+}
+div:first-of-type fieldset ul li:after{
+    content: ''; display: block; clear: both;
+}
+div:first-of-type fieldset ul li:first-of-type{
+    margin-bottom: 25px;
+}
+div:first-of-type fieldset ul li label{
+    width: 15%; display: block; float: left; text-align: center; background-color: #ea0e52;
+    font-size: 12px; padding: 12px 0; text-transform: uppercase; font-weight: bold;
+    color: white;
+}
+div:first-of-type fieldset ul li input{
+    padding: 12px 2.5% 10px; width: 80%; float: left; border: none;
+}
+div:first-of-type fieldset ul li input:focus{
+    background-color: #ea0e52;
+}
+div:first-of-type fieldset ul li input[type='password']:focus{
+    color: white;
+}

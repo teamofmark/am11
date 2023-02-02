@@ -181,4 +181,13 @@
     content: "-" attr(data-page) "page";
     /* ? attr(); - 대상의 attr의 value를 불러온다. */
 }
-.reactionSelector > 
+.reactionSelector > *{
+    color: white;
+}
+.reactionSelector > *::selection{
+    background-color: #000; color: #ff0;
+}
+
+.notSelector input:not([type='submit'],[type='reset']){
+    background-color: red;
+}

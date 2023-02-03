@@ -1,0 +1,30 @@
+body{
+    width: 80%; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+h1{
+    margin: 0; font-size: 30px; font-weight: normal; color: gray; padding: 15px 10% 15px 0;
+    position: relative;
+}
+h1 a{
+    position: absolute; right: 0; bottom: 0; font-size: 24px; width: 10%; text-align: right;
+    color: forestgreen;
+}
+fieldset{
+    padding: 10px 40% 10px 0; position: relative;
+    border-width: 2px 0 1px; border-style: solid none; border-color: darkgreen;
+}
+fieldset input[type='search']{
+    width: 20%; border: 1px solid forestgreen; background-color:palegreen;
+    line-height: 24px; min-width: 115px;
+}
+fieldset input[type='button']{
+    width: 10%; background-color: darkolivegreen; color: white; line-height: 24px;
+    border: 2px solid limegreen; min-width: 60px;
+}
+fieldset select{
+    position: absolute; right: 0; width: 25%; min-width: 150px; padding: 5px 0;
+    border-color: lawngreen; background-color: lightseagreen;
+}
+h2{
+    
+}

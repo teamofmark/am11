@@ -47,9 +47,9 @@ ul{
     transition-duration: 3s;
 }
 .delay3 ul li:nth-child(1){transition-timing-function: cubic-bezier(0,.96,1,0);}
-.delay3 ul li:nth-child(2){transition-timing-function: ease;}
-.delay3 ul li:nth-child(3){transition-timing-function: ease;}
-.delay3 ul li:nth-child(4){transition-timing-function: ease;}
-.delay3 ul li:nth-child(5){transition-timing-function: ease;}
+.delay3 ul li:nth-child(2){transition-timing-function: cubic-bezier(0,1.01,0,1.01);}
+.delay3 ul li:nth-child(3){transition-timing-function: cubic-bezier(1,0,1,-0.02);}
+.delay3 ul li:nth-child(4){transition-timing-function: cubic-bezier(1,0,0,1);}
+.delay3 ul li:nth-child(5){transition-timing-function: cubic-bezier(.2,1.01,.84,.38);}
 .delay3 ul:hover li{height: 300px; background-color: #ff0;}
 /* ? 가속도 쉽게 만들기 : https://cubic-bezier.com */

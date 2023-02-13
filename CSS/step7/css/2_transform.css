@@ -1,0 +1,32 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black;
+    margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; transform-origin: left top;
+    display: block;
+}
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; color: white;
+    transform: translateX(100px) rotate(10deg);
+}
+div:nth-of-type(3) span{
+    background-color: blue; opacity: 0.5; color: white;
+    transform: translate(100px,50px) rotate(10deg);
+}
+div:nth-of-type(4) span{
+    background-color: brown; opacity: 0.5; color: white;
+    transform: translate(100px,50px) rotate(10deg) skewX(10deg);
+}
+div:nth-of-type(5) span{
+    background-color: orange; opacity: 0.5;
+    transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg);
+}
+div:nth-of-type(6) span{
+    background-color: hotpink;
+    transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg) scale(1.2);
+}
+/* https://bennettfeely.com/clippy/ */

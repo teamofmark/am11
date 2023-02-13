@@ -4,16 +4,25 @@ body{
 div{
     width: 200px; position: relative; animation-name: rotate3D; animation-duration: 10s;
     animation-iteration-count: infinite; animation-timing-function: ease;
+    transform-style: preserve-3d;
 }
 div span{
-    width: 200px; height: 100px; display: block;
+    width: 200px; height: 100px; display: block; position: absolute;
+    left: 0; top: 0; opacity: 0.3;
 }
 div span:nth-of-type(1){
-    background-color: red; transform: rotateY(0deg); transform-origin: left top;
+    background-color: red;
 }
 div span:nth-of-type(2){
-    background-color: green; transform: rotateY(0deg); transform-origin: left top;
+    background-color: green; transform: rotateY(60deg); transform-origin: left top;
 }
 div span:nth-of-type(3){
-    background-color: blue; transform: rotateY(0deg); transform-origin: left top;
+    background-color: blue; transform: rotateY(-60deg); transform-origin: right top;
+}
+@keyframes rotate3D {
+    from{
+        transform: rotate3D(0,0,0, 0deg);
+    }to{
+        transform: rotate3D(1,1,1, 360deg);
+    }
 }

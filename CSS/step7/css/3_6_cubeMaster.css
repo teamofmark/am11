@@ -1,0 +1,70 @@
+.wrap {
+    position: relative;
+}
+
+.cube {
+    position: absolute;
+    transition: transform 1s linear;
+}
+
+.cube:hover {
+    transform: translate(202px, 115px);
+}
+
+.cube.first {
+    left: 50%;
+    top: 300px;
+}
+
+.cube.second {
+    left: 50%;
+    top: 416px;
+    margin-left: -200px;
+}
+
+.cube.third {
+    left: 50%;
+    top: 532px;
+    margin-left: -400px;
+}
+
+.rightFace,
+.leftFace,
+.topFace div {
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+}
+
+.rightFace,
+.leftFace,
+.topFace {
+    position: absolute;
+}
+
+.leftFace {
+    transform: skewY(30deg);
+    -moz-transform: skewY(30deg);
+    background-color: #ccc;
+}
+
+.rightFace {
+    transform: skewY(-30deg);
+    -moz-transform: skewY(-30deg);
+    background-color: #ddd;
+    left: 200px;
+}
+
+.topFace div {
+    transform: skewY(-30deg) scaleY(1.16);
+    -moz-transform: skewY(-30deg) scaleY(1.16);
+    background-color: #eee;
+    font-size: 0.862em;
+}
+
+.topFace {
+    transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    top: -158px;
+    left: 100px;
+}

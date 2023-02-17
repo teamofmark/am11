@@ -131,5 +131,24 @@ a{
     footer > div div:nth-of-type(2) address span:nth-of-type(2){
         background-image: url('../images/bul_phone.png');
     }
+    footer > div div:nth-of-type(3) input{
+        display: block; float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; border: 1px solid rgba(255,255,255,0.5); background-color: transparent;
+        padding: 0 15px; line-height: 45px; box-sizing: border-box; font-size: 14px;
+        color: white;
+    }
+    footer > div div:nth-of-type(3) input[type='email']::placeholder{
+        color: rgba(255,255,255,0.75);
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 45px;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+     }
+    footer > div div:nth-of-type(3) ul{
+        clear: left;
+    }
+
 }
 /* ?desktop */

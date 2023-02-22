@@ -115,13 +115,20 @@ section[class $= 'Area'] > hr{
     /* ? header Fin */
 
     footer{
-        background: url('../images/bg_05.png') left top / cover no-repeat;
+        background: url('../images/bg_03.png') left top / cover no-repeat;
     }
-    footer > div div:not(:last-of-type){
+    /* footer > div div:not(:last-of-type){
         float: left; width: 32%; margin: 0 0 70px 2%;
-    }
+    } 
     footer > div div:first-of-type{
         margin-left: 0;
+    }*/
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        float: left; width: 47.5%; margin: 0 0 70px;
+    }
+    footer > div div:nth-of-type(2){
+        margin-left: 5%;
     }
     footer > div div h2{
         margin-bottom: 20px;
@@ -155,11 +162,14 @@ section[class $= 'Area'] > hr{
     footer > div div:nth-of-type(2) address span:nth-of-type(2){
         background-image: url('../images/bul_phone.png');
     }
+    footer > div div:nth-of-type(3){
+        clear: left;
+    }
     footer > div div:nth-of-type(3) input{
         display: block; float: left; margin-bottom: 25px;
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: 70%; border: 1px solid rgba(255,255,255,0.5); background-color: transparent;
+        width: /*70%*/35%; border: 1px solid rgba(255,255,255,0.5); background-color: transparent;
         padding: 0 15px; line-height: 45px; box-sizing: border-box; font-size: 14px;
         color: white;
     }
@@ -167,17 +177,17 @@ section[class $= 'Area'] > hr{
         color: rgba(255,255,255,0.75);
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 45px;
+        width: /*25%*/ 10%; margin-left: /*5%*/2%; text-indent: -9999px; border: none; line-height: 45px;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
      }
     footer > div div:nth-of-type(3) ul{
-        clear: left;
+        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
     }
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: 5px;
+        margin-left: /*5px*/5.8%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px; background-repeat: no-repeat;

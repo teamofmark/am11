@@ -40,7 +40,7 @@ section[class $= 'Area'] > hr{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 940px; margin: 0 auto; padding: 70px 0;
+        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
     }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
@@ -49,7 +49,7 @@ section[class $= 'Area'] > hr{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: 940px; margin: 0 auto; position: relative;
+        max-width: /*940px*/ 728px; margin: 0 auto; position: relative;
     }
     header > div h1{
         max-width: 128px;
@@ -108,8 +108,8 @@ section[class $= 'Area'] > hr{
         display: block; text-indent: -9999px; width: 8px; height: 8px;
         border: 1px solid rgba(255,255,255,0.8); border-radius: 5px;
     }
-    header > div > ol li a.active,
-    header > div > ol li a:hover{
+    header > div > ol li a.active
+    /*,header > div > ol li a:hover*/{
         background-color: #00e0d0; border-color: #00e0d0;
     }
     /* ? header Fin */

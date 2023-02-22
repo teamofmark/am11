@@ -1,16 +1,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     #about{
-        padding-left: 4%;
+        padding-left: /*4%*/ 3.5%; box-sizing: border-box;
     }
     #about:after{
         content: ''; display: block; clear: both;
     }
     #about img{
-        float: left; width: 25%; max-width: 235px;
+        float: left; width: /*25%*/ 32%; max-width: 235px;
     }
     #about figcaption{
-        float: left; margin-left: 10%; width: 65%;
+        float: left; margin-left: /*10%*/8%; width: /*65%*/60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 30px;
@@ -19,7 +19,7 @@
         font-size: 22px; font-weight: 700; color: #413d4b;
     }
     #about figcaption p{
-        font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
+        font-size: 12px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
     }
     #about figcaption a.btn_more{
         max-width: 120px;

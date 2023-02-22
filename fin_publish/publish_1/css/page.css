@@ -210,7 +210,7 @@
         padding: 0;
     }
     section.talkArea div ul li:not(.active) a img{
-        width: 65%; transition: width 0.3s ease-in-out;
+        width: 65%; transition: width 0.35s ease-in-out;
     }
     section.talkArea div ul li.active a img,
     section.talkArea div ul li:not(.active):hover a img{

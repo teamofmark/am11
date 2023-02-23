@@ -40,7 +40,7 @@ section[class $= 'Area'] > hr{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/ 600px; margin: 0 auto; padding: 70px /*0*/3%;
     }
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
@@ -49,10 +49,10 @@ section[class $= 'Area'] > hr{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: /*940px*/ 728px; margin: 0 auto; position: relative;
+        max-width: /*728px*/ 600px; margin: 0 auto; /*position: relative;*/ padding: 0 3%;
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -61,8 +61,27 @@ section[class $= 'Area'] > hr{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%;
-        box-sizing: border-box; text-align: right;
+        /* position: absolute; right: 0; top: 0; padding-left: 130px; box-sizing: border-box; */
+        text-align: right; width: 50%; margin-left: 15%; float: right;
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block;
+        margin: 5px 0 0 auto; border-radius: 5px;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav ul{
+        height: 0; overflow-y: hidden; transition: height 1s ease-in-out;
+    }
+    header > div nav input[type='checkbox']#mnav:checked + ul{
+        height: 350px;
     }
     header > div nav ul li{
         display: inline-block;

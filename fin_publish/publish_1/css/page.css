@@ -73,7 +73,7 @@
     section.expArea ul li:nth-child(5){background-image: url('../images/ico_05.png');}
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
     section.expArea ul li h3{
-        font-size: 1.563vw; font-weight: 900; color: #413d4b; margin-bottom: 20px;
+        font-size: 12px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
     }
     /* margin-bottom */
     section.expArea ul li p{
@@ -99,7 +99,7 @@
         border-color: rgba(255,255,255,0.2); max-width: 50px;
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 65px;
+        max-width: /*940px*/ 728px; margin: 0 auto 65px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
@@ -112,7 +112,7 @@
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
-        padding-top: 230px;
+        padding-top: /*230px*/180px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
@@ -134,7 +134,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        max-width: 940px; margin: 0 auto 70px; position: relative;
+        max-width: /*940px*/ 728px; margin: 0 auto 70px; position: relative;
         font-size: 22px; font-weight: 700; color: #413d4b;
     }
     section.worksArea h2 a{
@@ -193,7 +193,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);  
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/41%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -207,15 +207,15 @@
     section.talkArea div ul li:not(.active) a{
         padding: 15px 0; transition: padding 0.35s ease-in-out;
     }
-    section.talkArea div ul li.active a,
-    section.talkArea div ul li:not(.active):hover a{
+    section.talkArea div ul li.active a
+    /* ,section.talkArea div ul li:not(.active):hover a */{
         padding: 0;
     }
     section.talkArea div ul li:not(.active) a img{
         width: 65%; transition: width 0.35s ease-in-out;
     }
-    section.talkArea div ul li.active a img,
-    section.talkArea div ul li:not(.active):hover a img{
+    section.talkArea div ul li.active a img
+    /*,section.talkArea div ul li:not(.active):hover a img*/{
         width: 100%;
     }
     /* ? talkArea Fin */

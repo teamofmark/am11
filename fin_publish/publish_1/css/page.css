@@ -176,7 +176,7 @@
     }
     /* ? worksArea Fin */
     section.talkArea{
-        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0;
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px /*0*/ 3%;
         text-align: center;
     }
     section.talkArea h2{
@@ -197,7 +197,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/ 600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -206,7 +206,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);  
     }
     section.talkArea div ul{
-        max-width: 310px; width: /*33%*/41%;
+        max-width: 310px; width: /*41%*/ 80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;

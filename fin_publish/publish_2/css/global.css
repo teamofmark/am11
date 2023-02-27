@@ -52,5 +52,40 @@ a{
     header > div h1 a img{
         width: 100%; max-width: 92px;
     }
+    header > div nav{
+        width: 55%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 600; color: #343e5c; line-height: 90px;
+    }
+    header > div div{
+        width: 29%; font-size: 11px; color: #343e5c; text-align: right; line-height: 90px;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 17px; font-weight: 600;
+        background: url('../images/bul_cart.png') left top / contain no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
+        text-align: center; font-weight: 400; margin-left: 2%;
+    }
+    header > div div input[type='button']{
+        font-family: inherit; font-size: inherit; font-weight: 600;
+        padding: 8px 15px; min-width: 85px; border: 2px solid #e3e8f0;
+        border-radius: 16px; background-color: transparent; margin-left: 8%;
+    }
+    /* ?header Fin */
 }
 /* ?desktop */

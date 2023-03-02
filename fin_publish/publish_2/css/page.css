@@ -203,6 +203,12 @@
     }
     /* ? sideMenu Fin */
 
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 10px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        margin-bottom: 10px;
+    }
 
     .contentArea section{
         width: 74.35%; float: left; margin-left: 2.58%;

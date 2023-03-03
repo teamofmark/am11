@@ -216,7 +216,7 @@
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px;
         width: 100%; position: relative; top: 33px; border-bottom: 1px solid #f0f2f7;
-        box-sizing: border-box;
+        box-sizing: border-box; text-transform: uppercase;
     }
     .contentArea aside fieldset legend a{
         color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;

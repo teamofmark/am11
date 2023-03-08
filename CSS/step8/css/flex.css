@@ -84,3 +84,30 @@
 .flexContainer.alignContent .flexItem{
     margin: 0;
 }
+.flexContainer.alignItems{
+    background-color: orange;
+    align-items: baseline;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-end;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.justifyItems{
+    background-color: yellow;
+    display: grid;
+    width: 300px;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
+.flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: flex-end;
+}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 60px;
+}

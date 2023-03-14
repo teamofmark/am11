@@ -43,3 +43,66 @@
     ? 접근 연산자
     * .
 */
+// *case. 1 10이 저장된 변수 a, 숫자 20, 그리고 30을  더해서 result 변수에 저장, 출력.
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+// *case. 2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장, 출력.
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    var result = a*b/10;
+    console.log(result);
+}
+// todo. 1 숫자 5를 2로 나누었을 때 나머지 값이 얼마인지 result 변수에 저장후 출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+// todo. 2 'hello' 가 담긴 변수 a와 'WEB'이 담긴 변수 b를 합쳐 'helloWEB'을 출력.
+function stringOP(){
+    var a = 'hello';
+    var b = 'WEB';
+    console.log(a + b);
+}
+// *case. 3 ul, li구조의 tag를 html page에 script를 사용하여 삽입, 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>WEB</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// *case.4 연산자가 뒤로 올 경우.
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); //? 출력: 10 / 현재 : 11
+    alert(number++); //? 출력: 11 / 현재 : 12
+    alert(number++); //? 출력: 12 / 현재 : 13
+    console.log("최종 number는 ?" + number); //? 몇? 13.
+}
+//*case.5 연산자가 앞으로 올 경우.
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 출력: 11 / 현재 : 11
+    alert(++number); //? 출력: 12 / 현재 : 12
+    alert(++number); //? 출력: 13 / 현재 : 13
+    console.log("최종 number는 ?" + number); //? 몇? 13.
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10; //? 변수 선언 및 초기화
+    number++; //?출력 : 현재 : 
+    --number; //?출력 : 현재 : 
+    ++number; //?출력 : 현재 :  
+    number--; //?출력 : 현재 : 
+    number++;
+    ++number;
+    --number;
+    number++;
+    ++number;
+    console.log(number); //? 
+}

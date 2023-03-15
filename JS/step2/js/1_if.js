@@ -15,3 +15,39 @@
 	alert('종료');
     
 */
+// *case. 1 현재 시각이 오후인가 오전인가
+function amORpm(){ //? 현재시간 불러오는거?... -> 전역함수 Date();를 찾을 수 있다.
+    var date = new Date();
+    var hour = date.getHours();
+    console.log(hour);
+    if(hour < 12){
+        alert('오전!');
+    }else if(hour >= 12){
+        alert('오후!');
+    }else{
+        alert('올바른 값을 입력하세요.');
+    }
+}
+// *case. 2 현재가 말일이냐? 아니냐?
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    if(day < 30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+// todo. 현재 시각이 자신의 식사시간중 아침? 점심? 저녁? 먹을 시간인지 경고창으로 알려주는 함수.
+function mealTime(){
+    var date = new Date(); // ? Date() 가져오기
+    var hour = date.getHours(); // ? 현재 시각 빼오기
+    // ? 조건처리 - 3번에 걸쳐서 아침 / 점심 / 저녁 - > alert("xx 먹을 시간!");
+    if(hour < 11){
+        alert('아침먹을시간!');
+    }else if(hour < 15){
+        alert('점심먹을시간!');
+    }else{
+        alert('저녁먹을시간!');
+    }
+}

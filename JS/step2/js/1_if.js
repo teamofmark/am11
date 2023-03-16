@@ -120,7 +120,18 @@ function userInfoCheck(){
 function userInfoCheck2(){
     var userID = window.prompt("사용자의 아이디");
     var userPW = window.prompt("사용자의 패스워드");
-    // ? perms - success. "Mark 님으로 확인되었습니다."
-    // ? permsD/N - "ID가 존재하지 않습니다." = ID 가 틀린경우
-    // ? permsD/N - "password가 틀렸습니다." = password 가 틀린경우
+    if(userID=="Mark" && userPW==" 1234"){ // ? perms - success. "Mark 님으로 확인되었습니다."
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark"){ // ? permsD/N - "ID가 존재하지 않습니다." = ID 가 틀린경우
+        alert("ID가 존재하지 않습니다.");
+    }else{ // ? permsD/N - "password가 틀렸습니다." = password 가 틀린경우
+        alert("password가 틀렸습니다.");
+    }
+}
+
+// !  tune 간소화
+function userInfoCheck3(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+    (userID=="Mark"&&userPW=="1234")? alert('Mark구나?') : alert("ID 혹은 PW 틀렸는데?");
 }

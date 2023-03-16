@@ -64,3 +64,35 @@ function numbJudgment(){
         alert('0입니다.');
     }
 }
+// todo. 짝수,홀수 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요.','홀,짝을 구분해드립니다.');
+    if(numb%2 == 0){ // ? 1. 짝수를 판별 - 나머지 -> 0(짝수), 1(홀수)
+        alert('짝수!');
+    }else if(numb%2 == 1){ // ? 2. 그것이 아닐 경우 홀수를 판별
+        alert('홀수!');
+    }else{// ? 3. 그마저도 아닐 경우 '올바른 값을 입력하세요.'
+        alert('올바른 값을 입력하세요.');    
+    }
+}
+// *case.4 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    var koreanScore = prompt('점수를 입력하세요.');
+    var englishScore = prompt('점수를 입력하세요.');
+    var mathScore = prompt('점수를 입력하세요.');
+    var avg = (Number(koreanScore)+Number(englishScore)+Number(mathScore)) / 3; //? 평균구하는식
+
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점, 수 입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점, 우 입니다.');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점, 미 입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점, 양 입니다.');
+    }else{
+        alert('평균' + avg + '점, 가 입니다.');
+    }
+}

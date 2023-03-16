@@ -51,3 +51,16 @@ function mealTime(){
         alert('저녁먹을시간!');
     }
 }
+// *case. 3 양,음수 판별
+function numbJudgment(){
+    var numb = prompt('숫자를입력하세요','양수음수상관없음');
+    console.log(typeof(numb) + '=' + numb);
+
+    if(numb > 0){ 
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('0입니다.');
+    }
+}

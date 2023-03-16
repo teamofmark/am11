@@ -75,7 +75,7 @@ function oddOrEven(){
         alert('올바른 값을 입력하세요.');    
     }
 }
-// *case.4 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+// *case. 4 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
 function avgScore(){
     var koreanScore = prompt('점수를 입력하세요.');
     var englishScore = prompt('점수를 입력하세요.');
@@ -94,5 +94,25 @@ function avgScore(){
         alert('평균' + avg + '점, 양 입니다.');
     }else{
         alert('평균' + avg + '점, 가 입니다.');
+    }
+}
+
+// *case. 5 사용자 id를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = window.prompt('사용자의 아이디');
+    if(userID=="Mark"){
+        alert('접속승인!');
+    }else if(userID != "Mark"){
+        alert("잘못된 ID입니다.");
+    }
+}
+// *case. 6 사용자 id "Mark" 와 password "1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+    if(userID=="Mark" && userPW=="1234"){
+        alert("Mark 님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
     }
 }

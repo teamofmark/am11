@@ -21,3 +21,44 @@ function namePrint10(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+// *case.2 1,000번 출력중 홀수 번째만 나오게 해보자.
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case.3 js engine처럼 생각해보기
+function thinkJS(){
+    for (var i = 0; i < 10; i++){ //? i가 10보다 작을 때 까지만 반복 수행
+        document.write("i = " + i , "<br>"); //? 0,1,2,3,4,5,6,7,8,9 까지만 출력.
+    } //? i가 10이되는순간 break.
+    document.write("종료되었을 때 i = " + i); //? 이미 변경된 10이 출력.
+}
+// todo. 1 - 10까지 출력되는 반복문을 최소 5개 이상 만들자.
+function answer1(){
+    for(var i = 1; i<=10; i++){
+        document.write(i+'<br>');
+    }
+}
+function answer2(){
+    for(var i = 0; i < 10; i++){
+        document.write((i+1),"<br>");
+    }
+}
+function answer3(){
+    for(var i = 100; i < 110; i++){
+        document.write((i-99)+"<br>");
+    }
+}
+function answer4(){
+    for(var i=1; i<=10; i+=2){
+        document.write(i + "<br>");
+        document.write((i+1)+"<br>");
+    }
+}
+function answer5(){
+    for(var i = 10; i >= 1; i--){
+        document.write((11-i) + "<br>");
+    }
+}

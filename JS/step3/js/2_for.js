@@ -62,3 +62,58 @@ function answer5(){
         document.write((11-i) + "<br>");
     }
 }
+// *case. 4 * 10개가 찍힌 결과 출력 - 복습
+function star10(){
+    var star = "";
+    for(var i = 0; i < 10; i++){
+        star += "*";
+    }
+    document.write("result = " + star);
+}
+// * 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 순차출력.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기','메론','수박'];
+    console.log(array.length);
+    // ? array(배열) - data들이 저장되는 방. [0번방,1번방,2번방..];
+    // ! default sort - 저장되는 순서대로 0부터 증가.
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+function arrayFor(){
+    var data = ['변수','연산자','형변환','조건문if','조건문switch','반복문while','반복문for'];
+    // ? 치환배열을 짜는 방법 var swapNumb = ["첫","두","세"..];
+    var swapNumb = '';
+    // todo. document.write로 순번달고 출력.
+    for(var i = 0; i < data.length; i++){
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            case 6:
+                swapNumb = '일곱';
+                break;
+            default :
+                swapNumb = 'x';
+                break;
+        }
+        document.write(swapNumb  + "번째 내용 = " + data[i] + '<br>');
+    }
+}

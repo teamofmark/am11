@@ -117,3 +117,32 @@ function arrayFor(){
         document.write(swapNumb  + "번째 내용 = " + data[i] + '<br>');
     }
 }
+
+// *case. 5 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기','메론','수박'];
+    for (var i = array.length - 1; i >= 0; i--){ //? i var 는 배열의 갯수 -1 (7-1 = 6).
+        document.write(array[i]);//? i-- 증감부로 인한 6,5,4,3,2,1,0 출력. - 역반복.
+    }
+}
+// *case. 6 continue
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        console.log('continue 가동!');
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case. 7 continue 활용 - 짝수만의 총합
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        // ? condition - 조건
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        document.write(output + '<br>');
+    }
+}

@@ -146,3 +146,20 @@ function runContinue(){
         document.write(output + '<br>');
     }
 }
+// *case. 8 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + "<br>");
+}
+//*exp.10 break문 활용
+function runBreak(){
+    for (var i = 0; true; i++) { //? 수행되는 조건 자체가 true 상태기 때문에 무한 루프.
+        alert(i + '번째 반복문'); //? 수행. 
+        if (!confirm('계속할래?')) {//? alert으로 반복문을 띄운 이후, confirm의 질문에 확인(true)을 누르면 앞의 논리부정연산자로인해 true가 false로 바뀌면서 break를 수행하지 않고 다시 재반복을 수행한다.
+            break;
+        }
+    }
+}

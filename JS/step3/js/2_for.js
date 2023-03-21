@@ -163,3 +163,42 @@ function runBreak(){
         }
     }
 }
+
+// ! 다중 for - publisher들이 사용할 일이 거의 없음.
+// *case. 1 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// *case. 2 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. pyramid
+function pyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';
+        }
+        for(var s = 0; s<2*i-1; s++){
+            star += '*';
+            // *(i=1),***(i=2),*****(i=3)...
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}

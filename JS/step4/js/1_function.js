@@ -57,3 +57,48 @@ function sumAll(){
         alert('기존매개변수', '추가매개변수');
         prompt('기존매개변수');
 */
+function f(x){
+    return x*x;
+}
+// *case.5 두 수를 매개변수로 받고, 그 값들을 더한 결과를 return하는 함수.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+// *case.6 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수.
+// ! 단, 입력값이 0이면 즉시 실행 중지.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt('숫자만입력해라.'));
+        if(value == 0){
+            document.write('종료되었습니다.');
+            return;
+        }
+        sum += value;
+        document.write(count + ". " + sum + '<br>');
+        count++;
+    }
+    document.write('총' + count + '번 실행함.');
+}
+// todo. 구구단 출력을 함수로 만들기
+function printGugudan(){
+    for(var i = 2; i <= 9; i++){
+        document.write(i+'단 출력', '<br>');
+        for(var m = 1; m <= 9; m++){
+            document.write(i + 'x' + m + '=' + (i*m),'<br>');
+        }
+        document.write('<br>');
+    }
+}
+// todo . 배열과제
+function arraySum(){
+    var data = [10,20,30,40,50];
+    var result = 0;
+    for (var i = 0; i < data.length; i++) {
+        result+= data[i];
+    }
+    document.write('해당 배열의 총합은 = ' + result);
+}

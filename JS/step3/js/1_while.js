@@ -19,3 +19,24 @@ function pwCheck(){
         }
     }
 }
+
+// *case.2 while Continue
+function whileContinue(){
+    var i = 1;
+    while(i<=10){
+        i++;
+        document.write(i + '<br>');
+        continue;
+    }
+    document.write('최종 i = ' + i + "<br>");
+}
+// *case.3 while Break
+function whileBreak(){
+    var i = 1;
+    while(i<=10){
+        document.write(i + '<br>');
+        i++;
+        break;
+    }
+    document.write('최종 i = ' + i + '<br>');
+}

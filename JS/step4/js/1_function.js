@@ -151,16 +151,16 @@ function calculator2(op,numb1,numb2){
     var result = '';
     switch(op){
         case "+":
-            result =;
+            result = add(numb1,numb2); //? 더하기 함수
             break;
         case "-":
-            result = ;
+            result = sub(numb1,numb2); //? 빼기 함수
             break;
         case "*":
-            result = ;
+            result = mul(numb1,numb2); //? 곱하기 함수
             break;
         case "/":
-            result = ;
+            result = div(numb1,numb2); //? 나누기 함수
             break;
         default:
             result = '잘못된 연산자 입니다.';
@@ -168,15 +168,19 @@ function calculator2(op,numb1,numb2){
     }
     return result;
 }
-function add(){
-
+function add(numb1,numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
 }
-function sub(){
-
+function sub(numb1,numb2){
+    var subResult= numb1 - numb2;
+    return subResult;
 }
-function mul(){
-
+function mul(numb1,numb2){
+    var mulResult= numb1 * numb2;
+    return mulResult;
 }
-function div(){
-    
+function div(numb1,numb2){
+    var divResult= numb1 / numb2;
+    return divResult;
 }

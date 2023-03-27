@@ -7,6 +7,8 @@ $(document).ready(function(){
     // ! grouping / module
     detailMoveCircleExt();
     // $("#btnDetailMove").click(circleEvent);
+    // *case. 3 방향키 조작
+    keyControl();
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -80,3 +82,45 @@ function circleMovCommand(xpos,ypos){
      }
  }
  */
+
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+       console.log("입력한 키의 코드는 ? " + e.keyCode);
+        // ? w: 87 d: 68 s: 83 a: 65
+        switch(e.keyCode){
+            case 87: //? top
+                currentYpos -= range;
+                break;
+            case 68: // ? right
+                currentXpos += range;
+                break;
+            case 83: //? bottom
+                currentYpos += range;
+                break;
+            case 65: // ? left
+                currentXpos -= range;
+                break;
+        }
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+
+        $circle.css("top",currentYpos);
+        $circle.css("left",currentXpos);
+    });
+
+}

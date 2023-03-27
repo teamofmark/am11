@@ -1,6 +1,7 @@
 $(document).ready(function(){
     toggleCheck();
     toggleTodo();
+    tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -37,4 +38,11 @@ function toggleTodo(){
 
     // todo. $target.attr('attr이름') -> target의 'attr이름'의 값을 가져와라.
     // todo. $target.attr('attr이름','attr속성값') -> target의 'attr이름'의 값을 'attr속성값'으로 바꿔라.
+}
+
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        $(".tabMenu li").removeClass("activated");
+        $(this).addClass("activated");
+    });
 }

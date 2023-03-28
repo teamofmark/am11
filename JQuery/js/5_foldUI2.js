@@ -17,7 +17,7 @@ function imgAlignCustom(colCount){
             var image = img.eq(i);
             // console.log(image);
             xpos = (i%colCount) * imgWidth;
-            ypos = (i/colCount) * imgHeight;
+            ypos = parseInt(i/colCount) * imgHeight;
             image.css({
                 "left" : xpos,
                 "top" : ypos

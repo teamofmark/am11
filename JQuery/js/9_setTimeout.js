@@ -7,6 +7,7 @@ var $resetBtn = null;
 $(document).ready(function(){
     init();
     scoreCount(count,$score,$circle,playState);
+    $resetBtn.click(restart);
 });
 function init(){
     $score = $("#score");
@@ -24,4 +25,10 @@ function scoreCount(count,$score,$circle,playState){
         alert("게임종료!");
         playState=false;
     },5000);
+}
+function restart(){
+    playState = true;
+    count = 0;
+    $score.text(count + '점');
+    scoreCount(count,$score,$circle,playState);
 }

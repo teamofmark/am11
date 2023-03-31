@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - fish Race Game</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/15_finJQuery.js"></script>
+    <style>
+        body{font-size: 12px;}
+        #panel{width: 700px; height: 600px; border: 1px solid slategray; position: relative;}
+        #bar{position: absolute; left: 550px; top: 0px; width: 20px; height: 600px; background-color: crimson;}
+        .fish{position: absolute; left: 0; top: 0; transition: all 0.2s ease-out;}
+        #nav,#info{text-align: center; width: 700px;}
+    </style>
+</head>
+<body>
+    <div id="panel">
+        <div id="bar"></div>
+        <div class="fish"><img src="images/fish.png" alt="first Fish">no. 1</div>
+        <div class="fish"><img src="images/fish.png" alt="second Fish">no. 2</div>
+        <div class="fish"><img src="images/fish.png" alt="third Fish">no. 3</div>
+    </div>
+    <div id="nav">
+        <button>game Start!</button>
+    </div>
+    <div id="info">
+        Record
+    </div>
+</body>
+</html>

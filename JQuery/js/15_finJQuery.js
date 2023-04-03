@@ -48,5 +48,12 @@ function updateFishPosition(){
 }
 
 function displayFishPositionInfo(){
+    console.log('2. 물고기 정보 출력');
     // todo. 물고기 위치 정보 출력하기.
+    var info = '';
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + 'th Fish : ' + $fish.position().left + "px <br>";
+    }
+    $info.html(info);
 }

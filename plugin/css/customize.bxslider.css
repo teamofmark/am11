@@ -1,3 +1,10 @@
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+/* ? frame customize*/
+
 .bxslider li video{
     width: 100%;
 }
@@ -5,6 +12,35 @@
     background-color: rgba(255,0,0,0.5); position: absolute; left: 25%; top: 25%;
     width: 50%; height: 50%;
 }
+/* ? caption customize */
+
+.bx-wrapper .bx-pager{
+    position: static; bottom: 0;
+}
+.bx-wrapper .bx-pager:after{
+    content: ''; display: block; clear: both;
+}
+.bx-wrapper .bx-pager-item{
+    display: block; float: left; width: 20%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background-color: deeppink;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/* ? defaultPager customize */
 
 .newPager .bx-pager.bx-default-pager{
     text-align: center;
@@ -23,3 +59,24 @@
     font-weight: bold; color: white; background-color: black;
 }
 /* ? pagerSelector customize */
+
+.customPager{
+    text-align: center; margin-bottom: 20px;
+    display: none;
+}
+.customPager li{
+    display: inline-block; width: 18%;
+}
+.customPager li:not(:first-child){
+    margin-left: 2%;
+}
+.customPager li a{
+    opacity: 0.5; display: block; transition: all 0.35s ease-in;
+}
+.customPager li a.active{
+    padding: 5px; border: 3px solid black; opacity: 1;
+}
+.customPager li a img{
+    width: 100%; display: block;
+}
+/* ? thumbPager customize */

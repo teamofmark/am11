@@ -78,3 +78,38 @@
     width: 100%; display: block;
 }
 /* ? thumbPager customize */
+[class^='btn_']{
+    float: left; width: 50%;
+}
+[class^='btn_'] a{
+    display: block; text-decoration: none; color: white; background-color: black;
+    line-height: 44px; font-size: 14px; text-align: center;
+    transition: all 0.35s ease-out;
+}
+.btn_prev .bx-prev:hover{
+    background-color:lightcoral; color: black;
+}
+.btn_next .bx-next:hover{
+    background-color:lightskyblue; color: black;
+}
+/* ? controls customize - 0*/
+
+.bx-wrapper .bx-controls-direction a{
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-prev{
+    left: 10px;
+    background: url('../images/controls.png') no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next{
+    right: 10px;
+    background: url('../images/controls.png') no-repeat -43px -32px;
+}
+/* ? controls customize - 1*/

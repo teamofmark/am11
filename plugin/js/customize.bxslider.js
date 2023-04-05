@@ -28,5 +28,9 @@ $(document).ready(function(){
         // ? pagerShortSeparator: '-' default: / -> . 식별자변경.
         // ? pagerSelector: '.newPager' default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
         //? pagerCustom: '.customPager' default: null. pager 구조 직접 작성 및 data-slide-index="i"를 설정하면 원하는 style의 pager 구현가능.
+    
+        // *controler
+        controls: true, //? default: true. control button 켜기 끄기.
+        
     });
 });

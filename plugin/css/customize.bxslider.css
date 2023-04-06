@@ -1,3 +1,6 @@
+[class^='slider']{
+    display: none;
+}
 .bx-wrapper{
     box-shadow: none;
     border: none;

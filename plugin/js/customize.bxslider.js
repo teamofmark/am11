@@ -38,6 +38,13 @@ $(document).ready(function(){
 
         // *auto
         auto: true, //? default: false. slide 자동전환 켜기. false로 설정시 autoControls에서 작동가능.
-        autoControls: true
+        autoControls: true, //? default: false. 시각장애인들을 배려 하는것.
+        autoStart: true, //? default: true. (false : autoConrols로 시작)화면 준비가 완료되면 바로 자동전환 시작? 중지?
+        pause: 4000, //? default: 4000(m/s). 자동전환시 멈춰있는 시간.
+        autoDelay: 1500, //? default: 0(m/s). 자동시작 전 지연시간 설정. (autoStart가 true일 경우 사용. systemDelay고려)
+        autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
+        stopAutoOnClick: true, //? controler button을 조작할 때는 자동전환 중지.
+        autoControlsCombine: true, //? default : false. play/pause toggle.
+        autoControlsSelector: ".newAutoControls"
     });
 });

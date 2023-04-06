@@ -35,5 +35,9 @@ $(document).ready(function(){
         //? prevSelector: '.btn_prev',  공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
         // nextText: '다음', controler 뼈대 안에 text 변경
         // prevText: '이전'
+
+        // *auto
+        auto: true, //? default: false. slide 자동전환 켜기. false로 설정시 autoControls에서 작동가능.
+        autoControls: true
     });
 });

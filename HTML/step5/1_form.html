@@ -82,9 +82,25 @@
                         optgroup으로 중간 그룹을 설정할 수 있다.
                     -->
                 </li>
+                <li>
+                    <input type="image" src="https://via.placeholder.com/150x40?text=imgBtn" alt="이미지를입는전송버튼"> <br>
+                    <!-- 삽입된 img내 x,y axis point 전송기능 / 불필요. 안씀. -->
+                    <input type="button" value="비밀번호확인"> <br>
+                    <!-- ? 전송기능 불가 -> web : 현 page내에서 호출되는 popup, panel.  -->
+                    <button>우편번호확인</button> <br>
+                    <!-- ? 전송기능 가능 -> web : 결정버튼을 수행 or api 호출등 -->
+                    <input type="file">
+                    <input type="submit" value="confirm">
+                    <input type="reset" value="cancel">
+                </li>
             </ul>
         </fieldset>
         <!--form 태그에서 사용되는 입력태그들은 fieldset으로 그룹화 시킨다.-->
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>HTML5 Input</legend>
+        </fieldset>
     </form>
 </body>
 </html>

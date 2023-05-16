@@ -17,6 +17,8 @@
     padding: 10px 30px;
     border-width: 1px;
     font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
 }
 .btn.create{
     background-color: white; color: black; border-style: solid; border-color: black;
@@ -35,4 +37,8 @@
 }
 .btn.cancel{
     color: lightgrey; border-color: gray; border-style: solid;
+}
+input#userName{
+    border: 1px solid #eaeaea; line-height: 21px; font-size: 15px; padding: 5px 15px;
+    color: green;
 }

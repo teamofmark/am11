@@ -40,3 +40,15 @@ p.w_normal{
 p.w_nowrap{
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+/* 
+    ! vertical-align : 대상의 display 속성이 inline or inline-block. (block - x)
+    * 1. 높이가 높은 애를 기준으로 preset(top,middle,bottom) 적용을 한다.
+    * 2. 높이가 작은 애를 세부조정.(%)
+    ? 자신의 높이를 기준으로 하는 100%. 양수면 위로 / 음수면 아래로.
+*/
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: 100%; line-height: 18px;
+}

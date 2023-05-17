@@ -4,14 +4,19 @@ body{
     font-family: 'Nanum Gothic';
 }
 h1,h2,h3{
-
+    border: 1px solid black;
 }
 h1{
-
+    font-size: 20px; line-height: 26px; color: rgb(0,102,255);
+    /* 
+        * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
+        * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
+        * HSL(ightness)A(HSB(rightness)A) - hsla(hue,saturate,lightness,alpha(투명도));
+     */
 }
 h2{
-
+    font-size: 15px; line-height: 21px; color: #966;
 }
 h3{
-    
+    font-size: 12px; line-height: 18px; color: #f90;
 }

@@ -22,5 +22,5 @@ div{
 
 .searchField{
     /* todo. 두개의 이미지를 좌,우 위치에 배치하고 하단 line 만 지니고 있는 검색창. */
-
+    /* ! none -> 극도의 부정. border-> none = 선을없애다. */
 }

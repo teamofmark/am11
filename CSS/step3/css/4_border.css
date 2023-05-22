@@ -1,0 +1,26 @@
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+    /* ? border shorthand */
+}
+.multiBox{
+    /* * 속성별 분리 */
+    /* ? top / right / bottom / left */
+    /*
+    border-width: 1px 3px 10px 25px; 
+    border-style: solid dotted dashed double;
+    border-color: red green blue yellow;
+    */
+    /* * 방향별 분리 */
+    border-top: 1px solid red;
+    border-right: 3px dotted green;
+    border-bottom: 10px dashed blue;
+    border-left: 25px double yellow;
+}
+
+.searchField{
+    /* todo. 두개의 이미지를 좌,우 위치에 배치하고 하단 line 만 지니고 있는 검색창. */
+
+}

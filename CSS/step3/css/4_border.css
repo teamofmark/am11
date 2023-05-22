@@ -23,5 +23,11 @@ div{
 .searchField{
     /* todo. 두개의 이미지를 좌,우 위치에 배치하고 하단 line 만 지니고 있는 검색창. */
     /* ! none -> 극도의 부정. border-> none = 선을없애다. */
-    padding: 0 64px; box-sizing: border-box;
+    /* * input -> display: inline-block. */
+    padding: 0 64px; box-sizing: border-box; display: block; width: 100%; 
+    line-height: 50px; font-size: 18px; border-width: 0 0 1px 0;
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'), url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-position: 20px center, right 20px center;
+    background-repeat: no-repeat;
+    background-size: 24px; outline: none;
 }

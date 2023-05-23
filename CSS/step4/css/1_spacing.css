@@ -28,3 +28,14 @@ body{
     ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직 하다.
 */
 
+.centerDiv{
+    width: 15.7%; border: 1px solid #33f; padding: 10px; text-align: center;
+    /* ? contentWidth = contentWidth + (borderWidth *2) + (padding * 2)  */
+    /* margin: 0 42.15%; */
+    /* ! centerPos = (parentWidth(부모) - targetWidth(자신)) / 2 */
+    /* margin: 0 0 0 auto; */
+    margin: 0 auto;  font-size: 0.95vw;
+}
+.centerDiv article{
+    margin: 0 10px; background-color: #f33; color: white;
+}

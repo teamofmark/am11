@@ -7,4 +7,17 @@ body{
 }
 /* 
     ? position: absolute이고 부모 relative가 존재하지 아니하면 browser의 좌,상을 기준으로움직인다.
+    * computer Language는 sync(동기) / async(비동기) 로 분류되는데  대부분은 동기 =  적는 순서가 곧 실행 순서.
+*/
+.position_R{
+    position: relative; width: 150px; height: 150px; margin: 0 auto;
+    background-color: #0f0; left: 50px; top: 50px;
+}
+.position_R .position_A2{
+    position: absolute; left: 50px; top: 50px; width: 50px; height: 50px;
+    background-color: forestgreen;
+}
+/* 
+    ? 자손 absolute (부모가 relative)는 relative 부모의 기준을 두고 움직인다.
+    * 부모가 움직이면 그에 따라 움직인다.
 */

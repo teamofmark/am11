@@ -21,3 +21,12 @@ body{
     ? 자손 absolute (부모가 relative)는 relative 부모의 기준을 두고 움직인다.
     * 부모가 움직이면 그에 따라 움직인다.
 */
+.position_F{
+    position: fixed; background-color: limegreen; width: 100%; padding: 50px;
+    top: 0; left: 0;
+}
+/* 
+    ? position: fixed은 무조건 browser의 좌,상을 기준.
+    * browser의 scroll 영향을 받지 않는다. (고정)
+    * 자손들의 너비가 반드시 fixed 너비 만큼이어야 한다. 그렇지 않으면 좌,우 scroll 발생.
+*/

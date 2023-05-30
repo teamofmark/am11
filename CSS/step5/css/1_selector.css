@@ -16,3 +16,44 @@
 .classSelector p.f_color{color:#9cf;}
 
 /*CLASS 선택자 사용법 + 다중 클래스 지정 */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: slateblue; border-radius: 10px;
+}
+.attrSelector fieldset legend{
+    border: 1px solid slateblue; background-color: #555; color: white;
+    padding: 10px; border-radius: 10px;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    font-size: 14px; color: white; line-height: 30px;
+}
+.attrSelector fieldset ul li label{
+    width: 100px; display: inline-block;
+}
+.attrSelector fieldset ul li input{
+    padding: 5px;
+    /* ! type checkbox, radio는 css속성이 잘 들어가지 않는다. */
+}
+.attrSelector fieldset ul li input[type='text']{
+    /* ? = -> 같다.(x) 대입(o ? a = b -> a에 b를 대입하라.) / (같다 ==) */
+    background-color: salmon; border: 3px solid lightyellow; color: maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime;
+}
+.attrSelector fieldset ul li input[type='password']:focus{
+    background-color: lime; color: forestgreen; font-weight: bold;
+    border-color: lightgreen;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px;
+    background-color: fuchsia; border: 5px solid lightcoral;
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 25px; height: 25px;
+    background-color: darkblue; border: 5px solid blue;
+}
+/* ? attrSelector */

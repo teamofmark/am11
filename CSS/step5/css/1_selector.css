@@ -142,3 +142,20 @@
 .statusSelector input:disabled::placeholder{
     color:white;
 }
+/* ! select option check -> selected */
+.virtualSelector ul{
+    padding: 0; margin: 50px 0; list-style: none;
+}
+.virtualSelector ul:after{
+    content: ''; display: block; clear: both;
+}
+.virtualSelector ul li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px;
+    float: left; text-align: center;
+}
+.virtualSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #09f; color: black;
+}

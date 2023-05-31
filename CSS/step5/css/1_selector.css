@@ -71,3 +71,16 @@
 .sameSelector h1+h2{
     font-size: 40px; color: deeppink;
 }
+
+
+
+
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; overflow: hidden; line-height: 20px; color: deeppink;
+    transition-duration: 0.75s;
+}
+
+.statusSelector input[type='checkbox']:checked + label{
+    line-height: 0px;
+}

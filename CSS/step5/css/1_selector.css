@@ -159,6 +159,17 @@
 .virtualSelector ul li:nth-child(2n){
     background-color: #09f; color: black;
 }
-.shapeSelector h1:nth-of-type(2){color: #30f;}
+/* .shapeSelector h1:nth-of-type(2){color: #30f;}
 .shapeSelector h2:first-of-type{color:#0c6;}
-.shapeSelector h3:last-of-type{color: #f06;}
+.shapeSelector h3:last-of-type{color: #f06;} */
+/* todo. child 로 같은결과 나오게 해보기. */
+.shapeSelector :last-child{color:#30f;}
+.shapeSelector :nth-child(2){color: #0c6;}
+.shapeSelector :nth-child(4){color: #f06;}
+/*
+    * first-of-type, last-of-type은 형제 관계중 첫 번째 혹은 마지막으로 
+    * 등장하는 지정된 태그를 선택마지막으로 등장하는 특정 태그를 선택한다.
+    * nth-child와 마찬가지로 수열을 사용 할 수 있다.
+    * 또한 전체선택자인 * 와 혼용하여 body > *:first-of-type{color:red} 이런식의 범위 지정도
+    * 가능하다.
+*/

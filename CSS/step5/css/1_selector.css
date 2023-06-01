@@ -159,3 +159,6 @@
 .virtualSelector ul li:nth-child(2n){
     background-color: #09f; color: black;
 }
+.shapeSelector h1:nth-of-type(2){color: #30f;}
+.shapeSelector h2:first-of-type{color:#0c6;}
+.shapeSelector h3:last-of-type{color: #f06;}

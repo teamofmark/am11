@@ -233,3 +233,10 @@ ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 �
 .reactionSelector > *::selection{
     background-color: #000; color: #ff0;
 }
+
+.notSelector input:not([type='submit'],[type='password']){
+    background-color: red;
+}
+/*
+	:not은 부정 선택자로써 대상을 제외한 나머지에게 해당 css를 적용시킨다.
+*/

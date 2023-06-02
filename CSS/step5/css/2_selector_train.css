@@ -56,4 +56,16 @@ div:first-of-type fieldset ul li label{
 div:first-of-type fieldset ul li input{
     width: 80%; padding: 0 2.5%; border: none;
 }
-/* ? input / label 배치 */
+div:first-of-type fieldset ul li input:focus{
+    background-color: #ea0e52;
+}
+div:first-of-type fieldset ul li input[type='password']:focus{
+    color: white;
+}
+div:first-of-type input[type='submit']{
+    width: 90%; margin: 0 auto; border: none; display: block; line-height: 36px;
+    padding: 0; background-color: #333; color: #ea0e52;
+}
+div:first-of-type input[type='submit']:hover{
+    background-color: #ea0e52; color: black; cursor: pointer; /*default -> 일반 cursor*/
+}

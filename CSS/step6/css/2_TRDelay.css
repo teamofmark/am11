@@ -40,8 +40,11 @@ ul{padding:0; margin:0; list-style:none;}
     content: ''; display: block; clear: both;
 }
 .delay3 ul li{
-    display: block; float: left; width: 20%; height: 0; transition-duration: 3s;
+    display: block; float: left; width: 20%; height: 0;
+    transition-duration: 3s;
+    transition: all 0.75s;
 }
+    /* ? shortHand : property duration timingfunction delay */
 .delay3 ul:hover li{
     height: 300px; background-color: #ff0;
 }

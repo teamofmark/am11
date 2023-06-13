@@ -9,10 +9,10 @@ div span{
     animation-duration: 3s; animation-timing-function: ease;
 }
 div.rotater span:first-of-type{
-    background-color: red;
+    background-color: red; animation-name: hori;
 }
 div.rotater span:nth-of-type(2){
-    background-color: green;
+    background-color: green; animation-name: verti;
 }
 @keyframes hori {
     from{

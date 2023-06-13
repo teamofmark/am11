@@ -1,0 +1,31 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px;
+}
+div span{
+    width: 200px; height: 200px; display: block; animation-iteration-count: infinite;
+    animation-duration: 3s; animation-timing-function: ease;
+}
+div.rotater span:first-of-type{
+    background-color: red;
+}
+div.rotater span:nth-of-type(2){
+    background-color: green;
+}
+@keyframes hori {
+    from{
+        transform: rotateX(0deg);
+    }to{
+        transform: rotateX(360deg);
+    }
+}
+@keyframes verti {
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+    
+}

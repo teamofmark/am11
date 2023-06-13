@@ -15,12 +15,16 @@ div{
         transform: rotate3D(1,1,1,360deg);
     }
 }
+div span{
+    width: 200px; height: 100px; display: block; position: absolute; left: 0; top: 0;
+    opacity: 0.3;
+}
 div span:nth-child(1){
-    background-color: red; transform: ; transform-origin: ;
+    background-color: red;
 }
 div span:nth-child(2){
-    background-color: green; transform: ; transform-origin: ;
+    background-color: green; transform: rotateY(60deg); transform-origin: left top;
 }
 div span:nth-child(3){
-    background-color: blue; transform: ; transform-origin: ;
+    background-color: blue; transform: rotateY(-60deg); transform-origin: right top;
 }

@@ -1,5 +1,5 @@
 body{
-    width: 200px; margin: 200px auto;
+    width: 200px; margin: 200px auto; perspective: 400px;
 }
 div{
     width: 200px; height: 200px; position: relative;

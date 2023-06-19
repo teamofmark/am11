@@ -1,28 +1,16 @@
-@media screen and (max-width: 767px) and (orientation: landscape){
-    body{
 
-    }
-    h1{
-
-    }
-    p{
-
-    }
+@media screen and (max-width:767px) and (orientation:landscape){
+	body{background-color:orange; color:white; font-weight:bold;}
+    h1{font-size:1rem; text-align:center; line-height:2rem;}
+    p{font-size:0.75rem; text-align:center; line-height:1rem;}
 }
-/* todo. mobile - landscape */
-
-@media screen and (max-width: 767px) and (orientation: portrait){
-    body{
-
-    }
-    h1{
-
-    }
-    p{
-
-    }
+	
+@media screen and (max-width:767px) and (orientation:portrait){
+	body{background-color:red; color:white; font-weight:bold;}
+    h1{font-size:1rem; text-align:center; line-height:2rem;}
+    p{font-size:0.75rem; text-align:center; line-height:1rem;}
 }
-/* todo. mobile - portrait */
+/* mobile Device - 사용자 해상도가 768px 미만일 때 이 코드가 실행됨.*/
 
 @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
     /* ! 갤탭s8 normal min-width: 753px */

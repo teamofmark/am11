@@ -1,5 +1,9 @@
-header > div nav ul li a{
+header > div nav ul li a,
+header > div > ul li p{
     font-family: 'Roboto';
+}
+header > div > ul li h2{
+    font-family: 'Playfair Display';
 }
 
 a{
@@ -41,5 +45,23 @@ a{
         color: #00e0d0;
     }
     /* ? header GNB Fin */
+    header > div > ul{
+        margin-bottom: 125px;
+    }
+    header > div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center;
+        padding-bottom: 23px; background: url('../images/border.png') no-repeat center bottom;
+        margin-bottom: 25px;
+    }
+    header > div > ul li p{
+        font-size: 14px; font-weight: 300; color: white; max-width: 780px;
+        text-align: center; margin: 0 auto 45px; line-height: 24px;
+    }
+    header > div > ul li a.btn_more{
+        
+    }
 }
 /* ? desktop */

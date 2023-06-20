@@ -9,6 +9,10 @@ header > div > ul li h2{
 a{
     text-decoration: none;
 }
+.btn_more{
+    font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
+    font-size: 16px; border: 1px solid #00e0d0; color: #00e0d0;
+}
 /* ? A/U */
 
 @media screen and (min-width: 1280px) {
@@ -61,7 +65,7 @@ a{
         text-align: center; margin: 0 auto 45px; line-height: 24px;
     }
     header > div > ul li a.btn_more{
-        
+
     }
 }
 /* ? desktop */

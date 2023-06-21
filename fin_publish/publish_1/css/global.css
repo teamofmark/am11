@@ -1,9 +1,11 @@
 header > div nav ul li a,
 header > div > ul li p,
-footer > div div:not(:first-of-type) h2{
+footer > div div:not(:first-of-type) h2,
+#about figcaption p{
     font-family: 'Roboto';
 }
-header > div > ul li h2{
+header > div > ul li h2,
+#about figcaption h2{
     font-family: 'Playfair Display';
 }
 
@@ -20,6 +22,7 @@ a{
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
     }
+    #about,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }

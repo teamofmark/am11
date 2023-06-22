@@ -87,4 +87,11 @@
         font-size: 14px;
     }
     /* ?expArea Fin */
+    section.teamArea{
+        background: url('../images/bg_03.png') left top / cover no-repeat;
+        text-align: center; padding: 70px 0;
+    }
+    section.teamArea h2{
+        
+    }
 }

@@ -1,7 +1,7 @@
 
 @media screen and (min-width: 767px) and (max-width: 1279px){
     #about{
-        padding-left: 4%;
+        padding-left: /*4%*/ 3.5%; box-sizing: border-box;
     }
     #about:after{
         content: ''; display: block; clear: both;
@@ -10,10 +10,10 @@
         float: left;
     }
     #about img{
-        width: 25%; max-width: 235px;
+        width: /*25%*/32%; max-width: 235px;
     }
     #about figcaption{
-        margin-left: 15%; width: 60%;
+        margin-left: /*15%*/8%; width: 60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 30px;
@@ -35,7 +35,7 @@
         padding: 200px 0;
     }
     section.videoArea a{
-        display: block; width: 100px; padding: 25px 0 30px 5px; border-radius: 55px;
+        display: block; width: 100px; padding: 22px 0 33px 5px; border-radius: 60px;
         border: 3px solid white; color: white; font-size: 45px;
         text-align: center; margin: 0 auto 30px;
     }

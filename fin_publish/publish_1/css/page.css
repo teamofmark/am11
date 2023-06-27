@@ -79,7 +79,7 @@
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
     
     section.expArea ul li h3{
-        font-weight: 900; font-size: /*1.82vw*/22px; color: #413d4b; margin-bottom: 20px;
+        font-weight: 900; font-size: /*1.82vw*/12px; color: #413d4b; margin-bottom: 20px;
     }
     section.expArea ul li p{
         font-weight: 300; line-height: 22px; color: rgba(51,51,51,0.75);
@@ -351,7 +351,7 @@
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
     
     section.expArea ul li h3{
-        font-weight: 900; font-size: /*1.82vw*/22px; color: #413d4b; margin-bottom: 20px;
+        font-weight: 900; font-size: /*1.82vw*/12px; color: #413d4b; margin-bottom: 20px;
     }
     section.expArea ul li p{
         font-weight: 300; line-height: 22px; color: rgba(51,51,51,0.75);

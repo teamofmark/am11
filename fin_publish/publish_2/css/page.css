@@ -40,5 +40,9 @@
         color: #a1a7bd;
     }
     /* ?slide Nav Fin */
+    
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
 }
 /* ?desktop */

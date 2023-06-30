@@ -156,5 +156,12 @@
         text-align: right;
     }
     /* ?sortBar Fin */
+    .contentArea aside{
+        width: 23.07%; float: left;
+    }
+
+    .contentArea section{
+        width: 74.35%; margin-left: 2.58%; float: left;
+    }
 }
 /* ?desktop */

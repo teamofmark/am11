@@ -58,3 +58,10 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// * var 변수이름; -> 선언
+// * var 변수이름 = 값; -> 선언 및 값으로 초기화
+var userName, userAge;
+// var userAge;
+userName = "mark";
+userAge = "41";
+console.log(userName + '의 나이는 ' + userAge + '입니다.');

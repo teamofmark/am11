@@ -65,3 +65,15 @@ var userName, userAge;
 userName = "mark";
 userAge = "41";
 console.log(userName + '의 나이는 ' + userAge + '입니다.');
+
+// *변수의 특성
+function varTest(){
+    var cup = 'Coffee';
+    cup = 'Green Tea';
+    cup = 'Water';
+    console.log(cup);
+}
+// * 연산자와 변수의 관계
+var valueTest = 10;
+// valueTest = valueTest + 20;
+valueTest += 20;

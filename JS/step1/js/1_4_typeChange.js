@@ -109,3 +109,26 @@ function todo3(){
     console.log(typeof(result) + ' = ' + result);
     // * 결과 : string = 100
 }
+// todo.2 문자 형 "100.51"을 숫자 형으로 변환하여 연산이 가능하게 만들기.
+
+// todo. 2-1 parse 정수형변환 Int
+function todo4(){
+    var test="100.51";
+    var result = parseInt(test) + 150 + parseInt("20");
+    console.log(typeof(result) + ' = ' + result);
+    // * number = 270
+}
+// todo. 2-2 parse 실수형변환 Float
+function todo5(){
+    var test="100.51";
+    var result = parseFloat(test) + 150 + parseInt("20");
+    console.log(typeof(result) + ' = ' + result);
+    // * number = 270.51
+}
+// todo. 2-3 Number 형변환
+function todo6(){
+    var test="100.51";
+    var result = Number(test) + 150 + Number("20");
+    console.log(typeof(result) + ' = ' + result);
+    // * number = 270.51
+}

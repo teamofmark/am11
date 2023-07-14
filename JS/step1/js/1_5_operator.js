@@ -43,3 +43,62 @@
     ? 접근 연산자
     * .
 */
+// * case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장후 출력. 
+function numbOP1(){
+    var a = 10;
+    var result = a+20+30;
+    console.log(result);
+}
+// * case.2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장후 출력.
+function numbOP2(){
+    var a = 50, b = 20;
+    var result = a*b/10;
+    console.log(result);
+}
+// *case.3 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a+b);
+}
+// *case.4 ul,li 구조의 tag를 htmlPage 에 삽입 후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>IT.sme...</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// todo. 연산자가 뒤로올경우 값을 예상하고 결과확인하기
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); //? 결과 : 10 / 현재 : 11. 
+    alert(number++); //? 결과 : 11 / 현재 : 12.
+    alert(number++); //? 결과 : 12 / 현재 : 13.
+}
+// todo. 연산자가 앞으로 올경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 예상결과 : .
+    alert(++number); //? 예상결과 : .
+    alert(++number); //? 예상결과 : .
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10; //? 
+    console.log(number++); // ? 출력 :  / 현재 :  
+    console.log(--number); // ? 출력 :  / 현재 : 
+    console.log(++number); // ? 출력 :  / 현재 : 
+    console.log(number--); // ? 출력 :  / 현재 : 
+    console.log(number++); // ? 출력 :  / 현재 : 
+    console.log(++number); // ? 출력 :  / 현재 : 
+    console.log(--number); // ? 출력 :  / 현재 : 
+    console.log(number++); // ? 출력 :  / 현재 : 
+    console.log(++number); // ? 출력 :  / 현재 : .
+    console.log(number); //? 최종결과 : .
+}

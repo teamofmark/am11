@@ -86,23 +86,26 @@ function numbString(){
     var result = parseFloat(test) + 10;
     console.log('result = ' + result);
 }
-// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형. result 로 출력(typeof 검수필요).
+// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형. 결과변수 result를 생성하여 출력(typeof 검수필요).
 
 // todo. 1-1 암시적형변환 - js가 자동으로 바꾸게
 function todo1(){
     var test = 100;
-
+    var result = test + '';
+    console.log(typeof(result) + ' = ' + result);
     // * 결과 : string = 100
 }
 // todo. 1-2 String 형변환 = String <- 전역함수로 바꾸게
 function todo2(){
     var test = 100;
-    
+    var result = String(test);
+    console.log(typeof(result) + ' = ' + result);
     // * 결과 : string = 100
 }
 // todo. 1-3 toString 형변환 = tostring <- 함수로 바꾸게
 function todo3(){
     var test = 100;
-    
+    var result = test.toString();
+    console.log(typeof(result) + ' = ' + result);
     // * 결과 : string = 100
 }

@@ -143,5 +143,5 @@ function compareOperator4(){
 }
 // todo 문제해결하기.
 function compareOperator4R(){
-    console.log(30 > 20 > 10);// ? 예상결과대로 나오게
+    console.log(30 > 20 && 20 > 10);// ? 예상결과대로 나오게
 }

@@ -84,3 +84,30 @@ function avgScore(){
         alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼'); //? 평균 ?? 점 \n 가 입니다. 맞겠구먼. 0 ~ 59
     }
 }
+// *case. 5 사용자의 id를 입력받아 'Mark' 가 맞다면 승인메시지를 출력, 아니라면 거부 메시지를 출력.
+
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디를 입력하세요.");
+    if(userID == "Mark"){
+        alert("접속승인!");
+    }else{
+        alert("접속거부!");
+    }
+}
+// *case. 6 사용자 id "Mark" 와 password "1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디를 입력하세요.");
+    var userPW = window.prompt("사용자의 비밀번호를 입력하세요.");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("접속승인!");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴 경우 "틀린 정보에 대한 오류 메시지 출력"
+function userInfoCheck2(){
+    // ? 승인 : Mark님으로 확인되었습니다.
+    // ? 거부 : 모든 정보가 맞지 않습니다.
+    // ? ID틀린경우 : ID가 존재하지 않습니다.
+    // ? PW틀린경우 : PASSWORD가 틀렸습니다.
+}

@@ -42,14 +42,24 @@ function lastDay(){
 }
 // todo 아침? 점심? 저녁 먹을 시간인지 알려주는 함수 만들기.
 function mealTime(){
-    alert('아침많이먹어');
-    alert('점심적당히먹어');
-    alert('저녁꼭먹어야겠냐');
+    var date = new Date();
+    var day = date.getHours();
+    if(hour < 11){
+        alert('아침많이먹어');
+    }else if(hour < 15){
+        alert('점심적당히먹어');
+    }else{
+        alert('저녁꼭먹어야겠냐');
+    }
 }
 // todo 홀,짝수 판별하는 함수 만들기
 function oddOrEven(){
     var numb = prompt('숫자를 입력하세요.','홀,짝을 구분합니다.');
-    alert('짝수입니다.');
-    alert('홀수일껄요.');
-    alert('값 똑바로 입력해라.');
+    if(numb%2 == 0){
+        alert('짝수입니다.');
+    }else if(numb%2 == 1){
+        alert('홀수일껄요.');
+    }else{
+        alert('값 똑바로 입력해라.');
+    }
 }

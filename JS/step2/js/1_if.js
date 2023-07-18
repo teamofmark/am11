@@ -43,7 +43,7 @@ function lastDay(){
 // todo 아침? 점심? 저녁 먹을 시간인지 알려주는 함수 만들기.
 function mealTime(){
     var date = new Date();
-    var day = date.getHours();
+    var hour = date.getHours();
     if(hour < 11){
         alert('아침많이먹어');
     }else if(hour < 15){
@@ -61,5 +61,26 @@ function oddOrEven(){
         alert('홀수일껄요.');
     }else{
         alert('값 똑바로 입력해라.');
+    }
+}
+// *case. 3 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    var koreanScore = prompt('국어점수를 입력하시오');
+    var englishScore = prompt('영어점수를 입력하시오');
+    var mathScore = prompt('수학점수를 입력하시오');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    // todo. 나온 점수를 활용하여 각 해당 alert이 출력되게 만들어보기
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.'); //? 0 보다 작거나 100보다 클때
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n 수 입니다. 특급이구먼.'); //? 평균 ?? 점 \n 수 입니다. 특급이구먼. 90 ~ 100
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n 우 입니다. 우수하구먼.'); //? 평균 ?? 점 \n 우 입니다. 우수하구먼. 80 ~ 89
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼'); //? 평균 ?? 점 \n 미 입니다. 괜찮구먼. 70 ~ 79
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼'); //? 평균 ?? 점 \n 양 입니다. 망했구먼. 60 ~ 69
+    }else{
+        alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼'); //? 평균 ?? 점 \n 가 입니다. 맞겠구먼. 0 ~ 59
     }
 }

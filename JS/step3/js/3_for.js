@@ -13,3 +13,20 @@
     3. 참일경우 이하 구문 실행 > 4. 증감부 실행 > 5. 2단계
 
 */
+// ! 단일 반복
+// *case. 1 이름을 10번 출력.
+function namePrint10(){
+    var userName = "Mark";
+    var arr = ['data01','data02','data03'];
+    for(var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case. 2 이름을 1,000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo. 1,000번 출력중 홀수 번째만 출력.

@@ -45,4 +45,30 @@ function calculator(){
         ? 3. 두번째 숫자를 입력하세요.
         ? 4. alert으로 결과 출력.
     */
+    var firstNumb = window.prompt('첫번째 숫자를 입력하세요.');
+    var operator = window.prompt('사칙연산 연산자중 하나를 입력하세요.(+,-,*,/)');
+    var lastNumb = window.prompt('두번째 숫자를 입력하세요.');
+    
+    // * 형변환.
+    firstNumb = Number(firstNumb);
+    lastNumb = Number(lastNumb);
+
+    switch(operator){
+        case "+":
+            alert(firstNumb+lastNumb);
+            break;
+        case "-":
+            alert(firstNumb-lastNumb);
+            break;
+        case "*":
+            alert(firstNumb*lastNumb);
+            break;
+        case "/":
+            alert(firstNumb/lastNumb);
+            break;
+        default:
+            alert('잘못된 값이 입력되었습니다.');
+            break;
+    }
+
 }

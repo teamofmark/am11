@@ -106,8 +106,15 @@ function userInfoCheck(){
 }
 // todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴 경우 "틀린 정보에 대한 오류 메시지 출력"
 function userInfoCheck2(){
-    // ? 승인 : Mark님으로 확인되었습니다.
-    // ? 거부 : 모든 정보가 맞지 않습니다.
-    // ? ID틀린경우 : ID가 존재하지 않습니다.
-    // ? PW틀린경우 : PASSWORD가 틀렸습니다.
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+    if(userID=="Mark"&&userPW=="1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" && userPW != "1234"){
+        console.log("모든 정보가 맞지않습니다.");
+    }else if(userID!="Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        console.log("password가 틀렸습니다.");
+    }
 }

@@ -20,3 +20,29 @@ function switchGrammar(){
     }
 }
 // *case. 2 lotto과제를 switch로 변경
+function lotto(){
+    var numbValue = prompt("입력하실번호는 ? ");
+    switch(numbValue){
+        case "1":
+            alert("1등 10억!");
+            break;
+        case "2":
+            alert("2등 5천!");
+            break;
+        case "3":
+            alert("3등 3백!");
+            break;
+        default:
+            alert("낙첨되었습니다.");
+            break;
+    }
+}
+// todo. switch 사칙연산계산기 만들기.
+function calculator(){
+    /*
+        ? 1. 첫번째 숫자를 입력하세요.
+        ? 2. 사칙연산 연산자중 하나를 입력하세요.(+,-,*,/)
+        ? 3. 두번째 숫자를 입력하세요.
+        ? 4. alert으로 결과 출력.
+    */
+}

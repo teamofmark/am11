@@ -70,3 +70,48 @@ function answer5(){
         document.write((11 - i) + "<br>");
     }
 }
+// *case.4 자신이 좋아하는 과일 4개를 '배열'로 배치하고, alert으로 출력하기.
+function favorFruit(){
+    var array = ["자두","복숭아","메론","수박","포도","딸기"]; //? 변수선언 및 배열초기화
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS단원을 배열을 활용해 출력하되, 1,2,3,4 가 아닌 첫,두,세,네 로 변환.
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    var swapNumb = '';
+    for(var i = 0; i<data.length; i++){
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            case 6:
+                swapNumb = '일곱';
+                break;
+        }
+        document.write(swapNumb + '번째 내용 = ' + data[i] + '<br>');
+    }
+}
+function arrayFor2(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    var swapNumb = ["첫","두","세","네","다섯","여섯","일곱"];
+    for (var i = 0; i < data.length; i++){
+        document.write(swapNumb[i] + "번째 내용 = " + data[i] + "<br>");
+    }
+}

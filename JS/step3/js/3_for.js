@@ -123,3 +123,11 @@ function reverseFavorFruit(){
         document.write(array[i]);
     }
 }
+// *case.6 continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}

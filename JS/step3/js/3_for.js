@@ -30,3 +30,9 @@ function namePrint1000(){
     }
 }
 // todo. 1,000번 출력중 홀수 번째만 출력.
+function namePrint500(){
+    var userName = "Mark";
+    for (var i = 1; i <= 1000; i+=2) {
+        document.write(i+'.'+ userName +'<br>');
+    }
+}

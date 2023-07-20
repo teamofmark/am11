@@ -115,3 +115,11 @@ function arrayFor2(){
         document.write(swapNumb[i] + "번째 내용 = " + data[i] + "<br>");
     }
 }
+
+// *case.5 역배열 (rev.sort)
+function reverseFavorFruit(){
+    var array = ["자두","복숭아","메론","수박","포도","딸기"]; //? 변수선언 및 배열초기화
+    for(var i=array.length-1; i>=0; i--){
+        document.write(array[i]);
+    }
+}

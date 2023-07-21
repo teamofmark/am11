@@ -131,3 +131,80 @@ function forContinue(){
     }
     document.write('최종 i = ' + i + '<br>');
 }
+function continueEx(){
+    var text = '';
+    for (var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text = text + i;
+    }
+    console.log(text);
+}
+// * continue 활용 (filter)
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i; //? (2,6,12,20,30)
+        console.log(output); //? 예상결과 : 
+    }
+}
+// *case. 7 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function breakEx(){
+    // for( var i = 0; i < 6; i++){
+
+    // }
+    var i = 0;
+    while (i < 6){
+        if (i == 3){
+            break;
+        }
+        i = i + 1;
+    }
+    console.log(i); //? 예상결과 : 
+}
+// * case. 8 break 문 활용
+function runBreak(){
+    // ? while(true){
+
+    // }
+    for (var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(confirm('중지할래?')){
+            break;
+        }
+    }
+}
+// ! 다중 반복
+// *case. 1 반절 피라미드.
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i<=10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 역반절피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i>=1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}

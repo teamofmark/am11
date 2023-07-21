@@ -208,3 +208,6 @@ function reverseHalfPyramid(){
     }
     document.write(star);
 }
+function pyramid(){
+    
+}

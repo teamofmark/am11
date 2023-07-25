@@ -160,6 +160,7 @@ function calculator(op,numb1,numb2){
 * document.write(div(20, 10) + "<br>");
 */
 function calculator2(op, numb1, numb2){
+    // ! HINT : return의 의미를 잘 떠올리기 ^-^
     var result = '';
     switch(op){
         case "+":

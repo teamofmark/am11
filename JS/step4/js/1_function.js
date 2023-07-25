@@ -86,3 +86,67 @@ function sumReturn1(num1, num2){
 }
 // var value = sumReturn1(13,26);
 // alert(value);
+
+// *case.4 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(window.prompt("숫자만 입력해라."));
+        if(value == 0){
+            document.write("종료");
+            // break;
+            return;
+        }
+        sum += value;
+        document.write(count + ". " + sum + "<br>");
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}
+// todo. 구구단 출력을 매개변수를 통해 함수로 전달하기.
+function printGugudan(numb){
+    for (var i = 2; i <= numb; i++){ //? 
+        document.write(i + '단 출력',"<br>"); //?
+        for(var m = 1; m <= numb; m++){ //?
+            document.write(i + '*' + m + " = " + (i*m), "<br>"); //?
+        }
+        document.write("<br>"); //?
+    }
+}
+// todo. 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+/*
+    //* 실행구문
+    * document.write("1 결과 =" + calculator("+", 20, 10));
+    * document.write("2 결과 =" + calculator("-", 20, 10));
+    * document.write("3 결과 =" + calculator("*", 20, 10));
+    * document.write("4 결과 =" + calculator("/", 20, 10));
+    * document.write("5 결과 =" + calculator("%", 20, 10));
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1+numb2;
+            break;
+        case "-":
+            result = numb1-numb2;
+            break;
+        case "*":
+            result = numb1*numb2;
+            break;
+        case "/":
+            result = numb1/numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}

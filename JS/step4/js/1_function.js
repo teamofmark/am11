@@ -222,3 +222,18 @@ function h2(){
 function h3(){
     console.log("こんにちは");
 }
+function execute(func){
+    func();
+    console.log(func);
+    return func;
+}
+// *case. 7 버튼 클릭 시 매개변수 값으로 넘긴 함수 호출하기.
+function welcome(){
+    alert("환영합니다. 방가와.");
+}
+$(document).ready(function(){
+
+});
+$(function(){
+    $("#runEx7").click(welcome);
+});

@@ -164,31 +164,61 @@ function calculator2(op, numb1, numb2){
     var result = '';
     switch(op){
         case "+":
-            result =  //? numb1 + numb2; -> add함수를 불러서 실행.
+            result =  add(numb1,numb2);//? numb1 + numb2; -> add함수를 불러서 실행.
             break; 
         case "-":
-            result =  //? numb1 - numb2; -> sub함수를 불러서 실행.
+            result =  sub(numb1,numb2);//? numb1 - numb2; -> sub함수를 불러서 실행.
             break;
         case "*":
-            result =  //? numb1 * numb2; -> mul함수를 불러서 실행.
+            result =  mul(numb1,numb2);//? numb1 * numb2; -> mul함수를 불러서 실행.
             break;
         case "/":
-            result =  //? numb1 / numb2; -> div함수를 불러서 실행.
+            result =  div(numb1,numb2);//? numb1 / numb2; -> div함수를 불러서 실행.
             break;
         default:
             result = "잘못된 연산자입니다.";
             break;
     }
+    return result;
 }
-function add(){
+function add(numb1,numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+    //! or only return numb1 + numb2;
+}
+//* document.write(add(20, 10) + "<br>");
 
+function sub(numb1,numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
 }
-function sub(){
-    
+//* document.write(sub(20, 10) + "<br>");
+
+function mul(numb1,numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
 }
-function mul(){
-    
+//* document.write(mul(20, 10) + "<br>");
+
+function div(numb1,numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
 }
-function div(){
-    
+//* document.write(div(20, 10) + "<br>");
+
+// *case. 5 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다. 고객님.");
+}
+var func = hello;
+
+// *case. 6 매개변수 값으로 함수를 사용하기.
+function h1(){
+    console.log("Hello.");
+}
+function h2(){
+    console.log("안녕하세요.");
+}
+function h3(){
+    console.log("こんにちは");
 }

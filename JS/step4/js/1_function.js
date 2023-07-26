@@ -231,9 +231,33 @@ function execute(func){
 function welcome(){
     alert("환영합니다. 방가와.");
 }
-$(document).ready(function(){
+// $(document).ready(function(){
 
-});
+// });
 $(function(){
     $("#runEx7").click(welcome);
 });
+// *case. 8 1초마다 매개변수값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi, hello");
+    },1000);
+}
+// todo. 함수를 매개변수로 전달받아 반복호출하기.
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write("hello world","<br>");
+}
+// *case. 9 return Value로 함수를 사용하기
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
+// ! result == hello.

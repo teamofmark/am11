@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
     // *case. 2 x,yAxis
     detailMoveCircleExt();
+    // ? $("#btnDetailMove").click(detailMoveCircle);
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -33,9 +34,37 @@ function circleEvent(){
     circleMovCommand(xpos,ypos);
 }
 function circleMovCommand(xpos,ypos){ //? 원을움직이는함수
-    if(){ // todo. 풀어오기
-        alert("잘못된 수치 입니다. 0 ~ 380 이내로 입력하세요.");
-    }else{ // todo. 풀어오기
-        // ? 움직이기
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
     }
+}
+function detailMoveCircle(){
+    var $circle = $(".circleDetail");
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+
+    if(xpos <= 380 && ypos <= 380 && xpos >= 0 && ypos >= 0){
+        $circle.css({
+            "left": xpos,
+            "top" : ypos
+        });
+    }else{
+        alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+    }
+    // if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+    //     alert('잘못된 수치입니다. 0 ~ 380이내로 입력하세요.');
+    // }else{
+    //     $circle.css({
+    //         "left" : xpos,
+    //         "top" : ypos
+    //     });
+    // }
 }

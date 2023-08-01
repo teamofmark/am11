@@ -48,5 +48,9 @@ function imgAlignMix(){
     });
     $(".resetMix").click(function(){
         // todo. 모든 img 원위치 시키기
+        img.css({
+            "left": 0,
+            "top" : 0
+        });
     });
 }

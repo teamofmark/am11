@@ -23,7 +23,7 @@ function gameStart(){
     playState = true;
     if(playState == true){ //? 게임시작되었을때.
         gameEnd(); //? 시한폭탄 ?
-        setInterval(moveCircle,500); //? ex> 0.5초마다?
+        timerID = setInterval(moveCircle,500); //? ex> 0.5초마다?
     }
 }
 function moveCircle(){
@@ -39,5 +39,11 @@ function scoreCount(){
     }
 }
 function gameEnd(){
-
+    setTimeout(function(){
+        playState = false;
+        clearInterval(timerID); // ! intervalClear
+        alert("게임종료. 너의 점수는" + count + "점 이다.");
+        count = 0;
+        $score.text(count);
+    }, 10000);
 }

@@ -27,6 +27,7 @@ function initEvent(){
     $("#start").click(startGame);
 }
 function startGame(){
+    console.log("1. 물고기 이동 시작");
     if(timerID == -1){
         timerID = setInterval(function(){
             updateFishPosition(); //? 이동
@@ -43,4 +44,40 @@ function updateFishPosition(){
 
         $fish.css("left",newLeft);
     }
+}
+// ? 물고기 이동 함수
+function displayFishPositionInfo(){
+    console.log("2. 물고기 정보 출력");
+    var info = "";
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + '번 물고기 : ' + $fish.position().left + "px <br>";
+    }
+    $info.html(info);
+}
+// ? 물고기 위치 출력 함수
+
+function checkGoalFish(){
+    console.log("3. 정렬완료");
+    var winnerList = [];
+    for(var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                index: (i), position:fishCurrentPosition
+            });
+        }
+    }
+    if(winnerList.length>0){
+        winnerList.sort(function(a,b){
+            return b.position - a.position; //? position label Data 값 기준 내림차순 정렬.
+        }); //? default : a - z 올림차순정렬
+    }
+    endGame();
+    alert("우승 !" + winnerList[0].index + '번 물고기');
+}
+function endGame(){
+    console.log("4. 게임종료");
+    clearInterval(timerID);
+    timerID = -1;
 }

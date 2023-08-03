@@ -72,9 +72,9 @@ function checkGoalFish(){
         winnerList.sort(function(a,b){
             return b.position - a.position; //? position label Data 값 기준 내림차순 정렬.
         }); //? default : a - z 올림차순정렬
+        endGame();
+        alert("우승 !" + winnerList[0].index + '번 물고기');
     }
-    endGame();
-    alert("우승 !" + winnerList[0].index + '번 물고기');
 }
 function endGame(){
     console.log("4. 게임종료");

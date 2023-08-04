@@ -34,7 +34,7 @@
     text-align: center; margin-bottom: 20px;
 }
 .customPager li{
-    display: inline-block; width: 20%;
+    display: inline-block; width: 15%;
 }
 .customPager li:not(:first-child){
     margin-left: 2%;

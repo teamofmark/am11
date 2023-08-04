@@ -32,6 +32,7 @@
                                           \
       .fluid-width-video-wrapper iframe,  \
       .fluid-width-video-wrapper object,  \
+      .fluid-width-video-wrapper video,   \
       .fluid-width-video-wrapper embed {  \
          position: absolute;              \
          top: 0;                          \
@@ -53,7 +54,8 @@
         "iframe[src*='www.youtube.com']",
         "iframe[src*='www.kickstarter.com']",
         "object",
-        "embed"
+        "embed",
+        "video"
       ];
 
       if (settings.customSelector) {

@@ -8,5 +8,15 @@
 </head>
 <body>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/tYaWoqR3ErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- 
+        ! src, title, allow(youtube한정) 제외 나머지는 css 처리.
+        ? width - 너비(넓이x)
+        ? height - 높이(헤잇x)
+        ? title - 접근성요소. 광범위적으로 사용 가능한 alt.
+        ? frameborder - Attr(del). -> css border.
+        ? allow - youtube API value 설정 관련.
+    -->
+    <embed src="https://www.youtube.com/embed/tYaWoqR3ErU" width="560" height="315">
+    <iframe width="1280" height="1024" src="http://www.centersb.co.kr/default/" frameborder="0"></iframe>
 </body>
 </html>

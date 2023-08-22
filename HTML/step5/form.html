@@ -59,7 +59,24 @@
                         </optgroup>
                     </select>
                 </li>
+                <li>
+                    <!-- 
+                        ? C : -> a, button(app), input:button / 방식에 따라 submit
+                        ? R : -> a, > button(app), input:button
+                        ? U : -> input:button, button(app) > a / 방식에 따라 submit
+                        ? D : -> submit, reset
+                    -->
+                    <input type="image" src="https://via.placeholder.com/100x50?text=imgBtn"><br>
+                    <button>비밀번호확인</button>
+                    <input type="button" value="비밀번호확인"><br>
+                    <input type="file" value="찾아보기"><br>
+                    <input type="submit" value="확인"><br>
+                    <input type="reset" value="취소">
+                </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
         </fieldset>
     </form>
 </body>

@@ -77,6 +77,21 @@
         </fieldset>
         <fieldset>
             <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" id="userName" placeholder="8자미만" maxlength="8" autofocus> <br>
+            <input type="email" placeholder="examples@examples.com"> <br>
+            <input type="url"> <br>
+            <input type="tel"><!-- ! 여러개로 분할처리 금지 --> <br>
+            <input type="number" min="1" max="10" step="1" value="1"> <br>
+            <input type="range" min="-2" max="2" step="1" value="0"> <br>
+            <!-- todo input:date+input:month+input:week+input:time+input:datetime-local -->
+            <input type="date"> <br>
+            <input type="month"> <br>
+            <input type="week"> <br>
+            <input type="time"> <br>
+            <input type="datetime-local"><br>
+            <input type="search" placeholder="검색어를 입력하세요." autocomplete="additional-name"> <br>
+            <input type="color">
         </fieldset>
     </form>
 </body>

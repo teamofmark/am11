@@ -8,7 +8,7 @@
     display: inline-block;
 }
 .btn.create{
-    background-color: white; color: blue; border-color: blue;
+    background-color: white; color: blue; border-color: skyblue;
 }
 .btn.modify{
     background-color: transparent; border-style: dashed; border-color: slateblue;
@@ -22,4 +22,11 @@
 }
 .btn.cancel{
     color: lightgray; border-color: lightgray;
+}
+#userName{
+    border: 1px solid #eaeaea;
+    line-height: 21px;
+    font-size: 12px;
+    padding: 5px 15px;
+    color: green;
 }

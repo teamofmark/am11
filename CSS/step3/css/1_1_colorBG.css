@@ -10,3 +10,6 @@ body,p{
 .wrap .topLine input{
     background-color:transparent;
 }
+.wrap p{
+    background-color: #fff; padding: 15px;
+}

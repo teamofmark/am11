@@ -54,5 +54,6 @@ div{
 /* todo. 원만들고 글자 정중앙위치시키기 */
 .circleBox{
     width: 500px; height: 500px; background-color: midnightblue;
-    color: cyan; font-size: 30px;
+    color: cyan; font-size: 30px; border-radius: 250px;
+    text-align: center; line-height: 500px;
 }

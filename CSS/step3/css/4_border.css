@@ -23,3 +23,12 @@ div{
         또는 border: 5px 8px 10px; 방식으로 상하 별도, 좌우 묶기 로 표현가능            
     */
 }
+.searchField{
+    display: block; width: 100%; border-width: 0 0 1px; line-height: 50px; outline: none;
+    font-size: 18px; padding-left: 64px; margin: 0 0 50px auto;
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'),url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center, right 5% center;
+    background-size: 24px;
+    max-width: 950px;
+}

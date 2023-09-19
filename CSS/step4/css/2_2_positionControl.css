@@ -1,0 +1,15 @@
+body{
+    margin: 0; height: 2000px;
+}
+.position_A{
+    background-color: yellow; text-align: center; padding: 10px 0;
+    position: absolute;
+    /* ! absolute 선언 후 좌표인계(left or right / top or bottom)가 이루어지지 않으면 현재위치에서 뜬다. */
+}
+.position_R{
+    position: relative; width: 150px; height: 150px; margin: 0 auto; background-color:#0f0; top: 100px;
+}
+.position_F{
+    background-color: deeppink; padding: 10px 0; position: fixed; width: 100%;
+    top: 0; left: 0;
+}

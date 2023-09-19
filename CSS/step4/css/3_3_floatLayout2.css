@@ -27,6 +27,7 @@
 .wrap header nav ul li{
     /* float: left; width: 56px; */
     display: inline-block;
+    /* margin-left: -4px; */
 }
 .wrap header nav ul li a{
     color: white; line-height: 55px;

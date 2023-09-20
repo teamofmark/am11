@@ -13,6 +13,18 @@ body{
 - 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
 
 */
+/* 
+    ! 100 - 900 (font마다 상이)
+    * 100 - thin(hairLine)
+    * 200 - UltraLight
+    * 300 - light
+    ! 400 - regular (default)
+    * 500 - medium
+    * 600 - semiBold
+    * 700 - bold
+    * 800 - extraBold
+    * 900 - black.
+*/
 h1{
     font-size: 20px; line-height: 26px; color: rgb(186, 43, 43);
     /* 

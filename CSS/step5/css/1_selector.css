@@ -99,3 +99,25 @@
     * |= : 해당 문자로 시작하거나 - 로 구분되는 대상.
     * ~= : 띄어쓰기 기준. 해당 문자 포함.
 */
+.eventSelector a{
+    display: block; margin-bottom: 30px; text-align: center; font-size: 14px;
+    line-height: 24px; border-width: 3px; font-weight: bold;
+}
+.eventSelector a:link{/* ? 대상:link가 걸린 상태 = href attr을 지닌 상태. */
+    border-style: dotted; border-color: lightslategray; color: #333;
+    text-decoration: none;
+}
+.eventSelector a:hover{/* ? 대상: mouse cursor가 올라간 상태. */
+    border-style: solid; border-color: seagreen; color: forestgreen;
+    text-decoration: underline;
+}
+.eventSelector a:active{ /* ? 대상:click이 일어났을때*/
+    border-style: double; border-color: salmon; background-color: darkslateblue;
+    color: cyan; text-decoration: line-through;
+}
+.eventSelector a:visited{/* ? 대상:을 방문한 적이 있는 상태*/
+    color: red; border-color: red;
+}
+.eventSelector a:focus{
+    border: 5px solid deeppink;
+}

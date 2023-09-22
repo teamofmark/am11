@@ -62,3 +62,13 @@
     구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을
     적용 할 수 있다.
 */
+.sameSelector h1~h2{
+    background-color: #333; color: white;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/*
+    동위 선택자에서 A+B는 A 바로뒤에 위치하는 B를 지목하고,
+    A~B는 A뒤에있는 B모두를 선택한다. (최초기준이 되는 tag만 효력이 있다.)
+*/

@@ -180,3 +180,12 @@
     font-size: 24px; color: #090;
     line-height: 30px; text-decoration: underline;
 }
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) "."; /* ? f(x)*/
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; color: deeppink; font-weight: bold;
+}

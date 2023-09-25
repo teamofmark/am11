@@ -121,3 +121,23 @@
 .eventSelector a:focus{
     border: 5px solid deeppink;
 }
+.statusSelector input[type='checkbox']+label{
+    display: inline-block; line-height:20px; background-color:yellow;
+    overflow-y: hidden; transition-duration: 0.35s;
+}
+.statusSelector input[type='checkbox']:checked+label{
+    line-height: 0px;
+}
+/* ! select option check -> selected */
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:enabled::placeholder{
+    color: yellow;
+}
+.statusSelector input:disabled{
+    background-color: lightgray; color: gray;
+}
+.statusSelector input:disabled::placeholder{
+    color:white;
+}

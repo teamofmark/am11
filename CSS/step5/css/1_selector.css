@@ -172,3 +172,11 @@
 .shapeSelector :last-child{color: #30f;}
 .shapeSelector :nth-child(2){color: #0c6;}
 .shapeSelector :nth-child(4){color: #f06;}
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: deeppink;
+}
+.textSelector p::first-line{
+    font-size: 24px; color: #090;
+    line-height: 30px; text-decoration: underline;
+}

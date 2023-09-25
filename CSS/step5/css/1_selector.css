@@ -163,3 +163,12 @@
     background-color: #09f;
 }
 /* ! -child : 부모기준에서 바라보는 가상 선택자 이고 특정 수칙(수의규칙)을 이용할 수있다. */
+/*
+.shapeSelector h1:nth-of-type(2){color: #30f;} ! = h1:first-of-type 
+.shapeSelector h2:first-of-type{color: #0c6;}
+.shapeSelector h3:last-of-type{color: #f06;}
+*/
+/* todo. child로 같은결과 나오게 해보기 */
+.shapeSelector :last-child{color: #30f;}
+.shapeSelector :nth-child(2){color: #0c6;}
+.shapeSelector :nth-child(4){color: #f06;}

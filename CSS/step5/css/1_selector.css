@@ -141,3 +141,25 @@
 .statusSelector input:disabled::placeholder{
     color:white;
 }
+
+.virtualSelector ul{
+    overflow: hidden; list-style: none; margin: 30px 0; padding: 0;
+}
+/* ! overflow hidden -> floatCancel 가능. 단! 주목적 사용금지 (:after권장) */
+
+.virtualSelector ul li{
+    width: 14.28%; box-sizing: border-box; padding: 15px; float: left; text-align: center;
+}
+.virtualSelector ul li:nth-child(1){
+    border-radius: 20px 0 0 20px;
+}
+.virtualSelector ul li:last-child{
+    border-radius: 0 20px 20px 0;
+}
+.virtualSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #09f;
+}
+/* ! -child : 부모기준에서 바라보는 가상 선택자 이고 특정 수칙(수의규칙)을 이용할 수있다. */

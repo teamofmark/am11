@@ -189,3 +189,10 @@
 .backandfrontSelector p::after{
     content: "-" attr(data-page) "page"; color: deeppink; font-weight: bold;
 }
+.reactionSelector > *{
+    color: #fff;
+}
+.reactionSelector > *::selection{
+    background-color: #000; color: #ff0;
+}
+/* ! ::selection - 접근성 기본속성. 변경 비권장. */

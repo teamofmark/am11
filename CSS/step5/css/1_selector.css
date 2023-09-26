@@ -196,3 +196,7 @@
     background-color: #000; color: #ff0;
 }
 /* ! ::selection - 접근성 기본속성. 변경 비권장. */
+
+.notSelector input:not([type='reset'],[type='password']){
+    background-color: red;
+}

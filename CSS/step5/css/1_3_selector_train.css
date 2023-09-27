@@ -6,7 +6,8 @@ body{
     background-color: black;    
 }
 div:first-of-type{
-    width: 50%; height: 50%; background-color: #262626; position: fixed;
+    width: 50%; height: 50%; background-color: #262626; position: absolute;
+    min-height: 290px;
     /* ! min-height 규정으로 인한 absolute 변경예정 */
     left: 25%; top: 25%;
 }

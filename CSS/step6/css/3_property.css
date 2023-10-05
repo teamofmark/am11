@@ -85,6 +85,7 @@ div{
 }
 .shadowProperty p{
     width: 300px; height: 300px; border: 3px solid #f00;
+    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
 }
 .shadowProperty p:first-of-type{
     box-shadow: 8px 10px 5px rgba(255,200,200,0.4);

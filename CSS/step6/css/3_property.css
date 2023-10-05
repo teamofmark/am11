@@ -32,3 +32,26 @@ div{
 .visibilityProperty input[type='checkbox']:checked ~ table{
     visibility: visible;
 }
+.opacityProperty ul:after{
+    content: ''; display: block; clear: both;
+}
+.opacityProperty ul li{
+    float: left; display: block; width: 33%; background-color: black; position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure img{
+    width: 100%; display: block;
+} 
+.opacityProperty ul li figure figcaption{
+    position: absolute; width: 25%; height: 15%; left: 32.5%; top: 37.5%; padding: 5%;
+    background-color: rgba(255,255,255,0.5); text-align: center;
+    min-width: 50px; min-height: 60px;
+}
+.opacityProperty ul li figure figcaption dl dt{
+    font-size: 0.7vw; font-weight: bold; margin-bottom: 10px;
+}
+.opacityProperty ul li figure figcaption dl dd{
+    font-size: 0.56vw; color: darkgreen;
+}

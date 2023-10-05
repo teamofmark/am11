@@ -42,16 +42,54 @@ div{
     margin-left: 0.5%;
 }
 .opacityProperty ul li figure img{
-    width: 100%; display: block;
+    width: 100%; display: block; opacity: 0.3;
+    transition-duration: 0.5s;
 } 
 .opacityProperty ul li figure figcaption{
     position: absolute; width: 25%; height: 15%; left: 32.5%; top: 37.5%; padding: 5%;
     background-color: rgba(255,255,255,0.5); text-align: center;
     min-width: 50px; min-height: 60px;
+    transition-duration: 0.5s;
 }
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li:hover figure figcaption{
+    opacity: 0; top: -15%;
+}
+
 .opacityProperty ul li figure figcaption dl dt{
     font-size: 0.7vw; font-weight: bold; margin-bottom: 10px;
 }
 .opacityProperty ul li figure figcaption dl dd{
     font-size: 0.56vw; color: darkgreen;
 }
+
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00; background-color: #fc9393;
+    padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+/*
+    ? content-box : box in width + padding + border = width
+    ? border-box : width = box in width - (padding + border)
+*/
+.shadowProperty h1{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    /* ? text-shadow: [xAxisDis] [yAxisDis] [spread & blur] [color] */
+}
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid #f00;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 5px rgba(255,200,200,0.4);
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 5px rgba(255,200,200,0.4);
+}
+/* ? http://css3generator.com */

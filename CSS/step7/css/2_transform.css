@@ -1,0 +1,9 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black; margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block; transform-origin: left top;
+}
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}

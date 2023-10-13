@@ -1,0 +1,15 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative; animation-name: rotate3D; animation-duration: 3s;
+    animation-iteration-count: infinite; animation-timing-function: ease-out;
+    transform-style: preserve-3d;
+}
+@keyframes rotate3D{
+    0%{
+        transform: rotateX(90deg) rotateY(45deg);
+    }100%{
+        transform: rotateX(450deg) rotateY(45deg);
+    }
+}

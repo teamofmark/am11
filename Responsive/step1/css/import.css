@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway&display=swap');
+
+
+@import url("reset.css");
+@import url("pc.css") screen;
+@import url("print.css") print;

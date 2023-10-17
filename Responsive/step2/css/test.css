@@ -1,0 +1,28 @@
+
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    body{
+        font-family: 'Roboto'; background-color: green; color: white;
+        text-align: center;
+    }
+    h1{
+        font-weight: 300; font-size: 3rem; line-height: 3.8rem;
+    }
+    p{
+        font-weight: 500; font-size: 1.5rem; line-height: 2.1rem;
+    }
+}
+/* ? desktop - 사용자 해상도가 1280px 이상 일 때 실행. */
+
+@media screen and (min-width:1280px){
+    body{
+        font-family: 'Roboto'; background-color: blue; color: white;
+    }
+    h1{
+        font-weight: 300; font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-weight: 500; font-size: 1rem; line-height: 1.5rem;
+    }
+}
+/* ? desktop - 사용자 해상도가 1280px 이상 일 때 실행. */

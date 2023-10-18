@@ -1,6 +1,20 @@
 
 
-@media screen and (min-width:768px) and (max-width:1279px){
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:landscape){
+    body{
+        font-family: 'Roboto'; background-color: red; color: white;
+        text-align: right;
+    }
+    h1{
+        font-weight: 300; font-size: 2rem; line-height: 2.5rem;
+    }
+    p{
+        font-weight: 500; font-size: 1rem; line-height: 1.6rem;
+    }
+}
+/* ? tablet - 사용자 해상도가 768px 이상 일 때 1280 미만 일 때 실행. (가로보기) */
+
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:portrait){
     body{
         font-family: 'Roboto'; background-color: green; color: white;
         text-align: center;
@@ -12,7 +26,7 @@
         font-weight: 500; font-size: 1.5rem; line-height: 2.1rem;
     }
 }
-/* ? desktop - 사용자 해상도가 1280px 이상 일 때 실행. */
+/* ? tablet - 사용자 해상도가 768px 이상 일 때 1280 미만 일 때 실행. (세로보기) */
 
 @media screen and (min-width:1280px){
     body{

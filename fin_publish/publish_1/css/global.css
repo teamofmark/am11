@@ -18,7 +18,7 @@ a{
 @media screen and (min-width: 1280px) {
     
     .btn_more{
-        padding: 13px 15px; box-sizing: border-box;
+        padding: 13px 10px;
     }
 
     header{
@@ -71,6 +71,23 @@ a{
         font-size: 14px; color: white; font-weight: 300; text-align: center;
         line-height: 24px; max-width: 775px; margin: 0 auto 45px;
     }
-    
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; text-indent: -9999px; width: 8px; height: 8px;
+        border: 1px solid rgba(255,255,255,0.8); border-radius: 5px;
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* ? header Fin */
 }
 /* ? desktop */

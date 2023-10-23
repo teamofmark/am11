@@ -35,5 +35,9 @@
         border: 3px solid white; box-sizing: border-box; text-align: center;
         font-size: 45px; color: white; margin: 0 auto 30px;
     }
+    section.videoArea h2{
+        font-size: 16px; color: white; font-weight: 900; text-align: center;
+    }
+    /* ? VideoArea Fin */
 }
 /* ? desktop */

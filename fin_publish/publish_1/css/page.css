@@ -56,6 +56,12 @@
         width: 33.33%; float: left; display: block; padding: 120px 3% 40px;
         box-sizing: border-box; background-repeat: no-repeat; background-position: center 30px;
     }
+    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    section.expArea ul li:not(:nth-child(3n)){
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
     section.expArea ul li:nth-child(1){background-image:url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image:url('../images/ico_02.png');}
     section.expArea ul li:nth-child(3){background-image:url('../images/ico_03.png');}

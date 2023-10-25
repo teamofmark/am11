@@ -41,7 +41,12 @@ a{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 940px; margin: 0 auto; padding: 70px 0;
+        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
+        /* 
+            ! 장치의 외곽부분에 닿지 않게 하는 개념  = gutter
+            * 구 : tab / max-width: 720px; and mob / max-width: 400px;
+            * 신 : tab / padding : 0 3%; and mob / padding : 0 2%;
+        */
     }
 
     .btn_more{
@@ -52,7 +57,7 @@ a{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: 940px; margin: 0 auto; position: relative;
+        max-width: /*940px*/ 728px; margin: 0 auto; position: relative;
     }
     header > div h1{
         max-width: 128px;
@@ -77,8 +82,8 @@ a{
         display: block; font-size: 13px; font-weight: 900; color: white;
         line-height: 50px;
     }
-    header > div nav ul li a.active,
-    header > div nav ul li a:hover{
+    header > div nav ul li a.active
+    /*,header > div nav ul li a:hover*/{
         color: #00e0d0;
     }
     /* ?header GNB Fin */
@@ -111,8 +116,8 @@ a{
         display: block; text-indent: -9999px; width: 8px; height: 8px;
         border: 1px solid rgba(255,255,255,0.8); border-radius: 5px;
     }
-    header > div > ol li a.active,
-    header > div > ol li a:hover{
+    header > div > ol li a.active
+    /*,header > div > ol li a:hover*/{
         background-color: #00e0d0; border-color: #00e0d0;
     }
     /* ? header Fin */

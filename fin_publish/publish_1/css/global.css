@@ -41,7 +41,7 @@ a{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/ 600px; margin: 0 auto; padding: 70px /*0*/3%;
         /* 
             ! 장치의 외곽부분에 닿지 않게 하는 개념  = gutter
             * 구 : tab / max-width: 720px; and mob / max-width: 400px;
@@ -57,10 +57,11 @@ a{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: /*940px*/ 728px; margin: 0 auto; position: relative;
+        max-width: /*728px*/ 600px; margin: 0 auto; padding: 0 3%;
+        /* position: relative; */
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div a{
         display: block;
@@ -69,30 +70,49 @@ a{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%;
-        box-sizing: border-box; text-align: right;
+        /* position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%; box-sizing: border-box; */
+         text-align: right; width: 50%; margin-left: 15%; float: right;
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block;
+        margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        display: block; text-indent: -9999px; border-top: 2px solid white;
+        text-align: left; line-height: 0;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav ul{
+        height: 0; overflow: hidden; transition: height 1s ease-in-out;
+    }
+    header > div nav input[type='checkbox']#mnav:checked + ul{
+        height: 350px;
     }
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         display: block; font-size: 13px; font-weight: 900; color: white;
         line-height: 50px;
     }
-    header > div nav ul li a.active
-    /*,header > div nav ul li a:hover*/{
+    header > div nav ul li a.active{
         color: #00e0d0;
     }
     /* ?header GNB Fin */
 
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/ 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; font-weight: 900; color: white; text-align: center;
@@ -248,6 +268,10 @@ a{
             * 구 : tab / max-width: 720px; and mob / max-width: 400px;
             * 신 : tab / padding : 0 3%; and mob / padding : 0 2%;
         */
+    }
+
+    .mui{
+        display: none;
     }
 
     .btn_more{
@@ -444,6 +468,10 @@ a{
     section.contactArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+
+    .mui{
+        display: none;
     }
 
     .btn_more{

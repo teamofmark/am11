@@ -144,19 +144,15 @@ a{
     footer{
         background: url('../images/bg_05.png') left top / cover no-repeat;
     }
-    /* footer > div div:not(:last-of-type){
-        float: left; width: 32%; margin: 0 0 70px 2%;
-    }
-    footer > div div:first-of-type{
-        margin-left: 0;
-    }
-     */
-    footer > div div:nth-of-type(1),
+    /* footer > div div:nth-of-type(1),
     footer > div div:nth-of-type(2){
         float: left;  width: 47.5%; margin: 0 0 70px;
     }
     footer > div div:nth-of-type(2){
         margin-left: 5%;
+    } */
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
     }
     footer > div div h2{
         margin-bottom: 20px;
@@ -190,14 +186,14 @@ a{
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
     }
-    footer > div div:nth-of-type(3){
+    /* footer > div div:nth-of-type(3){
         clear: left;
-    }
+    } */
     footer > div div:nth-of-type(3) input{
         float: left; margin-bottom: 25px; display: block;
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: /*73%*/ 35%; font-size: 14px; box-sizing: border-box; color: white;
+        width: 75% /*35%*/; font-size: 14px; box-sizing: border-box; color: white;
         line-height: 43px; padding: 0 15px; border: 1px solid rgba(255,255,255,0.5);
         background-color: transparent;
     }
@@ -205,19 +201,19 @@ a{
         color: rgba(255,255,255,0.75);
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: /*25%*/ 10%; margin-left: 2%; text-indent: -9999px; border: none; line-height: 43px;
+        width: 25% /*10%*/; /*margin-left: 2%;*/ text-indent: -9999px; border: none; line-height: 43px;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
     }
-    footer > div div:nth-of-type(3) ul{
-        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
-    }
+    /* footer > div div:nth-of-type(3) ul{
+         float: left; width: 45%; margin-left: 8%;
+    } */
     /* todo. SNS ICON 완성하기 */
 
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        /* margin-left: 5px; */ margin-left: 5.8%;
+        margin-left: /*5.8%*/ 2.5%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px; background-repeat: no-repeat; background-size: contain;
@@ -243,17 +239,17 @@ a{
 
     
     footer > div div:last-of-type{
-        font-weight: 400; clear: left;
+        font-weight: 400; /*clear: left;*/ text-align: center;
     }
     footer > div div:last-of-type a{
         display: inline-block;
     }
     footer > div div:last-of-type a:not(:first-of-type){
-        margin-left: 30px;
+        margin-left: /*30px*/ 5%;
     }
-    footer > div div:last-of-type p{
+    /* footer > div div:last-of-type p{
         float: right;
-    }
+    } */
 }
 /* ? mobile */
 

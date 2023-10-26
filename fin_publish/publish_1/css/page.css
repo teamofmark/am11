@@ -2,16 +2,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     #about{
-        padding-left: 6.8%;
+        padding-left: /*6.8%*/3.5%;
     }
     #about:after{
         content: ''; display: block; clear: both;
     }
     #about img{
-        width: 25%; max-width: 235px; display: block; float: left;
+        width: /*25%*/32%; max-width: 235px; display: block; float: left;
     }
     #about figcaption{
-        width: 65%; margin-left: 10%; float: left;
+        width: /*65%*/60%; margin-left: /*10%*/ 8%; float: left;
     }
     #about figcaption > *:not(a){
         margin-bottom: 25px;
@@ -21,6 +21,7 @@
     }
     #about figcaption p{
         font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;        
+        word-break: break-all;
     }
     #about figcaption a.btn_more{
         max-width: 120px;
@@ -54,6 +55,7 @@
     }
     section.expArea ul li{
         width: 33.33%; float: left; display: block; padding: 120px 3% 40px;
+        min-height: 275px;
         box-sizing: border-box; background-repeat: no-repeat; background-position: center 30px;
     }
     section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
@@ -70,6 +72,11 @@
     section.expArea ul li:nth-child(6){background-image:url('../images/ico_06.png');}
     section.expArea ul li h3{
         font-weight: 900; font-size: 14px; color: #413d4b; margin-bottom: 20px;
+        /* 
+            white-space: nowrap; 
+            ? padding -> h3에 최소화적용 text-align : center;
+        */
+        /* font-size: 1.45vw; */
     }
     section.expArea ul li p{
         font-weight: 300; font-size: 14px; line-height: 22px; color: rgba(51,51,51,0.75);
@@ -93,7 +100,7 @@
         border-color: rgba(255,255,255,0.2); max-width: 50px;
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 65px;
+        max-width: /*940px*/ 728px; margin: 0 auto 65px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
@@ -106,7 +113,7 @@
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
-        padding-top: 230px;
+        padding-top: /*230px*/ 180px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
@@ -128,7 +135,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/ 728px;
         margin: 0 auto 65px; position: relative;
     }
     section.worksArea h2 a{
@@ -164,7 +171,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*770px*/ 728px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top; font-size: 16px;
         line-height: 26px; font-weight: 400;
     }

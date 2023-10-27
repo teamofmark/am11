@@ -1,17 +1,21 @@
 
 @media screen and (max-width: 767px) {
-    #about{
-        padding-left: /*6.8%*/3.5%;
+    /* #about{
+        padding-left: 3.5%;
     }
     #about:after{
         content: ''; display: block; clear: both;
+    } */
+    #about{
+        text-align: center;
     }
     #about img{
-        width: /*25%*/32%; max-width: 235px; display: block; float: left;
+        width: /*32%*/50%; max-width: 235px;
+        /* float: left; display: block; */
     }
-    #about figcaption{
-        width: /*65%*/60%; margin-left: /*10%*/ 8%; float: left;
-    }
+    /* #about figcaption{
+        width: 60%; margin-left: 8%; float: left;
+    } */
     #about figcaption > *:not(a){
         margin-bottom: 25px;
     }
@@ -23,7 +27,7 @@
         word-break: break-all;
     }
     #about figcaption a.btn_more{
-        max-width: 120px;
+        max-width: 120px; margin: 0 auto;
     }
     /* ? CI figure Fin */
     section.videoArea{
@@ -49,20 +53,21 @@
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75);
         margin-bottom: 15px;
     }
-    section.expArea ul:after{
+    /* section.expArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.expArea ul li{
-        width: 33.33%; float: left; display: block; padding: 120px 3% 40px;
-        min-height: 275px;
-        box-sizing: border-box; background-repeat: no-repeat; background-position: center 30px;
+        /* width: 33.33%; float: left; min-height: 275px; */
+        display: block; padding: 120px /*3%*/2.5% 40px; box-sizing: border-box;
+         background-repeat: no-repeat; background-position: center 30px;
+         border-bottom: 1px solid rgba(0,0,0,0.2);
     }
-    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+    /* section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:not(:nth-child(3n)){
         border-right: 1px solid rgba(0,0,0,0.2);
-    }
+    } */
     section.expArea ul li:nth-child(1){background-image:url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image:url('../images/ico_02.png');}
     section.expArea ul li:nth-child(3){background-image:url('../images/ico_03.png');}
@@ -84,7 +89,7 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center;
-        padding: 70px 0; color: white;
+        padding: 70px /*0*/3%; color: white;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -98,20 +103,23 @@
     section.teamArea > hr{
         border-color: rgba(255,255,255,0.2); max-width: 50px;
     }
-    section.teamArea ul{
-        max-width: /*940px*/ 728px; margin: 0 auto 65px;
+    /* section.teamArea ul{
+        max-width: 728px; margin: 0 auto 65px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        /*width: 23.5%; float: left;*/ display: block;
     }
-    section.teamArea ul li:not(:first-child){
+    /* section.teamArea ul li:not(:first-child){
         margin-left: 2%;
+    } */
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        background: url('https://via.placeholder.com/220x230') center top / /*contain*/cover no-repeat;
         padding-top: /*230px*/ 180px;
     }
     section.teamArea ul li figure figcaption{
@@ -134,13 +142,13 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/ 728px;
-        margin: 0 auto 65px; position: relative;
+        font-size: /*22px*/18px; font-weight: 700; color: #413d4b; position: relative;
+        /* max-width: 728px; margin: 0 auto 65px; */
     }
     section.worksArea h2 a{
-        font-size: 14px; font-weight: 300; color: inherit;
-        position: absolute; right: 0; top: 8px;
-        /* float : right; display: block; line-height: 22px; */
+        font-size: /*14px*/12px; font-weight: 300; color: inherit; line-height: 18px;
+        position: absolute; right: /*0*/3%;
+        /* top: 8px; */
     }
     section.worksArea ul{
         margin-bottom: 70px;
@@ -148,13 +156,12 @@
     section.worksArea ul *{
         display: block;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } 
     section.worksArea ul li{
         width: 16.66%; float: left;
-        /* line-height: 0; */
-    }
+    }*/
     section.worksArea ul li a img{
         width: 100%; 
     }
@@ -163,14 +170,14 @@
     }
     /* ? worksArea Fin */
     section.talkArea{
-        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0;
-        text-align: center;
+        background: url('../images/bg_04.png') left top / cover no-repeat; text-align: center;
+        padding: 70px /*0*/3%;
     }
     section.talkArea h2{
         display: none;
     }
     section.talkArea p{
-        max-width: /*770px*/ 728px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*728px*/ 600px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top; font-size: 16px;
         line-height: 26px; font-weight: 400;
     }
@@ -184,7 +191,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*728px*/ 600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -193,7 +200,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -207,34 +214,34 @@
     section.talkArea div ul li:not(.active) a{
         padding: 15px 0; transition: padding 0.35s ease-in-out;
     }
-    section.talkArea div ul li.active a,
-    section.talkArea div ul li:not(.active):hover a{
+    section.talkArea div ul li.active a
+    /*,section.talkArea div ul li:not(.active):hover a*/{
         padding: 0;
     }
     section.talkArea div ul li:not(.active) a img{
         width: 65%; transition: width 0.35s ease-in-out;
     }
-    section.talkArea div ul li.active a img,
-    section.talkArea div ul li:not(.active):hover a img{
+    section.talkArea div ul li.active a img
+    /*,section.talkArea div ul li:not(.active):hover a img*/{
         width: 100%;
     }
     /* ? talkArea Fin */
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left;
-    }
+    } */
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
     }
     section.contactArea form fieldset{
-        width: 50%;
+        /* width: 50%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset > *:not([type='submit'],legend){
         border: 1px solid rgba(0,0,0,0.1); padding: 15px 20px; font-size: 14px;
@@ -251,9 +258,9 @@
         background-color: transparent; min-width: 120px;
     }
     
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 10%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; clear: both;
     }
@@ -455,7 +462,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -478,15 +485,15 @@
     section.talkArea div ul li:not(.active) a{
         padding: 15px 0; transition: padding 0.35s ease-in-out;
     }
-    section.talkArea div ul li.active a,
-    section.talkArea div ul li:not(.active):hover a{
+    section.talkArea div ul li.active a
+    /*,section.talkArea div ul li:not(.active):hover a*/{
         padding: 0;
     }
     section.talkArea div ul li:not(.active) a img{
         width: 65%; transition: width 0.35s ease-in-out;
     }
-    section.talkArea div ul li.active a img,
-    section.talkArea div ul li:not(.active):hover a img{
+    section.talkArea div ul li.active a img
+    /*,section.talkArea div ul li:not(.active):hover a img*/{
         width: 100%;
     }
     /* ? talkArea Fin */

@@ -55,10 +55,10 @@
         font-weight: 600; position: absolute; top: 46%; z-index: 10;
     }
     section.slideArea > div > a.btn_conL{
-        left: 11.78%;
+        left: 7.78%; /*11.78%*/
     }
     section.slideArea > div > a.btn_conR{
-        right: 11.78%;
+        right: 7.78%; /*11.78%*/
     }
     section.slideArea > div ol{
         position: absolute; left: 47.85%; bottom: 6%; z-index: 1;
@@ -99,7 +99,21 @@
     section.slideArea > div ul li figure figcaption input[type='button']{
         width: 35.86%; background-color: #2754eb; font-size: 11px; font-weight: 600;
         line-height: 42px; border-radius: 21px; border: none; color: inherit;
+        letter-spacing: 1px;
     }
     /* ? slideArea Fin */
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 10px; line-height: 56px;
+        padding: 0 1.7%; box-sizing: border-box; margin-bottom: 30px;
+    }
+    .contentArea > form fieldset label{
+        display: inline-block; font-weight: 600; vertical-align: middle;
+    }
+    .contentArea > form fieldset label:not([for='freeShipCheck']){
+        font-size: 11px; color: #a1a7bd; text-transform: uppercase;
+    }
 }
 /* ?desktop */

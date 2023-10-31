@@ -40,5 +40,25 @@
         color: #a1a7bd;
     }
     /* ?slide Nav Fin */
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px; margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; font-size: 18px; padding: 10px 0 14px; color: white;
+        border: 2px solid rgba(255,255,255,0.2); text-align: center; border-radius: 22px;
+        font-weight: 600; position: absolute; top: 46%; z-index: 10;
+    }
+    section.slideArea > div > a.btn_conL{
+        left: 11.78%;
+    }
+    section.slideArea > div > a.btn_conR{
+        right: 11.78%;
+    }
 }
 /* ?desktop */

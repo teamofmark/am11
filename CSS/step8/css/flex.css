@@ -129,3 +129,34 @@
 .flexContainer.alignItems .flexItem:nth-of-type(2){
     line-height: 100px;
 }
+
+.flexContainer.justifySelf{
+    width: 220px; display: grid;
+    /* 
+        ?justify-self
+        * stretch - 내부 공간 기준으로 자신의 너비 맞추기
+        * flex-start - 내부 공간 기준으로 자신의 위치를 좌측으로 맞추기
+        * flex-end - 내부 공간 기준으로 자신의 위치를 우측으로 맞추기
+    */
+}
+.flexContainer.justifySelf .flexItem:nth-of-type(2n){
+    justify-self: stretch;
+}
+.flexContainer.justifySelf:hover .flexItem:nth-of-type(2n){
+    justify-self: flex-start;
+}
+.flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: center;
+    /* 
+        ?align-self
+        * stretch - 요소들중 가장 높은 것을 기준으로 자신의 높이를 맞추기
+        * flex-start - 요소들중 가장 높은 것의 윗선을 기준으로 자신을 맞추기
+        * flex-end - 요소들중 가장 높은 것의 밑선을 기준으로 자신을 맞추기
+    */
+}
+.flexContainer.alignSelf:hover .flexItem:first-of-type{
+    align-self: flex-end;
+}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 60px;
+}

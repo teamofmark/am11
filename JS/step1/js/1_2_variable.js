@@ -58,3 +58,27 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// * 선언
+// *case. 1 전역변수 선언해보기
+var userName;
+
+// *case.2 선언된 전역변수 초기화 해보기
+userName = "Mark";
+console.log(userName);
+userName = "Jang";
+console.log(userName);
+
+// *case.2 한꺼번에...
+var radius, pi;
+radius = 10, pi = 3.14159265;
+
+// *case.3 연산자 사용시
+var numbVal = 10;
+numbVal +=20;
+
+// todo. 자신의 나이를 "cliAge" 변수에 담고 console에 출력후, 20년 뒤 나이를 다시 출력해 보자.
+var cliAge = 43;
+console.log("나의 나이는 현재" + cliAge + "세 이고,");
+cliAge += 20;
+console.log("20년 뒤에는 " + cliAge + "세 입니다.");

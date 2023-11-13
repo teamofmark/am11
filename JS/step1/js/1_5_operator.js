@@ -129,5 +129,5 @@ function logicalOperator2(){
 }
 // todo. 다음 코드의 결과를 예상한 다음 출력하라. 그리고 문제를 해결하기.
 function compareOperator3(){
-    console.log(30>20>10); //? 예상결과 : true
+    console.log(30>20 && 20>10); //? 예상결과 : true
 }

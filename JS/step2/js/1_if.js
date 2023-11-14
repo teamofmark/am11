@@ -129,6 +129,16 @@ function userInfoCheck(){
         alert("ID 혹은 Password가 틀렸습니다.");
     }
 }
+function userInfoCheck1(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 비밀번호");
+    // if(userID=="Mark"&&userPW=="1234"){
+    //     alert("Mark님으로 확인되었습니다.");
+    // }else{
+    //     alert("ID 혹은 Password가 틀렸습니다.");
+    // }
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
 // todo. 사용자 id "mark"와 password "1234"를 입력받고 둘 중 하나가 틀리다면 해당 정보에대한 오류메시지출력.
 function userInfoCheck2(){
     var userID = prompt("사용자의 아이디");

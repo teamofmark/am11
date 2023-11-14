@@ -121,5 +121,29 @@ function userIDCheck(){
 }
 // *case. 5 사용자 id "mark"와 password "1234"를 입력받고 둘 다 맞을 경우에만 승인 메시지 출력.
 function userInfoCheck(){
-    
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 비밀번호");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+// todo. 사용자 id "mark"와 password "1234"를 입력받고 둘 중 하나가 틀리다면 해당 정보에대한 오류메시지출력.
+function userInfoCheck2(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 비밀번호");
+    // todo. 승인 - "Mark님으로 확인 되었습니다." = 둘다 맞은경우.
+    if(userID=="Mark"&&userPW=="1234"){
+        console.log("Mark님으로 확인 되었습니다.");
+    }else if(userID != "Mark" && userPW != "1234"){
+        console.log("모든 정보가 맞지 않습니다.");
+    }else if(userID != "Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }else if(userPW != "1234"){
+        console.log("password가 틀렸습니다.");
+    }
+    // todo. 거부1 - "모든 정보가 맞지 않습니다." = 둘다 틀린경우.
+    // todo. 거부2 - "ID가 존재하지 않습니다." == id가 틀린경우.
+    // todo. 거부3 - "password가 틀렸습니다." == password가 틀린경우. 
 }

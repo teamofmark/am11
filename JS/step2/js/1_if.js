@@ -110,3 +110,16 @@ function avgScore(){
     }
     // todo.4 조건문을 작성 - 90~ 수, 80~우, 70~미, 60~양, 외 나머지 가 를 alert으로 출력.
 }
+// *case. 4 사용자 id - Mark 를 입력받아 맞다면 승인 메시지출력.
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID == "Mark"){
+        alert("접속을 승인합니다.");
+    }else if(userID!="Mark"){
+        alert("잘못된 ID입니다.");
+    }
+}
+// *case. 5 사용자 id "mark"와 password "1234"를 입력받고 둘 다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    
+}

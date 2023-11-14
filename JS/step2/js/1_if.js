@@ -75,5 +75,38 @@ function numbJudgment(){
 }
 // todo. 위 방식같이 숫자를 입력받고 홀수인지 짝수인지 판별하는 함수 완성하기
 function oddOrEven(){
-    
+    var numb = prompt('숫자를입력하세요','홀,짝을구분합니다.');
+    // ? 짝수의 최소수 - 2 / 2로나눈 나머지가 0 = 짝수, 나머지가 1 = 홀수.
+    if(numb%2 == 0){
+        alert("짝수여");
+    }else if(numb%2 == 1){
+        alert("홀수여");
+    }else{
+        alert("올바른 값을 입력하세요.");
+    }
+}
+// todo. 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    // todo.1 국어,영어,수학 점수를 입력 받을 변수 선언
+    var koreanScore = prompt("국어점수를 입력하시오.");
+    var englishScore = prompt("영어점수를 입력하시오.");
+    var mathScore = prompt("수학점수를 입력하시오.");
+    // todo.2 평균을 산출하는 변수(1번의 변수들을 받아다가 처리)
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore))/3;
+    // console.log(avg);
+    // todo.3 조건문을 작성 - 예외처리(100초과, 0미만 - 점수똑바로입력하라)
+    if(avg > 100 || avg < 0){
+        alert('점수똑바로입력하라');
+    }else if(avg >= 90){
+        alert("평균" + avg + "점 \n" + "수 입니다. 특급이구먼");
+    }else if(avg >= 80){
+        alert("평균" + avg + "점 \n" + "우 입니다. 우수하구먼");
+    }else if(avg >= 70){
+        alert("평균" + avg + "점 \n" + "미 입니다. 괜찮구먼");
+    }else if(avg >= 60){
+        alert("평균" + avg + "점 \n" + "양 입니다. 망했구먼");
+    }else{
+        alert("평균" + avg + "점 \n" + "가 입니다. 맞겠구먼");
+    }
+    // todo.4 조건문을 작성 - 90~ 수, 80~우, 70~미, 60~양, 외 나머지 가 를 alert으로 출력.
 }

@@ -14,6 +14,47 @@
 
 for (var index = 0; index < 10; index++) {
     console.log(index);
-    
 }
 */
+// ! 단일 for
+// *case. 1 이름을 열 번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 0; i < 10; i++){
+        document.write((i+1) + '.' + userName + '<br>');
+    }
+}
+// *case. 2 이름 1,000번 출력중 홀수번째만 나오게 하기.
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo. 1 - 10까지 출력되는 반복문을 5개 형태로 짜보기
+function answer1(){
+    for(var i = 0; i < 10; i++){
+        document.write((i+1) + "<br>");
+    }
+}
+function answer2(){
+    for(var i = 1; i <= 10; i++){
+        document.write(i+"<br>");
+    }
+}
+function answer3(){
+    for(var i = 100; i<110; i++){
+        document.write((i-99) + "<br>");
+    }
+}
+function answer4(){
+    for(var i = 1; i<= 10; i+=2){
+        document.write(i + "<br>");
+        document.write((i+1) + "<br>");
+    }
+}
+function answer5(){
+    for(var i = 10; i >= 1; i--){
+        document.write((11-i) +"<br>");
+    }
+}

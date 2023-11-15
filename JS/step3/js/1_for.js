@@ -58,3 +58,12 @@ function answer5(){
         document.write((11-i) +"<br>");
     }
 }
+// *case. 3 자신이 좋아하는 과일 4개를 배열에 저장하고, alert으로 출력하기.
+function favorFruit(){
+    var array = ['메론','수박','귤','오렌지','딸기'];
+    // ? array(배열) - data들이 저장되는 방.
+    // ! 호출- array[indexNumber]; ex> array[0] -> 메론..
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}

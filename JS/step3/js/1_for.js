@@ -112,3 +112,41 @@ function arrayFor2(){
         document.write(swapNumb[i] + "번째 내용 = " + data[i] + "<br>");
     }
 }
+
+function arrayForES(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+   for (let i = 0; i < data.length; i++){
+    const element = data[i];
+    document.write(i + "번째 내용 = " + element + "<br>");
+   }
+}
+
+// *case. 5 continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function continueEx(){
+    let text = '';
+    for (let i = 0; i< 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text= text + i;
+    }
+    console.log(text); //? Expect ->""
+}
+// todo. continue를 사용하여 1~10까지 중 짝수의 누적 총 합을 출력하기.
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        console.log(output);
+    }
+}

@@ -67,3 +67,15 @@ function favorFruit(){
         alert(array[i]);
     }
 }
+// *case. 4 역반복
+function reverseFavorFruit(){
+    var array = ['메론','수박','귤','오렌지','딸기'];
+    for(var i = array.length - 1; i >= 0; i--){
+        document.write(array[i] +"<br>");
+    }
+}
+// todo. 기존 숫자로 출력되는 순서를 한글화 하여 출력하기.
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    
+}

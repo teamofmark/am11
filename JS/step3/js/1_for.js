@@ -150,3 +150,22 @@ function runContinue(){
         console.log(output);
     }
 }
+
+// *case. 6 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function breakEx(){
+    var i = 0;
+    while(i < 6){
+        if(i == 3){
+            break;
+        }
+        i = i + 1;
+    }
+    console.log(i);
+}

@@ -7,3 +7,16 @@
     전송(java,php...), DB데이터 출력하기.
 
 */
+// *case.1 password "1234"가 입력되면 '접속승인', 아니면 '잘못 입력하였습니다.' 반복
+function pwCheck(){
+    while(true){
+        var value = window.prompt('password를 입력하세요.');
+
+        if(value==1234){
+            alert('접속승인');
+            break;
+        }else{
+            alert('잘못입력하였습니다.');
+        }
+    }
+}

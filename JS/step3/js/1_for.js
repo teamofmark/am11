@@ -202,5 +202,13 @@ function reverseHalfPyramid(){
     document.write(star);
 }
 function pyramid(){
-    
+
+}
+
+function gugudan(){
+    // todo 입력받은 단수를 x1~x9까지 document.write로 출력하는 함수
+}
+function arraySum(){
+    // todo 담긴 배열의 총합을 document.write로 출력하는 함수
+    var data = [10,20,30,40,50];
 }

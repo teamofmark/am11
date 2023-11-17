@@ -169,3 +169,38 @@ function breakEx(){
     }
     console.log(i);
 }
+// *case.7 break 활용
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+
+// ! 다중 for 문
+// *case. 8 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for (var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){ //? 1. ifor = 10 ~ 1 까지 수행
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+function pyramid(){
+    
+}

@@ -205,7 +205,7 @@ function pyramid(){
     var star = '';
     // ? &nbsp; x 1 , '*' x 1(홀수), '<br>' x 1
     for(var i = 1; i <= 10; i++){
-        for(var e = 10; e >= 1; e--){
+        for(var e = 10; e >= i; e--){
             star += '&nbsp;';
         }
         for(var s = 0; s < 2*i-1; s++){
@@ -246,6 +246,30 @@ function pyramid(){
 
             4. 줄바꿈(br)이 i 값이 10보다 작거나 같을때 까지만 루프당 i값을 1씩 더하면서 실행된다.
 */
+function pyramidCustom(n){
+    for (var i = 1; i <= n; i++){
+        var s = '';
+        for (var j = 1; j <= (2 * n - 1); j++){
+            (j >= n + 1 - i && j <= n - 1 + i) ? s += '*' : s += ' ';
+        }
+        console.log(s);
+    }
+}
+function pyramidEx(){
+    for(var i = 0; i < 10; i++)  {
+        for(var j=9; j > i; j--)  {
+          // space
+          document.write('&nbsp');
+        }
+        for(var j=0; j <= i; j++)  {
+          document.write('*');
+        }
+        for(var j=1; j <= i; j++)  {
+          document.write('*');
+        }
+        document.write('<br>');
+      }      
+}
 function gugudan(){
     // todo 입력받은 단수를 x1~x9까지 document.write로 출력하는 함수
 }

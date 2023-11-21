@@ -155,3 +155,32 @@ function div(numb1,numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+// *case. 5 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+
+function hi(){
+    console.log("HI");
+}
+function anNyeong(){
+    console.log("안녕?");
+}
+function execute(func){
+    func();
+}
+// *case. 6 매개변수값으로 넘긴 함수 실행.
+function welcome(){
+    alert("환영한다. 반갑다.");
+}
+$(function(){
+    $("#runEx6").click(welcome);
+});
+
+// *case. 7 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi, hello");
+    },1000);
+}

@@ -43,7 +43,7 @@ function sumAllEX(){
     return willReturn;
 }
 // alert(sumAllEX(1,2,3,4,5,6,7,8,9,10));
-document.write(sumAllEX(1,2,3,4,5,6,7,8,9,10));
+// document.write(sumAllEX(1,2,3,4,5,6,7,8,9,10));
 /*
     ? return (리턴)
     * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
@@ -76,15 +76,45 @@ function infiniteSum(){
 // todo. 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
 /*
     //* 실행구문
-    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
-    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
-    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
-    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
-    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    ? document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+    ? document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+    ? document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+    ? document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+    ? document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
     //* 결과 
     결과 = 30
     결과 = 10
     결과 = 200
     결과 = 2
     결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+// todo. 위의 예제에 추가로 사칙연산 부분을 함수로 변환하여 보다 편하게 사용할 수 있게 만들기.
+/* 
+//* 실행구문
+document.write(calculator2("+", 20, 10) + "<br>");
+document.write(add(20, 10) + "<br>");
+document.write(sub(20, 10) + "<br>");
+document.write(mul(20, 10) + "<br>");
+document.write(div(20, 10) + "<br>");
 */

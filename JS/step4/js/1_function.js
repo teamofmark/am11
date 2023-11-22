@@ -184,3 +184,25 @@ function loopStart(){
         document.write("hi, hello");
     },1000);
 }
+// *case. 8 함수를 매개변수로 전달받아 반복 호출 / 1. 익명함수 , 2. 기명함수
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+// callFunctionTenTimes(function(){
+//     document.write("hello...!");
+// });
+function justFunction(){
+    document.write('hello...!');
+}
+// *case. 9 returnValue로 함수를 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+
+var result = createHello();
+result("mark");

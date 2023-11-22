@@ -13,3 +13,21 @@
     * 남는 경우가 있는데 이 현상을 클로저(closure)라 부르고, 이 현상을 일으키는 함수를 클로저함수.
     * 5. 멤버함수 - 멤버함수는 클래스 내부에 만들어 지며 이를 보통 메서드(method)라고 함.
 */
+// *case. 1 내부중첩함수
+function innerFunctionTest(){
+    var a = 10;
+    var b = 20;
+    var c = 30;
+    function outerFunc(){
+        var b = 200;
+        var c = 300;
+        function innerFunc(){
+            var c = 3000;
+            console.log('1. = ' + a);
+            console.log('2. = ' + b);
+            console.log('3. = ' + c);
+        }
+        innerFunc();
+    }
+    outerFunc();
+}

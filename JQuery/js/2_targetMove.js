@@ -78,22 +78,36 @@ function keyControl(){
     var currentXpos = 0;
     var currentYpos = 0;
     $(document).keydown(function(e){
-        console.log("입력한 키 코드" + e.keyCode);
+        // console.log("입력한 키 코드" + e.keyCode);
         // ? w : 87, d : 68, s : 83, a : 65
         switch(e.keyCode){
-            case :
-                currentpos = range;
+            case 87:
+                currentYpos -= range; //? top 으로...
                 break;
-            case :
-                currentpos = range;
+            case 68:
+                currentXpos += range; //? right 로....
                 break;
-            case :
-                currentpos = range;
+            case 83:
+                currentYpos += range; //? bottom 으로...
                 break;
-            case :
-                currentpos = range;
+            case 65:
+                currentXpos -= range; //? left 로....
                 break;
         }
+        // todo. frame안에 가두기.
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos);
     });

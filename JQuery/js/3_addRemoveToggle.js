@@ -1,6 +1,7 @@
 $(document).ready(function(){
    toggleCheck();
    toggleTodo();
+   tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -29,4 +30,15 @@ function toggleTodo(){
             $toggleInput.attr("type","password");
         }
     }); 
+}
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        var activeTab = "#" + $(this).attr("data-tabNumb"); //? $(this) = 위 event가 일어난 당사자.
+        // console.log(activeTab);
+        $(".tabMenu li").removeClass("activated");
+        $(this).addClass("activated");
+        // todo 연결되야하는 page를 켜고 끄기.
+        $(".tabPage").removeClass("activated");// todo.1 tabPage 전체 activated class 제거
+        $(activeTab).addClass("activated");// todo.2 위에서 저장한 id 불러다 activated class 부여하기.
+    });
 }

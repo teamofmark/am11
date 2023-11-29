@@ -35,6 +35,7 @@ function startGame(){
                     displayFishPositionInfo(); //? 움직인 물고기 위치 기록 하는 함수 
                     checkGoalFish(); //? 결승선 도달 감지 하는 함수
                 },200);
+                console.log("3. 게임 정상 시작됨.");
     }
 }
 function updateFishPosition(){

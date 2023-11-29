@@ -14,3 +14,12 @@ function init(){
     goalLine = $("#bar").position().left - $fishWidth;
     console.log("1. 대상 선언 완료.");
 }
+function fishStartPosition(){
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        $fish.css({
+            left: 0,
+            top: 100 + (i * 150)
+        });
+    }
+}

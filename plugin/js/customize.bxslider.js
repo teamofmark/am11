@@ -25,6 +25,9 @@ $(function(){
         responsive: true, //? default: true. slider 자체 반응형 켜기.
 
         // *pager - indicator
-        
+        pager: true,  //? default: true. pager 켜기/끄기
+        pagerType: 'full', //? default: full.(circle). short: count로 변경
+        //? pagerShortSeparator: ' - '  default: full.(circle). short: count로 변경
+        pagerSelector: '.newPager'
     }); //? ex> .css({ xN }) -> 고정인자 x 2 : propName,propValue
 });

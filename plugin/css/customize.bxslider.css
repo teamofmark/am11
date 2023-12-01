@@ -5,7 +5,6 @@
     color: yellow;
 }
 
-
 .newPager .bx-pager.bx-default-pager{
     text-align: center;
 }
@@ -23,3 +22,4 @@
 .newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active{
     font-weight: bold; color: white; background-color: black;
 }
+/* ? pagerSelector customize */

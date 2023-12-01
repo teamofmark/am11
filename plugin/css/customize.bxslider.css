@@ -1,0 +1,6 @@
+.bx-wrapper .bx-caption{
+    width: 50%; left: 50%; top: 0; height: 50px; background: rgba(255,0,0,0.5);
+}
+.bx-wrapper .bx-caption span{
+    color: yellow;
+}

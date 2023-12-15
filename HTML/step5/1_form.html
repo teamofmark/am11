@@ -9,6 +9,17 @@
 <body>
     <form>
         <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" id="userName" placeholder="8자미만" required maxlength="8" readonly>
+            <!-- 
+                ! readonly / disabled 차이.
+                ? readonly - 읽기전용. data가 들어오되 수정은 불가능 한 상태.
+                ? disabled - 입력 자체가 불가능 한 상태.
+             -->
+             <input type="email" placeholder="example@example.com" autofocus>
+        </fieldset>
+        <fieldset>
             <legend>HTML4 Input</legend>
             <ul>
                 <li>

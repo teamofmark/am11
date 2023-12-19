@@ -48,5 +48,40 @@
         <a href="tel:+82324370111">032-437-0111</a>
         <a href="mailto:privacy@koreaedugroup.com">이메일보내기</a>
     </address>
+    <!-- ! IE 지원불가 -->
+    <details>
+        <summary>title</summary>
+        <p>data</p>
+        <p>data</p>
+        <p>data</p>
+        <p>data</p>
+        <p>data</p>
+    </details>
+    <!-- ? clickEvent = javascript 도움없이 구현불가. / 자동으로 지원 -->
+    <main>
+        <h1>Lorem Ipsum</h1>
+        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <article>
+            <h2>What is Lorem Ipsum?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </article>
+    </main>
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">
+        100 +
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <input type="text" list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <dialog open>this in an open dialog window</dialog>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic Tag's</title>
+</head>
+<body>
+    <header>
+        <p>
+            모든 page에서 공통으로 사용하는 상단영역.(global)
+            page 상단 요소인 logo(h1), navigation(nav), sideBox(div)등이 들어간다.
+            통상적으로는 변경이 절대 일어나서는 안되는 영역이다.
+        </p>
+        <h1>
+            <a href="#">logo image or text</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">menu</a></li>
+            </ul>
+        </nav>
+        <!-- 
+            ? GlobalNavigationBar - 사용자임의확정구조 : 이 구조에 다른 대안이 없다.
+            * nav - 주 메뉴 등급에 해당하는 공용 메뉴일 때 사용.
+        -->
+        <div>
+            <input type="button" value="search">
+            <a href="#">login</a>
+            <a href="#">cart</a>
+            <!-- ? 눌렀을 때 page이동 = a, 눌렀을 때 현재 위치에서 panel or popup이 뜨면 버튼. -->
+        </div>
+    </header>
+    <section>
+        <h2>section에는 반드시 머릿글(h tag's)을 넣어줘야 한다.</h2>
+        <p>
+            복합적인 content group(명확히 내용이 별도로 구분되는 경우)이 들어가는 section
+            (등급 : main > section)
+        </p>
+    </section>
+</body>
+</html>

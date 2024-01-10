@@ -1,0 +1,7 @@
+.classEx1{
+    color: red;
+}
+.btn{
+    padding: 10px 30px; border: 1px solid black; font-size: 12px; display: inline-block;
+    background-color: white; text-decoration: none; color: black;
+}

@@ -9,3 +9,19 @@
     background-color: yellowgreen; color: darkgreen; border-color: limegreen;
     border-width: 3px;
 }
+.btn.modify{
+    background-color: lightblue; color: blue; border-color: darkblue;
+    border-width: 3px; border-style: dashed;
+}
+.btn.delete{
+    background-color: rgb(90,0,0); color: red; border-color: darkred;
+    border-width: 3px; border-style: dotted;
+}
+.btn.confirm{
+    background-color:violet; color: blueviolet; border-color: magenta;
+    border-width: 10px; border-style: double;
+}
+.btn.cancel{
+    background-color: lightgray; color: slategray; border-color: darkgrey;
+    border-width: 3px;
+}

@@ -25,3 +25,7 @@
     background-color: lightgray; color: slategray; border-color: darkgrey;
     border-width: 3px;
 }
+#cliName{
+    line-height: 21px; font-size: 15px; padding: 5px 15px; color: green;
+    border: 3px solid lightgreen;
+}

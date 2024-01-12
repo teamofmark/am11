@@ -68,3 +68,34 @@ button.test{
     background: url('https://via.placeholder.com/150x50?text=blahblahButton');
     width: 150px; line-height: 50px; text-indent: -9999px;
 }
+a{
+    display: block; margin: 20px;
+}
+a.t_deco_N{
+    color: #090; text-decoration: none; text-transform: none;
+}
+a.t_deco_U{
+    color: #0cf; text-decoration: underline; text-transform: lowercase;
+}
+a.t_deco_O{
+    color: #96c; text-decoration: overline; text-transform: capitalize;
+}
+a.t_deco_T{
+    color: #f63; text-decoration: line-through; text-transform: uppercase;
+}
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: center;
+}
+/* 
+    ? direction: -_-?...정렬? = 정렬 아님.
+    * 출력방향
+*/
+/*
+    ? text-align : left / center / right
+    ! text-align은 inline(-block)관련 tag를 정렬 할 수도있다.
+*/

@@ -36,3 +36,13 @@ p.letter{
 p.word{
     word-spacing: 10px;
 }
+p[class^='w_']{
+    border: 3px solid black;
+}
+p.w_normal{
+    width: 150px; white-space: normal;
+    /* ? defaultValue : normal; - css속성이 기본으로 가지고 있는 값. */
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap; overflow:hidden; text-overflow: ellipsis;
+}

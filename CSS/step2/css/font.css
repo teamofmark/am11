@@ -14,7 +14,7 @@ body{
     font-family: 'Noto Sans KR';
 }
 h1{
-    font-size: 35px; color: rgba(0, 102, 255, 0.5);
+    font-size: 35px; color: rgba(0, 102, 255, 0.5); line-height: 42px;
 }
     /* 
         * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
@@ -22,3 +22,17 @@ h1{
         * hsla(hue,saturate,lightness,alpha(투명도));
      */
 /* todo h2,h3 */
+
+h2{font-size:15px; line-height:21px; color:#966;}
+
+h3{font-size:13px; line-height:19px; color:#F90;}
+
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: -1px;
+}
+p.word{
+    word-spacing: 10px;
+}

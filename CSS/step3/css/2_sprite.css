@@ -20,3 +20,13 @@ ul li strong{
 ul li.captain{
     background-position: 0px 0px;
 }
+ul li.wolverine{
+    background-position: -160px 0px;
+}
+ul li.thor{
+    background-position: -320px 0px;
+}
+ul li.ironman{
+    background-position: -480px 0px;
+}
+/* todo. 실습 - 나머지 4마리도 잘 나오게 만들기 */

@@ -13,8 +13,8 @@ div{
     /* ? 선의 모양 */
     /* border-color: rgba(255,0,0,0.8) rgba(0,255,0,0.8) rgba(0,0,255,0.8) rgba(255,150,0,0.8); */
     /* todo 방향별 분리 로 변경 */
-    border-?:;
-    border-?:;
-    border-?:;
-    border-?:;
+    border-top: 1px solid rgba(255,0,0,0.8);
+    border-right: 3px dotted rgba(0,255,0,0.8);
+    border-bottom: 10px dashed rgba(0,0,255,0.8);
+    border-left: 25px double rgba(255,150,0,0.8);
 }

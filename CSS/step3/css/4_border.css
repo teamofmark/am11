@@ -7,9 +7,14 @@ div{
 }
 .multiBox{
     /* ! 각기다르게 넣는부분 : 1. 속성별 분리 / 2. 방향별 분리 */
-    border-width: 1px 3px 10px 25px;
+    /* border-width: 1px 3px 10px 25px; */
     /* ? 선의 굵기 */
-    border-style: solid dotted dashed double;
+    /* border-style: solid dotted dashed double; */
     /* ? 선의 모양 */
-    border-color: rgba(255,0,0,0.8) rgba(0,255,0,0.8) rgba(0,0,255,0.8) rgba(255,255,0,0.8);
+    /* border-color: rgba(255,0,0,0.8) rgba(0,255,0,0.8) rgba(0,0,255,0.8) rgba(255,150,0,0.8); */
+    /* todo 방향별 분리 로 변경 */
+    border-?:;
+    border-?:;
+    border-?:;
+    border-?:;
 }

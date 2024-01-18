@@ -5,10 +5,15 @@ body{
     background-color: #555;
     margin: 10px;
     padding-bottom: 30px;
-}
+}\
+/* ! body 입장에서 padding 이기 때문에 잘못된 케이스 지만 body는 부모취급안함.*/
 .firstDiv article{
     background-color: #039; color: white;
 }
 .secondDiv{
     background-color: #ddd; margin: 20px;
+    /* 
+        ! firstDiv의 margin-bottom: 10px 상쇄.
+        ? secondDiv의 margin과 만나는 부분에서 가산없이 병합.
+    */
 }

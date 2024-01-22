@@ -19,10 +19,39 @@
 }
 .wrap header nav ul{
     text-align: center;
+    /* ? inline-block으로 변한 상태의 li 들을 가운데로 정렬하기 위함 */
 }
 .wrap header nav ul li{
     display: inline-block;
+    /* ? 기본 list-item 상태의 li를 너비설정 자동에 부모공간 가운데 정렬 될 수 있게 함 */
 }
 .wrap header nav ul li a{
     color: white; line-height: 55px; display: block;
+    /* ? line-height를 통해 h1과 높이 동기화, 작동범위 증가를 위한 block. */
+}
+section{
+    margin-bottom: 300px;
+    /* ? footer 사이 간격 설정 */
+}
+section:after{
+    content: ''; display: block; clear: both;
+}
+section h2{
+    background-color: skyblue;
+}
+section article{
+    float: left; width: 33.33%;
+}
+section article h3{
+    background-color: black; color: white;
+}
+section article ul{
+    list-style: none;
+}
+section article ul li{
+    font-size: 16px; line-height: 35px;
+    /* ? defaultFontSize : 16px -> 왜적어줬냐? : rem,em 단위 사용안함 -> browser 기본설정을 변경하면 fontsize 없는 애들은 변함. */
+}
+footer{
+    background-color: #4800ff; text-align: center; color: white; line-height: 55px; 
 }

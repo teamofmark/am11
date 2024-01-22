@@ -7,3 +7,12 @@
 
 ! absolute / fixed : 적용 순간 width 상실!
 */
+#wrap{
+    position: relative; width: 300px; height: 200px; background-color: gray;
+    margin: 0 auto;
+    /* left: 30px; top: 80px; */
+}
+#wrap .redBox{
+    width: 150px; height: 150px; background-color: #f00; position: absolute;
+    left: 0; top: 0;
+}

@@ -1,0 +1,9 @@
+/* 
+* relative : 적용시 띄어지지않음. = 일반 block과 동일상태(margin,padding영향 다받는거.. ) 좌표가 들어가는 순간 위로 뜸. 
+
+* absolute : 적용과 동시 뜸. 좌표가 입력되지 않으면 그상태 그대로 위치. / 좌표가 들어가면 이동시작 (부모 relative를 찾음. = 부모의부모.../형제관계x / 최종 browser의 기준좌표로 작동)
+
+* fixed : 적용과 동기 뜸. 무조건 browser의 기준좌표로 작동. browser scroll의 영향을 받지않음. 
+
+! absolute / fixed : 적용 순간 width 상실!
+*/

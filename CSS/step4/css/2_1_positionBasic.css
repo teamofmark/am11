@@ -9,10 +9,18 @@
 */
 #wrap{
     position: relative; width: 300px; height: 200px; background-color: gray;
-    margin: 0 auto;
+    margin: 0 auto; overflow-y: scroll;
     /* left: 30px; top: 80px; */
 }
+#wrap div{
+    position: absolute; width: 150px; height: 150px;
+}
 #wrap .redBox{
-    width: 150px; height: 150px; background-color: #f00; position: absolute;
-    left: 0; top: 0;
+    background-color: #f00; left: 10px; top: 10px; z-index: 100;
+}
+#wrap .greenBox{
+    background-color: #0c0; left: 50px; top: 50px; z-index: 1;
+}
+#wrap .blueBox{
+    background-color: #39f; left: 90px; top: 90px; z-index: 10;
 }

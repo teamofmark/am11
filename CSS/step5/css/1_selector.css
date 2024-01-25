@@ -106,3 +106,36 @@
     line-height: 0px;
     /* font-size: 0px; */
 }
+/* ! select Tag -> :selected */
+.statusSelector input:enabled::placeholder{
+    /* ? input default - disabled -> enabled 로 변경되었을때 상황  */
+    background-color: black; color: white;
+}
+.statusSelector input:disabled{
+    /* 
+        ! readonly <=> disabled : 혼동해서 사용하면 안됨.
+        ? 1. readonly : 읽기전용. server에서 값을 전달받은 상태에서 수정이 불가능한 상황.
+        ? 2. disabled : 비활성화. server에 값을 전달한 적이 없는 불가능한 상태.
+    */
+    background-color: lightgray; color: darkgray;
+}
+.virtualSelector ul{
+    list-style: none; margin: 30px 0; padding: 0; overflow: hidden;
+    background-color: lightgoldenrodyellow;
+}
+.virtualSelector ul li{
+    width: 14.28%; box-sizing: border-box; padding: 15px; float: left;
+}
+.virtualSelector ul li:first-child{
+    border-radius: 30px 0 0 30px;
+}
+.virtualSelector ul li:last-child{
+    border-radius: 0 30px 30px 0;
+}
+.virtualSelector ul li:nth-child(2n+1){
+    /* ! 2n+1 -> odd / 2n -> even */
+    background-color: #444; color: #fff;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #09f;
+}

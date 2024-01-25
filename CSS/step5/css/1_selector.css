@@ -139,3 +139,13 @@
 .virtualSelector ul li:nth-child(2n){
     background-color: #09f;
 }
+.shapeSelector h1:nth-of-type(2){
+    color: #f06;
+}
+.shapeSelector h2:first-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:last-of-type{
+    color: #30f;
+}
+/* todo. child로 같은결과가 나오게 만들기 */

@@ -164,3 +164,13 @@
 .textSelector p::first-line{
     font-size: 38px; line-height: 30px; color: #090; text-decoration: underline;
 }
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) ".";
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; font-weight: bold;
+    color: deeppink;
+}

@@ -8,7 +8,7 @@ body{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ; /*todo. cubic-bezier site에서 적당한 가속도값 찾아 넣기*/
+    animation-timing-function: cubic-bezier(.18,.47,.48,.84); /*todo. cubic-bezier site에서 적당한 가속도값 찾아 넣기*/
 }
 @keyframes moveCircle {
     0%{
@@ -16,4 +16,7 @@ body{
     }100%{
         left: 800px; transform: rotate(360deg);
     }
+}
+.circle:hover{
+    animation-play-state: paused;
 }

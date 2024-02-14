@@ -12,7 +12,7 @@
 }
 /* ? mobile device - 사용자 해상도가 768미만일 때 실행 되는 code. */
 
-@media screen and (min-width:768px) and (max-width: 1279px){
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation:landscape){
     body{
         font-family: 'Roboto'; background-color: lightseagreen; color: darkblue;
     }
@@ -20,7 +20,20 @@
         font-size: 24px; line-height: 30px; text-align: right;
     }
     p{
-        font-size: 14px; text-align: left; line-height: 20px;
+        font-size: 14px; text-align: right; line-height: 20px;
+    }
+}
+/* ? tablet device - 사용자 해상도가 768이상일 때 1280미만일 때 실행 되는 code. */
+
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation:portrait){
+    body{
+        font-family: 'Roboto'; background-color: lightsalmon; color: saddlebrown;
+    }
+    h1{
+        font-size: 24px; line-height: 30px; text-align: center;
+    }
+    p{
+        font-size: 14px; text-align: center; line-height: 20px;
     }
 }
 /* ? tablet device - 사용자 해상도가 768이상일 때 1280미만일 때 실행 되는 code. */

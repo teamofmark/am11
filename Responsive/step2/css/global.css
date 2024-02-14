@@ -1,10 +1,23 @@
 
-@media screen and (max-width:767px){
+@media screen and (max-width:860px) and (orientation:landscape){
     body{
         font-family: 'Noto Sans KR'; background-color: lightcoral; color: brown;
     }
     h1{
-        font-size: 18px; line-height: 24px;
+        font-size: 22px; line-height: 28px; text-align: right;
+    }
+    p{
+        font-size: 14px; text-align: right; line-height: 20px;
+    }
+}
+/* ? mobile device - 사용자 해상도가 768미만일 때 실행 되는 code. */
+
+@media screen and (max-width:860px) and (orientation:portrait){
+    body{
+        font-family: 'Noto Sans KR'; background-color: darkblue; color: white;
+    }
+    h1{
+        font-size: 18px; line-height: 24px; text-align: center;
     }
     p{
         font-size: 12px; text-align: center; line-height: 18px;
@@ -12,7 +25,7 @@
 }
 /* ? mobile device - 사용자 해상도가 768미만일 때 실행 되는 code. */
 
-@media screen and (min-width:768px) and (max-width: 1279px) and (orientation:landscape){
+@media screen and (min-width:861px) and (max-width: 1279px) and (orientation:landscape){
     body{
         font-family: 'Roboto'; background-color: lightseagreen; color: darkblue;
     }
@@ -25,7 +38,7 @@
 }
 /* ? tablet device - 사용자 해상도가 768이상일 때 1280미만일 때 실행 되는 code. */
 
-@media screen and (min-width:768px) and (max-width: 1279px) and (orientation:portrait){
+@media screen and (min-width:861px) and (max-width: 1279px) and (orientation:portrait){
     body{
         font-family: 'Roboto'; background-color: lightsalmon; color: saddlebrown;
     }

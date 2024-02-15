@@ -1,9 +1,20 @@
 a{
     text-decoration: none;
 }
-header > div nav ul li a{
+header > div nav ul li a,
+header > div > ul li p{
     font-family: "Roboto";
 }
+
+header > div > ul li h2{
+    font-family: 'Playfair Display';
+}
+
+.btn_more{
+    font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
+    font-size: 16px; border: 1px solid #00e0d0; color: #00e0d0;
+}
+
 
 @media screen and (min-width:1280px) {
     header{
@@ -33,6 +44,25 @@ header > div nav ul li a{
     }
     header > div nav ul li a{
         line-height: 50px; display: block; font-size: 13px; color: #fff; font-weight: 900;
+    }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? header GNB Fin */
+    header > div > ul{
+        margin-bottom: 125px;
+    }
+    header > div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header > div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; line-height: 24px; text-align: center;
+        max-width: 775px; margin: 0 auto 50px;
     }
 }
 /* ? desktop */

@@ -141,18 +141,16 @@ section[class$='Area'] > hr{
     footer{
         background: url('../images/bg_05.png') left top / cover no-repeat;
     }
-    /* footer > div div:not(:last-of-type){
-        float: left; width: 32%; margin: 0 0 70px 2%;
-    }
-    footer > div div:first-of-type{
-        margin-left: 0;
-    } */
-    footer > div div:nth-of-type(1),
+    /* footer > div div:nth-of-type(1),
     footer > div div:nth-of-type(2){
         float: left; width: 47.5%; margin: 0 0 70px;
-    }
+    } 
     footer > div div:nth-of-type(2){
         margin-left: 5%;
+    }*/
+    
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
     }
     footer > div div h2{
         margin-bottom: 20px;
@@ -186,24 +184,24 @@ section[class$='Area'] > hr{
         display: block; float: left; box-sizing: border-box; margin-bottom: 25px;
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: /*70%*/35%; font-size: 14px; line-height: 43px; border: 1px solid rgba(255,255,255,0.5);
+        width: /*35%*/75%; font-size: 14px; line-height: 43px; border: 1px solid rgba(255,255,255,0.5);
         padding: 0 15px; background-color: transparent; color: white;
     }
     footer > div div:nth-of-type(3) input[type='email']::placeholder{
         color: rgba(255,255,255,0.75);
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: /*25%*/10%; margin-left: /*5%*/2%; text-indent: -9999px; border: none; line-height: 43px;
+        width: /*10%*/25%; /*margin-left: 2%;*/ text-indent: -9999px; border: none; line-height: 43px;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
     }
-    footer > div div:nth-of-type(3) ul{
-        /*clear*/float: left; width: 45%; margin-left: 8%;
-    }
+    /* footer > div div:nth-of-type(3) ul{
+        float: left; width: 45%; margin-left: 8%;
+    } */
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: /*5px*/ calc(7% - 4px);
+        margin-left: /*calc(7% - 4px)*/ 2.5%;
     }
     /* 
         ! 대부분의 큰 container 등급의 배치는 inline-block으로 불가.
@@ -220,7 +218,7 @@ section[class$='Area'] > hr{
     footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_sns_06.png');}
 
     footer > div div:last-of-type{
-        clear: left; font-weight: 400;
+        /*clear: left;*/ font-weight: 400; text-align: center;
     }
     footer > div div:last-of-type a{
         display: inline-block;
@@ -228,9 +226,9 @@ section[class$='Area'] > hr{
     footer > div div:last-of-type a:not(:first-of-type){
         margin-left: 30px;
     }
-    footer > div div:last-of-type p{
+    /* footer > div div:last-of-type p{
         float: right;
-    }
+    } */
     /* ? footer Fin */
 }
 /* ? mobile */

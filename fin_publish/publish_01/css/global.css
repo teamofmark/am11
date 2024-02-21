@@ -45,7 +45,7 @@ section[class$='Area'] > hr{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/600px; margin: 0 auto; padding: 70px /*0*/3%;
     }
 
     .btn_more{
@@ -56,10 +56,11 @@ section[class$='Area'] > hr{
         background: url('../images/bg_01.png') left top / cover no-repeat; padding: 15px 0 70px;
     }
     header > div{
-        max-width: /*940px*/728px; margin: 0 auto; position: relative;
+        max-width: /*728px*/ 600px; margin: 0 auto; padding: 0 3%;
+        /* position: relative; */
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -68,28 +69,47 @@ section[class$='Area'] > hr{
         width: 100%; display: block;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; width: 100%; padding-left: 130px;
-        box-sizing: border-box; text-align: right;
+        width: /*100%*/ 50%; margin-left: 15%; float: right; text-align: right;
+        /* position: absolute; right: 0; top: 0; padding-left: 130px; box-sizing: border-box; */
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block;
+        margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav input[type='checkbox'].mui:checked + ul{
+        height: 350px;
+    }
+    header > div nav input[type='checkbox'].mui + ul{
+        height: 0; overflow-y: hidden; transition: height 0.5s ease-in-out;
     }
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         line-height: 50px; display: block; font-size: 13px; color: #fff; font-weight: 900;
     }
-    header > div nav ul li a.active,
-    header > div nav ul li a:hover{
+    header > div nav ul li a.active
+    /*,header > div nav ul li a:hover*/{
         color: #00e0d0;
     }
     /* ? header GNB Fin */
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
@@ -214,6 +234,13 @@ section[class$='Area'] > hr{
     /* ? footer Fin */
 }
 /* ? mobile */
+
+@media screen and (min-width: 768px){
+    .mui{
+        display: none;
+    }
+}
+/* ? tablet & desktop */
 
 @media screen and (min-width:768px) and (max-width: 1279px) {
     #about,

@@ -237,11 +237,15 @@
     .contentArea aside fieldset input[type='radio'] + label[for*='dlvr']{
         background: url('../images/off_radio.png') no-repeat 15.15% center;
     }
-    /* todo. radio check 가동 */
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
     .contentArea aside fieldset input[type='checkbox'] + label{
         background: url('../images/off_check.png') no-repeat 9.3% center;
     }
-    /* todo. check check 가동 */
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
 
 
 

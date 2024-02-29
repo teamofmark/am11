@@ -24,3 +24,6 @@
 .flexContainer.flow .flexItem{
     width: 500px;
 }
+.flexContainer.justifyContent{
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+.flexContainer{
+    margin: 10px; padding: 15px; border-radius: 23px; background-color: #a4a4a4;
+    display: flex;
+}
+.test{
+    background-color: #a4a4a4; width: 48%; box-sizing: border-box; border-radius: 23px;
+    display: inline-flex;
+}
+.flexContainer .flexItem,
+.test a{
+    margin: 10px; padding: 20px; color: white; text-align: center; border-radius: 27px;
+    background-color: black;
+}
+
+.flexContainer.direction{
+    flex-direction: row-reverse;
+}
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse; flex-direction: row-reverse;
+}
+.flexContainer.flow{
+    flex-flow: row wrap;
+}
+.flexContainer.flow .flexItem{
+    width: 500px;
+}

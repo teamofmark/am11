@@ -133,3 +133,19 @@
     * flex-start - 내부 공간 기준으로 자신의 위치를 좌측으로 맞추기
     * flex-end - 내부 공간 기준으로 자신의 위치를 우측으로 맞추기
 */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 4;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 3;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 2;
+}
+.flexContainer.orderItem .flexItem:nth-of-type(4){
+    order: 1;
+}
+.flexContainer.orderItem .flexItem:nth-of-type(5){
+    order: 0;
+}

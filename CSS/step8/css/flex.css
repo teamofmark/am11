@@ -61,3 +61,27 @@
         space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
     */
 }
+
+.flexContainer.alignItems{
+    align-items: baseline;
+    background-color: orange;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-start;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.justifyItems{
+    display: grid; background-color: yellow; width: 300px;
+    justify-items: flex-start;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-end;
+}
+.flexContainer.justifyItems .flexItem{
+    margin: 1px;
+}

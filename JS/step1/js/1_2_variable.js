@@ -58,3 +58,9 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// *만들기 var 변수이름 = 값.
+
+// *case.1 기본 생성
+var cliName = "Mark";
+var age = 44;

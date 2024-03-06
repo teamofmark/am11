@@ -64,3 +64,25 @@
 // *case.1 기본 생성
 var cliName = "Mark";
 var age = 44;
+
+// *case.2 다중 생성
+var radius = 10, pi = 3.14159265;
+
+// *case.3 변수의 특성
+var cup = 'Coffee';
+cup = 'Green Tea';
+cup = 'Water';
+/*
+    ? before : 컵 세잔을 놓고 각각 다른 음료를 담았으나, 마지막 컵만 사용.
+    ? after : 컵 한잔에 coffee를 담았다가 버리고 Green Tea를 담았다가 버리고 Water를 담았다.
+*/
+
+// *case.4 연산자 사용시
+var numbValue = 10;
+numbValue = numbValue+20;
+
+// *csae.5 현재 자신의 나이를 cliAge변수에 담고 출력한 후, 20년 뒤 나이 역시 출력 해보기.
+var cliAge = 42;
+console.log("저의 현재 나이는 " + cliAge + "세 이고,");
+cliAge = cliAge + 20;
+console.log("20년 뒤에는" + cliAge + "세 입니다.");

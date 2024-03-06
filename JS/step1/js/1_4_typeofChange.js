@@ -11,3 +11,10 @@
     ? 명시적 형변환
     * method 나 lib Core func를 이용하여 강제로 숫자 -> 문자 로 변환.
 */
+// * case.1 자신의 나이를 입력받고 20을 더한 값 출력.
+// ? 비동기 - async / 동기 - sync
+function agePlus(){
+    var age = prompt('나이입력');
+    var result = Number(age) + 20; //? 전역함수 Number
+    console.log(result);
+}

@@ -38,3 +38,18 @@ function textTypeof(){
     var engName = 'Mark';
     console.log(typeof(engName));
 }
+// *case. 3 현재 로그인 상태가 아니다를 loginStatus 변수에 담아 자료형 check.
+function checkStatus(){
+    var loginStatus = false;
+    console.log("현재 login 상태는" + loginStatus + ' = ' + typeof(loginStatus));
+}
+// *case. 4 변수를 선언만 하고 자료형을 check.
+function varData(){
+    var test;
+    console.log('초기화 하지 않은 변수의 자료형은' + typeof(test) + '입니다.');
+}
+// ?etc. 1 null check.
+function nullCheck(){
+    var obj = null;
+    console.log("obj에 담긴 값의 자료형은" + typeof(obj) + "입니다.");
+}

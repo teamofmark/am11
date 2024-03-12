@@ -59,3 +59,14 @@ function stringtoNumb(){
     console.log("변환 후 : " + typeof(result) + ' = ' + result);
 }
 // ! tune. background-color random
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff; //? 15*16^2 + 15*16^1 + 15*16^0.
+        console.log(bgColor);
+        bgColor = parseInt(bgColor);
+        console.log(bgColor);
+        bgColor = bgColor.toString(16);
+        console.log(bgColor);
+        $("body").css("background-color", "#" + bgColor);
+    },1000);
+}

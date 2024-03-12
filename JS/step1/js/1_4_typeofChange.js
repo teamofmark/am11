@@ -70,3 +70,49 @@ function bgColorRandom(){
         $("body").css("background-color", "#" + bgColor);
     },1000);
 }
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number();
+    * Number(value); - 전역함수. 정수,실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환.(실수버림).
+    * 2. parseFloat(value); - 실수형변환.(무조건실수화).
+*/
+function numbString(){
+    var test = '300.15625';
+    console.log("변환 전 : " + typeof(test) + ' = ' + test);
+    var result = parseInt(test) + 10;
+    console.log("변환 후 : " + typeof(result) + ' + 10 = ' + result);
+}
+// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형하여 각 상황에 맞는 result로 출력.(typeof 검수!);
+
+// todo. -1 암시적형변환 이용하기
+function todo1(){
+    var test = 100;
+    var result;// todo. 암시적형변환을 이용하여 형변환.
+    console.log('변환 후' + typeof(result) + " = " + result);
+}
+function todo2(){
+    var test = 100;
+    var result;// todo. 명시적형변환(전역함수String)을 이용하여 형변환.
+    console.log('변환 후' + typeof(result) + " = " + result);
+}
+function todo3(){
+    var test = 100;
+    var result;// todo. 명시적형변환(꼬리함수toString)을 이용하여 형변환.
+    console.log('변환 후' + typeof(result) + " = " + result);
+}
+// todo.2 변수 test에 들어있는 문자를 숫자형으로 변형하여 연산가능하게. 각 상황에 맞는 result로 출력.(typeof 검수!);
+
+function todo4(){
+    var test = "100.51";
+    var result = test + 150 + "20";// todo. parse 이용하는 방법
+    console.log('변환 후' + typeof(result) + " = " + result);
+}
+function todo5(){
+    var test = "100.51";
+    var result = test + 150 + "20";// todo. Number 이용하는 방법
+    console.log('변환 후' + typeof(result) + " = " + result);
+}

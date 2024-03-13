@@ -73,7 +73,7 @@ function numbJugment(){
 // todo. 홀수와 짝수의 판별 조건함수를 만들기.
 function oddOrEven(){
     // ? 입력부 생성 - prompt();
-    alert("짝수입니다."); //? 짝수인 상황
+    alert("짝수입니다."); //? 짝수인 상황 / cssSelector 사용불가
     
     alert("홀수입니다."); //? 홀수인 상황
 

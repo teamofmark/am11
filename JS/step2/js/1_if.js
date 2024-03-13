@@ -20,7 +20,12 @@ function amORpm(){
     var date = new Date(); //? new -> 생성. Date()-연,월,일,시,분,초 < 객체 = 전역함수.
     var hour = date.getHours();
     console.log("가져온 시간 정보의 자료형은 " + typeof(hour) + ", 값은" + hour + " 입니다.");
-    if(){
+    if(hour<12){
+        // * 오전/오후의 기준? 12시 -> am/pm -> 0~=24 -> 0~23
         // ? if(condition=조건) -> 조건의 특징은 값의 반환이 무조건 true / false. -> 비교.
+        alert("오전입니다.");
+    }
+    if(hour>=12){
+        alert("오후입니다.");
     }
 }   

@@ -55,3 +55,27 @@ function mealTime(){
         alert('그만먹어!');
     }
 }
+
+// *case.3 양,음수 판별.
+function numbJugment(){
+    var numb = prompt('숫자를 입력하세요','양,음수 상관없음. 문자금지.');
+    console.log(typeof(numb) + '=' + numb);
+    numb = parseInt(numb);
+    console.log(typeof(numb) + '=' + numb);
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('입력된 값이 0 이거나 잘못된 값이 입력되었습니다.');
+    }
+}
+// todo. 홀수와 짝수의 판별 조건함수를 만들기.
+function oddOrEven(){
+    // ? 입력부 생성 - prompt();
+    alert("짝수입니다."); //? 짝수인 상황
+    
+    alert("홀수입니다."); //? 홀수인 상황
+
+    alert("??") //? 예외처리 - 오류.
+}

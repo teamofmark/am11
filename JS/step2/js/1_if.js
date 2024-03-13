@@ -41,3 +41,17 @@ function lastDay(){
         alert("말일입니다.");
     }
 }
+// todo. 1 현재 시각이 아침 or 점심 or 저녁 먹을 시간인지 판별하여 alert으로 출력해주기.
+// * 아침(6~8): '아침먹어', 점심(13~15) : '점심먹어', 저녁(그외나머지) : '그만먹어'
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+    if(hour < 8){
+        alert('아침먹어!');
+    }else if(hour < 15){
+        // ? else if(선행조건이 아니라 이 조건 이라면)
+        alert('점심먹어!');
+    }else{
+        alert('그만먹어!');
+    }
+}

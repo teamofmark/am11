@@ -15,7 +15,7 @@
 	alert('종료');
     
 */
-//* case_1 현재시간이 오후인가 오전인가
+//* case.1 현재시간이 오후인가 오전인가
 function amORpm(){
     var date = new Date(); //? new -> 생성. Date()-연,월,일,시,분,초 < 객체 = 전역함수.
     var hour = date.getHours();
@@ -28,4 +28,16 @@ function amORpm(){
     if(hour>=12){
         alert("오후입니다.");
     }
-}   
+}
+
+//* case.2 말일인가? 아닌가?
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    console.log("가져온 일자 정보의 자료형은 " + typeof(day) + ", 값은 " + day + " 입니다.");
+    if(day<30){
+        alert("아직 말일이 아닙니다.");
+    }else{
+        alert("말일입니다.");
+    }
+}

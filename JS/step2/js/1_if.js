@@ -72,10 +72,40 @@ function numbJugment(){
 }
 // todo. 홀수와 짝수의 판별 조건함수를 만들기.
 function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요','홀,짝을 구분해드립니다.');
     // ? 입력부 생성 - prompt();
-    alert("짝수입니다."); //? 짝수인 상황 / cssSelector 사용불가
-    
-    alert("홀수입니다."); //? 홀수인 상황
+    if(numb%2 == 0){
+        alert("짝수입니다."); //? 짝수인 상황 / cssSelector 사용불가
+    }else if(numb%2 == 1){
+        alert("홀수입니다."); //? 홀수인 상황
+    }else{
+        alert("올바른 값을 입력하세요."); //? 예외처리 - 오류.
+    }
+}
+// *case. 4 다음 세 과목의 점수를 입력받아 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    // ? 수 : 100 ~ 90 / 우 : 89 ~ 80 / 미 : 79 ~ 70 / 양 : 69 ~ 60 / 가 : 59 ~ 0
+    var koreanScore = prompt("국어 점수를 입력하시오.",'');
+    // ! prompt -> dataType : string
+    var englishScore = prompt("영어 점수를 입력하시오.",'');
+    var mathScore = prompt("수학 점수를 입력하시오.",'');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    if(avg > 100 || avg < 0){
+        alert("점수 똑바로 입력하라.");
+    }   
+    else if(avg){
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼');
+    }
+    else if(avg){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼');
+    }
+    else if(avg){
+        alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼');
+    } 
+    else if(avg){
+        alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼');
 
-    alert("??") //? 예외처리 - 오류.
+    }else{
+        alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼');
+    }
 }

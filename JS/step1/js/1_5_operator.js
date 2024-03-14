@@ -107,3 +107,50 @@ function numberPlusTodo(){
     console.log(++number);  //? 출력 : 13 / 현재 : 13.
     console.log("최종 : " + number); //? 최종 : 13.
 }
+// *case. 7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a>b;
+    console.log("a > b = " + result);
+}
+// *case. 8 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b가 서로 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log('a = b ?' + result);
+}
+// *case. 9 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b가 서로 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ?" + result);
+}
+// *case. 10 a변수에는 '여자', b변수에는 '웹디자이너'라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장 후 출력.
+function logicalOperator1(){
+    var a = "여자";
+    var b = "웹퍼블리셔";
+    var result = (a=="여자")&&(b=="웹디자이너");
+    console.log("두 결과가 모두 " + result);
+}
+// *case. 11 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장 후 출력.
+function logicalOperator2(){
+    var a = "여자";
+    var b = "웹디자이너";
+    var result = (a=="남자")||(b=="웹퍼블리셔");
+    console.log("두 결과중 하나라도 " + result);
+}
+// todo. 다음 코드를 작성 후 결과를 예상하여 적고 출력해보기.
+function compareOperator4(){
+    console.log(30 > 20 > 10); //? 결과 : true (x) -> false....
+    // ! hint : compute + r = 계산하는애. -> 순서대로 
+    // * 30 > 20 -> true
+    // * true > 10 -> 암시적형변환 = 1 > 10
+    // ? false.
+}
+// todo. 해결하기
+function compareOperator4R(){
+    console.log(30 > 20 && 20 > 10);
+}

@@ -69,3 +69,41 @@ function stringOP(){
     var b = 'WEB';
     console.log(a + b);
 }
+// *case.5 ul, li 구조의 tag를 html page에 삽입 후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>'; //? list = list+'<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JavaScript!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// todo. 연산자가 뒤로 올 경우의 결과를 예측해보기.
+// ! 작성 우선 -> 후 실행
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); //? 결과 : 10
+    alert(number++); //? 결과 : 11
+    alert(number++); //? 결과 : 12
+}
+// * case.6 해결해보기
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number);
+    alert(++number);
+    alert(++number);
+}
+// todo. 증감연산자 복합.
+function numberPlusTodo(){
+    var number = 10;
+    console.log(number++);  //? 
+    console.log(--number);  //? 
+    console.log(++number);  //? 
+    console.log(number--);  //? 
+    console.log(number++);  //? 
+    console.log(++number);  //? 
+    console.log(--number);  //? 
+    console.log(number++);  //? 
+    console.log(++number);  //? 
+    console.log(number); //? 최종 : 
+}

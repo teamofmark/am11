@@ -92,19 +92,14 @@ function avgScore(){
     var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
     if(avg > 100 || avg < 0){
         alert("점수 똑바로 입력하라.");
-    }   
-    else if(avg){
+    }else if(avg >= 90){
         alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼');
-    }
-    else if(avg){
+    }else if(avg >= 80){
         alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼');
-    }
-    else if(avg){
+    }else if(avg >= 70){
         alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼');
-    } 
-    else if(avg){
+    }else if(avg >= 60){
         alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼');
-
     }else{
         alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼');
     }

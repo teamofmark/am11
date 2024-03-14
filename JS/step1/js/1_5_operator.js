@@ -58,3 +58,14 @@ function numbOP2(){
     var result = a*b/10;
     console.log('복합연산 : ' + result);
 }
+// *case.3 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장 후 출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+// *case.4 'hi'가 담긴 변수 a 와 'WEB'이 담긴 변수 b를 합쳐 'hiWEB'을 출력.
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a + b);
+}

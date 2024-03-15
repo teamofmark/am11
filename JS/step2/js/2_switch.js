@@ -18,3 +18,21 @@ function switchGrammar(){
             break;
     }
 }
+// *case. 2 lotto과제를 switch로 변경
+function lotto(){
+    var numbValue = prompt("입력하실 번호는?");
+    switch(numbValue){
+        case "1":
+            alert("1등 15억!");
+            break;
+        case "2":
+            alert("2등 5천만원!");
+            break;
+        case "3":
+            alert("3등 3백만원!");
+            break;
+        default:
+            alert("낙첨되었습니다.");
+            break;
+    }
+}

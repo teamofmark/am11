@@ -127,6 +127,11 @@ function userInfoCheck(){
     }
 }
 
+function userInfoCheck1(){
+    var userID = window.prompt("사용자의 아이디를 입력하시오.");
+    var userPW = window.prompt("사용자의 패스워드를 입력하시오.");
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 PW가 틀렸습니다.");
+}
 
 //todo. 사용자 id "mark"와 password"1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
 /*
@@ -137,8 +142,20 @@ function userInfoCheck2(){
     var userID = window.prompt("사용자의 아이디를 입력하시오.");
     var userPW = window.prompt("사용자의 패스워드를 입력하시오.");
     // todo.1 승인메시지 console.log("Mark님으로 확인되었습니다.");
+    if(userID=="Mark"&&userPW=="1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }
     // todo.2 거부메시지 console.log("모든 정보가 맞지않습니다.");
+    else if(userID!="Mark"&&userPW!="1234"){
+        console.log("모든 정보가 맞지않습니다.");
+    }
     // todo.3 거부메시지 console.log("ID가 존재하지 않습니다.");
+    else if(userID!="Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }
     // todo.4 거부메시지 console.log("password가 틀렸습니다.");
     // ! 4번을 예외(else)로 던지지 말 것.
+    else if(userPW!="1234"){
+        console.log("password가 틀렸습니다.");
+    }
 }

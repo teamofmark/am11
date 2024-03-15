@@ -36,3 +36,32 @@ function lotto(){
             break;
     }
 }
+// todo. switch문을 이용한 계산기
+// ? 첫번째 숫자와 연산자와 두번째 숫자를 입력받아 계산해주는 사칙연산기.
+function calculator(){
+    var firstNumb = prompt("첫번째 숫자를 입력하세요.");
+    var operator = prompt("사칙연산자(+,-,*,/)중 하나를 입력하세요.");
+    var lastNumb = prompt("두번째 숫자를 입력하세요.");
+
+    // ?형변환
+    firstNumb = Number(firstNumb);
+    lastNumb = Number(lastNumb);
+
+    switch(?){
+        case ?:
+            alert(firstNumb?lastNumb);
+            break;
+        case ?:
+            alert(firstNumb?lastNumb);
+            break;
+        case ?:
+            alert(firstNumb?lastNumb);
+            break;
+        case ?:
+            alert(firstNumb?lastNumb);
+            break;
+        default:
+            alert("연산이 불가능한 값이 입력되었습니다.");
+            break;
+    }
+}

@@ -47,18 +47,18 @@ function calculator(){
     firstNumb = Number(firstNumb);
     lastNumb = Number(lastNumb);
 
-    switch(?){
-        case ?:
-            alert(firstNumb?lastNumb);
+    switch(operator){
+        case "+":
+            alert(firstNumb+lastNumb);
             break;
-        case ?:
-            alert(firstNumb?lastNumb);
+        case "-":
+            alert(firstNumb-lastNumb);
             break;
-        case ?:
-            alert(firstNumb?lastNumb);
+        case "*":
+            alert(firstNumb*lastNumb);
             break;
-        case ?:
-            alert(firstNumb?lastNumb);
+        case "/":
+            alert(firstNumb/lastNumb);
             break;
         default:
             alert("연산이 불가능한 값이 입력되었습니다.");

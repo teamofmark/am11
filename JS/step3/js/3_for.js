@@ -59,3 +59,24 @@ function answer5(){
         document.write((i+1)+"<br>");
     }
 }
+
+// *case.2 반복문 사용의 예 - 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 순차출력.
+function favorFruit(){
+    var array = ["딸기","귤","수박","메론","포도"]; //? [0,1,2,3]방 만들어짐.
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS 단원명을 배열을 활용해 출력하되, 숫자가 아닌 한글순서로 출력되게.
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    /*
+        * 첫번째 내용 =변수
+        * 두번째 내용 =연산자
+        * 세번째 내용 =형변환
+        * 네번째 내용 =조건문 if
+        * 다섯번째 내용 =조건문 switch
+        * 여섯번째 내용 =반복문 while
+        * 일곱번째 내용 =반복문 for
+    */
+}

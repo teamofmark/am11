@@ -17,3 +17,36 @@ for (var index = 0; index < 10; index++) {
     
 }
 */
+// ! 단일 for
+// *case. 1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo.1 이름을 1,000번 출력할 예정인데 이 중 홀수 번째(1,3,5,7,9...)만 나오게.
+function namePrint500(){
+    var myName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i+'.'+myName+'<br>');
+    }
+} 
+// todo.2 1 - 10 까지 출력되는 반복문을 직접 짜보자. - 최소 3개이상.
+function answer1(){
+    for(var i = 1; i <= 10; i++){
+        document.write(i +"<br>");
+    }
+}
+function answer2(){
+
+}
+function answer3(){
+
+}
+function answer4(){
+
+}
+function answer5(){
+
+}

@@ -125,3 +125,42 @@ function reverseFavorFruit(){
         document.write(array[i]);
     }
 }
+// *case. 4 continue
+function forContinue(){
+    for (var i = 0; i<10; i++){
+        continue;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+// *case. 5 continue 활용 - 1 : 특정 숫자(3)를 걸러내기(filtering).
+function continueEx(){
+    var text = '';
+    for (var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text = text + i;
+    }
+    console.log(text);
+}
+// todo continue 문제 - 1부터 10까지 짝수에대한 누적총합을 출력하라.
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i <= 10; i++){
+        if(i%2==1){
+            continue;
+            /*
+                i가 홀수일 경우 반복 중지 다음반복수행, 현재 다음 반복은 없다.
+                (1 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (2 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 현재 output에 더하기 실행
+                (3 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (4 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 현재 output에 더하기 실행
+                ..
+                이조건으로 i값이 10보다 작거나 같을때까지 수행하여 출력하라.
+            */
+        }
+        output += i;
+        console.log(output);
+    }
+}

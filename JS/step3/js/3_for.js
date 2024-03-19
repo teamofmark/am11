@@ -164,3 +164,58 @@ function runContinue(){
         console.log(output);
     }
 }
+// *case. 6 break
+function forBreak(){
+    for(var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+// *case. 7 break 활용 - 특정숫자에 반복이 도달 할 경우 중단하고 현재까지의 합을 출력.
+function breakEx(){
+    var i = 0;
+
+    while(true){
+        if(i == 3){
+            break;
+        }
+        // console.log(i);
+        i = i + 1;
+    }
+
+    console.log(i);
+}
+// *case. 8 break 활용 2 - 사용자의 의사를 묻고 중단 할지 지속할지 출력되는 popup.
+function runBreak(){
+    for (var i = 0; true; i++){
+        document.write(i + "번째 반복문" + "<br>");
+        if(!confirm('계속할까?')){
+            break;
+        }
+    }
+}
+
+// ! 다중 for
+// *case. 9 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// ! 최종과제 피라미드 - 검색금지 -_-+

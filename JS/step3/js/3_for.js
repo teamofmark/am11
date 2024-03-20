@@ -219,3 +219,27 @@ function reverseHalfPyramid(){
     document.write(star);
 }
 // ! 최종과제 피라미드 - 검색금지 -_-+
+function pyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            // ? 공백
+            star += '&nbsp;';
+        }
+        for(var s = 0; s < 2*i-1; s++){
+            // ? 별
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+function pyramidCustom(n){
+    for (var i = 1; i <= n; i++){
+        var s = "";
+        for (var j = 1; j <= (2 * n - 1); j++){
+            (j >= n + 1 - i && j <= n - 1 + i) ? s += "*" : s += "&nbsp;";
+        }
+        document.write(s + "<br>");
+    }
+}

@@ -147,3 +147,29 @@ function add(){}
 function sub(){}
 function mul(){}
 function div(){}
+
+// *case. 7 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+
+// *case. 8 매개변수 값으로 함수 사용하여 중계하기.
+function hi1(){
+    console.log("밥먹었니?");
+}
+function hi2(){
+    console.log("니취팔로마?");
+}
+function execute(func){
+    func();
+}
+
+// *case. 9 button click 시 매개변수 값으로 넘긴 함수 호출하기
+function welcome(){
+    alert("혼자왔니?");
+}
+$(document).ready(function(){
+    $("#runEx9").click(welcome); //? jquery 문법
+    // ? $("#runEx9") => document.body.getElementsById("runEx9") V/JS
+}); 

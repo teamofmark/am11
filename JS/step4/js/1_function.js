@@ -72,3 +72,43 @@ function showInfo(){
         alert('기존매개변수', '추가매개변수');
         prompt('기존매개변수');
 */
+// *case. 5 두 수를 매개변수로 받고, 두 값을 더한 결과값을 리턴하는 함수를 만들어보자.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+// *case. 6 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력 하는 함수 
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(prompt('숫자만'));
+        if(value == 0){
+            document.write("종료");
+            return; //? returnBreak (x)
+        }
+        sum += value;
+        document.write(count + ". " + sum + "<br>");
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}
+// todo. 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
+function calculator(){
+    
+}

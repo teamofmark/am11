@@ -139,14 +139,45 @@ document.write(sub(20, 10) + "<br>");
 document.write(mul(20, 10) + "<br>");
 document.write(div(20, 10) + "<br>");
 */
-function calculator2(){
+function calculator2(op,numb1,numb2){
     // ! 아래 기술된 함수를 끌어와서 각 연산 가능하게 만들기.
     // ! 위 예제처럼 이 함수 내에서 연산자 직접 표기 금지. ex> numb1 + numb2;
+    var result = '';
+    switch(op){
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = sub(numb1,numb2);
+            break;
+        case "*":
+            result = mul(numb1,numb2);
+            break;
+        case "/":
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
 }
-function add(){}
-function sub(){}
-function mul(){}
-function div(){}
+function add(numb1,numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+}
+function sub(numb1,numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1,numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1,numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
+}
 
 // *case. 7 함수를 변수에 담기.
 function hello(name){

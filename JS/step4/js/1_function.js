@@ -180,10 +180,10 @@ function div(numb1,numb2){
 }
 
 // *case. 7 함수를 변수에 담기.
-function hello(name){
-    console.log(name + "환영합니다.");
-}
-var func = hello;
+// function hello(name){
+//     console.log(name + "환영합니다.");
+// }
+// var func = hello;
 
 // *case. 8 매개변수 값으로 함수 사용하여 중계하기.
 function hi1(){
@@ -204,3 +204,20 @@ $(document).ready(function(){
     $("#runEx9").click(welcome); //? jquery 문법
     // ? $("#runEx9") => document.body.getElementsById("runEx9") V/JS
 }); 
+// *case. 10 함수를 매개변수로 전달받아 반복호출하기.
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('hello!');
+}
+// *case. 11 return Value를 함수로 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();

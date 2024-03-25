@@ -1,0 +1,58 @@
+$(document).ready(function(){
+    // *case. 1 x Axis 원 움직이기
+    $("#btnMoveCircle").click(moveCircle);
+    // *case. 2 x,y Axis 원 움직이기 - 구조분리형
+    detailMoveCircleExt();
+    // todo. 아래 실행구문으로 작동되게 만들기.
+    $("#btnDetailMove").click(detailMoveCircle);
+});
+// * case. 1
+function moveCircle(){
+    var $circle = $(".circle");
+    var xpos = prompt("0부터 380이하의 숫자만 입력하세요");
+    // ! prompt -> string 전달.
+    xpos = parseInt(xpos);
+    if(xpos >= 0 && xpos <= 380){
+        $circle.css("left",xpos);
+    }else{
+        alert("잘못된 수치입니다.");
+    }
+}
+// todo. 아래 실행구문으로 작동되게 만들기.
+function detailMoveCircle(){
+
+}
+// * case. 2
+function detailMoveCircleExt(){
+    var $circle = null;
+    circleInit();
+    $("#btnDetailMove").click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    // ? input:text -> dataType: string.
+    /*
+        ? val() - 값 : value -> val.
+        * 1. target.val(); = target의 값을 가져와라.
+        * 2. target.val(swap); = target의 값을 swap으로 변경해라.
+    */
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+//    console.log("xpos = " + typeof(xpos) + xpos + "/" + "ypos = " + typeof(xpos) + ypos);
+    circleMovCommand(xpos,ypos);
+}
+function circleMovCommand(xpos,ypos){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){ // todo. 예외조건 성립시키기
+        alert("잘못된 수치입니다. 0 ~ 380이내로 입력하시오.");
+    }else{
+        // todo. 움직이는 css 함수처리
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
+    }
+}

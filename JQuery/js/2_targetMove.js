@@ -83,8 +83,19 @@ function keyControl(){
                 currentXpos -= range;
                 break;
         }
-        // todo. 돌아다니는 원을 frame안에 가둬오기.
-        
+        // todo. 돌아다니는 원을 frame안에 가둬오기.        
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos);
     }); //? compareFunction : 비교함수 - key자체가 100개 가넘음. - 무엇이 눌린지는 모름.

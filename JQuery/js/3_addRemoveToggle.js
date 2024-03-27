@@ -5,6 +5,8 @@ $(document).ready(function(){
     toggleTodo();
     // *case.3
     tabUI();
+    // *case.4
+    accControl(".accComponent li h3");
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -52,5 +54,11 @@ function tabUI(){
         $(this).addClass("activated");
         $(".tabPage").removeClass("activated");
         $(activeTab).addClass("activated");
+    });
+}
+function accControl(target){
+    $(target).click(function(){
+        $(this).toggleClass("active");
+        // ? add - 추가 / remove - 제거
     });
 }

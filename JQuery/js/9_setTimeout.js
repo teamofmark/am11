@@ -8,7 +8,7 @@ var $resetBtn = null;
 $(document).ready(function(){
     init(); //? 선언부
     scoreCount($circle,playState,count,$score);
-    //todo. button에 물려야함. restart;
+    $resetBtn.click(restart);
 });
 function init(){
     $score = $("#score");
@@ -29,5 +29,8 @@ function scoreCount($circle,playState,count,$score){
 }
 // todo. 재시작기능 만들어보기 - restart
 function restart(){
-
+    playState = true;// ? 게임상태변수 초기화.
+    count = 0;
+    $score.text(count + "점");
+    scoreCount($circle,playState,count,$score);// ? scoreCount 재실행.
 }

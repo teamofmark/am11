@@ -69,6 +69,15 @@ function checkGoalFish(){
         }
     }
     if(winnerList.length>0){
-        
+        winnerList.sort(function(a,b){
+            return b.position - a.position; //? position 값 기준 내림차순 정렬. -> 0번방에 가장 큰 값이들어감.
+        }); //? 비교함수(comparefunction)를 인자로 활용하는 정렬함수.
+
+        console.log("7. 우승 물고기 선별 완료.");
+        endGame();
+        alert("우승!" + winnerList[0].index+"번 물고기!");
     }
+}
+function endGame(){
+    
 }

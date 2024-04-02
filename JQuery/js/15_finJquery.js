@@ -30,5 +30,21 @@ function initEvent(){
     $("#start").click(startGame);
 }
 function startGame(){
-    
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition();// ? 물고기 움직임
+            // ? displayFishPositionInfo();움직인 위치 표시
+            // ?checkGoalFish(); 결승선 도달 감지
+        },200);
+        console.log("3. 게임 정상 시작.");
+    }
+}
+function updateFishPosition(){
+    for (var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        var step = Math.ceil(Math.random()*30);
+        var newLeft = $fish.position().left + step;
+        $fish.css("left", newLeft);
+    }
+    console.log("4. 물고기 움직임 정상");
 }

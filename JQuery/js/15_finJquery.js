@@ -79,5 +79,7 @@ function checkGoalFish(){
     }
 }
 function endGame(){
-    
+    clearInterval(timerID);
+    timerID = -1;
+    console.log("8. 게임 종료.");
 }

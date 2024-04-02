@@ -59,4 +59,16 @@ function displayFishPositionInfo(){
 }
 function checkGoalFish(){
     var winnerList = [];
+    for(var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                index: (i), position: fishCurrentPosition
+            });
+            console.log("6. 데이터 저장 성공");
+        }
+    }
+    if(winnerList.length>0){
+        
+    }
 }

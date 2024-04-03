@@ -1,0 +1,53 @@
+/* ? wrapper customize */
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 120px;
+}
+
+/* ? caption customize */
+.bx-wrapper .bx-caption {
+    bottom: calc(100% - 44px);
+    left: 50%;
+    background: rgba(255, 80, 0, 0.75);
+    width: 50%;
+    line-height: 24px;
+}
+.bx-wrapper .bx-caption span {
+    text-align: center;
+    color: lightgoldenrodyellow;
+    font-family: Arial;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* ? pager and autoControls Customize */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background: white;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    outline: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    transform: rotate(45deg);
+    transition: transform .5s ease-out;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: deeppink; transform: rotate(0deg) scale(1.5);
+}

@@ -64,3 +64,24 @@
     font-weight: bold; color: white; background-color: black;
 }
 /* ? pagerSelector customize */
+
+.customPager{
+    display: flex; max-width: 1000px; margin: 0 auto 20px; list-style: none; 
+}
+.customPager li{
+    width: 20%; align-self: center;
+}
+.customPager li:not(:first-child){
+    margin-left: 2%;
+}
+.customPager li a{
+    display: block; opacity: 0.5; transition: all 0.35s ease-in-out;
+    border: 3px solid transparent;
+}
+.customPager li a.active{
+    padding: 5px; border: 3px solid black; opacity: 1;
+}
+.customPager li a img{
+    width: 100%; display: block;
+}
+/* ? pagerCustom customize */

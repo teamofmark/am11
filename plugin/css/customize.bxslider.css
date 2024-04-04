@@ -114,11 +114,11 @@
     text-align: center;
 }
 
-.newAutoControls .bx-controls-auto:after{
-    content: ''; display: block; clear: both;
+.newAutoControls .bx-controls-auto{
+    display: flex;
 }
 .newAutoControls .bx-controls-auto .bx-controls-auto-item{
-    width: 50%; float: left;
+    flex: 1 auto;
 }
 .newAutoControls .bx-controls-auto .bx-controls-auto-item a{
     display: block; text-indent: -9999px; padding: 10px 0; border-width: 3px;

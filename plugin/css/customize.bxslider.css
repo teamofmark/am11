@@ -68,7 +68,10 @@
 /* ? pagerSelector customize */
 
 .customPager{
-    display: flex; max-width: 1000px; margin: 0 auto 20px; list-style: none; 
+    max-width: 1000px; margin: 0 auto 20px; list-style: none; 
+    /* display: flex; */
+    /* ! carousel Code */
+    display: none;
 }
 .customPager li{
     width: 20%; align-self: center;

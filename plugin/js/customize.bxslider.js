@@ -46,6 +46,12 @@ $(document).ready(function(){
         pause: 4000, //? default: 4000(m/s). 자동전환시 멈춰있는 시간.
         autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
         stopAutoOnClick: true, //? controler Button을 클릭 하였을 때 자동전환 중지.
-        autoControlsCombine: true //? default : false. play/pause toggle.
+        autoControlsCombine: true, //? default : false. play/pause toggle.
+
+        // * carousel
+        maxSlides: 2, //? default: 1. 최대 노출 슬라이드 장수.
+        minSlides: 1, //? default: 1. 최소 노출 슬라이드 장수.
+        slideWidth: 640,
+        slideMargin: 20
     });
 });

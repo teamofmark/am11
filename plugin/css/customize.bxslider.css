@@ -5,7 +5,9 @@
     box-shadow: none;
     border: none;
     background: transparent;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    /* ! carousel */
+    max-width: 1320px; margin: 0 auto 50px;
 }
 
 /* ? caption customize */
@@ -115,7 +117,7 @@
 }
 
 .newAutoControls .bx-controls-auto{
-    display: flex;
+    display: flex; max-width: 1320px; margin: 0 auto;
 }
 .newAutoControls .bx-controls-auto .bx-controls-auto-item{
     flex: 1 auto;

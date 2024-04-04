@@ -13,3 +13,105 @@
     * 남는 경우가 있는데 이 현상을 클로저(closure)라 부르고, 이 현상을 일으키는 함수를 클로저함수.
     * 5. 멤버함수 - 멤버함수는 클래스 내부에 만들어 지며 이를 보통 메서드(method)라고 함.
 */
+
+// ! 중첩함수
+
+// *case.1 중첩함수 사용시 주의할 것.
+function innerFunctionTest(){
+    var a = 10;
+    var b = 20;
+    var c = 30;
+    function outerFunc(){
+        var b = 200;
+        var c = 300;
+        function innerFunc(){
+            var c = 3000;
+            console.log('1 = ' + a);
+            console.log('2 = ' + b);
+            console.log('3 = ' + c);
+        }
+        innerFunc();
+    }
+    outerFunc();
+}
+
+// *case.2 callBack 함수를 이용한 사칙연산 계산기 만들기.
+
+function calculatorCallBack(op, numb1, numb2, callBack){
+    var result = "";
+
+    switch(op){
+        case "+":{
+            result = add(numb1, numb2);
+            break;
+        }
+        case "-":{
+            result = sub(numb1,numb2);
+            break;
+        }
+        case "*":{
+            result = mul(numb1,numb2);
+            break;
+        }
+        case "/":{
+            result = div(numb1,numb2);
+            break;
+        }
+        default:{
+            result = "잘못된 입력값 입니다.";
+            break;
+        }
+    }
+
+    // ? 내부중첩함수 : 처리부
+
+    callBack(result);
+}
+
+function add(numb1,numb2){
+    return numb1 + numb2;
+}
+function sub(numb1,numb2){
+    return numb1 - numb2;
+}
+function mul(numb1,numb2){
+    return numb1 * numb2;
+}
+function div(numb1,numb2){
+    return numb1 / numb2;
+}
+function addPrint(value){
+    document.write('두 수의 합은' + value);
+}
+function subPrint(value){
+    document.write('두 수의 차는' + value);
+}
+function mulPrint(value){
+    document.write('두 수의 곱은' + value);
+}
+function divPrint(value){
+    document.write('두 수의 나누기는' + value);
+}
+// ? callBack 함수.
+
+// *case.3 return 대신 callBack?
+// ? 그렇지 않다. 구현부와 처리부가 나눠져있지 않은 상태 일때  단순 value 는 return이 더편하다.
+/*
+// * 기존 단순 리턴.
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write('두 수 합' + result);
+
+// * 단순 리턴을 callBack으로 전환?
+
+function sum(numb1, numb2, callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function result(value){
+    document.write('두 수 합 ' + value);
+}
+sum(10,20,result);
+*/

@@ -1,7 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;900&display=swap');
-/* ? webfont LOAD */
-
-@import url('reset.css');
-@import url('global.css'); /* ? globalElement (header,footer,popup...) : 모든 페이지가 같이 사용하는 영역*/
-@import url('page.css'); /* ? pageElement (section,div,article....) : 개별 페이지의 css가 모이는 영역 */
-/* ! global,page css는 단 하나. page 수백장이던 수천장이던 모두다 page.css안에 기술되어야함. */

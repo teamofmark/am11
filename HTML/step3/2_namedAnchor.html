@@ -8,9 +8,9 @@
         html,body{
             margin: 0; height: 100%;
         }
-        /* ul#menu{
+        ul#menu{
             position: fixed; right: 0; top: 0; background-color: white;
-        } */
+        }
         div{
             height: 100%;
         }
@@ -28,19 +28,19 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
     <!-- todo (ul#menu>li*5>a{page$})+(#page$*4>{$page}+a{top}) -->
     <ul id="menu">
-        <li><a href="">page1</a></li>
-        <li><a href="">page2</a></li>
-        <li><a href="">page3</a></li>
-        <li><a href="">page4</a></li>
+        <li><a href="#page1">page1</a></li>
+        <li><a href="#page2">page2</a></li>
+        <li><a href="#page3">page3</a></li>
+        <li><a href="#page4">page4</a></li>
         <li><a href="1_hyperlink.html#targetAnchor" target="_blank">1번파일 지정된 위치</a></li>
     </ul>
-    <div id="page1">1page<a href="">top</a></div>
-    <div id="page2">2page<a href="">top</a></div>
-    <div id="page3">3page<a href="">top</a></div>
-    <div id="page4">4page<a href="">top</a></div>
+    <div id="page1">1page</div>
+    <div id="page2">2page</div>
+    <div id="page3">3page</div>
+    <div id="page4">4page</div>
 
 
 </body>

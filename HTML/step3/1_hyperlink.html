@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyperLink - 만능버튼 a</title>
+    <style>
+        html, body, #targetAnchor{
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>hyperLink List</h1>
@@ -15,9 +20,10 @@
         <li><a href="https://www.naver.com" target="_self">Naver 바로가기</a></li>
         <li><a href="https://www.daum.net" target="_blank">Daum 바로가기</a></li>
         <li><a href="../step2.zip">file Download</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href="mailto:teamofmark@gmail.com?subject=질문있습니다.">email 보내기</a></li>
+        <li><a href="tel:+821056658312">전화걸기</a></li>
+        <li><a href="#targetAnchor">지정된위치로가기</a></li>
     </ul>
+    <div id="targetAnchor">지정된위치</div>
 </body>
 </html>

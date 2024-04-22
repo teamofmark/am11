@@ -45,13 +45,38 @@
                 <li>
                     <label for="selectJob">직업 선택 : </label>
                     <select id="selectJob">
-                        <option>무직</option>
-                        <option>학생</option>
-                        <option>전문직</option>
-                        <option>공무원</option>
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option selected>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
                     </select>
                 </li>
+                <li>
+                    <input type="image" src="https://via.placeholder.com/150x50?text=button" alt="imgButton">
+                    <input type="button" value="비밀번호확인">
+                    <!-- ? 전송기능이 설정되지 않은 일반 버튼 -->
+                    <input type="file">
+                    <input type="submit" value="전송">
+                    <input type="reset" value="취소">
+                </li>
             </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <label for="userEmail">이메일 : </label>
+                    <input type="email" id="userEmail">
+                </li>
+            </ul>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
         </fieldset>
     </form>
 </body>

@@ -72,13 +72,26 @@
             <ul>
                 <li>
                     <label for="userEmail">이메일 : </label>
-                    <input type="email" id="userEmail" required maxlength="16" autofocus>
+                    <input type="email" id="userEmail" maxlength="16" autofocus>
                 </li>
                 <li>
                     <label for="userURL">웹사이트 : </label>
-                    <input type="url" id="userURL" required readonly>
+                    <input type="url" id="userURL" readonly>
                 </li>
                 <!-- ? required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
+                <!-- 
+                ! readonly : 읽기전용 (server에 저장이 된적이 있는 data를 불러오기)
+                ! disabled : 비활성화 (입력자체를 막아 server에 저장 자체가 불가능함.)
+                ! enabled : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)
+                -->
+                <li>
+                    <label for="userPN">전화번호 : </label>
+                    <input type="tel" id="userPN" placeholder="-를 뺀 숫자만 입력하세요." title="-를 뺀 숫자만 입력하세요.">
+                </li>
+                <li>
+                    <label for="qty">수량 : </label>
+                    <input type="number" id="qty" min="10" max="10000" step="10">
+                </li>
             </ul>
             <input type="submit" value="전송">
             <input type="reset" value="취소">

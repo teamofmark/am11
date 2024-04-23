@@ -72,8 +72,13 @@
             <ul>
                 <li>
                     <label for="userEmail">이메일 : </label>
-                    <input type="email" id="userEmail">
+                    <input type="email" id="userEmail" required maxlength="16" autofocus>
                 </li>
+                <li>
+                    <label for="userURL">웹사이트 : </label>
+                    <input type="url" id="userURL" required readonly>
+                </li>
+                <!-- ? required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
             </ul>
             <input type="submit" value="전송">
             <input type="reset" value="취소">

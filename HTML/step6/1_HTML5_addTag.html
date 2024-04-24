@@ -62,5 +62,55 @@
         韓 <rt>かん</rt>
     </ruby>
     <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+
+    <address>
+        <span>인천광역시 부평구 부평동 194-23 SBS아카데미컴퓨터아트학원 부평점</span>
+        <a href="https://www.incheon.sbsart.com" target="_blank">사이트 바로가기</a>
+        <a href="†el:+82324370111">전화문의</a>
+        <a href="mailto:privacy@koreaedugroup.com">메일보내기</a>
+    </address>
+    <!-- 
+        ? address
+        * 실제 사용 주소뿐 아니라 url 등의 주소, 연락처 관련 정보들을 담는 전용 Tag. - 통상적으로는 footer Tag안에 들어가는 것이 일반적
+        * mapApi(naver map, kakao map, google map..)를 동작 시키기 위해 실제 사용주소에 a를 사용하기도 함.
+     -->
+     <details>
+        <summary>Copyright 1999 - 2024</summary>
+        <!-- * 이하 tag를 보여주고 감추다. -->
+        <p>- by Refns Data. All rights Reserved.</p>
+     </details>
+     <!-- 
+        ? details
+        * summary를 기준으로 요약 및 요소들을 하단에 두고 click event를 통해 show / hide 기능이 작동되게 함.
+    -->
+    <main>
+        <h1>Web Browsers</h1>
+        <p>
+            Google Chrome, FireFox, and Internet Explorer are the most used browsers today.
+        </p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open-source web browser developed by Google,
+                released in 2008.
+            </p>
+        </article>
+    </main>
+    <!-- 
+        ? main
+        * <body>의 주요 content.(핵심 or 중요 - 내용, 기능)
+        ! 반복적으로 사용 될 수 없음.
+     -->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0<input type="range" id="a" value="50">100
+        +
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!-- 
+        ? output
+        * 출력 전용 Tag로 실시간 출력이 가능한 편한 Tag.
+     -->
 </body>
 </html>

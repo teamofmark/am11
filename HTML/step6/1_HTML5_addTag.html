@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5에서 새로 추가 된 Tag</title>
+    <style>
+        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li figure{position:relative;}
+        body > ul li figure img{width:100%;}
+        body > ul li figure:hover figcaption{display:block;}
+        body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
+        body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
+        body > ul li figure figcaption dl dt{font-size:24px;}
+        body > ul li figure figcaption dl dd{margin:0;}
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="" alt="">
+        <figcaption>아직 정의되지 않은 이미지</figcaption>
+    </figure>
+    <!-- 
+        ? figure : 흉상,동상
+        * 상징적인 의미를 담은 image의 경우에 사용 할 수 있는 Tag.
+        * image의 비중이 text보다 주 일 경우도 사용 가능.
+        * img Tag의 alt 대용으로도 사용 가능.(figcaption)
+     -->
+     <!-- * exampleCase -->
+     <!-- todo ul>li>figure>img+figcaption>dl>dt+dd+dd -->
+      <ul>
+        <li>
+            <figure>
+                <img src="https://via.placeholder.com/250" alt="undefined">
+                <figcaption>
+                    <dl>
+                        <dt>photo Name</dt>
+                        <dd>photo Description</dd>
+                        <dd>photo price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+      </ul>
+</body>
+</html>

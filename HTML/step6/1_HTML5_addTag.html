@@ -28,28 +28,39 @@
      -->
      <!-- * exampleCase -->
      <!-- todo ul>li>figure>img+figcaption>dl>dt+dd+dd -->
-      <ul>
-        <li>
-            <figure>
-                <img src="https://via.placeholder.com/250" alt="undefined">
-                <figcaption>
-                    <dl>
-                        <dt>photo Name</dt>
-                        <dd>photo Description</dd>
-                        <dd>photo price</dd>
-                    </dl>
-                </figcaption>
-            </figure>
-        </li>
-      </ul>
-      <!-- ! figure 방식의 목록 형태. = 장점: 다룰 재료가 많다(css) / 단점: codeLine자체가 두꺼워진다. -->
+    <ul>
+    <li>
+        <figure>
+            <img src="https://via.placeholder.com/250" alt="undefined">
+            <figcaption>
+                <dl>
+                    <dt>photo Name</dt>
+                    <dd>photo Description</dd>
+                    <dd>photo price</dd>
+                </dl>
+            </figcaption>
+        </figure>
+    </li>
+    </ul>
+    <!-- ! figure 방식의 목록 형태. = 장점: 다룰 재료가 많다(css) / 단점: codeLine자체가 두꺼워진다. -->
 
-      <time datetime="2024-04-24:T11:25:00Z">2024년 04월 24일 오전 11시 25분</time>
-      <!-- 
-        ? 날짜, 시간을 기록하는 time Tag.(Markup)
-        * 1. datetime 브라우저에서 인식하는 시간 부분 = os에서 전달 받는 시간 부분.
-        * 2. 날짜만 (2024-04-24), 시간만? 11:25:00 / Z 그리니치 시간대를 나타내는 Zulu의 약자.
-        * 3. markup 안은 표시될 내용.
-       -->
+    <time datetime="2024-04-24:T11:25:00Z">2024년 04월 24일 오전 11시 25분</time>
+    <!-- 
+    ? 날짜, 시간을 기록하는 time Tag.(Markup)
+    * 1. datetime 브라우저에서 인식하는 시간 부분 = os에서 전달 받는 시간 부분.
+    * 2. 날짜만 (2024-04-24), 시간만? 11:25:00 / Z 그리니치 시간대를 나타내는 Zulu의 약자.
+    * 3. markup 안은 표시될 내용.
+    -->
+    <div>
+        <progress value="22" max="100"></progress>
+        <!-- ? progress 는 진행상황을 실시간으로 나타낼 때 사용. 통상 max = 100 / value = 0 부터 시작(실시간변화) -->
+        <meter value="10" max="100" min="0" high="90" low="20"></meter>
+        <!-- ? meter는 현재 사용량이나 소모된 량 등의 정지된 산출값에 적합. (갱신) -->
+        <!-- ! 주의 및 경고 기준은 high , low가 담당. / min - 이하로 떨어지지 못하게 막기 -->
+    </div>
+    <ruby>
+        韓 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
 </body>
 </html>

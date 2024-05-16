@@ -90,4 +90,14 @@ p.w_nowrap{
 		후처리 = 높이가 낮은 대상. 그 대상의 높이기준
 		또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
 		)
-*/	
+*/
+p.t_indent{
+    font-size: 32px; text-indent: 200px;
+}
+.test{
+	background:url("http://via.placeholder.com/150x50?text=blabla");
+	border: none;
+	width: 150px; line-height: 50px;
+	font-size: 12px;
+	text-indent: -9999px;
+}

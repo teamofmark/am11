@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/*
+    thin - 100
+    extraLight - 200
+    light - 300
+    regular - 400
+    medium - 500
+    semiBold - 600
+    bold - 700
+    extraBold - 800
+    black - 900   
+*/
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    /*
+    웹폰트로드하는방법
+    1. 영어권이냐 ? 영어권이아니냐
+    
+    - 영어권 : alternate(대체).
+    - 비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경. (해당폰트에 영문이없을시)
+    (한글,영어) : 대부분 비 영어권 font 는 알파벳 이 기본 포함되기때문에 일반적으로는 앞에 영문font, 뒤에 비영어권폰트 설정.
+    - 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
+    
+    */
+}
+h1{
+    font-size: 60px; line-height: 70px; color: #06f; font-weight: 100;
+    /* 
+        * 이상적인 line-height -> fontsize(30under) + 6px.
+        * line-height는 fontsize 수직 중앙으로부터 위,아래 균등 배분
+    */
+    /* 
+        * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
+        * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
+        * hsla(hue,saturate,lightness,alpha(투명도));
+     */
+}
+/* todo. 배운속성 사용해보기 */
+h2{
+    font-size: 30px; line-height: 36px; color: #0f6; font-weight: 300;
+}
+h3{
+    font-size: 18px; line-height: 24px; color: #f06; font-weight: 600;
+}
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+    /* ? letter-spacing : 자간. 대체적으로 photoshop기준 1/100*/
+}
+p.word{
+    word-spacing: 10px;
+    /* ? word-spacing : 단간. ~의 ~에 ~는 등의 접,부,조사에도 사용되기 때문에 국내에선 비권장*/
+}
+p[class^='w_']{
+    width: 150px; line-height: 20px; border: 3px solid lightcoral;
+}
+/* ? default - text가 있는 공간은 white-space: normal 이 적용되어 자동 줄바꿈이 일어남. */
+p.w_nowrap{
+    white-space: nowrap;
+    /* overflow-x: scroll; */
+    overflow-x: hidden; text-overflow: ellipsis;
+}
+/* ? nowrap - 감싸지 않겠다는 선언으로 text등의 inline대상들이 부모를 뚫고 나가게 할 수 있다. */
+.v_alignTest img{
+    width: 200px; vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+/* 
+    ? vertical-align (수직정렬)
+    * 1. display: inline, inline-block인 애들끼리만.
+    * 2. 높은 애를 기준으로 preset(ex > top, middle, bottom....)
+    * 3. 작은 애가 높은 애를 기준으로 움직임.
+    * 4. 작은 애에게 상대적 수치 (%)를 이용하여 나머지 부분을 더 움직일 수 있다.
+    ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
+    ! 대상들의 display 속성의 간섭을 받는다. (ex> display:block 인 div 끼리 불가)
+*/
+/*
+	* top: 위쪽에 정렬
+	* middle: 문자의 중앙을 기준으로 해서 정렬
+	* bottom : 아래쪽 정렬
+	baseline: 문자의 밑선에 맞추어 정렬(default)
+	sub : 아래첨자
+	super : 위 첨자
+	text-top:문자의 윗선을 밑선으로 해서 정렬
+	% : 퍼센트로 정렬 위치를 지정 (
+		후처리 = 높이가 낮은 대상. 그 대상의 높이기준
+		또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
+		)
+*/	

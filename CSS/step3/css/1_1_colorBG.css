@@ -10,3 +10,10 @@ body,
 .wrap{
     background-color: lightgreen;
 }
+.wrap .topLine input{
+    background-color: transparent; padding: 10px 15px;
+    /* ? tag's 기본적으로 투명 - input계열은 white color. / 투명 : transparent */
+}
+.wrap p{
+    background-color: lightseagreen; color: white; padding: 10px;
+}

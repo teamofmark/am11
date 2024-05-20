@@ -1,0 +1,18 @@
+html,body,.wrap{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif'); /* ? name(); -> function(함수)*/
+    background-repeat: repeat;
+}
+/* ! background-image는 기본 pattern 적용. -> background-repeat.(default: repeat) */
+.wrap p{
+    padding: 20px; margin: 0 0 20px; background-color: rgba(150,0,150,0.5);
+}
+.wrap button{
+    padding: 0 40px; color: white; background-image: url('../images/pt_ex.png');
+    line-height: 75px; background-repeat: repeat-x; width: 50%;
+}

@@ -1,0 +1,12 @@
+html,
+html body,
+html body .wrap{
+    height: 100%;
+}
+body,
+.wrap p{
+    margin: 0;
+}
+.wrap{
+    background-color: lightgreen;
+}

@@ -1,12 +1,24 @@
+html,body{
+    height: 100%;
+}
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50%;
     /*
         ? cover : 무조건 꽉 채움 (공간대비 배경이 작으면 강제로 다 잡아 늘려서 / 공간대비 배경이 크면 그냥 나오는 영역만 출력)
         ? contain : width or height 둘 중 하나가 관여되는 부분에서 멈춤.
         * px, %...사용 가능
     */ 
-    height: 2000px;
+    background-position: center;
+    /* 
+        ? [xAxis] [yAxis] 
+        ! 높이 < browser height : 상,중,하 위치에서는 변화가 일어나지 않음. | 너비 > browser width : 좌,중,우 에서는 변화가 일어남
+        * px, %...사용 가능 -> 기본 수치만 입력시 left, top을 기준으로 입력 됨.
+    */
+    background-attachment: fixed;
+}
+p{
+    height: 2000px; text-align: center; font-size: 48px; font-weight: bold;
 }

@@ -1,0 +1,29 @@
+*{
+    margin: 0; padding: 0;
+}
+h1{
+    text-align: center; margin-bottom: 20px;
+}
+ul{
+    width: 640px; margin: 0 auto;
+}
+ul:after{
+    content: ''; display: block; clear: both;
+}
+ul li{
+    display: block; float: left; width: 160px; height: 140px; background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+}
+ul li strong{
+    background-color: rgba(0,0,0,0.5); color: white; padding: 0 10px; line-height: 35px;
+}
+ul li.captain{background-position: 0px 0px;}
+ul li.wolverine{background-position: -160px 0px;}
+ul li.thor{background-position: -320px 0px;}
+ul li.ironman{background-position: -480px 0px;}
+
+/* todo. 각각 맞는 캐릭터가 나오게 하기 */
+ul li.spiderman{background-position: 0px 0px;}
+ul li.superman{background-position: 0px 0px;}
+ul li.rangerRed{background-position: 0px 0px;}
+ul li.rangerBlue{background-position: 0px 0px;}

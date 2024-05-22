@@ -51,3 +51,6 @@ div{
         * 3. 배경 설정(좌측,우측)
     */
 }
+.radiusBox{
+    background-color: black; color: yellow; border-radius: 30px;
+}

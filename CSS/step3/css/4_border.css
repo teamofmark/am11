@@ -37,3 +37,17 @@ div{
 .outsetBox:hover{
     border-style: inset;
 }
+.searchField{
+    display: block; width: 100%; margin-bottom: 50px; border-width: 0 0 1px;
+    border-color: slateblue; line-height: 50px; font-size: 18px;
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'), url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 20px center, right 20px center;
+    padding-left: 64px;
+    /* 
+        * 1. 선 처리
+        * 2. 규격(높이, 글꼴 등) 처리
+        * 3. 배경 설정(좌측,우측)
+    */
+}

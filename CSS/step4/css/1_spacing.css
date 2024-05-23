@@ -17,3 +17,23 @@ body{
 .secondDiv{
     background-color: #ddd; margin: 30px 15px;
 }
+.centerDiv{
+    width: 300px; background-color: lightgreen; text-align: center;
+    padding: 10px 20px; border: 3px solid #33f;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    /* 
+        ? 중앙보내는공식
+
+        * (parentWidth - targetWidth) / 2 -> left , right 적용
+
+        ? 우측으로보내는 공식
+        * (parentWidth - targetWidth) -> left.
+
+        ! display: block만. / targetWidth가 parentWidth보다 작을 때만.
+    */
+}
+.centerDiv article{
+    /* margin: 0 10px; */
+    background-color: #f33; color: white;
+}

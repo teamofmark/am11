@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    background-color: #555; margin: 10px;
+    padding-right: 10px; padding-left: 10px; padding-bottom: 10px;
+    /* margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+}
+.firstDiv article{
+    background-color: #039; color: white;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}

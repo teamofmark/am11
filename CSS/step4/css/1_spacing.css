@@ -37,3 +37,15 @@ body{
     /* margin: 0 10px; */
     background-color: #f33; color: white;
 }
+.paddingDiv{
+    padding: 10px 20px; border: 3px solid #333; background-color: #ff3; width: 100px;
+    box-sizing: border-box;
+    /* 
+        ? box-sizing:
+        * default - content-box; -> contentWidth + padding + border.
+        ! border-box 설정시 padding, border는 더이상 width에 가산되지 않음. (내부규격)
+    */
+}
+.paddingDiv article{
+    background-color: #039; color: white;
+}

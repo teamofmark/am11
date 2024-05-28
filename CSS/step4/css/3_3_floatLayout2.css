@@ -52,7 +52,7 @@
     color: lightpink;
 }
 .wrap section article ul{
-    list-style-position: inside; padding-left: 20px;
+    list-style-position: inside; padding: 0 20px;
 }
 .wrap section article ul li{
     font-size: 14px; line-height: 35px; border-bottom: 1px solid brown;

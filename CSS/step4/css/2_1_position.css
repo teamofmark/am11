@@ -1,0 +1,10 @@
+#wrap{
+    width: 300px; background-color: #999; margin: 0 auto;
+    /* height: 200px; */
+}
+#wrap div{
+    width: 150px; height: 150px;
+}
+#wrap .redBox{background-color: #f00;}
+#wrap .greenBox{background-color: #0f0;}
+#wrap .blueBox{background-color: #00f;}

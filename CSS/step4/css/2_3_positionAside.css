@@ -1,0 +1,36 @@
+/* html,
+body,
+.wrap{
+    height: 100%;
+} */
+*{
+    margin: 0; padding: 0;
+}
+.wrap aside{
+    width: 250px; height: 100%; background-color: paleturquoise; position: fixed;
+    padding: 30px 15px; box-sizing: border-box;
+}
+.wrap aside header{
+    margin-bottom: 50px;
+}
+.wrap aside header h1{
+    text-align: center;
+}
+.wrap aside header h1 a{
+    display: block;
+}
+.wrap aside nav ul{
+    list-style: none;
+}
+.wrap aside nav ul li{
+    text-align: center;
+}
+.wrap aside nav ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.wrap aside nav ul li a{
+    display: block; font-size: 20px; line-height: 26px; color: green; text-decoration: none;
+}
+.wrap aside nav ul li a:hover{
+    color: darkorchid; text-decoration: underline; text-underline-offset: 10px;
+}

@@ -50,6 +50,11 @@
     width: 25px; height: 25px;
     /* background-color: black; border: 5px solid yellowgreen; */
 }
+/* 
+    * attrSelector -> tag의 attr을 기준으로 선택하는 방법
+    ? 동작하는 input들은 기존 browser에서 설정된 style이 존재 하기 때문에 임의의 style 불가.
+    ! 바꾸고싶은데....? 나중에 배워요. 
+*/
 
 .directSelector > h1{
     font-size: 28px; color: slateblue;
@@ -57,3 +62,18 @@
 .directSelector > span{
     font-size: 22px; color: #906; line-height: 28px; border-bottom: 2px solid red;
 }
+/*
+    * 직계선택자 >
+    ? 구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을 적용 할 수 있다.
+*/
+
+.sameSelector h1~h2{
+    background-color: #999;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/*
+    * 동위 선택자
+    ? A+B는 A 바로뒤에 위치하는 B를 지목하고, A~B는 A뒤에있는 B모두를 선택한다. (최초기준이 되는 tag만 효력이 있다.)
+*/

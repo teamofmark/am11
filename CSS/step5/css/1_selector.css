@@ -50,3 +50,10 @@
     width: 25px; height: 25px;
     /* background-color: black; border: 5px solid yellowgreen; */
 }
+
+.directSelector > h1{
+    font-size: 28px; color: slateblue;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; line-height: 28px; border-bottom: 2px solid red;
+}

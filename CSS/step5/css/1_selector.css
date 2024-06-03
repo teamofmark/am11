@@ -110,7 +110,7 @@
     line-height: 0px;
 }
 .statusSelector input:enabled{
-    background-color: black; color: white;
+    background-color: darkgray; color: white;
 }
 .statusSelector input:enabled::placeholder{
     color: yellow;
@@ -134,3 +134,23 @@
     ? 또한 display옵션을 block 계열로 잡아야하며, overflow의 값은 hidden으로 설정
     ? 해둔다.(사라지는값)
 */
+
+.virtualSelector ul{
+    overflow: hidden; list-style: none; margin: 30px 0; padding: 0;
+}
+.virtualSelector ul li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px; float: left;
+    text-align: center;
+}
+.virtualSelector ul li:first-child{
+    border-radius: 10px 0 0 10px; 
+}
+.virtualSelector ul li:last-child{
+    border-radius: 0 10px 10px 0;
+}
+.virtualSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #09f;
+}

@@ -175,3 +175,20 @@
     color: #f06;
 }
 */
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px; font-size: 24px; text-decoration: #090;
+}
+
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint)'. ';
+}
+.backandfrontSelector p::after{
+    content: '-' attr(data-page) "page"; font-weight: bold; color: deeppink;
+}

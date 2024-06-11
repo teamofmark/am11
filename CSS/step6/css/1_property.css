@@ -33,3 +33,35 @@ div{
 .visibilityProperty input[type='checkbox']:checked~table{
     visibility: visible;
 }
+.opacityProperty ul:after{
+    content: ''; display: block; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float:left; width: 33%; background-color: black; position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure img{
+    width: 100%; display: block; opacity: 0.3; transition-duration: 0.5s;
+}
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li figure figcaption{
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%; color: white;
+    background-color: rgba(0,0,0,0.5); display: flex; align-content: center;
+    flex-flow: row wrap; text-align: center; transition-duration: 0.5s;
+}
+.opacityProperty ul li:hover figure figcaption{
+    opacity: 0; top: -15%;
+}
+.opacityProperty ul li figure figcaption dl{
+    width: 100%;
+}
+.opacityProperty ul li figure figcaption dl dt{
+    font-size: 24px; font-weight: 600; margin-bottom:10px;
+}
+.opacityProperty ul li figure figcaption dl dd{
+    font-size: 14px; color: limegreen;
+}

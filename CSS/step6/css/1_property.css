@@ -17,3 +17,19 @@ div{
     display: none; background-color: deeppink;
     /* ! none = 대상이 보이지 않는다. (Render 자체가 안된다.) */
 }
+
+.visibilityProperty span{
+    background-color: #ff6a00; display: block; border: 1px solid black; height: 200px;
+}
+.visibilityProperty span:first-child{
+    visibility: visible;
+}
+.visibilityProperty span:nth-child(2){
+    visibility: hidden;
+}
+.visibilityProperty table{
+    visibility: collapse; border-spacing: 0;
+}
+.visibilityProperty input[type='checkbox']:checked~table{
+    visibility: visible;
+}

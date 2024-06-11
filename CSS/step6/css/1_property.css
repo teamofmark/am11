@@ -1,0 +1,19 @@
+body, ul, dl, dt, dd, figure{
+    margin: 0; padding: 0;
+}
+div{
+    margin-bottom: 30px;
+}
+.displayProperty span:nth-child(1){
+    display: block; width: 50%; background-color:#fc9393;
+}
+.displayProperty span:nth-child(2){
+    display: inline-block; width: 25%; background-color: #94fc93;
+}
+.displayProperty span:nth-child(3){
+    display: inline; width: 75%; background-color: #93c5fc;
+}
+.displayProperty span:nth-child(4){
+    display: none; background-color: deeppink;
+    /* ! none = 대상이 보이지 않는다. (Render 자체가 안된다.) */
+}

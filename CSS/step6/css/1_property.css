@@ -84,3 +84,20 @@ div{
     content-box : box in width + padding + border = width
     border-box : width = box in width - (padding + border)
 */
+.shadowProperty h1{
+    text-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+    /* ? text-shadow: [xAxis] [yAxis] [blur] [color]*/
+}
+.shadowProperty b{
+    text-shadow: 0px 0px 10px rgba(0,255,0,0.8);
+}
+.shadowProperty p{
+    width:300px; height:300px; border: 3px solid #f00;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 5px rgba(30,0,0,0.5);
+    /* ? box-shadow: [xAxis] [yAxis] [blur] [spread] [color]*/
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 5px rgba(30,0,0,0.5);
+}

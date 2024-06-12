@@ -60,8 +60,27 @@ div{
     width: 100%;
 }
 .opacityProperty ul li figure figcaption dl dt{
-    font-size: 24px; font-weight: 600; margin-bottom:10px;
+    font-size: 2vw; font-weight: 600; margin-bottom:10px;
 }
 .opacityProperty ul li figure figcaption dl dd{
-    font-size: 14px; color: limegreen;
+    font-size: 1.25vw; color: limegreen;
 }
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: lightcoral; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+/* ! 너비(높이)가 설정되어있어야만 border-box적용 가능. ex> height: 400px; padding: 50px 0; <- border-box 적용가능 */
+/*
+    content-box 속성은 기본적으로 적용되는(default)값, 안의 공간을 해당 width로 잡고 밖에 padding,border를 추가
+    계산 하여 총 width를 구하는 방식.
+    border-box 속성은 전체 크기를 먼저 width로 잡고 안의 padding, border를 나중에 계산하는 방식
+
+    content-box : box in width + padding + border = width
+    border-box : width = box in width - (padding + border)
+*/

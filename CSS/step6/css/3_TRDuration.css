@@ -1,0 +1,27 @@
+/* 
+    ? transition-duration -> 변환-지속시간
+    ! presetValue (block, none, relative, absolute ...)은 적용 불가.
+    * 무조건 수치화 되어있는 값만 변경 가능.
+*/
+body{
+    margin: 0;
+}
+.durationEX1{
+    width:100px; height:100px; background-color: #ff0; transition-duration: 2s;
+}
+.durationEX1:hover{
+    width:200px; height:200px;
+}
+.durationEX1:active{
+    background-color: #f00;
+}
+.durationEX2{
+    width: 200px; height: 200px; font-size: 16px; background-color: #ff6a00;
+    padding: 30px; line-height: 32px; transition-duration: 2s;
+}
+.durationEX2:hover{
+    padding: 10px; font-size: 12px; line-height: 16px;
+}
+.durationEX2:active{
+    padding: 30px; font-size: 16px; line-height: 32px;
+}

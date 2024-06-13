@@ -41,3 +41,19 @@ ul{
 .delay2 ul:hover li:nth-child(4){background-color: slategrey;}
 .delay2 ul:hover li:nth-child(5){background-color: yellow;}
 .delay2 ul:hover li:nth-child(6){background-color: seagreen;}
+
+.delay3 ul{
+    height: 300px; background-color: #000;
+}
+.delay3 ul:after{
+    content: ''; display: block; clear: both;
+}
+.delay3 ul li{
+    display: block; float: left; width: 20%; height: 0; transition-duration: 2s;
+}
+.delay3 ul li:nth-child(1){transition-timing-function: ;}
+.delay3 ul li:nth-child(2){transition-timing-function: ;}
+.delay3 ul li:nth-child(3){transition-timing-function: ;}
+.delay3 ul li:nth-child(4){transition-timing-function: ;}
+.delay3 ul li:nth-child(5){transition-timing-function: ;}
+/* ? https://cubic-bezier.com */

@@ -19,3 +19,25 @@ ul{
 .delay1 span:nth-child(3){transition-delay: 2s;}
 .delay1 span:nth-child(4){transition-delay: 3s;}
 .delay1 span:nth-child(5){transition-delay: 4s;}
+
+.delay2 ul:after{
+    content: ''; display: block; clear: both;
+}
+.delay2 ul li{
+    display: block; width: 33.33%; float: left; height: 200px; transition-duration: 2s;
+}
+.delay2 ul:hover li{width: 50%;}
+.delay2 ul li:nth-child(1){transition-delay: 0s;background-color: lightcoral;}
+.delay2 ul li:nth-child(2){transition-delay: 0.5s;background-color: lightgreen;}
+.delay2 ul li:nth-child(3){transition-delay: 1s;background-color: lightskyblue;}
+.delay2 ul li:nth-child(4){transition-delay: 1.5s;background-color: lightslategrey;}
+.delay2 ul li:nth-child(5){transition-delay: 2s;background-color: lightyellow;}
+.delay2 ul li:nth-child(6){transition-delay: 2.5s;background-color: lightseagreen;}
+
+/* todo. 마우스 오버 상태 일때 배경색도 바꿔 보기 */
+.delay2 ul:hover li:nth-child(1){background-color: coral;}
+.delay2 ul:hover li:nth-child(2){background-color: green;}
+.delay2 ul:hover li:nth-child(3){background-color: skyblue;}
+.delay2 ul:hover li:nth-child(4){background-color: slategrey;}
+.delay2 ul:hover li:nth-child(5){background-color: yellow;}
+.delay2 ul:hover li:nth-child(6){background-color: seagreen;}

@@ -51,9 +51,13 @@ ul{
 .delay3 ul li{
     display: block; float: left; width: 20%; height: 0; transition-duration: 2s;
 }
-.delay3 ul li:nth-child(1){transition-timing-function: ;}
-.delay3 ul li:nth-child(2){transition-timing-function: ;}
-.delay3 ul li:nth-child(3){transition-timing-function: ;}
-.delay3 ul li:nth-child(4){transition-timing-function: ;}
-.delay3 ul li:nth-child(5){transition-timing-function: ;}
+.delay3 ul:hover li{
+    height: 300px;
+}
+.delay3 ul li:nth-child(1){transition-timing-function: cubic-bezier(0,.98,0,.98); background-color:lightcoral;}
+.delay3 ul li:nth-child(2){transition-timing-function: cubic-bezier(0,1.04,1,-0.01); background-color: lightgreen;}
+.delay3 ul li:nth-child(3){transition-timing-function: cubic-bezier(1,0,1,-0.01); background-color: lightskyblue;}
+.delay3 ul li:nth-child(4){transition-timing-function: cubic-bezier(1,0,0,1); background-color: lightgoldenrodyellow}
+.delay3 ul li:nth-child(5){transition-timing-function: cubic-bezier(1,.43,0,.63); background-color: lightpink;}
 /* ? https://cubic-bezier.com */
+/* ! 가속도 사용시 지나친 duration은 구현에 지장을 준다. */

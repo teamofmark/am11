@@ -1,6 +1,5 @@
 body{
-    width: 200px; margin: 200px auto;
-    /* perspective */
+    width: 200px; margin: 200px auto; perspective: 300px;
 }
 div{
     width: 200px; height: 200px; position: relative;

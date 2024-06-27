@@ -26,5 +26,27 @@
         max-width: 120px;
     }
     /* ? CI figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') left top / cover no-repeat;
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; width: 100px; padding: 30px 0 25px 3px; border: 3px solid white;
+        border-radius: 55px;  font-size: 45px; color: white; margin: 0 auto 30px;
+    }
+    section.videoArea h2{
+        font-size: 16px; font-weight: 900; color: white; text-align: center;
+    }
+    /* todo. expertise 완성해보기 */
+    /* 
+        * 1. global - font, guide 설정 셋팅하기.
+        * 2. 첫 title(h2), 첫 문단(p), 구분선(hr)-module
+        * 3. list 처리
+        *   3-1. float 배치 (afterCancel)
+        *   3-2. border 처리
+        *   3-3. background-image 처리
+        *   3-4. 부제(h3), 관련문단(p) 처리
+    */
 }
 /* ?desktop */

@@ -91,5 +91,26 @@
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center; color: white;
         padding: 70px 0;
     }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    }
+    section.teamArea p{
+        font-size: 14px;
+    }
+    section.teamArea p:first-of-type{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea hr{
+        border-color: rgba(255,255,255,0.2); max-width: 50px;
+        /* ! 공용 규격(guide:940px)을 사용 할 수 없기 때문에 발생된 max-width. */
+    }
+    /* todo list 배치해보기 */
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamArea ul li figure{
+        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        padding-top: 230px;
+    }
 }
 /* ?desktop */

@@ -151,6 +151,25 @@
         /* float: right; display: inherit; line-height: 22px; */
     }
     /* todo. worksArea ul li floating */
-    
+    section.worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.worksArea ul li{
+        width: 16.66%; float: left;
+    }
+    section.worksArea ul li *{
+        display: block;
+    }
+    section.worksArea ul li a img{
+        width: 100%;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* ? worksArea Fin */
+
 }
 /* ? desktop */  

@@ -145,7 +145,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/ 728px; margin: 0 auto 70px;
         position: relative;
     }
     section.worksArea h2 a{
@@ -183,7 +183,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*770px*/728px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; font-weight: 400; line-height: 26px;
     }
@@ -198,7 +198,7 @@
     }
     /* * thumbNailPager진행전 */
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/ 728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -207,7 +207,7 @@
         font-size: 22px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/41%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;

@@ -211,6 +211,7 @@
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px; box-sizing: border-box;
         border-bottom: 1px solid #f0f2f7; width: 100%; position: relative; top: 33px;
+        text-transform: uppercase;
     }
     .contentArea aside fieldset legend a{
         color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
@@ -255,9 +256,32 @@
     .contentArea aside fieldset input[type='checkbox']:checked + label{
         background-image: url('../images/on_check.png');
     }
+    /* ? aside Fin */
 
     .contentArea section{
         width: 74.35%; margin-left: 2.58%; float: left;
+    }
+    .contentArea section h3{
+        display: none;
+    }
+    .contentArea section ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .contentArea section ul li{
+        float: left; display: block; width: 31%; background-color: white; border-radius: 10px;
+        margin: 0 0 30px 3.5%;
+    }
+    .contentArea section ul li:nth-child(5){
+        width: 65.5%;
+    }
+    .contentArea section ul li:nth-child(1),
+    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(6),
+    .contentArea section ul li:nth-child(9){
+        margin-left: 0;
+    }
+    .contentArea section ul li figure img{
+        width: 100%; border-radius: 10px; display: block;
     }
 }
 /* ? desktop */

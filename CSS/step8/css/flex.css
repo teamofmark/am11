@@ -174,7 +174,7 @@
 }
 .flexContainer.flexShortHand .flexItem:first-of-type{
     /* case.1 grow 변형을 확인하기 위해서는 basis를 끈다. */
-    /* flex-grow: 2; flex-basis: 0; */
+    /* flex-grow: 2; flex-basis: 0;  -> flex: 2;*/
     flex-shrink: 2; flex-basis: 150px;
 }
 .flexContainer.flexShortHand .flexItem:first-of-type~*{

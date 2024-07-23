@@ -156,3 +156,12 @@
 .flexContainer.alignSelf .flexItem:nth-of-type(2){
     line-height: 100px;
 }
+.flexContainer.orderItem .flexItem.order1{
+    order: 2; background-color: lightgreen; color: green; font-weight: bold;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: -1; background-color: lightpink; color: deeppink; font-weight: bold;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 1; background-color: lightblue; color: midnightblue; font-weight: bold;
+}

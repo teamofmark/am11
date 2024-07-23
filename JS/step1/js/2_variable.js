@@ -58,3 +58,8 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// case. 1 변수 선언
+var userName;
+// javascript -> ECMA script 6(let , const)
+userName = "Mark";
+userName = "Jang";

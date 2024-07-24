@@ -63,3 +63,25 @@ var userName;
 // javascript -> ECMA script 6(let , const)
 userName = "Mark";
 userName = "Jang";
+
+// case. 2 동시선언 및 초기화
+var radius, pi;
+radius = 10, pi = 3.14159265;
+
+// case. 3 변수의 특성
+var cup = 'Coffee';
+cup = 'Green Tea';
+cup = 'Water';
+document.write('Drink' + cup + '..!');
+
+// case. 4 연산자 사용시
+var numbValue = 10;
+// numbValue = numbValue + 20;
+numbValue += 20;
+console.log(numbValue);
+
+// case. 5 자신의 나이를 변수에 담고 출력하되, 20년 뒤 나이도 연산해서 출력해보자.
+var cliAge = 43;
+console.log("나의 나이는 현재 " + cliAge + "세 이고,");
+cliAge+=20;
+console.log("20년 뒤에는 " + cliAge + "세 이다.");

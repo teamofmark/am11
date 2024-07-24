@@ -46,3 +46,9 @@ function forcedString2(){
     ? .toFixed()
     * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
 */
+function stringNumb(){
+    var test1 = 15;
+    console.log('형변환 전 :' + typeof(test1) + ' = ' + test1);
+    var result = String(test1); //? 전역함수 String 안에 재료(변수) 전달.
+    console.log('형변환 후 :' + typeof(result) + ' = ' + result);
+}

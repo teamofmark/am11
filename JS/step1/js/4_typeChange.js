@@ -60,5 +60,16 @@ function stringtoNumb(){
 }
 // case. 5-1 background-color random
 function bgColorRandom(){
-    
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff;
+        //? 0x = 16진 을 의미, = 15*16^3 + 15*16^2 + 15*16^1 + 15*16^0 - 최대수치
+        // ! 2진 표현시 0000 0000 0000 0000 1111 1111 1111 1111 -> 실사용불가 -> 변환
+        console.log(bgColor);
+        bgColor = parseInt(bgColor);
+        console.log(bgColor);
+        bgColor = bgColor.toString(16); //? 10이상 a ~ 15일 경우 f
+        console.log(bgColor);
+        document.querySelector("body").style.backgroundColor="#"+bgColor;
+        // $("body").css("background-color","#"+bgColor);
+    },1000);
 }

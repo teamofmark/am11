@@ -52,3 +52,13 @@ function stringNumb(){
     var result = String(test1); //? 전역함수 String 안에 재료(변수) 전달.
     console.log('형변환 후 :' + typeof(result) + ' = ' + result);
 }
+function stringtoNumb(){
+    var test1 = 15;
+    console.log('형변환 전 :' + typeof(test1) + ' = ' + test1);
+    var result = test1.toString(); //? toString은 뒤에 붙혀쓴다.
+    console.log('형변환 후 :' + typeof(result) + ' = ' + result);
+}
+// case. 5-1 background-color random
+function bgColorRandom(){
+    
+}

@@ -92,7 +92,7 @@ function numbString(){
 // todo. 1-1 암시적형변환
 function todo1(){
     var test = 100;
-    var result = test; // todo. 
+    var result = test + ""; // todo. 
     console.log(typeof(result) + " = " + result); //! string = 100
 }
 // todo. 1-2 String 형변환

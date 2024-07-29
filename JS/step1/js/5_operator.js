@@ -71,7 +71,28 @@ function operatorEx(){
 // case.4 연산자가 뒤로 올 경우
 function numberPlusAfter(){
     var number = 10;
-    alert(number++); //? 예상 값 : / 확인 값 : (O/X 표시)
-    alert(number++); //? 예상 값 : / 확인 값 : (O/X 표시)
-    alert(number++); //? 예상 값 : / 확인 값 : (O/X 표시)
+    alert(number++); //? 예상 값 : 11/ 확인 값 : 10(X)
+    alert(number++); //? 예상 값 : 12/ 확인 값 : 11(X)
+    alert(number++); //? 예상 값 : 13/ 확인 값 : 12(X)
+}
+// case.5 연산자가 앞으로 올 경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 예상 값 : 11/ 확인 값 : 11(O)
+    alert(++number); //? 예상 값 : 12/ 확인 값 : 12(O)
+    alert(++number); //? 예상 값 : 13/ 확인 값 : 13(O)
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10;
+    console.log(number++); //? 출력 : / 이후 :  (O/X)
+    console.log(--number); //? 출력 : / 이후 :  (O/X)
+    console.log(++number); //? 출력 : / 이후 :  (O/X)
+    console.log(number--); //? 출력 : / 이후 :  (O/X)
+    console.log(number++); //? 출력 : / 이후 :  (O/X)
+    console.log(++number); //? 출력 : / 이후 :  (O/X)
+    console.log(--number); //? 출력 : / 이후 :  (O/X)
+    console.log(number++); //? 출력 : / 이후 :  (O/X)
+    console.log(++number); //? 출력 : / 이후 :  (O/X)
+    console.log(number); //? 최종 : (O/X)
 }

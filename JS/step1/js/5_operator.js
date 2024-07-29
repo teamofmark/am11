@@ -85,14 +85,14 @@ function numberPlusBefore(){
 // todo. 증감연산자복합.
 function numberPlusTodo(){
     var number = 10;
-    console.log(number++); //? 출력 : / 이후 :  (O/X)
-    console.log(--number); //? 출력 : / 이후 :  (O/X)
-    console.log(++number); //? 출력 : / 이후 :  (O/X)
-    console.log(number--); //? 출력 : / 이후 :  (O/X)
-    console.log(number++); //? 출력 : / 이후 :  (O/X)
-    console.log(++number); //? 출력 : / 이후 :  (O/X)
-    console.log(--number); //? 출력 : / 이후 :  (O/X)
-    console.log(number++); //? 출력 : / 이후 :  (O/X)
-    console.log(++number); //? 출력 : / 이후 :  (O/X)
-    console.log(number); //? 최종 : (O/X)
+    console.log(number++); //? 출력 : 10 / 이후 : 11 (O/X)
+    console.log(--number); //? 출력 : 10 / 이후 : 10  (O/X)
+    console.log(++number); //? 출력 : 11 / 이후 : 11  (O/X)
+    console.log(number--); //? 출력 : 11 / 이후 : 10 (O/X)
+    console.log(number++); //? 출력 : 10 / 이후 : 11 (O/X)
+    console.log(++number); //? 출력 : 12 / 이후 : 12  (O/X)
+    console.log(--number); //? 출력 : 11 / 이후 : 11  (O/X)
+    console.log(number++); //? 출력 : 11 / 이후 : 12  (O/X)
+    console.log(++number); //? 출력 : 13 / 이후 : 13  (O/X)
+    console.log(number); //? 최종 : 13 (O/X)
 }

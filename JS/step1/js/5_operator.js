@@ -96,3 +96,44 @@ function numberPlusTodo(){
     console.log(++number); //? 출력 : 13 / 이후 : 13  (O/X)
     console.log(number); //? 최종 : 13 (O/X)
 }
+// case.6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10, b = 20;
+    var result = a > b;
+    console.log("a > b = " + result);
+}
+// case.7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10, b = 20;
+    var result = a==b;
+    console.log("a == b = " + result);
+}
+// case.8 a변수에는 '여자', b변수에는 '웹디자이너'라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장 후 출력.
+function logicalOperator1(){
+    var a = prompt("성별을입력하세요.");
+    var b = prompt("직업을입력하세요.");
+    var result = (a=="여자")&&(b=="웹디자이너");
+    if(result){
+        alert("조건이 충족됩니다.");
+    }else{
+        alert("조건대상이 아닙니다.");
+    }
+    // console.log("result = " + result);
+}
+// case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔'라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장 후 출력.
+function logicalOperator2(){
+    var a = prompt("성별을입력하세요.");
+    var b = prompt("직업을입력하세요.");
+    var result = (a=="남자")||(b=="웹퍼블리셔");
+    console.log("result = " + result);
+    if(result){
+        alert("조건이 충족됩니다.");
+    }else{
+        alert("조건대상이 아닙니다.");
+    }
+    // console.log("result = " + result);
+}
+// todo. 다음 코드 결과를 확인하고 올바르게 수정하기
+function compareOperator4(){
+    console.log((30>20)&&(20>10));
+}

@@ -49,9 +49,13 @@ function lastDayEx(){
 // todo. 아침?점심?저녁? 먹을시간 알려주기
 function mealTime(){
     var date = new Date();
-    var hour; //todo 1. 현재 시간불러오기
+    var hour = date.getHours(); //todo 1. 현재 시간불러오기
 
-    // todo. 조건 - 내가 아침먹을 조건
-        // todo. 조건 - 내가 점심먹을 조건
-            // todo. 조건 - 내가 저녁먹을 조건
+    if(hour < 11){// todo. 조건 - 내가 아침먹을 조건
+        alert('아침먹을시간');
+    }else if(hour < 15){// todo. 조건 - 내가 점심먹을 조건
+        alert('점심먹을시간');
+    }else{ // todo. 조건 - 내가 저녁먹을 조건
+        alert('저녁먹을시간');
+    }
 }

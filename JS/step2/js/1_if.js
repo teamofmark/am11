@@ -59,3 +59,31 @@ function mealTime(){
         alert('저녁먹을시간');
     }
 }
+// case.3 양,음수판별
+function numbJudgment(){
+    var numb = Number(prompt('숫자를 입력하세요.'));
+    console.log(typeof(numb) + '=' + numb);
+    if(numb > 0){
+        alert("양수입니다!");
+    }else if(numb < 0){
+        alert("음수입니다!");
+    }else{
+        alert('0이거나 올바른 값이 아닙니다.');
+    }
+}
+// todo. 홀,짝수 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요. 홀,짝구분');
+    // * 짝수의 조건 - 짝수의 최소수로 나눈 나머지가 없을 때. / 홀수의 조건 - 짝수의 최소수로 나눈 나머지가 발생될 때.
+    if(numb%2 == 0){
+        // todo.1 짝수입니다! 조건
+        alert('짝수입니다.');
+        
+    }else if(numb%2 == 1){
+        // todo.2 홀수입니다! 조건
+        alert('홀수입니다.');
+    }else{
+        // todo.3 올바른 값을 입력하세요. 조건
+        alert('올바른 값을 입력하세요.');
+    }
+}

@@ -109,3 +109,39 @@ function avgScore(){
     }
 
 }
+// todo. 사용자 id "mark"와 password "1234"를 입력받고 둘 다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = prompt("사용자의 아이디?");
+    var userPW = prompt("사용자의 비밀번호?");
+    if(userID=="Mark"&&userPW=="1234"){
+        // todo. 1 "Mark님으로 확인 되었습니다."
+        alert("Mark님으로 확인 되었습니다.");
+    }else{
+        // todo. 2 "ID 혹은 Password가 틀렸습니다."
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+// ! 간소화
+function userInfoCheck1(){
+    var userID = prompt("사용자의 아이디?");
+    var userPW = prompt("사용자의 비밀번호?");
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴 경우 틀린정보에 대한 오류메시지 출력.
+function userInfoCheck2(){
+    var userID = prompt("사용자의 아이디?");
+    var userPW = prompt("사용자의 비밀번호?");
+    if(userID=="Mark"&&userPW=="1234"){
+        // todo.1 "Mark님으로 확인 되었습니다.";
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" && userID !="1234"){
+        // todo.2 "모든정보가 맞지 않습니다.";
+        alert("모든정보가 맞지 않습니다.");
+    }else if(userID != "Mark"){
+        // todo.3 "ID가 존재하지 않습니다.";
+        alert("ID가 존재하지 않습니다.");
+    }else if(userID !="1234"){
+        // todo.4 "password가 틀렸습니다.";
+        alert("password가 틀렸습니다.");
+    }
+}

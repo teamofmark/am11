@@ -26,8 +26,38 @@ function lotto(){
         case "1" :
             alert("1등 10억!");
             break;
-            //todo  alert("2등 5천만원!");
-            //todo  alert("3등 300만원!");
-            //todo  alert("낙첨되었습니다.");
+        case "2":
+            alert("2등 5천만원!");
+            break;
+        case "3":
+            alert("3등 300만원!");
+            break;
+        default:
+            alert("낙첨되었습니다.");
+            break;
+    }
+}
+// case.3 switch문을 이용한 사칙연산기
+function calculator(){
+    var firstNumb = prompt("첫번째숫자");
+    var operator = prompt("사칙연산자중 하나를 입력(+,-,*,/)");
+    var lastNumb = prompt("두번째숫자");
+    
+    switch(operator){
+        case "+" :
+            alert(firstNumb + operator + lastNumb + "=" + Number(firstNumb + lastNumb));
+            break;
+        case "-":
+            alert(firstNumb + operator + lastNumb + "=" + Number(firstNumb - lastNumb));
+            break;
+        case "*":
+            alert(firstNumb + operator + lastNumb + "=" + Number(firstNumb * lastNumb));
+            break;
+        case "/":
+            alert(firstNumb + operator + lastNumb + "=" + Number(firstNumb / lastNumb));
+            break;
+        default:
+            alert("잘못된 값이 입력되었습니다.");
+            break;
     }
 }

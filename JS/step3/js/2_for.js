@@ -17,3 +17,55 @@ for (var index = 0; index < 10; index++) {
     
 }
 */
+// ! 단일 for
+// case.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 1; i <=10; i++){
+        document.write(i + '. ' + userName,"<br>");
+    }
+}
+// case.2 이름을 1000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+        document.write(i + '. ' + userName,"<br>");
+    }
+}
+// case.3 위 반복을 홀수로만
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i<=1000; i+=2){
+        document.write(i + '. ' + userName,"<br>");
+    }
+}
+// todo. 1-10까지 출력되는 반복문을 다양한 형태로 만들어보자.(수량제한없음)
+function answer1(){
+    for(var i = 1; i<=10; i++){
+        document.write(i+"<br>");
+    }
+}
+function answer2(){
+    for(var i = 1; i<=10; i+=2){
+        document.write(i+"<br>");
+        document.write((i+1)+"<br>");
+    }
+}
+function answer3(){
+    for(var i = 100; i<110; i++){
+        document.write((i-99) + "<br>");
+    }
+}
+function answer4(){
+    for(var i = 10; i>=i; i--){
+        document.write((11-i) + '<br>');
+    }
+}
+// case.4 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력하라.
+function favorFruit(){
+    var array = ["복숭아","자두","딸기"];
+    for(var i = 0; i < array.length; i++){
+        console.log(array.length);
+        alert(array[i]);
+    }
+}

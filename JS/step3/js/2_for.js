@@ -119,3 +119,61 @@ function reverseFavorFruit(){
         document.write(array[i]);
     }
 }
+// case. 6 continue
+function forContinue(){
+    for(var i = 0; i<10; i++){
+        continue;
+        document.write(i+'<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// case. 7 continue 활용
+function continueEx(){
+    var text = '';
+    for(var i = 0; i<10; i++){
+        if(i%2==0){
+            continue;
+        }
+        text = text + i;
+    }
+    console.log(text);
+}
+// todo. continue 문제 - 1부터 10까지 짝수만 누적총합 출력.
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i<=10; i++){
+        if(i%2==1){
+            continue;
+        }
+        output += i; // (2,6,12,20,30)
+        console.log(output);
+    }
+}
+// case. 8 break
+function forBreak(){
+    for(var i = 1; i<=10; i++){
+        break;
+        document.write(i + "<br>");
+    }
+    document.write('최종 i =' + i + '<br>');
+}
+// case. 9 break 활용
+function breakEx(){
+    var i = 0;
+    while(i<6){
+        if(i==3){
+            break;
+        }
+        i += 1;
+    }
+    console.log(i);
+}
+// todo. break 문제
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속반복할까?')){
+            break;
+        }
+    }
+}

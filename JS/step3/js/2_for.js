@@ -112,3 +112,10 @@ function arrayFor2(){
     }
 
 }
+// case. 5 역반복배열
+function reverseFavorFruit(){
+    var array = ["복숭아","자두","딸기","수박","메론","사과"];
+    for (var i = array.length-1; i >= 0; i--){
+        document.write(array[i]);
+    }
+}

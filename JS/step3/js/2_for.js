@@ -193,5 +193,40 @@ function halfPyramid(){
 }
 //*todo.1 역반절 피라미드
 function reverseHalfPyramid(){
-    
+    var star = '';
+    for(var i = 10; i>=1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 2 완성형피라미드 - 내일까지
+function pyramid(){
+    var star = '';
+    for(var i;){
+        for(var e;){
+            star += '&nbsp;';
+        }
+        for(var s;){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+function pyramidEx(){
+    for(var i = 0; i < 10; i++){
+        for(var j = 9; j > i; j--){
+            document.write('&nbsp;');
+        }
+        for(var j = 0; j <= i; j++){
+            document.write('*');
+        }
+        for(var j = 1; j <= i; j++){
+            document.write('*');
+        }
+        document.write("<br>");
+    }
 }

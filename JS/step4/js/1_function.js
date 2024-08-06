@@ -47,3 +47,26 @@ function sumParam(num1,num2){
     * 단, arguments는 array와 비슷해보이지만 length를 구하는 방식을 제외하고는 array와는 다르다.
     * 필요에 따라 array로 추가 변환하여 사용 할 수 있다.
 */
+function sumAll(){
+    console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for(var i = 0; i < arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
+}
+// !ES
+function sumAllEx(){
+    console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for(var i in arguments){
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// case.5 "자신의 이름"의 나이는 "자신의 나이" 세 입니다. 를 arguments를 이용해 만들어보기.
+function showInfo(){
+    console.log("index: 0 = " + arguments[0]);
+    console.log("index: 1 = " + arguments[1]);
+    alert(arguments[0] + "의 나이는" + arguments[1] + "세 입니다.");
+}

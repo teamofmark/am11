@@ -96,3 +96,65 @@ console.log(value);
 alert(value);
 document.write(value);
 */
+// todo. 무한루프를돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// ! 단, 입력값이 0이면 즉시 실행을 멈추게 한다.
+function infiniteSum(){
+    // ? 선언부 총합 담을변수, 실행 횟수 변수
+    var sum = 0;
+    var count = 1;
+    // ? 무한반복문
+    while(true){
+        // ? 입력받는 변수
+        var value = parseInt(prompt("숫자만입력해라."));
+        // ? 중단조건문
+        if(value == 0){
+            // ? 중단 메시지 출력문
+            document.write("종료");
+            // ? 중단 명령
+            return;
+        }
+        // ? 총합에 입력받는 변수 더하기
+        sum += value;
+        // ? 누적 총합 출력 (실행 횟수 +"."+총합+"<br>");
+        document.write(count + '. ' + sum + '<br>');
+        // ? 실행횟수 증가 
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}
+// case. 8 x단 출력을 함수로 만들기
+function printGugudan(numb){
+    var data = '';
+    for(var i = 2; i<= numb; i++){
+        data += i + '단 출력' + "<br>";
+        for(var m = 1; m <= numb; m++){
+            data += i + 'x' + m + " = " + (i*m) + "<br>";
+        }
+        data += "<br>";
+    }
+    return data;
+}
+// todo. 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 계산기 함수 만들기
+
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op, numb1, numb2){
+    
+}
+document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");

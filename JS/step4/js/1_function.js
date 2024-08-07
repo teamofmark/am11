@@ -198,33 +198,50 @@ document.write(div(20, 10) + "<br>");
 function calculator2(op,numb1,numb2){
     var result = '';
     switch(op){
-        case "+":
-            result = ;
+        case "+" :
+            result = add(numb1,numb2);
             break;
-        case "-":
-            result = ;
+        case "-" :
+            result = sub(numb1,numb2);
             break;
-        case "*":
-            result = ;
+        case "*" :
+            result = mul(numb1,numb2);
             break;
-        case "/":
-            result = ;
+        case "/" :
+            result = div(numb1,numb2);
             break;
         default:
-            result = "잘못된 연산자입니다.";
+            result = "잘못된 연산자 입니다.";
             break;
     }
     return result;
 }
-function add(){
-
+function add(numb1,numb2){
+    return numb1 + numb2;
 }
-function sub(){
-
+function sub(numb1,numb2){
+    return numb1 - numb2;
 }
-function mul(){
-
+function mul(numb1,numb2){
+    return numb1 * numb2;
 }
-function div(){
+function div(numb1,numb2){
+    return numb1 / numb2;
+}
 
+// case. 9 함수를 변수에 담기
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+
+// case. 10 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log("Hello.");
+}
+function hi2(){
+    console.log("안녕하세요.");
+}
+function execute(func){
+    func();
 }

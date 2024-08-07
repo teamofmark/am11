@@ -151,10 +151,80 @@ function printGugudan(numb){
     결과 = 잘못된 연산자 입니다.
 */
 function calculator(op, numb1, numb2){
-    
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자입니다.";
+            break;
+    }
+    return result;
 }
+/*
 document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
 document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
 document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
 document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
 document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+*/
+// todo. 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+/* 
+//* 실행구문
+document.write(calculator2("+", 20, 10) + "<br>");
+document.write(add(20, 10) + "<br>");
+document.write(sub(20, 10) + "<br>");
+document.write(mul(20, 10) + "<br>");
+document.write(div(20, 10) + "<br>");
+*/
+/*
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
+function calculator2(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = ;
+            break;
+        case "-":
+            result = ;
+            break;
+        case "*":
+            result = ;
+            break;
+        case "/":
+            result = ;
+            break;
+        default:
+            result = "잘못된 연산자입니다.";
+            break;
+    }
+    return result;
+}
+function add(){
+
+}
+function sub(){
+
+}
+function mul(){
+
+}
+function div(){
+
+}

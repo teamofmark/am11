@@ -245,3 +245,27 @@ function hi2(){
 function execute(func){
     func();
 }
+// case. 11 button click시 parameter로 넘긴 함수 실행하기
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+$(document).ready(function(){
+   $("#runEx11").click(welcome);
+});
+// case. 12 1초마다 매개변수값으로 넘긴 익명함수 실행
+function loopStart(){
+    // ? setInterval([function],[interval]);
+    setInterval(function(){
+        document.write("hi? hello!");
+    },1000);
+}
+// todo. 기명함수를 매개변수로 전달받아 반복 호출하기
+function justFunction(){
+    document.write('hello! world.','<br>');
+}
+function callFunctionTenTimes(otherFunc){
+    for (var i = 0; i < 10; i++){
+        otherFunc();
+    }
+}
+// 실행구문 : callFunctionTenTimes(justFunction); -> document.write가 열번 실행되야함.

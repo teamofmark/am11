@@ -269,3 +269,12 @@ function callFunctionTenTimes(otherFunc){
     }
 }
 // 실행구문 : callFunctionTenTimes(justFunction); -> document.write가 열번 실행되야함.
+
+// case. 13 return value로 함수 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();

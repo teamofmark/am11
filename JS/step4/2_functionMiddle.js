@@ -66,6 +66,7 @@ function calculatorCallBack(op,numb1,numb2,callBack){
             break;
         }
     }
+    callBack(result);
 };
 function add(numb1,numb2){
     return numb1 + numb2;
@@ -78,4 +79,48 @@ function mul(numb1,numb2){
 }
 function div(numb1,numb2){
     return numb1 / numb2;
+}
+function addPrint(value){
+    document.write("두 수의 합은"+ value);
+}
+function subPrint(value){
+    document.write("두 수의 차는"+ value);
+}
+function mulPrint(value){
+    document.write("두 수의 곱은"+ value);
+}
+function divPrint(value){
+    document.write("두 수의 나누기는"+ value);
+}
+// case. 4 return 대신 callBack?
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write('두 수 합 : ' + result);
+
+function sum1(numb1, numb2, callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function resultFunc(value){
+    document.write("두 수 합 : " + value);
+}
+sum1(10,20,resultFunc);
+// ? 그렇지 않다. 구현부와 처리부가 나눠져있지 않은 상태 일때 단순 value 전달은 return이 훠어얼씬 편하다.
+
+// case. 5 동기와 비동기처리
+// ? 동기(sync) - 함수 호출 이후 끝날 때 까지 다음 구문이 수행 되지 않은 처리 형태.
+function sync(){
+    alert('hi');
+    document.write('EndAlert');
+    console.log('End Alert & write');
+}
+// ? 비동기(async) - 함수 호출 이후 끝나는 여부와 상관없이 다음 구문이 수행 될 수 있는 처리 형태.
+function async(){
+    var count = 1;
+    setInterval(function(){
+        document.write('2. Count = ' + count + '<br>');
+    },3000);
+    document.write('1. setInterval동작과 상관없이 바로 수행.',"<br>");
 }

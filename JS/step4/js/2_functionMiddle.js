@@ -165,3 +165,18 @@ function start(){
         document.write(count,'<br>'); //? 5. 계속 1초마다 증가되는 (사용중인) count가 출력.
     },1000);
 } //? 5. start함수가 종료되어도 삭제되지 않고 계속 유지되면서 값이 이어져 간다. (closure)
+
+// case. 8 익명함수 이용한 클로저
+function outerFunction(name){
+    var output = 'hello' + name + '..!';
+    return function(){
+        return output;
+    }
+}
+var first = outerFunction("Mark");
+var second = outerFunction("JavaScript");
+/*
+    ! closure를 사용하면 좋은 것?
+    * 연관성 있는 변수와 기능을 하나의 함수로 묶어놓고 독립적으로 여러개(번)를 실행 시킬 수 있다.
+    ? 함수 내부에 data가 만들어지기 때문에 함수 외부에서 수정할 수 없는 data(private)를 생성 하는 것이 가능하다.
+ */

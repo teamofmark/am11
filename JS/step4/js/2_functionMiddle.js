@@ -124,3 +124,44 @@ function async(){
     },3000);
     document.write('1. setInterval동작과 상관없이 바로 수행.',"<br>");
 }
+// case. 6 closure (클로저-closer(x))
+// ? 함수내부에 만든 지역변수가 죽지 않고 계속해서 값을 유지하고 있는 상태를 유도해내는...
+// 일반함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// 클로저함수
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count ++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
+//? createCount 함수 호출과 동시에 지역변수 count = 0을 초기화 및 생성.
+//? 이후 내부 함수 addcount를 생성. 그것자체를 return 한후 함수 종료.
+//todo. counter();가 실행되면 addCount(); 함수가 실행되는것과 같은 결과.
+/*
+    ? 왜 안죽지?
+    ! createCount 함수가 종료 되더라도 내부함수인 addCount 안에서 createCount의 지역변수인 count를 사용중인 상태.
+    ! 이 상태에서 "외부"로 return 되기때문에 해당 지역변수는 삭제되지 않고 남아있으니(클로저현상)
+    ! addCount(클로저함수) 가 실행 될 때마다 해당 지역변수는 계속 값을 갱신하게 된다.
+*/
+// case. 7 사용주인 함수를 리턴해야만 클로저는 아니다.
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start(); //? 1. start함수 실행
+        document.write("count Start!"); //? 2. 위 함수가 정상 실행 될 경우 문구 출력
+    });
+});
+function start(){
+    var count = 0; //? 3. count 변수 생성 및 초기화.
+    setInterval(function(){
+        count ++; //? 4. start함수 내부 setInterval core 함수가 count 변수를 사용중 인 상태
+        document.write(count,'<br>'); //? 5. 계속 1초마다 증가되는 (사용중인) count가 출력.
+    },1000);
+} //? 5. start함수가 종료되어도 삭제되지 않고 계속 유지되면서 값이 이어져 간다. (closure)

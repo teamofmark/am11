@@ -1,7 +1,8 @@
 $(document).ready(function () {
   $("#btnMoveCircle").click(moveCircle);
   // todo. button click - 함수(detailMoveCircle)실행.
-  $("#btnDetailMove").click(detailMoveCircle);
+    // $("#btnDetailMove").click(detailMoveCircle);
+    detailMoveCircleExt();
 });
 
 // case.1 xAxis 대상움직임
@@ -51,4 +52,34 @@ function detailMoveCircle() {
         }); 
    }
     */
+}
+// todo. 위 완성된 함수를 구조분리 하기
+function detailMoveCircleExt(){
+    var $circle = null;
+    circleInit();
+    $("#btnDetailMove").click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    // ? 값 가져오기 (x,y);
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    // ? 형변환
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+    // ? 움직임함수에 형변환된 값 넘기기
+    circleMovCommand(xpos,ypos);
+}
+function circleMovCommand(xpos,ypos){
+    // ? 움직일지 말지 결정하는 부분
+  if(xpos >= 0 && xpos <= 380 && ypos >= 0 && ypos <= 380){
+    $circle.css({
+      "left": xpos,
+      "top": ypos
+    });
+  }else{
+    alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+  }
 }

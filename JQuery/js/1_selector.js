@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#btnCheck").click(sayHello);
     $("#btnAddBorder").click(addBorder);
     // todo
+    $("#btnTextChange").click(textChange);
 });
 function targetSelect(){
    var $divs = $("div");
@@ -13,4 +14,12 @@ function sayHello(){
 }
 function addBorder(){
     $("#panel").css("border","5px solid black");
+}
+function textChange(){
+    $("#panel2").css({
+        "fontSize": "25px",
+        "color" : "green",
+        "fontWeight" : "bold",
+        "lineHeight" : "31px"
+    });
 }

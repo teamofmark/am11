@@ -3,6 +3,8 @@ $(document).ready(function () {
   // todo. button click - 함수(detailMoveCircle)실행.
     // $("#btnDetailMove").click(detailMoveCircle);
     detailMoveCircleExt();
+    // case.2 key조작을 통해 대상 움직이기
+    keyControl();
 });
 
 // case.1 xAxis 대상움직임
@@ -82,4 +84,18 @@ function circleMovCommand(xpos,ypos){
   }else{
     alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
   }
+}
+// case.2 key입력을받아 대상 움직이기
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    // ? 키가 입력되었을 때....
+    $(document).keydown(function(e){
+        console.log("입력한 키 : " + e.keyCode);
+        // w : 87(Ypos-), s : 83(Ypos+), a : 65(Xpos-), d : 68 (Xpos+)
+        // todo. 각 방향별 키를 입력하였을때 css를 작동시켜 움직이게 만들어오기
+    });
 }

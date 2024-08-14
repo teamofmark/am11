@@ -1,6 +1,8 @@
 $(document).ready(function(){
     // case.1
     toggleCheck();
+    // todo
+    toggleTodo();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -15,6 +17,23 @@ function toggleCheck(){
         }else{
             // todo
             $checkTarget.text("check_box_outline_blank");
+        }
+    });
+}
+function toggleTodo(){
+    // ? attr변경방법 - 대상.attr(); = attr([attrName],[attrValue]);
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var $toggleInput = $("#userPW");
+    var toggleStatus = false;
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $toggleTarget.text('visibility');
+            $toggleInput.attr("type","text");
+        }else{
+            $toggleTarget.text('visibility_off');
+            $toggleInput.attr("type","password");
+
         }
     });
 }

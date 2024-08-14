@@ -33,7 +33,6 @@ function toggleTodo(){
         }else{
             $toggleTarget.text('visibility_off');
             $toggleInput.attr("type","password");
-
         }
     });
 }

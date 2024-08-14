@@ -31,6 +31,22 @@
             position: absolute; right: 10px; top: 5px; z-index: 10; display: block;
             cursor: default;
         }
+        .tabMenu{
+            display: flex; flex-flow: row nowrap; padding: 0;
+        }
+        .tabMenu li{
+            width: 33.33%; list-style: none; text-align: center; background-color: black;
+            color: white; border: 1px solid black; cursor: pointer;
+        }
+        .tabMenu li.activated{
+            background-color: white; color: black;
+        }
+        .tabPage{
+            border: 1px solid black; padding: 20px; margin-bottom: 50px; display: none;
+        }
+        .tabPage.activated{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -48,5 +64,15 @@
             <span class="material-icons toggleVisible">visibility_off</span>
         </form>
     </div>
+    <!-- case.2 tabPage 만들어보기 -->
+    <!-- (ul.tabMenu>li{tab$}*3)+#tab$.tabPage{tabPage$}*3 -->
+    <ul class="tabMenu">
+        <li data-tabNumb="tab1" class="activated">tab1</li>
+        <li data-tabNumb="tab2">tab2</li>
+        <li data-tabNumb="tab3">tab3</li>
+    </ul>
+    <div id="tab1" class="tabPage activated">tabPage1</div>
+    <div id="tab2" class="tabPage">tabPage2</div>
+    <div id="tab3" class="tabPage">tabPage3</div>
 </body>
 </html>

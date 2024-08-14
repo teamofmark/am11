@@ -14,6 +14,7 @@ function toggleCheck(){
             $checkTarget.text("check_box");
         }else{
             // todo
+            $checkTarget.text("check_box_outline_blank");
         }
     });
 }

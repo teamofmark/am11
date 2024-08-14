@@ -97,5 +97,38 @@ function keyControl(){
         console.log("입력한 키 : " + e.keyCode);
         // w : 87(Ypos-), s : 83(Ypos+), a : 65(Xpos-), d : 68 (Xpos+)
         // todo. 각 방향별 키를 입력하였을때 css를 작동시켜 움직이게 만들어오기
+        switch(e.keyCode){
+          case 87:
+            currentYpos -= range;
+            break;
+          case 83:
+            currentYpos += range;
+            break;
+          case 65:
+            currentXpos -= range;
+            break;
+          case 68:
+            currentXpos += range;
+            break;
+        }
+        // (currentXpos > 0)? $circle.css("left",currentXpos) : currentXpos = 0;
+        // (currentYpos > 0)? $circle.css("top",currentYpos) : currentYpos = 0;
+        // (currentXpos < 380)? $circle.css("left",currentXpos) : currentXpos = 380;
+        // (currentYpos < 380)? $circle.css("top",currentYpos) : currentYpos = 380;
+        if(currentXpos < 0){
+          currentXpos = 0;
+        }
+        if(currentXpos > 380){
+          currentXpos = 380;
+        }
+        if(currentYpos < 0){
+          currentYpos = 0;
+        }
+        if(currentYpos > 380){
+          currentYpos = 380;
+        }
+        console.log(currentXpos,currentYpos);
+        $circle.css("top", currentYpos);
+        $circle.css("left", currentXpos);
     });
 }

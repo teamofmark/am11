@@ -6,7 +6,7 @@ $(document).ready(function(){
     // case.2
     tabUI();
     // case.3
-    accControl("");
+    accControl(".accComponent li h3");
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -52,3 +52,9 @@ function tabUI(){
         $(activeTab).addClass("activated");
     });
 }
+function accControl(target){
+    $(target).click(function(){
+        $(this).toggleClass("active");
+        // $(this).next().slideToggle();
+    });
+};

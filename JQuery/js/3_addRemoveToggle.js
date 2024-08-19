@@ -40,6 +40,7 @@ function toggleTodo(){
 }
 function tabUI(){
     $(".tabMenu li").click(function(){
+        // todo. 변경된구조로 작동되게 수정하기
         var activeTab = "#" + $(this).attr("data-tabNumb");
         // console.log(activeTab);
         $(".tabMenu li").removeClass("activated");

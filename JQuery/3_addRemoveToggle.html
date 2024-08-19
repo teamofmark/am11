@@ -41,10 +41,10 @@
         .tabMenu li.activated{
             background-color: white; color: black;
         }
-        .tabPage{
+        ul~div{
             border: 1px solid black; padding: 20px; margin-bottom: 50px; display: none;
         }
-        .tabPage.activated{
+        ul~div.activated{
             display: block;
         }
     </style>
@@ -71,8 +71,8 @@
         <li>tab2</li>
         <li>tab3</li>
     </ul>
-    <div id="tab1" class="tabPage activated">tabPage1</div>
-    <div id="tab2" class="tabPage">tabPage2</div>
-    <div id="tab3" class="tabPage">tabPage3</div>
+    <div id="tab1" class="activated">tabPage1</div>
+    <div id="tab2" >tabPage2</div>
+    <div id="tab3" >tabPage3</div>
 </body>
 </html>

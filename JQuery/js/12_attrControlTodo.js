@@ -12,6 +12,17 @@ var currentIndex1 = 0;
 var currentIndex2 = 0;
 
 $(document).ready(function(){
-    // todo. 전역변수에 대상 변수 선언하기
-    // todo. 실행함수 불러오기 
+    init();// todo. 전역변수에 대상 변수 선언하기
+    // todo. 실행함수 불러오기
+    swap($banner1, 1000, currentIndex1); 
+    swap($banner2, 3000, currentIndex2); 
 });
+function init(){
+    $banner1 = $("#banner1");
+    $banner2 = $("#banner2");
+}
+function swap(selector,speed,targetIndex){
+    setInterval(function(){
+        // todo 완성시켜보기
+    },speed);
+}

@@ -33,7 +33,13 @@ function moveCircle(){
         "left": xpos
     });
     // todo. 증가만 하는 수치를 증가와 감소를 반복시켜 사각형 안에 가두기
+    if(xpos > railWidth || xpos < 0){
+        // runStep -> 10(우측) / -10(좌측)
+        runStep *= -1;
+    }
 }
 function moveStop(){
-
+    // ! setInterval 함수는 실행중인 상태이기 때문에 부를 수 없다.
+    clearInterval(timerID);
+    timerID = 0;
 }

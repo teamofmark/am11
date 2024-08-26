@@ -35,8 +35,16 @@ function moveCircle(){
     });
 }
 function scoreCount(){
-
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
 }
+// todo 과제 - 게임 종료 시키기
 function gameEnd(){
-
+    // todo.1 playState가 true로 바뀐 이후 10초후 자동 종료.
+    // todo.2 scoreCount,moveCircle 함수가 바라볼 전역변수(상태) playState 초기화.
+    // todo.3 setInterval 함수 초기화
+    // todo.4 게임종료 알림. 경고창으로 "게임종료. 너의 점수는 xx 점이다."
+    // todo.5 종료알림 확인 누르면 점수 초기화 시키기.
 }

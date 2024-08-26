@@ -4,7 +4,7 @@
     todo. 3 이미지가 계속해서 롤링 될 수 있도록 만들어야함.
     todo. 4 하나의 함수를 활용해 n개의 배너가 동작 할 수 있도록 만들어야 함.
 */
-var logos = ["logo_01.jpg","logo_02.jpg","logo_03.jpg","logo_04.jpg","logo_05.jpg","logo_06.jpg","logo_07jpg","logo_08.jpg"];
+var logos = ["logo_01.jpg","logo_02.jpg","logo_03.jpg","logo_04.jpg","logo_05.jpg","logo_06.jpg","logo_07.jpg","logo_08.jpg"];
 var speed = 0;
 var $banner1 = null;
 var $banner2 = null;
@@ -24,5 +24,12 @@ function init(){
 function swap(selector,speed,targetIndex){
     setInterval(function(){
         // todo 완성시켜보기
+        var imgName = "images/" + logos[targetIndex];
+        targetIndex ++;
+        selector.attr("src", imgName);
+
+        if(targetIndex >= logos.length){
+            targetIndex = 0;
+        }
     },speed);
 }

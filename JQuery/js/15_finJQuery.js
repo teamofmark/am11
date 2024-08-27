@@ -56,7 +56,14 @@ function updateFishPosition(){
     console.log("5. 물고기 움직임 정상.");
 }
 function displayFishPositionInfo(){
-
+    // todo 경기현황판 완성시켜보기
+    var info = "";
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);// todo.1 n번째 물고기 구하기
+        info += i + "번 물고기 : " + $fish.position().left.toFixed(2) + "px <br>";// todo.2 n번째 물고기 : 현재 위치값px <br> 출력부 생성
+    }
+    $info.html(info)// todo.3 위에서 생성된 출력부를 출력.(.html()함수);
+    console.log("6. 물고기 현재 위치 표시 정상.");
 }
 function checkGoalFish(){
 

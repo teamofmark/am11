@@ -93,7 +93,7 @@ function checkGoalFish(){
     }
 }
 function endGame(){
-    // todo. 1 setInteval Kill
-    // todo. 2 setIntervalVariable reset
-    // todo. 3 log ("9. 게임종료.") 출력.
+    clearInterval(timerID);// todo. 1 setInteval Kill
+    timerID = -1;// todo. 2 setIntervalVariable reset
+    console.log("9. 게임 종료.");// todo. 3 log ("9. 게임종료.") 출력.
 }

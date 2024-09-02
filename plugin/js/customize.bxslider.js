@@ -27,6 +27,8 @@ $(function(){
         captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 image위로 보여준다.
     
         // pager - indicator
-        pager: true
+        pager: true,
+        // pagerSelector: '.newPager'
+        pagerCustom: '.customPager'
     });
 });

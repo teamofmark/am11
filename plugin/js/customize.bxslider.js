@@ -24,6 +24,9 @@ $(function(){
         responsive: true, //? default: true. slider자체 반응형 켜기
         
         // attr추출
-        captions: true //? default: false. img's에 title attr을 부여하면 그 부분을 image위로 보여준다.
+        captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 image위로 보여준다.
+    
+        // pager - indicator
+        pager: true
     });
 });

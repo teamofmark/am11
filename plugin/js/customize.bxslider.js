@@ -31,10 +31,10 @@ $(function(){
         // pagerSelector: '.newPager'
         pagerCustom: '.customPager'
     });
-    createCustomPager(".slider");
+    // createCustomPager(".slider");
 });
 function createCustomPager(target){
-    var slideLength = ;// todo. 1 target으로 들어온 .slider의 자손(.children(대상)) li의 갯수를 구하라.
+    // todo. var slideLength = ;  1 target으로 들어온 .slider의 자손(.children(대상)) li의 갯수를 구하라.
     console.log(slideLength); // todo. 2 정확한 수량이 들어오는지 check.
     // todo. 3 대상의 갯수를 이용하여 반복문을 작성
         // todo. 4 .customPager안에 li를 생성(추가)하는 구문을 작성하면 된다.

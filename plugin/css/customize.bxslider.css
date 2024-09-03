@@ -123,3 +123,21 @@
     display: block; font-size: 14px; color: white; text-decoration: none;
     text-align: center;
 }
+
+/* ? autoControls customize */
+.newAutoControls .bx-controls-auto:after{
+    content: ''; display: block; clear: both;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item{
+    width: 50%; float: left;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item a{
+    display: block; text-indent: -9999px; padding: 10px 0; border-width: 0px;
+    border-style: solid; border-color: transparent;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-start{
+
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-stop{
+    
+}

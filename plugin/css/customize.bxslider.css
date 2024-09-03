@@ -1,3 +1,4 @@
+/* ? caption Customize */
 .bx-wrapper .bx-caption {
     position: absolute;
     bottom: 10%;
@@ -21,8 +22,8 @@
 .bx-wrapper .bx-caption:hover span{
     color: mediumspringgreen; cursor: default;
 }
-/* ? pager customize - 1 */
 
+/* ? pager customize - 1 */
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto{
     position: absolute;
@@ -50,6 +51,7 @@
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #9370d8; border: 1px solid #8b008b; padding: 5px; transform: rotate(-45deg);
 }
+
 /* ?pagerSelector customize */
 .newPager .bx-pager.bx-default-pager{
     text-align: center;
@@ -67,6 +69,7 @@
 .newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active{
     font-weight: bold; color: white; background-color: black;
 }
+
 /* ?pagerCustom customize */
 .customPager{
     display: flex; max-width: 1000px; margin: 0 auto 20px; list-style: none;
@@ -86,4 +89,37 @@
 
 .customPager li a img{
     width: 100%; display: block;
+}
+
+/* ? controls Customize - 1 */
+.bx-wrapper .bx-controls-direction a{
+    height: 100%; top: 0; margin-top: 0; background-color: rgba(255,255,255,0.5);
+    transition: background-color .5s ease-out;
+}
+.bx-wrapper .bx-controls-direction a:hover{
+    background-color: rgba(255,255,255,1);
+}
+.bx-wrapper .bx-next{
+    right: 0; background: url('../images/controls_right.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-prev{
+    left: 0; background: url('../images/controls_left.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus{
+    background-position: center; background-image: url('../images/controls_right_hover.png');
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus{
+    background-position: center; background-image: url('../images/controls_left_hover.png');
+}
+
+/* ? controls customize - 2 */
+[class^='btn_']{
+    width: 50px; line-height: 25px; background-color: black; border-radius: 5px;
+    display: inline-block;
+}
+[class^='btn_'] a{
+    display: block; font-size: 14px; color: white; text-decoration: none;
+    text-align: center;
 }

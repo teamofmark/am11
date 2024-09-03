@@ -52,6 +52,8 @@ $(function(){
         autoControlsSelector: '.newAutoControls', //? auto 뼈대 제공 받을 곳
         startText: '시작', //? 생성된 뼈대안에 text 변경
         stopText: '중지'
+
+        // ! carousel - 1장의 영역에 복수 slide를 배치 하기
     });
     createCustomPager(".slider");
 });

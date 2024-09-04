@@ -51,9 +51,27 @@ $(function(){
         autoControlsCombine: false, //? default: false. play/pause button -> toggle(1개) or active(2개)
         autoControlsSelector: '.newAutoControls', //? auto 뼈대 제공 받을 곳
         startText: '시작', //? 생성된 뼈대안에 text 변경
-        stopText: '중지'
+        stopText: '중지',
 
         // ! carousel - 1장의 영역에 복수 slide를 배치 하기
+    
+        maxSlides: 2,//? default : 1. 최대 노출 슬라이드 수.
+        minSlides: 1, //? default : 1 최소 노출 슬라이드 수.
+        slideWidth: 640, //? default : 0. carousel Slide 너비
+        slideMargin: 20, //? default : 0. carousel Slide 간격
+        shrinkItems: true,//? default : false. max/min 기준으로 우측 일부를 남기는 UI 켜고끄기
+        moveSlides: 2, //? default : 1. 전환시 이동할 carousel Slide 수. maxSlides를 초과할 수 없다.
+
+        // * 기타 등등
+        wrapperClass: 'bx-wrapper', //? default: 'bx-wrapper'. 종속된 기본 css를 모두 해제시키고 다른 부모 class를 직접 선언 할 수 있다.
+        preloadImages: 'visible', //? default: 'visible'. slider시작전에 한장(첫장)만 load. / all: slider시작전에 모든 slide image download
+        
+        // ! 비중요
+        keyboardEnabled: true, //? default : false. slider keyboard조작 가능 여부 설정.
+        // ? slideSelector: $(jquerySelector) default: ''. 지정된 요소만 slider로 작동. - ex> ul> li*5 : 4개의 li는 slider, 마지막 li는 그냥 block.
+        // ? useCSS: true default : true. css animation(하드웨어가속) 사용. 켜기(권장)
+        // ? autoDirection: 'next' default: next. 자동전환 방향 설정. 'prev'는 일반적이지 않다.(역방향되감기)
+        
     });
     createCustomPager(".slider");
 });

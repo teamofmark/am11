@@ -96,7 +96,7 @@ $(function(){
         // ! startAuto, stopAuto: 기존 auto로 충분히 대체가 가능.
         // ? getCurrentSlide : 현재 슬라이드 찾기(반환).
         // ? getSlideCount : 슬라이드.length 찾기(반환).
-        // ? redrawSlider : slider . show / hide or display none / block 등의 숨김해제 이후 재생성 할때.
+        // ? redrawSlider : slid    er . show / hide or display none / block 등의 숨김해제 이후 재생성 할때.
         // ? reloadSlider : slider를 다시 불러오기. jquery mediaQuery. (ex> 장치변환시 slider 다시부르기.)
         // ? destroySlider : slider 없애기. (slider 구조도 사라짐.) 
     });

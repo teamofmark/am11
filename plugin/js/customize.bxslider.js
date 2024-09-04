@@ -68,10 +68,37 @@ $(function(){
         
         // ! 비중요
         keyboardEnabled: true, //? default : false. slider keyboard조작 가능 여부 설정.
+            // mobile
+            touchEnabled: false, //? default : true. touchSwipe 켜고 끄기. slide안에 a,button touch대상 있을 땐 false
+            swipeThreshold: 50, //? default : 50. slide touchSwipe할때 인식되는 px 수.
+            oneToOneTouch: true, //? default : true. hori,verti 일 경우 touch상태에서 slide를 끌고 다니는 옵션.
+            preventDefaultSwipeX: true, //? default : true. screen자체에 touch상태에서 x축 움직임을 중지.
+            preventDefaultSwipeY: false //? default : false. screen자체에 touch상태에서 y축 움직임을 중지.
         // ? slideSelector: $(jquerySelector) default: ''. 지정된 요소만 slider로 작동. - ex> ul> li*5 : 4개의 li는 slider, 마지막 li는 그냥 block.
         // ? useCSS: true default : true. css animation(하드웨어가속) 사용. 켜기(권장)
         // ? autoDirection: 'next' default: next. 자동전환 방향 설정. 'prev'는 일반적이지 않다.(역방향되감기)
         
+        //! Accessibility 비사용 - 기본 접근성 보완 사항 준수시.
+        /*
+            ! Callbacks. - 기본 제공 기능 외  detail한 customize가 필요할 때 사용 하면 됨.
+            ! onSliderLoad - slider load 완료 후 실행 할 로직.
+            ! onSliderResize - slider size가 조정 된 직후 실행.
+            ! onSlideNext - slide가 전환 되기 직전 실행.
+            ! onSlidePrev - slide가 전환 된 직후 실행.
+            ! onSlideBefore - slide가 전환되기 전 실행.
+            ! onSlideAfter - slide가 전환된 후 실행.
+            ! onAutoChange - 자동전환이 시작 / 중지 된 직후 실행.
+        */
+        // *Public methods.
+        // ? goToslide : 특정 index 슬라이드로 전환.
+        // ? goToNextSlide : '다음' 슬라이드로 전환. (ex> wheelScroll에 반응하여 다음,이전 작동..)
+        // ? goToPrevSlide : '이전' 슬라이드로 전환. 
+        // ! startAuto, stopAuto: 기존 auto로 충분히 대체가 가능.
+        // ? getCurrentSlide : 현재 슬라이드 찾기(반환).
+        // ? getSlideCount : 슬라이드.length 찾기(반환).
+        // ? redrawSlider : slider . show / hide or display none / block 등의 숨김해제 이후 재생성 할때.
+        // ? reloadSlider : slider를 다시 불러오기. jquery mediaQuery. (ex> 장치변환시 slider 다시부르기.)
+        // ? destroySlider : slider 없애기. (slider 구조도 사라짐.) 
     });
     createCustomPager(".slider");
 });

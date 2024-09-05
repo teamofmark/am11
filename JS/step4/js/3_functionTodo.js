@@ -1,5 +1,6 @@
 $(function(){
     checkCount(checkLimit);
+    
 });
 function checkCount(callBack){
     var count = 0;

@@ -41,14 +41,15 @@ function tabMenu(selector, callBack){ //? 각각의 ul과 callBack함수(tabNInd
         }
         $selectMenuItem = $(selectTab); //? 기존 null을 버리고 click이 일어난 당사자를 넣음
         $selectMenuItem.addClass("select");
+        // todo. callBack 함수 가동해서 카운트 정상 출력되게 만들기 (밑에 있는 callBack함수들)
+        callBack($selectMenuItem); //? 각각의 ul의 click일어난 당사자 담겨서 콜백함수에게 매개변수로 전달되야함
     }
-    // todo. callBack 함수 가동해서 카운트 정상 출력되게 만들기 (밑에 있는 callBack함수들)
-    callBack();
+
 }
 
-function tab1Index(){
-    $("#tabMenu1Index").html(대상.index());
+function tab1Index(selectTab1){
+    $("#tabMenu1Index").html(selectTab1.index());
 }
-function tab2Index(){
-    $("#tabMenu2Index").html(대상.index());
+function tab2Index(selectTab2){
+    $("#tabMenu2Index").html(selectTab2.index());
 }

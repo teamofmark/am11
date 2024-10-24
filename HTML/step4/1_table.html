@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table *{
+            padding: 5px; border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>month / savings Table</caption>
+        <colgroup>
+            <col style="background-color: red; width: 150px;">
+            <col style="background-color: yellow; width: 75px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Sum</th>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+        <!-- ! 선택적 -->
+        <tbody>
+            <tr>
+                <th>January</th>
+                <td>$100</td>
+            </tr>
+            <!-- tr>(th{February})+(td{$80}) -->
+            <tr>
+                <th>February</th>
+                <td>180</td>
+            </tr>
+        </tbody>
+        <!-- ! 필수 -->
+    </table>
+</body>
+</html>

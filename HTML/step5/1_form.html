@@ -12,7 +12,16 @@
             <ul>
                 <li>
                     <label for="userName">사용자 이름 : </label>
-                    <input type="text" id="userName" placeholder="사용자이름">
+                    <!-- ? label : display default - inline = 일반글자와 다르지않음.(부피나규격을가질수없다.) -->
+                    <input type="text" id="userName" placeholder="사용자이름" title="사용자 이름을 입력하세요.">
+                    <!-- ? input : display default  - inline-block = inline+block / 기능을 수행하는 Tag's(img,iframe,video,input...)-->
+                    <!-- ! input의 id는 backEnd가 직접적으로 사용하는 이름이기 때문에 상호협의 필요. -->
+                    <!-- 
+                        * 상식적인 선에서 web상 이름 규칙을 따라야함.
+                        ? 1. 한글,띄어쓰기,특문 사용금지. 맨 앞에 숫자,대문자 사용금지.
+                        ? 2. 영문 키워드 2개이상을 조합해야 함.(programing Language가 선점한 단어 사용 금지)
+                     -->
+                    <!-- todo. label + input 이 가장 좋으나 만약 label을 사용할 수 없는 상황이라면 input에 title attr사용 필수 -->
                 </li>
             </ul>
         </fieldset>

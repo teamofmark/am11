@@ -28,7 +28,7 @@
                     <input type="password" id="userPW">
                 </li>
                 <li>
-                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
                     <label for="btn_radio1">radio1</label>
                     <input type="radio" name="radioGroup" id="btn_radio2">
                     <label for="btn_radio2">radio2</label>
@@ -44,6 +44,34 @@
                     checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다.
                     그리고 cheackbox와는 달리 하나의 항목만 선택 가능하다.
                 -->
+                <li>
+                    <!-- (input:checkbox#btn_chk$+label{check$})*4 -->
+                    <input type="checkbox" id="btn_chk1" checked>
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+                <li>
+                    <label for="comments">하고 싶은 말:</label>
+                    <textarea id="comments" cols="30" rows="20"></textarea>
+                </li>
+                <li>
+                    <label for="selectJob">직업 선택 : </label>
+                    <select id="selectJob">
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                </li>
             </ul>
         </fieldset>
         <fieldset>

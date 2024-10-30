@@ -73,17 +73,55 @@
                     </select>
                 </li>
                 <li>
-                    <input type="image" src="" alt="">
-                    <input type="button" value="">
+                    <input type="image" src="https://via.placeholder.com/150x50?text=button" alt="imgButton">
+                    <input type="button" value="열기">
+                    <!-- 닫기,불러오기,삭제(interaction-popup,panel...) - R -->
                     <input type="file">
-                    <input type="submit" value="">
-                    <input type="reset" value="">
-                    <button></button>
+                    <input type="submit" value="전송">
+                    <!-- 전송기능 - 반드시 form안에 있어야함. C,D,U -->
+                    <input type="reset" value="취소">
+                    <!-- 취소기능  - 캐싱무효화 - 흔적도없이 사라지게-->
+                    <button type="button"><mark>만능버튼</mark></button>
+                    <!-- 
+                        만능버튼(input에 한하여) - 맨 마지막에 태어난 버튼.
+                        1. 유일한 markup button
+                        2. 모든 타입을 소화 한다.(file타입은 제외)
+                        3. 기본명령 - 전송(submit)
+                    -->
                 </li>
             </ul>
         </fieldset>
+    </form>
+    <form>
         <fieldset>
             <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <label for="userEmail">이메일 : </label>
+                    <input type="email" id="userEmail">
+                </li>
+                <li>
+                    <label for="userURL">웹사이트 : </label>
+                    <input type="url" id="userURL">
+                </li>
+                <li>
+                    <label for="cellNumb">전화번호 : </label>
+                    <input type="tel" id="cellNumb">
+                </li>
+                <li>
+                    <label for="qtyNumb">수량 : </label>
+                    <input type="number" id="qtyNumb" min="10" max="100" step="10" value="10">
+                </li>
+                <li>
+                    <label for="sizeSet">사이즈 : </label>
+                    <input type="range" id="sizeSet" min="-2" max="2" step="1" value="0">
+                </li>
+                <li>
+                    <label for="typeDate">연,월,일 선택 : </label>
+                    <input type="date" id="typeDate">
+                </li>
+            </ul>
+            <input type="submit" value="전송">
         </fieldset>
     </form>
 </body>

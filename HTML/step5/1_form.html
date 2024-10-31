@@ -120,6 +120,33 @@
                     <label for="typeDate">연,월,일 선택 : </label>
                     <input type="date" id="typeDate">
                 </li>
+                <li>
+                    <label for="typeDateTime">연,월,일,시,분 선택 : </label>
+                    <input type="datetime-local" id="typeDateTime">
+                </li>
+                <li>
+                    <label for="typeTime">시간 선택 : </label>
+                    <input type="time" id="typeTime">
+                </li>
+                <li>
+                    <label for="typeMonth">월 선택 : </label>
+                    <input type="month" id="typeMonth">
+                </li>
+                <li>
+                    <label for="typeWeek">주 선택 : </label>
+                    <input type="week" id="typeWeek">
+                </li>
+                <li>
+                    <label for="searchField">검색 : </label>
+                    <input type="search" id="searchField" maxlength="8" enabled>
+                    <!-- autofocus : 자동초점 지정. 한화면에 하나만, 접근성간섭여부 따져 배치. -->
+                    <!-- ! readonly - 단 한번이라도 저장이 된 적있는 data를 R(O) / U(X) readonly=false / attrRemove-->
+                    <!-- ! disabled - 단 한번도 전송이 되어서는 안됨. (ex> n 중에 1) / counter : enabled -->
+                </li>
+                <li>
+                    <label for="typeColor">색상선택 : </label>
+                    <input type="color" id="typeColor">
+                </li>
             </ul>
             <input type="submit" value="전송">
         </fieldset>

@@ -74,5 +74,42 @@
         <li>User <bdi>jdoe</bdi>: 80 points</li>
         <li>User <bdi>إيان</bdi>: 90 points</li>
     </ul>
+    <form action="demo_keygen.asp" method="get">
+        Username: <input type="text" name="security">
+        Encryption: <keygen name="security">
+        <input type="submit" value="confirm">
+    </form>
+    <!-- Key - 보안키 / 공개키 -->
+    <main>
+        <h1>Web Browser's</h1>
+        <p>Google Chrome, Firefox, and Internet Explorer are the most used browser's today</p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open-source webBrowser developed by Google,
+                released in 2008.
+            </p>
+        </article>
+    </main>
+    <!-- 
+        각 page 에 mainSector 일 경우 사용 가능. / mainPage에서만 사용함 (body > 첫번째자손)
+    -->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0 <input type="range" id="a" value="50" min="0" max="100" step="1"> 100
+        +
+        <input type="number" id="b" value="50" min="1" max="100" step="1">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!-- IE9이하, safari 지원불가 -->
+    <input type="text" list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CRs</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <dialog open>This is an open dialog window</dialog>
 </body> 
 </html>

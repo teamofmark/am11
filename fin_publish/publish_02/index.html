@@ -12,26 +12,77 @@
         <div>
             <label for="mui" class="material-icons">menu</label>
             <h1>
-                <a href="">
-                    <img src="" alt="">
+                <a href="/">
+                    <!-- ? / : 최상위경로(root) - publish-> index.html / 개발자와협의후 작성 -->
+                    <img src="images/logo.png" alt="welcome to portland">
                 </a>
             </h1>
-            <input type="checkbox" name="" id="mui">
+            <input type="checkbox" id="mui">
             <nav>
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Devices</a></li>
+                    <li><a href="#">Delivery &amp; Payment</a></li>
+                    <li><a href="#">Guarantee</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <!-- ? publish-> 해당파일명.html / 개발자와협의후 작성 (ex> list_****.jsp)-->
                 </ul>
             </nav>
             <div>
-                <strong></strong>
-                <span></span>
-                <input type="button" value="">
+                <strong>Cart</strong>
+                <span>+99</span>
+                <input type="button" value="SIGN IN">
             </div>
         </div>
     </header>
+    <!-- ?header Fin -->
+    <!-- todo nav>div>(ul>li*6>a)+input:search -->
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Top Sales</a></li>
+                <li><a href="#">Brand Focus</a></li>
+                <li><a href="#">Hi-tech</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <input type="search" placeholder="I’m looking for ..." title="input ur searchKeyword">
+        </div>
+    </nav>
+    <!-- ?slider Nav 완성 -->
+    <section>
+        <h2>slider Sector</h2>
+        <!-- validation pass - h / 배경용-->
+        <div>
+            <!-- 컨텐츠 가두기 -->
+            <a href="#">&lt;</a>
+            <a href="#">&gt;</a>
+            <!-- todo.1 controler(화살표) x 2 -->
+            <ol>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+            </ol>
+            <!-- todo.2 indicator(동그라미 4개) -->
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/sample_slider.png" alt="iPhone 6">
+                        <figcaption>
+                            <dl>
+                                <dt>iPhone 6 32Gb<br>Black</dt>
+                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                            </dl>
+                            <input type="button" value="Buy Now">
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- todo.3 sliderContent(ul > li) -->
+        </div>
+    </section>
+    <!-- ?slider Fin -->
 </body>
 </html>

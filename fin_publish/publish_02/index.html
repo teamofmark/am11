@@ -88,24 +88,31 @@
         <form>
             <fieldset>
                 <!-- todo label+(select>option)+label+input:search+label+input:text+span{-}+input:text+input:checkbox+label+label+(select>option) -->
-                <label for=""></label>
-                <select name="" id="">
-                    <option value=""></option>
-                </select>
-                <label for=""></label>
-                <input type="search" name="" id="">
-                <label for=""></label>
-                <input type="text" name="" id="">
+                <label for="sb_select">SORT BY:</label>
+                <span class="selectBox">
+                    <select id="sb_select">
+                        <option>BEST MATCH</option>
+                    </select>
+                </span>
+                <label for="sb_keywords">KEYWORDS</label>
+                <input type="search" id="sb_keywords" placeholder="ex> tablet">
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
                 <span>-</span>
-                <input type="text" name="" id="">
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
-                <label for=""></label>
-                <select name="" id="">
-                    <option value=""></option>
-                </select>
+                <input type="text" id="range_maxprice">
+                <input type="checkbox" id="freeShipCheck">
+                <label for="freeShipCheck">Free Shipping</label>
+                <label for="ship_Select">SHIP TO :</label>
+                <span class="selectBox">
+                    <select id="ship_Select">
+                        <option>USA</option>
+                        <option>Republic of Korea</option>
+                        <option>United Arab Emirates</option>
+                    </select>
+                </span>
             </fieldset>
         </form>
+        <!-- ? sortBar Fin -->
     </div>
 </body>
 </html>

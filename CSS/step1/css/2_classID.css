@@ -1,0 +1,36 @@
+.classEx1{
+    font-size: 20px; color: red;
+}
+.classEx2{
+    font-size: 35px; color: green;
+}
+/* ! class를 잘못 사용하는 방식. (semantic구조 배울때 이야기 한 부분) - 적용값이 n개의 각기다른 대상에게 적용할 시*/
+
+.btn{
+    padding: 10px 30px; border: 1px solid black; font-size: 12px;
+    display: inline-block; text-decoration: none; color: inherit;
+}
+
+.btn.create{
+    background-color: white; border: none; color: black;
+}
+.btn.modify{
+    background-color: darkcyan; color: cyan; border-color: forestgreen;
+}
+.btn.delete{
+    background-color: rgb(90,0,0); color: red; border-color: darkred;
+}
+.btn.confirm{
+    background-color: slateblue; color: white; border-style: dashed;
+    border-color: midnightblue;
+}
+.btn.cancel{
+    color: gray; background-color: lightgray; border-color: gray;
+}
+/* 
+    class의 정상적사용도
+    1. 복수의 대상을 제어할 수 있어야 함.
+    2. 이름의 규칙만으로 대상의 tagName 이 달라도 제어할 수 있다.
+    3. css 속성의 동일한 부분을 광범위하게 적용 하는 용도
+    4. 다중선언이 가능하기 때문에 .btn.cancel.font.margin 같이 계속 붙혀 더하기가 가능하다.
+*/

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body{
+    font-family: 'Noto Sans KR';
+}
+h1{
+    font-size: 20px; line-height: 26px; color: #06f;
+    /* 
+        1. font-size : 글자크기 (글자 가운데를 기준으로 수직선 양분할 크기) / 복합적단위 사용가능 (rem,em,vw,vh,vmax,vmin)
+        2. line-height : 줄간. 글자크기 처럼 적용되는 방식이나 상,하 +@ (줄사이간격) - 설정시 fontsize+6px(30px이하)
+        3. color : 글자 색상
+        * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
+        * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
+        * hsla(hue,saturate,lightness,alpha(투명도));
+    */
+}

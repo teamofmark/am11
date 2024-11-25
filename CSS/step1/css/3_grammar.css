@@ -1,0 +1,31 @@
+h1{
+    font-size: 14px; color: #f03;
+}
+img{
+    width: 150px; border: 10px solid green;    
+}
+/* grouping - 선택방식중 하나 (codeType) */
+ul,ol{
+    color: #60f;
+}
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 30px; text-decoration: underline;
+}
+dl dt{
+    color: orange;
+}
+dl dd{
+    color: brown;
+}
+section ul li figure img{
+    width: 50px;
+}
+section ul li figure figcaption dl dt{
+    color: skyblue;
+}
+section ul li figure figcaption dl dd{
+    font-size: 50px;
+}

@@ -83,3 +83,10 @@ p.w_nowrap{
     ! 2. 낮은 대상에 수치를 입력하여 세부조정을 하면됨
     ! 대상들의 display 속성 간섭이 있다. (ex> display: block인 대상들에겐 적용 불가, inline-block,inline만 가능)
 */
+.t_indent{
+    text-indent: 100px;
+}
+.test{
+    background: url('https://via.placeholder.com/150x50?text=blahblah');
+    width: 150px; height: 50px; text-indent: -9999px;
+}

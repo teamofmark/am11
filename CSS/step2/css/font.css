@@ -67,3 +67,19 @@ p.w_normal{
 p.w_nowrap{
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+/* 
+    vertical-align : 수직정렬
+    baseline : 대상의 평균밑선을 기준으로 정렬
+    bottom : 대상의 가장 밑선을 기준으로 정렬
+    middle : 대상의 중간을 기준으로 정렬
+    top : 대상의 윗선을 기준으로 정렬
+    ! 1. 높은 대상을 기준으로 낮은대상을 상,중,하 를 정렬
+    ! 2. 낮은 대상에 수치를 입력하여 세부조정을 하면됨
+    ! 대상들의 display 속성 간섭이 있다. (ex> display: block인 대상들에겐 적용 불가, inline-block,inline만 가능)
+*/

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 /* 
-thin - 100
-extraLight - 200(폰트별표기방식상이)
+thin(hairLine) - 100
+extraLight(ultraLight) - 200(폰트별표기방식상이)
 light - 300
 regular - 400
 medium - 500
@@ -23,9 +23,13 @@ black - 900
 */
 body{
     font-family: 'Noto Sans KR';
+    /* 
+        비영어권 : font-family: [영문폰트],[해당언어폰트]; = 영어는 영문폰트로, 한글은 한글폰트로
+        영어권 : font-family : [영문폰트-pri],[영문폰트-sec] = pri가 작동불가시 sec가 읽혀짐.
+    */
 }
 h1{
-    font-size: 20px; line-height: 26px; color: #06f;
+    font-size: 50px; line-height: 60px; color: #06f; font-weight: 100;
     /* 
         1. font-size : 글자크기 (글자 가운데를 기준으로 수직선 양분할 크기) / 복합적단위 사용가능 (rem,em,vw,vh,vmax,vmin)
         2. line-height : 줄간. 글자크기 처럼 적용되는 방식이나 상,하 +@ (줄사이간격) - 설정시 fontsize+6px(30px이하)
@@ -34,4 +38,32 @@ h1{
         * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha(0~1));
         * hsla(hue,saturate,lightness,alpha(투명도));
     */
+}
+h2{
+    font-size: 25px; line-height: 31px; color: #f90; font-weight: 300;
+}
+h3{
+    font-size: 14px; line-height: 20px; color: rgb(22, 114, 22); font-weight: 700;
+}
+p{
+    font-size: 14px;
+    /* font-size: default 16px - h,small 기본값으로 fontsize를 가진 tag들 제외 */
+}
+p.letter{
+    letter-spacing: 10px; color: slateblue;
+    /*자간 : photoshop - 1/100 -> ex> 100 -> 1px */
+}
+p.word{
+    word-spacing: 10px; color: slateblue;
+    /* 단간 : 띄어쓰기를 기준으로 단어로 판단 하기 때문에 국내상황에는 맞지 않음.*/
+}
+p.w_normal,
+p.w_nowrap{
+    width: 150px; border: 5px solid black;
+}
+p.w_normal{
+    white-space: normal;
+}
+p.w_nowrap{
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }

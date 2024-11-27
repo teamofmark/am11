@@ -1,0 +1,26 @@
+html,body,.wrap{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+    /* name(); - 함수(기능)실행 */
+    /* 
+        배경이미지는 적용하는 순간 기본 패턴이 된다.
+        ! 패턴이 안보이는 경우 : 문서크기보다 이미지크기가 클 경우
+    */
+    background-repeat: no-repeat;
+    /* 
+        default - repeat : 사방패턴
+        repeat-x : xAxis 패턴
+        repeat-y : yAxis 패턴
+        no-repeat : 패턴끄기 - 가장많이 사용하게됨
+    */
+}
+.wrap button{
+    /* xAxis pattern - 너비는상관없고 높이는 지켜야됨.(max: 75까지사용가능) */
+    padding: 0 30px; height: 30px; font-size: 14px; color: white; border: none;
+    background-image: url('../images/pt_ex.png'); background-repeat: repeat-x;
+}

@@ -110,3 +110,19 @@ a.t_deco_O{
 a.t_deco_T{
     text-decoration: line-through; text-transform: uppercase; color: #990;
 }
+
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: right;
+}
+/* 
+    ! 부모에게 값을 주어 자손을 정렬.
+    ! text-align 으로 정렬을 하는 대상은 inline,inline-block이어야만 함.
+*/
+fieldset{
+    text-align: right;
+}

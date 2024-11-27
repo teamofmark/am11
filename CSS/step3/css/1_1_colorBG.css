@@ -1,0 +1,11 @@
+html,body,.wrap{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-color: skyblue;
+    /* display : block -> width: 100%; */
+    /* css - shorthand(줄여쓰기) / divide(분리개별적용)  */
+}

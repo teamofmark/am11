@@ -9,3 +9,9 @@ body,p{
     /* display : block -> width: 100%; */
     /* css - shorthand(줄여쓰기) / divide(분리개별적용)  */
 }
+.topLine input{
+    background-color: transparent;
+}
+.wrap p{
+    background-color: orange;
+}

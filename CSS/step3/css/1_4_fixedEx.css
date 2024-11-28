@@ -1,0 +1,21 @@
+*{
+    margin: 0; padding: 0;
+}
+/* 
+    ! 실무환경에서는 절대 사용하면 안되는 초기화 코드
+    ? tempCode : 임시코드
+*/
+html,body{
+    height: 100%;
+}
+body{
+    background: url('../images/example.jpg') center / cover no-repeat fixed;
+    /* ? background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color]*/
+    /* ! position 과 size를 동시에 쓸 때 or 아닐 때 로 나누어서 / 사용. */
+}
+div{
+    background-color: white; margin-bottom: 10%; padding: 5%;
+}
+div h2{
+    font-size: 38px; margin-bottom: 20px;
+}

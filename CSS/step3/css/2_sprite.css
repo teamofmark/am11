@@ -19,3 +19,7 @@ ul li{
 ul li strong{
     background-color: rgba(0,0,0,0.5); color: white;
 }
+ul li.caption{
+    background-position: 0px 0px;
+}
+/* todo 각각 li들의 배경이미지 위치를 조정하여 이름에 맞는 영웅 나오게 만들기 */

@@ -5,7 +5,7 @@ body{
     margin: 0;
     background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* 
         %,px 등의 다양한 단위 사용 가능
         1. 값을 하나만 주었을 때 - 너비를 적용하고 높이는 종횡비를 따른다.
@@ -20,5 +20,17 @@ body{
         ! 배경이미지의 너비가 높이보다 크다면 - 비율대로 증가 했을 때 공간의 우측 경계에 도달 할 때 까지
         ! 배경이미지의 높이가 너비보다 크다면 - 비율대로 증가 했을 때 공간의 하단 경계에 도달 할 때 까지
         ! 100%와 다름 = 무조건 너비를 기준으로 작동시키는 것.
+    */
+    background-position: right bottom;
+    /* 
+        preset - (default : left top);
+        left, center, right - xAxis
+        top, center, bottom - yAxis
+
+        %,px등의 다양한 단위 사용 가능 = left, top 에 입력할 것이라면 그냥 숫자만 입력하면 됨
+        ! 만약 우측, 하단을 기준으로 움직일 것이라면 해당 위치를 적어 줘야함
+        ! 배경이미지 너비 > 브라우저 너비 : 배경이미지를 움직이면서 해당 focus를 보여줌.
+        ! 배경이미지 너비 == 브라우저 너비 : 좌,중,우 변화 일어날 수 없다.
+        ! " 높이 == " 높이 : 상,중,하 "
     */
 }

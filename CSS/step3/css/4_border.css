@@ -8,9 +8,9 @@ div{
 .multiBox{
     /* ? 속성별분리 / 방향별분리 방법 */
     /* ! css 방향순서 - 시계방향 (top right bottom left 순) */
-    border-width: 1px 5px 10px 20px;
+    /* border-width: 1px 5px 10px 20px;
     border-style: solid dotted dashed double;
-    border-color: red green blue cyan;
+    border-color: red green blue cyan; */
     /* 
         ? 4방향 모두 기입 - 모두 별도
         ? 3방향만 기입 - xAxis 에서 right만 남기때문에 left,right가 하나의 값으로 적용된다.
@@ -18,4 +18,30 @@ div{
         ? 1방향만 기입 - 위 예제(singleBox)와 상동.
     */
     /* solid : 직선, dotted : 점선, dashed : 자르는선(파선), double : 두줄의 선 */
+    /* todo 방향별 분리 적용을 통해 같은 결과를 확인하기 */
+    border-top: 1px solid red;
+    border-right: 5px dotted green;
+    border-bottom: 10px dashed blue;
+    border-left: 20px double cyan;
+}
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #666;
+}
+.outsetBox{
+    border: 20px outset #666;
+}
+.outsetBox:hover{
+    border-style: inset;
+}
+/* 사용성이 좋지 않은 관계로 중요하지 않음 */
+/* todo. 지금까지 배운 것들을 응용하여 검색바 만들어보기 */
+.searchField{
+    outline: none;
+    /* ! none : css 최대 부정사 - 그리는 것 조차 하지 않음 */
 }

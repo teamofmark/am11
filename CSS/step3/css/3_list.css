@@ -1,0 +1,47 @@
+ul li.circle{
+    list-style: circle;
+}
+ul li.disc{
+    list-style: disc;
+}
+ul li.square{
+    list-style: square;
+}
+/* 그나마 사용하는 기본 불릿 3종 */
+ol li.decimal{
+    list-style: decimal;
+}
+ol li.lower-alpha{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+}
+/* 
+    ol , ul 구분없이 상호 교환 하며 사용할 수 있으나 별로 추천 하지는 아니함
+    ! li 에게 liststyle을 주면 li 개수만큼 실행. / css의 c 를이용해서 li의 부모인 ul, ol에게 주는것이 바람직함.
+ */
+ol li.none{
+    list-style: none;
+}
+/* 
+    ! 제일 많이 사용함. / 메뉴목록, 제품목록 등에 사용시에는 bullet이 필요 없기 때문에...
+*/
+/* ul.custom{
+    list-style-image: url('../images/bul_li.gif');
+    list-style-position: outside;
+} */
+ /* ! 상세조정이 까다롭기 때문에 background로 변형하여 사용함 */
+ ul.custom{
+    list-style: none; padding: 0;
+ }
+ ul.custom li{
+    padding-left: 20px;
+    background: url('../images/bul_li.gif') left center no-repeat;
+ }

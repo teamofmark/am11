@@ -1,0 +1,21 @@
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+    /* border shortHand - border: [-width] [-style] [-color] */
+}
+.multiBox{
+    /* ? 속성별분리 / 방향별분리 방법 */
+    /* ! css 방향순서 - 시계방향 (top right bottom left 순) */
+    border-width: 1px 5px 10px 20px;
+    border-style: solid dotted dashed double;
+    border-color: red green blue cyan;
+    /* 
+        ? 4방향 모두 기입 - 모두 별도
+        ? 3방향만 기입 - xAxis 에서 right만 남기때문에 left,right가 하나의 값으로 적용된다.
+        ? 2방향만 기입 - xAxis,yAxis에 남은 값이 각 1개씩(top,right) 남았기 때문에 y축, x축 두개의 값으로 적용된다.
+        ? 1방향만 기입 - 위 예제(singleBox)와 상동.
+    */
+    /* solid : 직선, dotted : 점선, dashed : 자르는선(파선), double : 두줄의 선 */
+}

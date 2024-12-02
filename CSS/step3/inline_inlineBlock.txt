@@ -1,0 +1,3 @@
+inlineBlock - 기능을 담당하는 Tag (img,input,select,textarea....)
+
+inlineTag - pTag's에 정리한것들 (em,strong,b,mark,u,a,span...) - browser f12 -> 우클릭 -> inspect(검사)

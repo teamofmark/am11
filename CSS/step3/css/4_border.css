@@ -42,6 +42,11 @@ div{
 /* 사용성이 좋지 않은 관계로 중요하지 않음 */
 /* todo. 지금까지 배운 것들을 응용하여 검색바 만들어보기 */
 .searchField{
-    outline: none;
+    outline: none; display: block; width: 100%; border-width: 0 0 1px; line-height: 50px;
+    padding-left: 65px; font-size: 18px;
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'), url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center, right 20px center;
+    background-size: 24px;
     /* ! none : css 최대 부정사 - 그리는 것 조차 하지 않음 */
 }

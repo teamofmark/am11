@@ -1,0 +1,29 @@
+*{
+    text-decoration: none; font-size: 20px;
+}
+a{
+    display: block;
+}
+h2:hover,
+p:hover,
+div:hover{
+    background-color: lightgreen; font-size: 30px;
+}
+/* :hover - 누구에게나  */
+a:focus{
+    background-color: lightcoral; font-size: 12px;
+}
+/* :focus - 동작관련된 tag */
+a:link{
+    background-color: olive; color: white;
+}
+a:visited{
+    background-color: burlywood; color: brown;
+}
+a:active{
+    background-color: black; color: yellow;
+}
+/* 
+    a에만 가능
+    ! js로 조작 하지 않는다는 전제 하에
+*/

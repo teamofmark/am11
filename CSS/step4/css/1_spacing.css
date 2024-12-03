@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    background-color: #555;
+    /* margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+    margin: 10px;
+    /* 
+        만약 body 경계선과 떨어져야 한다면?
+        = margin.
+        ! 웹화면이 구성될 때 구간별로 상이 = 1번 section은 body경계와 떨어져야되고 2번 div는 body경계와 붙어야되고..
+        ! body는 부모취급안함.
+    */
+    padding-bottom: 20px;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+    /* margin-bottom: 20px; */ 
+    /* ! 자손은 부모경계를 밀어서는 안됨. - 부모에게 padding을 부여하는게 올바른 방법*/
+}
+.secondDiv{
+    background-color: #ddd;
+    margin: 20px 15px;
+    /* 
+        ! margin은 같은 방향에서 만나게 되면 서로 값이 상쇄된다.
+        * margin 사용시 방향성을 두고 사용한다. (-bottom,-left)
+    */
+}

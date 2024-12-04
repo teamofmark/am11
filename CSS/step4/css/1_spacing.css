@@ -29,3 +29,13 @@ body{
         * margin 사용시 방향성을 두고 사용한다. (-bottom,-left)
     */
 }
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 30px;
+    box-sizing: border-box; margin-left:auto;
+    /* width: 30%; padding: 30px 2%; border: 1px solid #33f; */
+    /* padding, border 는 기존 규격에 가산된다. */
+}
+.centerDiv article{
+    margin: 0 250px; background-color: #f33; color: white;
+    /* ! 그러니까 자손이 절대 부모공간을 밀어내서는 안된다. = 부모가 자손을 압박하는 것이 정상. */
+}

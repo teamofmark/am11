@@ -1,0 +1,22 @@
+body{
+    margin: 0; background-color: black;
+}
+header{
+    background-color: red; position: fixed; width: 100%; height: 20%;
+    color: white; left:0; top: 0; z-index: 1;
+}
+aside,article{
+    position: absolute; height: 80%; top: 20%; font-size: 20px; font-weight: bold;
+    color: white;
+}
+aside{
+    left: 0; width: 20%; background-color: green;
+}
+article{
+    right: 0; width: 70%; background-color: blue;
+}
+footer{
+    position: absolute; width: 100%; background-color: orange;
+    top: 100%; line-height: 55px; text-align: center;
+    font-size: 24px;
+}

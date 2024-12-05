@@ -1,0 +1,40 @@
+body{
+    margin: 0; height: 2000px;
+}
+.position_A{
+    background-color: rgb(255, 204, 0); position: absolute; right: 0;
+    width: 150px; height: 50px;
+}
+/*
+    ? position이 absolute 이고 부모 relative가 존재하지 아니하면 browser의 좌,상을 기준으로 움직인다.
+    * 컴퓨터 언어는 순서가 중요하다. 동시처리가 불가능 하기 때문에. 적는 순서가 곧 실행 순서와 같다.
+*/
+.position_R{
+    background-color: rgb(0,204,255); position: relative;
+    width: 150px; height: 150px; margin: 0 auto;
+}
+/* 
+    ? position이 relative인 경우 선언만으로는 일반 block과 다름이 없다. (margin: 0 auto 적용)
+    * 자손에 absolute를 두고 있다면 그것의 기준이 되어준다.
+*/
+.position_R .position_A2{
+    background-color: midnightblue; position: absolute; right: 0; bottom: 0;
+    color: white;
+}
+/* 
+    ? 자손 absolute (부모가 relative)는 relative 부모의 기준을 두고 움직인다.
+    * 부모가 움직이면 그에 따라 움직인다.
+*/
+.position_F{
+    background-color: rgb(204,0,255); position: fixed; left: 100px; top: 0px;
+    width: 150px; height: 150px;
+}
+/* 
+    ? position: fixed은 무조건 browser의 좌,상을 기준으로 움직인다.
+    * browser의 scroll 영향을 받지 않는다. (고정)
+    ! position을 해제 시키는 방법 : static. - positioning을 해제. 기존 block으로 돌려놓음.
+*/
+.position_S{
+    background-color: lime; position: sticky; top: 80px; left: 0;
+    width: 100px; height: 100px;
+}

@@ -35,6 +35,6 @@ body{
     ! position을 해제 시키는 방법 : static. - positioning을 해제. 기존 block으로 돌려놓음.
 */
 .position_S{
-    background-color: lime; position: sticky; top: 80px; left: 0;
+    background-color: lime; position: sticky; top: 30px; left: 0;
     width: 100px; height: 100px;
 }

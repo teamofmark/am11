@@ -1,0 +1,23 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1{
+    background-color: lightskyblue;
+}
+.wrap .exam_1:after{
+    content: ''; display: block; clear: both;
+}
+/* 
+    ? :afterCanceler
+    ! 적용대상 - float 대상들의 부모.
+    * float를 끊어내는 용도. / clear = float가 아닌 마지막 대상이 존재 하지 않을 때 사용가능.
+*/
+.wrap .exam_1 img{
+    float: left; margin-right: 30px;
+}
+.wrap .exam_1 p{
+    font-size: 15px; line-height: 21px; background-color: rgba(100,0,200,0.5);
+}

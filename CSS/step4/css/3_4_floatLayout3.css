@@ -44,3 +44,24 @@ header nav ul li a{
 header nav ul li a:hover{
     color: white;
 }
+section:after{
+    content: ''; display: block; clear: both;
+}
+section img{
+    display: block; margin-bottom: 30px;
+}
+section div{
+    width: 310px; border: 1px solid gray; float: left; box-sizing: border-box;
+}
+section div:not(:first-of-type){
+    margin-left: 15px;
+}
+section div h3{
+    margin: 0 0 20px;
+}
+section div ul{
+    padding: 0; margin: 0; list-style: none;
+}
+footer{
+    background-color: #069; color: #fff; line-height: 40px; text-align: center;
+}

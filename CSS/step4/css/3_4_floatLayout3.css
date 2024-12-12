@@ -1,0 +1,46 @@
+body{
+    width: 960px; margin: 0 auto;
+}
+header{
+    background-color: #6ff; position: relative;
+}
+header h1{
+    width: 250px; margin: 0 auto; background-color: slateblue; font-size: 16px; color: #fff;
+    text-align: center; line-height: 40px;
+}
+header div{
+    position: absolute; right: 0; top: 27px;
+}
+header div:after{
+    content: ''; display: block; clear: both;
+}
+header div input{
+    display: block; float: left; border: 1px solid darkslategray; box-sizing: border-box;
+    font-size: 14px; line-height: 26px;
+}
+header div input[type='search']{
+    width: 80%; background-color: deeppink;
+}
+header div input[type='submit']{
+    width: 20%; background-color: lightcoral;
+}
+
+header nav{
+    background-color: skyblue;
+}
+header nav ul{
+    text-align: center; margin: 0; padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li:not(:first-child){
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration: none; color: black; display: block; line-height: 40px;
+    transition: color .5s ease-out;
+}
+header nav ul li a:hover{
+    color: white;
+}

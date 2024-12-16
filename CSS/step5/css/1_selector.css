@@ -110,3 +110,36 @@
     * |= : 해당 단어로 시작하거나 -로 구분되는 대상 선택.
     * ~= : 띄어쓰기 기준. 해당 대상 선택.
 */
+.statusSelector input[type='checkbox']+label{
+    overflow: hidden; display: inline-block; height: 20px; transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked+label{
+    height: 0px;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: lightblue;
+}
+.statusSelector input[type='text']:hover{
+    background-color: lightcoral;
+}
+.statusSelector input[type='text']:focus{
+    background-color: lightgreen;
+}
+.statusSelector input[type='password']:disabled{
+    background-color: lightgray;
+}
+.statusSelector input[type='password']:disabled::placeholder{
+    color: darkslategray;
+}
+/* 
+    ? statusSelector - 상태선택자.
+    * :checked - check가 가능한 tag들의 check된 상태.
+    * :selected - select tag내 선택된 option
+    * :hover - 대상에 커서를 올려놨을 때
+    * :focus - 대상에 초점이 맞춰졌을때 (outline발생된 상태)
+    ! 절대 focus는 click대용이 될 수 없음.
+    * :enabled - input계열 tag's 기본 옵션(조작이 가능한 상태)
+    * :disabled - input계열 tag's 조작 불가 상태(저장이 되지 못하게 막아야 하는 상태)
+    ! 절대적으로 readonly(저장된 값을 불러오되 수정불가)와 구분지어 사용해야 함.
+    * ::placeholder - input계열 tag's 내 시각적 보조요소 상태.
+*/

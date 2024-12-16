@@ -49,3 +49,36 @@
 .attrSelector fieldset ul li input[type='checkbox']{
     background-color: black; border: 5px solid yellowgreen;
 }
+.directSelector > h1{
+    font-size: 28px; color: #66f; line-height: 44px;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; line-height: 40px;
+}
+.directSelector ul li{
+    color: limegreen;
+}
+.directSelector ul > li{
+    font-size: 25px;
+}
+.directSelector ul > li ol li{
+    font-size: 15px; background-color: lightgray;
+}
+.directSelector ul > li ol li a{
+    color: forestgreen;
+}
+/* 
+    ? 직계선택자 >
+    * 구조적으로 다른 동일 태그를 제외하고 직계 자손 태그에 동일한 스타일을 적용 할 수 있다.
+*/
+.sameSelector h1~h2{
+    background-color: #999;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: deeppink;
+}
+/* 
+    ? 동위선택자
+    * A ~ B : A 동위선상 내 뒤에있는 모든 B를 선택. (최초 기준이 되는 tag만 효력발생)
+    * A + B : A 동위선생 내 바로 뒤에있는 B를 선택. (매 기준이 변경 됨)
+*/

@@ -168,3 +168,30 @@
     border-radius: 0 20px 20px 0;
 }
 /* https://css-tricks.com/examples/nth-child-tester/ */
+
+/* .shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+.shapeSelector h2:first-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:last-of-type{
+    color: #f06;
+} */
+ /* todo. -child로 같은결과 나오게 해보기 */
+.shapeSelector h1:nth-child(6){
+    color: #30f;
+}
+.shapeSelector h2:nth-child(2){
+    color: #0c6;
+}
+.shapeSelector h3:nth-child(4){
+    color: #f06;
+}
+/* 
+    ? -child, -of-type
+    * -child는 부모가 바라보는 자손의 순서대로 선택하는 선택자
+    * -of-type은 자손들끼리의 순서로 선택하는 선택자.
+    * first(첫),last(마지막)로 선택할 수있고 nth(숫자)로 n번째 지정이 가능하며 간단한 수열식활용가능
+    ! 두 선택자 모두 되도록 앞에 대상 tag를 기재하는 것을 추천함 (ex> h1:first-child, h1:first-of-type..)
+*/

@@ -143,3 +143,28 @@
     ! 절대적으로 readonly(저장된 값을 불러오되 수정불가)와 구분지어 사용해야 함.
     * ::placeholder - input계열 tag's 내 시각적 보조요소 상태.
 */
+.virtualSelector ul{
+    list-style: none; margin: 50px 0; padding: 0;
+    background-color: red; overflow: hidden;
+    /* 
+    ! overflow를 이용해 float가 해제 되는 것은 올바른 방법이 아니다.
+    ? (부모기준 높이 초과 되는 상황을 감지하기 때문에 얻어걸리는 케이스)
+    * 다른목적에 의해 overflow를 사용하는 것이 아니라면 배운대로 :after Canceler를 장착해주는게 올바른 방법.
+    */
+}
+.virtualSelector ul li{
+    float: left; width: 14.28%; padding: 15px; box-sizing: border-box; text-align: center;
+}
+.virtualSelector ul li:first-child{
+    border-radius: 20px 0 0 20px;
+}
+.virtualSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #09f;
+}
+.virtualSelector ul li:last-child{
+    border-radius: 0 20px 20px 0;
+}
+/* https://css-tricks.com/examples/nth-child-tester/ */

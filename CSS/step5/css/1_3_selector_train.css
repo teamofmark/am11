@@ -1,0 +1,73 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black; height: 100%;
+}
+ul{
+    margin: 0; padding: 0;
+}
+body > div:first-of-type{
+    width: 50%; height: 50%; background-color: #262626; position: absolute;
+    left: 25%; top: 25%; min-height: 290px;
+}
+body > div:first-of-type nav{
+    margin-bottom: 25px;
+}
+body > div:first-of-type nav ul:after{
+    content: ''; display: block; clear: both;
+}
+body > div:first-of-type nav ul li{
+    float: left; display: block; width: 25%; background-color: #3e3e3e;
+}
+body > div:first-of-type nav ul li a{
+    text-decoration: none; font-size: 12px; text-align: center; text-transform: capitalize;
+    display: block; padding: 10px 0; color: #ea0e52;
+}
+body > div:first-of-type nav ul li.currentStat a,
+body > div:first-of-type nav ul li a:hover{
+    background-color: #ea0e52; color: white;
+}
+/* ? nav fin */
+body > div:first-of-type h1{
+    font-size: 14px; color: white; text-transform: capitalize; text-align: center;
+    margin: 0 0 25px;
+}
+
+body > div:first-of-type div{
+    width: 90%; margin: 0 auto 25px;
+}
+body > div:first-of-type div ul li{
+    display: block;
+}
+body > div:first-of-type div ul li:after{
+    content: ''; display: block; clear: both;
+}
+body > div:first-of-type div ul li:first-of-type{
+    margin-bottom: 25px;
+}
+body > div:first-of-type div ul li *{
+    display: block; float: left; line-height: 36px; font-size: 12px;
+}
+body > div:first-of-type div ul li label{
+    width: 15%; text-align: center; background-color: #ea0e52; font-weight: bold;
+    color: white; text-transform: uppercase;
+}
+body > div:first-of-type div ul li input{
+    width: 80%; padding: 0 2.5%; border: none; transition: all .5s ease-out;
+}
+body > div:first-of-type div ul li input:focus{
+    background-color: #ea0e52;
+}
+body > div:first-of-type div ul li input[type='password']:focus{
+    color: white;
+}
+body > div:first-of-type input[type='submit']{
+    width: 90%; margin: 0 auto; border: none; display: block; line-height:36px;
+    padding: 0; background-color: #3e3e3e; color: #ea0e52;
+}
+body > div:first-of-type input[type='submit']:hover{
+    background-color: #ea0e52; color: black; cursor: pointer;
+    /* ? cursor : default(arrow), pointer(hand) */
+}

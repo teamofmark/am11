@@ -37,3 +37,12 @@ div{
 .visibilityProperty span:nth-child(2){
     visibility: visible;
 }
+.visibilityProperty input[type='checkbox']:checked ~ table{
+    visibility: visible;
+}
+.visibilityProperty table{
+    visibility: collapse; border-spacing: 0;
+}
+/* 
+    visibility: collapse. display: none과 달리 존재하되 무너져있다. (data사전받기용이)
+*/

@@ -46,3 +46,16 @@ div{
 /* 
     visibility: collapse. display: none과 달리 존재하되 무너져있다. (data사전받기용이)
 */
+.opacityProperty ul:after{
+    content: ''; display: block; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float: left; width: 33%; background-color: black; position: relative;
+    overflow-y: hidden;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure img{
+    width: 100%; display: block; opacity: 0.3;
+}

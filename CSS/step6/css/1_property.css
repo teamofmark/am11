@@ -26,3 +26,14 @@ div{
     * inline = inline이 되면 width등의 크기나 간격 등의 값을 가질수 없고 옆으로는 나열 되지만, 간격을 벌릴수 없는 객체가 된다.
     * none = 대상이 보이지 않는다. (렌더 자체가 안된다.)
 */
+.visibilityProperty span{
+    background-color: orange; display: block; border: 1px solid black;
+    height: 100px;
+}
+.visibilityProperty span:first-child{
+    visibility: hidden;
+    /* display: none; */
+}
+.visibilityProperty span:nth-child(2){
+    visibility: visible;
+}

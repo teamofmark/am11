@@ -69,4 +69,8 @@
     color: #fff;
 }
 
+.customG{
+    background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%);
+}
+
 /* http://www.colorzilla.com/gradient-editor 에서 제작 가능*/

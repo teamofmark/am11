@@ -17,6 +17,7 @@ body{
 }
 .wrap header h1{
     color: #fff; margin: 0;
+    /* mac, window 기본 폰트가 다름으로 높이가 상이할 수있음 (ex> mac : 37, window : 43 */
 }
 .wrap header nav{
     position: absolute; right: 0; top: 21px; width: 40%;

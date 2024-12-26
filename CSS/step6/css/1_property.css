@@ -87,3 +87,21 @@ div{
     * before에 변화가 일어나기 전 상태 모든 code가 있으면 되고,
     * after에서는 변화가 일어나는 code만 있으면 된다.
 */
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+/*
+    content-box 속성은 기본적으로 적용되는(default)값, 안의 공간을 해당 width로 잡고 밖에 padding,border를 추가
+    계산 하여 총 width를 구하는 방식.
+    border-box 속성은 전체 크기를 먼저 width로 잡고 안의 padding, border를 나중에 계산하는 방식
+
+    content-box : box in width + padding + border = width
+    border-box : width = box in width - (padding + border)
+*/

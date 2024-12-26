@@ -40,3 +40,4 @@ body{
 .wrap header nav ul li:not(:first-child) a{
     border-left: 1px solid #e1e1e1;
 }
+/* todo image's 3열 유지상태로 커지고 줄어들게 만들어보기 */

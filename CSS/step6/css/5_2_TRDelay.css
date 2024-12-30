@@ -41,3 +41,16 @@ ul{
 .delay2 ul:hover li:nth-child(4){background-color: slategray;}
 .delay2 ul:hover li:nth-child(5){background-color: yellow;}
 .delay2 ul:hover li:nth-child(6){background-color: seagreen;}
+
+.delay3 ul{
+    height: 300px; background-color: #000;
+}
+.delay3 ul:after{
+    content: ''; display: block; clear: both;
+}
+.delay3 ul li{
+    width: 20%; float: left; height: 0; transition-duration: 2s; background-color: #fff;
+}
+.delay3 ul:hover li{
+    height: 300px;
+}

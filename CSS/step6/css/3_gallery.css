@@ -42,3 +42,22 @@ body{
     border-left: 1px solid #e1e1e1;
 }
 /* todo image's 3열 유지상태로 커지고 줄어들게 만들어보기 */
+
+.wrap > ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap > ul li{
+    width: 30%; float: left; margin-bottom: 5%;
+}
+.wrap > ul li:not(:nth-child(3n+1)){
+    margin-left: 5%;
+}
+.wrap > ul li a img{
+    width: 100%; display: block; opacity: 0.5; transition-duration: 0.75s;
+}
+.wrap > ul li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
+}

@@ -54,3 +54,7 @@ ul{
 .delay3 ul:hover li{
     height: 300px;
 }
+.delay3 ul:hover li:nth-child(1){
+    transition-timing-function: cubic-bezier(0,.98,0,.98);
+}
+/* todo. 2,3,4,5 번 직접 가속도 구현해서 넣어보기 */

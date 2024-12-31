@@ -58,8 +58,17 @@ ul{
     transition-timing-function: cubic-bezier(0,.98,0,.98);
 }
 /* todo. 2,3,4,5 번 직접 가속도 구현해서 넣어보기 */
-.delay3 ul li:nth-child(1){transition-timing-function: cubic-bezier(0,.98,0,.98); background-color:lightcoral;}
+.delay3 ul li:nth-child(1){transition-timing-function: linear; background-color:lightcoral;}
 .delay3 ul li:nth-child(2){transition-timing-function: cubic-bezier(0,1.04,1,-0.01); background-color: lightgreen;}
 .delay3 ul li:nth-child(3){transition-timing-function: cubic-bezier(1,0,1,-0.01); background-color: lightskyblue;}
 .delay3 ul li:nth-child(4){transition-timing-function: cubic-bezier(1,0,0,1); background-color: lightgoldenrodyellow}
 .delay3 ul li:nth-child(5){transition-timing-function: cubic-bezier(1,.43,0,.63); background-color: lightpink;}
+/*
+https://cubic-bezier.com
+위 url에서 원하는 베지어곡선을 만들어 사용 할 수 있다.
+linear : 등속
+ease : ease-in-out 보다 빠른속도로 시작하여, 지정된 시간에 도착 할 때 속도가 줄어 든다. default
+ease-in : 서서히 빨라지다.
+ease-out : 서서히 느려지다.
+ease-in-out : 서서히 빨라지다 느려진다.
+*/

@@ -6,13 +6,20 @@ div span{
 }
 div:nth-of-type(1) span{background-color: lightblue; transform: rotate(10deg);}
 div:nth-of-type(2) span{background-color: lightcoral; transform: translateX(100px) rotate(10deg);}
-div:nth-of-type(3) span{background-color: lightgoldenrodyellow;}
-div:nth-of-type(4) span{background-color: lightgray;}
-div:nth-of-type(5) span{background-color: lightgreen;}
-div:nth-of-type(6) span{background-color: lightseagreen;}
+div:nth-of-type(3) span{background-color: lightgoldenrodyellow; transform: rotate(10deg) translateX(100px) translateY(50px);}
+/* 
+    ! layout element 배치시에 원활하지 않은 문제로 translate사용은 금지.
+*/
+div:nth-of-type(4) span{background-color: lightgray; transform: rotate(10deg) translate(100px,50px) skewX(10deg);}
+div:nth-of-type(5) span{background-color: lightgreen; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg);}
+div:nth-of-type(6) span{background-color: lightseagreen; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg) scale(1.2);}
 /* 
     ? transform
     * transform에는 속한 함수가 많다.
     * 많은 함수를 적용할 경우 순서가 중요하다.(순서대로 적용되니까)
     * -origin을 이용하여 기준점을 변경 할 수 있다. (background-position과 사용법 동일)
+    * rotate(deg) : 특정 각도만큼 회전한다.
+    * translate(X,Y) : 특정 크기만큼 해당 축 방향으로 이동.
+    * skew(Xdeg,Ydeg) : 특정 각도만큼 해당 축 방향으로 기울임.
+    * scale(X,Y) : 특정 배율만큼 해당 축 방향으로 확대 및 축소한다.
 */

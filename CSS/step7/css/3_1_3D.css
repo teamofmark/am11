@@ -21,6 +21,7 @@ div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate
         transform: rotateX(360deg);
     }
 }
+/* x축을 기준으로 회전 (상,하 로 움직임) */
 /* todo. rotateY, rotateZ, rotate3d(잘안되는거무시)를 각각의 키프레임셋을 만들어 (선언된 name준수) 적용해보기 */
 @keyframes verti{
     0%{
@@ -30,6 +31,7 @@ div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate
         transform: rotateY(360deg);
     }
 }
+/* y축을 기준으로 회전 (좌,우 로 움직임) */
 @keyframes depth{
     0%{
         transform: rotateZ(0deg);
@@ -38,6 +40,7 @@ div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate
         transform: rotateZ(360deg);
     }
 }
+/* z축을 기준으로 회전, 하지만 좌표가 0이기 때문에 깊이 표현은 불가능하다.  */
 @keyframes rotate3D{
     0%{
         transform: rotate3d(0,0,0,0deg);
@@ -52,7 +55,11 @@ div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate
      만약 3개축이 모두 0일 경우 모든 축이 한점에 모이기 때문에 구현불가.
     */
 }
-
+/* 
+    rotate3d(x좌표,y좌표,z좌표,회전각도);
+    3개의 축을 동시 운용할 경우 각 축의 기준점을 기재하면, 좌표가 생성된다. 그래서 해당 좌표를 기준으로 3d로 회전을 하게됨(좌표역시 0->1로 이동)
+    만약 개별 축에 0이 있을 경우 정상적인 움직임이 불가하고 모든 축이 0일 경우 공간이 성립되지 않기 때문에 구현불가
+ */
 div.translater span{
     background-color: brown; color: #fff; animation-name: trans3D;
 }
@@ -80,3 +87,8 @@ div.scaler span{
         transform: scale3d(1,1,1);
     }
 }
+/* 
+    ? scale3d(xScale,yScale,zScale)
+    * scale3d는 vertor방식으로 크기를 늘리고 줄인다. / 백분지수 1=100%
+    ! 모니터는 2차원평면체이기 때문에 zscale만으로 크기를 변환하는것을 불가능 하다.
+*/

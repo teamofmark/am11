@@ -1,0 +1,30 @@
+body{
+    width: 200px; margin: 200px auto;
+    perspective: 300px;
+}
+div{
+    width: 200px; height: 200px; position: relative; transform-style: preserve-3d;
+    animation-name: playBox; animation-iteration-count: infinite;
+    animation-duration: 3s; animation-timing-function: linear;
+}
+@keyframes playBox {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+div span{
+    width: 200px; height: 200px; position: absolute; left: 0; top: 0;
+    opacity: 0.5; backface-visibility: hidden;
+}
+div:hover span{
+    backface-visibility: visible;
+}
+div span:nth-child(1){background-color: red; transform: rotateY(0deg) translateZ(100px);}
+div span:nth-child(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-child(3){background-color: blue; transform: rotateY(180deg) translateZ(100px);}
+div span:nth-child(4){background-color: yellow; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-child(5){background-color: brown; transform: rotateX(90deg) translateZ(100px);}
+div span:nth-child(6){background-color: pink; transform: rotateX(270deg) translateZ(100px);}

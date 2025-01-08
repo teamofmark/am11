@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('reset.css');
+/* ? 개인 고유 초기화 파일 - 상시 맨위 위치 */
+@import url('global.css');
+/* 
+    ? 공통영역 및 요소 파일 - globalComponent(or Area) css 
+    * header, popup, panel, button's, footer, aside...등등의 모든 공간에서 같이 사용하는 부분의 설정
+*/
+/* @import url('page.css'); */
+/* 
+    ? 개별영역 및 요소 파일 - pageComponent(or Element) css 
+    * 각 페이지별 (index,list,detail,sign in(up), payment or checkout ...등등의 개별 페이지에서 사용하는 부분의 설정
+*/

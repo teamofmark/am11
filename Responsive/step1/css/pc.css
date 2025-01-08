@@ -1,0 +1,15 @@
+body{
+    font-family: 'Merriweather';
+}
+h1{
+    background-color: lightgreen;
+}
+article{
+    background-color: lightsalmon; padding: 10px;
+}
+article h2{
+    font-size: 18px; background-color: lightblue; padding: 10px;
+}
+article p{
+    font-size: 14px; background-color: lightpink; padding: 10px; line-height: 20px;
+}

@@ -70,5 +70,6 @@ a{
     header div > ul li a.btn_more{
         max-width: 120px; margin: 0 auto;
     }
+    /* todo. 제작된 버튼 모듈 구조에 적용해오기 */
 }
 /* ? desktop */

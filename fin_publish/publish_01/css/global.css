@@ -1,8 +1,17 @@
-header div nav ul li a{
+header div nav ul li a,
+header div > ul li p{
     font-family: 'Roboto';
+}
+header div > ul li h2{
+    font-family: 'Playfair Display'; font-weight: 400; font-size: 16px; text-align: center;
 }
 a{
     text-decoration: none;
+}
+.btn_more{
+    font-family: "Hammersmith One"; font-size: 16px; font-weight: 400; text-align: center;
+    display: block; border: 1px solid #00e0d0; color: #00e0d0; padding: 12px 0.6%;
+    box-sizing: border-box;
 }
 /* ? A/U All Using */
 
@@ -38,6 +47,28 @@ a{
     }
     header div nav ul li a{
         display: block; line-height: 50px; font-size: 13px; color: white; font-weight: 900;
+    }
+    header div nav ul li a.active,
+    header div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ?header GNB Fin */
+    header div > ul{
+        margin-bottom: 125px; list-style: none;
+    }
+    header div > ul li{
+        padding-top: 165px;
+    }
+    header div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; max-width: 775px; text-align: center;
+        margin: 0 auto 50px; line-height: 24px;
+    }
+    header div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
     }
 }
 /* ? desktop */

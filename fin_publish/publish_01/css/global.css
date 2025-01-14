@@ -1,6 +1,43 @@
-
+header div nav ul li a{
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+/* ? A/U All Using */
 
 @media screen and (min-width: 1280px) {
-    
+    header{
+        padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
+        /* 
+            ? 가장 바깥 쪽 공간인 header의 필요 code를 찾는 것.(ex> padding 상,하, background (배경)
+            ! 전경에 사용되는 배경 이미지는 되도록이면 큰 size일 수록 유리함.
+        */
+    }
+    header div{
+        max-width: 940px; margin: 0 auto; position: relative;
+    }
+    header div h1{
+        max-width: 128px;
+    }
+    header div h1 a{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav{
+        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%; box-sizing: border-box;
+        text-align: right;
+    }
+    header div nav ul li{
+        display: inline-block;
+    }
+    header div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header div nav ul li a{
+        display: block; line-height: 50px; font-size: 13px; color: white; font-weight: 900;
+    }
 }
 /* ? desktop */

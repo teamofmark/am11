@@ -1,5 +1,6 @@
 header div nav ul li a,
-header div > ul li p{
+header div > ul li p,
+footer > div *{
     font-family: 'Roboto';
 }
 header div > ul li h2{
@@ -16,6 +17,11 @@ a{
 /* ? A/U All Using */
 
 @media screen and (min-width: 1280px) {
+
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
         /* 
@@ -71,5 +77,76 @@ a{
         max-width: 120px; margin: 0 auto;
     }
     /* todo. 제작된 버튼 모듈 구조에 적용해오기 */
+    header div ol{
+        text-align: center;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px; width: 8px; height: 8px; border: 1px solid rgba(255,255,255,0.8);
+        border-radius: 5px;
+    }
+    header div ol li a.active,
+    header div ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* ? header Fin */
+    
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 31%; margin: 0 0 70px 3.5%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    footer > div div h2{
+        margin-bottom: 20px;
+    }
+    footer > div div:not(:first-of-type) h2{
+        line-height: 50px; color: white; font-size: 15px; font-weight: 900;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px; color: white;
+    }
+    footer > div div:not(:nth-of-type(3)) a{
+        color: inherit;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        font-weight: 300;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px;
+        background-repeat: no-repeat; background-position: left 5px;
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(1){
+        background-image: url('../images/bul_map.png'); margin-bottom: 15px;
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(2){
+        background-image: url('../images/bul_phone.png');
+    }
+    footer > div div:nth-of-type(3) input{
+        float: left; display: block; box-sizing: border-box; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; font-size: 14px; border: 1px solid rgba(255,255,255,0.5);
+        line-height: 43px; padding: 0 15px; background-color: transparent; color: white;
+    }
+    footer > div div:nth-of-type(3) input[type='email']::placeholder{
+        color: rgba(255,255,255,0.75);
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%;
+    }
+
+    footer > div div:last-of-type{
+        clear: left; font-weight: 400;
+    }
 }
 /* ? desktop */

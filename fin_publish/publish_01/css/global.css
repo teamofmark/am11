@@ -17,10 +17,14 @@ a{
     display: block; border: 1px solid #00e0d0; color: #00e0d0; padding: 12px 0.6%;
     box-sizing: border-box;
 }
+[class$='Area'] > hr{
+    border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
+}
 /* ? A/U All Using */
 
 @media screen and (min-width: 1280px) {
     #about,
+    section.expArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }

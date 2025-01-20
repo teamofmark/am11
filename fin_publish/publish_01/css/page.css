@@ -58,7 +58,7 @@
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75); margin-bottom: 15px;
     }
     section.expArea > hr{
-        width: 5%; max-width: 50px; border-color: rgba(65,61,75,0.3);
+        width: 5%; border-color: rgba(65,61,75,0.3);
     }
     section.expArea  ul:after{
         content: ''; display: block; clear: both;
@@ -89,6 +89,37 @@
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center; color: white;
         padding: 70px 0;
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    }
+    section.teamArea p{
+        font-size: 14px;
+    }
+    section.teamArea p:first-of-type{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea hr{
+        width: 3%; border-color: rgba(255,255,255,0.2);
+    }
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px; list-style: none;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.teamArea ul li{
+        width:  23.5%; float: left;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        background: url("https://placehold.co/220x230") center top / contain no-repeat;
+        padding-top: 230px;
+    }
+    section.teamArea ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
     }
 }
 /* ? desktop */

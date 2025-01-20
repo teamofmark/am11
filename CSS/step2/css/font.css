@@ -87,7 +87,7 @@ p.w_nowrap{
     text-indent: 100px;
 }
 .test{
-    background: url('https://via.placeholder.com/150x50?text=blahblah');
+    background: url('https://placehold.co/150x50?text=blahblah');
     width: 150px; height: 50px; text-indent: -9999px;
 }
 a{

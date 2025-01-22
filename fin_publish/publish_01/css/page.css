@@ -2,16 +2,16 @@
 
 @media screen and (min-width: 768px) and (max-width:1279px) {
     #about{
-        padding-left: 7%;
+        padding-left: /*7%*/3.5%;
     }
     #about:after{
         content: ''; display: block; clear: both;
     }
     #about img{
-        float: left; width: 25%; max-width: 235px; 
+        float: left; width: /*25%*/32%; max-width: 235px; 
     }
     #about figcaption{
-        float: left; margin-left: 10%; width: 65%;
+        float: left; margin-left: /*10%*/8%; width: /*65%*/60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 20px;
@@ -80,10 +80,10 @@
     section.expArea ul li:nth-child(5){background-image: url('../images/ico_05.png');}
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
     section.expArea ul li h3{
-        font-size: 14px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
+        font-size: /*14px*/12px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
     }
     section.expArea ul li p{
-        font-size: 14px; font-weight: 300; color: rgba(51,51,51,0.75); line-height: 22px;
+        font-size: /*14px*/12px; font-weight: 300; color: rgba(51,51,51,0.75); line-height: /*22px*/18px;
     }
     /* ? expArea Fin */
     section.teamArea{
@@ -103,7 +103,7 @@
         width: 3%; border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 70px; list-style: none;
+        max-width: /*940px*/728px; margin: 0 auto 70px; list-style: none;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
@@ -116,7 +116,7 @@
     }
     section.teamArea ul li figure{
         background: url("https://placehold.co/220x230") center top / contain no-repeat;
-        padding-top: 230px;
+        padding-top: /*230px*/180px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
@@ -138,7 +138,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;
         position: relative;
     }
     section.worksArea h2 a{
@@ -171,7 +171,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*770px*/ 728px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -185,7 +185,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -194,7 +194,7 @@
         font-size: 22px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/41%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;

@@ -66,15 +66,12 @@ a{
     header div > ul{
         margin-bottom: 125px; list-style: none;
     }
-    header div > ul li{
-        padding-top: 165px;
-    }
     header div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
         background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
     }
     header div > ul li p{
-        font-size: 14px; color: white; font-weight: 300; max-width: 775px; text-align: center;
+        font-size: 14px; color: white; font-weight: 300; text-align: center;
         margin: 0 auto 50px; line-height: 24px;
     }
     header div > ul li a.btn_more{
@@ -136,6 +133,15 @@ a{
     }
     header div nav ul li{
         display: /*inline-*/block;
+    }
+    header div > ul{
+        clear: both;
+    }
+    header div > ul li{
+        padding-top: /*165px*/55px;
+    }
+    header div > ul li p{
+        max-width: 580px;
     }
     
     footer{
@@ -257,6 +263,12 @@ a{
     }
     header div nav ul li:not(:first-child){
         margin-left: 2.65%;
+    }
+    header div > ul li{
+        padding-top: 165px;
+    }
+    header div > ul li p{
+        max-width: 740px;
     }
 }
 /* ? tablet & desktop */

@@ -36,6 +36,8 @@ a{
     header div,
     #about,
     section.expArea,
+    section.teamArea ul,
+    section.worksArea h2,
     section.contactArea,
     footer > div{
         margin: 0 auto;
@@ -99,6 +101,8 @@ a{
 @media screen and (max-width: 767px){
     #about,
     section.expArea,
+    section.teamArea ul,
+    section.worksArea h2,
     section.contactArea,
     footer > div{
         max-width: 600px; padding: 70px 3%;

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portland</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="css/import.css">
+    <!-- 
+        1. import.css 제작, webfont 불러오기, material-icons href URL -> import.css 에 넣기.
+        2. reset.css(가져오기), global,page.css 제작 -> M/Q 제작
+        -->
 </head>
 <body>
     <!-- todo header>div>label+(h1>a>img)+input:checkbox#mui+(nav>ul>li*5>a)+(div>strong+span+input:button) -->
     <header>
-        <div>
+        <div class="mont">
             <label for="mui" class="material-icons">menu</label>
             <h1>
                 <a href="/">
@@ -38,11 +42,11 @@
     <!-- ?header Fin -->
     <!-- todo nav>div>(ul>li*6>a)+input:search -->
     <nav>
-        <div>
+        <div class="slideNav mont">
             <ul>
                 <li><a href="#">Top Sales</a></li>
                 <li><a href="#">Brand Focus</a></li>
-                <li><a href="#">Hi-tech</a></li>
+                <li><a href="#" class="active">Hi-tech</a></li>
                 <li><a href="#">Best Sellers</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Support</a></li>
@@ -51,16 +55,16 @@
         </div>
     </nav>
     <!-- ?slider Nav 완성 -->
-    <section>
+    <section class="slideArea">
         <h2>slider Sector</h2>
         <!-- validation pass - h / 배경용-->
         <div>
             <!-- 컨텐츠 가두기 -->
-            <a href="#">&lt;</a>
-            <a href="#">&gt;</a>
+            <a href="#" class="btn_conL">&lt;</a>
+            <a href="#" class="btn_conR">&gt;</a>
             <!-- todo.1 controler(화살표) x 2 -->
             <ol>
-                <li><a href="#">slide</a></li>
+                <li><a href="#" class="active">slide</a></li>
                 <li><a href="#">slide</a></li>
                 <li><a href="#">slide</a></li>
                 <li><a href="#">slide</a></li>
@@ -72,10 +76,10 @@
                         <img src="images/sample_slider.png" alt="iPhone 6">
                         <figcaption>
                             <dl>
-                                <dt>iPhone 6 32Gb<br>Black</dt>
-                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                                <dt class="mont">iPhone 6 32Gb<br>Black</dt>
+                                <dd class="crim">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
                             </dl>
-                            <input type="button" value="Buy Now">
+                            <input type="button" value="Buy Now" class="mont">
                         </figcaption>
                     </figure>
                 </li>
@@ -84,7 +88,7 @@
         </div>
     </section>
     <!-- ?slider Fin -->
-    <div>
+    <div class="contentArea mont">
         <form>
             <fieldset>
                 <!-- todo label+(select>option)+label+input:search+label+input:text+span{-}+input:text+input:checkbox+label+label+(select>option) -->
@@ -389,9 +393,9 @@
     </div>
     <!-- ? contentArea Fin -->
     <!-- todo section>h2{Best Sellers}+ul>li*4>figure>img[src="images/sample_product1.png"][alt="example"]+figcaption>dl>dt+dd+dd>del -->
-    <section>
+    <section class="bestArea">
         <h2>Best Sellers</h2>
-        <ul>
+        <ul class="mont">
             <li>
                 <figure>
                     <img src="images/sample_product12.png" alt="example">
@@ -444,9 +448,9 @@
     </section>
     <!-- ? bestSellers Fin -->
     <!-- todo section>div>h2{What Our Customers Have to Say}+p{Couple of Words About This Stories Section}+ul>li*3>(figure>img[src="images/sample_face.png"][alt="faceExample"]+figcaption>dl>dt+dd)+p -->
-    <section>
-        <div>
-            <h2>What Our Customers Have to Say</h2>
+    <section class="tosayArea">
+        <div class="crim">
+            <h2 class="mont">What Our Customers Have to Say</h2>
             <p>Couple of Words About This Stories Section</p>
             <ul>
                 <li>
@@ -454,7 +458,7 @@
                         <img src="images/sample_face.png" alt="faceExample">
                         <figcaption>
                             <dl>
-                                <dt>Celia Fields</dt>
+                                <dt class="mont">Celia Fields</dt>
                                 <dd>UX Expert</dd>
                             </dl>
                         </figcaption>
@@ -466,7 +470,7 @@
                         <img src="images/sample_face.png" alt="faceExample">
                         <figcaption>
                             <dl>
-                                <dt>Alexander Lee</dt>
+                                <dt class="mont">Alexander Lee</dt>
                                 <dd>Founder</dd>
                             </dl>
                         </figcaption>
@@ -478,7 +482,7 @@
                         <img src="images/sample_face.png" alt="faceExample">
                         <figcaption>
                             <dl>
-                                <dt>Lenora Sandoval</dt>
+                                <dt class="mont">Lenora Sandoval</dt>
                                 <dd>Product Manager</dd>
                             </dl>
                         </figcaption>
@@ -492,7 +496,7 @@
     <!-- todo footer 직접짜보기 -->
     <!-- todo footer>(div>(h2>img[src="images/logo_footer.png"][alt="bye portland"])+(ul>li*5>a)+(span>a*3))+(div>p+span>a*2) -->
     <footer>
-        <div>
+        <div class="mont">
             <h2><img src="images/logo_footer.png" alt="bye portland"></h2>
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -507,8 +511,8 @@
                 <a href="#">google</a>
             </span>
         </div>
-        <div>
-            <p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
+        <div class="mont">
+            <p class="crim">She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
             <span>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms and Conditions</a>

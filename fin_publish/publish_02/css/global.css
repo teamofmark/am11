@@ -54,5 +54,31 @@ a{
     header > div h1 a img{
         width: 100%; max-width: 92px;
     }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 600; color: #343e5c;
+        line-height: 90px;
+    }
+    header > div div{
+        width: 29.05%; font-size: 11px; color: #343e5c; text-align: right;
+        line-height: 90px;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        
+    }
 }
 /* desktop */

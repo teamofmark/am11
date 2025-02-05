@@ -30,5 +30,54 @@
     header + nav .slideNav ul li a.active{
         color: #343e5c; font-weight: 700;
     }
+    header + nav .slideNav input[type='search']{
+        width: 17%; margin-left: 3%; padding: 20px 2% 20px 4%; box-sizing: border-box;
+        border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
+        background: url('../images/bul_search.png') no-repeat 10% center;
+        /* background-position 은 적용 대상 너비를 기준으로 따른다. */
+        font-family: inherit; font-weight: 600; font-size: 14px;
+    }
+    header + nav .slideNav input[type='search']::placeholder{
+        color: #a1a8bd;
+    }
+    /* slider Nav Fin */
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px; margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; padding: 14px 0 10px;  font-size: 18px; color: white; font-weight: 600;
+        border: 2px solid rgba(255,255,255,0.2); text-align: center; border-radius: 24px;
+        position: absolute; top: 46%; z-index: 10;
+    }
+    section.slideArea > div > a.btn_conL{
+        left: 11.78%;
+    }
+    section.slideArea > div > a.btn_conR{
+        right: 11.78%;
+    }
+    /* controler Fin max-guide 가 1400인 상태니까 1400을 기준으로 오른쪽 버튼까지의 %를 구하여 left,right 둘다적용 */
+
+    section.slideArea > div ol{
+        position: absolute; left: 47.85%; bottom: 6%; z-index: 1;
+        /* width: 100%; left: 0; text-align:center; -> 해당 ol에서는 click 불가문제 발생. */
+    }
+    section.slideArea > div ol li{
+        display: inline-block;
+    }
+    section.slideArea > div ol li a{
+        display: block; width: 8px; height: 8px; text-indent: -9999px; border-radius: 4px;
+        border: 2px solid rgba(255,255,255,0.5); box-sizing: border-box;
+    }
+    section.slideArea > div ol li a:hover,
+    section.slideArea > div ol li a.active{
+        background-color: white;
+    }
+    /* indicator Fin */
 }
 /* desktop */

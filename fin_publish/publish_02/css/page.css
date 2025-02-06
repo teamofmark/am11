@@ -1,6 +1,6 @@
 
 
-@media screen and (min-width:0px) {
+@media screen and (min-width:1280px) {
     header + nav{
         background-color: white;
     }
@@ -191,6 +191,31 @@
     .contentArea aside nav ul > li:hover ol li a{
         font-size: 11px; padding: 15px 7%; border-bottom: 1px solid #dfe4ee; opacity: 1;
     }
+    /* 
+        2depth menu 구상시 주의 할 점
+        1. 1depth / 2depth 의 list Tag를 다르게 쓸것 ( ex> ul > li > ol > li)
+        2. 절대로 1depth menu의 text는 a Tag사용 금지.
+        3. 작동조건은 1depth의 글자가 아니라 공간(li)Tag에게 걸어야 함.
+    */
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 10px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 53px 0 20px; margin-bottom: 30px;
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px; box-sizing: border-box;
+        border-bottom: 1px solid red; text-transform: uppercase; width: 100%; position: relative;
+        top: 33px;
+    }
+    /* 
+        legend 배치 관련
+        1. legend css를 미리 구현하여 실제 높이 구하기 (fontsize,padding,border....)
+        2. 1번 수행된 높이의 절반을 구해라 (13.5 -> 13px) = 이것은 곧 영점이 되어준다.(fieldset윗선 바로아래)
+        3. 구해진 수치를 legend -> position: relative; top: 13px 입력하여 영점 조정을 해준다.
+        4. fieldset의 상단선으로부터 legend가 떨어져야 하는 padding값을 영점 값에 더해준다(13 + 20 = 33)
+        5. relative 좌표발생 상태이기 때문에 fieldset자체의 상단 padding은 별도 적용(20 + 33 = 53 paddingtop)
+    */
 
     .contentArea section{
         width: 74.37%; margin-left: 2.56%; float: left;

@@ -249,6 +249,21 @@
         border-left: 1px solid #f0f2f7;
     }
     /* todo. checkbox, radio button 시안의 모양대로 만들어보기 */
+    .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
+        background: url('../images/off_radio.png') no-repeat 8.7% center;
+    }
+    .contentArea aside fieldset input[type='radio']+ label[for*='dlvr']{
+        background: url('../images/off_radio.png') no-repeat 14.81% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox']+label{
+        background: url('../images/off_check.png') no-repeat 8.7% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
     
 
     .contentArea section{

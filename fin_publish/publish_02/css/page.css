@@ -305,5 +305,12 @@
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
         font-size: 14px; color: #343e5c; font-weight: 600;
     }
+    .contentArea section ul li:nth-child(5) figure figcaption{
+        position: relative; padding: 15px 45% 15px 4%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
+        position: absolute; left: 2%; top: -290px; background-color: black; color: white;
+        font-weight: 600; font-size: 12px; line-height: 24px; padding: 0 10px; border-radius: 5px;
+    }
 }
 /* desktop */

@@ -300,7 +300,10 @@
         font-size: 16px; color: #1c1e23; font-weight: 600; line-height: 20px; margin-bottom: 10px;
     }
     .contentArea section ul li figure figcaption dl dd:not(:last-of-type){
-        font-size: 12px; color: #b8bfd3; font-weight: 500; margin-bottom: 15px;
+        font-size: 12px; color: #b8bfd3; font-weight: 500;
+    }
+    .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:not(:last-of-type){
+        margin-bottom: 15px;
     }
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
         font-size: 14px; color: #343e5c; font-weight: 600;
@@ -311,6 +314,20 @@
     .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
         position: absolute; left: 2%; top: -290px; background-color: black; color: white;
         font-weight: 600; font-size: 12px; line-height: 24px; padding: 0 10px; border-radius: 5px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span{
+        position: absolute; right: 4%; top: 20px; width: 40%;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a{
+        display: block; width: 50%; float: left; text-align: center; line-height: 30px;
+        border: 2px solid #f0f2f7; box-sizing: border-box; font-size: 11px; color: #3a405b;
+        font-weight: 600; text-transform: uppercase;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:first-of-type{
+        border-radius: 17px 0 0 17px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
+        border-radius: 0 17px 17px 0;
     }
 }
 /* desktop */

@@ -410,10 +410,10 @@
         font-size: 14px; color: #3a405b; font-weight: 500; line-height: 20px; margin-bottom: 5px;
     }
     section.tosayArea > div ul li figure figcaption dl dd{
-        font-size: 14px; font-style: italic; color: #b9bed1;
+        font-size: 14px; font-style: italic; color: #b9bed1; font-weight: 400;
     }
     section.tosayArea > div ul li p{
-        font-size: 16px; color: #3a405b; line-height: 24px;
+        font-size: 16px; color: #3a405b; line-height: 24px; font-weight: 400;
     }
     /* tosayArea Fin */
 }

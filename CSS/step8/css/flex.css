@@ -46,3 +46,39 @@
 .flexContainer.flow .flexItem{
     width: 150px;
 }
+
+.flexContainer[class$='Content']{
+    padding: 0;
+}
+.flexContainer[class$='Content'] .flexItem{
+    margin: 0;
+}
+.flexContainer.justifyContent{
+    justify-content: space-evenly;
+}
+.flexContainer.alignContent{
+    flex-wrap: wrap; height: 400px;
+    align-content: space-between; justify-content: space-between;
+}
+.flexContainer.alignContent .flexItem{
+    width: 33.33%; max-width: 500px; min-width: 300px;
+}
+.flexContainer.justifyItems{
+    background-color: yellow; width: 300px; display: grid;
+    justify-items: flex-start;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-end;
+}
+.flexContainer.alignItems{
+    background-color: orange; align-items: baseline;
+}
+.flexContainer.alignItems:hover{
+    align-items: stretch;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}

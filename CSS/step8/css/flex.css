@@ -163,10 +163,19 @@
     word-break: break-all; margin: 0; padding: 0;
 }
 .flexContainer.flexShortHand .flexItem:first-of-type{
-    flex-grow: 2; flex-basis: 0;
+    /* 1.팽창비 flex-grow: 2; flex-basis: 0; */
+    /* shorthand - grow flex: 2 1 0; */
+    /* 2. 수축비 flex-shrink: 2; flex-basis: 150px; */
+    /* shorthand - shrink  flex: 0 2 150px;*/
+   
+    flex: 2 2 150px;
 }
 .flexContainer.flexShortHand .flexItem:first-of-type ~ *{
-    flex-grow: 1; flex-basis: 0;
+    /* 1.팽창비 flex-grow: 1; flex-basis: 0; */
+    /* shorthand - grow flex: 1 1 0; */
+    /* 2. 수축비 flex-shrink: 1; flex-basis: 150px; */
+    /* shorthand - shrink flex: 0 1 150px;*/
+    flex: 1 1 150px;
 }
 /* 
     flex-grow(팽창[확장]비[율]):
@@ -181,8 +190,20 @@
     > .flexItem:first-of-type{flex-grow: 2;} > 0 + (300/4)*2 = 150.
     > .flexItem:first-of-type ~ *{flex-grow: 1;} > 0 + (300/4)*1 = 75.
 
+    flex-shrink(수축비) :
+    기준되는 부모가 줄어들 때 각 item들의 수축비를 정한다. default : 1.
+    음수 비허용. 양수 입력시 '총 수축 내부수축지수(shrink합산)의 너비중 입력된 비율만큼 수축될 수 있다.
+    단, min-width가 설정되면 해당 수치 이하로 줄어들 수 없다.
+    공식 : basis - (각너비/내부수축지수)*비율 = 감소된수치.
+    현 상황 > 만약 수축중인 부모너비가 300px인 item 3개(각너비는 150px)의 수축비는
+    .flexItem:first-of-type{flex-shrink:2;}-> auto -(150/4)*2= basis 미기재는 안됨.
+    .flexItem:first-of-type{flex-shrink:2;}-> 150 - (150/4)*2=  75.
+    .flexItem:first-of-type~*{flex-shrink:1;}-> 150 - (150/4)*1= 112.5.
+
+
     basis:
     item의 너비를 정한다. 기본값 auto.(안의 content 길이만큼 너비가 늘어난다.)
     다양한 단위 (px,percentages(%),rem,em,vw,vh...) 사용 가능.
+    grow : 작동 기준 수치(ex > 100px - 100px 까지는 미가동)
 
 */

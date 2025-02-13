@@ -207,3 +207,26 @@
     grow : 작동 기준 수치(ex > 100px - 100px 까지는 미가동)
 
 */
+/* 
+    shorthand 알아둘 부분.
+    1. shorthand로 묶어 사용 할 시엔 따로 auto선언을 안할 시 0이 된다.
+    2. width와 중복사용 할 경우 basis가 우선이 되기 때문에 중복하여 사용 자제.
+
+    flex: none;
+    flex-grow: 0; flex-shrink: 0; flex-basis: auto; 상태의 준말.
+
+    flex: <flex-grow>
+    flex-shrink: 1; flex-basis: 0; 상태의 준말.
+
+    flex: <flex-basis>
+    flex-grow: 1; flex-shrink: 1; 상태의 준말
+
+    flex: <flex-grow> <flex-shrink>
+    flex-basis : 0; 상태의 준말.
+
+    flex: <flex-grow> <flex-basis>
+    flex-shrink: 1 상태의 준말.
+
+    flex: <flex-grow> <flex-shrink> <flex-basis>
+    생략한 속성 없음.
+*/

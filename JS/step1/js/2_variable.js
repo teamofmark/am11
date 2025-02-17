@@ -58,3 +58,17 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// 전역변수
+// *만들기 -> var name; / var name = value;
+// case.1 기본 전역변수
+var userName; // 선언
+userName = "Mark";//초기화 - 만약 선언및초기화 - var userName = "Mark"; - 동일생성금지 (var x N)
+
+// case.2 n개의 변수를 생성
+var cliName = "Mark", age = "45";
+
+// case.3 연산자 사용시
+var value = 10;
+value += 20;
+
+// todo 자신의 현재 나이를 cliAge라는 변수에 담고, 1차 출력 후(console.log)에 20년뒤 나이를 연산하고, 2차 출력해라.

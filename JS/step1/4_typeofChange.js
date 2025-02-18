@@ -65,6 +65,8 @@ function stringtoNumb(){
 function bgColorRandom(){
     setInterval(()=>{
         var bgColor = Math.random()*0xfff;
+        // ? 0x = 16진을 의미. = 15*16^3 + 15*16^2 + 15*16^1 + 15*16^0 - 최대수치
+        //  2진 표현시 - 0000 0000 0000 0000 1111 1111 1111 1111 -> 이런식 반환이 되니 실사용 불가 -> 그러므로 변환
         console.log(bgColor);
         bgColor = parseInt(bgColor);
         console.log(bgColor);

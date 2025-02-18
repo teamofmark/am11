@@ -72,3 +72,7 @@ var value = 10;
 value += 20;
 
 // todo 자신의 현재 나이를 cliAge라는 변수에 담고, 1차 출력 후(console.log)에 20년뒤 나이를 연산하고, 2차 출력해라.
+var cliAge = 45;
+console.log("나의 현재 나이는 " + cliAge + "세 이고,");
+cliAge += 20;
+console.log("20년 뒤 나이는 " + cliAge + "세 입니다.");

@@ -139,7 +139,7 @@ function todo4(){
     var result = test + 150 + "20"; // todo. 
     console.log(typeof(result) + " = " + result); //! number = 270
 }
-function todo4(){
+function todo5(){
     var test = "100.51";
     var result = test + 150 + "20"; // todo. 
     console.log(typeof(result) + " = " + result); //! number = 270.51

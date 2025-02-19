@@ -31,7 +31,7 @@
     }
     참이면 실행하고 거짓이면 무시한다.
 
-    ? 논리 연산자
+    ? 논리 연산자`
     * &&(곱) 그리고, ||(합, verticalBar) 이거나
     
     ? 논리 부정연산자
@@ -44,3 +44,32 @@
     ? 접근 연산자
     * .
 */
+// case. 1 10 이 저장된 변수 a, 숫자 20, 그리고 30을 더해서 result 변수에 저장후 출력.
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log("합산 : " + result);
+}
+// case.2 숫자 50을  20으로 나누었을 때 나머지가 몇인지 result 변수에 저장후 출력.
+function numbOP2(){
+    var a = 5;
+    var b = 2;
+    var result = a % b;
+    console.log("결과 : " + result);
+}
+// case.3 50이 저장된 변수 a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장후 출력.
+function numbOP3(){
+    var a = 50;
+    var b = 20;
+    var result = (a*b)/10;
+    console.log("복합 연산 : " + result);
+}
+// case.4 ul li 구조의 tag를 html page에 연산자를 이용하여 삽입하기. / 설명 전!!!
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JavaScript!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}

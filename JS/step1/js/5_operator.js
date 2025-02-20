@@ -103,3 +103,37 @@ function numberPlusTodo(){
     console.log(++number); // 출력 : 13 / 현재 : 13
     console.log(number); // 최종결과 : 13
 }
+// case. 7 숫자 10이 담긴 변수 a와 20이 담긴 변수 b의 크기를 비교하여 결과를 출력
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a != b;
+    console.log(result);
+}
+// case. 8 a변수에는 '여자', b변수에는 '웹디자이너' 라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장 후 출력.
+function logicalOperator1(){
+    var a = '여자';
+    var b = '웹퍼블리셔';
+    var result = (a=='여자')&&(b=='웹디자이너');
+    console.log(result);
+}
+// case. 9 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장 후 출력.
+function logicalOperator2(){
+    var a = '남자';
+    var b = '웹디자이너';
+    var result = (a=='남자')||(b=='웹퍼블리셔');
+    console.log(result);
+}
+// todo 다음 코드를 작성 후 문제점을 찾아 수정하기
+function compareOperatorTodo(){
+    console.log(30 > 20&&20 > 10);
+    /*
+        1. computer - 1회 1처리.
+        2. 30,20,10을 한번에 비교하는 것이 불가능.
+        3. 30과 20을 비교하라. = true.
+        4. true > 10 비교를 시도하게 됨. - compare Error. / js는 형변환(암시적) - 1 > 10 변환비교
+        5. false 출력
+
+        = 한번에 각 비교식을 실행하도록 만들어야 함.
+    */
+}

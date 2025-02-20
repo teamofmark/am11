@@ -73,3 +73,33 @@ function operatorEx(){
     list += '</ul>';
     document.body.innerHTML = list;
 }
+//  case.5 연산자가 뒤로 오는 경우
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); // 결과 예상 : 11(x) -> 10(11로바뀐상태)
+    alert(number++); // 결과 예상 : 12(x) -> 11(12로바뀐상태)
+    alert(number++); // 결과 예상 : 13(x) -> 12(13으로바뀐상태)
+    console.log(number); // 13? - 결과적으로 1의 차이 오류발생
+}
+// case.6 연산자가 앞으로 오는 경우 - 위 문제 해결
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); // 결과 : 11
+    alert(++number); // 결과 : 12
+    alert(++number); // 결과 : 13
+    console.log(number); // 최종결과 : 13
+}
+// todo. 증감연산자 복합
+function numberPlusTodo(){
+    var number = 10;
+    console.log(number++); // 출력 : 10 / 현재 : 11
+    console.log(--number); // 출력 : 10 / 현재 : 10
+    console.log(++number); // 출력 : 11 / 현재 : 11
+    console.log(number--); // 출력: 11 / 현재 : 10
+    console.log(number++); // 출력: 10 / 현재 : 11
+    console.log(++number); // 출력: 12 / 현재 : 12
+    console.log(--number);// 출력 : 11 / 현재 : 11
+    console.log(number++); // 출력 : 11 / 현재 : 12
+    console.log(++number); // 출력 : 13 / 현재 : 13
+    console.log(number); // 최종결과 : 13
+}

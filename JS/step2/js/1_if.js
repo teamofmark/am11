@@ -12,6 +12,11 @@
 		//표현식 "273 < 100" 이 참일때 실행 = 거짓이기때문에 당연히 실행안함.
 		 alert('273<100=>true');
 	}
-	alert('종료');
-    
+	alert('종료');  
 */
+// case.1 현재 시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours();
+    console.log(hour);
+}

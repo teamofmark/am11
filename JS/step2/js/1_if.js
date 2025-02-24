@@ -48,3 +48,42 @@ function lastDayEx(){
     dt = new Date();
     console.log(endOfMonth(dt).toString());
 }
+// todo. 현재 시각이 본인 기준으로 아침? 점심? 저녁? 을 먹을 시간인지 판별하는 조건문.
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+    if(hour < 11){
+        alert('아침먹을시간');
+    }else if(hour < 15){
+        alert('점심먹을시간');
+    }else{
+        alert('저녁먹을시간');
+    }
+}
+// case.3 양,음수 판별
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요.','양,음수를 판단합니다.');
+    // console.log(typeof(numb) + ' = ' + numb);
+    if(numb > 0){
+        alert('양수!');
+    }else if(numb < 0){
+        alert('음수!');
+    }else {
+        alert('0이거나 올바른 값이 아닙니다.');
+    }
+}
+// todo. 홀,짝수 판별
+function oddOrEven(){
+    var numb = parseInt(prompt('숫자를 입력하세요.','홀,짝을 구분합니다.'));
+    // numb = parseInt(numb);
+    // 입력된 숫자를 홀수인지 짝수인지 올바른 값을 입력해야하는지 알려주는 조건문
+    // 짝수의 절대조건 - 짝수의 최소수인 2로 나눈 나머지가 0이 되었을때(없을 때)
+    // 홀수의 절대조건 - 짝수의 최소수인 2로 나눈 나머지가 1이 되었을때(있을 때)
+    if(numb%2==0){
+        alert('짝수!');
+    }else if(numb%2==1){
+        alert('홀수!');
+    }else{
+        alert('올바른 값을 입력하세요.');
+    }
+}

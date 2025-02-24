@@ -18,5 +18,33 @@
 function amORpm(){
     var date = new Date();
     var hour = date.getHours();
-    console.log(hour);
+    // console.log(hour);
+    if(hour<12){
+        alert('오전입니다.');
+    }
+    if(hour>=12){
+        alert('오후입니다.');
+    }
+}
+
+// case.2 말일인가? 아닌가?
+function lastDay(){
+    var date = new Date();
+    var day= date.getDate();
+    // console.log(day);
+    if(day<30){
+        alert('아직 말일이 아님.');
+    }else if(day>=30){
+        alert("말일임.");
+    }else{
+        alert("올바른 값을 입력 하시오");
+    }
+}
+
+function lastDayEx(){
+    function endOfMonth(date){
+        return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    }
+    dt = new Date();
+    console.log(endOfMonth(dt).toString());
 }

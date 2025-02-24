@@ -87,3 +87,35 @@ function oddOrEven(){
         alert('올바른 값을 입력하세요.');
     }
 }
+// case.4 사용자의 id를 입력받아 맞다면 승인 메시지 출력
+function userIDCheck(){
+    /*
+    const axios = require('idName');
+    axios.get('/user?ID=Mark')
+        .then(function (response){
+            // 성공 구문
+            console.log(response);
+        })
+        .catch(function (error){
+            // 오류 구문
+            console.log(error);
+        })
+        .finally(function(){
+            // 상시 구문
+            console.log('running');
+        });
+    */
+    var userID = prompt('사용자의 아이디를 입력하세요.');
+    if(userID=="Mark"){
+        alert('접속을 승인합니다.');
+    }else{
+        alert('잘못된 ID입니다.');
+    }
+}
+// todo. 사용자 id "mark"와 password "1234"를 입력받고(prompt) 둘 다 맞을 경우에만 승인메시지 출력("Mark님으로 확인 되었습니다.")
+// 오류 : "id 혹은 password가 틀렸습니다." 메시지 출력.
+
+// todo. 사용자 id "mark"와 password "1234"를 입력받고(prompt) 둘 다 맞을 경우에만 승인메시지 출력("Mark님으로 확인 되었습니다.")
+// 오류 : 1.  "모든 정보가 맞지 않습니다."
+// 오류 : 2.  "ID가 존재하지 않습니다."
+// 오류 : 3. "password가 틀렸습니다."

@@ -114,8 +114,63 @@ function userIDCheck(){
 }
 // todo. 사용자 id "mark"와 password "1234"를 입력받고(prompt) 둘 다 맞을 경우에만 승인메시지 출력("Mark님으로 확인 되었습니다.")
 // 오류 : "id 혹은 password가 틀렸습니다." 메시지 출력.
-
+function userInfoCheck1(){
+    var userID = prompt('사용자의 아이디');
+    var userPW = prompt('사용자의 패스워드');
+    /*
+    if(userID =="Mark" && userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+    */
+   (userID =="Mark" && userPW=="1234")?alert("Mark님으로 확인되었습니다."):alert("ID 혹은 Password가 틀렸습니다.");
+}
 // todo. 사용자 id "mark"와 password "1234"를 입력받고(prompt) 둘 다 맞을 경우에만 승인메시지 출력("Mark님으로 확인 되었습니다.")
 // 오류 : 1.  "모든 정보가 맞지 않습니다."
 // 오류 : 2.  "ID가 존재하지 않습니다."
 // 오류 : 3. "password가 틀렸습니다."
+function userInfoCheck2(){
+    var userID = prompt('사용자의 아이디');
+    var userPW = prompt('사용자의 패스워드');
+    if(userID =="Mark" && userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" && userPW!="1234"){
+        alert("모든 정보가 맞지 않습니다.");
+    }else if(userID!="Mark"){
+        alert("ID가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        alert("password가 틀렸습니다.");
+    }
+}
+
+// 최종예제. 다음 세 과목의 점수를 입력받고 평균을 구한 뒤 수,우,미,양,가를 점수(소수점두자리까지만)와 함께출력하라.
+function avgScore(){
+    var koreanScore = prompt("국어점수를 입력하시오.");
+    var englishScore = prompt("영어점수를 입력하시오.");
+    var mathScore = prompt("수학점수를 입력하시오.");
+    // 1. 국어,영어,수학 점수를 차례대로 prompt 로 입력받기.
+
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    // 2. 입력받은 세 점수의 평균 구하기(prompt로 입력받는다 -> 문자형 -> 숫자형 변환필요)
+    
+    if(avg > 100 || avg <0){
+        alert('점수가 올바르지 않습니다.');
+    }else if(avg >= 90){
+        alert("평균" + avg.toFixed(2) + '점. 수입니다. 특급!');
+    }else if(avg>=80){
+        alert("평균" + avg.toFixed(2) + '점. 우입니다. 우수!');
+    }else if(avg>=70){
+        alert("평균" + avg.toFixed(2) + '점. 미입니다. 괜찮!');
+    }else if(avg>=60){
+        alert("평균" + avg.toFixed(2) + '점. 양입니다. 망했!');
+    }else{
+        alert("평균" + avg.toFixed(2) + '점. 가입니다. ...!');
+    }
+    // 3. 선조건 - 100점이 넘거나 0점보다 작을 때 - 경고창 : '점수가 올바르지 않습니다'
+        // 1. 평균이 90이상일경우 "평균 [점수(소수점두자리))] 수 입니다. 특급!"
+        // 2. 평균이 80이상일경우 "평균 [점수(소수점두자리))] 우 입니다. 우수!"
+        // 3. 평균이 70이상일경우 "평균 [점수(소수점두자리))] 미 입니다. 괜찮!"
+        // 4. 평균이 60이상일경우 "평균 [점수(소수점두자리))] 양 입니다. 망했!"
+        // 5. 평균이 60미만일경우 "평균 [점수(소수점두자리))] 가 입니다. ...!"
+}

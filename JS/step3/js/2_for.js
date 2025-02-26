@@ -72,3 +72,24 @@ function answer5(){
         document.write(i + "<br>");
     }
 }
+// case.4 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력하라.
+function favorFruit(){
+    var array = ['딸기','포도','귤','메론','수박'];
+    // [index:0,index:1,index:2,index:3....] - 각 방번호 = index / 0 부터 시작. data들의 방.
+    for(var i = 0; i<array.length; i++){
+        alert(array[i]);
+    }
+}
+
+// case.5 지금까지 배웠던 JS과목들을 배열을 활용해 출력해보자.
+function arrayFor(){
+    var data=['변수','연산자','자료형변환','조건문if','조건문switch','반복문for'];
+    for(var i = 0; i < data.length; i++){
+        document.write(i + "번째 내용 = " + data[i] + '<br>');
+    }
+}
+// todo 기존에 어색한 0 ~ 5번째 의 항목을 첫,두,세,네,다섯번째로 변경해보기 (switch, array 두개의 방법)
+function arrayFor2(){
+    var data=['변수','연산자','자료형변환','조건문if','조건문switch','반복문for'];
+
+}

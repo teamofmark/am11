@@ -156,3 +156,57 @@ function runContinue(){
         console.log(output);
     }
 }
+// case. 8 break
+function breakEx(){
+    var i = 0;
+    while(i < 6){
+        if(i == 3){
+            break;
+        }
+        i += 1;
+        document.write(i);
+    }
+}
+// case. 8 - 1 break Test
+function forBreak(){
+    for(var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + "<br>");
+}
+// case.9 break 활용의 예
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+// todo
+function runBreak2(){
+    var swapNumb = ['첫','두','세','네','다섯','여섯','일곱','여덟']; //? 배열값이 변화 되더라도 자동 반응하는 alert.
+    for(var i = 0; true; i++){
+    // 1. 무한반복이 필요함
+        alert(swapNumb[i] + '번째 반복문');
+        // 2. N번째 반복문 이라는 경고창 출력
+        if(i == swapNumb.length-1){
+            break;
+        }
+        // 3. 위 배열 값들이 모두 출력이 되었으면 중단할 수 있는 로직.
+    }
+    document.write('지정된 배열값 ' + swapNumb.length+ '개. 모두 출력 완료.');
+    // 4. 3번이 작동되어 무한반복이 끝나면 "지정된 배열값 N. 모두 출력 완료." document.write 출력.
+}
+// 다중 for - JavaScript Engine처럼 생각해보고 주석 달아오기
+function halfPyramid(){
+    var star = ''; //
+    for(var i = 1; i<=10; i++){ //
+        for(var j = 0; j < i; j++){ //
+            star += '*'; //
+        }
+        star += '<br>'; //
+    }
+    document.write(star); //
+}

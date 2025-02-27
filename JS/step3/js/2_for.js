@@ -91,5 +91,29 @@ function arrayFor(){
 // todo 기존에 어색한 0 ~ 5번째 의 항목을 첫,두,세,네,다섯번째로 변경해보기 (switch, array 두개의 방법)
 function arrayFor2(){
     var data=['변수','연산자','자료형변환','조건문if','조건문switch','반복문for'];
-
+    var swapNumb = '';
+    for(var i = 0; i<data.length; i++){
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+        }
+        document.write(swapNumb + '번째 내용 = ' + data[i] + '<br>');
+    }
 }

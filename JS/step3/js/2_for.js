@@ -117,3 +117,10 @@ function arrayFor2(){
         document.write(swapNumb + '번째 내용 = ' + data[i] + '<br>');
     }
 }
+function arrayFor3(){
+    var data=['변수','연산자','자료형변환','조건문if','조건문switch','반복문for'];
+    var swapNumb = ['첫','두','세','네','다섯','여섯'];
+    for(var i = 0; i<data.length; i++){
+        document.write(swapNumb[i]+'번째 내용 = ' + data[i] + '<br>');
+    }
+}

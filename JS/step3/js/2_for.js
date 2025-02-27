@@ -124,3 +124,35 @@ function arrayFor3(){
         document.write(swapNumb[i]+'번째 내용 = ' + data[i] + '<br>');
     }
 }
+
+// case. 6 역반복
+function reverseFavorFruit(){
+    var array = ['딸기','포도','귤','메론','수박'];
+    for(var i = array.length - 1; i>=0; i--){
+        document.write(array[i] + '<br>');
+    }
+}
+// case. 7 continue (break의 형제)
+function continueEx(){
+    var text = '';
+    for(var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+            // continue - 방패= 튕겨내는 느낌 = filter제작에 많이 활용 됨
+        }
+        text += i;
+    }
+    document.write(text);
+}
+// todo continue활용
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i<= 10; i++){
+        // todo - 1부터 10까지의 "짝수만의 총합"을 구하게 만들어보기(1(x) 2+0 -> 2+3(x) -> 2+4(o) -> ......)
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        console.log(output);
+    }
+}

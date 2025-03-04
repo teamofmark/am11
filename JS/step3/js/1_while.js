@@ -50,4 +50,14 @@ function guguNumb(){
     }else{
         alert('9단 이하로 입력하세요.');
     }
+    /*
+        while(j <= 9){
+            if(guguNumb > 9){
+                alert('9단 이하로 입력하세요.');
+                break;
+            }
+            document.write(guguNumb + 'x' + i  + '=' + guguNumb*i + '<br>');
+            i++;
+        }
+    */
 }

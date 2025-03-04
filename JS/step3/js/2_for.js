@@ -208,5 +208,33 @@ function halfPyramid(){
         }
         star += '<br>'; //
     }
-    document.write(star); //
+    document.write(star); //        
+}
+// 역반절
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 완성형피라미드 
+// 1. for x 3 개로 완성 / 만약 불가시 x 4개도 허용.
+// 2. 공백문자 &nbsp; 반복은 역반복 형태
+// 3. 별문자 * 반복은 정반복 형태이되 홀수출력만.
+// 4. 줄바꿈 <br> 반복은 위 2,3 조건이 수행될때마다 한번씩 반복.
+// 과제로 전향.
+function pyramid(){
+    var star = '';
+    for(){
+        for(){
+
+        }
+        for(){
+
+        }
+    }
 }

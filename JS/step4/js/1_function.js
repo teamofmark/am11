@@ -82,3 +82,44 @@ function showInfo(){
     * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대 되는 값.
     * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를 함수 외부로 전달하기 위해 사용하는 출력 부.
 */
+// case.5 함수 f(x) 에서 x가 매개변수(입력). 그럼 출력은?
+function f(x){
+    return x*x;
+}
+// case.6 arguments 총합 함수를 return으로 변화시키기
+
+function sumAllEX(){
+    console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for(var i in arguments){
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// case.7 return value(반환값)을 변수에 저장하고 전달하기
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+var valueTest = sumReturn1(20,10);
+// sumReturn1 <-> sumReturn1();
+
+// case.8 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// 단, 입력값이 0이면 즉시 실행을 멈춰야 한다.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(prompt('숫자를입력해라'));
+        if(value == 0){
+            document.write("종료. 합산중");
+            // break;
+            return;
+        }
+
+        sum += value;
+        document.write(count + '. ' + sum + '<br>');
+        count ++;
+    }
+    document.write("총 " + count +"번 실행함.");
+}

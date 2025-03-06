@@ -229,12 +229,43 @@ function reverseHalfPyramid(){
 // 과제로 전향.
 function pyramid(){
     var star = '';
-    for(){
-        for(){
-
+    for (var i = 1; i <= 10; i++) { //? 1. ifor = 1~10 까지 수행
+        for (var e = 10; e >= i; e--) { //? 2. efor = 10 ~ 1까지 수행
+            star += '&nbsp;'; //?. 공백이 10개부터 1개까지 들어감.
         }
-        for(){
-
+        for (var s = 0; s < 2*i-1 ; s++){ //? 3. sfor = i가 들어올때마다 홀수화 됨. (1,3,5,7,9,11,13,15,17,19)
+            star += '*';//? 홀수화 된 s의 수치만큼 반복해서 *이 들어감.
         }
+        star += '<br>';//? ifor 만큼 <br>을 변수 star에 넣음
     }
+    document.write(star);
+}
+function pyramidEx(){
+    for(var i = 0; i < 10; i++)  {
+        for(var j=9; j > i; j--)  {
+          // space
+          document.write('&nbsp');
+        }
+        for(var j=0; j <= i; j++)  {
+          document.write('*');
+        }
+        for(var j=1; j <= i; j++)  {
+          document.write('*');
+        }
+        document.write('<br>');
+      }      
+}
+
+function pyramidCustom(n) {
+    //?var n = 6; 매개변수시 밖으로 
+   for (var i = 1; i <= n; i++) { //? 1~6. 초기 iloop시작.
+       var s = "";
+       for (var j = 1; j <= (2 * n - 1); j++) { //? 1~11. 초기 jloop 시작
+           (j >= n + 1 - i && j <= n - 1 + i) ? s += "*" : s += " ";
+           //? j가 6보다 크거나 같고 j가 6보다 작거나 같을때 *을 찍고 아닐땐 공백. loop.1 
+           // (j >= n + 1 - i && j <= n - 1 + i) ? s += "*" : s += "&nbsp;";
+       }
+       console.log(s);
+       // document.write(s + "<br>");
+   }
 }

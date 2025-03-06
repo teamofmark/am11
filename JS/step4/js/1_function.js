@@ -164,20 +164,33 @@ function calculator(op,numb1,numb2){
     var result = '';
     switch(op){
         case "+":
-            result = numb1 + numb2;
+            result = ; // 더하기
             break;
         case "-":
-            result = numb1 - numb2;
+            result = ; // 빼기
             break;
         case "*":
-            result = numb1 * numb2;
+            result = ; // 곱하기
             break;
         case "/":
-            result = numb1 / numb2;
+            result = ; // 나누기
             break;
         default:
             result = "잘못된 연산자 입니다.";
             break;
     }
     return result;
+}
+// todo. 위 표시된 부분을 하단의 함수로 작동하게 만들기
+function add(){ // 더하기
+
+}
+function sub(){ //빼기
+
+}
+function mul(){ //곱하기
+
+}
+function div(){ // 나누기
+
 }

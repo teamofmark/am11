@@ -198,3 +198,26 @@ function div(numb1,numb2){ // 나누기
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// case.10 함수 -> 변수에 담기 가 가능하다면 함수 -> 매개변수에 담는 것은?
+function hello(name){
+    console.log(name + "님. 환영합니다.");
+}
+var func = hello;
+function hi1(){
+    console.log("Hello.");
+}
+function hi2(){
+    console.log("안녕?");
+}
+function execute(func){
+    func();
+}
+// case.11 return value로 함수 사용이 가능할까?
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var lastResult = createHello();

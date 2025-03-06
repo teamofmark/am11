@@ -164,16 +164,16 @@ function calculator(op,numb1,numb2){
     var result = '';
     switch(op){
         case "+":
-            result = ; // 더하기
+            result = add(numb1,numb2); // 더하기
             break;
         case "-":
-            result = ; // 빼기
+            result = sub(numb1,numb2); // 빼기
             break;
         case "*":
-            result = ; // 곱하기
+            result = mul(numb1,numb2); // 곱하기
             break;
         case "/":
-            result = ; // 나누기
+            result = div(numb1,numb2); // 나누기
             break;
         default:
             result = "잘못된 연산자 입니다.";
@@ -182,15 +182,19 @@ function calculator(op,numb1,numb2){
     return result;
 }
 // todo. 위 표시된 부분을 하단의 함수로 작동하게 만들기
-function add(){ // 더하기
-
+function add(numb1,numb2){ // 더하기
+    var addResult = numb1 + numb2;
+    return addResult;
 }
-function sub(){ //빼기
-
+function sub(numb1,numb2){ //빼기
+    var subResult = numb1 - numb2;
+    return subResult;
 }
-function mul(){ //곱하기
-
+function mul(numb1,numb2){ //곱하기
+    var mulResult = numb1 - numb2;
+    return mulResult;
 }
-function div(){ // 나누기
-
+function div(numb1,numb2){ // 나누기
+    var divResult = numb1 / numb2;
+    return divResult;
 }

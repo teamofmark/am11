@@ -123,3 +123,41 @@ function infiniteSum(){
     }
     document.write("총 " + count +"번 실행함.");
 }
+// case. 9 x 단 출력 함수를 만들기 (return 처리의 필요성)
+/*function printGugudan(numb){
+    for(var i = 2; i<=numb; i++){
+        document.write(i + '단 출력',"<br>");
+        for(var m = 1; m <= numb; m++){
+            document.write(i + 'x' + m + '=' + (i*m), "<br>");
+        }
+        document.write("<br>");
+    }
+}*/
+function printGugudan(numb){
+    var data = '';
+    for(var i = 2; i <= numb; i++){
+        data += i + "단 출력" + "<br>";
+        for(var m = 1; m <= numb; m++){
+            data += i + "x" + m + "=" + (i*m)+ "<br>";
+        }
+        data += "<br>";
+    }
+    return data;
+}
+// document.write(printGugudan(15));
+// todo. 다음 실행구문으로 전달 받은 매개변수로 계산을 수행하여 결과를 출력하는 함수
+
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/

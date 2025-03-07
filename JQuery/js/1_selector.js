@@ -6,7 +6,7 @@ $(document).ready(function(){
     // case.3
     $("#btnAddBorder").click(addBorder);
     // todo.
-    
+    $("#btnTextChange").click(textChanges);
 });
 function textColor(){
     var $divs = $("div");
@@ -25,5 +25,14 @@ $("#btnAddBorder").click(function(){
 */
 // todo. 
 function textChanges(){
-
+    // $("#panel2").css("font-size","25px");
+    // $("#panel2").css("color","green");
+    // $("#panel2").css("font-weight","bold");
+    // $("#panel2").css("line-height","31px");
+    $("#panel2").css({
+        "font-size" : "25px",
+        "color" : "green",
+        "font-weight" : "bold",
+        "line-height" : "31px"
+    });
 }

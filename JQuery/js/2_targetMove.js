@@ -3,6 +3,8 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle); 
     // case.2
     detailMoveCircleExt();
+    // case.3
+    keyControl();
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -61,4 +63,14 @@ function circleMovCommand(xpos,ypos){ //움직임 가능 여부 판단 및 실�
             "top" : ypos
         });
     }
+}
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 key의Code는 ? :" +  e.keyCode + " dataType : " + typeof(e.keyCode));
+    });
 }

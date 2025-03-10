@@ -72,5 +72,30 @@ function keyControl(){
 
     $(document).keydown(function(e){
         console.log("입력한 key의Code는 ? :" +  e.keyCode + " dataType : " + typeof(e.keyCode));
+        // w : 87(ypos-), d: 68(xpos+), s:83(ypos+), a:65(xpos-)
+        // w를 눌렀을땐 위로가야하고, d를 눌렀을땐 오른쪽으로 가야하고 ...외 나머지를 눌렀을 땐 움직이지 말아야함.
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+        // todo. frame 내 원 가두기 (hint - 움직이는 방향 4개 - 다 따로 움직인다 ->? 다 따로 가둬야한다.)
+
+        // 1. 87이 눌렸을때 (조건미포함-이미일어남)  currentYpos(-) =  0을넘어가면 안됨-> 만약 넘어가면 "무엇"을 해야하는가
+        // 1. 68이 눌렸을때 (조건미포함-이미일어남)  currentXpos(+) =  380을넘어가면 안됨-> 만약 넘어가면 "무엇"을 해야하는가
+        // 1. 83이 눌렸을때 (조건미포함-이미일어남)  currentYpos(+) =  380을넘어가면 안됨-> 만약 넘어가면 "무엇"을 해야하는가
+        // 1. 65가 눌렸을때 (조건미포함-이미일어남)  currentXpos(-) =  0을넘어가면 안됨-> 만약 넘어가면 "무엇"을 해야하는가
+
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
     });
 }

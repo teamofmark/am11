@@ -4,52 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>jquery - galleryTODO</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/6_foldTODO.js"></script>
+    <script src="js/4_foldUI.js"></script>
+    <title>jquery - gallery</title>
     <style>
-        *{margin:0; padding:0;}
-        #imgContainer{
-            position:relative; width: 1000px; margin: 0 auto;
+        .imgContainer{
+            position: relative;
+            height: 150px;
         }
-        #imgContainer img{
-            position:absolute;
-            transition: all 0.75s ease-in-out;
+        .imgContainerMix{
+            position: relative;
+            height: 600px;
+        }
+        [class^="imgContainer"] img{
+            transition: all 0.5s ease-in-out; position: absolute; left: 0; top: 0;
         }
     </style>
 </head>
 <body>
-    <button class="1way">1열</button>
-    <button class="2way">2열</button>
-    <button class="3way">3열</button>
-    <button class="4way">4열</button>
-    <button class="5way">5열</button>
-    <button class="6way">6열</button>
-    <button class="7way">7열</button>
-    <button class="8way">8열</button>
-    <button class="9way">9열</button>
-    <button class="10way">10열</button>
-    <div id="imgContainer">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
-        <img src="https://placehold.co/200" alt="undefined">
+    <!-- *exp.1 정렬 버튼을 눌러 이미지 가로 배치 하기 -->
+    <div class="imgContainer">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
+        <img src="https://placehold.co/150" alt="exImg">
     </div>
+    <button class="alignHori">정렬!</button>
+    <button class="reset">원위치!</button>
+    
+    <!-- *todo.1 정렬 버튼을 눌러 이미지 가로 + 세로 배치 하기 -->
+    <div class="imgContainerMix">
+        <img src="https://placehold.co/200x200?text=x:0,y:0" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:1,y:0" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:2,y:0" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:0,y:1" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:1,y:1" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:2,y:1" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:0,y:2" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:1,y:2" alt="exImg">
+        <img src="https://placehold.co/200x200?text=x:2,y:2" alt="exImg">
+    </div>
+    <button class="alignMix">정렬!</button>
+    <button class="resetMix">원위치!</button>
 </body>
 </html>

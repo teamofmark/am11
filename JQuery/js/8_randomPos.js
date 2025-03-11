@@ -25,7 +25,7 @@ function gameStart(){
     if(playState == true){ // 이하 true조건일 때 구동할 기능들. 
         gameEnd(); // 게임종료함수 - ? 일정시간후 끝나야 하기 때문에
         
-        setInterval(moveCircle,500); // 일정 시간마다 함수를 실행하라. 고정인자 x2. (함수,시간차)
+        timerID = setInterval(moveCircle,500); // 일정 시간마다 함수를 실행하라. 고정인자 x2. (함수,시간차)
     }
 }
 
@@ -47,14 +47,17 @@ function moveCircle(){
 }
 
 function scoreCount(){
-
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
 }
 function gameEnd(){
     setTimeout(function(){
         playState = false; //? 게임상태 변수 초기화
-        // 움직임종료 기능
-        // 경고창출력(점수 출력)
-        // 수치 초기화
-        // 초기화된 수치를 다시 넣어줘야함($score)
+        clearInterval(timerID);// 움직임종료 기능
+        alert("종료. 너의 점수는 " + count + "점 이다.");// 경고창출력(점수 출력)
+        count = 0;// 수치 초기화
+        $score.text(count);// 초기화된 수치를 다시 넣어줘야함($score)
     },10000); // 일정 시간 후 데리고있는 함수를 한번만 실행하라. - 고정인자 x 2 (함수,시간)
 }

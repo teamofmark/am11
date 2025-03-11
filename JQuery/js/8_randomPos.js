@@ -31,8 +31,8 @@ function gameStart(){
 
 function moveCircle(){
     $circle.css({
-        left: , // x axis random value
-        top:  // y axis random value
+        left: Math.floor(Math.random()*($panel.width()-$circle.width())),// x axis random value
+        top: Math.floor(Math.random()*($panel.height()-$circle.height()))// y axis random value
     });
     /*
         ! random method : 매개변수 = x, 리턴값 = 0 - 1 사이 소수값.
@@ -41,6 +41,9 @@ function moveCircle(){
     ? 3. random*50 이 되면 결과적으로 0 ~ 50 사이의 정수가 나오게 된다.(parseInt) 
     ? 4. 예를 들어 random 에서 0.9938 을 리턴했다면 * 50 이 되면서 49.69 가 되고 parseInt로 인해 49가 된다. 그 이후 50이 더해지며 99가 된다.
     */
+   /*
+        Math.floor - 내림 정수 / Math.ceil - 올림 정수
+   */
 }
 
 function scoreCount(){

@@ -1,6 +1,7 @@
 $(document).ready(function(){
     toggleCheck();
     toggleTodo();
+    tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -34,5 +35,16 @@ function toggleTodo(){
             $toggleTarget.text("visibility_off");
             $toggleInput.attr("type","password");
         }
+    });
+}
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        var activeTab = $(this).attr("data-tabNumb");
+        // this - event가 일어난 당사자
+        $(".tabMenu li").removeClass("activated"); // class삭제
+        $(this).addClass("activated"); //class추가
+    
+        $(".tabPage").removeClass("activated");
+        $("#" + activeTab).addClass("activated");    
     });
 }

@@ -25,3 +25,40 @@
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: orange; border: 2px solid darkred; padding: 5px; transform: rotate(-45deg);
 }
+/* 기존 pager형태 수정하는 방법 */
+.newPager .bx-pager.bx-default-pager{
+    text-align: center;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link{
+    text-decoration: none; padding: 17px 20px; display: block; background-color: #eaeaea;
+    border-radius: 40px; font-size: 14px; color: black; transition: all .35s ease-out;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active{
+    font-weight: bold; color: white; background-color: black;
+}
+/* 뼈대를 받아 처음부터 수정하는 방법 */
+.customPager{
+    max-width: 1000px; margin: 0 auto 20px; list-style: none; display: flex;
+    justify-content: center;
+}
+.customPager li{
+    width: 20%; align-self: center;
+}
+.customPager li:not(:first-child){
+    margin-left: 2%;
+}
+.customPager li a{
+    opacity: 0.5; display: block; transition: all .35s ease-out;
+}
+.customPager li a.active{
+    padding: 5px; border: 3px solid black; opacity: 1;
+}
+.customPager li a img{
+    width: 100%; display: block;
+}
